@@ -2311,18 +2311,9 @@ theme.StaticGallery = function (context, sectionId, events, Product) {
 
     function thumbnailSlider() {
       $carouselNav.flickity({
-        asNavFor: $main,
-        wrapAround: false,
-        groupCells: true,
-        cellAlign: 'left',
-        draggable: true,
+        asNavFor: '.carousel-main',
         contain: true,
-        imagesLoaded: true,
-        pageDots: true,
-        autoPlay: false,
-        selectedAttraction: 0.01,
-        dragThreshold: 1,
-        accessibility: false
+        pageDots: falseproduct__image
       });
     }
 
@@ -2354,7 +2345,7 @@ theme.StaticGallery = function (context, sectionId, events, Product) {
     });
 
     /* adjust slider thumb position */
-    $carousel.on( 'select.flickity', function() {
+    $carousel.on( 'select.flickity', function(event) {
       // set selected nav cell
       $carouselNav.find('.is-nav-selected').removeClass('is-nav-selected');
       var $selected = $carouselNavCells.eq( flkty.selectedIndex )
@@ -2366,7 +2357,7 @@ theme.StaticGallery = function (context, sectionId, events, Product) {
         $carouselNav.animate({
           scrollTop: scrollY
         });
-
+        // $carousel.flickity( 'select', flkty.selectedIndex );
     });
 
     /* adjust thumbnail sizes */
@@ -2402,14 +2393,19 @@ theme.StaticGallery = function (context, sectionId, events, Product) {
       $carouselNav.find('.is-nav-selected').removeClass('is-nav-selected');
       var $selected = $carouselNavCells.eq( index )
         .addClass('is-nav-selected');
-
+      
+      // if($selected&&$selected[0]){
+      //   console.log( $selected)
+      //   $selected[0].scrollIntoView({behavior: "smooth", block: "end", inline: "center"})
+      // }
       // thumbnail scroll nav
       var scrollY = $selected.position().top +
         $carouselNav.scrollTop() - ( navHeight + navCellHeight ) / 2;
       $carouselNav.animate({
         scrollTop: scrollY
       });
-
+      // console.log($carouselNav,index)
+      // $carouselNav.flickity( 'select', index/6 );
       $carousel.flickity( 'select', index );
     });
 
@@ -2522,6 +2518,7 @@ theme.ScrollGallery = function (context, sectionId, events, Product) {
 
       if ( template === 'index' ) {
         var selectedImage = context.querySelector('.selected');
+        // alert('scrollIntoView')
         selectedImage.scrollIntoView();
       } else {
         if ($(".selected").length) {

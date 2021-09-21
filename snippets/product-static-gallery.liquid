@@ -71,13 +71,13 @@
              {% if section.settings.click_to_enlarge and template != 'product.quick' %}
                   <p class="zoom_btn1" data-fancybox="product-{{ product.id }}" title="click to zoom-in" href="{{ media | img_url: '2400x' }}" itemprop="contentUrl" tabindex="-1">
                  
-                    <img id="{{ product.id }}" class="product__image lazyload lazyload-fade"
-                  src="{{ media | img_url: '800x' }}"
-                  data-src="{{ img_url }}"
-                  data-sizes="auto"
-                  data-zoom-src="{{ media | img_url: '2400x' }}"
-                  data-aspectratio="{{ media.preview_image.aspect_ratio }}"
-                  alt="{{ media.alt | escape }}">
+                    <img id="{{ product.id }}"  class="product__image lazyload lazyload-fade"
+                      src="{{ media | img_url: '800x' }}"
+                      data-src="{{ img_url }}"
+                      data-sizes="auto"
+                      data-zoom-src="{{ media | img_url: '2400x' }}"
+                      data-aspectratio="{{ media.preview_image.aspect_ratio }}"
+                      alt="{{ media.alt | escape }}">
                   
                   </p>
                 {% endif %}
