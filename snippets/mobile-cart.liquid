@@ -1,0 +1,21 @@
+<!-- Shown on Mobile Only -->
+<ul id="mobile-cart" class="mobile-3 span-1 mobile-only">
+{% if settings.show_multiple_currencies %}
+  <li>
+    {% render 'currencies-switcher' %}
+  </li>
+{% endif %}
+ <li class="seeks">
+  <a id="search_trigger" class="js-search-trigger" href="{{ routes.search_url }}">
+    <i class="la la-search" aria-hidden="true"></i>
+  </a>
+</li>
+  
+  <li>
+    <a href="{{ routes.cart_url }}" class="site-header__cart-toggle js-drawer-open-right" aria-controls="CartDrawer" aria-expanded="false">
+      <span class="cart-words">{{ 'cart.general.title' | t }}</span>
+      &nbsp;<i class="la la-shopping-cart" aria-hidden="true"></i>
+      <span class="CartCount">{{ cart.item_count }}</span>
+    </a>
+  </li>
+</ul>

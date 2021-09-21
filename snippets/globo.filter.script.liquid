@@ -1,0 +1,86 @@
+{%- assign globo_search = true -%}
+{%- assign home_filter = false -%}
+{%- assign has_form = false -%}
+{%- if request.page_type != 'index' -%}{%- assign home_filter = false -%}{%- endif -%}
+{%- if globo_search or request.page_type == 'collection' or request.page_type == 'search' or home_filter -%}
+{%- assign assets_url = 'product-1.png' | asset_img_url: '50x' | split: 'product-1_50x.png' -%}
+{%- assign files_url  = 'product-1.png' | file_img_url: '50x' | split: 'product-1_50x.png' -%}
+{%- assign primary_locale = 'null' -%}
+{%- for locale in shop.published_locales -%}{%- if locale.primary -%}{%- assign primary_locale = locale.iso_code | json -%}{%- endif -%}{%- endfor -%}
+
+<script>
+  window.sortByRelevance = false;
+  window.moneyFormat = "{{ shop.money_format | replace: '"', "'" }}";
+  window.GloboMoneyFormat = "{{ shop.money_format | replace: '"', "'" }}";
+  window.GloboMoneyWithCurrencyFormat = "{{ shop.money_with_currency_format | replace: '"', "'" }}";
+  window.shopCurrency = "{{ shop.currency }}";
+  window.isMultiCurrency = {% assign is_multicurrency = shop.enabled_currencies | size %}{% if is_multicurrency > 1 and is_multicurrency < 11 and false %}true{% else %}false{% endif %};
+  window.assetsUrl = '{{ assets_url[0] }}';
+  window.filesUrl = '{{ files_url[0] }}';
+  var page_id = {% if request.page_type contains 'collection' %}{% if collection.id %}{{collection.id | default: 1}}{% else %}1{% endif %}{% elsif request.page_type contains 'search' %}2{% else %}0{% endif %};
+  var GloboFilterConfig = {
+    api: {
+      filterUrl: "https://filter-v6.globosoftware.net/filter",
+      searchUrl: "https://filter-v6.globosoftware.net/search",
+      url: "https://filter-v6.globosoftware.net",
+    },
+    shop: {
+      name: "{{ shop.name | escape }}",
+      url: "{{ shop.url }}",
+      domain: "{{ shop.permanent_domain }}",
+      is_multicurrency: {% assign is_multicurrency = shop.enabled_currencies | size %}{% if is_multicurrency > 1 and false %}true{% else %}false{% endif %},
+      currency: {{shop.currency | json}},
+      cur_currency: {{cart.currency.iso_code | json}},
+      cur_locale: {{request.locale.iso_code | json}},
+      locale: {{primary_locale}},
+      product_image: {width: 360, height: 504},
+      no_image_url: "https://cdn.shopify.com/s/images/themes/product-1.png",
+      themeStoreId: 0,
+      swatches: {{ shop.metafields.globo.swatches | json }},
+      translation: {"default":{"search":{"suggestions":"Suggestions","collections":"Collections","pages":"Pages","product":"Product","products":"Products","view_all":"Search for","not_found":"Sorry, nothing found for"},"form":{"title":"Search Products","submit":"Search"},"filter":{"filter_by":"Filter Products","clear_all":"Clear All","view":"View","clear":"Clear","in_stock":"In Stock","out_of_stock":"Out of Stock","ready_to_ship":"Ready to ship","search":"Search options"},"sort":{"sort_by":"Sort By","manually":"Featured","availability_in_stock_first":"Availability","relevance":"Relevance","best_selling":"Best Selling","alphabetically_a_z":"Alphabetically, A-Z","alphabetically_z_a":"Alphabetically, Z-A","price_low_to_high":"Price, low to high","price_high_to_low":"Price, high to low","date_new_to_old":"Date, new to old","date_old_to_new":"Date, old to new","sale_off":"% Sale off"},"product":{"add_to_cart":"Add to cart","unavailable":"Unavailable","sold_out":"Sold out","sale":"Sale","load_more":"Load more","limit":"Show","search":"Search products","no_results":"Sorry, there are no products in this collection"},"labels":{"395504":"Collection","395506":"Product Type","395507":"Price","395508":"Percent Sale","395509":"Availability","395510":"Tag","395511":"Ready To Ship","395512":"Choose Colour","395513":"Choose Colours:","395514":"Choose Diameter:","395515":"Choose Upholstery","395516":"Choose Wood Options","395517":"Choose. Finish","395518":"Choose. Material","395519":"Choose. Materials","395520":"Fabric","395521":"Fibreglass Colour","395522":"Finish","395523":"Marble Options","395524":"Material","395525":"Material - Size","395526":"Piping Option","395527":"Position Of Chaise","395528":"Size","395529":"Title","395530":"Upholstery","395531":"Upholstery*","395532":"Wood Options","395533":"Wood Type","405457":"Collection","405458":"Vendor","405459":"Product Type","405460":"Price","405461":"Percent Sale","405462":"Availability","405463":"Tag","405464":"Ready To Ship","405465":"Choose Colour","405466":"Choose Colours:","405467":"Choose Diameter:","405468":"Choose Upholstery","405469":"Choose Wood Options","405470":"Choose. Finish","405471":"Choose. Material","405472":"Choose. Materials","405473":"Color","405474":"Colors","405475":"Fabric","405476":"Fibreglass Colour","405477":"Finish","405478":"Marble Options","405479":"Material","405480":"Material - Size","405481":"Piping Option","405482":"Position Of Chaise","405483":"Size","405484":"Title","405485":"Upholstery","405486":"Upholstery*","405487":"Wood Options","405488":"Wood Type"}}},
+      redirects: {{ shop.metafields.globo.redirects | json }},
+      images: ["bg.png","card.gift-card.jpg","corner-bottom-left.gift-card.png","corner-bottom-right.gift-card.png","corner-top-left.gift-card.png","corner-top-right.gift-card.png","icon-bug.gift-card.png","icon-email.gift-card.png","icon-print.gift-card.png","jquery.fs.shifter-icon.png","minus.png","multicolor.png","plus.png","select-arrow.png","soldout.png"],
+      settings: {{ settings | json }},
+      home_filter: {{home_filter}},
+      page: {{request.page_type | json}},
+      layout: "theme"
+    },
+    special_countries: null,
+    year_make_model: {
+      id: null
+    },
+    filter: {
+      id: {"default":39084}[page_id] || {"default":39084}['default'] || 0,
+      layout: 3,
+      showCount: 1,
+      isLoadMore: 1,
+      search: {{globo_search}},
+      filter_on_search_page: true
+    },
+    collection: {
+      id: {%- if request.page_type == 'collection' -%}{{ collection.id | default: 0 }}{%- else -%}0{%- endif -%},
+      handle: {%- if request.page_type == 'collection' -%}'{{ collection.handle }}'{%- else -%}''{%- endif -%},
+      sort: {% if request.page_type contains 'collection' %}"{{ collection.default_sort_by | default: 'best-selling' }}"{% elsif request.page_type contains 'search' %}'relevance'{% else %}'best-selling'{% endif %},
+      tags: {% if current_tags %}[{% for tag in current_tags %}{{ tag | json }},{{ tag | handle | json }}{% unless forloop.last %},{% endunless %}{% endfor %}]{% else %}null{% endif %},
+      vendor: {{ collection.current_vendor | json }},
+      type: {{ collection.current_type | json }},
+      term: {{ search.terms | escape | json }},
+      limit: 96,
+      products_count: {{collection.products_count | default: 0}}
+    },
+    customer: {% if customer %}{id: {{customer.id}}, tags: {{customer.tags | json}}}{% else %}false{% endif %},
+    selector: {
+      sortBy: '.collection-sorting',
+      pagination: '.pagination:first, .paginate:first, .pagination-custom:first, #pagination:first, #gf_pagination_wrap',
+      products: '.grid.grid-collage'
+    }
+  };
+
+</script>
+<script defer src="{{ 'v5.globo.filter.lib.js' | asset_url }}"></script>
+{% if request.page_type == 'collection' or request.page_type == 'search' or home_filter or has_form %}<link rel="preload stylesheet" href="{{ 'v5.globo.filter.css' | asset_url }}" as="style">
+{% endif %}
+{% if globo_search %}<link rel="preload stylesheet" href="{{ 'v5.globo.search.css' | asset_url }}" as="style">
+{% endif %}
+{% endif %}
+

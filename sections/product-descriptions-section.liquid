@@ -1,0 +1,153 @@
+{% assign instructions = product.metafields.global %} {% assign key = 'heading-2' %} {% assign key = 'short-description-2' %} {% assign key = 'heading-1' %} {% assign key = 'short-description-1' %} {% assign key = 'description_tag' %} {% assign key = 'product-information' %} {% assign key = 'description-image-1' %} {% assign key = 'description-image-2' %} {% assign key = 'side-image' %}
+{% assign key = 'inspired-by' %}
+
+
+
+
+<div class="row ">
+	<div class="desktop-12">
+		<div class="lifestyle__text center half">
+			<h2>CONTEMPORARY INSPIRATION</h2>
+			<p>
+				 {{ instructions.description_tag }}
+			</p>
+		</div>
+	</div>
+	<div class="desktop-12">
+		<div class="desktop-6">
+			<div class="lifestyle__text1">
+				<h3><strong> {{ instructions.heading-1 }} </strong></h3>
+				<p>
+					 {{ instructions.short-description-1 }}
+				</p>
+			</div>
+		</div>
+		<div class="desktop-6">
+			 {{ instructions.description-image-1 }}
+		</div>
+	</div>
+	<div class="desktop-12 mobile-first">
+		<div class="desktop-6 one-one">
+			 {{ instructions.description-image-2 }}
+		</div>
+		<div class="desktop-6 two-two">
+			<div class="lifestyle__text1">
+				<h3><strong> {{ instructions.heading-2 }} </strong></h3>
+				<p>
+					 {{ instructions.short-description-2 }}
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="background" style=" background: #fafbfa;margin-top: 75px;">
+	<div class="product-info1 row desktop-12" style="padding: 71px 0;">
+		<h2 class="section-title row desktop-12">THE FINER DETAILS </h2>
+		<div class="desktop-12">
+			<div class="desktop-6">
+				<div class="desktop-8">
+					 {%- if instructions.side-image != blank -%} <img class="lifestyle__img lazyloaded" src="{{ instructions.side-image }}">
+					{%- else -%} <img class="lifestyle__img lazyloaded" src="{{ 'bg.png' |  asset_url  }}">
+					{%- endif -%}
+				</div>
+			</div>
+			<div class="desktop-6 main-desc">
+				<h3>Product Details</h3>
+				 {{ product.description }}
+				<h3>Product Information</h3>
+				 {{ instructions.product-information }}
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div id="inspiree" class="desktop-12 inpiredby row">
+  
+ {% assign product_collection = product.collections %}
+	<div class="inner-text desktop-9">
+      <h5>Inspired By</h5>
+  <h1> {{ instructions.inspired-by }}</h1>
+	  
+      
+          {% for collection in product_collection %}
+   
+{% if collection.title == instructions.inspired-by %}
+    {{ collection.description | strip_html }}
+    {% endif %}
+    {% endfor %}
+	</div>
+  
+  <div class="inner-uimage desktop-3">
+	
+    {% for collection in product_collection %}
+  
+    
+    
+     
+{% if collection.title == instructions.inspired-by %}
+  {% if collection.image != blank %}
+  <img class="lifestyle__img lazyloaded" src="{{ collection.image | img_url: 'Grande'}}">
+ {% endif %}
+    {% endif %}
+    {% endfor %}
+    
+    
+
+	</div>
+	
+</div>
+<style>
+div#shopify-section-product-descriptions-section img {
+    width: 100%;
+    border: 1px solid #cccccc6b;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+  .lifestyle__text.center.half {
+    width: 50%;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+  div#shopify-section-product-descriptions-section .desktop-12 {
+    margin-top: 20px;
+}
+  h3 {
+    text-transform: uppercase;
+}
+  .lifestyle__text1 {
+    vertical-align: middle;
+    display: block;
+    padding: 10%;
+}
+  .product-info1.row.desktop-12 img {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+  .desktop-12.inpiredby.row {
+    padding-top: 50px;
+}
+  div#shopify-section-product-descriptions-section img {
+    width: 100%;
+    border: 1px solid #cccccc6b;
+    padding: 30px;
+    margin-bottom: 30px;
+    max-height: 530px;
+    width: auto;
+    margin: 0 auto !important;
+    text-align: center;
+    align-items: center;
+    display: table;
+}
+</style>
+{% schema %}
+  {
+    "name": "Section name",
+    "settings": []
+  }
+{% endschema %}
+{% stylesheet %}
+{% endstylesheet %}
+{% javascript %}
+{% endjavascript %}

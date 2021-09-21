@@ -1,0 +1,105 @@
+<input type="hidden" name="product_url" id="product_url" value="{{ product.title | handle }}">
+  {% form 'product', product, id: "AddToCartForm", class: "product_form", data-product-form:product_form_config, data-product-id: product.id %}
+
+    {% render 'product-price', variant: current_variant, product: product %}
+<!--   <a class="sprs" href="#product-reviews"> <span class="shopify-product-reviews-badge" data-id="{{ product.id }}">    </span></a> -->
+        
+    {% if product.options.size > 1 %}
+     <div class="select" {% if product.variants.size == 1 or section.settings.product_variants == 'swatches' %}style="display: none;"{% endif %}>
+       <select id="{{ section.id }}-product-select-{{ product.id }}" name='id'>
+         {% for variant in product.variants %}
+           <option value="{{ variant.id }}" {% if variant == current_variant %}selected="selected"{% endif %}>
+             {{ variant.title }} - {{ variant.price | money }}
+           </option>
+         {% endfor %}
+       </select>
+     </div>
+      {% if section.settings.product_variants == 'swatches' %}
+        {% for option in product.options_with_values %}
+          {% render "swatch", product: product, option: option, current_variant: current_variant %}
+        {% endfor %}
+      {% endif %}
+    {% elsif product.options.size == 1 and product.variants.size > 0 %}
+    <div class="select" {% if product.variants.size == 1 or section.settings.product_variants == 'swatches' %}style="display: none;"{% endif %}>
+       <label>{{ product.options[0] }}</label>
+       <select id="{{ section.id }}-product-select-{{ product.id }}" name='id'>
+         {% for variant in product.variants %}
+           <option data-sku="{{ variant.sku }}" value="{{ variant.id }}" {% if variant == current_variant %}selected="selected"{% endif %}>
+             {{ variant.title }} - {{ variant.price | money }}
+           </option>
+         {% endfor %}
+       </select>
+     </div>
+     {% if section.settings.product_variants == 'swatches' %}
+       {% for option in product.options_with_values %}
+         {% render "swatch", product: product, option: option, current_variant: current_variant, index: forloop.index %}
+       {% endfor %}
+     {% endif %}
+    {% else %}
+     <div class="what-is-it">
+       {% if product.options.first != 'Title' %}
+         <label>{{ product.options.first }}:</label>
+         {% for variant in product.variants %}
+           <span class="it-is">{{ variant.option1 | escape }}</span>
+         {% endfor %}
+       {% endif %}
+     </div>
+     <div class="product-variants"></div><!-- product variants -->
+     <input  type="hidden" id="{{ variant.id }}" name="id" data-sku="{{ variant.sku }}" value="{{ product.variants[0].id }}" />
+    {% endif %}
+
+    {% if show_sku %}
+      <div class="sku">
+        <label style="display: inline-block; line-height: 1.6em;">{{ 'customer.order.details.sku' | t }}:</label> <span class="variant_sku">{{ current_variant.sku }}</span>
+      </div><div class="clear"></div>
+    {% endif %}
+
+    {% if section.settings.show_quantity_selector %}
+     <div class="product-qty selector-wrapper">
+        <h5>{{ 'products.product.quantity' | t }}</h5>
+        <a class="downer quantity-control-down">-</a>
+        <input min="1" type="text" name="quantity" class="product-quantity" value="1" {% if current_variant.inventory_management == 'shopify' %}{% unless current_variant.inventory_policy == 'continue' %} max="{{ current_variant.inventory_quantity }}" {% endunless %}{% endif %} />
+        <a class="up quantity-control-up">+</a>
+     </div>
+     <div class="clear"></div>
+   {% endif %}
+
+
+<div class="js-shipping" style="padding: 10px 0;">Ships in 6 weeks</div>
+
+
+    {% if current_variant.available %}
+      <div class="product-add">
+        <input id="AddToCart" type="submit" name="button" class="add{% if section.settings.show_payment_button and product.selling_plan_groups.size == 0 %} secondary-button{% endif %}" value="{{ 'products.product.add_to_cart' | t }}" />
+      </div>
+    {% else %}
+      <div class="product-add">
+        <input id="AddToCart" type="submit" name="button" class="add{% if section.settings.show_payment_button and product.selling_plan_groups.size == 0 %} secondary-button{% endif %}" value="{{ 'products.product.sold_out' | t }}" />
+      </div>
+    {% endif %}
+
+    {% if section.settings.show_payment_button %}
+      {{ form | payment_button }}
+    {% endif %}
+
+    {% if section.settings.back_in_stock %}
+    <div class="back_in_stock"{% if current_variant.available %} style="display: none"{% endif %}>
+        {{ section.settings.back_in_stock_text }}
+        {%- assign vnt = variant.title -%}
+        {% if product.available == false %}
+        <script>
+        $(".back_in_stock").click(function(){
+          event.stopPropagation();
+          $(".back-in-stock-snippet").toggle();
+        });
+        </script>
+      {% endif %}
+    </div>
+    {% endif %}
+
+
+{% endform %}
+
+{% if section.settings.back_in_stock %}
+{% render 'back-in-stock-form', product: product %}
+{% endif %}

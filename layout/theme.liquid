@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head><!-- <bablic_snippet> --><script src="//d.bablic.com/snippet/60c0a4cded07dc00010fb888.js?version=4.0"></script><!-- </bablic_snippet> -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Establish early connection to external domains -->
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+ 
+  <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.shopify.com" crossorigin>
+  <link rel="preconnect" href="https://monorail-edge.shopifysvc.com">
+  <link rel="preconnect" href="//ajax.googleapis.com" crossorigin />
+ 
+
+  {%- assign main_font = settings.main_font -%}
+  {%- assign heading_font = settings.heading_font -%}
+  {%- assign nav_font = settings.nav_font -%}
+  {%- assign main_font_bold = main_font | font_modify: 'weight', 'bolder' -%}
+  {%- assign main_font_italic = main_font | font_modify: 'style', 'italic' -%}
+  {%- assign main_font_bold_italic = main_font_bold | font_modify: 'style', 'italic' -%}
+
+  <!-- Preload onDomain stylesheets and script libraries -->
+  <link rel="preload" href="{{ 'stylesheet.css' | asset_url }}" as="style">
+  <link rel="preload" href="{{ 'queries.css' | asset_url }}" as="style">
+  <link rel="preload" as="font" href="{{ main_font | font_url }}" type="font/woff2" crossorigin>
+  <link rel="preload" as="font" href="{{ nav_font | font_url }}" type="font/woff2" crossorigin>
+  <link rel="preload" as="font" href="{{ heading_font | font_url }}" type="font/woff2" crossorigin>
+  <link rel="preload" href="{{ 'eventemitter3.min.js' | asset_url }}" as="script">
+  <link rel="preload" href="{{ 'theme.js' | asset_url }}" as="script">
+  <link rel="preload" href="{{ 'option_selection.js' | shopify_asset_url }}" as="script">
+  <link rel="preload" href="{{ 'ls.rias.min.js' | asset_url }}" as="script">
+  <link rel="preload" href="{{ 'ls.bgset.min.js' | asset_url }}" as="script">
+  <link rel="preload" href="{{ 'lazysizes.min.js' | asset_url }}" as="script">
+  <link rel="preload" href="{{ 'jquery.fancybox.js' | asset_url }}" as="script">
+
+  {% if settings.favicon %}<link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png" />{% endif %}
+  <link rel="canonical" href="{{ canonical_url }}" />
+
+  <title>{% if template == 'index' %}{% if page_title contains 'Welcome' %}{{ shop.name }} &ndash; Welcome{% else %}{{ page_title }}{% endif %}{% elsif template == '404' %}Page Not Found{% elsif page_title contains shop.name %}{{ page_title }}{% else %}{{ page_title }} &ndash; {{ shop.name }}{% endif %}</title>
+  {% if page_description %}<meta name="description" content="{{ page_description }}" />{% endif %}
+
+  {% render 'social-media-meta-tags' %}
+  {% render 'structured-data' %}
+  {% render 'css-variables' %}
+
+  <link rel="stylesheet" href="{{ 'stylesheet.css' | asset_url }}" type="text/css">
+  <link rel="stylesheet" href="{{ 'queries.css' | asset_url }}" type="text/css">
+  <link rel="stylesheet" href="{{ 'custom.css' | asset_url }}" type="text/css">
+
+  <style>
+  {{ main_font | font_face: font_display: 'swap' }}
+  {{ nav_font | font_face: font_display: 'swap' }}
+  {{ heading_font | font_face: font_display: 'swap' }}
+  {{ main_font_bold | font_face: font_display: 'swap' }}
+  {{ main_font_italic | font_face: font_display: 'swap' }}
+  {{ main_font_bold_italic | font_face: font_display: 'swap' }}
+  </style>
+
+  {% if template contains 'customers' %}
+  {{ "shopify_common.js" | shopify_asset_url | script_tag }}
+  {{ "customer_area.js"  | shopify_asset_url | script_tag }}
+  {% endif %}
+
+  {% include 'globo.filter.script' %}{{ content_for_header }}
+  
+  {{ 'theme-style.css' | asset_url | stylesheet_tag }}
+
+</head>
+<body class="gridlock shifter-left {{ template | handleize }} js-slideout-toggle-wrapper">
+  <div class="js-slideout-overlay site-overlay"></div>
+  {% if settings.ajax_cart_method == 'drawer' %}
+    {% render 'timber-cart' %}
+  {% endif %}
+
+  <aside class="slideout slideout__drawer-left" data-wau-slideout="mobile-navigation" id="slideout-mobile-navigation">
+    {% section 'mobile-navigation' %}
+  </aside>
+ {% section 'header' %}
+  <main class="site-wrap {% if settings.ajax_cart_method == 'drawer' %} is-moved-by-drawer{% endif %}" role="main">
+
+   
+    <div class="page-wrap">
+    {% if settings.scrolling_bar_position == 'header' %}
+      {% section 'scrolling-announcements' %}
+    {% endif %}
+
+      {% if template == 'index' or template contains 'blog' or template contains 'collection' or template contains 'page' or template contains 'product' %}
+        {{ content_for_layout }}
+      {% else %}
+       {% render 'breadcrumb' %}
+        <div id="content" class="row">
+         
+          {{ content_for_layout }}
+        </div>
+      {% endif %}
+    </div>
+
+    
+
+    {% if settings.scrolling_bar_position == 'above_footer' %}
+      {% section 'scrolling-announcements' %}
+    {% endif %}
+ {% section 'newsletter' %}
+    {% section 'footer' %}
+
+    {% if settings.scrolling_bar_position == 'below_footer' %}
+      {% section 'scrolling-announcements' %}
+    {% endif %}
+
+  </main>
+
+  <script src="{{'//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js' }}"></script>
+  <script src="{{ 'eventemitter3.min.js' | asset_url }}"></script>
+  <script src="{{ 'theme.js' | asset_url }}"></script>
+  <script src="{{ 'option_selection.js' | shopify_asset_url }}"></script>
+
+  <a href="#" class="scrollup"><i class="la la-chevron-up" aria-hidden="true"></i> TOP</a>
+  {% if settings.popup %}
+  {% render 'popup' %}
+  {% endif %}
+  <div class="fancybox-wrapper"></div>
+  <div class="clear"></div>
+
+  <!-- Ajax Cart -->
+  {{ 'handlebars.min.js' | asset_url | script_tag }}
+  {% render 'ajax-cart-template' %}
+
+  {% if settings.ajax_cart_method == 'drawer' %}
+    {{ 'ajax-cart.js' | asset_url | script_tag }}
+    <script>
+      jQuery(function($) {
+        ajaxCart.init({
+          formSelector: '[data-product-form]',
+          cartContainer: '#CartContainer',
+          addToCartSelector: '#AddToCart',
+          cartCountSelector: '.CartCount',
+          cartCostSelector: '.CartCost',
+          moneyFormat: {{ shop.money_format | json }}
+        });
+        });
+        {% if settings.ajax_cart_method == 'drawer' %}
+        jQuery('body').on('ajaxCart.afterCartLoad', function(evt, cart) {
+          // Bind to 'ajaxCart.afterCartLoad' to run any javascript after the cart has loaded in the DOM
+          timber.RightDrawer.open();
+        });
+        {% endif %}
+        {% if settings.show_multiple_currencies %}
+        jQuery('body').on('ajaxCart.afterCartLoad', function(evt, cart) {
+          // Convert currency when ajaxcart opens
+          Currency.convertAll(shopCurrency, Currency.currentCurrency);
+        });
+        {% endif %}
+    </script>
+  {% else %}
+    {% render 'ajaxify-cart' %}
+  {% endif %}
+
+  <!-- No JS -->
+  <script>
+    function loadJS(u) {
+        var r = document.getElementsByTagName("script")[0],
+            s = document.createElement("script");
+        s.src = u;
+        r.parentNode.insertBefore(s, r);
+    }
+  </script>
+  <script>
+      document.documentElement.className =
+         document.documentElement.className.replace("no-js","js");
+  </script>
+
+  <script src="{{ 'ls.rias.min.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'ls.bgset.min.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'lazysizes.min.js' | asset_url }}" defer="defer"></script>
+
+  <script>
+    if (!window.HTMLPictureElement) {
+      loadJS("https://afarkas.github.io/lazysizes/plugins/respimg/ls.respimg.min.js");
+    }
+  </script>
+
+  <!-- JS Variable Helpers -->
+  <script>
+      var template = {{ template | json }};
+  </script>
+
+   <script src="{{ 'jquery.fancybox.js' | asset_url }}" defer="defer"></script>
+  <script>
+   AOS.init();
+ </script>
+  
+  
+{% include 'globo.filter.action' %}
+  <script>    
+    function filterCollection(){
+      var body = $('html').attr("class");
+      
+      if(body.indexOf("offcanvas-open")!=-1){        
+      }else{
+        $('html').addClass("offcanvas-open");  
+        $(".gf-option-block").addClass("is-collapsed");
+        $(".gf-option-405457").removeClass("is-collapsed");
+        var targetOffset = $(".gf-option-405457").offset().top;
+            $('#gf-tree').animate({scrollTop: targetOffset - 30}, 1000);
+      }
+    }
+    function filterColoropen(){
+      var body = $('html').attr("class");
+      if(body.indexOf("offcanvas-open")!=-1){        
+      }else{
+        $('html').addClass("offcanvas-open");  
+        $(".gf-option-block").addClass("is-collapsed");
+        $(".gf-option-405473").removeClass("is-collapsed");
+      }
+    }
+    function filterReadytoship(){
+      var body = $('html').attr("class");
+      if(body.indexOf("offcanvas-open")!=-1){        
+      }else{
+        $('html').addClass("offcanvas-open");  
+        $(".gf-option-block").addClass("is-collapsed");
+        $(".gf-option-405464").removeClass("is-collapsed");
+      }
+    }
+    
+    function filterMaterial(){
+       var body = $('html').attr("class");
+        if(body.indexOf("offcanvas-open")!=-1){        
+        }else{
+          $('html').addClass("offcanvas-open");  
+          $(".gf-option-block").addClass("is-collapsed");
+          $(".gf-option-405479").removeClass("is-collapsed");
+          var targetOffset = $(".gf-option-405479").offset().top;
+            $('#gf-tree').animate({scrollTop: targetOffset - 30}, 1000);
+        }
+    }
+    function filterPriceRange(){
+       var body = $('html').attr("class");
+        if(body.indexOf("offcanvas-open")!=-1){        
+        }else{
+          $('html').addClass("offcanvas-open");  
+          $(".gf-option-block").addClass("is-collapsed");
+          $(".gf-option-405460").removeClass("is-collapsed");
+        }
+    }
+   
+  </script>
+	
+	{% include 'gsc-script' %} 
+</body>
+</html>
