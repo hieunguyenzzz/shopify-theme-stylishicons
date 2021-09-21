@@ -2311,10 +2311,11 @@ theme.StaticGallery = function (context, sectionId, events, Product) {
 
     function thumbnailSlider() {
       $carouselNav.flickity({
-        asNavFor: '.carousel-main',
+        asNavFor:$carousel[0],
         contain: true,
-        pageDots: false,
-        cellAlign: 'right'
+        pageDots: false,cellAlign: 'center',
+        freeScroll: true,
+        freeScrollFriction: 0.03
       });
     }
 
@@ -2327,13 +2328,13 @@ theme.StaticGallery = function (context, sectionId, events, Product) {
         navHeight = $carouselNav.height();
 
     /* on thumbnail click and key enter */
-    $carouselNav.on( 'click', '.carousel-cell', function(event){
-      var index = $( event.currentTarget ).index();
-      var $el = $(this);
-      var mediaId = $el.data('image-id');
+    // $carouselNav.on( 'click', '.carousel-cell', function(event){
+    //   var index = $( event.currentTarget ).index();
+    //   var $el = $(this);
+    //   var mediaId = $el.data('image-id');
 
-      $carousel.flickity( 'select', index );
-    });
+    //   $carousel.flickity( 'select', index );
+    // });
 
     $carouselNav.on( 'keypress', '.carousel-cell', function(event){
       if(event.which == 13){ //Enter key pressed
