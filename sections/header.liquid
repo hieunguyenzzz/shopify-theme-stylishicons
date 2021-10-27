@@ -26,7 +26,7 @@ data-sticky="{{ section.settings.enable_sticky_header }}">
       
      <ul id="top_nav" class="span-4 desktop-3 tablet-6 mobile-3">
        
-       <li><b><span>★ ★ ★ ★ ☆</span> 2,926 VERIFIED REVIEWS</b></li>
+       <li><b><span>★ ★ ★ ★ ☆</span> {{ section.settings.announcement_bar_verified_reviews_number }} VERIFIED REVIEWS</b></li>
        
       </ul>
       {% endif %}
@@ -337,6 +337,12 @@ data-sticky="{{ section.settings.enable_sticky_header }}">
       {
         "type": "header",
         "content": "Announcement Bar"
+      },
+      {
+        "type": "text",
+        "id": "announcement_bar_verified_reviews_number",
+        "label": "Verified reviews number",
+        "default": "100'S"
       },
       {
         "type": "checkbox",
