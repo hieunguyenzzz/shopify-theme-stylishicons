@@ -4221,7 +4221,7 @@
     "section_title_align": "center",
     "section_titles": "short_below",
     "border-width": 100,
-    "scroll_animation": "fade-up",
+    "scroll_animation": "none",
     "section_padding": 100,
     "rounded_buttons": true,
     "breadcrumb": true,
