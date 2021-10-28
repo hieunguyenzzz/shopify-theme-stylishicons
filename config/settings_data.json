@@ -5837,10 +5837,65 @@
       },
       "1635413768a1194b60": {
         "type": "instagram",
+        "blocks": {
+          "55b64e72-226e-400d-9ac8-24969f755896": {
+            "type": "item",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/PK20-Chairs_2a6e074a-2090-4096-b79d-50972a72fc7c.png",
+              "url": "\/"
+            }
+          },
+          "649a2270-c345-4c3f-ba73-48f83fc5b273": {
+            "type": "item",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Wishbone-Table_e7879689-0916-47ae-81f3-6a43a55810aa.jpg",
+              "url": "\/"
+            }
+          },
+          "6ed701a1-4247-48a4-9c0e-c4938d02ce2c": {
+            "type": "item",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Wishbone-Table.jpg",
+              "url": "\/"
+            }
+          },
+          "a4ea7b7d-1eaf-4a26-a479-bd9a38bea129": {
+            "type": "item",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Wishbone_Y_Chair_-_CH24_-_Walnut_-_Black_Cord.jpg",
+              "url": "\/"
+            }
+          },
+          "baad3290-fc08-4880-ad37-cc98e4ac9998": {
+            "type": "item",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/master-banner.jpg",
+              "url": "\/"
+            }
+          }
+        },
+        "block_order": [
+          "55b64e72-226e-400d-9ac8-24969f755896",
+          "649a2270-c345-4c3f-ba73-48f83fc5b273",
+          "6ed701a1-4247-48a4-9c0e-c4938d02ce2c",
+          "a4ea7b7d-1eaf-4a26-a479-bd9a38bea129",
+          "baad3290-fc08-4880-ad37-cc98e4ac9998"
+        ],
         "settings": {
           "bgColor": "#ffffff",
           "heading": "Shop Instagram",
           "description": "<p>Less than humble about your abode? Mention @interior_icons in your photos and we'll feature the best pics on our site.<\/p>"
+        }
+      },
+      "1635419372bc88c051": {
+        "type": "text-with-custom",
+        "settings": {
+          "bgColor": "#eef5f1",
+          "heading": "Here We Are",
+          "description": "<p>Our team love great furniture. Part of that passion means making it available to everyone at affordable prices. From developers to designers, or customer service reps to quality engineers, each branch of the Desiger Icons team is committed to producing the best furniture at incredible prices. Our global family takes in diverse skills and attitudes, but we all share a love of iconic furniture and the desire to make it accessible to all.<\/p>",
+          "url": "\/",
+          "urlText": "Learn More",
+          "liquid": "<figure class=\"customdiagram tc\">\n      \n        \n        \n<style type=\"text\/css\">\n.customdiagram svg{\nwidth:300px;\nheight:500px;\nmargin:auto\n}\n  #chart-bar-1{\n    height: 0px;\n  }\n  #chart-bar-1.go{\n    animation: chart1 1s forwards;\n    -webkit-animation: chart1 1s forwards;\n  }\n  #chart-bar-2{\n    height: 0px;\n  }\n  #chart-bar-2.go{\n    animation: chart2 1s forwards;\n    -webkit-animation: chart2 1s forwards;\n  }\n  @keyframes chart1 {\n    100% {\n      height: 107px;\n    }\n  }\n  @keyframes chart2 {\n    100% {\n      height: 360px;\n    }\n  }\n  @-webkit-keyframes chart1 {\n    100% {\n      height: 107px;\n    }\n  }\n  @-webkit-keyframes chart2 {\n    100% {\n      height: 360px;\n    }\n  }\n<\/style>\n\n<svg id=\"diagram\" viewbox=\"0 0 290 472\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\">\n    <g id=\"svg\" stroke=\"none\" stroke-width=\"1\" fill=\"#000000\" fill-rule=\"evenodd\">\n    \t<g id=\"left\">\n        \t<rect id=\"chart-bar-1\" class=\"animateThis go\" x=\"0\" y=\"283\" width=\"132\" height=\"107\" rx=\"3\" transform=\"scale(1,-1) translate(0,-676)\">\n            <\/rect>\n            <text>\n                <tspan x=\"19.68\" y=\"425\">Interior Icons<\/tspan>\n            <\/text>\n            <text font-weight=\"bold\">\n                <tspan x=\"47.384\" y=\"263\">$999<\/tspan>\n            <\/text>\n        <\/g>\n        <g id=\"right\" transform=\"translate(152,0)\">\n            <rect id=\"chart-bar-2\" class=\"animateThis go\" fill=\"#EEE6E2\" x=\"0\" y=\"33\" width=\"132\" height=\"360\" rx=\"3\" transform=\"scale(1,-1) translate(0,-426)\">\n            <\/rect>\n            <text>\n                <tspan x=\"29.464\" y=\"425\">Traditional<\/tspan>\n            <\/text>\n            <text font-weight=\"bold\">\n                <tspan x=\"36.56\" y=\"17\">$4,000*<\/tspan>\n            <\/text>\n        <\/g>\n        <text transform=\"translate(70,470)\" font-size=\"9\" fill=\"#64615F\">\n        \t<tspan>*the price for a Fritz Hansen Egg chair<\/tspan>\n        <\/text>\n    <\/g>\n<\/svg>\n      \n    <\/figure>"
         }
       }
     },
@@ -5854,6 +5909,7 @@
       "16195080989caa835d",
       "163541368248f9d2e8",
       "1635413768a1194b60",
+      "1635419372bc88c051",
       "1620633756016f4844",
       "161890494913acaf20",
       "162159895992baa653"
