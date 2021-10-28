@@ -4,12 +4,12 @@
     "main": "index.js",
     "license": "MIT",
     "scripts": {
-        "dev:style": "npx tailwindcss -i ./src/tailwind/main.css -c ./src/tailwind.config.js -o ./shopify/assets/style.css -w",
+        "dev:style": "npx tailwindcss -i ./src/tailwind/main.css -c ./src/tailwind.config.js -o ./assets/style.css -w",
         "dev": "run-p -sr dev:* shopify:serve ",
-        "deploy": "cd shopify && shopify theme push",
-        "deploy:new": "run-s cd shopify && shopify theme push --unpublished",
-        "shopify:serve": "cd shopify && shopify theme serve",
-        "shopify:pull": "cd shopify && shopify theme pull"
+        "deploy": "shopify theme push",
+        "deploy:new": "shopify theme push --unpublished",
+        "shopify:serve": "shopify theme serve",
+        "shopify:pull": "shopify theme pull"
     },
     "dependencies": {
         "@tailwindcss/aspect-ratio": "^0.3.0",
