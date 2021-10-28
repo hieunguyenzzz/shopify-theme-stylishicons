@@ -93,8 +93,8 @@
  @media screen and (min-width:1420px) {
   .gridlock .row {
     width: 1280px;
-    padding-left: 3rem;
-     padding-right: 3rem;
+    /* padding-left: 3rem; */
+    /* padding-right: 3rem; */
   }
  }
  

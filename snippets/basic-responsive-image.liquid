@@ -7,6 +7,8 @@
       id="{{ type.id }}"
       data-src="{{ img_url }}"
       data-sizes="auto"
+      width="{{ type.image.width }}"
+      height="{{ type.image.height }}"
       data-original="{{ type | img_url: '500x' }}"
       {%- if data_widths != blank -%}data-widths="{{ data_widths }}"{%- endif -%}
       alt="{{ type.alt | escape }}">
