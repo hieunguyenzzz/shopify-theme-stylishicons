@@ -4907,7 +4907,7 @@
           "collection": "2-seater-sofa",
           "carousel": true,
           "grid": 4,
-          "limit": 4
+          "limit": 12
         }
       },
       "product-recommendations": {
@@ -5824,29 +5824,36 @@
           "expand_questions": false
         }
       },
-      "16266318644aacc348": {
-        "type": "featured-collection",
+      "163541368248f9d2e8": {
+        "type": "text-image",
         "settings": {
-          "full_width": false,
-          "heading": "The Bestsellers",
-          "heading_color": "#000000",
-          "background_color": "#ffffff",
-          "collection": "2-seater-sofa",
-          "carousel": false,
-          "grid": 2,
-          "limit": 6
+          "bgColor": "#eef5f1",
+          "image": "shopify:\/\/shop_images\/who-we-are.jpg",
+          "heading": "Here We Are",
+          "description": "<p>Our team love great furniture. Part of that passion means making it available to everyone at affordable prices. From developers to designers, or customer service reps to quality engineers, each branch of the Desiger Icons team is committed to producing the best furniture at incredible prices. Our global family takes in diverse skills and attitudes, but we all share a love of iconic furniture and the desire to make it accessible to all.<\/p>",
+          "url": "\/",
+          "urlText": "Learn More"
+        }
+      },
+      "1635413768a1194b60": {
+        "type": "instagram",
+        "settings": {
+          "bgColor": "#ffffff",
+          "heading": "Shop Instagram",
+          "description": "<p>Less than humble about your abode? Mention @interior_icons in your photos and we'll feature the best pics on our site.<\/p>"
         }
       }
     },
     "content_for_index": [
       "16188954225e385108",
       "1559084715445",
-      "16266318644aacc348",
       "1618896363be3841e6",
       "161889932583d927ec",
       "1618900529d0ebe344",
       "1619102614752e1fbd",
       "16195080989caa835d",
+      "163541368248f9d2e8",
+      "1635413768a1194b60",
       "1620633756016f4844",
       "161890494913acaf20",
       "162159895992baa653"
