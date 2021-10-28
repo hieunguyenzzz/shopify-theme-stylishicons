@@ -7,7 +7,7 @@
     </div>
   {% endif %}
 
-  <div class="custom-content row">
+  <div class="custom-content row tw-flex tw-items-center">
     {%- assign block_width_mobile = '' -%}
 
     {% for block in section.blocks %}
@@ -76,7 +76,7 @@
                   <h4 class="h3">{{ block.settings.title | escape }}</h4>
                 {% endif %}
                 {% if block.settings.text != blank %}
-                  <div class="rte-setting rte">{{ block.settings.text }}</div>
+                  <div class="rte-setting rte tw-max-w-sm">{{ block.settings.text }}</div>
                 {% endif %}
               </div>
             {% when 'video' %}
