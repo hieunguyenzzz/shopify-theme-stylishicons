@@ -5322,6 +5322,7 @@
         "blocks": {
           "a36bab3d-bbad-4df0-90d0-17841030cafd": {
             "type": "quote",
+            "disabled": true,
             "settings": {
               "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers. Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
               "title1": "<div class=\"review-stars\">★ ★ ★ ★ ☆<\/div>Easy ordering process",
