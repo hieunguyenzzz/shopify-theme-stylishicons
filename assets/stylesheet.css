@@ -1121,7 +1121,8 @@
   src: url("https://fonts.shopifycdn.com/karla/karla_n4.187fb228d0a8055289c8663e90433b4a50e86848.woff2?&hmac=ffe3e015e666d2019f4e12cb37922856fae8b1ac9dbaf0a9d0d6c7aad7626a4f") format("woff2"),
        url("https://fonts.shopifycdn.com/karla/karla_n4.24ba61101c1ba185880bec9c74d8e7cdb826ad49.woff?&hmac=78989244295ec5ecbdae9447111d9a01ae2f46d9d622aa16d6e7963fdaeb7982") format("woff");
 }
-
+
+
  
  
  
@@ -11903,7 +11904,7 @@ font-size:15px !important;
  .icon {
      display: inline-block;
      font: normal normal normal 14px/1 ii-icons;
-     font-size: inherit
+     font-size: inherit;
  }
  
  /* .icon-flip-h {

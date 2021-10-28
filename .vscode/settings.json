@@ -1,3 +1,27 @@
 {
-  "editor.formatOnSave": false
+  "editor.defaultFormatter": "sissel.shopify-liquid",
+  "liquid.format": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": false,
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": false
+    },
+  },
+  "[liquid]": {
+    "editor.defaultFormatter": "sissel.shopify-liquid",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": false
+    },
+  },
+  "git.ignoreLimitWarning": true,
+  "editor.formatOnSave": false,
+  "files.associations": {
+    "*.liquid": "html"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 }

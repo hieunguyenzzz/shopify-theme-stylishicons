@@ -21,6 +21,7 @@
   {%- assign main_font_bold_italic = main_font_bold | font_modify: 'style', 'italic' -%}
 
   <!-- Preload onDomain stylesheets and script libraries -->
+  <link rel="preload" href="{{ 'style.css' | asset_url }}" as="style">
   <link rel="preload" href="{{ 'stylesheet.css' | asset_url }}" as="style">
   <link rel="preload" href="{{ 'queries.css' | asset_url }}" as="style">
   <link rel="preload" as="font" href="{{ main_font | font_url }}" type="font/woff2" crossorigin>
@@ -44,6 +45,7 @@
   {% render 'structured-data' %}
   {% render 'css-variables' %}
 
+  <link rel="stylesheet" href="{{ 'style.css' | asset_url }}" type="text/css">
   <link rel="stylesheet" href="{{ 'stylesheet.css' | asset_url }}" type="text/css">
   <link rel="stylesheet" href="{{ 'queries.css' | asset_url }}" type="text/css">
   <link rel="stylesheet" href="{{ 'custom.css' | asset_url }}" type="text/css">
