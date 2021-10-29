@@ -666,8 +666,8 @@ video {
   margin-left: auto;
 }
 
-.tw-mt-6 {
-  margin-top: 1.5rem;
+.tw-mb-0 {
+  margin-bottom: 0px;
 }
 
 .tw-block {
@@ -676,6 +676,10 @@ video {
 
 .tw-flex {
   display: flex;
+}
+
+.tw-h-72 {
+  height: 18rem;
 }
 
 .tw-h-12 {
@@ -690,20 +694,20 @@ video {
   height: 2.5rem;
 }
 
-.tw-w-12 {
-  width: 3rem;
-}
-
 .tw-w-full {
   width: 100%;
 }
 
-.tw-w-10 {
-  width: 2.5rem;
-}
-
 .tw-w-40 {
   width: 10rem;
+}
+
+.tw-w-12 {
+  width: 3rem;
+}
+
+.tw-w-10 {
+  width: 2.5rem;
 }
 
 .tw-max-w-sm {
@@ -716,10 +720,6 @@ video {
 
 .tw-max-w-prose {
   max-width: 65ch;
-}
-
-.tw-max-w-\[200px\] {
-  max-width: 200px;
 }
 
 .tw-flex-1 {
@@ -738,14 +738,6 @@ video {
 
 .tw-flex-col {
   flex-direction: column;
-}
-
-.tw-flex-wrap {
-  flex-wrap: wrap;
-}
-
-.tw-items-end {
-  align-items: flex-end;
 }
 
 .tw-items-center {
@@ -828,6 +820,10 @@ video {
   padding-top: 1.5rem;
 }
 
+.tw-pt-16 {
+  padding-top: 4rem;
+}
+
 .tw-text-center {
   text-align: center;
 }
@@ -839,6 +835,11 @@ video {
 .tw-text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.tw-text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .tw-text-lg {
@@ -868,16 +869,6 @@ video {
   text-decoration: underline;
 }
 
-.tw-grayscale-0 {
-  --tw-grayscale: grayscale(0);
-  filter: var(--tw-filter);
-}
-
-.tw-grayscale {
-  --tw-grayscale: grayscale(100%);
-  filter: var(--tw-filter);
-}
-
 .tw-filter {
   filter: var(--tw-filter);
 }
@@ -892,19 +883,7 @@ video {
   filter: var(--tw-filter);
 }
 
-.hover\:tw-filter:hover {
-  filter: var(--tw-filter);
-}
-
 @media (min-width: 768px) {
-  .md\:tw-w-auto {
-    width: auto;
-  }
-
-  .md\:tw-items-start {
-    align-items: flex-start;
-  }
-
   .md\:tw-items-center {
     align-items: center;
   }
@@ -919,10 +898,6 @@ video {
     width: auto;
   }
 
-  .lg\:tw-w-\[500px\] {
-    width: 500px;
-  }
-
   .lg\:tw-grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -931,8 +906,8 @@ video {
     flex-direction: row;
   }
 
-  .lg\:tw-flex-col {
-    flex-direction: column;
+  .lg\:tw-items-start {
+    align-items: flex-start;
   }
 
   .lg\:tw-items-end {
@@ -945,10 +920,6 @@ video {
 
   .lg\:tw-p-8 {
     padding: 2rem;
-  }
-
-  .lg\:tw-pt-0 {
-    padding-top: 0px;
   }
 
   .lg\:tw-text-left {
@@ -964,4 +935,10 @@ video {
   .xl\:tw-max-w-7xl {
     max-width: 80rem;
   }
+}
+
+img,
+video {
+  max-width: unset;
+  height: auto;
 }
