@@ -4381,10 +4381,14 @@
           "f5df0d2c-0f64-40e0-b769-25bb44eb7480": {
             "type": "text",
             "settings": {
-              "title": "DESIGNER ICONS",
+              "title": "",
               "footer_text": "<p> <\/p>",
               "image": "shopify:\/\/shop_images\/Google_Reviews.jpg",
-              "image2": "shopify:\/\/shop_images\/Screenshot_24.png"
+              "imageUrl": "\/",
+              "imageUrl1": "\/",
+              "image2": "shopify:\/\/shop_images\/Screenshot_24.png",
+              "imageUrl2": "\/",
+              "imageUrl3": "\/"
             }
           }
         },
@@ -5440,6 +5444,7 @@
           "162159895992baa653-1"
         ],
         "settings": {
+          "heading": "Our customers",
           "full_width": false,
           "promo_background_color": "#ffffff",
           "text_color": "#000000",
