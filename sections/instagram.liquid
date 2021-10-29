@@ -13,7 +13,7 @@
     {% capture items %}
         {% for block in section.blocks %}
             <a href="{{block.settings.url}}" class="keen-slider__slide">
-                {% render '[image]'  image: block.settings.image  data_widths: '[180, 360, 540, 720, 900]' %}
+                {% render '[image]' image_box_ratio:'100%'  image: block.settings.image  data_widths: '[180, 360, 540, 720, 900]' %}
             </a>
         {% endfor %}
     {% endcapture %}
