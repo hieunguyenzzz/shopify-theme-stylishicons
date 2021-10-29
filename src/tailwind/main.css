@@ -2,3 +2,9 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 @import "tailwindcss/variants";
+
+img,
+video {
+  max-width: unset;
+  height: auto;
+}

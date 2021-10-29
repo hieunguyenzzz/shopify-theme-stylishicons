@@ -2,18 +2,16 @@
     --section-bg:{{section.settings.bgColor}}
 {% endcapture %}
 {% capture items %}
-    <div class="keen-slider__slide tw-bg-gray-100">1</div>
-    <div class="keen-slider__slide tw-bg-gray-100">2</div>
-    <div class="keen-slider__slide tw-bg-gray-100">3</div>
-    <div class="keen-slider__slide tw-bg-gray-100">4</div>
-    <div class="keen-slider__slide tw-bg-gray-100">5</div>
-    <div class="keen-slider__slide tw-bg-gray-100">6</div>
+    {% for i in (1..6) %}
+        <div class="keen-slider__slide tw-bg-gray-100 tw-relative tw-h-72 tw-flex tw-justify-center tw-items-center">
+        </div>
+    {% endfor %}
 {% endcapture %}
 {% if section.blocks.size > 0 %}
     {% capture items %}
         {% for block in section.blocks %}
             <a href="{{block.settings.url}}" class="keen-slider__slide">
-                {% render '[image]'  image: block.settings.image  data_widths: '[180, 360, 540, 720, 900]' %}
+                {% render '[image]' image_box_ratio:'100%'  image: block.settings.image  data_widths: '[180, 360, 540, 720, 900]' %}
             </a>
         {% endfor %}
     {% endcapture %}
@@ -21,11 +19,11 @@
 
 <div style="{{cssvariable}}" id="{{section.id}}" class="tw-py-16 tw-bg-[color:var(--section-bg)] tw-items-center">
     <div class="tw-max-w-[980px] xl:tw-max-w-7xl tw-px-8 tw-mx-auto flex tw-flex-col tw-gap-8 lg:tw-grid-cols-2">
-        <div class="tw-text-center lg:tw-text-left tw-flex-1  tw-space-y-8">
-            <h2 class="tw-text-3xl tw-font-bold">
+        <div class="flex tw-flex-col tw-items-center lg:tw-items-start tw-text-center lg:tw-text-left tw-flex-1  tw-space-y-8">
+            <h2 class="tw-text-2xl tw-font-bold tw-mb-0">
                 {{section.settings.heading}}
             </h2>
-            <div class="tw-max-w-prose">
+            <div class="tw-max-w-prose ">
                 {{section.settings.description}}
             </div>
         </div>
@@ -60,23 +58,22 @@
         }
     ],
     "blocks": [
-      {
-        "type":"item",
-        "name":"Feed Item",
-        "settings":[
-          {
-            "type": "image_picker",
-            "id": "image",
-            "label": "Image"
-          },
-          {
-              "type": "url",
-              "id": "url",
-              "label": "Url",
-              "default": "/"
-          }
-        ]
-      }
+        {
+            "type": "item",
+            "name": "Feed Item",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Image"
+                }, {
+                    "type": "url",
+                    "id": "url",
+                    "label": "Url",
+                    "default": "/"
+                }
+            ]
+        }
     ],
     "presets": [
         {
