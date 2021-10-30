@@ -5398,19 +5398,6 @@
           "limit": 8
         }
       },
-      "1620633756016f4844": {
-        "type": "featured-blog",
-        "settings": {
-          "blog": "",
-          "heading": "Our Customers",
-          "heading_color": "#000000",
-          "background_color": "#ffffff",
-          "post_limit": 2,
-          "blog_layout_grid": true,
-          "post_tags": true,
-          "show_author": true
-        }
-      },
       "162159895992baa653": {
         "type": "image-with-text-column",
         "blocks": {
@@ -5914,7 +5901,6 @@
       "163541368248f9d2e8",
       "1635413768a1194b60",
       "1635419372bc88c051",
-      "1620633756016f4844",
       "161890494913acaf20",
       "162159895992baa653"
     ]
