@@ -1,3 +1,4 @@
+
 {% capture discount %}
    {{ product.compare_at_price_max | minus:product.price | times:100 | divided_by:product.compare_at_price_max }}% 
 {% endcapture %}
@@ -15,7 +16,6 @@
   {% endfor %}
   {% assign productHandle = product.title | handle %}
   {% assign setcollection =  collections[collhandle] %}
-{{setcollection.title }}
 
   {% for setProduct in setcollection.products %}
     {% assign rloopindex = forloop.index %}
@@ -59,6 +59,8 @@
   {% endif %}
 
   {% if section.settings.full_width %}<div class="gridlock-fluid">{% endif %}
+
+
  {% render 'breadcrumb' %}
   <div id="product-content" class="row grid_wrapper">
  
@@ -438,384 +440,330 @@
 
 {% include "linked-options" %}
 
+
 {% schema %}
+
 {
     "name": "Product Page",
-    "max_blocks":5,
+    "max_blocks": 5,
     "settings": [
-	 {
-        "type":"header",
-        "content":"Popup"
-      },
-	 {
-        "type": "checkbox",
-        "id": "show_popup",
-        "label": "Show Popup",
-		 "default": false
-      },
-	  {
+        {
+            "type": "header",
+            "content": "Popup"
+        }, {
+            "type": "checkbox",
+            "id": "show_popup",
+            "label": "Show Popup",
+            "default": false
+        }, {
             "type": "image_picker",
             "id": "image",
             "label": "Image"
-          },
-          {
+        }, {
             "type": "text",
             "id": "title",
             "label": "Heading",
             "default": "Image slide"
-          },
-          {
+        }, {
             "type": "textarea",
             "id": "text",
             "label": "Subheading",
             "default": "Tell your brand's story through video and images"
-          },
-      {
-        "type": "checkbox",
-        "id": "full_width",
-        "label": "Full width"
-      },
-      {
-        "type": "checkbox",
-        "id": "show_banner",
-        "label": "Show banner from collection"
-      },
-      {
-        "type":"header",
-        "content":"Media"
-      },
-      {
-        "type": "checkbox",
-        "id": "click_to_enlarge",
-        "label": "Enable click to enlarge",
-        "default": true
-      },
-      {
-        "type": "select",
-        "id": "image_section_size",
-        "label": "Gallery size",
-        "options": [
-          {
-            "value": "small",
-            "label": "Small"
-          },
-          {
-            "value": "medium",
-            "label": "Medium"
-          },
-          {
-            "value": "large",
-            "label": "Large"
-          },
-          {
-            "value": "ultra",
-            "label": "Ultra"
-          }
-        ],
-        "default":"medium"
-      },
-      {
-        "type": "select",
-        "id": "image_options",
-        "label": "Gallery type",
-        "options": [
-          {
-            "value": "static",
-            "label": "Slideshow with thumbnails"
-          },
-          {
-            "value": "scroll",
-            "label": "Scroll gallery"
-          }
-        ]
-      },
-      {
-        "type": "select",
-        "id": "thumbnail_position",
-        "label": "Thumbnail position when gallery w/thumbnails",
-        "options": [
-          {
-            "value": "right",
-            "label": "Right"
-          },
-          {
-            "value": "left",
-            "label": "Left"
-          },
-          {
-            "value": "bottom",
-            "label": "Bottom"
-          }
-        ]
-      },
-      {
-        "type": "range",
-        "id": "thumbs_to_show",
-        "min": 0,
-        "max": 6,
-        "step": 1,
-        "label": "Thumbnail images to show",
-        "default": 3,
-        "info":"Set to 0 to show a slideshow without thumbnails"
-      },
-      {
-        "type": "select",
-        "id": "slide_controls",
-        "label": "Slider control style",
-        "default": "arrows",
-        "options": [
-          {
-            "value": "arrows",
-            "label": "Arrows"
-          },
-          {
-            "value": "dots",
-            "label": "Dots"
-          }
-        ]
-      },
-      {
-        "type": "checkbox",
-        "id": "enable_video_looping",
-        "label": "Enable video looping",
-        "default": false
-      },
-      {
-        "type": "paragraph",
-        "content": "Learn more about [Media types](https:\/\/help.shopify.com/en\/manual\/products\/product-media\)"
-      },
-      {
-        "type":"header",
-        "content":"Form options"
-      },
-      {
-        "type": "color",
-        "id":"description_background",
-        "label":"Background color"
-      },
-      {
-        "type": "checkbox",
-        "id": "show_vendor",
-        "label": "Show vendor"
-      },
-      {
-        "type": "checkbox",
-        "id": "show_sku",
-        "label": "Show variant SKU",
-        "default": true
-      },
-      {
-         "type": "checkbox",
-         "id": "show_quantity_selector",
-         "label": "Show quantity selector",
-         "default": true
-       },
-       {
-          "type": "select",
-          "id": "product_variants",
-          "label": "Product variant display",
-          "options": [
-           {
-             "value": "swatches",
-             "label": "Swatches"
-           },
-           {
-             "value": "drop-downs",
-             "label": "Drop-downs"
-           }
-          ],
-          "default": "swatches"
-        },
-        {
-          "type": "select",
-          "id": "color_swatch_options",
-          "label": "Color swatch style",
-          "options": [
-            {
-              "value": "default-color",
-              "label": "Default color"
-            },
-            {
-             "value": "custom-image",
-             "label": "Custom uploaded images"
-            },
-            {
-             "value": "variant-image",
-             "label": "Zoomed in variant images"
-            }
-          ],
-          "default": "default-color",
-          "info": "Learn more about [color swatch styles](https:\/\/support.weareunderground.com\/article\/259-mr-parker-theme-color-swatch-styles)"
-        },
-        {
-          "type": "checkbox",
-          "id": "back_in_stock",
-          "label": "Show back in stock form",
-          "default": true
-        },
-        {
-          "type": "richtext",
-          "id": "back_in_stock_text",
-          "label": "Back in stock text",
-          "default": "<p>Email me when this is available</p>"
-        },
-       {
-         "type": "checkbox",
-         "id": "show_payment_button",
-         "label": "Show dynamic checkout button",
-         "info": "Lets customers check out directly using a familiar payment method. [Learn more](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)",
-         "default": true
-       },
-       {
-         "type": "checkbox",
-         "id": "show_social_share",
-         "label": "Show social share icons",
-         "default": true
-       },
-       {
-         "type":"header",
-         "content":"Content options"
-       },
-       {
-         "type": "select",
-         "id": "product_description_position",
-         "label": "Product description position",
-         "options": [
-           {
-             "value": "above",
-             "label": "Above product options"
-           },
-           {
-             "value": "below",
-             "label": "Beneath product options"
-           },
-           {
-             "value": "bottom",
-             "label": "Below images and options"
-           }
-         ]
-       },
-       {
-         "type": "select",
-         "id": "lower_description",
-         "label": "Lower description size",
-         "options": [
-           {
-             "value": "small",
-             "label": "Small"
-           },
-           {
-             "value": "medium",
-             "label": "Medium"
-           },
-           {
-             "value": "large",
-             "label": "Large"
-           }
-         ]
-       },
-       {
-         "type": "color",
-         "id":"lower_description_background",
-         "label":"Background color"
-       },
-       {
-          "type": "header",
-          "content": "Product Shortcode Popups"
-        },
-        {
-          "type": "paragraph",
-          "content": "Use shortcodes in your product description to show links to popups with unique product specific content. [Learn more](https:\/\/support.weareunderground.com\/article\/260-mr-parker-theme-product-shortcode-popups)"
-        },
-        {
-          "type": "checkbox",
-          "id": "show_product_size_chart",
-          "label": "Show product size",
-          "info": "Use shortcode [#size][/size]",
-          "default": false
-        },
-        {
-          "type": "checkbox",
-          "id": "show_product_video",
-          "label": "Show product video",
-          "info": "Use shortcode [#video][/video]",
-          "default": false
-        },
-        {
-          "type": "checkbox",
-          "id": "show_product_model",
-          "label": "Show product fit/care",
-          "info": "Use shortcode [#other][/other]",
-          "default": false
-        },
-        {
-          "type": "header",
-          "content": "Product Reviews"
-        },
-        {
-          "type": "paragraph",
-          "content": "For reviews to work you must first install the free [Product Reviews](https:\/\/apps.shopify.com\/product-reviews) App by Shopify."
-        },
-        {
-          "type": "checkbox",
-          "id": "enable_product_reviews",
-          "label": "Enable product reviews",
-          "default": false
-        },
-        {
-          "type": "text",
-          "id": "reviews_heading",
-          "label": "Heading",
-          "default": "Customer Reviews"
+        }, {
+            "type": "checkbox",
+            "id": "full_width",
+            "label": "Full width"
+        }, {
+            "type": "checkbox",
+            "id": "show_banner",
+            "label": "Show banner from collection"
+        }, {
+            "type": "header",
+            "content": "Media"
+        }, {
+            "type": "checkbox",
+            "id": "click_to_enlarge",
+            "label": "Enable click to enlarge",
+            "default": true
+        }, {
+            "type": "select",
+            "id": "image_section_size",
+            "label": "Gallery size",
+            "options": [
+                {
+                    "value": "small",
+                    "label": "Small"
+                }, {
+                    "value": "medium",
+                    "label": "Medium"
+                }, {
+                    "value": "large",
+                    "label": "Large"
+                }, {
+                    "value": "ultra",
+                    "label": "Ultra"
+                }
+            ],
+            "default": "medium"
+        }, {
+            "type": "select",
+            "id": "image_options",
+            "label": "Gallery type",
+            "options": [
+                {
+                    "value": "static",
+                    "label": "Slideshow with thumbnails"
+                }, {
+                    "value": "scroll",
+                    "label": "Scroll gallery"
+                }
+            ]
+        }, {
+            "type": "select",
+            "id": "thumbnail_position",
+            "label": "Thumbnail position when gallery w/thumbnails",
+            "options": [
+                {
+                    "value": "right",
+                    "label": "Right"
+                }, {
+                    "value": "left",
+                    "label": "Left"
+                }, {
+                    "value": "bottom",
+                    "label": "Bottom"
+                }
+            ]
+        }, {
+            "type": "range",
+            "id": "thumbs_to_show",
+            "min": 0,
+            "max": 6,
+            "step": 1,
+            "label": "Thumbnail images to show",
+            "default": 3,
+            "info": "Set to 0 to show a slideshow without thumbnails"
+        }, {
+            "type": "select",
+            "id": "slide_controls",
+            "label": "Slider control style",
+            "default": "arrows",
+            "options": [
+                {
+                    "value": "arrows",
+                    "label": "Arrows"
+                }, {
+                    "value": "dots",
+                    "label": "Dots"
+                }
+            ]
+        }, {
+            "type": "checkbox",
+            "id": "enable_video_looping",
+            "label": "Enable video looping",
+            "default": false
+        }, {
+            "type": "paragraph",
+            "content": "Learn more about [Media types](https:\/\/help.shopify.com/en\/manual\/products\/product-media\)"
+        }, {
+            "type": "header",
+            "content": "Form options"
+        }, {
+            "type": "color",
+            "id": "description_background",
+            "label": "Background color"
+        }, {
+            "type": "checkbox",
+            "id": "show_vendor",
+            "label": "Show vendor"
+        }, {
+            "type": "checkbox",
+            "id": "show_sku",
+            "label": "Show variant SKU",
+            "default": true
+        }, {
+            "type": "checkbox",
+            "id": "show_quantity_selector",
+            "label": "Show quantity selector",
+            "default": true
+        }, {
+            "type": "select",
+            "id": "product_variants",
+            "label": "Product variant display",
+            "options": [
+                {
+                    "value": "swatches",
+                    "label": "Swatches"
+                }, {
+                    "value": "drop-downs",
+                    "label": "Drop-downs"
+                }
+            ],
+            "default": "swatches"
+        }, {
+            "type": "select",
+            "id": "color_swatch_options",
+            "label": "Color swatch style",
+            "options": [
+                {
+                    "value": "default-color",
+                    "label": "Default color"
+                }, {
+                    "value": "custom-image",
+                    "label": "Custom uploaded images"
+                }, {
+                    "value": "variant-image",
+                    "label": "Zoomed in variant images"
+                }
+            ],
+            "default": "default-color",
+            "info": "Learn more about [color swatch styles](https:\/\/support.weareunderground.com\/article\/259-mr-parker-theme-color-swatch-styles)"
+        }, {
+            "type": "checkbox",
+            "id": "back_in_stock",
+            "label": "Show back in stock form",
+            "default": true
+        }, {
+            "type": "richtext",
+            "id": "back_in_stock_text",
+            "label": "Back in stock text",
+            "default": "<p>Email me when this is available</p>"
+        }, {
+            "type": "checkbox",
+            "id": "show_payment_button",
+            "label": "Show dynamic checkout button",
+            "info": "Lets customers check out directly using a familiar payment method. [Learn more](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)",
+            "default": true
+        }, {
+            "type": "checkbox",
+            "id": "show_social_share",
+            "label": "Show social share icons",
+            "default": true
+        }, {
+            "type": "header",
+            "content": "Content options"
+        }, {
+            "type": "select",
+            "id": "product_description_position",
+            "label": "Product description position",
+            "options": [
+                {
+                    "value": "above",
+                    "label": "Above product options"
+                }, {
+                    "value": "below",
+                    "label": "Beneath product options"
+                }, {
+                    "value": "bottom",
+                    "label": "Below images and options"
+                }
+            ]
+        }, {
+            "type": "select",
+            "id": "lower_description",
+            "label": "Lower description size",
+            "options": [
+                {
+                    "value": "small",
+                    "label": "Small"
+                }, {
+                    "value": "medium",
+                    "label": "Medium"
+                }, {
+                    "value": "large",
+                    "label": "Large"
+                }
+            ]
+        }, {
+            "type": "color",
+            "id": "lower_description_background",
+            "label": "Background color"
+        }, {
+            "type": "header",
+            "content": "Product Shortcode Popups"
+        }, {
+            "type": "paragraph",
+            "content": "Use shortcodes in your product description to show links to popups with unique product specific content. [Learn more](https:\/\/support.weareunderground.com\/article\/260-mr-parker-theme-product-shortcode-popups)"
+        }, {
+            "type": "checkbox",
+            "id": "show_product_size_chart",
+            "label": "Show product size",
+            "info": "Use shortcode [#size][/size]",
+            "default": false
+        }, {
+            "type": "checkbox",
+            "id": "show_product_video",
+            "label": "Show product video",
+            "info": "Use shortcode [#video][/video]",
+            "default": false
+        }, {
+            "type": "checkbox",
+            "id": "show_product_model",
+            "label": "Show product fit/care",
+            "info": "Use shortcode [#other][/other]",
+            "default": false
+        }, {
+            "type": "header",
+            "content": "Product Reviews"
+        }, {
+            "type": "paragraph",
+            "content": "For reviews to work you must first install the free [Product Reviews](https:\/\/apps.shopify.com\/product-reviews) App by Shopify."
+        }, {
+            "type": "checkbox",
+            "id": "enable_product_reviews",
+            "label": "Enable product reviews",
+            "default": false
+        }, {
+            "type": "text",
+            "id": "reviews_heading",
+            "label": "Heading",
+            "default": "Customer Reviews"
         }
-      ],
+    ],
     "max_blocks": 5,
-    "blocks":[
-    {
-      "type":"description",
-      "name":"Product Description",
-      "limit": 1,
-      "settings":[]
-    },
-    {
-      "type":"page",
-      "name":"Content from Page",
-      "settings":[
-        {
-        "type": "page",
-        "id": "page",
-        "label": "Show content from"
-        }
-      ]
-    },
-    {
-      "type":"text",
-      "name":"Tab Content",
-      "settings":[
-        {
-          "type": "text",
-          "id": "tab_heading",
-          "label": "Tab Heading",
-          "default": "Tab Heading"
-        },
-         {
-          "type": "richtext",
-          "id": "tab_content",
-          "label": "Tab Content",
-          "default": "<p>Enter the content to use inside the tab selected.</p>"
-        }
-    	]
-    }
-  ],
-  "default": {
     "blocks": [
-      {
-        "type": "description"
-      },
-      {
-        "type": "text"
-      }
-    ]
-  }
+        {
+            "type": "description",
+            "name": "Product Description",
+            "limit": 1,
+            "settings": []
+        }, {
+            "type": "page",
+            "name": "Content from Page",
+            "settings": [
+                {
+                    "type": "page",
+                    "id": "page",
+                    "label": "Show content from"
+                }
+            ]
+        }, {
+            "type": "text",
+            "name": "Tab Content",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "tab_heading",
+                    "label": "Tab Heading",
+                    "default": "Tab Heading"
+                }, {
+                    "type": "richtext",
+                    "id": "tab_content",
+                    "label": "Tab Content",
+                    "default": "<p>Enter the content to use inside the tab selected.</p>"
+                }
+            ]
+        }
+    ],
+    "default": {
+        "blocks": [
+            {
+                "type": "description"
+            }, {
+                "type": "text"
+            }
+        ]
+    }
 }
+
 {% endschema %}
