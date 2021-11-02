@@ -1640,7 +1640,6 @@ theme.ProductForm = function (context, sectionId, events, Product) {
       }
 
       if ( variant.featured_media ) {
-        console.log(variant.featured_media.id,variant)
         Events.trigger("variantchange:image", variant.featured_media.id, context);
         Events.trigger("variantchange", variant, Product,context);
       }
@@ -4403,3 +4402,5 @@ if(mobile.matches == true){
     document.querySelector('.collection--1559084715445').classList.add("featured__collection-mobile");
   }, 500);
 }
+
+window.dispatchEvent(new Event('themeloaded'))

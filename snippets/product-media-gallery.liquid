@@ -170,21 +170,19 @@
 </style>
 <script src="https://cdn.jsdelivr.net/npm/keen-slider@5.5.0/keen-slider.min.js" ></script>
 <script>
-    setTimeout(()=>{
-      const slider = new KeenSlider("#keen-slider-{{id}}", {
+    window.addEventListener("themeloaded", function(event) { // (1)
+        const slider = new KeenSlider("#keen-slider-{{id}}", {
           slidesPerView: 1,
           spacing: 15,
           loop: true,
           created: function (instance) {
-              window.Events.on('variantchange', function(variant,product, context){
-                    console.log({
-                      variant,product, context,instance,selector:`[data-variant-id='${variant.id}']`
-                    })
+                Events.on('variantchange', function(variant,product, context){
                     document.querySelector("#keen-slider-{{id}}").innerHTML=''
                     document.querySelector("#keen-slider-{{id}}").append(document.querySelector(`[data-variant-id='${variant.id}']`).content.cloneNode(true))
                     instance.refresh()
                     updateDots(instance,variant)
-              })
+                })
+             
               document
               .getElementById("keen-slider-{{id}}-arrow-left")
               .addEventListener("click", function () {
@@ -226,7 +224,7 @@
         var dots_wrapper = document.getElementById("keen-slider-{{id}}-dots")
         dots_wrapper.innerHTML=''
               var dots = [...document.querySelector(`[data-variant-dot-id='${variant.id}']`).content.children]
-              console.log(document.querySelector(`[data-variant-dot-id='${variant.id}']`))
+            //   console.log(document.querySelector(`[data-variant-dot-id='${variant.id}']`))
               dots.forEach(function (e, idx) {
                 var dot = e.cloneNode(true)
                 dots_wrapper.appendChild(dot)
@@ -235,5 +233,5 @@
                 })
               })
       }
-    },500)
+  })
 </script>

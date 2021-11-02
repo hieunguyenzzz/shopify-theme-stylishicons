@@ -1,33 +1,39 @@
-
-
 {% assign instructions = product.metafields.global %}
 
 {% if product.variants.size != 1 %}
-	{% assign instructions = product.selected_variant.metafields.global %}
+    {% assign instructions = product.selected_variant.metafields.global %}
 {% endif %}
 <div id="{{section.id}}">
-	{% render 'product-descriptions' instructions:instructions %}
+    {% render 'product-descriptions' instructions:instructions %}
 </div>
 
 {% for variant  in product.variants %}
-	<template data-{{section.id}}="{{variant.id}}">
-		{% render 'product-descriptions' instructions:variant.metafields.global %}
-	</template>
+    <template data-{{section.id}}="{{variant.id}}">
+        {% render 'product-descriptions' instructions:variant.metafields.global %}
+    </template>
 {% endfor %}
 
 <script>
-	setTimeout(()=>{
-		window.Events.on('variantchange', function(variant,product, context){
+  window.addEventListener("themeloaded", function(event) { // (1)
+    Events.on('variantchange', function(variant,product, context){
 			const wrapper =  document.querySelector('#{{section.id}}')
 			const content =  document.querySelector(`[data-{{section.id}}='${variant.id}']`).content
 			wrapper.innerText=''
-			console.log({
-				wrapper,
-				content
-			})
 			wrapper.append(content.cloneNode(true))
-        })
-	},700)
+    })
+  })
+	// setTimeout(()=>{
+	// 	window.Events.on('variantchange', function(variant,product, context){
+	// 		const wrapper =  document.querySelector('#{{section.id}}')
+	// 		const content =  document.querySelector(`[data-{{section.id}}='${variant.id}']`).content
+	// 		wrapper.innerText=''
+	// 		// console.log({
+	// 		// 	wrapper,
+	// 		// 	content
+	// 		// })
+	// 		wrapper.append(content.cloneNode(true))
+  //       })
+	// },700)
 </script>
 <style>
 
