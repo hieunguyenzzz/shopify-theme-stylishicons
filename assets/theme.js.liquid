@@ -1641,6 +1641,7 @@ theme.ProductForm = function (context, sectionId, events, Product) {
 
       if ( variant.featured_media ) {
         Events.trigger("variantchange:image", variant.featured_media.id, context);
+        Events.trigger("variantchange", variant, Product,context);
       }
     },
     enableHistoryState: config.enable_history
@@ -3725,7 +3726,7 @@ theme.Maps = (function() {
 
       function error(message) {
         message = message || errors.auth_error;
-        element.innerHTML = '<div class="map-section-error errors text-center">' + message + '</div>';
+        element.innerHTML = '<div class="text-center map-section-error errors">' + message + '</div>';
       }
     })();
 
@@ -4401,3 +4402,5 @@ if(mobile.matches == true){
     document.querySelector('.collection--1559084715445').classList.add("featured__collection-mobile");
   }, 500);
 }
+
+window.dispatchEvent(new Event('themeloaded'))
