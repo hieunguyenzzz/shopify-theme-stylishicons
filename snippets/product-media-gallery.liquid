@@ -1,44 +1,28 @@
-{% assign variant = product.selected_variant %}
 {% assign id = section.id %}
 {% capture items %}
     {% for media in product.media %}
-        {% assign show = false %}
-        {% for option in variant.options %}
-            {% if media.alt contains  option %}
-                {% assign show = true %}
-            {% endif %}
-        {% endfor %}
-        {% if show %}
-            <li class="keen-slider__slide keen-slider-{{id}}-keen-slider__slide">
-                <div class="">
-                    <img id="{{ product.id }}" class="product__image lazyload lazyload-fade" src="{{ media | img_url: '800x' }}" data-src="{{ img_url }}" data-sizes="auto" data-zoom-src="{{ media | img_url: '2400x' }}" data-aspectratio="{{ media.preview_image.aspect_ratio }}" alt="{{ media.alt | escape }}">
-                </div>
-                <noscript>
-                    <img id="{{ product.id }}" class="product-main-image" src="{{ featured_media | img_url: '800x' }}" alt='{{ media.alt | escape }}'/>
-                </noscript>
-            </li>
-        {% endif %}
+        <li class="keen-slider__slide keen-slider-{{id}}-keen-slider__slide">
+            <div class="">
+                <img id="{{ product.id }}" class="product__image tw-object-contain lazyload lazyload-fade" src="{{ media | img_url: '800x' }}" data-src="{{ img_url }}" data-sizes="auto" data-zoom-src="{{ media | img_url: '2400x' }}" data-aspectratio="{{ media.preview_image.aspect_ratio }}" alt="{{ media.alt | escape }}">
+            </div>
+            <noscript>
+                <img id="{{ product.id }}" class="product-main-image" src="{{ featured_media | img_url: '800x' }}" alt='{{ media.alt | escape }}'/>
+            </noscript>
+        </li>
 
     {% endfor %}
 {% endcapture %}
+
 {% capture dots %}
     {% for media in product.media %}
-        {% assign show = false %}
-        {% for option in variant.options %}
-            {% if media.alt contains  option %}
-                {% assign show = true %}
-            {% endif %}
-        {% endfor %}
-        {% if show %}
-            <div class="dot tw-border-none lg:tw-border lg:tw-border-solid tw-border-current hover:tw-border-black lg:tw-bg-transparent tw-bg-current  tw-w-[5px] tw-h-[5px] tw-rounded-full lg:tw-w-[87px] lg:tw-h-[40px] lg:tw-rounded-none">
-                <div class="tw-hidden lg:tw-block tw-w-full tw-h-full">
-                    <img class="tw-w-full tw-h-full product__image tw-object-contain" src="{{ media | img_url: '150x' }}" data-src="{{ img_url }}" data-sizes="auto" data-image-id="{{ media.id }}" alt="{{ media.alt | escape }}">
-                </div>
-                <noscript>
-                    <img src="{{ media | img_url: '100x' }}" alt="{{ media.alt | escape }}"/>
-                </noscript>
+        <div class="dot tw-border-none lg:tw-border lg:tw-border-solid tw-border-current hover:tw-border-black lg:tw-bg-transparent tw-bg-current  tw-w-[5px] tw-h-[5px] tw-rounded-full lg:tw-w-[54px] lg:tw-h-[31px] lg:tw-rounded-none">
+            <div class="tw-hidden lg:tw-block tw-w-full tw-h-full">
+                <img class="tw-w-full tw-h-full product__image tw-object-contain" src="{{ media | img_url: '150x' }}" data-src="{{ img_url }}" data-sizes="auto" data-image-id="{{ media.id }}" alt="{{ media.alt | escape }}">
             </div>
-        {% endif %}
+            <noscript>
+                <img src="{{ media | img_url: '100x' }}" alt="{{ media.alt | escape }}"/>
+            </noscript>
+        </div>
     {% endfor %}
 {% endcapture %}
 {% for variant in product.variants %}
@@ -53,7 +37,7 @@
             {% if show %}
                 <li class="keen-slider__slide keen-slider-{{id}}-keen-slider__slide">
                     <div class="">
-                        <img id="{{ product.id }}" class="product__image lazyload lazyload-fade" src="{{ media | img_url: '800x' }}" data-src="{{ img_url }}" data-sizes="auto" data-zoom-src="{{ media | img_url: '2400x' }}" data-aspectratio="{{ media.preview_image.aspect_ratio }}" alt="{{ media.alt | escape }}">
+                        <img id="{{ product.id }}" class="product__image tw-object-contain lazyload lazyload-fade" src="{{ media | img_url: '800x' }}" data-src="{{ img_url }}" data-sizes="auto" data-zoom-src="{{ media | img_url: '2400x' }}" data-aspectratio="{{ media.preview_image.aspect_ratio }}" alt="{{ media.alt | escape }}">
                     </div>
                     <noscript>
                         <img id="{{ product.id }}" class="product-main-image" src="{{ featured_media | img_url: '800x' }}" alt='{{ media.alt | escape }}'/>
@@ -73,7 +57,7 @@
                 {% endif %}
             {% endfor %}
             {% if show %}
-                <div class="dot tw-border-none lg:tw-border lg:tw-border-solid tw-border-current hover:tw-border-black lg:tw-bg-transparent tw-bg-current  tw-w-[5px] tw-h-[5px] tw-rounded-full lg:tw-w-[87px] lg:tw-h-[40px] lg:tw-rounded-none">
+                <div class="dot tw-border-none lg:tw-border lg:tw-border-solid tw-border-current hover:tw-border-black lg:tw-bg-transparent tw-bg-current  tw-w-[5px] tw-h-[5px] tw-rounded-full lg:tw-w-[54px] lg:tw-h-[31px] lg:tw-rounded-none">
                     <div class="tw-hidden lg:tw-block tw-w-full tw-h-full">
                         <img class="tw-w-full tw-h-full product__image tw-object-contain" src="{{ media | img_url: '150x' }}" data-src="{{ img_url }}" data-sizes="auto" data-image-id="{{ media.id }}" alt="{{ media.alt | escape }}">
                     </div>
@@ -90,10 +74,12 @@
         {% assign id = section.id %}
 {% endif %}
 <div class="tw-relative">
-    <div class="keen-slider tw-h-[180px] md:tw-h-[300px] lg:tw-h-[600px]" id="keen-slider-{{id}}">
+    <div class="keen-slider tw-h-[220px] sm:tw-h-[300px] lg:tw-h-[600px]" id="keen-slider-{{id}}">
         {{items}}
     </div>
-    <div class="keen-slider-{{id}}-dots tw-space-x-2 lg:tw-space-x-px" id="keen-slider-{{id}}-dots">{{dots}}</div>
+    <div class="keen-slider-{{id}}-dots tw-space-x-2 lg:tw-space-x-4" id="keen-slider-{{id}}-dots">
+        {{dots}}
+    </div>
     <div class="tw-hidden tw-pointer-events-none tw-px-8 lg:tw-flex tw-items-center tw-justify-between tw-absolute tw-h-full tw-top-0 tw--left-8 tw--right-8">
         <button class="tw-m-0 tw-pointer-events-auto !tw-text-xl tw-text-black tw-bg-transparent tw-w-10 tw-h-10 tw-rounded-full tw-flex tw-justify-center tw-items-center hover:tw-bg-gray-100" id="keen-slider-{{id}}-arrow-left">
             <svg class="" height="1em" viewbox="0 0 100 100" width="1em">
@@ -167,20 +153,27 @@
     .keen-slider-{{id}}-dots .dot--active{
       color: #000;
     }
+    .arrow--disabled{
+        display: none;
+    }
 </style>
-<script src="https://cdn.jsdelivr.net/npm/keen-slider@5.5.0/keen-slider.min.js" ></script>
 <script>
     window.addEventListener("themeloaded", function(event) { // (1)
         const slider = new KeenSlider("#keen-slider-{{id}}", {
           slidesPerView: 1,
-          spacing: 15,
+          spacing: 0,
           loop: true,
           created: function (instance) {
+              window.slider=instance
                 Events.on('variantchange', function(variant,product, context){
-                    document.querySelector("#keen-slider-{{id}}").innerHTML=''
-                    document.querySelector("#keen-slider-{{id}}").append(document.querySelector(`[data-variant-id='${variant.id}']`).content.cloneNode(true))
-                    instance.refresh()
-                    updateDots(instance,variant)
+                    console.log({variant,product, context})
+                    if(variant){
+                        document.querySelector("#keen-slider-{{id}}").innerHTML=''
+                        document.querySelector("#keen-slider-{{id}}").append(document.querySelector(`[data-variant-id='${variant.id}']`).content.cloneNode(true))
+                        updateDots(instance,variant)
+                        instance.refresh()
+                    }
+                    
                 })
               document
               .getElementById("keen-slider-{{id}}-arrow-left")
@@ -233,4 +226,6 @@
               })
       }
   })
+
 </script>
+<script src="https://cdn.jsdelivr.net/npm/keen-slider@5.5.0/keen-slider.min.js" ></script>
