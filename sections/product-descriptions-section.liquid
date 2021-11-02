@@ -1,103 +1,36 @@
-{% assign instructions = product.metafields.global %} {% assign key = 'heading-2' %} {% assign key = 'short-description-2' %} {% assign key = 'heading-1' %} {% assign key = 'short-description-1' %} {% assign key = 'description_tag' %} {% assign key = 'product-information' %} {% assign key = 'description-image-1' %} {% assign key = 'description-image-2' %} {% assign key = 'side-image' %}
-{% assign key = 'inspired-by' %}
 
 
+{% assign instructions = product.metafields.global %}
 
-
-<div class="row ">
-	<div class="desktop-12">
-		<div class="lifestyle__text center half">
-			<h2>CONTEMPORARY INSPIRATION</h2>
-			<p>
-				 {{ instructions.description_tag }}
-			</p>
-		</div>
-	</div>
-	<div class="desktop-12">
-		<div class="desktop-6">
-			<div class="lifestyle__text1">
-				<h3><strong> {{ instructions.heading-1 }} </strong></h3>
-				<p>
-					 {{ instructions.short-description-1 }}
-				</p>
-			</div>
-		</div>
-		<div class="desktop-6">
-			 {{ instructions.description-image-1 }}
-		</div>
-	</div>
-	<div class="desktop-12 mobile-first">
-		<div class="desktop-6 one-one">
-			 {{ instructions.description-image-2 }}
-		</div>
-		<div class="desktop-6 two-two">
-			<div class="lifestyle__text1">
-				<h3><strong> {{ instructions.heading-2 }} </strong></h3>
-				<p>
-					 {{ instructions.short-description-2 }}
-				</p>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="background" style=" background: #fafbfa;margin-top: 75px;">
-	<div class="product-info1 row desktop-12" style="padding: 71px 0;">
-		<h2 class="section-title row desktop-12">THE FINER DETAILS </h2>
-		<div class="desktop-12">
-			<div class="desktop-6">
-				<div class="desktop-8">
-					 {%- if instructions.side-image != blank -%} <img class="lifestyle__img lazyloaded" src="{{ instructions.side-image }}">
-					{%- else -%} <img class="lifestyle__img lazyloaded" src="{{ 'bg.png' |  asset_url  }}">
-					{%- endif -%}
-				</div>
-			</div>
-			<div class="desktop-6 main-desc">
-				<h3>Product Details</h3>
-				 {{ product.description }}
-				<h3>Product Information</h3>
-				 {{ instructions.product-information }}
-			</div>
-		</div>
-	</div>
+{% if product.variants.size != 1 %}
+	{% assign instructions = product.selected_variant.metafields.global %}
+{% endif %}
+<div id="{{section.id}}">
+	{% render 'product-descriptions' instructions:instructions %}
 </div>
 
+{% for variant  in product.variants %}
+	<template data-{{section.id}}="{{variant.id}}">
+		{% render 'product-descriptions' instructions:variant.metafields.global %}
+	</template>
+{% endfor %}
 
-<div id="inspiree" class="desktop-12 inpiredby row">
-  
- {% assign product_collection = product.collections %}
-	<div class="inner-text desktop-9">
-      <h5>Inspired By</h5>
-  <h1> {{ instructions.inspired-by }}</h1>
-	  
-      
-          {% for collection in product_collection %}
-   
-{% if collection.title == instructions.inspired-by %}
-    {{ collection.description | strip_html }}
-    {% endif %}
-    {% endfor %}
-	</div>
-  
-  <div class="inner-uimage desktop-3">
-	
-    {% for collection in product_collection %}
-  
-    
-    
-     
-{% if collection.title == instructions.inspired-by %}
-  {% if collection.image != blank %}
-  <img class="lifestyle__img lazyloaded" src="{{ collection.image | img_url: 'Grande'}}">
- {% endif %}
-    {% endif %}
-    {% endfor %}
-    
-    
-
-	</div>
-	
-</div>
+<script>
+	setTimeout(()=>{
+		window.Events.on('variantchange', function(variant,product, context){
+			const wrapper =  document.querySelector('#{{section.id}}')
+			const content =  document.querySelector(`[data-{{section.id}}='${variant.id}']`).content
+			wrapper.innerText=''
+			console.log({
+				wrapper,
+				content
+			})
+			wrapper.append(content.cloneNode(true))
+        })
+	},700)
+</script>
 <style>
+
 div#shopify-section-product-descriptions-section img {
     width: 100%;
     border: 1px solid #cccccc6b;
@@ -142,12 +75,10 @@ div#shopify-section-product-descriptions-section img {
 }
 </style>
 {% schema %}
-  {
+
+{
     "name": "Section name",
     "settings": []
-  }
+}
+
 {% endschema %}
-{% stylesheet %}
-{% endstylesheet %}
-{% javascript %}
-{% endjavascript %}

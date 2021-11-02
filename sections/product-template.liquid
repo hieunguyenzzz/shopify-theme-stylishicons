@@ -115,7 +115,7 @@
            {{ gallery_data }}>
 
           {% if product.featured_media and gallery_type == 'static' %}
-          	{% render 'product-static-gallery',
+          	{% render 'product-media-gallery',
               product: product,
               thumbnail_position: thumbnail_position,
               click_to_enlarge: click_to_enlarge,
@@ -439,7 +439,6 @@
 </script>
 
 {% include "linked-options" %}
-
 
 {% schema %}
 

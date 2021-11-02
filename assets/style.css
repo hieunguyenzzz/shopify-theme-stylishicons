@@ -58,6 +58,10 @@
   display: flex
 }
 
+.tw-hidden {
+  display: none
+}
+
 .tw-h-72 {
   height: 18rem
 }
@@ -74,6 +78,14 @@
   height: 2.5rem
 }
 
+.tw-h-2 {
+  height: 0.5rem
+}
+
+.tw-h-\[300px\] {
+  height: 300px
+}
+
 .tw-w-full {
   width: 100%
 }
@@ -88,6 +100,10 @@
 
 .tw-w-10 {
   width: 2.5rem
+}
+
+.tw-w-2 {
+  width: 0.5rem
 }
 
 .tw-max-w-sm {
@@ -148,6 +164,12 @@
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse))
 }
 
+.tw-space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)))
+}
+
 .tw-self-center {
   align-self: center
 }
@@ -158,6 +180,18 @@
 
 .tw-rounded-full {
   border-radius: 9999px
+}
+
+.tw-border {
+  border-width: 1px
+}
+
+.tw-border-solid {
+  border-style: solid
+}
+
+.tw-border-current {
+  border-color: currentColor
 }
 
 .tw-bg-gray-100 {
@@ -171,6 +205,15 @@
 
 .tw-bg-transparent {
   background-color: transparent
+}
+
+.tw-bg-current {
+  background-color: currentColor
+}
+
+.tw-object-contain {
+  -o-object-fit: contain;
+     object-fit: contain
 }
 
 .tw-object-cover {
@@ -253,6 +296,11 @@
   filter: var(--tw-filter)
 }
 
+.hover\:tw-border-black:hover {
+  --tw-border-opacity: 1;
+  border-color: rgba(0, 0, 0, var(--tw-border-opacity))
+}
+
 .hover\:tw-bg-gray-100:hover {
   --tw-bg-opacity: 1;
   background-color: rgba(243, 244, 246, var(--tw-bg-opacity))
@@ -274,8 +322,24 @@
 }
 
 @media (min-width: 1024px) {
+  .lg\:tw-block {
+    display: block
+  }
+
+  .lg\:tw-h-\[40px\] {
+    height: 40px
+  }
+
+  .lg\:tw-h-\[600px\] {
+    height: 600px
+  }
+
   .lg\:tw-w-auto {
     width: auto
+  }
+
+  .lg\:tw-w-\[87px\] {
+    width: 87px
   }
 
   .lg\:tw-grid-cols-2 {
@@ -294,8 +358,22 @@
     align-items: flex-end
   }
 
+  .lg\:tw-space-x-px > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1px * var(--tw-space-x-reverse));
+    margin-left: calc(1px * calc(1 - var(--tw-space-x-reverse)))
+  }
+
+  .lg\:tw-rounded-none {
+    border-radius: 0px
+  }
+
   .lg\:tw-border {
     border-width: 1px
+  }
+
+  .lg\:tw-bg-transparent {
+    background-color: transparent
   }
 
   .lg\:tw-p-8 {
