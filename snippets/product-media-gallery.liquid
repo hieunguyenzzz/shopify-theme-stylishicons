@@ -30,15 +30,15 @@
             {% endif %}
         {% endfor %}
         {% if show %}
-        <div class="dot tw-border tw-border-solid tw-border-current hover:tw-border-black lg:tw-bg-transparent tw-bg-current  tw-w-2 tw-h-2 tw-rounded-full lg:tw-w-[87px] lg:tw-h-[40px] lg:tw-rounded-none">
-          <div class="tw-hidden lg:tw-block tw-w-full tw-h-full">
-              <img class="tw-w-full tw-h-full product__image tw-object-contain" src="{{ media | img_url: '150x' }}" data-src="{{ img_url }}" data-sizes="auto" data-image-id="{{ media.id }}" alt="{{ media.alt | escape }}">
-          </div>
-          <noscript>
-              <img src="{{ media | img_url: '100x' }}" alt="{{ media.alt | escape }}"/>
-          </noscript>
-      </div>
-            {% endif %}
+            <div class="dot tw-border-none lg:tw-border lg:tw-border-solid tw-border-current hover:tw-border-black lg:tw-bg-transparent tw-bg-current  tw-w-[5px] tw-h-[5px] tw-rounded-full lg:tw-w-[87px] lg:tw-h-[40px] lg:tw-rounded-none">
+                <div class="tw-hidden lg:tw-block tw-w-full tw-h-full">
+                    <img class="tw-w-full tw-h-full product__image tw-object-contain" src="{{ media | img_url: '150x' }}" data-src="{{ img_url }}" data-sizes="auto" data-image-id="{{ media.id }}" alt="{{ media.alt | escape }}">
+                </div>
+                <noscript>
+                    <img src="{{ media | img_url: '100x' }}" alt="{{ media.alt | escape }}"/>
+                </noscript>
+            </div>
+        {% endif %}
     {% endfor %}
 {% endcapture %}
 {% for variant in product.variants %}
@@ -73,7 +73,7 @@
                 {% endif %}
             {% endfor %}
             {% if show %}
-                <div class="dot tw-border tw-border-solid tw-border-current hover:tw-border-black lg:tw-bg-transparent tw-bg-current  tw-w-2 tw-h-2 tw-rounded-full lg:tw-w-[87px] lg:tw-h-[40px] lg:tw-rounded-none">
+                <div class="dot tw-border-none lg:tw-border lg:tw-border-solid tw-border-current hover:tw-border-black lg:tw-bg-transparent tw-bg-current  tw-w-[5px] tw-h-[5px] tw-rounded-full lg:tw-w-[87px] lg:tw-h-[40px] lg:tw-rounded-none">
                     <div class="tw-hidden lg:tw-block tw-w-full tw-h-full">
                         <img class="tw-w-full tw-h-full product__image tw-object-contain" src="{{ media | img_url: '150x' }}" data-src="{{ img_url }}" data-sizes="auto" data-image-id="{{ media.id }}" alt="{{ media.alt | escape }}">
                     </div>
@@ -90,11 +90,11 @@
         {% assign id = section.id %}
 {% endif %}
 <div class="tw-relative">
-    <div class="keen-slider tw-h-[300px] lg:tw-h-[600px]" id="keen-slider-{{id}}">
+    <div class="keen-slider tw-h-[180px] md:tw-h-[300px] lg:tw-h-[600px]" id="keen-slider-{{id}}">
         {{items}}
     </div>
     <div class="keen-slider-{{id}}-dots tw-space-x-2 lg:tw-space-x-px" id="keen-slider-{{id}}-dots">{{dots}}</div>
-    <div class="tw-pointer-events-none tw-px-8 tw-flex tw-items-center tw-justify-between tw-absolute tw-h-full tw-top-0 tw--left-8 tw--right-8">
+    <div class="tw-hidden tw-pointer-events-none tw-px-8 lg:tw-flex tw-items-center tw-justify-between tw-absolute tw-h-full tw-top-0 tw--left-8 tw--right-8">
         <button class="tw-m-0 tw-pointer-events-auto !tw-text-xl tw-text-black tw-bg-transparent tw-w-10 tw-h-10 tw-rounded-full tw-flex tw-justify-center tw-items-center hover:tw-bg-gray-100" id="keen-slider-{{id}}-arrow-left">
             <svg class="" height="1em" viewbox="0 0 100 100" width="1em">
                 <path class="arrow" d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"></path>
@@ -182,7 +182,6 @@
                     instance.refresh()
                     updateDots(instance,variant)
                 })
-             
               document
               .getElementById("keen-slider-{{id}}-arrow-left")
               .addEventListener("click", function () {
