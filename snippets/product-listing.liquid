@@ -57,7 +57,7 @@
     <p class="product__subtitle hidden-desktop">
             {{ product.metafields.global.slogun }}
      </p>
-    <h3 class="flex"> <span class="product-title"> {{ product.title }} </span>  {% render 'product-price-listing', product: product %}</h3>
+    <h3 class="flex"> <span class="product-title !tw-block"> {{ product.title }} </span>  {% render 'product-price-listing', product: product %}</h3>
   </a>
        
   {% unless product.template_suffix == 'not-for-sale' %}
