@@ -33,6 +33,10 @@
   right: -2rem
 }
 
+.tw-col-span-1 {
+  grid-column: span 1 / span 1
+}
+
 .tw-m-0 {
   margin: 0px
 }
@@ -54,8 +58,16 @@
   display: block
 }
 
+.\!tw-block {
+  display: block !important
+}
+
 .tw-flex {
   display: flex
+}
+
+.tw-grid {
+  display: grid
 }
 
 .tw-hidden {
@@ -78,20 +90,16 @@
   height: 2.5rem
 }
 
-.tw-h-2 {
-  height: 0.5rem
-}
-
-.tw-h-\[300px\] {
-  height: 300px
+.\!tw-h-full {
+  height: 100% !important
 }
 
 .tw-h-\[5px\] {
   height: 5px
 }
 
-.tw-h-\[180px\] {
-  height: 180px
+.tw-h-\[220px\] {
+  height: 220px
 }
 
 .tw-w-full {
@@ -110,8 +118,8 @@
   width: 2.5rem
 }
 
-.tw-w-2 {
-  width: 0.5rem
+.\!tw-w-full {
+  width: 100% !important
 }
 
 .tw-w-\[5px\] {
@@ -144,6 +152,10 @@
   transform: var(--tw-transform)
 }
 
+.tw-grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr))
+}
+
 .tw-flex-col {
   flex-direction: column
 }
@@ -162,6 +174,10 @@
 
 .tw-gap-8 {
   gap: 2rem
+}
+
+.tw-gap-3 {
+  gap: 0.75rem
 }
 
 .tw-space-y-8 > :not([hidden]) ~ :not([hidden]) {
@@ -192,14 +208,6 @@
 
 .tw-rounded-full {
   border-radius: 9999px
-}
-
-.tw-border {
-  border-width: 1px
-}
-
-.tw-border-solid {
-  border-style: solid
 }
 
 .tw-border-none {
@@ -295,6 +303,11 @@
   line-height: 1.75rem !important
 }
 
+.\!tw-text-2xl {
+  font-size: 1.5rem !important;
+  line-height: 2rem !important
+}
+
 .tw-font-bold {
   font-weight: 700
 }
@@ -327,13 +340,23 @@
   filter: var(--tw-filter)
 }
 
-@media (min-width: 768px) {
-  .md\:tw-h-\[300px\] {
+@media (min-width: 640px) {
+  .sm\:tw-h-\[300px\] {
     height: 300px
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:tw-grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr))
   }
 
   .md\:tw-items-center {
     align-items: center
+  }
+
+  .md\:tw-gap-6 {
+    gap: 1.5rem
   }
 
   .md\:tw-pt-0 {
@@ -350,8 +373,8 @@
     display: flex
   }
 
-  .lg\:tw-h-\[40px\] {
-    height: 40px
+  .lg\:tw-h-\[31px\] {
+    height: 31px
   }
 
   .lg\:tw-h-\[600px\] {
@@ -362,12 +385,16 @@
     width: auto
   }
 
-  .lg\:tw-w-\[87px\] {
-    width: 87px
+  .lg\:tw-w-\[54px\] {
+    width: 54px
   }
 
   .lg\:tw-grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr))
+  }
+
+  .lg\:tw-grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr))
   }
 
   .lg\:tw-flex-row {
@@ -382,10 +409,10 @@
     align-items: flex-end
   }
 
-  .lg\:tw-space-x-px > :not([hidden]) ~ :not([hidden]) {
+  .lg\:tw-space-x-4 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
-    margin-right: calc(1px * var(--tw-space-x-reverse));
-    margin-left: calc(1px * calc(1 - var(--tw-space-x-reverse)))
+    margin-right: calc(1rem * var(--tw-space-x-reverse));
+    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)))
   }
 
   .lg\:tw-rounded-none {

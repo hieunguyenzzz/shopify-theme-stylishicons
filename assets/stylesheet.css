@@ -1494,8 +1494,8 @@
  input[type="submit"]:hover,
  input[type="reset"]:hover,
  input[type="button"]:hover {
-   color: #ffffff;
-   background: #727272;
+   /* color: #ffffff; */
+   /* background: #727272; */
  }
  
  .secondary-button {
@@ -10882,7 +10882,7 @@ font-size:15px !important;
      max-height: 210px;
  }
  .product .box-ratio img  {
-     background-color: #f9f9f9;
+     /* background-color: #f9f9f9; */
      vertical-align: middle;
      position: absolute;
      top: 50%;
