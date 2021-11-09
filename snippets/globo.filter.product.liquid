@@ -39,7 +39,7 @@
 {% endif %}
 
 
-<div{% if showPageData %} data-page="{{page}}"{% endif %} class="spf-col-xl-3 spf-col-lg-4 spf-col-md-6 spf-col-sm-6 spf-col-6">
+<div{% if showPageData %} data-page="{{page}}"{% endif %} class="tw-col-span-1">
   <div class="product" id="prod-{{ product.id }}" data-alpha="{{ product.title }}" data-price="{{ product_price }}">
     <div class="ci">
       {% if product.available %}
@@ -59,7 +59,7 @@
         <div class="reveal">
           <div class="box-ratio" style="padding-bottom: {{ featured_image.height | divided_by: featured_image.width | times: 100 }}%;">
             <img
-                 class="gflazyload img-responsive"
+                 class="gflazyload img-responsive tw-absolute tw-inset-0 !tw-w-full !tw-h-full"
                  src="{{featured_image.src | img_url: image_size}}"
                  data-src="{{ featured_image.src | img_lazyload_url }}"
                  data-sizes="auto"
@@ -74,7 +74,7 @@
           <div class="hidden">
             <div class="box-ratio" style="padding-bottom: {{ product.images[1].height | divided_by: product.images[1].width | times: 100 }}%;">
               <img
-                   class="gflazyload img-responsive"
+                   class="gflazyload img-responsive tw-absolute tw-inset-0 !tw-w-full !tw-h-full"
                    srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                    src="{{product.images[1].src | img_url: image_size}}"
                    data-src="{{ product.images[1].src | img_lazyload_url }}"
@@ -103,7 +103,7 @@
     <div class="product-details">
 
       <a href="{{ root_url }}{{ product.url | within: collection }}">
-        <h3 translatable><span class="product-title">{{ product.title }} </span>  
+        <h3 translatable><span class="product-title !tw-block">{{ product.title }} </span>  
 
           {% if product.title %}
           {%  assign compare_at_price = product.compare_at_price %}

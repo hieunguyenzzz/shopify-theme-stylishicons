@@ -27,7 +27,7 @@
                       "pageDots": false
                     }
             {% endcapture %}
-            <div class="featured__collection{% if is_carousel %}-carousel flickity__section js-carousel{% endif %} product-loop row" {% if is_carousel %} data-flickity='{{ slideshow_config }}' {% endif %}>
+            <div class="featured__collection{% if is_carousel %}-carousel flickity__section js-carousel{% endif %} product-loop " {% if is_carousel %} data-flickity='{{ slideshow_config }}' {% endif %}>
 
 
                 {% for block in section.blocks %}
