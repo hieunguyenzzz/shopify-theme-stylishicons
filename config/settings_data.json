@@ -4908,7 +4908,7 @@
           "heading": "The Bestsellers",
           "heading_color": "#000000",
           "background_color": "#ffffff",
-          "collection": "2-seater-sofa",
+          "collection": "lounge-chair-3",
           "carousel": true,
           "grid": 4,
           "limit": 12
@@ -5082,25 +5082,25 @@
           "1618899325eb1a2f07-0": {
             "type": "featured_collection",
             "settings": {
-              "collection": "chairs-2"
+              "collection": "lounge-chair-3"
             }
           },
           "1618899325eb1a2f07-1": {
             "type": "featured_collection",
             "settings": {
-              "collection": "new-2019"
+              "collection": "lounge-chair-3"
             }
           },
           "1618899325eb1a2f07-2": {
             "type": "featured_collection",
             "settings": {
-              "collection": "designers-1"
+              "collection": "lounge-chair-3"
             }
           },
           "d7431e5f-ad9a-449f-9537-fcbfcf639f11": {
             "type": "featured_collection",
             "settings": {
-              "collection": "lounge-chair-2"
+              "collection": "lounge-chair-3"
             }
           }
         },
