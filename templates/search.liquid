@@ -34,7 +34,7 @@
                         {%- continue -%}
                     {%- endif -%}
 
-                    <div class="product-index desktop-3 tablet-2 mobile-half span-3" id="prod-{{ product.id }}" data-alpha="{{ product.title }}" data-price="{{ product.price }}">
+                    <div class="tw-col-span-1" id="prod-{{ product.id }}" data-alpha="{{ product.title }}" data-price="{{ product.price }}">
                         <!-- Article -->
                         {% if item.object_type == 'article' %}
                             <div class="collection-image ci">
@@ -72,7 +72,7 @@
                             <!-- Product -->
                         {% else %}
                             <!-- 'item' is a product. All product object properties can be accessed.-->
-                            {% render '[product]', product: item, collection: collection %}
+                            {% render 'product-listing', product: item, collection: collection %}
                         {% endif %}
                     </div>
                 {% endfor %}

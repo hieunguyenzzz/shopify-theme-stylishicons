@@ -101,7 +101,7 @@
     <div class="product-details">
 
       <a href="{{ root_url }}{{ product.url | within: collection }}">
-        <h3 translatable><span class="product-title">{{ product.title }} </span>  
+        <h3 translatable><span class="product-title !tw-block">{{ product.title }} </span>  
 
           {% if product.title %}
           {%  assign compare_at_price = product.compare_at_price %}
