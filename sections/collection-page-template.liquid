@@ -16,7 +16,7 @@
          
 
           <div class="section-title desktop-12 mobile-3 span-12">
-            <h1>
+            <h1 class="tw-py-6">
               {% if collection.handle == 'all' %}
                 {{ 'collections.general.all_products' | t }}
               {% else %}
@@ -142,9 +142,9 @@
               {%- assign grid_item_width = 'desktop-2 tablet-2 mobile-half span-2' -%}
             {% endcase %}
 
-            <div data-sectionId="{% if section.id %}{{section.id}}{% endif %}" data-settings='{% if section.settings %}{{section.settings | json}}{% endif %}' id="gf-products" class="custom_cpp grid_wrapper product-loop{% if section.settings.infinite_scroll %} is_infinite{% endif %}">
+            <div data-sectionId="{% if section.id %}{{section.id}}{% endif %}" data-settings='{% if section.settings %}{{section.settings | json}}{% endif %}' id="gf-products" class="tw-grid tw-grid-cols-2 md:tw-grid-cols-3 tw-gap-3 md:tw-gap-6{% if section.settings.infinite_scroll %} is_infinite{% endif %}">
               {% for product in collection.products %}
-                <div class="{{ grid_item_width }} product-index product-index--globo" id="prod-{{ product.id }}" data-alpha="{{ product.title }}" data-price="{{ product.price }}" data-aos="{{ settings.scroll_animation }}" data-product-id="{{ product.id }}">
+                <div class="tw-col-span-1 id="prod-{{ product.id }}" data-alpha="{{ product.title }}" data-price="{{ product.price }}" data-aos="{{ settings.scroll_animation }}" data-product-id="{{ product.id }}">
                   {% render 'product-listing', collection: collection, product: product %}
                 </div>
               {% endfor %}
