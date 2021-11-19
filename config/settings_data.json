@@ -4221,7 +4221,7 @@
     "section_title_align": "center",
     "section_titles": "short_below",
     "border-width": 100,
-    "scroll_animation": "fade-up",
+    "scroll_animation": "none",
     "section_padding": 100,
     "rounded_buttons": true,
     "breadcrumb": true,
@@ -5045,13 +5045,14 @@
       "16188954225e385108": {
         "type": "image-with-text-row",
         "settings": {
-          "full_width": false,
-          "image": "shopify:\/\/shop_images\/Designer_Editions_Home_Banner.png",
-          "color": "#f9f9f9",
+          "style": "style_2",
+          "image": "shopify:\/\/shop_images\/ii_bf_fe0d971b-c445-4c5f-9071-419d438b4cc4.jpg",
           "layout": "right",
+          "color": "#f9f9f9",
           "image_width": "66%",
           "text_align": "left",
           "title": "THE ICONS FOR LESS",
+          "subTitle": "40% Off Everything",
           "text": "",
           "link": "shopify:\/\/collections",
           "button": "Shop Now"
@@ -5102,13 +5103,20 @@
             "settings": {
               "collection": "lounge-chair-3"
             }
+          },
+          "4c28899a-0340-4d8a-af14-f5c984783b47": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": "2332-two-seater-sofa"
+            }
           }
         },
         "block_order": [
           "1618899325eb1a2f07-0",
           "1618899325eb1a2f07-1",
           "1618899325eb1a2f07-2",
-          "d7431e5f-ad9a-449f-9537-fcbfcf639f11"
+          "d7431e5f-ad9a-449f-9537-fcbfcf639f11",
+          "4c28899a-0340-4d8a-af14-f5c984783b47"
         ],
         "settings": {
           "full_width": false,
@@ -5887,7 +5895,7 @@
           "description": "<p><br\/>Mid-century furniture should be accessible to all. Unfortunately, decades after the deaths of the renowned designers, the prices are high, making these icons available only to the wealthy. We started Interior Icons as an accessible alternative, creating furniture inspired by the iconic designs, cutting out all middlemen and maintaining the same quality standards.<\/p>",
           "url": "\/",
           "urlText": "Learn More",
-          "liquid": "<figure class=\"customdiagram tc\">\n      \n        \n        \n<style type=\"text\/css\">\n.customdiagram svg{\nwidth:300px;\nheight:500px;\nmargin:auto\n}\n  #chart-bar-1{\n    height: 0px;\n  }\n  #chart-bar-1.go{\n    animation: chart1 1s forwards;\n    -webkit-animation: chart1 1s forwards;\n  }\n  #chart-bar-2{\n    height: 0px;\n  }\n  #chart-bar-2.go{\n    animation: chart2 1s forwards;\n    -webkit-animation: chart2 1s forwards;\n  }\n  @keyframes chart1 {\n    100% {\n      height: 107px;\n    }\n  }\n  @keyframes chart2 {\n    100% {\n      height: 360px;\n    }\n  }\n  @-webkit-keyframes chart1 {\n    100% {\n      height: 107px;\n    }\n  }\n  @-webkit-keyframes chart2 {\n    100% {\n      height: 360px;\n    }\n  }\n<\/style>\n\n<svg id=\"diagram\" viewbox=\"0 0 290 472\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\">\n    <g id=\"svg\" stroke=\"none\" stroke-width=\"1\" fill=\"#000000\" fill-rule=\"evenodd\">\n    \t<g id=\"left\">\n        \t<rect id=\"chart-bar-1\" class=\"animateThis go\" x=\"0\" y=\"283\" width=\"132\" height=\"107\" rx=\"3\" transform=\"scale(1,-1) translate(0,-676)\">\n            <\/rect>\n            <text>\n                <tspan x=\"19.68\" y=\"425\">Designer Icons<\/tspan>\n            <\/text>\n            <text font-weight=\"bold\">\n                <tspan x=\"47.384\" y=\"263\">$999<\/tspan>\n            <\/text>\n        <\/g>\n        <g id=\"right\" transform=\"translate(152,0)\">\n            <rect id=\"chart-bar-2\" class=\"animateThis go\" fill=\"#EEE6E2\" x=\"0\" y=\"33\" width=\"132\" height=\"360\" rx=\"3\" transform=\"scale(1,-1) translate(0,-426)\">\n            <\/rect>\n            <text>\n                <tspan x=\"29.464\" y=\"425\">Traditional<\/tspan>\n            <\/text>\n            <text font-weight=\"bold\">\n                <tspan x=\"36.56\" y=\"17\">$4,000*<\/tspan>\n            <\/text>\n        <\/g>\n        <text transform=\"translate(70,470)\" font-size=\"9\" fill=\"#64615F\">\n        \t<tspan>*the price for a Fritz Hansen Egg chair<\/tspan>\n        <\/text>\n    <\/g>\n<\/svg>\n      \n    <\/figure>"
+          "liquid": "<figure class=\"customdiagram tc\" style=\"\n    display: flex;\n    justify-content: center;\n\">\n      \n        \n        \n<style type=\"text\/css\">\n.customdiagram svg{\nwidth:300px;\nheight:500px;\nmargin:auto\n}\n  #chart-bar-1{\n    height: 0px;\n  }\n  #chart-bar-1.go{\n    animation: chart1 1s forwards;\n    -webkit-animation: chart1 1s forwards;\n  }\n  #chart-bar-2{\n    height: 0px;\n  }\n  #chart-bar-2.go{\n    animation: chart2 1s forwards;\n    -webkit-animation: chart2 1s forwards;\n  }\n  @keyframes chart1 {\n    100% {\n      height: 107px;\n    }\n  }\n  @keyframes chart2 {\n    100% {\n      height: 360px;\n    }\n  }\n  @-webkit-keyframes chart1 {\n    100% {\n      height: 107px;\n    }\n  }\n  @-webkit-keyframes chart2 {\n    100% {\n      height: 360px;\n    }\n  }\n<\/style>\n\n<svg id=\"diagram\" viewBox=\"0 0 290 472\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\">\n    <g id=\"svg\" stroke=\"none\" stroke-width=\"1\" fill=\"#000000\" fill-rule=\"evenodd\">\n    \t<g id=\"left\">\n        \t<rect id=\"chart-bar-1\" class=\"animateThis go\" x=\"0\" y=\"283\" width=\"132\" height=\"107\" rx=\"3\" transform=\"scale(1,-1) translate(0,-676)\">\n            <\/rect>\n            <text>\n                <tspan x=\"19.68\" y=\"425\">Designer Icons<\/tspan>\n            <\/text>\n            <text font-weight=\"bold\">\n                <tspan x=\"47.384\" y=\"263\">$999<\/tspan>\n            <\/text>\n        <\/g>\n        <g id=\"right\" transform=\"translate(152,0)\">\n            <rect id=\"chart-bar-2\" class=\"animateThis go\" fill=\"#EEE6E2\" x=\"0\" y=\"33\" width=\"132\" height=\"360\" rx=\"3\" transform=\"scale(1,-1) translate(0,-426)\">\n            <\/rect>\n            <text>\n                <tspan x=\"29.464\" y=\"425\">Traditional<\/tspan>\n            <\/text>\n            <text font-weight=\"bold\">\n                <tspan x=\"36.56\" y=\"17\">$4,000*<\/tspan>\n            <\/text>\n        <\/g>\n        <text transform=\"translate(70,470)\" font-size=\"9\" fill=\"#64615F\">\n        \t<tspan>*the price for a Fritz Hansen Egg chair<\/tspan>\n        <\/text>\n    <\/g>\n<\/svg>\n      \n    <\/figure>"
         }
       }
     },

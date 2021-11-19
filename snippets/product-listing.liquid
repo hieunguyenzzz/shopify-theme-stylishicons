@@ -16,17 +16,17 @@
 
     {% if product.featured_media %}
       <a href="{{ product.url  }}" title="{{ product.title | escape }}">
-        <div class="reveal">
+        <div class="reveal tw-bg-gray-100">
           {%- assign preview_image = product.featured_media.preview_image -%}
           {%- assign second_image = product.media[1] -%}
-          {% render "basic-responsive-image", type: preview_image %}
+          {% render "[image]", image: preview_image image_box_ratio:'56.25%'  %}
           <noscript>
             <img src="{{ preview_image | img_url: '1024x' }}" alt="{{ preview_image.alt | escape }}">
           </noscript>
 
           {% if settings.image_flip and product.media.size > 1 %}
             <div class="hidden">
-              <img class="lazyload lazyload-fade"
+              <img class="lazyload lazyload-fade tw-absolute tw-w-full tw-h-full tw-inset-0 tw-object-contain"
                 id="{{ preview_image.id }}"
                 data-src="{{ product.media[1] | img_url: '1024x' }}"
                 data-sizes="auto"
@@ -40,14 +40,17 @@
       </a>
     {%- else -%}
       {% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
-      {{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
+      <div class="tw-w-full" style="padding-bottom:56.25%"></div>
+      <div class="tw-absolute tw-w-full tw-h-full tw-inset-0 tw-flex tw-justify-center tw-items-center tw-p-6">
+        <img class="tw-w-full tw-h-full tw-object-contain" src="{{ 'holderimage.png' | asset_url }}" />
+      </div>
     {%- endif -%}
     {% if settings.quickview and template != 'search' %}
       <div class="product-info">
         <a rel="nofollow" data-fancybox="quick-view-{{ product.id }}" class="fancybox.ajax product-modal" href="{{ product.url }}?view=quick">{{ 'products.general.quick_view' | t }}</a>
       </div>
     {% endif %}
-  </div>
+</div>
 
 <div class="product-details">
   <a href="{{ product.url }}{% comment %}{{ product.url | within: collection }}{% endcomment %}" class="js-product-details-link">

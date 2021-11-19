@@ -12,9 +12,7 @@ module.exports = {
   theme: {
     namedGroups: ['one', 'two'],
     extend: {
-      container: {
-        padding: '2rem',
-      },
+    
     },
     
   },

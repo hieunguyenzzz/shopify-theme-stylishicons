@@ -1,6 +1,7 @@
 {
   "editor.defaultFormatter": "sissel.shopify-liquid",
   "liquid.format": true,
+  "editor.formatOnSaveMode": "file",
   "editor.codeActionsOnSave": {
     "source.fixAll": false,
   },
