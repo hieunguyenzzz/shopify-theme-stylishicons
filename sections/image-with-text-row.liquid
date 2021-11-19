@@ -1,67 +1,44 @@
-<section style=" background: {{ section.settings.color }}; " class="homepage-image-row-{{ section.id }}" data-section-id="{{ section.id }}" data-aos="{{ settings.scroll_animation }}">
-    <article class="tw-flex-col tw-flex lg:tw-flex-row lg:tw-items-center tw-pt-11 lg:tw-py-8" id="image-rows">
-        <div class="lg:tw-w-[40%] lg:tw-px-8 lg:tw-max-w-[calc(640px-10%)] lg:tw-ml-auto">
-            <div class="flex tw-text-center lg:tw-text-left lg:tw-items-start tw-flex-col tw-items-center tw-max-w-xl tw-mx-auto" data-aos="{{ settings.scroll_animation }}" data-aos-delay="300" data-aos-duration="1000">
-                {% if section.settings.title != blank %}
-                    <h3 class="tw-text-3xl md:tw-text-5xl tw-font-bold tw-leading-tight">
-                        {{ section.settings.title | escape }}
-                    </h3>
-                {% endif %}
-                {% if section.settings.text != blank %}
-                    <div class="rte">
-                        {{ section.settings.text }}
-                    </div>
-                {% endif %}
-                {% if section.settings.button != blank and section.settings.link != blank %}
-                    <div>
-                        <div class="cta">
-                            <a href="{{ section.settings.link }}">
-                                {{ section.settings.button | escape }}
-                            </a>
-                        </div>
-                    </div>
-                {% endif %}
-            </div>
-        </div>
-
-        <div class="lg:tw-w-[60%]">
-            {% if section.settings.image != blank %}
-                {% render 'basic-responsive-image', type: section.settings.image, data_widths: '[180, 360, 540, 720, 900]' %}
-                <noscript>
-                    <img src="{{ section.settings.image | img_url: '800x' }}" alt="{{ section.settings.image.alt }}">
-                </noscript>
-            {% else %}
-                <div class="onboard">
-                    {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-                </div>
-            {% endif %}
-        </div>
-
-
-    </article>
-</section>
+{% assign style = 'style_1' %}
+{% if section.settings.style %}
+    {% assign style = section.settings.style %}
+{% endif %}
+{% case style %}
+    {% when 'style_1' %}
+        {% render '[section]hero-default'  class: '' %}
+    {% when 'style_2' %}
+        {% render '[section]hero'  class: '' %}
+    {% else %}
+{% endcase %}
 
 
 {% schema %}
 
 {
-    "name": "Image row with text",
+    "name": "Banner",
     "class": "index-section",
+    "tag": "section",
     "settings": [
+
         {
-            "type": "checkbox",
-            "id": "full_width",
-            "label": "Full width"
-        }, {
+            "type": "radio",
+            "id": "style",
+            "label": "Style",
+            "default": "style_1",
+            "options": [
+                {
+                    "value": "style_1",
+                    "label": "Style 1"
+                }, {
+                    "value": "style_2",
+                    "label": "Style 2"
+                }
+            ]
+        },  {
             "type": "image_picker",
             "id": "image",
             "label": "Image",
             "info": "1200px x 800px recommended"
-        }, {
-            "type": "color",
-            "id": "color",
-            "label": "BG color"
-        }, {
+        },{
             "type": "select",
             "id": "layout",
             "label": "Position",
@@ -76,6 +53,10 @@
                 }
             ]
         }, {
+            "type": "color",
+            "id": "color",
+            "label": "Color"
+        },  {
             "type": "select",
             "id": "image_width",
             "label": "Width",
@@ -114,27 +95,34 @@
             "id": "title",
             "label": "Heading",
             "default": "Image with text"
-        }, {
+        }, 
+        {
+            "type": "text",
+            "id": "subTitle",
+            "label": "Sub Title",
+            "default": "Sub Heading"
+        },
+        {
             "type": "richtext",
             "id": "text",
             "label": "Text",
             "default": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
-                }, {
-                    "type": "url",
-                    "id": "link",
-                    "label": "Link"
-                }, {
-                    "type": "text",
-                    "id": "button",
-                    "label": "Button text"
-                }
-            ],
-            "presets": [
-                {
-                    "name": "Image row with text",
-                    "category": "Image"
-                }
-            ]
-        }
+            }, {
+                "type": "url",
+                "id": "link",
+                "label": "Link"
+            }, {
+                "type": "text",
+                "id": "button",
+                "label": "Button text"
+            }
+        ],
+        "presets": [
+            {
+                "name": "Image row with text",
+                "category": "Image"
+            }
+        ]
+    }
 
 {% endschema %}
