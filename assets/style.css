@@ -740,3 +740,9 @@
     max-width: 80rem
   }
 }
+
+@media (min-width: 1536px) {
+  .\32xl\:tw-min-h-\[1100px\] {
+    min-height: 1100px
+  }
+}
