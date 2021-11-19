@@ -33,7 +33,7 @@
                 {% for block in section.blocks %}
                     <div class="featured__collection-product product-index" id="product-listing-{{ product.id }}" data-product-id="{{ product.id }}" data-alpha="{{ product.title }}" data-price="{{ product.price }}">
 
-                        <blockquote class="tw-space-y-6 tw-p-6 lg:tw-p-8 lg:tw-border-solid lg:tw-border " >
+                        <blockquote class="tw-space-y-6 tw-p-6 lg:tw-p-8 lg:tw-border-solid lg:tw-border tw-border-gray-200" >
                             {% if block.settings.image %}
                               <span class="tw-block tw-w-12 tw-h-12 tw-rounded-full tw-overflow-hidden tw-relative">
                                 <img class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-cover lazyloaded" src="{{ block.settings.image | img_url: '200x' }}">

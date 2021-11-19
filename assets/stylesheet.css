@@ -12140,15 +12140,7 @@ a.megamenu__headerlink:hover{
 
 
 /* new */
-.review-stars{
-font-weight:500;
-  font-size:20px;
-  margin-bottom:20px;
-  margin-top:20px;
-  color:#ff6f61;
-  letter-spacing:-2px;
-  
-}
+.review-stars{font-weight:500;font-size: 1.;margin-bottom:20px;margin-top:20px;color:#ff6f61;letter-spacing:-2px;}
 
 
 
