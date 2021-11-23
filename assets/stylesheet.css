@@ -11375,6 +11375,7 @@ font-size:15px !important;
  
  .swatch .tooltip{
      left: -8px;
+     white-space: none;
  }
  
  .fa-search:before {
@@ -11423,7 +11424,7 @@ font-size:15px !important;
  }
  
  ul#cart li:last-child{
-     padding-left: 15px !Important;
+     /* padding-left: 15px !Important; */
  }
  
  @media screen and (max-width: 767px){

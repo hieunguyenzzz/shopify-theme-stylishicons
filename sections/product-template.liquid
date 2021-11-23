@@ -152,15 +152,7 @@
           </p>
           
           {% capture description %}
-            {% if section.blocks.size == 0 %}
-              <div class="rte">
-                {% if product.description contains '[#' %}
-                {{ product.description | split: '[#' | first }}
-                {% else %}
-                {{ product.description | split: '<!-- split -->' | first }}
-                {% endif %}
-              </div>
-            {% endif %}
+            
             <div class="rte-tab">
               {% unless section.blocks.size == 0 %}
                 {% for block in section.blocks %}

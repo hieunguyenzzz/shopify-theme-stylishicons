@@ -41,6 +41,22 @@
   right: 0px
 }
 
+.tw-left-0 {
+  left: 0px
+}
+
+.tw-top-full {
+  top: 100%
+}
+
+.tw-top-6 {
+  top: 1.5rem
+}
+
+.tw-right-6 {
+  right: 1.5rem
+}
+
 .tw-isolate {
   isolation: isolate
 }
@@ -352,6 +368,11 @@
   background-color: currentColor
 }
 
+.tw-bg-\[\#f9f9f9\] {
+  --tw-bg-opacity: 1;
+  background-color: rgba(249, 249, 249, var(--tw-bg-opacity))
+}
+
 .tw-object-contain {
   -o-object-fit: contain;
      object-fit: contain
@@ -403,6 +424,11 @@
 .tw-px-0 {
   padding-left: 0px;
   padding-right: 0px
+}
+
+.tw-px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem
 }
 
 .tw-pt-6 {
@@ -497,8 +523,17 @@
   opacity: 0
 }
 
+.tw-shadow {
+  --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+
 .tw-filter {
   filter: var(--tw-filter)
+}
+
+.focus-within\:tw-block:focus-within {
+  display: block
 }
 
 .hover\:tw-border-black:hover {
@@ -514,6 +549,10 @@
 .hover\:tw-grayscale:hover {
   --tw-grayscale: grayscale(100%);
   filter: var(--tw-filter)
+}
+
+.tw-group:focus-within .group-focus-within\:tw-block {
+  display: block
 }
 
 @media (min-width: 640px) {
