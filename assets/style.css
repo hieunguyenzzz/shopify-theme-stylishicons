@@ -6,6 +6,10 @@
   pointer-events: auto
 }
 
+.tw-invisible {
+  visibility: hidden
+}
+
 .tw-absolute {
   position: absolute
 }
@@ -92,6 +96,10 @@
 
 .tw-mt-6 {
   margin-top: 1.5rem
+}
+
+.tw-mt-12 {
+  margin-top: 3rem
 }
 
 .tw-block {
@@ -532,6 +540,20 @@
   filter: var(--tw-filter)
 }
 
+.tw-transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms
+}
+
+.tw-duration-1000 {
+  transition-duration: 1000ms
+}
+
+.tw-duration-700 {
+  transition-duration: 700ms
+}
+
 .focus-within\:tw-block:focus-within {
   display: block
 }
@@ -551,8 +573,20 @@
   filter: var(--tw-filter)
 }
 
+.tw-group:focus-within .group-focus-within\:tw-visible {
+  visibility: visible
+}
+
+.tw-group:focus-within .group-focus-within\:tw-mt-6 {
+  margin-top: 1.5rem
+}
+
 .tw-group:focus-within .group-focus-within\:tw-block {
   display: block
+}
+
+.tw-group:focus-within .group-focus-within\:tw-opacity-100 {
+  opacity: 1
 }
 
 @media (min-width: 640px) {
