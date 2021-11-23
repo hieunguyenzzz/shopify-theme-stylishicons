@@ -1,6 +1,6 @@
 {% if settings.breadcrumb %}
-  <div id="breadcrumb" class="desktop-12 tablet-6 mobile-3 span-12">
-    <div class="gridlock row">
+  <div id="breadcrumb" >
+    <div class="{% render '[class]-container'  class: '' %} tw-text-center lg:tw-text-left">
     <a href="{{ routes.root_url }}" class="homepage-link" title="{{ 'general.breadcrumbs.home' | t }}">{{ 'general.breadcrumbs.home' | t }}</a>
     {% if template contains "product" %}
     {% if collection %}
