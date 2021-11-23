@@ -1618,10 +1618,16 @@ theme.ProductForm = function (context, sectionId, events, Product) {
   new Shopify.OptionSelectors(prodSelector, {
     product: Product,
     onVariantSelected: function(variant, selector) {
-
+      console.log({variant, selector})
       if ( !variant ) {
         events.trigger("variantunavailable");
         Events.trigger("storeavailability:unavailable");
+        const firstAvaiVariant =Product.variants.find(({option1})=>{
+          return  selector.selectedValues().includes(option1)
+        })
+        if(firstAvaiVariant){
+          selector.selectVariant(firstAvaiVariant.id,selector)
+        }
         return;
       }
 
@@ -1760,7 +1766,7 @@ theme.ProductForm = function (context, sectionId, events, Product) {
         return option != current_option;
       });
       var product_url = document.getElementById("product_url").value;
-		var option_first_selected = "";
+		  var option_first_selected = "";
       element.addEventListener("change", function (event) {
         var selected_elements = $(elements).filter(":checked").toArray();
         var selected_value = '';
@@ -1782,11 +1788,11 @@ theme.ProductForm = function (context, sectionId, events, Product) {
                    
           loop_inc++;
         });
-        if(option_position == 2){
-          let redirect_url = document.querySelector(".set-"+selected_value).value;                  
-          window.location.href= redirect_url;   
-          return false; 
-        }
+        // if(option_position == 2){
+        //   let redirect_url = document.querySelector(".set-"+selected_value).value;                  
+        //   window.location.href= redirect_url;   
+        //   return false; 
+        // }
          
         events.trigger("swatch:change:" + option_position, element.value);
         if(option_position == 1){
