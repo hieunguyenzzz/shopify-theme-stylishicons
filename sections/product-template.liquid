@@ -16,7 +16,7 @@
   {% endfor %}
   {% assign productHandle = product.title | handle %}
   {% assign setcollection =  collections[collhandle] %}
-  {% for setProduct in setcollection.products %}
+  <!-- {% for setProduct in setcollection.products %}
     {% assign rloopindex = forloop.index %}
     {% for variant in product.variants %}	
       {% if forloop.index == rloopindex %}
@@ -24,7 +24,7 @@
       {% break %}
       {% endif %}
     {% endfor %}
-  {% endfor %}
+  {% endfor %} -->
 
 {% assign current_option = "" %}
 {% assign current_option2 = "" %}

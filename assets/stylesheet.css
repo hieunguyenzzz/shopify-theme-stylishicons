@@ -1121,7 +1121,8 @@
   src: url("https://fonts.shopifycdn.com/karla/karla_n4.187fb228d0a8055289c8663e90433b4a50e86848.woff2?h1=ZGVzaWduZXItaWNvbnMuY29t&hmac=046462de9cb611d7e4e8d7c75fea290bc1e11c2046fa963fd0054286a3e3ba5b") format("woff2"),
        url("https://fonts.shopifycdn.com/karla/karla_n4.24ba61101c1ba185880bec9c74d8e7cdb826ad49.woff?h1=ZGVzaWduZXItaWNvbnMuY29t&hmac=78e2a705bed3d55258730ab54735a329ec260cf377a6d5288afe7fba0393ead0") format("woff");
 }
-
+
+
  
  
  
@@ -4525,7 +4526,8 @@
    display: none;
  }
  .swatch .color.soldout{
-   display:none;
+   /* display:none; */
+   pointer-events: none;
  }
  
  .swatch .swatch-element.soldout label {
