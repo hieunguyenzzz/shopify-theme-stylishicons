@@ -1,12 +1,11 @@
 {
   "editor.defaultFormatter": "sissel.shopify-liquid",
   "liquid.format": true,
-  "editor.formatOnSaveMode": "file",
   "editor.codeActionsOnSave": {
     "source.fixAll": false,
   },
   "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features",
+    "editor.defaultFormatter": "sissel.shopify-liquid",
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": false
     },
@@ -17,12 +16,11 @@
       "source.fixAll.eslint": false
     },
   },
+  "prettier.enable": false,
   "git.ignoreLimitWarning": true,
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   "files.associations": {
     "*.liquid": "html"
   },
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+
 }
