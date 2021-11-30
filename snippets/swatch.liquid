@@ -13,7 +13,9 @@ material - size, choose colours" | split: ", " %}
 
   {% for value in option.values %}
 
-  {% assign image_url = value | handle | append: '.png' | file_url %}
+  <!-- {% assign image_url = value | handle | append: '.png' | file_url %} -->
+  {% assign handleValue = value | handle %}
+  {% assign image_url = 'https://res.cloudinary.com/dfgbpib38/image/upload/v1638254701/swatchs/' | append: handleValue | append: '.png'  %}
 
   {% assign css_color = value | split: ' ' | last | handle %}
 

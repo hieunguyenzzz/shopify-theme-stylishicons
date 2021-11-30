@@ -4526,7 +4526,7 @@
    display: none;
  }
  .swatch .color.soldout{
-   /* display:none; */
+   display:none;
    pointer-events: none;
  }
  
