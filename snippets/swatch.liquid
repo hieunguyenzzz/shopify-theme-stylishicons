@@ -3,6 +3,7 @@
 {% assign color_swatch_options = "color, colour, fabric, choose color, choose colour, finish, wood options, choose
 upholstery, upholstery, choose upholstery, upholstery, upholstery*, choose wood options, choose. finish, upholstery,
 material - size, choose colours" | split: ", " %}
+{% assign material_swatch_options = "choose. material" | split: ", " %}
 
 {% assign current_option = "option" | append: option.position %}
 
@@ -10,7 +11,12 @@ material - size, choose colours" | split: ", " %}
 
 <div class="clearfix swatch" data-option-index="{{ option.position }}" data-other-options='{{ other_options | json }}'>
   <h5>{{ option.name }}</h5>
-
+  {% if material_swatch_options contains option_name %}
+    <div class="tw-grid tw-grid-cols-2 tw-gap-2">
+  {% else %}
+    <div class="tw-flex tw-flex-wrap">
+  {% endif %}
+  
   {% for value in option.values %}
 
   <!-- {% assign image_url = value | handle | append: '.png' | file_url %} -->
@@ -81,21 +87,8 @@ material - size, choose colours" | split: ", " %}
   <img class="crossed-out" src="{{ 'soldout.png' | asset_url }}" />
   {% endcapture %}
 
-  {% capture regular_swatch %}
-  <div class="swatch-element {% unless available %}soldout{% endunless %}">
-    {{ radio_button }}
-
-    <label for="{% if template == 'product.quick' %}qv-{% endif %}{{ id }}">
-      {{ value }}
-      {{ sold_out_image }}
-    </label>
-  </div>
-  {% endcapture %}
-
-
-
-  {% capture color_swatch %}
-  <div class="swatch-element color {% unless available %}soldout {% endunless %}">
+  {% if color_swatch_options contains option_name %}
+  <div class="swatch-element color tw-leading-none {% unless available %}soldout {% endunless %}">
     <div class="tooltip">
       {{ value }}
     </div>
@@ -121,12 +114,23 @@ material - size, choose colours" | split: ", " %}
       {% endif %}
     </label>
   </div>
-  {% endcapture %}
-
-  {% if color_swatch_options contains option_name %}
-  {{ color_swatch }}
+  {% elsif material_swatch_options contains option_name %}
+    <div class="swatch-element tw-w-full tw-bg-gray-100 !tw-m-0 {% unless available %}soldout{% endunless %}">
+      {{ radio_button }}
+      <label class="tw-w-full tw-text-center" for="{% if template == 'product.quick' %}qv-{% endif %}{{ id }}">
+        {{ value }}
+        {{ sold_out_image }}
+      </label>
+    </div>
   {% else %}
-  {{ regular_swatch }}
+  <div class="swatch-element {% unless available %}soldout{% endunless %}">
+    {{ radio_button }}
+    <label for="{% if template == 'product.quick' %}qv-{% endif %}{{ id }}">
+      {{ value }}
+      {{ sold_out_image }}
+    </label>
+  </div>
   {% endif %}
   {% endfor %}
+  </div>
 </div>

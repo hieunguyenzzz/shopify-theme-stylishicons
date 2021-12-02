@@ -5,10 +5,10 @@
     {% endif %}
     {% assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
     {% if layout == 'fill' %}
-        <img class="lazyload tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-cover lazyload-fade {{ is_first }}" id="{{ image.id }}" data-src="{{ img_url }}" data-sizes="auto" width="{{ image.image.width }}" height="{{ image.image.height }}" data-original="{{ image | img_url: '500x' }}" {%- if data_widths != blank -%} data-widths="{{ data_widths }}" {%- endif -%} alt="{{ image.alt | escape }}">
+        <img class="lazyload tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-contain lazyload-fade {{ is_first }}" id="{{ image.id }}" data-src="{{ img_url }}" data-sizes="auto" width="{{ image.image.width }}" height="{{ image.image.height }}" data-original="{{ image | img_url: '500x' }}" {%- if data_widths != blank -%} data-widths="{{ data_widths }}" {%- endif -%} alt="{{ image.alt | escape }}">
     {% else %}
         <div class="tw-w-full" style="padding-bottom: {{ image_box_ratio }};">
-            <img class="lazyload tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-cover lazyload-fade {{ is_first }}" id="{{ image.id }}" data-src="{{ img_url }}" data-sizes="auto" width="{{ image.image.width }}" height="{{ image.image.height }}" data-original="{{ image | img_url: '500x' }}" {%- if data_widths != blank -%} data-widths="{{ data_widths }}" {%- endif -%} alt="{{ image.alt | escape }}">
+            <img class="lazyload tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-contain lazyload-fade {{ is_first }}" id="{{ image.id }}" data-src="{{ img_url }}" data-sizes="auto" width="{{ image.image.width }}" height="{{ image.image.height }}" data-original="{{ image | img_url: '500x' }}" {%- if data_widths != blank -%} data-widths="{{ data_widths }}" {%- endif -%} alt="{{ image.alt | escape }}">
         </div>
     {% endif %}
 
