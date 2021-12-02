@@ -4507,6 +4507,7 @@
    margin: 0px 3px 10px 0;
    /* To position the sold out graphic and tooltip */
    position: relative;
+   line-height: 1;
  }
  /* Image with the cross in it */
  .crossed-out {
