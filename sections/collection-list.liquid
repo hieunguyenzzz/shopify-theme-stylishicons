@@ -9,8 +9,7 @@
         {% for block in section.blocks limit: section.blocks.size %}
             {%- assign collection = collections[block.settings.collection] -%}
             <div class="keen-slider__slide">
-                <div class="tw-w-full tw-relative tw-bg-gray-100" data-alpha="{{ collection.title }}" {{ block.shopify_attributes }}>
-                  <div class="tw-w-full" style="padding-bottom: 115%;"></div>
+                <div class="tw-w-full tw-relative " data-alpha="{{ collection.title }}" {{ block.shopify_attributes }}>
                     {% if block.settings.collection == blank %}
                         {% capture current %}
                             {{ forloop.index }}
