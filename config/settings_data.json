@@ -4908,7 +4908,7 @@
           "heading": "The Bestsellers",
           "heading_color": "#000000",
           "background_color": "#ffffff",
-          "collection": "togo",
+          "collection": "lounge-chair-3",
           "carousel": true,
           "grid": 4,
           "limit": 12
@@ -5083,7 +5083,7 @@
           "1618899325eb1a2f07-0": {
             "type": "featured_collection",
             "settings": {
-              "collection": "lounge-chair-3"
+              "collection": "wishbone-y-chair-ch241"
             }
           },
           "1618899325eb1a2f07-1": {
