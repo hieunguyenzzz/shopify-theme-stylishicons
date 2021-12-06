@@ -1,14 +1,19 @@
-<div class="tw-absolute tw-w-full tw-h-full tw-inset-0">
-  <a href="{{ collection.url }}" title="{{ collection_title }}">
-    {% if collection.image %}
-      {% render "[image]", iamge: collection.image %}
-    {% elsif collection.products.first and collection.products.first.media != empty %}
-      {% render "[image]", iamge: collection.products.first.featured_media.preview_image %}
-    {% else %}
-      {% render "[image]-holder"%}
-    {% endif %}
-  </a>
+<div class="tw-relative" style="padding-bottom: 100%;">
+  <div class="tw-absolute tw-w-full tw-h-full tw-inset-0" >
+    <a href="{{ collection.url }}" title="{{ collection_title }}">
+      {% if collection.image %}
+        {% render "[image]", image: collection.image %}
+      {% elsif collection.products.first and collection.products.first.media != empty %}
+        {% render "[image]", image: collection.products.first.featured_media.preview_image %}
+      {% else %}
+        <div class="tw-w-full" >
+          {% render "[image]-holder" %}
+        </div>
+      {% endif %}
+    </a>
+  </div>
+  <div style="transform: translateY(-50%);" class="tw-absolute tw-top-1/2 tw-right-0 tw-max-w-full">
+    <h3 class="tw-m-0 tw-font-bold tw-text-xs sm:tw-text-base tw-px-6 lg:tw-px-8"><a href="{{ collection.url }}" title="{{ collection_title }}">{{ collection.title }}</a></h3>
+  </div>
 </div>
-<div style="transform: translateY(-50%);" class="tw-absolute tw-top-1/2 tw-right-0 tw-max-w-full">
-  <h3 class="tw-m-0 tw-font-bold tw-text-xs sm:tw-text-base tw-px-6 lg:tw-px-8"><a href="{{ collection.url }}" title="{{ collection_title }}">{{ collection.title }}</a></h3>
-</div>
+
