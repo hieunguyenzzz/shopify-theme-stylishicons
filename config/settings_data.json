@@ -4246,11 +4246,11 @@
     "show_cart_notes": true,
     "show_shipping_calculator": true,
     "shipping_calculator_heading": "Get shipping estimates",
-    "shipping_calculator_default_country": "United States",
+    "shipping_calculator_default_country": "United Kingdom",
     "shipping_calculator_submit_button_label": "Calculate shipping",
     "shipping_calculator_submit_button_label_disabled": "Calculating...",
     "show_shipping_countdown": true,
-    "free_shipping_threshold": "25",
+    "free_shipping_threshold": "",
     "free_shipping_bg": "#ff7a5f",
     "free_shipping_text": "#fff",
     "facebook_url": "https:\/\/www.facebook.com\/shopify",
@@ -4262,23 +4262,23 @@
     "googleplus_url": "",
     "snapchat-id": "",
     "weibo-id": "",
-    "popup": false,
+    "popup": true,
     "test_mode": true,
     "popup_image": "content",
-    "email_image": "",
+    "email_image": "shopify:\/\/shop_images\/wishbone.png",
     "mail_popup_title": "Join us and get nice things",
     "mail_popup_text": "Free stuff and general goodness",
     "mail_button_text": "Sign Up",
     "mail_gdpr_text": "*By completing this form you're signing up to receive our emails and can unsubscribe at any time.",
-    "popup_h3_size": 18,
+    "popup_h3_size": 24,
     "popup_subheading_size": 15,
     "popup_text_color": "#000000",
     "popup_background_color": "#ffffff",
-    "favicon": "shopify:\/\/shop_images\/DI-LOGO-ICON-300x300.png",
+    "favicon": "shopify:\/\/shop_images\/DI-LOGO-ICON-300x300_256x256-2.png",
     "checkout_header_image": "",
-    "checkout_logo_image": "",
-    "checkout_logo_position": "left",
-    "checkout_logo_size": "medium",
+    "checkout_logo_image": "shopify:\/\/shop_images\/Text-Logo-For-web-1000_163fb4cf-5e59-40ce-b248-00858dc29246_x320-1.png",
+    "checkout_logo_position": "center",
+    "checkout_logo_size": "small",
     "checkout_body_background_image": "",
     "checkout_body_background_color": "#ffffff",
     "checkout_input_background_color_mode": "white",
@@ -4344,7 +4344,7 @@
           "cart_position": "header",
           "show_locale_selector": false,
           "show_currency_selector": false,
-          "logo": "shopify:\/\/shop_images\/Text-Logo-For-web-1000_163fb4cf-5e59-40ce-b248-00858dc29246.png",
+          "logo": "shopify:\/\/shop_images\/Text-Logo-For-web-1000_163fb4cf-5e59-40ce-b248-00858dc29246_x320-1.png",
           "logoname": "DESIGNER ICONS",
           "logosize": 20,
           "logo_max_width": 165,
@@ -4908,7 +4908,7 @@
           "heading": "The Bestsellers",
           "heading_color": "#000000",
           "background_color": "#ffffff",
-          "collection": "sofa-2",
+          "collection": "lounge-chair-3",
           "carousel": true,
           "grid": 4,
           "limit": 12
@@ -5083,7 +5083,7 @@
           "1618899325eb1a2f07-0": {
             "type": "featured_collection",
             "settings": {
-              "collection": "lounge-chair-3"
+              "collection": "wishbone-y-chair-ch241"
             }
           },
           "1618899325eb1a2f07-1": {
@@ -5181,7 +5181,7 @@
               "heading": "<p><strong>SHIPPING<\/strong><\/p><p><\/p><p>Shipping cost is 10% of the product price<\/p>",
               "popup": "Learn More",
               "pop_heading": "<p>Shipping Info<\/p>",
-              "pop_text": "<p>We offer shipping to the lower 48 states. Shipping cost is 10% of the product price. All deliveries are contactless.<\/p>",
+              "pop_text": "<p>We offer shipping to most of Europe. Shipping cost is 10% of the product price. All deliveries are contactless. Please check the European countries we delivery to on checkout.<\/p>",
               "heading_color": "#000000",
               "button_color": "#ffffff",
               "button_background": "#000000",
@@ -5200,7 +5200,7 @@
               "heading": "<p><strong>RETURNS<\/strong><\/p><p>Free 30-day returns<\/p>",
               "popup": "Learn More",
               "pop_heading": "<p>Returns Info<\/p>",
-              "pop_text": "<p>We offer free 30-day returns to customers in the 48 contiguous United States. We created this policy as part of our ongoing effort to provide a hassle-free shopping experience, enabling you to transform your living space into your own personal showroom, and try your favorite design in the comfort of your own home before making a long-term commitment. Please note that not all products are eligible for free returns. To see whether a product is eligible go to the product details section of the product page.<\/p>",
+              "pop_text": "<p>We offer cost effective 30-day returns to customers in most of Europe. We created this policy as part of our ongoing effort to provide a hassle-free shopping experience, enabling you to transform your living space into your own personal showroom, and try your favourite design in the comfort of your own home before making a long-term commitment. Please note that not all products are eligible for free returns. To see whether a product is eligible go to the product details section of the product page.<\/p>",
               "heading_color": "#000000",
               "button_color": "#ffffff",
               "button_background": "#000000",
@@ -5219,7 +5219,7 @@
               "heading": "<p><strong>WARRANTY<\/strong><\/p><p>10 years warranty<\/p>",
               "popup": "Learn More",
               "pop_heading": "<p>Warranty Info<\/p>",
-              "pop_text": "<p>One of the reasons you might be shopping with us is that you recognise the superior quality of our pieces. And just as we want our furniture to be the best you can find, we want our promise to you to be equally superior. That’s why, while most furniture manufacturers only offer a 1 year warranty, we offer a 10 year warranty. Please go to https:\/\/interioricons.com\/pages\/terms to read the full warranty policy.<\/p>",
+              "pop_text": "<p>One of the reasons you might be shopping with us is that you recognise the superior quality of our pieces. And just as we want our furniture to be the best you can find, we want our promise to you to be equally superior. That’s why, while most furniture manufacturers only offer a 1 year warranty, we offer a 5 year warranty. Please go to <a href=\"https:\/\/designer-icons.com\/pages\/5-year-warranty\" title=\"https:\/\/designer-icons.com\/pages\/5-year-warranty\">www.designer-icons.com<\/a> to read the full warranty policy.<\/p>",
               "heading_color": "#685757",
               "button_color": "#ffffff",
               "button_background": "#000000",
@@ -5896,6 +5896,29 @@
           "url": "\/",
           "urlText": "Learn More",
           "liquid": "<figure class=\"customdiagram tc\" style=\"\n    display: flex;\n    justify-content: center;\n\">\n      \n        \n        \n<style type=\"text\/css\">\n.customdiagram svg{\nwidth:300px;\nheight:500px;\nmargin:auto\n}\n  #chart-bar-1{\n    height: 0px;\n  }\n  #chart-bar-1.go{\n    animation: chart1 1s forwards;\n    -webkit-animation: chart1 1s forwards;\n  }\n  #chart-bar-2{\n    height: 0px;\n  }\n  #chart-bar-2.go{\n    animation: chart2 1s forwards;\n    -webkit-animation: chart2 1s forwards;\n  }\n  @keyframes chart1 {\n    100% {\n      height: 107px;\n    }\n  }\n  @keyframes chart2 {\n    100% {\n      height: 360px;\n    }\n  }\n  @-webkit-keyframes chart1 {\n    100% {\n      height: 107px;\n    }\n  }\n  @-webkit-keyframes chart2 {\n    100% {\n      height: 360px;\n    }\n  }\n<\/style>\n\n<svg id=\"diagram\" viewBox=\"0 0 290 472\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\">\n    <g id=\"svg\" stroke=\"none\" stroke-width=\"1\" fill=\"#000000\" fill-rule=\"evenodd\">\n    \t<g id=\"left\">\n        \t<rect id=\"chart-bar-1\" class=\"animateThis go\" x=\"0\" y=\"283\" width=\"132\" height=\"107\" rx=\"3\" transform=\"scale(1,-1) translate(0,-676)\">\n            <\/rect>\n            <text>\n                <tspan x=\"19.68\" y=\"425\">Designer Icons<\/tspan>\n            <\/text>\n            <text font-weight=\"bold\">\n                <tspan x=\"47.384\" y=\"263\">$999<\/tspan>\n            <\/text>\n        <\/g>\n        <g id=\"right\" transform=\"translate(152,0)\">\n            <rect id=\"chart-bar-2\" class=\"animateThis go\" fill=\"#EEE6E2\" x=\"0\" y=\"33\" width=\"132\" height=\"360\" rx=\"3\" transform=\"scale(1,-1) translate(0,-426)\">\n            <\/rect>\n            <text>\n                <tspan x=\"29.464\" y=\"425\">Traditional<\/tspan>\n            <\/text>\n            <text font-weight=\"bold\">\n                <tspan x=\"36.56\" y=\"17\">$4,000*<\/tspan>\n            <\/text>\n        <\/g>\n        <text transform=\"translate(70,470)\" font-size=\"9\" fill=\"#64615F\">\n        \t<tspan>*the price for a Fritz Hansen Egg chair<\/tspan>\n        <\/text>\n    <\/g>\n<\/svg>\n      \n    <\/figure>"
+        }
+      },
+      "page-custom-three": {
+        "type": "page-custom-three",
+        "blocks": {
+          "page-custom-three-0": {
+            "type": "page_title",
+            "settings": {
+            }
+          },
+          "page-custom-three-1": {
+            "type": "page_content",
+            "settings": {
+              "pc_align": "center",
+              "pc_max_width": 800
+            }
+          }
+        },
+        "block_order": [
+          "page-custom-three-0",
+          "page-custom-three-1"
+        ],
+        "settings": {
         }
       }
     },
