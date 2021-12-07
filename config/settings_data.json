@@ -4908,7 +4908,7 @@
           "heading": "The Bestsellers",
           "heading_color": "#000000",
           "background_color": "#ffffff",
-          "collection": "lounge-chair-3",
+          "collection": "all",
           "carousel": true,
           "grid": 4,
           "limit": 12
