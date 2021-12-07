@@ -10,7 +10,7 @@
     {% capture items %}
         {% for block in section.blocks %}
             <a href="{{block.settings.url}}" class="keen-slider__slide">
-                {% render '[image]' image_box_ratio:'100%'  image: block.settings.image  data_widths: '[180, 360, 540, 720, 900]' %}
+                {% render '[image]' cover: true image_box_ratio:'100%'  image: block.settings.image  data_widths: '[180, 360, 540, 720, 900]' %}
             </a>
         {% endfor %}
     {% endcapture %}
@@ -54,32 +54,32 @@
             "id": "description",
             "label": "Description",
             "default": "<p>Less than humble about your abode? Mention @interior_icons in your photos and we'll feature the best pics on our site.</p>"
-            }
-        ],
-        "blocks": [
-            {
-                "type": "item",
-                "name": "Feed Item",
-                "settings": [
+                    }
+                ],
+                "blocks": [
                     {
-                        "type": "image_picker",
-                        "id": "image",
-                        "label": "Image"
-                    }, {
-                        "type": "url",
-                        "id": "url",
-                        "label": "Url",
-                        "default": "/"
+                        "type": "item",
+                        "name": "Feed Item",
+                        "settings": [
+                            {
+                                "type": "image_picker",
+                                "id": "image",
+                                "label": "Image"
+                            }, {
+                                "type": "url",
+                                "id": "url",
+                                "label": "Url",
+                                "default": "/"
+                            }
+                        ]
+                    }
+                ],
+                "presets": [
+                    {
+                        "name": "Instagram",
+                        "category": "Text"
                     }
                 ]
             }
-        ],
-        "presets": [
-            {
-                "name": "Instagram",
-                "category": "Text"
-            }
-        ]
-    }
 
 {% endschema %}
