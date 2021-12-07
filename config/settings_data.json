@@ -5216,7 +5216,7 @@
               "image": "shopify:\/\/shop_images\/3aa.png",
               "image_width": "33%",
               "overlay_opacity": 0,
-              "heading": "<p><strong>WARRANTY<\/strong><\/p><p>10 years warranty<\/p>",
+              "heading": "<p><strong>WARRANTY<\/strong><\/p><p>5 years warranty<\/p>",
               "popup": "Learn More",
               "pop_heading": "<p>Warranty Info<\/p>",
               "pop_text": "<p>One of the reasons you might be shopping with us is that you recognise the superior quality of our pieces. And just as we want our furniture to be the best you can find, we want our promise to you to be equally superior. That’s why, while most furniture manufacturers only offer a 1 year warranty, we offer a 5 year warranty. Please go to <a href=\"https:\/\/designer-icons.com\/pages\/5-year-warranty\" title=\"https:\/\/designer-icons.com\/pages\/5-year-warranty\">www.designer-icons.com<\/a> to read the full warranty policy.<\/p>",
@@ -5790,7 +5790,7 @@
             "type": "question",
             "settings": {
               "image": "shopify:\/\/shop_images\/3aa_50x_423709e4-511d-489e-a091-93728a4f8f7f.png",
-              "title": "WARRANTY<br><p>10 years warranty<\/p>",
+              "title": "WARRANTY<br><p>5 years warranty<\/p>",
               "answer": "<p>One of the reasons you might be shopping with us is that you recognise the superior quality of our pieces. And just as we want our furniture to be the best you can find, we want our promise to you to be equally superior. That’s why, while most furniture manufacturers only offer a 1 year warranty, we offer a 10 year warranty. Please go to https:\/\/interioricons.com\/pages\/terms to read the full warranty policy.<\/p>"
             }
           },
