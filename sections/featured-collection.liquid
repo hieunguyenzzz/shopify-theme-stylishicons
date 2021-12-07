@@ -8,7 +8,7 @@
     {% capture items %}
         {% for product in collection.products limit: prod_limit %}
             <div class="keen-slider__slide" id="product-listing-{{forloop.index }}" data-product-id="{{ forloop.index }}" data-alpha="{{ product.title }}" data-price="{{ product.price }}">
-                <div>
+                <div class="tw-w-full tw-max-w-[292px]">
                     {% render 'product-listing', product: product, collection: collection %}
                 </div>
             </div>
@@ -20,12 +20,12 @@
     <div class="tw-max-w-[980px] xl:tw-max-w-7xl tw-px-8 tw-mx-auto flex tw-flex-col tw-gap-6 lg:tw-grid-cols-2">
         <div class="tw-w-full tw-flex tw-flex-col tw-items-center lg:tw-items-start tw-text-center lg:tw-text-left tw-flex-1 tw-space-y-4">
             {% if section.settings.heading != blank %}
-            <div class="tw-text-left tw-flex tw-justify-between tw-items-baseline tw-w-full">
-                <h2 class="tw-font-bold tw-mb-0">
-                    <a href="{{ collection.url }}">{{ section.settings.heading | escape }}</a>
-                </h2>
-                <a class="tw-uppercase tw-text-xs tw-font-normal" href="{{ collection.url }}">View All</a>
-            </div>
+                <div class="tw-text-left tw-flex tw-justify-between tw-items-baseline tw-w-full">
+                    <h2 class="tw-font-bold tw-mb-0">
+                        <a href="{{ collection.url }}">{{ section.settings.heading | escape }}</a>
+                    </h2>
+                    <a class="tw-uppercase tw-text-xs tw-font-normal" href="{{ collection.url }}">View All</a>
+                </div>
             {% endif %}
         </div>
         <div class="tw-w-full tw-grid tw-grid-cols-2 tw-gap-3 tw-gap-y-6 sm:tw-hidden">
