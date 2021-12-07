@@ -3,8 +3,7 @@
 {% endcapture %}
 {% capture items %}
     {% for i in (1..6) %}
-        <div class="keen-slider__slide tw-bg-gray-100 tw-relative tw-h-72 tw-flex tw-justify-center tw-items-center">
-        </div>
+        <div class="keen-slider__slide tw-bg-gray-100 tw-relative tw-h-72 tw-flex tw-justify-center tw-items-center"></div>
     {% endfor %}
 {% endcapture %}
 {% if section.blocks.size > 0 %}
@@ -19,7 +18,7 @@
 
 <div style="{{cssvariable}}" id="{{section.id}}" class="tw-py-16 tw-bg-[color:var(--section-bg)] tw-items-center">
     <div class="tw-max-w-[980px] xl:tw-max-w-7xl tw-px-8 tw-mx-auto flex tw-flex-col tw-gap-8 lg:tw-grid-cols-2">
-        <div class="flex tw-flex-col tw-items-center lg:tw-items-start tw-text-center lg:tw-text-left tw-flex-1  tw-space-y-8">
+        <div class="flex tw-flex-col tw-items-center lg:tw-items-start tw-text-center lg:tw-text-left tw-flex-1 tw-space-y-8">
             <h2 class="tw-text-2xl tw-font-bold tw-mb-0">
                 {{section.settings.heading}}
             </h2>
@@ -55,32 +54,32 @@
             "id": "description",
             "label": "Description",
             "default": "<p>Less than humble about your abode? Mention @interior_icons in your photos and we'll feature the best pics on our site.</p>"
-        }
-    ],
-    "blocks": [
-        {
-            "type": "item",
-            "name": "Feed Item",
-            "settings": [
-                {
-                    "type": "image_picker",
-                    "id": "image",
-                    "label": "Image"
-                }, {
-                    "type": "url",
-                    "id": "url",
-                    "label": "Url",
-                    "default": "/"
-                }
-            ]
-        }
-    ],
-    "presets": [
-        {
-            "name": "Instagram",
-            "category": "Text"
-        }
-    ]
-}
+            }
+        ],
+        "blocks": [
+            {
+                "type": "item",
+                "name": "Feed Item",
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "Image"
+                    }, {
+                        "type": "url",
+                        "id": "url",
+                        "label": "Url",
+                        "default": "/"
+                    }
+                ]
+            }
+        ],
+        "presets": [
+            {
+                "name": "Instagram",
+                "category": "Text"
+            }
+        ]
+    }
 
 {% endschema %}

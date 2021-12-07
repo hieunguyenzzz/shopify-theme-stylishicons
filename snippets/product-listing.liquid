@@ -1,119 +1,119 @@
 <div class="ci">
-  {% if product.available %}
-    {% for col in product.collections %}
-      {% if col.handle == 'new' %}
-        <div class="new icn">{{ 'products.general.new' | t }}</div>
-      {% endif %}
-    {% endfor %}
+    {% if product.available %}
+        {% for col in product.collections %}
+            {% if col.handle == 'new' %}
+                <div class="new icn">{{ 'products.general.new' | t }}</div>
+            {% endif %}
+        {% endfor %}
 
-    {% if product.price < product.compare_at_price %}
-      <div class="sale-item icn">{{ 'products.general.sale' | t }}</div>
-    {% endif %} 
+        {% if product.price < product.compare_at_price %}
+            <div class="sale-item icn">{{ 'products.general.sale' | t }}</div>
+        {% endif %}
 
-  {% else %}
-    <div class="so icn">{{ 'products.general.sold' | t }}</div>
-  {% endif %}
+    {% else %}
+        <div class="so icn">{{ 'products.general.sold' | t }}</div>
+    {% endif %}
 
     {% if product.featured_media %}
-      <a href="{{ product.url  }}" title="{{ product.title | escape }}">
-        <div class="reveal tw-bg-gray-100">
-          {%- assign preview_image = product.featured_media.preview_image -%}
-          {%- assign second_image = product.media[1] -%}
-          {% render "[image]", image: preview_image image_box_ratio:'56.25%'  %}
-          <noscript>
-            <img src="{{ preview_image | img_url: '1024x' }}" alt="{{ preview_image.alt | escape }}">
-          </noscript>
+        <a href="{{ product.url }}" title="{{ product.title | escape }}">
+            <div class="reveal ">
+                {%- assign preview_image = product.featured_media.preview_image -%}
+                {%- assign second_image = product.media[1] -%}
+                {% render "[image]", image: preview_image image_box_ratio:'100%'  %}
+                <noscript>
+                    <img src="{{ preview_image | img_url: '1024x' }}" alt="{{ preview_image.alt | escape }}">
+                </noscript>
 
-          {% if settings.image_flip and product.media.size > 1 %}
-            <div class="hidden">
-              <img class="lazyload lazyload-fade tw-absolute tw-w-full tw-h-full tw-inset-0 tw-object-contain"
-                id="{{ preview_image.id }}"
-                data-src="{{ product.media[1] | img_url: '1024x' }}"
-                data-sizes="auto"
-                alt="{{ preview_image.alt | escape }}">
-              <noscript>
-                <img src="{{ product.media[1] | img_url: '1024x' }}" alt="{{ product.media[1].alt | escape }}">
-              </noscript>
+                {% if settings.image_flip and product.media.size > 1 %}
+                    <div class="hidden">
+                        <img class="lazyload lazyload-fade tw-absolute tw-w-full tw-h-full tw-inset-0 tw-object-contain" id="{{ preview_image.id }}" data-src="{{ product.media[1] | img_url: '1024x' }}" data-sizes="auto" alt="{{ preview_image.alt | escape }}">
+                        <noscript>
+                            <img src="{{ product.media[1] | img_url: '1024x' }}" alt="{{ product.media[1].alt | escape }}">
+                        </noscript>
+                    </div>
+                {% endif %}
             </div>
-          {% endif %}
-        </div>
-      </a>
+        </a>
     {%- else -%}
-      {% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
-      <div class="tw-w-full" style="padding-bottom:56.25%"></div>
-      <div class="tw-absolute tw-w-full tw-h-full tw-inset-0 tw-flex tw-justify-center tw-items-center tw-p-6">
-        <img class="tw-w-full tw-h-full tw-object-contain" src="{{ 'holderimage.png' | asset_url }}" />
-      </div>
+        {% capture current %}
+            {% cycle 1, 2, 3, 4, 5, 6 %}
+        {% endcapture %}
+        <div class="tw-w-full" style="padding-bottom:56.25%"></div>
+        <div class="tw-absolute tw-w-full tw-h-full tw-inset-0 tw-flex tw-justify-center tw-items-center tw-p-6">
+            <img class="tw-w-full tw-h-full tw-object-contain" src="{{ 'holderimage.png' | asset_url }}"/>
+        </div>
     {%- endif -%}
     {% if settings.quickview and template != 'search' %}
-      <div class="product-info">
-        <a rel="nofollow" data-fancybox="quick-view-{{ product.id }}" class="fancybox.ajax product-modal" href="{{ product.url }}?view=quick">{{ 'products.general.quick_view' | t }}</a>
-      </div>
+        <div class="product-info">
+            <a rel="nofollow" data-fancybox="quick-view-{{ product.id }}" class="fancybox.ajax product-modal" href="{{ product.url }}?view=quick">{{ 'products.general.quick_view' | t }}</a>
+        </div>
     {% endif %}
 </div>
 
 <div class="product-details">
-  <a href="{{ product.url }}{% comment %}{{ product.url | within: collection }}{% endcomment %}" class="js-product-details-link">
-    {% if settings.vendor %}
-      <h4>{{ product.vendor }}</h4>
-    {% endif %}
-    <p class="product__subtitle hidden-desktop">
+    <a href="{{ product.url }}{% comment %}{{ product.url | within: collection }}{% endcomment %}" class="js-product-details-link">
+        {% if settings.vendor %}
+            <h4>{{ product.vendor }}</h4>
+        {% endif %}
+        <p class="product__subtitle hidden-desktop">
             {{ product.metafields.global.slogun }}
-     </p>
-    <h3 class="flex"> <span class="product-title !tw-block"> {{ product.title }} </span>  {% render 'product-price-listing', product: product %}</h3>
-  </a>
-       
-  {% unless product.template_suffix == 'not-for-sale' %}
-<div class="small-desc">
-          {% for field in product.metafields.text %}
-    {{ field | last }}
-   {% endfor %}
-          </div>
-	<div class="flex">
-	 <p class="product__subtitle">
-            {{ product.metafields.global.slogun }}
-     </p>
-   <span class="shopify-product-reviews-badge" data-id="{{ product.id }}">    </span> 
-  </div>
-  <div class="product_listing_options">
-  {% if product.variants.size > 1 %}
-     {% if settings.product_info == 'sizes' and product.available %}
-       {% render 'show-sizes', product: product %}
-     {% elsif settings.product_info == 'colors' and product.available %}
-       {% render 'show-colors', product: product %}
-     {% endif %}
-   {% endif %}
+        </p>
+        <h3 class="flex">
+            <span class="product-title !tw-block">
+                {{ product.title }}
+            </span>
+            {% render 'product-price-listing', product: product %}</h3>
+    </a>
 
-  {% if settings.product_info == 'add_to_cart' and settings.quickview == false %}
-    {% render 'product-grid-add', product: product %}
-  {% endif %}
-{% assign instructions = product.metafields.global %}
-{% assign key = 'inspired-by' %}
-  {% if settings.show_reviews %}
-    <p class="small"> {{ instructions.inspired-by }}</p>
-    <!--<span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>-->
-  {% endif %}
-  </div>
- {% endunless %}
-  
-           
+    {% unless product.template_suffix == 'not-for-sale' %}
+        <div class="small-desc">
+            {% for field in product.metafields.text %}
+                {{ field | last }}
+            {% endfor %}
+        </div>
+        <div class="flex">
+            <p class="product__subtitle">
+                {{ product.metafields.global.slogun }}
+            </p>
+            <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
+        </div>
+        <div class="product_listing_options">
+            {% if product.variants.size > 1 %}
+                {% if settings.product_info == 'sizes' and product.available %}
+                    {% render 'show-sizes', product: product %}
+                {% elsif settings.product_info == 'colors' and product.available %}
+                    {% render 'show-colors', product: product %}
+                {% endif %}
+            {% endif %}
+
+            {% if settings.product_info == 'add_to_cart' and settings.quickview == false %}
+                {% render 'product-grid-add', product: product %}
+            {% endif %}
+            {% assign instructions = product.metafields.global %}
+            {% assign key = 'inspired-by' %}
+            {% if settings.show_reviews %}
+                <p class="small">
+                    {{ instructions.inspired-by }}</p>
+                <!--<span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>-->
+            {% endif %}
+        </div>
+    {% endunless %}
 
 
-<!-- **BEGIN** Hextom USB Integration // Collection Include - DO NOT MODIFY -->
+    <!-- **BEGIN** Hextom USB Integration // Collection Include - DO NOT MODIFY -->
     {% render 'hextom_usb_coll', product: product %}
     <!-- **END** Hextom USB Integration // Collection Include - DO NOT MODIFY -->
 </div>
 <style>
-  
-  .product-loop span.spr-badge-caption {
-    display: none;
-}
-    @media screen and (min-width: 768px)
-    { 
-  p.small {
-    font-size: 12px;
-    width: 50%;
-    float: left;
-}
+
+    .product-loop span.spr-badge-caption {
+        display: none;
+    }
+    @media screen and(min-width: 768px) {
+        p.small {
+            font-size: 12px;
+            width: 50%;
+            float: left;
+        }
     }
 </style>
