@@ -13,7 +13,7 @@
       <div class="ajaxcart__inner">
         {{#items}}
         <div class="ajaxcart__product">
-          <div class="ajaxcart row" data-line="{{line}}">
+          <div class="tw-flex ajaxcart tw-gap-3" data-line="{{line}}">
 
             <div class="grid__item desktop-5 tablet-2 mobile-3 item_img">
                 <a href="{{url}}" class="ajaxcart__product-image">
@@ -93,7 +93,7 @@
         </div>
         {{/items}}
 
-        <div class="rte-accordion row">
+        <div class="rte-accordion ">
           {% endraw %}{% if settings.show_cart_notes %}{% raw %}
             <div id="cart-notes" class="item">
               <input class="trigger" id="item-one" type="checkbox" name="items" />
@@ -106,7 +106,7 @@
         </div>
 
       </div>
-      <div class="ajaxcart__footer row">
+      <div class="ajaxcart__footer ">
         <div class="subtotal">
           <p class="title">{% endraw %}{{ 'cart.general.subtotal' | t }}{% raw %}</p>
           <p class="subtotal-price"><span class="cart-original-total money">{{{subTotalPrice}}}</span></p>
