@@ -222,6 +222,10 @@
   max-width: 180px !important
 }
 
+.tw-max-w-\[292px\] {
+  max-width: 292px
+}
+
 .tw-flex-1 {
   flex: 1 1 0%
 }
