@@ -1618,7 +1618,7 @@ theme.ProductForm = function (context, sectionId, events, Product) {
   new Shopify.OptionSelectors(prodSelector, {
     product: Product,
     onVariantSelected: function(variant, selector) {
-      console.log({variant, selector})
+      // console.log({variant, selector})
       if ( !variant ) {
         events.trigger("variantunavailable");
         Events.trigger("storeavailability:unavailable");
@@ -2275,7 +2275,7 @@ theme.StaticGallery = function (context, sectionId, events, Product) {
       window.open('http://twitter.com/share?url='+encodeURIComponent(window.location.href)+'&text='+encodeURIComponent(document.title), '', 'left=0,top=0,width=600,height=300,menubar=no,toolbar=no,resizable=yes,scrollbars=yes');
     });
     var productFancy = $("[data-fancybox='product-"+ context.dataset.productId +"']");
-
+    alert(123)
     productFancy.fancybox({
       loop: true,
       parentEl: '.fancybox-wrapper',
