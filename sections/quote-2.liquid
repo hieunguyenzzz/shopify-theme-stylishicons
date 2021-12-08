@@ -25,7 +25,7 @@
 {% if section.blocks.size > 0 %}
     {% capture items %}
         {% for block in section.blocks %}
-            <a class="keen-slider__slide" href="#">
+            <div class="keen-slider__slide">
                 <div class="" id="product-listing-{{ product.id }}" data-product-id="{{ product.id }}" data-alpha="{{ product.title }}" data-price="{{ product.price }}">
                     <blockquote class="tw-space-y-6 tw-p-6 lg:tw-p-8 lg:tw-border-solid lg:tw-border tw-border-gray-200">
                         {% if block.settings.image %}
@@ -44,7 +44,7 @@
                         {% endif %}
                     </blockquote>
                 </div>
-            </a>
+            </div>
         {% endfor %}
     {% endcapture %}
 {% endif %}
@@ -183,97 +183,97 @@
                     },
                     "default": {
                         "cs": "<p>Přidejte recenze a ohlasy zákazníků, které vyjadřují jejich spokojenost s vaším obchodem.</p>",
-                                                    "da": "<p>Tilføj kundeanmeldelser og udtalelser for at fremhæve din butiks tilfredse kunder.</p>",
-                                                    "de": "<p>Kunden-Reviews und Testimonials, die Kundenzufriedenheit beweisen.</p>",
-                                                    "en": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
-                                                    "es": "<p>Agrega las reseñas y los testimonios de los clientes para mostrar a los clientes satisfechos de tu tienda.</p>",
-                                                    "fi": "<p>Lisää asiakasarviointeja ja suositteluja esimerkeiksi myymäläsi tyytyväisistä asiakkaista.</p>",
-                                                    "fr": "<p>Ajoutez des avis et témoignages pour mettre en avant vos clients satisfaits.</p>",
-                                                    "hi": "<p>अपने स्टोर के खुश ग्राहकों को दिखाने के लिए ग्राहक समीक्षा और प्रशंसापत्र जोड़ें.</p>",
-                                                    "it": "<p>Aggiungi recensioni e testimonianze sul tuo negozio per dimostrare che i clienti sono soddisfatti.</p>",
-                                                    "ja": "<p>あなたのストアの幸せなお客様を紹介するために、カスタマーレビューとお客様の声を追加してください。</p>",
-                                                    "ko": "<p>고객 리뷰 및 추천을 추가하여 스토어에 만족한 고객을 보여주십시오.</p>",
-                                                    "nb": "<p>Legg til kundeomtaler og anbefalinger for å vise frem butikkens glade kunder.</p>",
-                                                    "nl": "<p>Voeg beoordelingen van klanten en testimonials toe om te laten zien dat je klanten tevreden zijn.</p>",
-                                                    "pl": "<p>Dodaj opinie i referencje od klientów, aby pokazać zadowolenie klientów Twojego sklepu.</p>",
-                                                    "pt-BR": "<p>Adicione comentários e depoimentos para dar destaque aos clientes satisfeitos com a sua loja.</p>",
-                                                    "pt-PT": "<p>Adicione análises e testemunhos para mostrar os clientes felizes da sua loja.</p>",
-                                                    "sv": "<p>Lägg till kundrecensioner och berättelser för att visa upp din butiks nöjda kunder.</p>",
-                                                    "th": "<p>เพิ่มรีวิวและเสียงชื่นชมจากลูกค้าเพื่อนำเสนอลูกค้าที่ได้รับความพึงพอใจจากร้านค้า</p>",
-                                                    "tr": "<p>Müşteri değerlendirmeleri ve kullanıcı görüşleri ekleyerek mağazanızdan memnun kalan müşterileri gösterin.</p>",
-                                                    "vi": "<p>Thêm đánh giá và chứng thực từ khách hàng để chứng minh khách hàng hài lòng với cửa hàng.</p>",
-                                                    "zh-CN": "<p>添加客户评论和感言，以展示对您的商店满意的客户。</p>",
-                                                    "zh-TW": "<p>新增顧客評論和推薦文，展示對您商店滿意之顧客。</p>"
+                                                                "da": "<p>Tilføj kundeanmeldelser og udtalelser for at fremhæve din butiks tilfredse kunder.</p>",
+                                                                "de": "<p>Kunden-Reviews und Testimonials, die Kundenzufriedenheit beweisen.</p>",
+                                                                "en": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
+                                                                "es": "<p>Agrega las reseñas y los testimonios de los clientes para mostrar a los clientes satisfechos de tu tienda.</p>",
+                                                                "fi": "<p>Lisää asiakasarviointeja ja suositteluja esimerkeiksi myymäläsi tyytyväisistä asiakkaista.</p>",
+                                                                "fr": "<p>Ajoutez des avis et témoignages pour mettre en avant vos clients satisfaits.</p>",
+                                                                "hi": "<p>अपने स्टोर के खुश ग्राहकों को दिखाने के लिए ग्राहक समीक्षा और प्रशंसापत्र जोड़ें.</p>",
+                                                                "it": "<p>Aggiungi recensioni e testimonianze sul tuo negozio per dimostrare che i clienti sono soddisfatti.</p>",
+                                                                "ja": "<p>あなたのストアの幸せなお客様を紹介するために、カスタマーレビューとお客様の声を追加してください。</p>",
+                                                                "ko": "<p>고객 리뷰 및 추천을 추가하여 스토어에 만족한 고객을 보여주십시오.</p>",
+                                                                "nb": "<p>Legg til kundeomtaler og anbefalinger for å vise frem butikkens glade kunder.</p>",
+                                                                "nl": "<p>Voeg beoordelingen van klanten en testimonials toe om te laten zien dat je klanten tevreden zijn.</p>",
+                                                                "pl": "<p>Dodaj opinie i referencje od klientów, aby pokazać zadowolenie klientów Twojego sklepu.</p>",
+                                                                "pt-BR": "<p>Adicione comentários e depoimentos para dar destaque aos clientes satisfeitos com a sua loja.</p>",
+                                                                "pt-PT": "<p>Adicione análises e testemunhos para mostrar os clientes felizes da sua loja.</p>",
+                                                                "sv": "<p>Lägg till kundrecensioner och berättelser för att visa upp din butiks nöjda kunder.</p>",
+                                                                "th": "<p>เพิ่มรีวิวและเสียงชื่นชมจากลูกค้าเพื่อนำเสนอลูกค้าที่ได้รับความพึงพอใจจากร้านค้า</p>",
+                                                                "tr": "<p>Müşteri değerlendirmeleri ve kullanıcı görüşleri ekleyerek mağazanızdan memnun kalan müşterileri gösterin.</p>",
+                                                                "vi": "<p>Thêm đánh giá và chứng thực từ khách hàng để chứng minh khách hàng hài lòng với cửa hàng.</p>",
+                                                                "zh-CN": "<p>添加客户评论和感言，以展示对您的商店满意的客户。</p>",
+                                                                "zh-TW": "<p>新增顧客評論和推薦文，展示對您商店滿意之顧客。</p>"
+                                                            }
+                                                        }, {
+                                                            "id": "title1",
+                                                            "type": "text",
+                                                            "label": "Text"
+                                                        }, {
+                                                            "type": "image_picker",
+                                                            "id": "image",
+                                                            "label": "image"
+                                                        }, {
+                                                            "type": "text",
+                                                            "id": "author",
+                                                            "label": {
+                                                                "cs": "Autor",
+                                                                "da": "Forfatter",
+                                                                "de": "Autor",
+                                                                "en": "Author",
+                                                                "es": "Autor",
+                                                                "fi": "Kirjoittaja",
+                                                                "fr": "Auteur",
+                                                                "hi": "लेखक",
+                                                                "it": "Autore",
+                                                                "ja": "執筆者",
+                                                                "ko": "작성자",
+                                                                "nb": "Forfatter",
+                                                                "nl": "Auteur",
+                                                                "pl": "Autor",
+                                                                "pt-BR": "Autoria",
+                                                                "pt-PT": "Autoria",
+                                                                "sv": "Upphovsman",
+                                                                "th": "ผู้เขียน",
+                                                                "tr": "Yazar",
+                                                                "vi": "Tác giả",
+                                                                "zh-CN": "作者",
+                                                                "zh-TW": "作者"
+                                                            },
+                                                            "default": {
+                                                                "cs": "Jméno autora",
+                                                                "da": "Forfatterens navn",
+                                                                "de": "Name des Autors",
+                                                                "en": "Author's name",
+                                                                "es": "Nombre del autor",
+                                                                "fi": "Kirjoittajan nimi",
+                                                                "fr": "Nom de l'auteur",
+                                                                "hi": "लेखक का नाम",
+                                                                "it": "Nome dell'autore",
+                                                                "ja": "筆者の名前",
+                                                                "ko": "작성자 이름",
+                                                                "nb": "Forfatterens navn",
+                                                                "nl": "Naam auteur",
+                                                                "pl": "Nazwisko autora",
+                                                                "pt-BR": "Nome do autor",
+                                                                "pt-PT": "Nome do autor",
+                                                                "sv": "Författarens namn",
+                                                                "th": "ชื่อผู้เขียน",
+                                                                "tr": "Yazar adı",
+                                                                "vi": "Tên tác giả",
+                                                                "zh-CN": "作者姓名",
+                                                                "zh-TW": "作者名稱"
+                                                            }
+                                                        }
+                                                    ]
                                                 }
-                                            }, {
-                                                "id": "title1",
-                                                "type": "text",
-                                                "label": "Text"
-                                            }, {
-                                                "type": "image_picker",
-                                                "id": "image",
-                                                "label": "image"
-                                            }, {
-                                                "type": "text",
-                                                "id": "author",
-                                                "label": {
-                                                    "cs": "Autor",
-                                                    "da": "Forfatter",
-                                                    "de": "Autor",
-                                                    "en": "Author",
-                                                    "es": "Autor",
-                                                    "fi": "Kirjoittaja",
-                                                    "fr": "Auteur",
-                                                    "hi": "लेखक",
-                                                    "it": "Autore",
-                                                    "ja": "執筆者",
-                                                    "ko": "작성자",
-                                                    "nb": "Forfatter",
-                                                    "nl": "Auteur",
-                                                    "pl": "Autor",
-                                                    "pt-BR": "Autoria",
-                                                    "pt-PT": "Autoria",
-                                                    "sv": "Upphovsman",
-                                                    "th": "ผู้เขียน",
-                                                    "tr": "Yazar",
-                                                    "vi": "Tác giả",
-                                                    "zh-CN": "作者",
-                                                    "zh-TW": "作者"
-                                                },
-                                                "default": {
-                                                    "cs": "Jméno autora",
-                                                    "da": "Forfatterens navn",
-                                                    "de": "Name des Autors",
-                                                    "en": "Author's name",
-                                                    "es": "Nombre del autor",
-                                                    "fi": "Kirjoittajan nimi",
-                                                    "fr": "Nom de l'auteur",
-                                                    "hi": "लेखक का नाम",
-                                                    "it": "Nome dell'autore",
-                                                    "ja": "筆者の名前",
-                                                    "ko": "작성자 이름",
-                                                    "nb": "Forfatterens navn",
-                                                    "nl": "Naam auteur",
-                                                    "pl": "Nazwisko autora",
-                                                    "pt-BR": "Nome do autor",
-                                                    "pt-PT": "Nome do autor",
-                                                    "sv": "Författarens namn",
-                                                    "th": "ชื่อผู้เขียน",
-                                                    "tr": "Yazar adı",
-                                                    "vi": "Tên tác giả",
-                                                    "zh-CN": "作者姓名",
-                                                    "zh-TW": "作者名稱"
+                                            ],
+                                            "presets": [
+                                                {
+                                                    "name": "Featured quotes",
+                                                    "category": "Collection"
                                                 }
-                                            }
-                                        ]
-                                    }
-                                ],
-                                "presets": [
-                                    {
-                                        "name": "Featured quotes",
-                                        "category": "Collection"
-                                    }
-                                ]
-                            }
+                                            ]
+                                        }
 
 {% endschema %}
