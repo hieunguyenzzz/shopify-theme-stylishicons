@@ -4623,10 +4623,16 @@
  }
  
  .swatch .swatch-element.soldout .crossed-out {
-   display: none;
+  /* display: none; */
+
+ }
+ .swatch + .swatch .swatch-element.soldout{
+    /* display: none;  */
+    pointer-events: none;
+    opacity: 0.2;
  }
  .swatch .color.soldout{
-   display:none;
+   /* display: none;  */
  }
  
  .swatch .swatch-element.soldout label {
@@ -11503,7 +11509,8 @@ font-size:15px !important;
  
  
  .swatch .tooltip{
-     left: -8px;
+    width:70px;
+    left: -15.5px;
  }
  
  .fa-search:before {
