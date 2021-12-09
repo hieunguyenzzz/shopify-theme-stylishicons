@@ -58,7 +58,7 @@
                 <li aria-expanded="false" aria-haspopup="true" class="navigation__menuitem navigation__menuitem--dropdown js-doubletap-to-go js-aria-expand {{ link.title }}" data-active-class="navigation__menuitem--active" role="none">
                     <a class="navigation__menulink js-menu-link js-open-dropdown-on-key" href="{{ link.url }}">{{ link.title }}</a>
                     <ul class="megamenu">
-                        <div class="megamenu__container">
+                        <div class="{% render '[class]-container' class: '' %}">
                             {% if block.settings.nav_image != blank %}
                                 <span class="desktop-3 tablet-hide mm-image">
                                     {%- assign image_size = '300x' -%}

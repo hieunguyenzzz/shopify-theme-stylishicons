@@ -41,21 +41,15 @@
 
 
 <div id="product-{{ product.id }}" class="product-page product-template prod-{{ section.id }}" data-section-type="product-section" data-product-id="{{ product.id }}" data-section-id="{{ section.id }}">
-
     {% render 'product-json', product: product %}
-
-
     {% if collection.description contains '[banner]' and section.settings.show_banner %}
         <div class="collection-banner">
             {% render 'collection-banner-image', collection: collection %}
         </div>
     {% endif %}
-
     {% if section.settings.full_width %}
         <div class="gridlock-fluid">
         {% endif %}
-
-
         {% render 'breadcrumb' %}
         <div id="product-content" class="{% render '[class]-container' class: '' %} lg:tw-flex tw-gap-6">
 
@@ -97,24 +91,24 @@
             {% assign click_to_enlarge = section.settings.click_to_enlarge %}
             {% assign enable_video_looping = section.settings.enable_video_looping %}
             {% capture product_gallery_config %}{
-                                        "thumbPosition":
+                                                                        "thumbPosition":
                 {{ section.settings.thumbnail_position | json }},
-                                        "thumbsShown":
+                                                                        "thumbsShown":
                 {{ section.settings.thumbs_to_show | json }},
-                                        "enableVideoLooping":
+                                                                        "enableVideoLooping":
                 {{ section.settings.enable_video_looping | json }},
-                                        "navStyle":
+                                                                        "navStyle":
                 {{ section.settings.slide_controls | json }},
-                                        "mainSlider":
+                                                                        "mainSlider":
                 {% if product.media.size <= 1 %}false{% else %}true
                 {% endif %},
-                                        "thumbSlider":
+                                                                        "thumbSlider":
                 {% if product.media.size >= 4 %}true{% else %}false
                 {% endif %},
-                                        "productId":
+                                                                        "productId":
                 {{ product.id | json }},
-                                        "isQuick": false
-                                      }
+                                                                        "isQuick": false
+                                                                      }
             {% endcapture %}
 
             <div id="product-photos" class="product-photos product-{{ product.id }} {{ image_width }}" data-product-single-media-group data-gallery-config='{{ product_gallery_config }}' {{ gallery_data }}>
@@ -137,7 +131,10 @@
                     {% capture current %}
                         {% cycle 1, 2, 3, 4, 5, 6 %}
                     {% endcapture %}
-                    {{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
+                    <div class="tw-w-full" style="padding-bottom:56.25%"></div>
+                    <div class="tw-absolute tw-w-full tw-h-full tw-inset-0 tw-flex tw-justify-center tw-items-center tw-p-6">
+                        <img class="tw-w-full tw-h-full tw-object-contain" src="{{ 'holderimage.png' | asset_url }}"/>
+                    </div>
                 {% endif %}
             </div>
 
@@ -255,14 +252,14 @@
                         {% capture product_form_config %}
                             { "money_format":
                             {{ shop.money_format | json }},
-                                                                       "enable_history": true,
-                                                                       "sold_out":
+                                                                                                                               "enable_history": true,
+                                                                                                                               "sold_out":
                             {{ "products.product.sold_out" | t | json }},
-                                                                       "button":
+                                                                                                                               "button":
                             {{ 'products.product.add_to_cart' | t | json }},
-                                                                       "unavailable":
+                                                                                                                               "unavailable":
                             {{ 'products.product.unavailable' | t | json }},
-                                                                       "quickview":
+                                                                                                                               "quickview":
                             {% if template == 'product.quick' %}true{% else %}false
                             {% endif %}
                             }
