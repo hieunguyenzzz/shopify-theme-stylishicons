@@ -142,12 +142,12 @@
   height: 18rem
 }
 
-.tw-h-12 {
-  height: 3rem
-}
-
 .tw-h-full {
   height: 100%
+}
+
+.tw-h-12 {
+  height: 3rem
 }
 
 .tw-h-10 {
@@ -242,6 +242,10 @@
 .tw--rotate-180 {
   --tw-rotate: -180deg;
   transform: var(--tw-transform)
+}
+
+.tw-cursor-not-allowed {
+  cursor: not-allowed
 }
 
 .tw-list-none {
@@ -558,6 +562,10 @@
 
 .tw-opacity-0 {
   opacity: 0
+}
+
+.tw-opacity-40 {
+  opacity: 0.4
 }
 
 .tw-shadow {

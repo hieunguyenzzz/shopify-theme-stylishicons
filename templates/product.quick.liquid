@@ -77,7 +77,7 @@ data-section-id="quickview">
                </div>
                 {% if settings.quickview_product_variants == 'swatches' %}
                   {% for option in product.options_with_values %}
-                    {% render "swatch", product: product, option: option, current_variant: current_variant %}
+                    {% render "swatch", index:forloop.index product: product, option: option, current_variant: current_variant %}
                   {% endfor %}
                 {% endif %}
               {% elsif product.options.size == 1 and product.variants.size > 1 %}
@@ -93,7 +93,7 @@ data-section-id="quickview">
                  </div>
                  {% if settings.quickview_product_variants == 'swatches' %}
                    {% for option in product.options_with_values %}
-                     {% render "swatch", product: product, option: option, current_variant: current_variant %}
+                     {% render "swatch", index:forloop.index product: product, option: option, current_variant: current_variant %}
                    {% endfor %}
                  {% endif %}
                 {% else %}
