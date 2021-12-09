@@ -4254,8 +4254,8 @@
     "free_shipping_bg": "#ff7a5f",
     "free_shipping_text": "#fff",
     "facebook_url": "https:\/\/www.facebook.com\/shopify",
-    "instagram-id": "https:\/\/www.facebook.com\/shopify",
-    "twittername": "https:\/\/www.facebook.com\/shopify",
+    "instagram-id": "https:\/\/www.instagram.com\/designericonsuk\/",
+    "twittername": "https:\/\/twitter.com\/DesignerIconsUK\/",
     "pinterest_url": "https:\/\/www.facebook.com\/shopify",
     "tumblr_url": "",
     "youtube_url": "",
@@ -4904,13 +4904,8 @@
       "1559084715445": {
         "type": "featured-collection",
         "settings": {
-          "full_width": false,
           "heading": "The Bestsellers",
-          "heading_color": "#000000",
-          "background_color": "#ffffff",
           "collection": "all",
-          "carousel": true,
-          "grid": 4,
           "limit": 12
         }
       },
@@ -5159,13 +5154,8 @@
         "type": "featured-collection",
         "disabled": true,
         "settings": {
-          "full_width": false,
           "heading": "New Arrivals",
-          "heading_color": "#000000",
-          "background_color": "#ffffff",
           "collection": "chairs-2",
-          "carousel": true,
-          "grid": 4,
           "limit": 14
         }
       },
