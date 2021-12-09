@@ -12,7 +12,8 @@
             </div>
             <div>
                 <a class="tw-font-bold tw-underline" href="{{section.settings.url}}">
-                    {{section.settings.urlText}} {% render 'icon-chevron-right' class:'!tw-text-[11px]'%}
+                    {{section.settings.urlText}}
+                    {% render 'icon-chevron-right' class:'!tw-text-[11px]'%}
                 </a>
             </div>
         </div>
@@ -51,24 +52,24 @@
             "id": "description",
             "label": "Description",
             "default": "<p>Our team love great furniture. Part of that passion means making it available to everyone at affordable prices. From developers to designers, or customer service reps to quality engineers, each branch of the Desiger Icons team is committed to producing the best furniture at incredible prices. Our global family takes in diverse skills and attitudes, but we all share a love of iconic furniture and the desire to make it accessible to all.</p>"
-        }, {
-            "type": "url",
-            "id": "url",
-            "label": "Url",
-            "default": "/"
-        }, {
-            "type": "text",
-            "id": "urlText",
-            "label": "Button Text",
-            "default": "Learn More"
-        }
-    ],
-    "presets": [
-        {
-            "name": "Image with text",
-            "category": "Text"
-        }
-    ]
-}
+                        }, {
+                            "type": "url",
+                            "id": "url",
+                            "label": "Url",
+                            "default": "/"
+                        }, {
+                            "type": "text",
+                            "id": "urlText",
+                            "label": "Button Text",
+                            "default": "Learn More"
+                        }
+                    ],
+                    "presets": [
+                        {
+                            "name": "Image with text",
+                            "category": "Text"
+                        }
+                    ]
+                }
 
 {% endschema %}

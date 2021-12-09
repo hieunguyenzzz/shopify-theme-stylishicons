@@ -77,26 +77,6 @@
             </p>
             <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
         </div>
-        <div class="product_listing_options">
-            {% if product.variants.size > 1 %}
-                {% if settings.product_info == 'sizes' and product.available %}
-                    {% render 'show-sizes', product: product %}
-                {% elsif settings.product_info == 'colors' and product.available %}
-                    {% render 'show-colors', product: product %}
-                {% endif %}
-            {% endif %}
-
-            {% if settings.product_info == 'add_to_cart' and settings.quickview == false %}
-                {% render 'product-grid-add', product: product %}
-            {% endif %}
-            {% assign instructions = product.metafields.global %}
-            {% assign key = 'inspired-by' %}
-            {% if settings.show_reviews %}
-                <p class="small">
-                    {{ instructions.inspired-by }}</p>
-                <!--<span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>-->
-            {% endif %}
-        </div>
     {% endunless %}
 
 
