@@ -18,7 +18,7 @@
         <a class="tw-block" href="{{ product.url }}" title="{{ product.title | escape }}">
             <div {% if settings.image_flip and product.media.size > 1 %} class=" tw-group" {% endif %}>
                 {%- assign preview_image = product.featured_media.preview_image -%}
-                {%- assign second_image = product.media[2] -%}
+                {%- assign second_image = product.media[1] -%}
                 <div class="box-ratio tw-relative tw-transition-opacity tw-opacity-100 tw-duration-700 group-hover:tw-opacity-0">
                     {% render "[image]", image: preview_image image_box_ratio:'0%' layout:'fill' %}
                 </div>
