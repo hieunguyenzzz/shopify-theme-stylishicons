@@ -29,10 +29,11 @@
     {% endfor %}
 {% endcapture %}
 {% for variant in product.variants %}
-    {% assign optionStr = variant.title %}
+    {% assign optionStr = variant.title | strip %}
     <template data-variant-id="{{variant.id}}" data-optionstr="{{optionStr}}">
         {% for media in product.media %}
-            {% if optionStr == media.alt %}
+            {% assign mediaAlt = media.alt | strip %}
+            {% if optionStr == mediaAlt %}
                 <li class="keen-slider__slide keen-slider-{{id}}-keen-slider__slide tw-relative">
                     <a target="_blank" class="tw-flex zoom_btn tw-z-20 tw-justify-center tw-items-center " data-fancybox="product-{{ product.id }}" title="click to zoom-in" href="{{ media | img_url: '2400x' }}" itemprop="contentUrl" tabindex="-1">
                         <i class="la la-search-plus tw-text-black"></i>
