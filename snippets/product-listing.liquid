@@ -1,5 +1,5 @@
 {% capture discount %}
-    {{ product.compare_at_price_max | minus:product.price | times:100 | divided_by:product.compare_at_price_max }}%
+    {{ product.compare_at_price | minus:product.price | times:100 | divided_by:product.compare_at_price }}%
 {% endcapture %}
 <div class="ci">
     {% if product.available %}
@@ -10,7 +10,7 @@
         {% endfor %}
 
         {% if product.price < product.compare_at_price %}
-            <span class="percentage_off tw-absolute tw-top-0 tw-right-0 tw-z-10">{{ discount }}
+            <span class="percentage_off tw-absolute tw-top-0 tw-right-0 tw-z-10 empty:tw-hidden">{{ discount }}
                 OFF</span>
         {% endif %}
 

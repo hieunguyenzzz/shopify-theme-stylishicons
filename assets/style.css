@@ -611,6 +611,10 @@
   transition-duration: 700ms
 }
 
+.empty\:tw-hidden:empty {
+  display: none
+}
+
 .hover\:tw-border-black:hover {
   --tw-border-opacity: 1;
   border-color: rgba(0, 0, 0, var(--tw-border-opacity))
