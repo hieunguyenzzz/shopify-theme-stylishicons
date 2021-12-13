@@ -50,7 +50,8 @@
     </template>
     <template data-variant-dot-id="{{variant.id}}">
         {% for media in product.media %}
-            {% if optionStr == media.alt %}
+            {% assign mediaAlt = media.alt | strip %}
+            {% if optionStr == mediaAlt %}
                 <div class="dot tw-border-none lg:tw-border lg:tw-border-solid tw-border-current hover:tw-border-black lg:tw-bg-transparent tw-bg-current  tw-w-[5px] tw-h-[5px] tw-rounded-full lg:tw-w-[54px] lg:tw-h-[31px] lg:tw-rounded-none">
                     <div class="tw-hidden lg:tw-block tw-w-full tw-h-full">
                         <img class="tw-w-full tw-h-full product__image tw-object-contain" src="{{ media | img_url: '150x' }}" data-src="{{ img_url }}" data-sizes="auto" data-image-id="{{ media.id }}" alt="{{ media.alt | escape }}">
