@@ -2,6 +2,9 @@
 {% capture items %}
     {% for media in product.media %}
         <li class="keen-slider__slide keen-slider-{{id}}-keen-slider__slide">
+            <a class="tw-flex zoom_btn tw-z-20 tw-justify-center tw-items-center " data-fancybox="product-{{ product.id }}" title="click to zoom-in" href="{{ media | img_url: '2400x' }}" itemprop="contentUrl" tabindex="-1">
+                <i class="la la-search-plus tw-text-black"></i>
+            </a>
             <div class="">
                 <img id="{{ product.id }}" class="product__image tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-contain lazyload lazyload-fade" src="{{ media | img_url: '800x' }}" data-src="{{ img_url }}" data-sizes="auto" data-zoom-src="{{ media | img_url: '2400x' }}" data-aspectratio="{{ media.preview_image.aspect_ratio }}" alt="{{ media.alt | escape }}">
             </div>
