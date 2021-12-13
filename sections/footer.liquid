@@ -10,7 +10,7 @@
 {%- endif -%}
 
 <footer class="footer-section" data-section-id="{{ section.id }}" data-section-type="footer-section">
-    <div id="footer-wrapper" class="">
+    <div class="" id="footer-wrapper">
         <div class="row" id="footer">
             {% case section.blocks.size %}
                 {% when 0 %}
@@ -113,8 +113,6 @@
                 <a class="ph2" href="/pages/privacy-policy">Privacy Policy</a>
                 |
                 <a class="ph2" href="/pages/terms-conditions">Terms &amp; Conditions</a>
-
-
             </div>
             {% if section.settings.show_copyright %}
                 <p>
@@ -407,63 +405,63 @@
                     "type": "richtext",
                     "label": "Text",
                     "default": "<p>Adding text to your footer helps introduce your business to new customers.</p>"
-                }, {
-                    "type": "image_picker",
-                    "id": "image",
-                    "label": "image 1"
-                }, {
-                    "type": "url",
-                    "id": "imageUrl",
-                    "label": "Image 1 Url",
-                    "default": "/"
-                }, {
-                    "type": "image_picker",
-                    "id": "image1",
-                    "label": "image 2"
-                }, {
-                    "type": "url",
-                    "id": "imageUrl1",
-                    "label": "Image 2 Url",
-                    "default": "/"
-                }, {
-                    "type": "image_picker",
-                    "id": "image2",
-                    "label": "image 3"
-                }, {
-                    "type": "url",
-                    "id": "imageUrl2",
-                    "label": "Image 3 Url",
-                    "default": "/"
-                }, {
-                    "type": "image_picker",
-                    "id": "image3",
-                    "label": "image 4"
-                }, {
-                    "type": "url",
-                    "id": "imageUrl3",
-                    "label": "Image 4 Url",
-                    "default": "/"
-                }
-            ]
-        }, {
-            "type": "newsletter",
-            "name": "Newsletter signup",
-            "limit": 1,
-            "settings": [
-                {
-                    "type": "text",
-                    "id": "title",
-                    "label": "Mailing list section title",
-                    "default": "connect"
-                }, {
-                    "type": "richtext",
-                    "id": "mailing_subheading",
-                    "label": "Mailing list subheading",
-                    "default": "<p>Join our mailing list for updates</p>"
-                }
-            ]
-        }
-    ]
-}
+                    }, {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "image 1"
+                    }, {
+                        "type": "url",
+                        "id": "imageUrl",
+                        "label": "Image 1 Url",
+                        "default": "/"
+                    }, {
+                        "type": "image_picker",
+                        "id": "image1",
+                        "label": "image 2"
+                    }, {
+                        "type": "url",
+                        "id": "imageUrl1",
+                        "label": "Image 2 Url",
+                        "default": "/"
+                    }, {
+                        "type": "image_picker",
+                        "id": "image2",
+                        "label": "image 3"
+                    }, {
+                        "type": "url",
+                        "id": "imageUrl2",
+                        "label": "Image 3 Url",
+                        "default": "/"
+                    }, {
+                        "type": "image_picker",
+                        "id": "image3",
+                        "label": "image 4"
+                    }, {
+                        "type": "url",
+                        "id": "imageUrl3",
+                        "label": "Image 4 Url",
+                        "default": "/"
+                    }
+                ]
+            }, {
+                "type": "newsletter",
+                "name": "Newsletter signup",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "title",
+                        "label": "Mailing list section title",
+                        "default": "connect"
+                    }, {
+                        "type": "richtext",
+                        "id": "mailing_subheading",
+                        "label": "Mailing list subheading",
+                        "default": "<p>Join our mailing list for updates</p>"
+                    }
+                ]
+            }
+        ]
+    }
 
 {% endschema %}

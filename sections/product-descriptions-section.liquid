@@ -7,7 +7,7 @@
 </div>
 
 {% for variant  in product.variants %}
-    <template data- {{section.id}}="{{variant.id}}">
+    <template data-{{section.id}}="{{variant.id}}">
         {% render 'product-descriptions' instructions:variant.metafields.global %}
     </template>
 {% endfor %}
@@ -15,6 +15,7 @@
 <script>
   window.addEventListener("themeloaded", function(event) { // (1)
     Events.on('variantchange', function(variant,product, context){
+      console.log({variant,product, context})
 			const wrapper =  document.querySelector('#{{section.id}}')
 			const content =  document.querySelector(`[data-{{section.id}}='${variant.id}']`).content
 			wrapper.innerText=''
