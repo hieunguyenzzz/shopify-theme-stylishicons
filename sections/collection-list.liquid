@@ -11,20 +11,19 @@
             <div class="keen-slider__slide">
                 <div class="tw-w-full tw-relative " data-alpha="{{ collection.title }}" {{ block.shopify_attributes }}>
                     {% if block.settings.collection == blank %}
-                        {% capture current %}
-                            {{ forloop.index }}
-                        {% endcapture %}
-                        {%- assign placeholder = 'collection-' | append: current -%}
-                        <div class="collection-image ci onboard">
-                            <a href="#">
-                                {{ placeholder | placeholder_svg_tag }}
-                            </a>
-                        </div>
-                        <div class="product-details">
-                            <h3>
-                                <a href="#">Sample collection
-                                    {{ forloop.index }}</a>
-                            </h3>
+                        <div class="tw-relative" style="padding-bottom: 100%;">
+                            <div class="tw-absolute tw-w-full tw-h-full tw-inset-0 hover:tw-brightness-50">
+                                <a href="#" title="{{ collection_title }}">
+                                    <div class="tw-w-full">
+                                        {% render "[image]-holder" %}
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="tw-absolute tw-top-1/2 tw-right-0 tw-max-w-full" style="transform: translateY(-50%);">
+                                <h3 class="tw-m-0 tw-font-bold tw-text-xs sm:tw-text-base tw-px-3 tw-py-2 tw-bg-black tw-bg-opacity-50">
+                                    <a class="!tw-text-white " href="#" title="collection_title">sample</a>
+                                </h3>
+                            </div>
                         </div>
                     {% else %}
                         {% render 'collection-grid-item', collection: collection %}
@@ -41,7 +40,7 @@
         <div class=" tw-flex tw-flex-col tw-items-center lg:tw-items-start tw-text-center lg:tw-text-left tw-flex-1 tw-space-y-4">
             {% if section.settings.heading != blank %}
                 <div class="tw-text-left tw-flex tw-justify-between tw-items-baseline tw-w-full">
-                    <h2 style="padding-left: 0;" class="tw-font-bold tw-mb-0">
+                    <h2 class="tw-font-bold tw-mb-0" style="padding-left: 0;">
                         <a href="{{ collection.url }}">{{ section.settings.heading | escape }}</a>
                     </h2>
                 </div>
