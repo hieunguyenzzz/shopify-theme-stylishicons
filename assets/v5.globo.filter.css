@@ -7,8 +7,9 @@
   white-space: nowrap
 }
 #gf-products img.gflazyloaded, #gf-products img.gflazyload, #gf-products img.lazyload, #gf-products img.lazyloaded{
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
 }
 #gf-tree .noUi-target, #gf-tree .noUi-target * {
     -webkit-touch-callout: none;

@@ -24,7 +24,16 @@
       {% endif %}
     {% endfor %}
   {% endfor %} -->
-
+{% assign inspired-by  = product.metafields.global.inspired-of   %}
+{% if product.metafields.global.inspired-of %}
+    {% assign inspired-by  = product.metafields.global.inspired-of  %}
+{% endif %}
+{% assign inspired-by-url  = '/collections/all'   %}
+{% for collection in product.collections %}
+    {% if collection.title == inspired-by %}
+        {% assign inspired-by-url  = collection.url   %}
+    {% endif %}
+{% endfor %}
 {% assign current_option = "" %}
 {% assign current_option2 = "" %}
 {% for setProduct in setcollection.products %}
@@ -59,15 +68,10 @@
             </div>
             <div class="hidden-desktop" style="text-align:center;">
                 <p class="inspire-text ">
-                    <span>Inspired By</span>
-                    {% if instructions.inspired-by != blank %}
-                        <a href="#inspiree">
-                            {{ instructions.inspired-by }}</a>
-                    {% else %}
-                        <a href="#inspiree">
-                            Designer Icons</a>
-                    {% endif %}
 
+                    <span>Inspired By</span>
+                    <a href="{{ inspired-by-url }}">
+                        {{ inspired-by  }}</a>
                 </p>
             </div>
             {% case section.settings.image_section_size %}
@@ -97,24 +101,24 @@
             {% assign click_to_enlarge = section.settings.click_to_enlarge %}
             {% assign enable_video_looping = section.settings.enable_video_looping %}
             {% capture product_gallery_config %}{
-                                                                                                                        "thumbPosition":
+                                                                                                                                                                                                                                                                                        "thumbPosition":
                 {{ section.settings.thumbnail_position | json }},
-                                                                                                                        "thumbsShown":
+                                                                                                                                                                                                                                                                                        "thumbsShown":
                 {{ section.settings.thumbs_to_show | json }},
-                                                                                                                        "enableVideoLooping":
+                                                                                                                                                                                                                                                                                        "enableVideoLooping":
                 {{ section.settings.enable_video_looping | json }},
-                                                                                                                        "navStyle":
+                                                                                                                                                                                                                                                                                        "navStyle":
                 {{ section.settings.slide_controls | json }},
-                                                                                                                        "mainSlider":
+                                                                                                                                                                                                                                                                                        "mainSlider":
                 {% if product.media.size <= 1 %}false{% else %}true
                 {% endif %},
-                                                                                                                        "thumbSlider":
+                                                                                                                                                                                                                                                                                        "thumbSlider":
                 {% if product.media.size >= 4 %}true{% else %}false
                 {% endif %},
-                                                                                                                        "productId":
+                                                                                                                                                                                                                                                                                        "productId":
                 {{ product.id | json }},
-                                                                                                                        "isQuick": false
-                                                                                                                      }
+                                                                                                                                                                                                                                                                                        "isQuick": false
+                                                                                                                                                                                                                                                                                      }
             {% endcapture %}
 
             <div id="product-photos" class="product-photos product-{{ product.id }} {{ image_width }}" data-product-single-media-group data-gallery-config='{{ product_gallery_config }}' {{ gallery_data }}>
@@ -159,13 +163,8 @@
                             <p class="inspire-text">
                                 <span>Inspired By
                                 </span>
-                                {% if instructions.inspired-by !=blank %}
-                                    <a href="#inspiree">
-                                        {{ instructions.inspired-by }}</a>
-                                {% else %}
-                                    <a href="#inspiree">
-                                        Designer Icons</a>
-                                {% endif %}
+                                <a href="{{ inspired-by-url }}">
+                                    {{ inspired-by }}</a>
 
                             </p>
                         </div>
@@ -264,14 +263,14 @@
                         {% capture product_form_config %}
                             { "money_format":
                             {{ shop.money_format | json }},
-                                                                                                                                                                                                                   "enable_history": true,
-                                                                                                                                                                                                                   "sold_out":
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "enable_history": true,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "sold_out":
                             {{ "products.product.sold_out" | t | json }},
-                                                                                                                                                                                                                   "button":
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "button":
                             {{ 'products.product.add_to_cart' | t | json }},
-                                                                                                                                                                                                                   "unavailable":
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "unavailable":
                             {{ 'products.product.unavailable' | t | json }},
-                                                                                                                                                                                                                   "quickview":
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "quickview":
                             {% if template == 'product.quick' %}true{% else %}false
                             {% endif %}
                             }

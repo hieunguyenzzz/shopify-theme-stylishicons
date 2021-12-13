@@ -73,6 +73,10 @@
   z-index: 20
 }
 
+.tw-z-10 {
+  z-index: 10
+}
+
 .tw-col-span-1 {
   grid-column: span 1 / span 1
 }
@@ -388,6 +392,11 @@
   background-color: currentColor
 }
 
+.tw-bg-\[\#e11400\] {
+  --tw-bg-opacity: 1;
+  background-color: rgba(225, 20, 0, var(--tw-bg-opacity))
+}
+
 .tw-bg-opacity-50 {
   --tw-bg-opacity: 0.5
 }
@@ -479,6 +488,14 @@
   text-align: right
 }
 
+.tw-font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
+}
+
+.tw-font-sans {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+}
+
 .tw-text-xs {
   font-size: 0.75rem;
   line-height: 1rem
@@ -552,12 +569,21 @@
   color: rgba(255, 255, 255, var(--tw-text-opacity)) !important
 }
 
+.tw-text-white {
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity))
+}
+
 .tw-underline {
   text-decoration: underline
 }
 
 .tw-opacity-0 {
   opacity: 0
+}
+
+.tw-opacity-100 {
+  opacity: 1
 }
 
 .tw-shadow {
@@ -571,6 +597,12 @@
 
 .tw-transition-all {
   transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms
+}
+
+.tw-transition-opacity {
+  transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms
 }
@@ -613,6 +645,26 @@
 }
 
 .tw-group:focus-within .group-focus-within\:tw-opacity-100 {
+  opacity: 1
+}
+
+.tw-group:hover .group-hover\:tw-visible {
+  visibility: visible
+}
+
+.tw-group:hover .group-hover\:tw-block {
+  display: block
+}
+
+.tw-group:hover .group-hover\:tw-hidden {
+  display: none
+}
+
+.tw-group:hover .group-hover\:tw-opacity-0 {
+  opacity: 0
+}
+
+.tw-group:hover .group-hover\:tw-opacity-100 {
   opacity: 1
 }
 

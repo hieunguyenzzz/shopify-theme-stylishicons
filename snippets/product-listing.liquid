@@ -7,7 +7,7 @@
         {% endfor %}
 
         {% if product.price < product.compare_at_price %}
-            <div class="sale-item icn">{{ 'products.general.sale' | t }}</div>
+            <div class="sale-item icn tw-bg-[#e11400] tw-text-white tw-z-10 tw-font-sans tw-hidden">{{ 'products.general.sale' | t }}</div>
         {% endif %}
 
     {% else %}
@@ -15,21 +15,16 @@
     {% endif %}
 
     {% if product.featured_media %}
-        <a href="{{ product.url }}" title="{{ product.title | escape }}">
-            <div class="reveal ">
+        <a class="tw-block" href="{{ product.url }}" title="{{ product.title | escape }}">
+            <div {% if settings.image_flip and product.media.size > 1 %} class=" tw-group" {% endif %}>
                 {%- assign preview_image = product.featured_media.preview_image -%}
-                {%- assign second_image = product.media[1] -%}
-                {% render "[image]", image: preview_image image_box_ratio:'100%'  %}
-                <noscript>
-                    <img src="{{ preview_image | img_url: '1024x' }}" alt="{{ preview_image.alt | escape }}">
-                </noscript>
-
+                {%- assign second_image = product.media[2] -%}
+                <div class="box-ratio tw-relative tw-transition-opacity tw-opacity-100 tw-duration-700 group-hover:tw-opacity-0">
+                    {% render "[image]", image: preview_image image_box_ratio:'0%' layout:'fill' %}
+                </div>
                 {% if settings.image_flip and product.media.size > 1 %}
-                    <div class="hidden">
-                        <img class="lazyload lazyload-fade tw-absolute tw-w-full tw-h-full tw-inset-0 tw-object-contain" id="{{ preview_image.id }}" data-src="{{ product.media[1] | img_url: '1024x' }}" data-sizes="auto" alt="{{ preview_image.alt | escape }}">
-                        <noscript>
-                            <img src="{{ product.media[1] | img_url: '1024x' }}" alt="{{ product.media[1].alt | escape }}">
-                        </noscript>
+                    <div class=" group-hover:tw-visible group-hover:tw-opacity-100 tw-invisible tw-opacity-0 tw-transition-opacity tw-duration-700">
+                        {% render "[image]", image: second_image image_box_ratio:'0%'  layout:'fill' %}
                     </div>
                 {% endif %}
             </div>
@@ -84,16 +79,3 @@
     {% render 'hextom_usb_coll', product: product %}
     <!-- **END** Hextom USB Integration // Collection Include - DO NOT MODIFY -->
 </div>
-<style>
-
-    .product-loop span.spr-badge-caption {
-        display: none;
-    }
-    @media screen and(min-width: 768px) {
-        p.small {
-            font-size: 12px;
-            width: 50%;
-            float: left;
-        }
-    }
-</style>
