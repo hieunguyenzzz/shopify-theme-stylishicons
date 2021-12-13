@@ -1,3 +1,6 @@
+{% capture discount %}
+    {{ product.compare_at_price_max | minus:product.price | times:100 | divided_by:product.compare_at_price_max }}%
+{% endcapture %}
 <div class="ci">
     {% if product.available %}
         {% for col in product.collections %}
@@ -7,7 +10,8 @@
         {% endfor %}
 
         {% if product.price < product.compare_at_price %}
-            <div class="sale-item icn tw-bg-[#e11400] tw-text-white tw-z-10 tw-font-sans tw-hidden">{{ 'products.general.sale' | t }}</div>
+            <span class="percentage_off tw-absolute tw-top-0 tw-right-0 tw-z-10">{{ discount }}
+                OFF</span>
         {% endif %}
 
     {% else %}
