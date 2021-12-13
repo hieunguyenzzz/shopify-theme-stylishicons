@@ -2,7 +2,7 @@
 {% capture items %}
     {% for media in product.media %}
         <li class="keen-slider__slide keen-slider-{{id}}-keen-slider__slide">
-            <a class="tw-flex zoom_btn tw-z-20 tw-justify-center tw-items-center " data-fancybox="product-{{ product.id }}" title="click to zoom-in" href="{{ media | img_url: '2400x' }}" itemprop="contentUrl" tabindex="-1">
+            <a target="_blank" class="tw-flex zoom_btn tw-z-20 tw-justify-center tw-items-center " data-fancybox="product-{{ product.id }}" title="click to zoom-in" href="{{ media | img_url: '2400x' }}" itemprop="contentUrl" tabindex="-1">
                 <i class="la la-search-plus tw-text-black"></i>
             </a>
             <div class="">
@@ -34,7 +34,7 @@
         {% for media in product.media %}
             {% if optionStr == media.alt %}
                 <li class="keen-slider__slide keen-slider-{{id}}-keen-slider__slide tw-relative">
-                    <a class="tw-flex zoom_btn tw-z-20 tw-justify-center tw-items-center " data-fancybox="product-{{ product.id }}" title="click to zoom-in" href="{{ media | img_url: '2400x' }}" itemprop="contentUrl" tabindex="-1">
+                    <a target="_blank" class="tw-flex zoom_btn tw-z-20 tw-justify-center tw-items-center " data-fancybox="product-{{ product.id }}" title="click to zoom-in" href="{{ media | img_url: '2400x' }}" itemprop="contentUrl" tabindex="-1">
                         <i class="la la-search-plus tw-text-black"></i>
                     </a>
                     <div class="">
@@ -110,6 +110,7 @@
     .keen-slider>* {
         width: 100%;
         min-height: 100%;
+        flex-shrink: 0;
     }
     .keen-slider[data-keen-slider-v] {
         flex-wrap: wrap;
@@ -150,37 +151,39 @@
 <script>
     function initGallery (){
         var productFancy = $("[data-fancybox='product-{{product.id}}']");
-        console.log({productFancy})
-        productFancy.fancybox({
-            loop: true,
-            parentEl: '.fancybox-wrapper',
-            transitionDuration: 100,
-            animationDuration: 500,
-            animationEffect: "fade",
-            buttons: [
-                'fb',
-                'tw',
-                "zoom",
-                "zoom-in-out",
-                "fullScreen",
-                "slideShow",
-                "thumbs",
-                "close"
-            ],
-            infobar: true,
-            transitionEffect: "slide",
-            thumbs: {
-                autoStart: false, // Display thumbnails on opening
-                hideOnClose: true, // Hide thumbnail grid when closing animation starts
-                parentEl: ".fancybox-container", // Container is injected into this element
-                axis: "y" // Vertical (y) or horizontal (x) scrolling
-            },
-            clickContent: function(current, event) {
-                return current.type === "image" ? "next" : false;
-            },
-            beforeClose: function(instance, slide) {
-            }
-     });
+        setTimeout(()=>{
+            productFancy.fancybox({
+                loop: true,
+                parentEl: '.fancybox-wrapper',
+                transitionDuration: 100,
+                animationDuration: 500,
+                animationEffect: "fade",
+                buttons: [
+                    'fb',
+                    'tw',
+                    "zoom",
+                    "zoom-in-out",
+                    "fullScreen",
+                    "slideShow",
+                    "thumbs",
+                    "close"
+                ],
+                infobar: true,
+                transitionEffect: "slide",
+                thumbs: {
+                    autoStart: false, // Display thumbnails on opening
+                    hideOnClose: true, // Hide thumbnail grid when closing animation starts
+                    parentEl: ".fancybox-container", // Container is injected into this element
+                    axis: "y" // Vertical (y) or horizontal (x) scrolling
+                },
+                clickContent: function(current, event) {
+                    return current.type === "image" ? "next" : false;
+                },
+                beforeClose: function(instance, slide) {
+                }
+            });
+    
+        },0)
     }
     window.addEventListener("themeloaded", function(event) { // (1)
         const slider = new KeenSlider("#keen-slider-{{id}}", {
@@ -221,6 +224,7 @@
               
               updateClasses(instance)
               updateDots(instance)
+                initGallery()
           },
           slideChanged(instance) {
               updateClasses(instance)
@@ -261,10 +265,5 @@
       }
   })
 
-</script>
-<script>
-    window.addEventListener("themeloaded", function(event) {
-        
-    })
 </script>
 <script src="https://cdn.jsdelivr.net/npm/keen-slider@5.5.0/keen-slider.min.js" ></script>
