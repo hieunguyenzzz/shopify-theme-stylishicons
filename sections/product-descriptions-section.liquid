@@ -1,5 +1,4 @@
-{% assign instructions = product.metafields.global %}
-
+{% assign instructions = product.variants[0].metafields.global %}
 {% if product.variants.size != 1 %}
     {% assign instructions = product.selected_variant.metafields.global %}
 {% endif %}
@@ -8,7 +7,7 @@
 </div>
 
 {% for variant  in product.variants %}
-    <template data-{{section.id}}="{{variant.id}}">
+    <template data- {{section.id}}="{{variant.id}}">
         {% render 'product-descriptions' instructions:variant.metafields.global %}
     </template>
 {% endfor %}
