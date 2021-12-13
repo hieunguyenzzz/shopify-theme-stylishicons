@@ -29,7 +29,22 @@
         {% include '[carousel]' items:items %}
     </div>
 </div>
-
+<script>
+    fetch('https://shopify-instagram-mobelaris.hieunguyen.dev/api/instagram').then(res=>res.json()).then(result=>{
+        console.log({result})
+        console.log({feed1:result.result.data.user.edge_owner_to_timeline_media.edges[1].node.display_url})
+        console.log(document.querySelector('.keen-slider-{{section.id}}'))
+        document.querySelector('.keen-slider-{{section.id}}').innerHTML=''
+        const itemsFragments = document.createDocumentFragment()
+        let str = ''
+        result.result.data.user.edge_owner_to_timeline_media.edges.forEach(({node})=>{
+            str=str+`<a target="_blank" href="https://www.instagram.com/p/${node.shortcode}/" class="keen-slider__slide">
+                <img src="${node.display_url}"/>
+            </a>`
+        })
+        document.querySelector('.keen-slider-{{section.id}}').innerHTML=str
+    })
+</script>
 {% schema %}
 
 {

@@ -244,10 +244,6 @@
   transform: var(--tw-transform)
 }
 
-.tw-cursor-not-allowed {
-  cursor: not-allowed
-}
-
 .tw-list-none {
   list-style-type: none
 }
@@ -562,10 +558,6 @@
 
 .tw-opacity-0 {
   opacity: 0
-}
-
-.tw-opacity-40 {
-  opacity: 0.4
 }
 
 .tw-shadow {

@@ -185,13 +185,18 @@
           spacing: 0,
           loop: true,
           created: function (instance) {
+            let dotWrapper=document.querySelector('#keen-slider-product-template-dots')
+            // console.log("dotWrapper",dotWrapper)
+            dotWrapper.addEventListener('click',(e)=>{
+                let target = e.target
+                let index=[...dotWrapper.querySelectorAll('img')].findIndex(e=>e===target)
+                instance.moveToSlide(index)
+            })
               window.slider=instance
                 Events.on('variantchange', function(variant,product, context){
-                    console.log({variant,product, context})
                     if(variant){
                         document.querySelector("#keen-slider-{{id}}").innerHTML=''
                         const innerslider =document.querySelector(`[data-variant-id='${variant.id}']`).content.cloneNode(true)
-                        console.log(innerslider)
                         document.querySelector("#keen-slider-{{id}}").append(innerslider)
                         updateDots(instance,variant)
                         initGallery()
@@ -244,10 +249,12 @@
               dots.forEach(function (e, idx) {
                 var dot = e.cloneNode(true)
                 dots_wrapper.appendChild(dot)
-                dot.addEventListener("click", function () {
-                    instance.moveToSlide(idx)
-                })
+                // console.log({dot})
+                // dot.addEventListener("click", function () {
+                //     instance.moveToSlide(idx)
+                // })
               })
+        
       }
   })
 
@@ -256,6 +263,5 @@
     window.addEventListener("themeloaded", function(event) {
         
     })
-       
 </script>
 <script src="https://cdn.jsdelivr.net/npm/keen-slider@5.5.0/keen-slider.min.js" ></script>
