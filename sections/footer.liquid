@@ -67,7 +67,7 @@
                                     <div>{{section.settings.footer_text}}</div>
                                 {% endif %}
                             </div>
-                            <div class="flex tw-w-full tw-text-right tw-flex-col tw-items-center md:tw-items-center lg:tw-items-end">{{ block.settings.footer_text }}
+                            <div class="flex tw-w-full tw-text-right lg:tw-flex-col tw-items-center md:tw-items-center lg:tw-items-end">{{ block.settings.footer_text }}
                                 {% if block.settings.image != blank %}
                                     <a target="_blank" class="tw-filter hover:tw-grayscale" href="{{block.settings.imageUrl}}"><img class="tw-w-40 tw-ml-auto" src="{{ block.settings.image | img_url: '300x' }}"></a>
                                 {% endif %}
@@ -405,63 +405,63 @@
                     "type": "richtext",
                     "label": "Text",
                     "default": "<p>Adding text to your footer helps introduce your business to new customers.</p>"
+                            }, {
+                                "type": "image_picker",
+                                "id": "image",
+                                "label": "image 1"
+                            }, {
+                                "type": "url",
+                                "id": "imageUrl",
+                                "label": "Image 1 Url",
+                                "default": "/"
+                            }, {
+                                "type": "image_picker",
+                                "id": "image1",
+                                "label": "image 2"
+                            }, {
+                                "type": "url",
+                                "id": "imageUrl1",
+                                "label": "Image 2 Url",
+                                "default": "/"
+                            }, {
+                                "type": "image_picker",
+                                "id": "image2",
+                                "label": "image 3"
+                            }, {
+                                "type": "url",
+                                "id": "imageUrl2",
+                                "label": "Image 3 Url",
+                                "default": "/"
+                            }, {
+                                "type": "image_picker",
+                                "id": "image3",
+                                "label": "image 4"
+                            }, {
+                                "type": "url",
+                                "id": "imageUrl3",
+                                "label": "Image 4 Url",
+                                "default": "/"
+                            }
+                        ]
                     }, {
-                        "type": "image_picker",
-                        "id": "image",
-                        "label": "image 1"
-                    }, {
-                        "type": "url",
-                        "id": "imageUrl",
-                        "label": "Image 1 Url",
-                        "default": "/"
-                    }, {
-                        "type": "image_picker",
-                        "id": "image1",
-                        "label": "image 2"
-                    }, {
-                        "type": "url",
-                        "id": "imageUrl1",
-                        "label": "Image 2 Url",
-                        "default": "/"
-                    }, {
-                        "type": "image_picker",
-                        "id": "image2",
-                        "label": "image 3"
-                    }, {
-                        "type": "url",
-                        "id": "imageUrl2",
-                        "label": "Image 3 Url",
-                        "default": "/"
-                    }, {
-                        "type": "image_picker",
-                        "id": "image3",
-                        "label": "image 4"
-                    }, {
-                        "type": "url",
-                        "id": "imageUrl3",
-                        "label": "Image 4 Url",
-                        "default": "/"
-                    }
-                ]
-            }, {
-                "type": "newsletter",
-                "name": "Newsletter signup",
-                "limit": 1,
-                "settings": [
-                    {
-                        "type": "text",
-                        "id": "title",
-                        "label": "Mailing list section title",
-                        "default": "connect"
-                    }, {
-                        "type": "richtext",
-                        "id": "mailing_subheading",
-                        "label": "Mailing list subheading",
-                        "default": "<p>Join our mailing list for updates</p>"
+                        "type": "newsletter",
+                        "name": "Newsletter signup",
+                        "limit": 1,
+                        "settings": [
+                            {
+                                "type": "text",
+                                "id": "title",
+                                "label": "Mailing list section title",
+                                "default": "connect"
+                            }, {
+                                "type": "richtext",
+                                "id": "mailing_subheading",
+                                "label": "Mailing list subheading",
+                                "default": "<p>Join our mailing list for updates</p>"
+                            }
+                        ]
                     }
                 ]
             }
-        ]
-    }
 
 {% endschema %}

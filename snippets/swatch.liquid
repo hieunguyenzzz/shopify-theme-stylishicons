@@ -20,7 +20,7 @@ choose colours" | split: ", " %}
 
   <!-- {% assign image_url = value | handle | append: '.png' | file_url %} -->
   {% assign handleValue = value | handle %}
-  {% assign image_url = 'https://res.cloudinary.com/dfgbpib38/image/upload/v1638254701/swatchs/' | append: handleValue | append: '.png'  %}
+  {% assign image_url = 'https://res.cloudinary.com/dfgbpib38/image/upload/v1638254701/swatchs/' | append: product.handle | append: '/' | append: handleValue | append: '.png'  %}
 
   {% assign css_color = value | split: ' ' | last | handle %}
 
@@ -105,7 +105,7 @@ choose colours" | split: ", " %}
       <img class="variant-image" src="{{ variant_image_url }}" alt="{{ value }}">
       {% elsif section.settings.color_swatch_options == 'custom-image' %}
       <div class="custom-image css-color"
-        style="width: 40px; height: 40px; background-color: {{ css_color }}; background-image: url({{ image_url }});background-size: 270%;background-position: center;}">
+        style="width: 40px; height: 40px; background-color: {{ css_color }}; background-image: url({{ image_url }});background-size: 270%;background-position: center;">
       </div>
       {% else %}
       <div class="css-color" style="width: 40px; height: 40px; background-color: {{ css_color }};"></div>
