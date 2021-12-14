@@ -61,6 +61,14 @@
   right: -2rem
 }
 
+.tw-top-3 {
+  top: 0.75rem
+}
+
+.tw-left-3 {
+  left: 0.75rem
+}
+
 .tw-isolate {
   isolation: isolate
 }
@@ -170,6 +178,10 @@
   height: 220px
 }
 
+.tw-h-8 {
+  height: 2rem
+}
+
 .tw-min-h-\[500px\] {
   min-height: 500px
 }
@@ -200,6 +212,10 @@
 
 .tw-w-\[5px\] {
   width: 5px
+}
+
+.tw-w-8 {
+  width: 2rem
 }
 
 .tw-max-w-full {
@@ -250,6 +266,10 @@
 .tw--rotate-180 {
   --tw-rotate: -180deg;
   transform: var(--tw-transform)
+}
+
+.tw-cursor-\[zoom-in\] {
+  cursor: zoom-in
 }
 
 .tw-list-none {
@@ -414,8 +434,17 @@
   background-color: currentColor
 }
 
+.tw-bg-gray-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(156, 163, 175, var(--tw-bg-opacity))
+}
+
 .tw-bg-opacity-50 {
   --tw-bg-opacity: 0.5
+}
+
+.tw-bg-opacity-70 {
+  --tw-bg-opacity: 0.7
 }
 
 .tw-object-contain {
@@ -434,6 +463,14 @@
 
 .tw-p-0 {
   padding: 0px
+}
+
+.tw-p-\[4\%\] {
+  padding: 4%
+}
+
+.tw-p-2 {
+  padding: 0.5rem
 }
 
 .tw-px-3 {
@@ -814,6 +851,10 @@
 
   .lg\:tw-h-\[500px\] {
     height: 500px
+  }
+
+  .lg\:tw-h-\[440px\] {
+    height: 440px
   }
 
   .lg\:tw-min-h-\[640px\] {

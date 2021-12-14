@@ -1,110 +1,84 @@
-  
 <div class="shopify_explorer__content">
-  {%- assign expand_questions = section.settings.expand_questions -%}
- 
-  {%- for block in section.blocks -%}
-    {%- case block.type -%}
-      {%- when 'separator' -%}
-        <h2 class="shopify_explorer_faq__separator h3" {{ block.shopify_attributes }}>{{ block.settings.title | escape }}</h2>
- 
-      {%- when 'question' -%}
-        <div class="shopify_explorer_faq__item {% unless expand_questions %}shopify_explorer_faq__item--expandable{% endunless %}" {{ block.shopify_attributes }}>
-         
-          
-          
-          <h3 class="shopify_explorer_faq__question h5 {% unless expand_questions %}link{% endunless %}"><div class="icon">  <img src="{{ block.settings.image | img_url }}"></div> {{ block.settings.title }}</h3>
-          
-          <div class="shopify_explorer_faq__answer rte">
-            {{ block.settings.answer }}
-          </div>
-        </div>
-  
-  
-    {%- endcase -%}
-  {%- endfor -%}
+    {%- assign expand_questions = section.settings.expand_questions -%}
+
+    {%- for block in section.blocks -%}
+        {%- case block.type -%}
+            {%- when 'separator' -%}
+                <h2 class="shopify_explorer_faq__separator h3" {{ block.shopify_attributes }}>{{ block.settings.title | escape }}</h2>
+
+            {%- when 'question' -%}
+                <div class="shopify_explorer_faq__item {% unless expand_questions %}shopify_explorer_faq__item--expandable{% endunless %}" {{ block.shopify_attributes }}>
+
+
+                    <h3 class="shopify_explorer_faq__question h5 {% unless expand_questions %}link{% endunless %}">
+                        <div class="icon">
+                            <img src="{{ block.settings.image | img_url }}"></div>
+                        {{ block.settings.title }}</h3>
+
+                    <div class="shopify_explorer_faq__answer rte">
+                        {{ block.settings.answer }}
+                    </div>
+                </div>
+
+
+        {%- endcase -%}
+    {%- endfor -%}
 </div>
 
 {% schema %}
-  {
-    "name": "Dropdown",
-    "settings": [
-      {
-        "type": "checkbox",
-        "id": "expand_questions",
-        "label": "Expand all questions by default",
-        "default": false
-      }
-  ],
-    "blocks": [
-      {
-        "type": "separator",
-        "name": "Section separator",
-        "settings": [
-          {
-            "type": "text",
-            "id": "title",
-            "label": "Heading"
-          }
-        ]
-      },
-      {
-        "type": "question",
-        "name": "Question",
-        "settings": [
-          {
-        "type": "image_picker",
-        "id": "image",
-        "label": "Image"
-      },
 
 {
-            "type": "text",
-            "id": "title",
-            "label": "Question"
-          },
-          {
-            "type": "richtext",
-            "id": "answer",
-            "label": "Answer"
-          }
-        ]
-      }
+    "name": "Dropdown",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "expand_questions",
+            "label": "Expand all questions by default",
+            "default": false
+        }
+    ],
+    "blocks": [
+        {
+            "type": "separator",
+            "name": "Section separator",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Heading"
+                }
+            ]
+        }, {
+            "type": "question",
+            "name": "Question",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Image"
+                }, {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Question"
+                }, {
+                    "type": "richtext",
+                    "id": "answer",
+                    "label": "Answer"
+                }
+            ]
+        }
     ]
-  }
+}
+
 {% endschema %}
- 
+
 {% stylesheet %}
+
+
+
 {% endstylesheet %}
- <div class="shopify_explorer__content">
-         <div class="sample123 shopify_explorer_faq__item {% unless expand_questions %}shopify_explorer_faq__item--expandable{% endunless %}" {{ block.shopify_attributes }}>
-     
-<h3 class="shopify_explorer_faq__question h5 {% unless expand_questions %}link{% endunless %}"><div class="icon"> <span style=" font-size: 22px;text-align: center;vertical-align: middle;line-height: 41px;color: #666;" class="icon icon-description"></span> <!--<img src="{{ block.settings.image | img_url }}">--></div>PRODUCT DESCRIPTION</h3> 
-          
-          <div class="shopify_explorer_faq__answer rte">
-            {{product.metafields.global.heading-1}}
-            {{product.metafields.global.short-description-1}}
-            {{product.metafields.global.description-image-1}}
-            {{product.metafields.global.heading-2}}
-            {{product.metafields.global.short-description-2}}
-            {{product.metafields.global.description-image-2}}
-          </div>
-        </div></div>
-  <div class="shopify_explorer__content">
-         <div class="sample123 shopify_explorer_faq__item {% unless expand_questions %}shopify_explorer_faq__item--expandable{% endunless %}" {{ block.shopify_attributes }}>
-<h3 class="shopify_explorer_faq__question h5 {% unless expand_questions %}link{% endunless %}"><div class="icon"> <span style=" font-size: 22px;text-align: center;vertical-align: middle;line-height: 41px;color: #666;" class="icon icon-dimensions"></span> <!--<img src="{{ block.settings.image | img_url }}">--></div>THE FINER DETAILS</h3> 
-          
-          <div class="shopify_explorer_faq__answer rte">
-           <h3>Product Details</h3>
-            {{product.metafields.global.Productspecification}}
-            <h3>Product Information</h3>
-            {{product.metafields.global.product-information}}
- 
-          </div>
-        </div></div>
-        
-        
-        
-        
+
+
 <style>
   .active {
     background: transparent;
@@ -184,7 +158,7 @@
     margin-top: -7px;
     right: 3px;
   }
-	#shopify-section-product-descriptions-section{display:none}
+	/* #shopify-section-product-descriptions-section{display:none} */
 }
 h2.shopify_explorer_faq__separator.h3,h3.shopify_explorer_faq__question.h5.link {
     color: #000000;
