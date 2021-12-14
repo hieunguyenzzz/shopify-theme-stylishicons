@@ -19,12 +19,12 @@
     {% endif %}
 
     {% if product.featured_media %}
-        <a class="tw-block" href="{{ product.url }}" title="{{ product.title | escape }}">
+        <a class="tw-block tw-border tw-border-[#f1f1f1] tw-border-solid" href="{{ product.url }}" title="{{ product.title | escape }}">
             <div {% if settings.image_flip and product.media.size > 1 %} class=" tw-group" {% endif %}>
                 {%- assign preview_image = product.featured_media.preview_image -%}
                 {%- assign second_image = product.media[1] -%}
-                <div class="box-ratio tw-relative tw-transition-opacity tw-opacity-100 tw-duration-700 group-hover:tw-opacity-0">
-                    {% render "[image]", image: preview_image image_box_ratio:'0%' layout:'fill' %}
+                <div class="tw-relative tw-transition-opacity tw-opacity-100 tw-duration-700 group-hover:tw-opacity-0">
+                    {% render "[image]", image: preview_image image_box_ratio:'100%'  %}
                 </div>
                 {% if settings.image_flip and product.media.size > 1 %}
                     <div class=" group-hover:tw-visible group-hover:tw-opacity-100 tw-invisible tw-opacity-0 tw-transition-opacity tw-duration-700">
