@@ -586,14 +586,14 @@
   filter: var(--tw-filter)
 }
 
-.tw-transition-all {
-  transition-property: all;
+.tw-transition-opacity {
+  transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms
 }
 
-.tw-transition-opacity {
-  transition-property: opacity;
+.tw-transition-all {
+  transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms
 }
@@ -647,12 +647,12 @@
   visibility: visible
 }
 
-.tw-group:hover .group-hover\:tw-opacity-0 {
-  opacity: 0
-}
-
 .tw-group:hover .group-hover\:tw-opacity-100 {
   opacity: 1
+}
+
+.tw-group:hover .group-hover\:tw-opacity-0 {
+  opacity: 0
 }
 
 @media (min-width: 640px) {
