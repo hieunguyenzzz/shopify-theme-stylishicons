@@ -4412,7 +4412,7 @@
       "product-template": {
         "type": "product-template",
         "settings": {
-          "show_popup": true,
+          "show_popup": false,
           "image": "shopify:\/\/shop_images\/designer-editions-home-image.png",
           "title": "Image slide",
           "text": "Tell your brand's story through video and images",
