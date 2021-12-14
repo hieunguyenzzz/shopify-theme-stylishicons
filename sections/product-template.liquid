@@ -42,12 +42,7 @@
     {% endif %}
 {% endfor %}
 
-{% for variant in product.variants %}
-    {% if forloop.index == current_option %}
-        {% assign current_variant =  variant %}
-    {% endif %}
-{% endfor %}
-
+{% assign current_variant =  product.selected_or_first_available_variant %}
 
 <div id="product-{{ product.id }}" class="product-page product-template prod-{{ section.id }}" data-section-type="product-section" data-product-id="{{ product.id }}" data-section-id="{{ section.id }}">
     {% render 'product-json', product: product %}
@@ -101,42 +96,42 @@
             {% assign click_to_enlarge = section.settings.click_to_enlarge %}
             {% assign enable_video_looping = section.settings.enable_video_looping %}
             {% capture product_gallery_config %}{
-                                                                                                                                                                                                                                                                                                                        "thumbPosition":
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        "thumbPosition":
                 {{ section.settings.thumbnail_position | json }},
-                                                                                                                                                                                                                                                                                                                        "thumbsShown":
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        "thumbsShown":
                 {{ section.settings.thumbs_to_show | json }},
-                                                                                                                                                                                                                                                                                                                        "enableVideoLooping":
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        "enableVideoLooping":
                 {{ section.settings.enable_video_looping | json }},
-                                                                                                                                                                                                                                                                                                                        "navStyle":
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        "navStyle":
                 {{ section.settings.slide_controls | json }},
-                                                                                                                                                                                                                                                                                                                        "mainSlider":
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        "mainSlider":
                 {% if product.media.size <= 1 %}false{% else %}true
                 {% endif %},
-                                                                                                                                                                                                                                                                                                                        "thumbSlider":
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        "thumbSlider":
                 {% if product.media.size >= 4 %}true{% else %}false
                 {% endif %},
-                                                                                                                                                                                                                                                                                                                        "productId":
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        "productId":
                 {{ product.id | json }},
-                                                                                                                                                                                                                                                                                                                        "isQuick": false
-                                                                                                                                                                                                                                                                                                                      }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        "isQuick": false
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      }
             {% endcapture %}
 
             <div id="product-photos" class="product-photos product-{{ product.id }} {{ image_width }}" data-product-single-media-group data-gallery-config='{{ product_gallery_config }}' {{ gallery_data }}>
 
                 {% if product.featured_media and gallery_type == 'static' %}
                     {% render 'product-media-gallery',
-              product: product,
-              thumbnail_position: thumbnail_position,
-              click_to_enlarge: click_to_enlarge,
-              enable_video_looping: enable_video_looping,
-              thumbs_to_show: section.settings.thumbs_to_show %}
+                        product: product,
+                        thumbnail_position: thumbnail_position,
+                        click_to_enlarge: click_to_enlarge,
+                        enable_video_looping: enable_video_looping,
+                        thumbs_to_show: section.settings.thumbs_to_show %}
 
                 {% elsif product.featured_media and gallery_type == 'scroll' %}
                     {% render 'product-scroll-gallery',
-              product: product,
-              thumbnail_position: thumbnail_position,
-              click_to_enlarge: click_to_enlarge,
-              enable_video_looping: enable_video_looping %}
+                        product: product,
+                        thumbnail_position: thumbnail_position,
+                        click_to_enlarge: click_to_enlarge,
+                        enable_video_looping: enable_video_looping %}
                 {% else %}
                     {% capture current %}
                         {% cycle 1, 2, 3, 4, 5, 6 %}
@@ -263,14 +258,14 @@
                         {% capture product_form_config %}
                             { "money_format":
                             {{ shop.money_format | json }},
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   "enable_history": true,
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   "sold_out":
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "enable_history": true,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "sold_out":
                             {{ "products.product.sold_out" | t | json }},
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   "button":
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "button":
                             {{ 'products.product.add_to_cart' | t | json }},
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   "unavailable":
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "unavailable":
                             {{ 'products.product.unavailable' | t | json }},
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   "quickview":
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "quickview":
                             {% if template == 'product.quick' %}true{% else %}false
                             {% endif %}
                             }
@@ -278,10 +273,10 @@
 
                         <div class="product-form">
                             {% render 'product-form',
-                product: product,
-                product_form_config: product_form_config,
-                current_variant: current_variant,
-                show_sku: section.settings.show_sku %}
+                                product: product,
+                                product_form_config: product_form_config,
+                                current_variant: current_variant,
+                                show_sku: section.settings.show_sku %}
                         </div>
                     {% endunless %}
 
