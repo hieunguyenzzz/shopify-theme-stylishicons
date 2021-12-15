@@ -897,6 +897,11 @@
     bottom: 6rem
   }
 
+  .lg\:tw-mx-0 {
+    margin-left: 0px;
+    margin-right: 0px
+  }
+
   .lg\:tw-ml-auto {
     margin-left: auto
   }
