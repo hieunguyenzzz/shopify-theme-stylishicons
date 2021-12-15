@@ -3,21 +3,22 @@
 {% endcapture %}
 <div class="ci">
     {% if product.available %}
-        {% for col in product.collections %}
-            {% if col.handle == 'new' %}
-                <div class="new icn">{{ 'products.general.new' | t }}</div>
-            {% endif %}
-        {% endfor %}
-
         {% if product.price < product.compare_at_price %}
             <span class="percentage_off tw-absolute tw-top-0 tw-right-0 tw-z-10 empty:tw-hidden">{{ discount }}
                 OFF</span>
         {% endif %}
         {% for collection in product.collections %}
             {% if collection.handle == 'bestseller' %}
-            <span class="tw-text-xs tw-bg-opacity-70 tw-font-bold tw-leading-relaxed tw-px-[0.5em] tw-bg-[#eef5f1] tw-absolute tw-bottom-0 tw-mb-6 tw-left-0 tw-z-10 empty:tw-hidden">
-                BEST SELLER
-            </span>
+                <span class="tw-text-xs tw-bg-opacity-70 tw-font-bold tw-leading-relaxed tw-px-[0.5em] tw-bg-[#eef5f1] tw-absolute tw-bottom-0 tw-mb-6 tw-left-0 tw-z-10 empty:tw-hidden">
+                    BEST SELLER
+                </span>
+                {% break %}
+            {% endif %}
+            {% if collection.handle == 'new' %}
+                <span class="tw-text-xs tw-bg-opacity-70 tw-font-bold tw-leading-relaxed tw-px-[0.5em] tw-bg-[#eef5f1] tw-absolute tw-bottom-0 tw-mb-6 tw-left-0 tw-z-10 empty:tw-hidden">
+                    NEW
+                </span>
+                {% break %}
             {% endif %}
         {% endfor %}
     {% else %}

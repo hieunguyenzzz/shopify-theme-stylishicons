@@ -57,11 +57,18 @@
       {% else %}
       {% for collection in product.collections %}
             {% if collection.handle == 'bestseller' %}
-            <span class="tw-text-xs tw-bg-opacity-70 tw-font-bold tw-leading-relaxed tw-px-[0.5em] tw-bg-[#eef5f1] tw-absolute tw-bottom-0 tw-mb-6 tw-left-0 tw-z-10 empty:tw-hidden">
-                BEST SELLER
-            </span>
+                <span class="tw-text-xs tw-bg-opacity-70 tw-font-bold tw-leading-relaxed tw-px-[0.5em] tw-bg-[#eef5f1] tw-absolute tw-bottom-0 tw-mb-6 tw-left-0 tw-z-10 empty:tw-hidden">
+                    BEST SELLER
+                </span>
+                {% break %}
             {% endif %}
-      {% endfor %}
+            {% if collection.handle == 'new' %}
+                <span class="tw-text-xs tw-bg-opacity-70 tw-font-bold tw-leading-relaxed tw-px-[0.5em] tw-bg-[#eef5f1] tw-absolute tw-bottom-0 tw-mb-6 tw-left-0 tw-z-10 empty:tw-hidden">
+                    NEW
+                </span>
+                {% break %}
+            {% endif %}
+        {% endfor %}
       <div translatable class="so icn">{% endraw %}{{ 'products.general.sold' | t }}{% raw %}</div>
       {% endif %}
       {% if images_count > 0 %}
