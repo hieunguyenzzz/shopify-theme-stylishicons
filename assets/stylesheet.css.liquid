@@ -2798,7 +2798,7 @@
  {% endif %}
  
  .product .section-title h1 {
-   padding-top: 10px;
+   /* padding-top: 10px; */
  }
  {% if settings.section_titles == 'none' %}
    .product .section-title {
@@ -4626,12 +4626,16 @@
  
  .swatch .swatch-element.soldout .crossed-out {
   /* display: none; */
-
  }
+ .swatch .swatch-element.soldout{
+  /* display: none;  */
+  /* pointer-events: none;
+  opacity: 0.2; */
+}
  .swatch + .swatch .swatch-element.soldout{
-    /* display: none;  */
-    pointer-events: none;
-    opacity: 0.2;
+    display: none; 
+    /* pointer-events: none;
+    opacity: 0.2; */
  }
  .swatch .color.soldout{
    /* display: none;  */
