@@ -63,17 +63,15 @@
     <div class="product-info1 row desktop-12" style="padding: 71px 0;">
         <h2 class="section-title row desktop-12">THE FINER DETAILS
         </h2>
-        <div class="desktop-12">
-            <div class="desktop-6 tw-flex tw-justify-center">
-                <div class="desktop-8">
-                    {%- if side-image != blank -%}
-                        <img class="lifestyle__img lazyloaded" src="{{ side-image }}">
-                    {%- else -%}
-                        <img class="lifestyle__img lazyloaded" src="{{ 'bg.png' | asset_url }}">
-                    {%- endif -%}
-                </div>
+        <div class="tw-flex tw-gap-6 tw-flex-col md:tw-flex-row tw-w-full md:tw-items-center">
+            <div class="tw-flex-1 tw-flex tw-justify-center tw-items-center">
+                {%- if side-image != blank -%}
+                    <img class="lifestyle__img tw-m-auto lazyloaded tw-max-h-[300px] lg:tw-max-h-[600px]" src="{{ side-image }}">
+                {%- else -%}
+                    <img class="lifestyle__img tw-m-auto lazyloaded tw-max-h-[300px] lg:tw-max-h-[600px]" src="{{ 'bg.png' | asset_url }}">
+                {%- endif -%}
             </div>
-            <div class="desktop-6 main-desc">
+            <div class="tw-flex-1 main-desc">
                 <!-- <h3>Product Details</h3> -->
                 {{ product.description }}
                 <!-- <h3>Product Information</h3> -->
@@ -87,7 +85,7 @@
 <div class="{% render '[class]-container' class: '' %} tw-py-12 tw-mx-auto tw-flex tw-gap-6 lg:tw-gap-12" id="inspiree">
 
     {% assign product_collection = product.collections %}
-    <div class="inner-text tw-flex-1">
+    <div class="tw-flex-1">
         <h5>Inspired By</h5>
         <h1>
             {{ inspired-by }}</h1>
