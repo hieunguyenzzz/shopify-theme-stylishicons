@@ -1,19 +1,21 @@
-{%- if product.type == 'GSC_HIDDEN_PRODUCT' -%}{%- break -%}{%- endif -%}
+{%- if product.type == 'GSC_HIDDEN_PRODUCT' -%}
+    {%- break -%}
+{%- endif -%}
 {% section 'product-template' %}
 {% section 'product-three-section' %}
 {% section 'drop-info' %}
 {% section 'product-descriptions-section' %}
 {% section 'product-recommendations' %}
-<div class="row gridlock" >
- <div id="product-reviews" class="{{ lower }}">
-      <div class="section-title">
-        <h3>{{ section.settings.reviews_heading }}</h3>
-      </div>
-      <div id="shopify-product-reviews" data-id="{{product.id}}" data-aos="{{ settings.scroll_animation }}">
-        {{ product.metafields.spr.reviews }}
-      </div>
+<div class="row gridlock">
+    <div id="product-reviews" class="{{ lower }}">
+        <div class="section-title">
+            <h3>{{ section.settings.reviews_heading }}</h3>
+        </div>
+        <div id="shopify-product-reviews" data-id="{{product.id}}" data-aos="{{ settings.scroll_animation }}">
+            {{ product.metafields.spr.reviews }}
+        </div>
     </div>
-  </div>
+</div>
 <style>
   
   input#AddToCart {
@@ -59,9 +61,10 @@
     color: red !important;
     font-size: 24px;
 }
-      span.price-item.price-item--regular {
+      /* span.price-item.price-item--regular {
     font-size: 24px;
-}dl#product-price {
+} */
+dl#product-price {
     float: left;
     margin-right: 55px;
 }
@@ -209,4 +212,5 @@ section.homepage-newsletter .section-title {
 </style>
 
 
-<!--Start Stamped.io Auto Installation--><div id="stamped-main-widget" class="stamped-main-widget" data-widget-style="standard" data-product-id="{{ product.id }}" data-name="{{ product.title | escape }}" data-url="{{ shop.url }}{{ product.url }}" data-image-url="{{ product.featured_image | product_img_url: "large" |replace: '?', '%3F' | replace: '&','%26'}}" data-description="{{ product.description | escape }}" data-product-sku="{{product.handle}}" data-product-type="{{product.type}}" data-widget-language="{{shop.locale}}">{{ product.metafields.stamped.reviews }}</div><!--End Stamped.io Auto Installation-->
+<!--Start Stamped.io Auto Installation--><div id="stamped-main-widget" class="stamped-main-widget" data-widget-style="standard" data-product-id="{{ product.id }}" data-name="{{ product.title | escape }}" data-url="{{ shop.url }}{{ product.url }}" data-image-url="{{ product.featured_image | product_img_url: "large" |replace: '?', '%3F' | replace: '&','%26'}}" data-description="{{ product.description | escape }}" data-product-sku="{{product.handle}}" data-product-type="{{product.type}}" data-widget-language="{{shop.locale}}">{{ product.metafields.stamped.reviews }}</div>
+<!--End Stamped.io Auto Installation-->
