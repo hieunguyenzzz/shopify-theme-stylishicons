@@ -33,7 +33,7 @@
                     </strong>
                 </h3>
                 <p>
-                    {{ short-description-1 }}
+                    {{ short-description-1 | strip_html }}
                 </p>
             </div>
         </div>
@@ -53,7 +53,7 @@
                     </strong>
                 </h3>
                 <p>
-                    {{ short-description-2 }}
+                    {{ short-description-2 | strip_html }}
                 </p>
             </div>
         </div>
@@ -93,7 +93,7 @@
             {{ inspired-by }}</h1>
         {% for collection in product_collection %}
             {% if collection.title == inspired-by %}
-                {{ collection.description | strip_html }}
+                {{ collection.description | strip_html | strip_html }}
             {% endif %}
         {% endfor %}
     </div>
