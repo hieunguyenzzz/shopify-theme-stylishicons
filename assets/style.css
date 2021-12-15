@@ -113,6 +113,10 @@
   margin: 0px !important
 }
 
+.tw-m-auto {
+  margin: auto
+}
+
 .tw-mx-auto {
   margin-left: auto;
   margin-right: auto
@@ -201,6 +205,10 @@
 
 .tw-h-8 {
   height: 2rem
+}
+
+.tw-max-h-\[300px\] {
+  max-height: 300px
 }
 
 .tw-min-h-\[500px\] {
@@ -838,6 +846,10 @@
     max-height: 340px
   }
 
+  .md\:tw-max-h-\[auto\] {
+    max-height: auto
+  }
+
   .md\:tw-w-full {
     width: 100%
   }
@@ -848,6 +860,10 @@
 
   .md\:tw-grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr))
+  }
+
+  .md\:tw-flex-row {
+    flex-direction: row
   }
 
   .md\:tw-items-center {
@@ -928,6 +944,10 @@
 
   .lg\:tw-h-\[440px\] {
     height: 440px
+  }
+
+  .lg\:tw-max-h-\[600px\] {
+    max-height: 600px
   }
 
   .lg\:tw-min-h-\[640px\] {
