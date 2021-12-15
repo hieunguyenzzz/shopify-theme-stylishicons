@@ -49,7 +49,7 @@
         {% assign id = section.id %}
 {% endif %}
 <div class="tw-relative tw-py-6">
-    <div class="tw-relative lg:tw-h-[440px] sm:tw-h-[280px] md:tw-h-[340px] tw-overflow-hidden tw--mx-4 sm:tw--mx-8 tw-pb-[100%] md:tw-pb-0">
+    <div class="tw-relative lg:tw-h-[440px] sm:tw-h-[280px] md:tw-h-[340px] tw-overflow-hidden tw--mx-4 sm:tw--mx-8 tw-pb-[100%] md:tw-pb-0 lg:tw-mx-0">
         <div class="keen-slider tw-absolute md:tw-relative tw-inset-0 tw-w-full tw-h-full" id="keen-slider-{{id}}">
             {{items}}
         </div>
@@ -114,6 +114,8 @@
     }
     #keen-slider-{{id}} .keen-slider__slide img{
         padding: 0 2%;
+        max-width: 660px;
+        margin: auto;
     }
     .keen-slider-{{id}}-dots{
       display: flex; 
