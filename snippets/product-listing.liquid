@@ -1,5 +1,5 @@
 {% capture discount %}
-    {{ product.compare_at_price | minus:product.price | times:100 | divided_by:product.compare_at_price }}%
+    {{ product.compare_at_price_max | minus:product.price | times:100 | divided_by:product.compare_at_price_max }}%
 {% endcapture %}
 <div class="ci">
     {% if product.available %}
@@ -13,7 +13,13 @@
             <span class="percentage_off tw-absolute tw-top-0 tw-right-0 tw-z-10 empty:tw-hidden">{{ discount }}
                 OFF</span>
         {% endif %}
-
+        {% for collection in product.collections %}
+            {% if collection.handle == 'bestseller' %}
+            <span class="tw-text-xs tw-bg-opacity-70 tw-font-bold tw-leading-relaxed tw-px-[0.5em] tw-bg-[#eef5f1] tw-absolute tw-bottom-0 tw-mb-6 tw-left-0 tw-z-10 empty:tw-hidden">
+                BEST SELLER
+            </span>
+            {% endif %}
+        {% endfor %}
     {% else %}
         <div class="so icn">{{ 'products.general.sold' | t }}</div>
     {% endif %}

@@ -4022,6 +4022,7 @@ theme.Collection = (function() {
     (function infiniteScroll() {
        let nextURL;
        function updateNextURL(doc) {
+          if(doc.querySelector('.paginate_next'))
          nextURL = doc.querySelector('.paginate_next').getAttribute('href');
        }
        // get initial nextURL
