@@ -1,7 +1,7 @@
 {% assign current_variant =  product.selected_or_first_available_variant %}
 {% if current_variant.price < current_variant.compare_at_price %}
     {% capture discount %}
-        {{ product.compare_at_price | minus:product.price | times:100 | divided_by:product.compare_at_price }}%
+        {{ current_variant.compare_at_price | minus:current_variant.price | times:100 | divided_by:current_variant.compare_at_price }}%
     {% endcapture %}
 {% endif %}
 
@@ -121,8 +121,10 @@
 
             <div id="product-photos" class="tw-relative product-photos product-{{ product.id }} {{ image_width }}" data-product-single-media-group data-gallery-config='{{ product_gallery_config }}' {{ gallery_data }}>
                 {% if discount %}
-                    <span class="tw-bg-[#fbf3ee] tw-bg-opacity-70 tw-px-[1em] md:tw-text-xl lg:tw-text-2xl tw-font-bold !tw-leading-loose tw-text-black tw-z-10 empty:tw-hidden tw-absolute tw-right-0 tw-top-0">{{ discount }}
+                    <span id="percentage_off" class="tw-bg-[#fbf3ee] tw-bg-opacity-70 tw-px-[1em] md:tw-text-xl lg:tw-text-2xl tw-font-bold !tw-leading-loose tw-text-black tw-z-10 empty:tw-hidden tw-absolute tw-right-0 tw-top-0">{{ discount }}
                         OFF</span>
+                        {% else %}
+                        <span id="percentage_off" class="tw-bg-[#fbf3ee] tw-bg-opacity-70 tw-px-[1em] md:tw-text-xl lg:tw-text-2xl tw-font-bold !tw-leading-loose tw-text-black tw-z-10 empty:tw-hidden tw-absolute tw-right-0 tw-top-0"></span>
                 {% endif %}
                 <div class=" tw-bg-[#eef5f1] tw-bg-opacity-70 tw-px-[1em] tw-font-bold !tw-leading-loose tw-text-black tw-z-10 empty:tw-hidden tw-absolute tw-right-0 tw-bottom-16 lg:tw-bottom-24">
                     {% if current_variant.metafields.global.leading-time %}
