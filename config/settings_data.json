@@ -678,12 +678,8 @@
         "1559084715445": {
           "type": "featured-collection",
           "settings": {
-            "full_width": true,
             "heading": "NEW ARRIVALS",
-            "heading_color": "#000000",
-            "background_color": "#ffffff",
             "collection": "new-arrivals",
-            "grid": 5,
             "limit": 10
           }
         },
@@ -1758,12 +1754,8 @@
         "1559084715445": {
           "type": "featured-collection",
           "settings": {
-            "full_width": true,
             "heading": "Featured collection",
-            "heading_color": "#000000",
-            "background_color": "#ffffff",
             "collection": "",
-            "grid": 5,
             "limit": 10
           }
         },
@@ -2727,12 +2719,8 @@
         "1559084715445": {
           "type": "featured-collection",
           "settings": {
-            "full_width": true,
             "heading": "Featured collection",
-            "heading_color": "#000000",
-            "background_color": "#ffffff",
             "collection": "",
-            "grid": 5,
             "limit": 10
           }
         },
@@ -3832,12 +3820,8 @@
         "1559084715445": {
           "type": "featured-collection",
           "settings": {
-            "full_width": true,
             "heading": "FEATURED COLLECTION",
-            "heading_color": "#4e5a63",
-            "background_color": "#ffffff",
             "collection": "",
-            "grid": 5,
             "limit": 10
           }
         },
@@ -4647,7 +4631,7 @@
         "settings": {
           "full_width": false,
           "grid": 4,
-          "products_per_page": 24,
+          "products_per_page": 48,
           "infinite_scroll": false,
           "description_position": "top_description",
           "filter_position": "top_filters",

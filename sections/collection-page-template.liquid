@@ -1,4 +1,4 @@
-<div class="collection-page-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="collection-section">
+<div class="collection-page-{{ section.id }} " data-section-id="{{ section.id }}" data-section-type="collection-section">
     {% assign number = section.settings.products_per_page %}
     {% paginate collection.products by number %}
         {% assign sidebar = false %}
@@ -121,34 +121,11 @@
                                 {%- assign grid_item_width = 'desktop-3 tablet-2 mobile-half ' -%}
                             {% when 5 %}
                                 {%- assign grid_item_width = 'desktop-fifth tablet-2 mobile-half span-one-fifth' -%}
-                                <style>
-                @media screen and ( min-width: 981px ) {
-                  @supports (display: grid) {
-                    .collection-page-{{ section.id }} .product-loop.grid_wrapper {
-                        grid-template-columns: repeat(5, 1fr);
-                    }
-                  }
-                }
-                @media screen and ( min-width: 741px ) and ( max-width: 980px ) {
-                  @supports (display: grid) {
-                    .collection-page-{{ section.id }} .product-loop.grid_wrapper {
-                        grid-template-columns: repeat(3, 1fr);
-                    }
-                  }
-                }
-                @media screen and ( max-width: 740px ) {
-                @supports (display: grid) {
-                  .collection-page-{{ section.id }} .product-loop.grid_wrapper {
-                      grid-template-columns: repeat(2, 1fr);
-                  }
-                }
-              }
-              </style>
                             {% when 6 %}
                                 {%- assign grid_item_width = 'desktop-2 tablet-2 mobile-half span-2' -%}
                         {% endcase %}
 
-                        <div data-sectionid="{% if section.id %}{{section.id}}{% endif %}" data-settings='{% if section.settings %}{{section.settings | json}}{% endif %}' id="gf-products" class="tw-grid tw-grid-cols-2 md:tw-grid-cols-3 tw-gap-3 md:tw-gap-6{% if section.settings.infinite_scroll %} is_infinite{% endif %}">
+                        <div data-sectionid="{% if section.id %}{{section.id}}{% endif %}" data-settings='{% if section.settings %}{{section.settings | json}}{% endif %}' id="gf-products" class="tw-grid tw-grid-cols-2 md:tw-grid-cols-3 tw-gap-3 md:tw-gap-6{% if section.settings.infinite_scroll %} is_infinite{% endif %} tw-invisible tw-opacity-0 tw-transition-opacity">
                             {% for product in collection.products %}
                                 <div class="tw-col-span-1" id="prod-{{ product.id }}" data-alpha="{{ product.title }}" data-price="{{ product.price }}" data-aos="{{ settings.scroll_animation }}" data-product-id="{{ product.id }}">
                                     {% render 'product-listing', collection: collection, product: product %}

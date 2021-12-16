@@ -1071,7 +1071,7 @@ body > #gf-tree .gf-filter-contents::-webkit-scrollbar-thumb{
 .spf-status-loaded #gf-products,
 .spf-status-failed #gf-products {
   opacity: 1;
-  visibility: visible
+  visibility: visible;
 }
 
 .gf-option-block .gf-block-title h3:after {
