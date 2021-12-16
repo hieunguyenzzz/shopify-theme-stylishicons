@@ -1,11 +1,10 @@
 module.exports = {
   prefix: 'tw-',
-  mode: 'jit',
   future: {
     purgeLayersByDefault: true,
     applyComplexClasses: true,
   },
-  purge: [
+  content: [
     './**/*.liquid',
   ],
   darkMode: false, // or 'media' or 'class'
@@ -14,7 +13,6 @@ module.exports = {
     extend: {
     
     },
-    
   },
   plugins: [
     require('@tailwindcss/typography'),
