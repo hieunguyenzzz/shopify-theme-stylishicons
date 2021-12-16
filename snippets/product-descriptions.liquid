@@ -86,11 +86,13 @@
         <h5>Inspired By</h5>
         <h1>
             {{ inspired-by }}</h1>
-        {% for collection in product_collection %}
+            {% assign inspired = collections['designer-icons'] %}
+            {% for collection in product_collection %}
             {% if collection.title == inspired-by %}
-                {{ collection.description | strip_html | strip_html }}
+                {% assign inspired = collection %}
             {% endif %}
         {% endfor %}
+        {{ inspired.description | strip_html  }}
     </div>
     {% for collection in product_collection %}
         {% if collection.title == inspired-by %}
