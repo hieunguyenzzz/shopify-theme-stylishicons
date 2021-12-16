@@ -4647,8 +4647,8 @@
         "settings": {
           "full_width": false,
           "grid": 4,
-          "products_per_page": 48,
-          "infinite_scroll": true,
+          "products_per_page": 24,
+          "infinite_scroll": false,
           "description_position": "top_description",
           "filter_position": "top_filters",
           "is_sticky": true,
