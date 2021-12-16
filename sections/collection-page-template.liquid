@@ -125,7 +125,7 @@
                                 {%- assign grid_item_width = 'desktop-2 tablet-2 mobile-half span-2' -%}
                         {% endcase %}
 
-                        <div data-sectionid="{% if section.id %}{{section.id}}{% endif %}" data-settings='{% if section.settings %}{{section.settings | json}}{% endif %}' id="gf-products" class="tw-grid tw-grid-cols-2 md:tw-grid-cols-3 tw-gap-3 md:tw-gap-6{% if section.settings.infinite_scroll %} is_infinite{% endif %} tw-invisible tw-opacity-0 tw-transition-opacity">
+                        <div data-sectionid="{% if section.id %}{{section.id}}{% endif %}" data-settings='{% if section.settings %}{{section.settings | json}}{% endif %}' id="gf-products" class="tw-grid tw-grid-cols-2 md:tw-grid-cols-3 tw-gap-3 md:tw-gap-6{% if section.settings.infinite_scroll %} is_infinite{% endif %}">
                             {% for product in collection.products %}
                                 <div class="tw-col-span-1" id="prod-{{ product.id }}" data-alpha="{{ product.title }}" data-price="{{ product.price }}" data-aos="{{ settings.scroll_animation }}" data-product-id="{{ product.id }}">
                                     {% render 'product-listing', collection: collection, product: product %}
