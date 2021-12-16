@@ -4510,7 +4510,7 @@
           "1603134282065": {
             "type": "navigation",
             "settings": {
-              "main_nav": "mobile-main-menu",
+              "main_nav": "main-menu",
               "customer_account_links": true
             }
           },
