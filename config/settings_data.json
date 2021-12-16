@@ -4651,7 +4651,7 @@
           "infinite_scroll": false,
           "description_position": "top_description",
           "filter_position": "top_filters",
-          "is_sticky": true,
+          "is_sticky": false,
           "filter_bg_color": "#ffffff",
           "filter_border_color": "#ededed",
           "filter_text_color": "#000000"
