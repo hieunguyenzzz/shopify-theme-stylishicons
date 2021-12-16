@@ -1,43 +1,41 @@
-<div id="newsletter">
-  <section id="newsletters" class="homepage-newsletter gridlock"
-data-aos="{{ settings.scroll_animation }}">
-  <div class="row">
-    <div class="section-header desktop-6">
-      {% if section.settings.heading != blank %}
-        <div class="section-title">
-          <h2>{{ section.settings.heading | escape }}</h2>
-        </div>
-      {% endif %}
-      {%- if section.settings.newsletter_subheading != blank -%}
-        {{ section.settings.newsletter_subheading }}
-      {%- endif -%}
-    </div>
-    <div class="section-newsletter desktop-6">
-      {% form 'customer' %}
-        {{ form.errors | default_errors }}
-        {% if form.posted_successfully? %}
-          <p class="form--success">{{ 'general.newsletter_form.confirmation' | t }}</p>
-        {% else %}
-          <div class="input-group password__input-group">
-            <input type="hidden" name="contact[tags]" value="newsletter">
-            <input type="email"
-              name="contact[email]"
-              id="Email"
-              class="input-group__field newsletter__input"
-              value="{% if customer %}{{ customer.email }}{% endif %}"
-              placeholder="{{ 'general.newsletter_form.email_placeholder' | t }}"
-              autocorrect="off"
-              autocapitalize="off">
-              <button type="submit" class="btn newsletter__submit" name="commit" id="Subscribe">
-                <span class="newsletter__submit-text--large">{{ 'general.newsletter_form.submit' | t }}</span>
-              </button>
+<div id="newsletter" >
+  <section id="newsletters" class="homepage-newsletter gridlock" >
+    <div class="{% render '[class]-container'  class: '' %} tw-flex tw-flex-col tw-items-center lg:tw-flex-row tw-gap-6 tw-justify-between">
+      <div class="section-header tw-max-w-sm">
+        {% if section.settings.heading != blank %}
+          <div class="section-title">
+            <h2>{{ section.settings.heading | escape }}</h2>
           </div>
         {% endif %}
-      {% endform %}
+        {%- if section.settings.newsletter_subheading != blank -%}
+          {{ section.settings.newsletter_subheading }}
+        {%- endif -%}
+      </div>
+      <div class="section-newsletter tw-flex-1 tw-max-w-sm">
+        {% form 'customer' %}
+          {{ form.errors | default_errors }}
+          {% if form.posted_successfully? %}
+            <p class="form--success">{{ 'general.newsletter_form.confirmation' | t }}</p>
+          {% else %}
+            <div class="input-group password__input-group">
+              <input type="hidden" name="contact[tags]" value="newsletter">
+              <input type="email"
+                name="contact[email]"
+                id="Email"
+                class="input-group__field newsletter__input"
+                value="{% if customer %}{{ customer.email }}{% endif %}"
+                placeholder="{{ 'general.newsletter_form.email_placeholder' | t }}"
+                autocorrect="off"
+                autocapitalize="off">
+                <button type="submit" class="btn newsletter__submit" name="commit" id="Subscribe">
+                  <span class="newsletter__submit-text--large">{{ 'general.newsletter_form.submit' | t }}</span>
+                </button>
+            </div>
+          {% endif %}
+        {% endform %}
+      </div>
     </div>
-  
-  </div>
-</section>
+  </section>
 </div>
 <style>section.homepage-newsletter .section-title {
     padding-bottom: 5px !important;
@@ -65,7 +63,6 @@ data-aos="{{ settings.scroll_animation }}">
 
   section.homepage-newsletter p {
     color: {{ section.settings.text_color }} !important;
-    max-width: 60%;
     margin: 0 auto !important;
     line-height: 30px;
     padding-bottom: 20px !important;
@@ -119,7 +116,6 @@ data-aos="{{ settings.scroll_animation }}">
 {% schema %}
   {
     "name": "Newsletter",
-    "class": "index-section",
     "settings": [
       {
         "type": "text",

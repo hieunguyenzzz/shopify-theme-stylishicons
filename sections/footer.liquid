@@ -10,8 +10,8 @@
 {%- endif -%}
 
 <footer class="footer-section" data-section-id="{{ section.id }}" data-section-type="footer-section">
-    <div class="" id="footer-wrapper">
-        <div class="row" id="footer">
+    <div class="tw-py-16" id="footer-wrapper">
+        <div class="{% render '[class]-container' class: '' %} tw-flex tw-flex-col lg:tw-flex-row tw-gap-6" id="footer">
             {% case section.blocks.size %}
                 {% when 0 %}
                 {% when 1 %}
@@ -27,7 +27,7 @@
             {% for block in section.blocks %}
                 {% case block.type %}
                     {% when 'menu' %}
-                        <div class="{{ column_width }} footer-menu">
+                        <div class="{{ column_width }} tw-w-full lg:tw-w-1/4 lg:tw-max-w-[200px] footer-menu">
                             <label class="togglecontent" for="menu-item-{{ forloop.index }}">
                                 <h4>{{ block.settings.title }}</h4>
                             </label><input id="menu-item-{{ forloop.index }}" type="checkbox">
@@ -40,7 +40,7 @@
                             </div>
                         </div>
                     {% when 'newsletter' %}
-                        <div class="{{ column_width }} footer-menu">
+                        <div class="{{ column_width }} tw-w-full lg:tw-w-1/4 lg:tw-max-w-[200px] footer-menu">
                             <label class="togglecontent" for="menu-item-{{ forloop.index }}">
                                 <h4>{{ block.settings.title }}</h4>
                             </label><input id="menu-item-{{ forloop.index }}" type="checkbox">
@@ -60,14 +60,14 @@
                             </div>
                         </div>
                     {% when 'text' %}
-                        <div class="flex tw-w-full lg:tw-w-auto tw-flex-col lg:block tw-pt-6 md:tw-pt-0 tw-text-center lg:tw-text-right">
+                        <div class="flex tw-w-full tw-flex-1 lg:tw-w-auto tw-flex-col lg:block tw-pt-6 md:tw-pt-0 tw-text-center lg:tw-text-right">
                             <div class="tw-ml-auto tw-w-full">
                                 <h2 class="tw-block tw-font-bold tw-text-3xl">{{ block.settings.title }}</h2>
                                 {% if section.settings.footer_text != blank %}
                                     <div>{{section.settings.footer_text}}</div>
                                 {% endif %}
                             </div>
-                            <div class="flex tw-w-full tw-text-right lg:tw-flex-col tw-items-center md:tw-items-center lg:tw-items-end">{{ block.settings.footer_text }}
+                            <div class="tw-flex tw-justify-between tw-w-full tw-text-right lg:tw-flex-col tw-items-center md:tw-items-center lg:tw-items-end">{{ block.settings.footer_text }}
                                 {% if block.settings.image != blank %}
                                     <a target="_blank" class="tw-filter hover:tw-grayscale" href="{{block.settings.imageUrl}}"><img class="tw-w-40 tw-ml-auto" src="{{ block.settings.image | img_url: '300x' }}"></a>
                                 {% endif %}
@@ -84,31 +84,29 @@
                         </div>
                 {% endcase %}
                 <style>
-        input#menu-item-{{ forloop.index }} {
-          display: none;
-          position: relative;
-        }
-        @media screen and (max-width: 740px) {
-          .footer-block-content {
-            display: none;
-          }
-          #menu-item-{{ forloop.index }}:checked ~ .footer-block-content, 
-          #footer .footer-index-4 .footer-block-content{
-            display: block !important;
-            visibility: visible !important;
-            opacity: 1 !important;
-          }
-          
-       }
-     </style>
+                    input#menu-item-{{ forloop.index }} {
+                        display: none;
+                        position: relative;
+                    }
+                    @media screen and (max-width: 740px) {
+                    .footer-block-content {
+                        display: none;
+                    }
+                    #menu-item-{{ forloop.index }}:checked ~ .footer-block-content, 
+                    #footer .footer-index-4 .footer-block-content{
+                        display: block !important;
+                        visibility: visible !important;
+                        opacity: 1 !important;
+                    }
+                </style>
             {% endfor %}
         </div>
         <div class="clear"></div>
 
     </div>
     <hr>
-    <div class="sub-footer row" id="bottom-footer">
-        <div class="footer-left">
+    <div class="{% render '[class]-container'  class: '' %} tw-flex tw-items-center tw-justify-between tw-flex-col lg:tw-flex-row" id="bottom-footer">
+        <div class="footer-left tw-flex tw-flex-col lg:tw-flex-row lg:tw-gap-6">
             <div class="small-links">
                 <a class="ph2" href="/pages/privacy-policy">Privacy Policy</a>
                 |
@@ -261,7 +259,6 @@
       width: 100%;
       text-align: left;
       order:2;
-      margin-top: 31px;
     }
     div#bottom-footer .footer-right {
       width: 100%;
@@ -405,63 +402,63 @@
                     "type": "richtext",
                     "label": "Text",
                     "default": "<p>Adding text to your footer helps introduce your business to new customers.</p>"
-                            }, {
-                                "type": "image_picker",
-                                "id": "image",
-                                "label": "image 1"
-                            }, {
-                                "type": "url",
-                                "id": "imageUrl",
-                                "label": "Image 1 Url",
-                                "default": "/"
-                            }, {
-                                "type": "image_picker",
-                                "id": "image1",
-                                "label": "image 2"
-                            }, {
-                                "type": "url",
-                                "id": "imageUrl1",
-                                "label": "Image 2 Url",
-                                "default": "/"
-                            }, {
-                                "type": "image_picker",
-                                "id": "image2",
-                                "label": "image 3"
-                            }, {
-                                "type": "url",
-                                "id": "imageUrl2",
-                                "label": "Image 3 Url",
-                                "default": "/"
-                            }, {
-                                "type": "image_picker",
-                                "id": "image3",
-                                "label": "image 4"
-                            }, {
-                                "type": "url",
-                                "id": "imageUrl3",
-                                "label": "Image 4 Url",
-                                "default": "/"
-                            }
-                        ]
-                    }, {
-                        "type": "newsletter",
-                        "name": "Newsletter signup",
-                        "limit": 1,
-                        "settings": [
-                            {
-                                "type": "text",
-                                "id": "title",
-                                "label": "Mailing list section title",
-                                "default": "connect"
-                            }, {
-                                "type": "richtext",
-                                "id": "mailing_subheading",
-                                "label": "Mailing list subheading",
-                                "default": "<p>Join our mailing list for updates</p>"
-                            }
-                        ]
-                    }
-                ]
-            }
+                                }, {
+                                    "type": "image_picker",
+                                    "id": "image",
+                                    "label": "image 1"
+                                }, {
+                                    "type": "url",
+                                    "id": "imageUrl",
+                                    "label": "Image 1 Url",
+                                    "default": "/"
+                                }, {
+                                    "type": "image_picker",
+                                    "id": "image1",
+                                    "label": "image 2"
+                                }, {
+                                    "type": "url",
+                                    "id": "imageUrl1",
+                                    "label": "Image 2 Url",
+                                    "default": "/"
+                                }, {
+                                    "type": "image_picker",
+                                    "id": "image2",
+                                    "label": "image 3"
+                                }, {
+                                    "type": "url",
+                                    "id": "imageUrl2",
+                                    "label": "Image 3 Url",
+                                    "default": "/"
+                                }, {
+                                    "type": "image_picker",
+                                    "id": "image3",
+                                    "label": "image 4"
+                                }, {
+                                    "type": "url",
+                                    "id": "imageUrl3",
+                                    "label": "Image 4 Url",
+                                    "default": "/"
+                                }
+                            ]
+                        }, {
+                            "type": "newsletter",
+                            "name": "Newsletter signup",
+                            "limit": 1,
+                            "settings": [
+                                {
+                                    "type": "text",
+                                    "id": "title",
+                                    "label": "Mailing list section title",
+                                    "default": "connect"
+                                }, {
+                                    "type": "richtext",
+                                    "id": "mailing_subheading",
+                                    "label": "Mailing list subheading",
+                                    "default": "<p>Join our mailing list for updates</p>"
+                                }
+                            ]
+                        }
+                    ]
+                }
 
 {% endschema %}

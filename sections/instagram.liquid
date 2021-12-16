@@ -22,7 +22,7 @@
 {% endif %}
 
 <div style="{{cssvariable}}" id="{{section.id}}" class="tw-py-16 tw-bg-[color:var(--section-bg)] tw-items-center">
-    <div class="tw-max-w-[980px] xl:tw-max-w-7xl tw-px-8 tw-mx-auto flex tw-flex-col tw-gap-8 lg:tw-grid-cols-2">
+    <div class="{% render '[class]-container'  class: '' %} tw-flex tw-flex-col tw-gap-8 lg:tw-grid-cols-2">
         <div class="flex tw-flex-col tw-items-center lg:tw-items-start tw-text-center lg:tw-text-left tw-flex-1 tw-space-y-8">
             <h2 class="tw-text-2xl tw-font-bold tw-mb-0">
                 {{section.settings.heading}}

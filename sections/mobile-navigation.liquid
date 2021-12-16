@@ -24,6 +24,12 @@
                 <a href="{{ link.url }}">{% if shop.locale == "ia" %}{{ link.title | escape | truncatewords: 10000 }}{% else %}{{ link.title | escape | truncatewords: 6 }}{% endif %}</a>
               </li>
               <li class="accordion__content">
+                {% assign megamenu__header = link.title | downcase %}
+                                {% if megamenu__header == 'designers' %}
+                                    <ul class="accordion__submenu-1">
+                                        {% render 'designer-listitems'  class: 'mobile-menu__item' %}
+                                    </ul>
+                                {% else %}
                 <ul class="accordion__submenu-1">
                   {% for sub_link in link.links %}
                   {% if sub_link.links != blank %}
@@ -44,6 +50,7 @@
                   {% endif %}
                   {% endfor %}
                 </ul>
+                {% endif %}
               </li>
             {% else %}
               <li class="mobile-menu__item"><a href="{{ link.url }}">{% if shop.locale == "ia" %}{{ link.title | escape | truncatewords: 10000 }}{% else %}{{ link.title | escape | truncatewords: 6 }}{% endif %}</a></li>
@@ -62,7 +69,7 @@
           {% endif %}
         </ul>
       {% when 'social_icons' %}
-        <div class="mobile-menu__block mobile-menu__social text-center" {{ block.shopify_attributes }}>
+        <div class="text-center mobile-menu__block mobile-menu__social" {{ block.shopify_attributes }}>
           {% render 'social-icons' %}
           <style>
             .mobile-menu__social i {
@@ -83,7 +90,7 @@
           {% if block.settings.featured_image_link %}</a>{% endif %}
         </div>
       {% when 'featured_text' %}
-        <div class="mobile-menu__block mobile-menu__featured-text text-center" {{ block.shopify_attributes }}>
+        <div class="text-center mobile-menu__block mobile-menu__featured-text" {{ block.shopify_attributes }}>
           {{ block.settings.featured_text }}
         </div>
       {% when 'cart_status' %}
@@ -114,6 +121,9 @@
     .mobile-menu__cart-icon,
     .mobile-menu__accordion > .mobile-menu__item:first-child {
       border-color: {{ section.settings.border_color }};
+    }
+    .mobile-menu__accordion > .mobile-menu__item:first-child {
+      border-top: none;
     }
     .mobile-menu .mobile-menu__item a,
     .mobile-menu .accordion__toggle a,
@@ -157,135 +167,121 @@
 </nav>
 
 {% schema %}
+
 {
     "name": "Mobile navigation",
     "settings": [
-      {
-        "type": "color",
-        "id": "background_color",
-        "label": "Background color",
-        "default": "#ffffff"
-      },
-      {
-        "type": "color",
-        "id": "link_color",
-        "label": "Link color",
-        "default": "#000000"
-      },
-      {
-        "type": "color",
-        "id": "border_color",
-        "label": "Border color",
-        "default": "#000000"
-      }
+        {
+            "type": "color",
+            "id": "background_color",
+            "label": "Background color",
+            "default": "#ffffff"
+        }, {
+            "type": "color",
+            "id": "link_color",
+            "label": "Link color",
+            "default": "#000000"
+        }, {
+            "type": "color",
+            "id": "border_color",
+            "label": "Border color",
+            "default": "#000000"
+        }
     ],
     "blocks": [
-      {
-        "type": "search_box",
-        "name": "Search Box",
-        "settings": [],
-        "limit": 1
-      },
-      {
-        "type": "navigation",
-        "name": "Navigation",
-        "settings": [
-          {
-            "type": "link_list",
-            "id": "main_nav",
-            "label": "Choose main menu",
-            "default":"main-menu"
-          },
-          {
-            "type": "checkbox",
-            "id": "customer_account_links",
-            "label": "Show customer account links",
-            "info": "Customer accounts must be enabled to see."
-          }
-        ],
-        "limit": 1
-      },
-      {
-        "type": "featured_image",
-        "name": "Featured Image",
-        "settings": [
-          {
-            "type": "image_picker",
-            "id": "featured_image",
-            "label": "Choose featured image",
-            "info": "400px x 300px recommended"
-          },
-          {
-            "type": "url",
-            "id": "featured_image_link",
-            "label": "Featured image link"
-          },
-          {
-            "type": "checkbox",
-            "id": "full_featured_image",
-            "label": "Enable full-width image",
-            "default": false
-          }
-        ],
-        "limit": 1
-      },
-      {
-        "type": "social_icons",
-        "name": "Social Icons",
-        "settings": [
-          {
-            "type": "color",
-            "id": "icon_color",
-            "label": "Icon color"
-          },
-          {
-            "type": "color",
-            "id": "icon_hover_color",
-            "label": "Icon hover color"
-          }
-        ],
-        "limit": 1
-      },
-      {
-        "type": "featured_text",
-        "name": "Featured Text",
-        "settings": [
-          {
-            "type": "richtext",
-            "id": "featured_text",
-            "label": "Featured Text",
-            "default": "<p><b>Featured Text</b></p><p><em>A great place to share about a sale!</em></p>"
-          }
-        ],
-        "limit": 1
-      },
-      {
-        "type": "cart_status",
-        "name": "Cart Link",
-        "limit": 1
-      }
+        {
+            "type": "search_box",
+            "name": "Search Box",
+            "settings": [],
+            "limit": 1
+        }, {
+            "type": "navigation",
+            "name": "Navigation",
+            "settings": [
+                {
+                    "type": "link_list",
+                    "id": "main_nav",
+                    "label": "Choose main menu",
+                    "default": "main-menu"
+                }, {
+                    "type": "checkbox",
+                    "id": "customer_account_links",
+                    "label": "Show customer account links",
+                    "info": "Customer accounts must be enabled to see."
+                }
+            ],
+            "limit": 1
+        }, {
+            "type": "featured_image",
+            "name": "Featured Image",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "featured_image",
+                    "label": "Choose featured image",
+                    "info": "400px x 300px recommended"
+                }, {
+                    "type": "url",
+                    "id": "featured_image_link",
+                    "label": "Featured image link"
+                }, {
+                    "type": "checkbox",
+                    "id": "full_featured_image",
+                    "label": "Enable full-width image",
+                    "default": false
+                }
+            ],
+            "limit": 1
+        }, {
+            "type": "social_icons",
+            "name": "Social Icons",
+            "settings": [
+                {
+                    "type": "color",
+                    "id": "icon_color",
+                    "label": "Icon color"
+                }, {
+                    "type": "color",
+                    "id": "icon_hover_color",
+                    "label": "Icon hover color"
+                }
+            ],
+            "limit": 1
+        }, {
+            "type": "featured_text",
+            "name": "Featured Text",
+            "settings": [
+                {
+                    "type": "richtext",
+                    "id": "featured_text",
+                    "label": "Featured Text",
+                    "default": "<p><b>Featured Text</b></p><p><em>A great place to share about a sale!</em></p>"
+                }
+            ],
+            "limit": 1
+        }, {
+            "type": "cart_status",
+            "name": "Cart Link",
+            "limit": 1
+        }
     ],
     "default": {
-      "blocks": [
-        {
-          "type": "featured_image"
-        },
-        {
-          "type": "cart_status"
-        },
-        {
-          "type": "navigation"
-        },
-        {
-          "type": "featured_text"
-        },
-        {
-          "type": "search_box"
-        },
-        {
-          "type": "social_icons"
-        }
-      ]
+        "blocks": [
+            {
+                "type": "featured_image"
+            }, {
+                "type": "cart_status"
+            }, {
+                "type": "navigation"
+            }, {
+                "type": "featured_text"
+            }, {
+                "type": "search_box"
+            }, {
+                "type": "social_icons"
+            }
+        ]
     }
-  }
+}
+
 {% endschema %}
