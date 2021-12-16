@@ -286,6 +286,14 @@
   width: 200px
 }
 
+.tw-w-\[280px\] {
+  width: 280px
+}
+
+.tw-w-\[340px\] {
+  width: 340px
+}
+
 .tw-max-w-full {
   max-width: 100%
 }
@@ -332,6 +340,10 @@
 
 .tw-max-w-\[200px\] {
   max-width: 200px
+}
+
+.tw-max-w-\[1440px\] {
+  max-width: 1440px
 }
 
 .tw-flex-1 {
