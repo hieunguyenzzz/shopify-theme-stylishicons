@@ -3,10 +3,10 @@
         {% assign id = section.id %}
 {% endif %}
 <div class="tw-relative tw-w-full">
-    <div class="tw-flex keen-slider  md:tw-w-full keen-slider-{{id}} tw-items-start" id="keen-slider-{{id}}">
+    <div class="tw-flex keen-slider  md:tw-w-full keen-slider-{{id}} tw-items-stretch" id="keen-slider-{{id}}">
         {{items}}
     </div>
-    <div class="tw-pointer-events-none tw-flex tw-items-center tw-justify-between tw-absolute tw-h-full tw-top-0 tw--left-8 tw--right-8">
+    <div class="tw-pointer-events-none tw-flex tw-items-center tw-justify-between tw-absolute tw-h-full tw-top-0 tw-left-0 tw-right-0 lg:tw--left-8 lg:tw--right-8">
         <button class="tw-m-0 hover:tw-shadow-lg tw-pointer-events-auto !tw-text-xl tw-text-black tw-bg-transparent tw-w-10 tw-h-10 tw-rounded-full tw-flex tw-justify-center tw-items-center hover:tw-bg-gray-100" id="keen-slider-{{id}}-arrow-left">
             <svg height="1em" viewbox="0 0 100 100" width="1em">
                 <path class="arrow" d="M 10,50 L 50,90 L 55,90 L 15,50  L 55,10 L 50,10 Z"></path>

@@ -17,7 +17,7 @@
 {% endif %}
 
 <div id="{{section.id}}" class="tw-py-16 tw-bg-[color:var(--section-bg)] tw-items-center">
-    <div class="tw-max-w-[980px] xl:tw-max-w-7xl tw-px-8 tw-mx-auto flex tw-flex-col tw-gap-6 lg:tw-grid-cols-2">
+    <div class="{% render '[class]-container'  class: '' %} tw-flex tw-flex-col tw-gap-6 lg:tw-grid-cols-2">
         <div class="tw-w-full tw-flex tw-flex-col tw-items-center lg:tw-items-start tw-text-center lg:tw-text-left tw-flex-1 tw-space-y-4">
             {% if section.settings.heading != blank %}
                 <div class="tw-text-left tw-flex tw-justify-between tw-items-baseline tw-w-full">
