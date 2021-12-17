@@ -406,6 +406,10 @@
   align-items: center
 }
 
+.\!tw-items-center {
+  align-items: center !important
+}
+
 .tw-items-baseline {
   align-items: baseline
 }
@@ -1153,6 +1157,10 @@
 
   .lg\:tw-items-center {
     align-items: center
+  }
+
+  .lg\:tw-justify-between {
+    justify-content: space-between
   }
 
   .lg\:tw-gap-12 {

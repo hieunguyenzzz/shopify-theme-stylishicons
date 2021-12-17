@@ -11,7 +11,7 @@
 
 <footer class="footer-section" data-section-id="{{ section.id }}" data-section-type="footer-section">
     <div class="tw-py-16" id="footer-wrapper">
-        <div class="{% render '[class]-container' class: '' %} tw-flex tw-flex-col lg:tw-flex-row tw-gap-6" id="footer">
+        <div class="{% render '[class]-container' class: '' %} tw-flex tw-flex-col lg:tw-flex-row lg:tw-gap-6" id="footer">
             {% case section.blocks.size %}
                 {% when 0 %}
                 {% when 1 %}
@@ -67,7 +67,7 @@
                                     <div>{{section.settings.footer_text}}</div>
                                 {% endif %}
                             </div>
-                            <div class="tw-flex tw-justify-between tw-w-full tw-text-right lg:tw-flex-col tw-items-center md:tw-items-center lg:tw-items-end">{{ block.settings.footer_text }}
+                            <div class="tw-flex tw-justify-between lg:tw-justify-between tw-w-full tw-text-right lg:tw-flex-col tw-items-center md:tw-items-center lg:tw-items-end">{{ block.settings.footer_text }}
                                 {% if block.settings.image != blank %}
                                     <a target="_blank" class="tw-filter hover:tw-grayscale" href="{{block.settings.imageUrl}}"><img class="tw-w-40 tw-ml-auto" src="{{ block.settings.image | img_url: '300x' }}"></a>
                                 {% endif %}
@@ -105,19 +105,19 @@
 
     </div>
     <hr>
-    <div class="{% render '[class]-container'  class: '' %} tw-flex tw-items-center tw-justify-between tw-flex-col lg:tw-flex-row" id="bottom-footer">
-        <div class="footer-left tw-flex tw-flex-col lg:tw-flex-row lg:tw-gap-6">
-            <div class="small-links">
+    <div class="{% render '[class]-container'  class: '' %} tw-flex !tw-items-center tw-justify-between tw-flex-col lg:tw-flex-row " id="bottom-footer">
+        <div class="footer-left tw-flex tw-flex-col lg:tw-flex-row lg:tw-gap-6 tw-text-center">
+            <div class="small-links tw-text-center">
                 <a class="ph2" href="/pages/privacy-policy">Privacy Policy</a>
                 |
                 <a class="ph2" href="/pages/terms-conditions">Terms &amp; Conditions</a>
             </div>
             {% if section.settings.show_copyright %}
-                <p>
+                <div class="tw-text-center">
                     <a href="{{ routes.root_url }}">&copy;
                         {{ 'now' | date: "%Y" }}
                         Designer Icons</a>
-                </p>
+                </div>
             {% endif %}
         </div>
         <div class="footer-right" id="payment">
@@ -215,10 +215,10 @@
     text-align: left;
   }
 
-  div#bottom-footer .footer-right {
+  /* div#bottom-footer .footer-right {
     width: 50%;
     text-align: right;
-  }
+  } */
 
   div#bottom-footer #copy p {
     text-align: left;
@@ -261,9 +261,9 @@
       order:2;
     }
     div#bottom-footer .footer-right {
-      width: 100%;
+      /* width: 100%;
       text-align: left;
-      order: 1;
+      order: 1; */
     }
     div#bottom-footer .selectors-form {
       justify-content: flex-start;
