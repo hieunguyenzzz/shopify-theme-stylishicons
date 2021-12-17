@@ -11,18 +11,18 @@
           {{ section.settings.newsletter_subheading }}
         {%- endif -%}
       </div>
-      <div class="section-newsletter tw-flex-1 tw-max-w-sm">
+      <div class="section-newsletter tw-flex-1 tw-max-w-sm tw-w-full">
         {% form 'customer' %}
           {{ form.errors | default_errors }}
           {% if form.posted_successfully? %}
             <p class="form--success">{{ 'general.newsletter_form.confirmation' | t }}</p>
           {% else %}
-            <div class="input-group password__input-group">
+            <div class="input-group password__input-group tw-w-full">
               <input type="hidden" name="contact[tags]" value="newsletter">
               <input type="email"
                 name="contact[email]"
                 id="Email"
-                class="input-group__field newsletter__input"
+                class="input-group__field newsletter__input tw-w-full" 
                 value="{% if customer %}{{ customer.email }}{% endif %}"
                 placeholder="{{ 'general.newsletter_form.email_placeholder' | t }}"
                 autocorrect="off"

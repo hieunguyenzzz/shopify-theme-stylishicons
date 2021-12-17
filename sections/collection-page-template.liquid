@@ -114,18 +114,18 @@
 
                         {% case section.settings.grid %}
                             {% when 2 %}
-                                {%- assign grid_item_width = 'desktop-6 tablet-3 mobile-half ' -%}
+                                {%- assign grid_item_width = 'tw-grid-cols-2' -%}
                             {% when 3 %}
-                                {%- assign grid_item_width = 'desktop-4 tablet-2 mobile-half ' -%}
+                                {%- assign grid_item_width = 'tw-grid-cols-2 md:tw-grid-cols-3 ' -%}
                             {% when 4 %}
-                                {%- assign grid_item_width = 'desktop-3 tablet-2 mobile-half ' -%}
+                                {%- assign grid_item_width = 'tw-grid-cols-2 md:tw-grid-cols-3 lg:tw-grid-cols-4' -%}
                             {% when 5 %}
-                                {%- assign grid_item_width = 'desktop-fifth tablet-2 mobile-half span-one-fifth' -%}
+                                {%- assign grid_item_width = 'tw-grid-cols-2 md:tw-grid-cols-3 lg:tw-grid-cols-5' -%}
                             {% when 6 %}
-                                {%- assign grid_item_width = 'desktop-2 tablet-2 mobile-half span-2' -%}
+                                {%- assign grid_item_width = 'tw-grid-cols-2 md:tw-grid-cols-3 lg:tw-grid-cols-4 xl:tw-grid-cols-6' -%}
                         {% endcase %}
 
-                        <div data-sectionid="{% if section.id %}{{section.id}}{% endif %}" data-settings='{% if section.settings %}{{section.settings | json}}{% endif %}' id="gf-products" class="tw-grid tw-grid-cols-2 md:tw-grid-cols-3 tw-gap-3 md:tw-gap-6{% if section.settings.infinite_scroll %} is_infinite{% endif %}">
+                        <div data-sectionid="{% if section.id %}{{section.id}}{% endif %}" data-settings='{% if section.settings %}{{section.settings | json}}{% endif %}' id="gf-products" class="{{grid_item_width}} tw-gap-3 md:tw-gap-6{% if section.settings.infinite_scroll %} is_infinite{% endif %}">
                             
                         </div>
                         <div class="clear"></div>

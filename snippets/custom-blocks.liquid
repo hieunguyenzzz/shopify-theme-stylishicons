@@ -6,7 +6,7 @@ Custom blocks from custom pages and collections in 1 single snippet to reduce re
   <div id="content" class="custom-page-content">
 
       {% if settings.breadcrumb %}
-      <div class="row">{% render 'breadcrumb' %}</div>
+        {% render 'breadcrumb' %}
       {% endif %}
 
       <!-- start the custom content -->
@@ -632,7 +632,7 @@ Custom blocks from custom pages and collections in 1 single snippet to reduce re
                           </div>
                         {% endif %}
                       {% endform %}
-                      <div class="section-icons text-center">
+                      <div class="text-center section-icons">
                         {% render "social-icons" %}
                       </div>
                     </div>
