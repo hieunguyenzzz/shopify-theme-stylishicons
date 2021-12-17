@@ -16,5 +16,12 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/typography'),
+    require('tailwindcss-animatecss')({
+      classes: ['animate__animated', 'animate__fadeIn', 'animate__bounceIn'],
+      settings: {
+        animatedSpeed: 500
+      },
+      variants: ['responsive', 'hover', 'reduced-motion'],
+    }),
   ],
 }
