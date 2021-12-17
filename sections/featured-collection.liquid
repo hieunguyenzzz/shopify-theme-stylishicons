@@ -8,7 +8,7 @@
     {% capture items %}
         {% for product in collection.products limit: section.settings.limit %}
             <div class="keen-slider__slide" id="product-listing-{{forloop.index }}" data-product-id="{{ forloop.index }}" data-alpha="{{ product.title }}" data-price="{{ product.price }}">
-                <div class="tw-w-full tw-max-w-[292px]">
+                <div class="tw-w-full tw-max-w-[292px] tw-min-h-full">
                     {% render 'product-listing', product: product, collection: collection %}
                 </div>
             </div>

@@ -126,11 +126,7 @@
                         {% endcase %}
 
                         <div data-sectionid="{% if section.id %}{{section.id}}{% endif %}" data-settings='{% if section.settings %}{{section.settings | json}}{% endif %}' id="gf-products" class="tw-grid tw-grid-cols-2 md:tw-grid-cols-3 tw-gap-3 md:tw-gap-6{% if section.settings.infinite_scroll %} is_infinite{% endif %}">
-                            {% for product in collection.products %}
-                                <div class="tw-col-span-1" id="prod-{{ product.id }}" data-alpha="{{ product.title }}" data-price="{{ product.price }}" data-aos="{{ settings.scroll_animation }}" data-product-id="{{ product.id }}">
-                                    {% render 'product-listing', collection: collection, product: product %}
-                                </div>
-                            {% endfor %}
+                            
                         </div>
                         <div class="clear"></div>
                         {% if section.settings.description_position == 'bottom_description' and collection.description != blank %}
@@ -145,7 +141,7 @@
 
                     <div class="clear"></div>
 
-                    {% render 'pagination', paginate: paginate %}
+                    <!-- {% render 'pagination', paginate: paginate %} -->
                 </div>
             </div>
             {% if section.settings.full_width %}

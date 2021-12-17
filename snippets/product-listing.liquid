@@ -1,6 +1,8 @@
 {% capture discount %}
     {{ product.compare_at_price_max | minus:product.price | times:100 | divided_by:product.compare_at_price_max }}%
 {% endcapture %}
+{% assign image_size     = '360x504' %}
+{% assign featured_image            = product.featured_image %}
 <div class="ci">
     {% if product.available %}
         {% if product.price < product.compare_at_price %}
@@ -30,30 +32,12 @@
             <div {% if settings.image_flip and product.media.size > 1 %} class=" tw-group" {% endif %}>
                 {%- assign preview_image = product.featured_media.preview_image -%}
                 {%- assign second_image = product.media[1] -%}
-                <div class="tw-relative tw-transition-opacity tw-opacity-100 tw-duration-700 group-hover:tw-opacity-0" style="padding-bottom: 100%;">
-                    <img
-                         class="gflazyload img-responsive tw-absolute tw-inset-0 !tw-w-full !tw-h-full tw-object-contain"
-                         src="{{featured_image.src | img_url: image_size}}"
-                         data-src="{{ featured_image.src | img_lazyload_url }}"
-                         data-sizes="auto"
-                         srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                         data-aspectratio="{{featured_image.aspect_ratio}}"
-                         data-parent-fit="contain"
-                         alt="{{featured_image.alt | escape}}"
-                         />
-                  </div>
+                <div class="tw-relative tw-transition-opacity tw-opacity-100 tw-duration-700 group-hover:tw-opacity-0">
+                    {% render "[image]", image: preview_image image_box_ratio:'100%' image_size:image_size %}
+                </div>
                 {% if settings.image_flip and product.media.size > 1 %}
                     <div class=" group-hover:tw-visible group-hover:tw-opacity-100 tw-invisible tw-opacity-0 tw-transition-opacity tw-duration-700">
-                        <img
-                            class="gflazyload img-responsive tw-absolute tw-inset-0 !tw-w-full !tw-h-full tw-object-contain"
-                            srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                            src="{{product.images[1].src | img_url: image_size}}"
-                            data-src="{{ product.images[1].src | img_lazyload_url }}"
-                            data-sizes="auto"
-                            data-aspectratio="{{product.images[1].aspect_ratio}}"
-                            data-parent-fit="contain"
-                            alt="{{product.images[1].alt | escape}}"
-                            />
+                        {% render "[image]", image: second_image image_box_ratio:'0%'  layout:'fill' %}
                     </div>
                 {% endif %}
             </div>
