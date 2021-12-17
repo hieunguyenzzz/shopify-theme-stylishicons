@@ -73,10 +73,10 @@
       {% endif %}
       {% if images_count > 0 %}
       <a class="tw-block tw-border tw-border-[#f1f1f1] tw-border-solid"  href="{{ root_url }}{{ product.url | within: collection }}" title="{{ product.title | escape }}">
-        <div class=" tw-group">
+        <div class="tw-group">
           <div class="tw-relative tw-transition-opacity tw-opacity-100 tw-duration-700 group-hover:tw-opacity-0" style="padding-bottom: 100%;">
             <img
-                 class="gflazyload img-responsive tw-absolute tw-inset-0 !tw-w-full !tw-h-full tw-object-contain"
+                 class="gflazyload  img-responsive tw-absolute tw-inset-0 !tw-w-full !tw-h-full tw-object-contain"
                  src="{{featured_image.src | img_url: image_size}}"
                  data-src="{{ featured_image.src | img_lazyload_url }}"
                  data-sizes="auto"
