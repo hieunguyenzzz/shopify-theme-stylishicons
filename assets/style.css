@@ -294,6 +294,16 @@
   width: 340px
 }
 
+.tw-min-w-fit {
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content
+}
+
+.tw-min-w-\[300px\] {
+  min-width: 300px
+}
+
 .tw-max-w-full {
   max-width: 100%
 }

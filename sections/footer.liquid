@@ -46,7 +46,10 @@
                             </label><input id="menu-item-{{ forloop.index }}" type="checkbox">
                             <div class="footer-block-content" id="footer_signup">
                                 {{ block.settings.mailing_subheading }}
-                                <p>{{ settings.footer_signup_text | escape }}</p>
+                                {% assign footer_signup_text = settings.footer_signup_text | strip %}
+                                {% if footer_signup_text and footer_signup_text != blank %}
+                                    <p>{{ settings.footer_signup_text | escape }}</p>
+                                {% endif %}
                                 {% form 'customer' %}
                                     {{ form.errors | default_errors }}
                                     {% if form.posted_successfully? %}
