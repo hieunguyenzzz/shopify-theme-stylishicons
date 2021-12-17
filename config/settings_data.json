@@ -4630,7 +4630,7 @@
         "type": "collection-page-template",
         "settings": {
           "full_width": false,
-          "grid": 4,
+          "grid": 5,
           "products_per_page": 48,
           "infinite_scroll": false,
           "description_position": "top_description",
