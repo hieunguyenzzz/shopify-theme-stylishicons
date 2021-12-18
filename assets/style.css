@@ -218,6 +218,10 @@
   height: 5px
 }
 
+.tw-h-\[43px\] {
+  height: 43px
+}
+
 .tw-max-h-\[300px\] {
   max-height: 300px
 }
@@ -393,6 +397,10 @@
   gap: 0.5rem
 }
 
+.tw-gap-px {
+  gap: 1px
+}
+
 .tw-gap-y-6 {
   row-gap: 1.5rem
 }
@@ -427,6 +435,10 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap
+}
+
+.tw-text-ellipsis {
+  text-overflow: ellipsis
 }
 
 .tw-rounded-full {
@@ -599,6 +611,11 @@
   padding-bottom: 3rem
 }
 
+.tw-px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem
+}
+
 .tw-pt-6 {
   padding-top: 1.5rem
 }
@@ -668,6 +685,11 @@
 .\!tw-text-2xl {
   font-size: 1.5rem !important;
   line-height: 2rem !important
+}
+
+.tw-text-5xl {
+  font-size: 3rem;
+  line-height: 1
 }
 
 .tw-font-bold {
@@ -1159,6 +1181,10 @@
 
   .lg\:tw-grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr))
+  }
+
+  .lg\:tw-grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr))
   }
 
   .lg\:tw-flex-row {
