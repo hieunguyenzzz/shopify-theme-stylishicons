@@ -96,6 +96,14 @@
   right: -2rem
 }
 
+.tw--left-4 {
+  left: -1rem
+}
+
+.tw--right-4 {
+  right: -1rem
+}
+
 .tw-isolate {
   isolation: isolate
 }
@@ -174,12 +182,52 @@
   margin-bottom: 1.5rem
 }
 
+.tw--ml-4 {
+  margin-left: -1rem
+}
+
+.tw--ml-3 {
+  margin-left: -0.75rem
+}
+
+.tw--mr-3 {
+  margin-right: -0.75rem
+}
+
+.tw--ml-3 {
+  margin-left: -0.75rem
+}
+
+.tw--mr-3 {
+  margin-right: -0.75rem
+}
+
+.tw-ml-\[12px\] {
+  margin-left: 12px
+}
+
+.tw-mr-\[12px\] {
+  margin-right: 12px
+}
+
+.tw-ml-\[-12px\] {
+  margin-left: -12px
+}
+
+.tw-mr-\[-12px\] {
+  margin-right: -12px
+}
+
 .tw-block {
   display: block
 }
 
 .\!tw-block {
   display: block !important
+}
+
+.tw-inline-block {
+  display: inline-block
 }
 
 .tw-flex {
@@ -720,6 +768,10 @@
   line-height: 1
 }
 
+.tw-leading-\[48px\] {
+  line-height: 48px
+}
+
 .\!tw-text-white {
   --tw-text-opacity: 1 !important;
   color: rgb(255 255 255 / var(--tw-text-opacity)) !important
@@ -1101,6 +1153,14 @@
 
   .lg\:tw-ml-auto {
     margin-left: auto
+  }
+
+  .lg\:tw-ml-0 {
+    margin-left: 0px
+  }
+
+  .lg\:tw-mr-0 {
+    margin-right: 0px
   }
 
   .lg\:tw-block {
