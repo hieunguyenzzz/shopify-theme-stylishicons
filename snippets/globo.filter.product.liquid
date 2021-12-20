@@ -38,7 +38,7 @@
 {% endfor %}
 {% endif %}
 {% capture discount %}
-    {{ product.compare_at_price | minus:product.price | times:100 | divided_by:product.compare_at_price | floor }}%
+    {{ product.compare_at_price_max | minus:product.price | times:100 | divided_by:product.compare_at_price_max|ceil  }}%
 {% endcapture %}
 
 <div{% if showPageData %} data-page="{{page}}"{% endif %} class="tw-col-span-1">

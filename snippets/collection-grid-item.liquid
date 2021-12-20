@@ -2,9 +2,9 @@
     <div class="tw-absolute tw-w-full tw-h-full tw-inset-0 hover:tw-brightness-50">
         <a href="{{ collection.url }}" title="{{ collection_title }}">
             {% if collection.image %}
-                {% render "[image]", image: collection.image image_box_ratio:'100%' cover:true %}
+                {% render "[image]", image: collection.image image_box_ratio:'100%  %}
             {% elsif collection.products.first and collection.products.first.media != empty %}
-                {% render "[image]", image: collection.products.first.featured_media.preview_image image_box_ratio:'100%' cover:true %}
+                {% render "[image]", image: collection.products.first.featured_media.preview_image image_box_ratio:'100%' %}
             {% else %}
                 <div class="tw-w-full">
                     {% render "[image]-holder" %}
