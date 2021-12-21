@@ -1,5 +1,5 @@
 {% capture discount %}
-{{ product.compare_at_price | minus:product.price | times:100 | divided_by:product.compare_at_price  | ceil}}%
+{{ product.compare_at_price | minus:product.price | times:100 | divided_by:product.compare_at_price  |  floor}}%
 {% endcapture %}
 {% assign image_size     = '360x504' %}
 {% assign featured_image            = product.featured_image %}
