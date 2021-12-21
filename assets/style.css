@@ -1301,7 +1301,7 @@
 }
 
 svg:not(:root), symbol, image, marker, pattern, foreignObject {
-  overflow-x: auto;
-  overflow-y: auto;
+  overflow-x: unset;
+  overflow-y: unset;
 }
   
