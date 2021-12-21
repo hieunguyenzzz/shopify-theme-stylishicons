@@ -38,9 +38,8 @@
 {% endfor %}
 {% endif %}
 {% capture discount %}
-    {{ product.compare_at_price | minus:product.price | times:100 | divided_by:product.compare_at_price|ceil  }}%
+    {{ product.compare_at_price | minus:product.price | times:100.0 | divided_by:product.compare_at_price | floor  }}%
 {% endcapture %}
-
 <div{% if showPageData %} data-page="{{page}}"{% endif %} class="tw-col-span-1">
   <div class="product" id="prod-{{ product.id }}" data-alpha="{{ product.title }}" data-price="{{ product_price }}">
     <div class="ci">
