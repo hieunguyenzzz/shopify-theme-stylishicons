@@ -4889,7 +4889,7 @@
         "type": "featured-collection",
         "settings": {
           "heading": "The Bestsellers",
-          "collection": "all",
+          "collection": "bestseller",
           "limit": 12
         }
       },
