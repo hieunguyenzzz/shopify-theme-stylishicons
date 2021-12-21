@@ -37,9 +37,14 @@
 {% endif %}
 {% endfor %}
 {% endif %}
-{% capture discount %}
-    {{ product.compare_at_price | minus:product.price | times:100.0 | divided_by:product.compare_at_price | floor  }}%
-{% endcapture %}
+{% assign variant = product.first_available_variant %}
+{% assign compare_at_price = variant.compare_at_price | floor %}
+{% assign price = variant.price | floor %}
+{% if price < compare_at_price %}
+    {% capture discount %}
+    {{ compare_at_price | minus:price | times:100.0 | divided_by: compare_at_price | floor  }}%
+    {% endcapture %}
+{% endif %}
 <div{% if showPageData %} data-page="{{page}}"{% endif %} class="tw-col-span-1">
   <div class="product" id="prod-{{ product.id }}" data-alpha="{{ product.title }}" data-price="{{ product_price }}">
     <div class="ci">
@@ -49,7 +54,7 @@
         <div translatable class="new icn ">{% endraw %}{{ 'products.general.new' | t }}{% raw %}</div>
       {% endif %} -->
       {% endfor %}
-       {% if product.price < product.compare_at_price %}
+       {% if discount %}
             <span class="percentage_off tw-absolute tw-top-0 tw-right-0 tw-z-10 empty:tw-hidden">{{ discount }}
                 OFF</span>
         {% endif %}
@@ -124,10 +129,10 @@
         <h3 translatable><span class="product-title !tw-block">{{ product.title }} </span>  
 
           {% if product.title %}
-          {%  assign compare_at_price = product.compare_at_price %}
-          {%   assign price = product.price %}
+          {%   assign variant = product.first_available_variant %}
+          {%  assign compare_at_price = variant.compare_at_price %}
+          {%   assign price = variant.price %}
           {%   assign available = product.available %}
-          {%   assign variant = product.variants.first %}
           {% else %}
           {%   assign compare_at_price = 1999 %}
           {%   assign price = 1999 %}
