@@ -1,1 +1,5 @@
-tw-max-w-[1280px] tw-w-full tw-px-4 sm:tw-px-8 tw-mx-auto
+{% if fluid %}
+tw-w-full tw-px-4 sm:tw-px-8 tw-mx-auto
+{% else %}
+tw-max-w-[1280px] tw-w-full tw-px-4 sm:tw-px-8 tw-mx-auto   
+{% endif %}
