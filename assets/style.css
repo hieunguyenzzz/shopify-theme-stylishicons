@@ -306,6 +306,10 @@
   max-width: 42rem;
 }
 
+.tw-max-w-\[80\%\] {
+  max-width: 80%;
+}
+
 .\!tw-max-w-\[180px\] {
   max-width: 180px !important;
 }
@@ -316,10 +320,6 @@
 
 .tw-max-w-\[2000px\] {
   max-width: 2000px;
-}
-
-.tw-max-w-\[80\%\] {
-  max-width: 80%;
 }
 
 .tw-flex-1 {
@@ -421,10 +421,6 @@
   gap: 1px;
 }
 
-.tw-gap-y-6 {
-  row-gap: 1.5rem;
-}
-
 .tw-space-y-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
@@ -520,17 +516,17 @@
   background-color: rgb(249 249 249 / var(--tw-bg-opacity));
 }
 
+.tw-bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .tw-bg-transparent {
   background-color: transparent;
 }
 
 .tw-bg-current {
   background-color: currentColor;
-}
-
-.tw-bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .tw-bg-opacity-50 {
@@ -541,16 +537,16 @@
   --tw-bg-opacity: 0.9;
 }
 
-.tw-bg-opacity-70 {
-  --tw-bg-opacity: 0.7;
+.tw-bg-opacity-80 {
+  --tw-bg-opacity: 0.8;
 }
 
 .tw-bg-opacity-0 {
   --tw-bg-opacity: 0;
 }
 
-.tw-bg-opacity-80 {
-  --tw-bg-opacity: 0.8;
+.tw-bg-opacity-70 {
+  --tw-bg-opacity: 0.7;
 }
 
 .tw-object-contain {
@@ -1463,14 +1459,6 @@
   .sm\:tw--mx-8 {
     margin-left: -2rem;
     margin-right: -2rem;
-  }
-
-  .sm\:tw-block {
-    display: block;
-  }
-
-  .sm\:tw-hidden {
-    display: none;
   }
 
   .sm\:tw-h-\[280px\] {
