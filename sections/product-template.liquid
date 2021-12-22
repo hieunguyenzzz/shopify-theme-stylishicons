@@ -121,32 +121,40 @@
 
             <div id="product-photos" class="tw-relative product-photos product-{{ product.id }} {{ image_width }}" data-product-single-media-group data-gallery-config='{{ product_gallery_config }}' {{ gallery_data }}>
                 {% if discount %}
-                    <span id="percentage_off" class="tw-bg-[#fbf3ee] tw-bg-opacity-90 tw-px-[1em] md:tw-text-xl lg:tw-text-2xl tw-font-bold !tw-leading-loose tw-text-black tw-z-10 empty:tw-hidden tw-absolute tw-right-0 tw-top-0">{{ discount }}
+                <span id="percentage_off" class="tw-bg-[#fbf3ee] tw-bg-opacity-90 tw-px-[1em] md:tw-text-xl lg:tw-text-2xl tw-font-bold !tw-leading-loose tw-text-black tw-z-10 empty:tw-hidden tw-absolute tw-right-0 tw-top-0">{{ discount }}
+                    OFF</span>
+                    {% else %}
+                    <span id="percentage_off" class="tw-bg-[#fbf3ee] tw-bg-opacity-90 tw-px-[1em] md:tw-text-xl lg:tw-text-2xl tw-font-bold !tw-leading-loose tw-text-black tw-z-10 empty:tw-hidden tw-absolute tw-right-0 tw-top-0"></span>
+                {% endif %}
+                <div id="product-labels">
+                    {% if discount %}
+                    <span  class="tw-bg-[#fbf3ee] tw-bg-opacity-90 tw-px-[1em] md:tw-text-xl lg:tw-text-2xl tw-font-bold !tw-leading-loose tw-text-black tw-z-10 empty:tw-hidden tw-absolute tw-right-0 tw-top-0">{{ discount }}
                         OFF</span>
                         {% else %}
-                        <span id="percentage_off" class="tw-bg-[#fbf3ee] tw-bg-opacity-90 tw-px-[1em] md:tw-text-xl lg:tw-text-2xl tw-font-bold !tw-leading-loose tw-text-black tw-z-10 empty:tw-hidden tw-absolute tw-right-0 tw-top-0"></span>
-                {% endif %}
-                {% for collection in product.collections %}
-                    {% if collection.handle == 'bestseller' %}
-                        <span class="tw-bg-[#eef5f1] tw-bg-opacity-90 tw-px-[1em] md:tw-text-xl lg:tw-text-2xl tw-font-bold !tw-leading-loose tw-text-black tw-z-10 empty:tw-hidden tw-absolute tw-left-0 tw-bottom-16 lg:tw-bottom-24">
-                            BEST SELLER
-                        </span>
-                        {% break %}
+                        <span  class="tw-bg-[#fbf3ee] tw-bg-opacity-90 tw-px-[1em] md:tw-text-xl lg:tw-text-2xl tw-font-bold !tw-leading-loose tw-text-black tw-z-10 empty:tw-hidden tw-absolute tw-right-0 tw-top-0"></span>
                     {% endif %}
-                    {% if collection.handle == 'new' %}
-                        <span class="tw-bg-[#eef5f1] tw-bg-opacity-90 tw-px-[1em] md:tw-text-xl lg:tw-text-2xl tw-font-bold !tw-leading-loose tw-text-black tw-z-10 empty:tw-hidden tw-absolute tw-left-0 tw-bottom-16 lg:tw-bottom-24">
-                            NEW PRODUCT
-                        </span>
-                        {% break %}
-                    {% endif %}
-                {% endfor %}
-                <div class=" tw-bg-[#eef5f1] tw-bg-opacity-90 tw-px-[1em] tw-font-bold !tw-leading-loose tw-text-black tw-z-10 empty:tw-hidden tw-absolute tw-right-0 tw-bottom-16 lg:tw-bottom-24">
-                    {% if current_variant.metafields.global.leading-time %}
-                        Ships in
-                        {{current_variant.metafields.global.leading-time}}
-                    {% else %}
-                        Ships in 18-22 weeks
-                    {% endif %}
+                    {% for collection in product.collections %}
+                        {% if collection.handle == 'bestseller' %}
+                            <span class="tw-bg-[#eef5f1] tw-bg-opacity-90 tw-px-[1em] md:tw-text-xl lg:tw-text-2xl tw-font-bold !tw-leading-loose tw-text-black tw-z-10 empty:tw-hidden tw-absolute tw-left-0 tw-bottom-16 lg:tw-bottom-24">
+                                BEST SELLER
+                            </span>
+                            {% break %}
+                        {% endif %}
+                        {% if collection.handle == 'new' %}
+                            <span class="tw-bg-[#eef5f1] tw-bg-opacity-90 tw-px-[1em] md:tw-text-xl lg:tw-text-2xl tw-font-bold !tw-leading-loose tw-text-black tw-z-10 empty:tw-hidden tw-absolute tw-left-0 tw-bottom-16 lg:tw-bottom-24">
+                                NEW PRODUCT
+                            </span>
+                            {% break %}
+                        {% endif %}
+                    {% endfor %}
+                    <div class=" tw-bg-[#eef5f1] tw-bg-opacity-90 tw-px-[1em] tw-font-bold !tw-leading-loose tw-text-black tw-z-10 empty:tw-hidden tw-absolute tw-right-0 tw-bottom-16 lg:tw-bottom-24">
+                        {% if current_variant.metafields.global.leading-time %}
+                            Ships in
+                            {{current_variant.metafields.global.leading-time}}
+                        {% else %}
+                            Ships in 18-22 weeks
+                        {% endif %}
+                    </div>
                 </div>
                 {% if product.featured_media and gallery_type == 'static' %}
                     {% render 'product-media-gallery',
@@ -491,7 +499,29 @@
 <script id="ModelJson-{{ section.id }}" type="application/json">
     {{ product.media | where: 'media_type', 'model' | json }}
 </script>
+<script>
+    
+     window.addEventListener("themeloaded", function(event) { 
+        Events.on('variantchange', function(variant,product, context){
+                    fetch(`/products/{{product.handle}}?section_id=product-template&variant=${variant.id}`)
+                    .then(response => response.text())
+                    .then(data => {
+                        function createElementFromHTML(htmlString) {
+                            var div = document.createElement('div');
+                            div.innerHTML = htmlString.trim();
 
+                            // Change this to div.childNodes to support multiple top-level nodes
+                            return div.firstChild; 
+                        }
+                        const newsection = createElementFromHTML(data)
+                        console.log({newsection})
+                        document.querySelector("#product-labels").innerHTML=newsection.querySelector("#product-labels").innerHTML 
+                    });
+              
+        })
+     })
+    
+</script>
 {% include "linked-options" %}
 
 {% schema %}
