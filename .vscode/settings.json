@@ -22,5 +22,8 @@
   "files.associations": {
     "*.liquid": "html"
   },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
 
 }
