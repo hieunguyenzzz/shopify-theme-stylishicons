@@ -761,6 +761,10 @@
   line-height: 1;
 }
 
+.\!tw-text-\[16px\] {
+  font-size: 16px !important;
+}
+
 .tw-font-bold {
   font-weight: 700;
 }
