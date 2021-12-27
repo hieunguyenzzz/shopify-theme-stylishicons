@@ -60,7 +60,7 @@
                     </ul>
                 </nav>
                 {% render 'logo' %}
-                <ul class="tw-flex tw-flex-1 tw-justify-end tw-hidden lg:tw-block" id="cart">
+                <ul class="tw-flex-1 tw-justify-end tw-hidden lg:tw-block" id="cart">
                   {% render 'shopping-cart-links', cart: cart, hd_locale_selector: hd_locale_selector, hd_currency_selector: hd_currency_selector %}
                 </ul>
                 <div class="tw-flex-1 lg:tw-hidden tw-flex tw-justify-end">
@@ -70,12 +70,18 @@
         </div>
     </div>
     <div class="clear"></div>
-    <div class="js-search-reveal searchreveal" id="search_reveal">
-        <form action="{{ routes.search_url }}" method="get">
-            <input name="type" type="hidden" value="product">
-            <input type="text" name="q" id="q" placeholder="{{ 'general.search.placeholder' | t }}"/>
-            <input value="{{ 'general.search.submit' | t }}" name="submit" id="search_button" class="button" type="submit">
-        </form>
+   
+    <div class="js-search-reveal searchreveal " id="search_reveal">
+        <div class="tw-w-full tw-px-6 tw-animate__animated tw-animate__fadeInUp tw-bg-white tw-shadow-lg z-[-1]">
+            <form class="tw-relative tw-mx-auto tw-max-w-md tw-flex tw-items-center tw-gap-6" action="{{ routes.search_url }}" method="get">
+                <input name="type" type="hidden" value="product">
+                <input class="tw-flex-1 !tw-indent-0 !tw-m-0 !tw-h-[80px] !tw-leading-[80px]" type="text" name="q" id="q" placeholder="{{ 'general.search.placeholder' | t }}"/>
+                <div class=" tw-max-w-[100px] tw-absolute tw-top-3 tw-bottom-3 tw-right-0 tw-w-[100px]">
+                    <input value="{{ 'general.search.submit' | t }}" name="submit" id="search_button" class="button" type="submit">
+                </div>
+            </form>
+        </div>
+        
     </div>
 </header>
 <div class="phantom js-phantom {% if section.settings.header_cover and template == 'index' %}ignore-this{% endif %}" id="phantom"></div>

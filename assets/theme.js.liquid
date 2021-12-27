@@ -3380,6 +3380,7 @@ theme.Header = (function() {
 					phantomEl = document.querySelector(".js-phantom"),
 					scrollHeader = document.querySelector("header.scrollheader"),
 					searchTrigger = document.querySelector(".js-search-trigger"),
+					searchMobileTrigger = document.querySelector(".js-search-mobile-trigger"),
 					searchReveal = document.querySelector(".js-search-reveal"),
 					currencySelector = document.querySelector(".shopify-currency-form select");
 
@@ -3413,9 +3414,8 @@ theme.Header = (function() {
 		document.addEventListener('scroll', function (event) {
 			makeNavigationSticky();
 		});
-
 		document.addEventListener('click', function (event) {
-			if (event.target === searchTrigger || searchTrigger.contains(event.target) || event.target === searchReveal || searchReveal.contains(event.target)) {
+			if (event.target === searchTrigger || searchTrigger.contains(event.target)|| searchMobileTrigger.contains(event.target) || event.target === searchReveal || searchReveal.contains(event.target)) {
 			} else {
 				searchReveal.classList.remove("searchreveal--show");
 			}
@@ -3424,7 +3424,9 @@ theme.Header = (function() {
 		searchTrigger.addEventListener('click', function (event) {
 			searchReveal.classList.add("searchreveal--show");
 		});
-
+    searchMobileTrigger.addEventListener('click', function (event) {
+			searchReveal.classList.add("searchreveal--show");
+		});
 		makeNavigationSticky();
 		theme.a11yHelpers.setUpAriaExpansion();
 		theme.a11yHelpers.setUpAccessibleNavigationMenus();

@@ -2265,32 +2265,42 @@
  }
  
  #search_reveal {
-   position: relative;
-   width: 50%;
-   margin: 10px auto 20px;
+   position: absolute;
+   /* background: white; */
+   left: 0;
+   right: 0;
+   width: 100%;
+   margin: 0 auto;
+   padding: ;
    text-align: center;
      display: none;
  }
- 
+ #search_reveal form{
+   margin-left: auto;
+   max-width: 600px;
+ }
  #search_reveal.searchreveal--show {
      display: block;
  }
  
  input#search_button {
-   position: absolute;
+   /* position: absolute;
    right: 7px;
-   top: 7px;
-   width: 100px;
-   margin-bottom: 0;
+   top: 7px; */
+   /* width: 100px; */
  }
  
  #search_reveal input#q {
-   height: 62px;
+   /* height: 37px;
    margin-bottom: 0;
-   line-height: 62px;
-   border: 1px solid {{ settings.dotted_color }};
+   line-height: 62px; */
+   border: none;
+   /* border-bottom: 1px solid black; */
  }
- 
+ #search_reveal input#q:focus {
+  border: none;
+  box-shadow: none;
+}
  
  /* ============================================== */
  /* ================ AJAX CART ================ */
