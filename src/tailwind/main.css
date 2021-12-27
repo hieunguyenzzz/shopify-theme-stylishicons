@@ -3,7 +3,7 @@
 @import "tailwindcss/variants";
 
 svg:not(:root), symbol, image, marker, pattern, foreignObject {
-    overflow-x: auto;
-    overflow-y: auto;
+    overflow-x: visible;
+    overflow-y: visible;
     }
   
