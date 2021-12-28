@@ -55,9 +55,9 @@
     {% elsif block.type == 'mega_menu' %}
         {% if block.settings.menu_item == link.title %}
             {% capture megalink %}
-                <li aria-expanded="false" aria-haspopup="true" class="navigation__menuitem navigation__menuitem--dropdown js-doubletap-to-go js-aria-expand {{ link.title }}" data-active-class="navigation__menuitem--active" role="none">
+                <li aria-expanded="false" aria-haspopup="true" class="navigation__menuitem tw-group navigation__menuitem--dropdown js-doubletap-to-go js-aria-expand {{ link.title }}" data-active-class="navigation__menuitem--active" role="none">
                     <a class="navigation__menulink js-menu-link js-open-dropdown-on-key" href="{{ link.url }}">{{ link.title }}</a>
-                    <ul class="megamenu">
+                    <ul class="tw-bg-black tw-absolute tw-top-full tw-left-0 tw-right-0 tw-opacity-0 group-hover:tw-opacity-100 tw-pointer-events-none group-hover:tw-pointer-events-auto tw-py-12 tw-duration-500 tw-transition-[opacity,margin] tw-invisible group-hover:tw-visible tw-mt-6 group-hover:tw-mt-0">
                         <div class="{% render '[class]-container' class: '' %} tw-max-w-[980px]"  style="max-width: 1280px;">
                             {% if block.settings.nav_image != blank %}
                                 <span class="desktop-3 tablet-hide mm-image">
@@ -113,11 +113,10 @@
 {% elsif link.links != blank %}
     <li class="navigation__menuitem navigation__menuitem--dropdown js-doubletap-to-go js-menuitem " data-active-class="navigation__menuitem--active" role="none">
 
-        <a class="navigation__menulink js-menu-link js-aria-expand js-open-dropdown-on-key" role="menuitem" aria-haspop="true" aria-expanded="false" href="{{ link.url}}">{{ link.title }}</a>
-        {% if link.type == 'collection_link' and section.settings.product_menu
-    %}
+        <a class="navigation__menulink tw-group js-menu-link js-aria-expand js-open-dropdown-on-key" role="menuitem" aria-haspop="true" aria-expanded="false" href="{{ link.url}}">{{ link.title }}</a>
+        {% if link.type == 'collection_link' and section.settings.product_menu %}
             {% assign collection = link.object %}
-            <ul class="megamenu">
+            <ul class="tw-bg-black tw-absolute tw-top-full tw-left-0 tw-right-0 tw-opacity-0 group-hover:tw-opacity-100 tw-pointer-events-none group-hover:tw-pointer-events-auto tw-py-12 tw-duration-500 tw-transition-[opacity,margin] tw-invisible group-hover:tw-visible tw-mt-6 group-hover:tw-mt-0 ">
                 <div class="megamenu__container">
                     <!-- Start Megamenu Inner Links -->
                     <li class="desktop-3 tablet-1">

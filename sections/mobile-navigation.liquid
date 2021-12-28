@@ -25,7 +25,7 @@
               <li style="{% assign animationcount = animationcount | plus :1 %}--delay-animation: {{animationcount | times:75  }}ms" class="mobile-menu__item accordion__toggle animation-delay" aria-haspopup="true" aria-expanded="false">
                 <a href="{{ link.url }}">{% if shop.locale == "ia" %}{{ link.title | escape | truncatewords: 10000 }}{% else %}{{ link.title | escape | truncatewords: 6 }}{% endif %}</a>
               </li>
-              <li  class="accordion__content">
+              <li style="--delay-animation: {{animationcount | times:75  }}ms" class="accordion__content animation-delay">
                 {% assign megamenu__header = link.title | downcase %}
                                 {% if megamenu__header == 'designers' %}
                                     <ul class="accordion__submenu-1">
@@ -92,7 +92,7 @@
           {% if block.settings.featured_image_link %}</a>{% endif %}
         </div>
       {% when 'featured_text' %}
-        <div style="{% assign animationcount = animationcount | plus :1 %}--delay-animation: {{animationcount | times:75  }}ms" class="text-center  animation-delay mobile-menu__block mobile-menu__featured-text" {{ block.shopify_attributes }}>
+        <div style="{% assign animationcount = animationcount | plus :1 %}--delay-animation: {{animationcount | times:75  }}ms" class="text-center animation-delay mobile-menu__block mobile-menu__featured-text" {{ block.shopify_attributes }}>
           {{ block.settings.featured_text }}
         </div>
       {% when 'cart_status' %}
