@@ -85,9 +85,18 @@
         {% include 'globo.filter.script' %}{{ content_for_header }}
 
         {{ 'theme-style.css' | asset_url | stylesheet_tag }}
-
+        <style>
+          body.loading{
+            opacity: 0;
+            transition: opacity 0.7s linear ;
+          }
+          body{
+            transition: opacity 0.15s linear ;
+            opacity: 100;
+          }
+        </style>
     </head>
-    <body class="gridlock shifter-left {{ template | handleize }} js-slideout-toggle-wrapper">
+    <body class="loading gridlock shifter-left {{ template | handleize }} js-slideout-toggle-wrapper">
         <div class="js-slideout-overlay site-overlay"></div>
         {% if settings.ajax_cart_method == 'drawer' %}
             {% render 'timber-cart' %}
@@ -267,7 +276,15 @@
     }
    
   </script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        document.body.classList.remove('loading')
+    });
+    window.onbeforeunload = function(event) {
+      document.body.classList.add('loading')
+    }
 
+  </script>
 
         <!-- **BEGIN** Hextom USB Integration // Main Include - DO NOT MODIFY -->
         {% render 'hextom_usb_main', product: product, customer: customer %}
