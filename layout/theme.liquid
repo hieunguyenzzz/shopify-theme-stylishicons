@@ -88,13 +88,20 @@
         <style>
           body.loading{
             opacity: 0;
-            transition: opacity 0.7s linear ;
+            transition: opacity 0.7s ease ;
           }
           body{
-            transition: opacity 0.15s linear ;
+            transition: opacity 0.15s ease ;
             opacity: 100;
           }
         </style>
+        <noscript>
+          <style>
+            body.loading{
+            opacity: 100 !important;
+          }
+          </style>
+        </noscript>
     </head>
     <body class="loading gridlock shifter-left {{ template | handleize }} js-slideout-toggle-wrapper">
         <div class="js-slideout-overlay site-overlay"></div>
