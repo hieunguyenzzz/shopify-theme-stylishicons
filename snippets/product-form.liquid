@@ -65,7 +65,6 @@
    {% endif %}
 
 
-<div class="js-shipping tw-hidden" style="padding: 10px 0;">Ships in 6 weeks</div>
     {% if current_variant.available %}
       <div class="product-add">
         <input id="AddToCart" type="submit" name="button" class="add{% if section.settings.show_payment_button and product.selling_plan_groups.size == 0 %} secondary-button{% endif %}" value="{{ 'products.product.add_to_cart' | t }}" />
