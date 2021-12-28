@@ -1,13 +1,15 @@
-<nav class="mobile-menu" role="navigation" data-section-id="{{ section.id }}" data-section-type="mobile-navigation">
-  <div class="slideout__trigger--close">
-    <button class="slideout__trigger-mobile-menu js-slideout-close" data-slideout-direction="left" aria-label="Close navigation" tabindex="0" type="button" name="button">
+
+{% assign animationcount = 0 %}
+<nav style="--delay-unit:1000ms;--couter-name:animateCount" class="mobile-menu" role="navigation" data-section-id="{{ section.id }}" data-section-type="mobile-navigation">
+  <div style="{% assign animationcount = animationcount | plus :1 %}--delay-animation: {{animationcount | times:75  }}ms"  class="slideout__trigger--close animation-delay">
+    <button  class="slideout__trigger-mobile-menu js-slideout-close" data-slideout-direction="left" aria-label="Close navigation" tabindex="0" type="button" name="button" aria-expanded="false">
       <div class="icn-close"></div>
     </button>
   </div>
   {% for block in section.blocks %}
     {% case block.type %}
       {% when 'search_box' %}
-        <div class="mobile-menu__block mobile-menu__search" {{ block.shopify_attributes }}>
+        <div style="{% assign animationcount = animationcount | plus :1 %}--delay-animation: {{animationcount | times:75  }}ms" class="mobile-menu__block mobile-menu__search animation-delay" {{ block.shopify_attributes }}>
           <form action="/search" method="get">
             <input type="text" name="q" id="q" placeholder="{{ 'general.search.placeholder' | t }}" />
             {% if settings.search_products %}
@@ -16,14 +18,14 @@
           </form>
         </div>
       {% when 'navigation' %}
-        <ul class="mobile-menu__block mobile-menu__accordion accordion" id="accordion" {{ block.shopify_attributes }}>
+        <ul  class="mobile-menu__block mobile-menu__accordion accordion " id="accordion" {{ block.shopify_attributes }}>
           {% assign menu = linklists[block.settings.main_nav] %}
           {% for link in menu.links %}
             {% if link.links != blank %}
-              <li class="mobile-menu__item accordion__toggle" aria-haspopup="true" aria-expanded="false">
+              <li style="{% assign animationcount = animationcount | plus :1 %}--delay-animation: {{animationcount | times:75  }}ms" class="mobile-menu__item accordion__toggle animation-delay" aria-haspopup="true" aria-expanded="false">
                 <a href="{{ link.url }}">{% if shop.locale == "ia" %}{{ link.title | escape | truncatewords: 10000 }}{% else %}{{ link.title | escape | truncatewords: 6 }}{% endif %}</a>
               </li>
-              <li class="accordion__content">
+              <li  class="accordion__content">
                 {% assign megamenu__header = link.title | downcase %}
                                 {% if megamenu__header == 'designers' %}
                                     <ul class="accordion__submenu-1">
@@ -53,23 +55,23 @@
                 {% endif %}
               </li>
             {% else %}
-              <li class="mobile-menu__item"><a href="{{ link.url }}">{% if shop.locale == "ia" %}{{ link.title | escape | truncatewords: 10000 }}{% else %}{{ link.title | escape | truncatewords: 6 }}{% endif %}</a></li>
+              <li style="{% assign animationcount = animationcount | plus :1 %}--delay-animation: {{animationcount | times:75  }}ms" class="mobile-menu__item animation-delay"><a href="{{ link.url }}">{% if shop.locale == "ia" %}{{ link.title | escape | truncatewords: 10000 }}{% else %}{{ link.title | escape | truncatewords: 6 }}{% endif %}</a></li>
             {% endif %}
           {% endfor %}
           {% if shop.customer_accounts_enabled and block.settings.customer_account_links %}
             {% if customer  %}
-              <li class="mobile-menu__item">
+              <li style="{% assign animationcount = animationcount | plus :1 %}--delay-animation: {{animationcount | times:75  }}ms" class="mobile-menu__item animation-delay">
                 <a href="{{ routes.account_url }}">
                   <i class="la la-user" aria-hidden="true"></i>&nbsp;&nbsp;{{ 'layout.mobile_nav.account' | t }}
                 </a>&nbsp;&nbsp;<i class="la la-user-times" aria-hidden="true"></i>&nbsp;&nbsp;{{ 'layout.mobile_nav.logout' | t }}
               </li>
             {% else %}
-              <li class="mobile-menu__item"><i class="la la-user" aria-hidden="true"></i>&nbsp;&nbsp;<a href="{{ routes.account_login_url }}">{{ 'layout.mobile_nav.login' | t }}</a></li>
+              <li style="{% assign animationcount = animationcount | plus :1 %}--delay-animation: {{animationcount | times:75  }}ms" class="mobile-menu__item animation-delay"><i class="la la-user" aria-hidden="true"></i>&nbsp;&nbsp;<a href="{{ routes.account_login_url }}">{{ 'layout.mobile_nav.login' | t }}</a></li>
             {% endif %}
           {% endif %}
         </ul>
       {% when 'social_icons' %}
-        <div class="text-center mobile-menu__block mobile-menu__social" {{ block.shopify_attributes }}>
+        <div style="{% assign animationcount = animationcount | plus :1 %}--delay-animation: {{animationcount | times:75  }}ms"  class="text-center mobile-menu__block mobile-menu__social animation-delay" {{ block.shopify_attributes }}>
           {% render 'social-icons' %}
           <style>
             .mobile-menu__social i {
@@ -81,7 +83,7 @@
           </style>
         </div>
       {% when 'featured_image' %}
-        <div class="mobile-menu__block mobile-menu__featured-image{% if block.settings.full_featured_image %} mobile-menu__featured-image--full-width{% endif %}" {{ block.shopify_attributes }}>
+        <div style="{% assign animationcount = animationcount | plus :1 %}--delay-animation: {{animationcount | times:75  }}ms" class=" animation-delay mobile-menu__block mobile-menu__featured-image{% if block.settings.full_featured_image %} mobile-menu__featured-image--full-width{% endif %}" {{ block.shopify_attributes }}>
           {% if block.settings.featured_image_link %}<a href="{{ block.settings.featured_image_link }}">{% endif %}
             {% render 'basic-responsive-image' type: block.settings.featured_image %}
             <noscript>
@@ -90,11 +92,11 @@
           {% if block.settings.featured_image_link %}</a>{% endif %}
         </div>
       {% when 'featured_text' %}
-        <div class="text-center mobile-menu__block mobile-menu__featured-text" {{ block.shopify_attributes }}>
+        <div style="{% assign animationcount = animationcount | plus :1 %}--delay-animation: {{animationcount | times:75  }}ms" class="text-center  animation-delay mobile-menu__block mobile-menu__featured-text" {{ block.shopify_attributes }}>
           {{ block.settings.featured_text }}
         </div>
       {% when 'cart_status' %}
-        <div class="mobile-menu__block mobile-menu__cart-status" {{ block.shopify_attributes }}>
+        <div style="{% assign animationcount = animationcount | plus :1 %}--delay-animation: {{animationcount | times:75  }}ms" class=" animation-delay mobile-menu__block mobile-menu__cart-status" {{ block.shopify_attributes }}>
           <a class="mobile-menu__cart-icon" href="{{ routes.cart_url }}">
             {{ 'cart.general.title' | t }}
             <span class="mobile-menu__cart-count CartCount">{{ cart.item_count }}</span>
@@ -163,7 +165,21 @@
     }
     .accordion__toggle:after,
     .accordion__toggle-2:after { border-left: 1px solid {{ section.settings.border_color }}; }
+    .animation-delay{
+      opacity: 0;
+      -webkit-animation-duration: 500ms;
+      animation-duration: 500ms;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      -webkit-animation-delay:var(--delay-animation);
+      animation-delay: var(--delay-animation);
+    }
+    .slideout--active .animation-delay{
+      -webkit-animation-name: fadeInUp;
+      animation-name: fadeInUp;
+    }
   </style>
+
 </nav>
 
 {% schema %}
