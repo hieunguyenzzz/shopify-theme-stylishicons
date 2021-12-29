@@ -303,10 +303,9 @@
     window.addEventListener('DOMContentLoaded', (event) => {
         document.body.classList.add('loaded')
     });
-    window.onbeforeunload = function(event) {
-      document.body.classList.add('loading')
-    }
-
+    window.addEventListener('beforeunload', (event) => {
+      document.body.classList.remove('loaded')
+    });
   </script>
 
         <!-- **BEGIN** Hextom USB Integration // Main Include - DO NOT MODIFY -->
