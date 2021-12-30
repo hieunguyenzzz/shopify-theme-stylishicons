@@ -135,19 +135,19 @@
                     {% endif %}
                     {% for collection in product.collections %}
                         {% if collection.handle == 'bestseller' %}
-                            <span class="tw-bg-[#eef5f1] tw-bg-opacity-90 tw-px-[1em] md:tw-text-xl lg:tw-text-2xl tw-font-bold !tw-leading-loose tw-text-black tw-z-10 empty:tw-hidden tw-absolute tw-left-0 tw-bottom-16 lg:tw-bottom-24">
+                            <span class="tw-bg-[#eef5f1] tw-transform tw--translate-y-full tw-text-xs  tw-bg-opacity-90 tw-px-[1em] md:tw-text-xl lg:tw-text-2xl tw-font-bold !tw-leading-loose tw-text-black tw-z-10 empty:tw-hidden tw-absolute tw-left-0  tw-top-[380px] lg:tw-top-[480px]">
                                 BEST SELLER
                             </span>
                             {% break %}
                         {% endif %}
                         {% if collection.handle == 'new' %}
-                            <span class="tw-bg-[#eef5f1] tw-bg-opacity-90 tw-px-[1em] md:tw-text-xl lg:tw-text-2xl tw-font-bold !tw-leading-loose tw-text-black tw-z-10 empty:tw-hidden tw-absolute tw-left-0 tw-bottom-16 lg:tw-bottom-24">
+                            <span class="tw-bg-[#eef5f1] tw-transform tw--translate-y-full tw-text-xs   tw-bg-opacity-90 tw-px-[1em] md:tw-text-xl lg:tw-text-2xl tw-font-bold !tw-leading-loose tw-text-black tw-z-10 empty:tw-hidden tw-absolute tw-left-0  tw-top-[380px] lg:tw-top-[480px]">
                                 NEW PRODUCT
                             </span>
                             {% break %}
                         {% endif %}
                     {% endfor %}
-                    <div class=" tw-bg-[#eef5f1] tw-bg-opacity-90 tw-px-[1em] tw-font-bold !tw-leading-loose tw-text-black tw-z-10 empty:tw-hidden tw-absolute tw-right-0  tw-top-[340px] lg:tw-top-[440px]">
+                    <div class=" tw-bg-[#eef5f1] tw-transform tw--translate-y-full tw-text-xs  md:tw-text-base  tw-bg-opacity-90 tw-px-[1em] tw-font-bold !tw-leading-loose tw-text-black tw-z-10 empty:tw-hidden tw-absolute tw-right-0  tw-top-[380px] lg:tw-top-[480px]">
                         {% if current_variant.metafields.global.leading-time %}
                             {{current_variant.metafields.global.leading-time}}
                         {% else %}
