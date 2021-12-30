@@ -86,40 +86,28 @@
 
         {{ 'theme-style.css' | asset_url | stylesheet_tag }}
         <style>
-          body.loaded{
-            animation: page-fade-in-up 0.8s ease forwards;
-          }
           body.loading{
-            animation: page-fade-in-up-out 0.3s ease forwards;
+            opacity: 0;
+            -webkit-transition: opacity 0.7s ease ;
+            -o-transition: opacity 0.7s ease ;
+            transition: opacity 0.7s ease ;
           }
           body{
- 
-            opacity: 0;
-          }
-          @keyframes page-fade-in-up {
-            0% {
-              opacity: 0; }
-
-            100% {
-              opacity: 1; } 
-          }
-          @keyframes page-fade-in-up-out {
-            0% {
-              opacity: 1; }
-
-            100% {
-              opacity: 0; } 
+            -webkit-transition: opacity 0.15s ease ;
+            -o-transition: opacity 0.15s ease ;
+            transition: opacity 0.15s ease ;
+            opacity: 100;
           }
         </style>
         <noscript>
           <style>
-            body{
-              opacity: 100 !important;
-            }
+            body.loading{
+            opacity: 100 !important;
+          }
           </style>
         </noscript>
     </head>
-    <body class="gridlock shifter-left {{ template | handleize }} js-slideout-toggle-wrapper">
+    <body class="loading gridlock shifter-left {{ template | handleize }} js-slideout-toggle-wrapper">
         <div class="js-slideout-overlay site-overlay"></div>
         {% if settings.ajax_cart_method == 'drawer' %}
             {% render 'timber-cart' %}
@@ -301,11 +289,12 @@
   </script>
   <script>
     window.addEventListener('DOMContentLoaded', (event) => {
-        document.body.classList.add('loaded')
+        document.body.classList.remove('loading')
     });
-    window.addEventListener('beforeunload', (event) => {
-      document.body.classList.remove('loaded')
-    });
+    window.onbeforeunload = function(event) {
+      document.body.classList.add('loading')
+    }
+
   </script>
 
         <!-- **BEGIN** Hextom USB Integration // Main Include - DO NOT MODIFY -->
