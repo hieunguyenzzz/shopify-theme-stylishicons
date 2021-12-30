@@ -179,72 +179,38 @@ Custom blocks from custom pages and collections in 1 single snippet to reduce re
               </section>
             {% when 'featured_collection' %}
 
-            {% assign coll = collections[block.settings.fc_collection] %}
-            {% if block.settings.fc_carousel %}{%- assign is_carousel = true -%}{%- endif -%}
-            {%- assign prod_limit = block.settings.fc_limit -%}
-            {%- assign grid = block.settings.fc_grid -%}
-            {% capture slideshow_config %}{
-              "wrapAround":true,
-              "cellAlign": "left",
-              "dragThreshold":"15",
-              "pauseAutoPlayOnHover":false,
-              "prevNextButtons":true,
-              "pageDots": false
-            }{% endcapture %}
+            {% assign collection = collections[block.settings.fc_collection] %}
+            {% capture items %}
+    {% for i in (1..6) %}
+        <div class="keen-slider__slide tw-bg-gray-100 tw-relative tw-h-72 tw-flex tw-justify-center tw-items-center"></div>
+    {% endfor %}
+{% endcapture %}
+    {% capture items %}
+        {% for product in collection.products limit: 8 %}
+            <div class="keen-slider__slide" id="product-listing-{{forloop.index }}" data-product-id="{{ forloop.index }}" data-alpha="{{ product.title }}" data-price="{{ product.price }}">
+                <div class="tw-w-full tw-max-w-[292px] tw-min-h-full">
+                    {% render 'product-listing', product: product, collection: collection %}
+                </div>
+            </div>
+        {% endfor %}
+    {% endcapture %}
 
-                <section class="row featured__collection--{{ block.id }}" data-section-id="{{ block.id }}" data-aos="{{ settings.scroll_animation }}" data-section-type="carousel-section" {{ block.shopify_attributes }}>
-               <h5 class="text-title">
-                      {{ block.settings.sellers }}
-                     </h5>
-                  
-                  <div class="featured__collection{% if is_carousel %}-carousel flickity__section js-carousel{% endif %} product-loop"{% if is_carousel %} data-flickity='{{ slideshow_config }}'{% endif %}>
-                    {% if block.settings.fc_collection == blank %}
-                    {% render 'onboard-product', prod_limit: prod_limit, grid: grid %}
-                    {% else %}
-                    {% for product in coll.products limit: prod_limit  %}
-                      <div class="featured__collection-product product-index" id="product-listing-{{ product.id }}" data-product-id="{{ product.id }}" data-alpha="{{ product.title }}" data-price="{{ product.price }}">
-                        {% render 'product-listing', collection: coll, product: product %}
-                      </div>
-                    {% endfor %}
-                    {% endif %}
-                  </div>
-                  {% case block.settings.fc_grid %}
-                  {% when 2 %}
-                  {%- assign prod_grid = 50 -%}
-                  {% when 3 %}
-                  {%- assign prod_grid = 33.333 -%}
-                  {% when 4 %}
-                  {%- assign prod_grid = 25 -%}
-                  {% when 5 %}
-                  {%- assign prod_grid = 20 -%}
-                  {% endcase %}
-                  <style>
-                    .featured__collection--{{ block.id }} {
-                      padding-bottom: 30px;
-                      margin-bottom: 30px;
-                    }
-                    {% if is_carousel %}
-                      section.featured__collection--{{ block.id }} .featured__collection-carousel .featured__collection-product {
-                        width: {{ prod_grid }}%;
-                      }
-                      .featured__collection-carousel .flickity-button {
-                        color: {{ settings.direction_color }};
-                        background-color: {{ settings.direction_background }};
-                        width: 45px;
-                        height: 45px;
-                        margin: 0;
-                      }
-                      .featured__collection-carousel .flickity-button:hover {
-                        background-color: {{ settings.direction_hover }};
-                      }
-                    {% else %}
-                      section.featured__collection--{{ block.id }} .featured__collection {
-                        display: grid;
-                        grid-template-columns: repeat({{ grid }}, {{ prod_grid }}%);
-                      }
-                  {% endif %}
-                  </style>
-                </section>
+<div id="{{section.id}}" class="tw-py-16 tw-bg-[color:var(--section-bg)] tw-items-center">
+    <div class="{% render '[class]-container'  class: '' %} tw-flex tw-flex-col tw-gap-6 lg:tw-grid-cols-2">
+        <div class="tw-w-full tw-flex tw-flex-col tw-items-center lg:tw-items-start tw-text-center lg:tw-text-left tw-flex-1 tw-space-y-4">
+                <div class="tw-text-left tw-flex tw-justify-between tw-items-baseline tw-w-full">
+                    <h2 class="tw-font-bold tw-mb-0">
+                        <a href="{{ collection.url }}">{{ collection.title | escape }}</a>
+                    </h2>
+                    <a class="tw-uppercase tw-text-xs tw-font-normal" href="{{ collection.url }}">View All</a>
+                </div>
+        </div>
+       
+        <div class="tw-w-full tw-block">
+            {% render '[carousel]' items:items %}
+        </div>
+    </div>
+</div>
 
             {% when 'image_text_overlay' %}
               {% assign img_url = block.settings.pio_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
@@ -634,7 +600,7 @@ Custom blocks from custom pages and collections in 1 single snippet to reduce re
                           </div>
                         {% endif %}
                       {% endform %}
-                      <div class="section-icons text-center">
+                      <div class="text-center section-icons">
                         {% render "social-icons" %}
                       </div>
                     </div>
