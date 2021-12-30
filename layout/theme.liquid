@@ -86,28 +86,39 @@
 
         {{ 'theme-style.css' | asset_url | stylesheet_tag }}
         <style>
+          body{
+            animation: page-fade-in-up 0.3s ease forwards;
+          }
           body.loading{
-            opacity: 0;
-            -webkit-transition: opacity 0.7s ease ;
-            -o-transition: opacity 0.7s ease ;
-            transition: opacity 0.7s ease ;
+            animation: page-fade-in-up-out 0.5s ease forwards;
           }
           body{
-            -webkit-transition: opacity 0.15s ease ;
-            -o-transition: opacity 0.15s ease ;
-            transition: opacity 0.15s ease ;
-            opacity: 100;
+            opacity: 0;
+          }
+          @keyframes page-fade-in-up {
+            0% {
+              opacity: 0; }
+
+            100% {
+              opacity: 1; } 
+          }
+          @keyframes page-fade-in-up-out {
+            0% {
+              opacity: 1; }
+
+            100% {
+              opacity: 0; } 
           }
         </style>
         <noscript>
           <style>
-            body.loading{
-            opacity: 100 !important;
-          }
+            body{
+              opacity: 100 !important;
+            }
           </style>
         </noscript>
     </head>
-    <body class="loading gridlock shifter-left {{ template | handleize }} js-slideout-toggle-wrapper">
+    <body class="gridlock shifter-left {{ template | handleize }} js-slideout-toggle-wrapper">
         <div class="js-slideout-overlay site-overlay"></div>
         {% if settings.ajax_cart_method == 'drawer' %}
             {% render 'timber-cart' %}
@@ -288,13 +299,10 @@
    
   </script>
   <script>
-    setTimeout(()=>{
-      document.body.classList.remove('loading')
-    },15)
-    window.onbeforeunload = function(event) {
-      document.body.classList.add('loading')
-    }
 
+    window.addEventListener('beforeunload', (event) => {
+      document.body.classList.add('loading')
+    });
   </script>
 
         <!-- **BEGIN** Hextom USB Integration // Main Include - DO NOT MODIFY -->
