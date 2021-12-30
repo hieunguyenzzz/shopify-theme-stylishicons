@@ -724,6 +724,10 @@
   padding-bottom: 100%;
 }
 
+.tw-pb-16 {
+  padding-bottom: 4rem;
+}
+
 .tw-text-left {
   text-align: left;
 }
