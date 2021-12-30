@@ -4,12 +4,7 @@
     {% for media in product.media %}
         <li class="keen-slider__slide keen-slider-{{id}}-keen-slider__slide">
             <a target="_blank" class="tw-flex tw-cursor-[zoom-in] tw-z-20 tw-justify-center tw-items-center tw-absolute tw-inset-0 tw-w-full tw-h-full" data-fancybox="product-{{ product.id }}" title="click to zoom-in" href="{{ media | img_url: '2400x' }}" itemprop="contentUrl" tabindex="-1"></a>
-            <div class="">
-                <img id="{{ product.id }}" class="product__image tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-contain lazyload lazyload-fade" src="{{ media | img_url: '800x' }}" data-src="{{ img_url }}" data-sizes="auto" data-zoom-src="{{ media | img_url: '2400x' }}" data-aspectratio="{{ media.preview_image.aspect_ratio }}" alt="{{ media.alt | escape }}">
-            </div>
-            <noscript>
-                <img id="{{ product.id }}" class="product-main-image" src="{{ featured_media | img_url: '800x' }}" alt='{{ media.alt | escape }}'/>
-            </noscript>
+            {% render '[image]' image:media class: '' layout:'fill' %}
         </li>
 
     {% endfor %}
@@ -17,13 +12,11 @@
 
 {% capture dots %}
     {% for media in product.media %}
-        <div class="dot tw-border-none lg:tw-border lg:tw-border-solid tw-border-current hover:tw-border-black lg:tw-bg-transparent tw-bg-current  tw-w-[5px] tw-h-[5px] tw-rounded-full lg:tw-w-[54px] lg:tw-h-[31px] lg:tw-rounded-none">
+        <div class="dot tw-border-none lg:tw-border lg:tw-border-solid tw-border-current hover:tw-border-black lg:tw-bg-transparent tw-bg-current  tw-w-[5px] tw-h-[5px] tw-rounded-full lg:tw-w-[54px] lg:tw-h-[31px] lg:tw-rounded-none tw-relative">
             <div class="tw-hidden lg:tw-block tw-w-full tw-h-full">
-                <img class="tw-w-full tw-h-full product__image tw-object-contain" src="{{ media | img_url: '150x' }}" data-src="{{ img_url }}" data-sizes="auto" data-image-id="{{ media.id }}" alt="{{ media.alt | escape }}">
+                {% render '[image]' image:media class: '' layout:'fill' image_size:'50x' %}
             </div>
-            <noscript>
-                <img src="{{ media | img_url: '100x' }}" alt="{{ media.alt | escape }}"/>
-            </noscript>
+           
         </div>
     {% endfor %}
 {% endcapture %}
@@ -35,12 +28,7 @@
             {% if optionStr == mediaAlt %}
                 <li class="keen-slider__slide keen-slider-{{id}}-keen-slider__slide tw-relative">
                     <a target="_blank" class="tw-flex tw-cursor-[zoom-in] tw-z-20 tw-justify-center tw-items-center tw-absolute tw-inset-0 tw-w-full tw-h-full" data-fancybox="product-{{ product.id }}" title="click to zoom-in" href="{{ media | img_url: '2400x' }}" itemprop="contentUrl" tabindex="-1"></a>
-                    <div class="">
-                        <img class="product__image tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-contain lazyload lazyload-fade" src="{{ media | img_url: '800x' }}" data-src="{{ img_url }}" data-sizes="auto" data-zoom-src="{{ media | img_url: '2400x' }}" data-aspectratio="{{ media.preview_image.aspect_ratio }}" alt="{{ media.alt | escape }}">
-                    </div>
-                    <noscript>
-                        <img class="product-main-image" src="{{ featured_media | img_url: '800x' }}" alt='{{ media.alt | escape }}'/>
-                    </noscript>
+                    {% render '[image]' image:media class: '' layout:'fill' %}
                 </li>
             {% endif %}
         {% endfor %}
@@ -49,13 +37,10 @@
         {% for media in product.media %}
             {% assign mediaAlt = media.alt | strip %}
             {% if optionStr == mediaAlt %}
-                <div class="dot tw-border-none lg:tw-border lg:tw-border-solid tw-border-current hover:tw-border-black lg:tw-bg-transparent tw-bg-current  tw-w-[5px] tw-h-[5px] tw-rounded-full lg:tw-w-[54px] lg:tw-h-[31px] lg:tw-rounded-none">
+                <div class="dot tw-border-none lg:tw-border lg:tw-border-solid tw-border-current hover:tw-border-black lg:tw-bg-transparent tw-bg-current  tw-w-[5px] tw-h-[5px] tw-rounded-full lg:tw-w-[54px] lg:tw-h-[31px] lg:tw-rounded-none tw-relative">
                     <div class="tw-hidden lg:tw-block tw-w-full tw-h-full">
-                        <img class="tw-w-full tw-h-full product__image tw-object-contain" src="{{ media | img_url: '150x' }}" data-src="{{ img_url }}" data-sizes="auto" data-image-id="{{ media.id }}" alt="{{ media.alt | escape }}">
+                        {% render '[image]' image:media class: '' layout:'fill' image_size:'50x' %}
                     </div>
-                    <noscript>
-                        <img src="{{ media | img_url: '100x' }}" alt="{{ media.alt | escape }}"/>
-                    </noscript>
                 </div>
             {% endif %}
         {% endfor %}
@@ -67,7 +52,7 @@
         {% assign id = section.id %}
 {% endif %}
 <div class="tw-relative tw-py-6">
-    <div class="tw-relative lg:tw-h-[440px] tw-h-[340px] tw-overflow-hidden tw--mx-4 sm:tw--mx-8 md:tw-pb-0 lg:tw-mx-0">
+    <div class="tw-relative lg:tw-h-[440px] sm:tw-h-[280px] md:tw-h-[340px] tw-overflow-hidden tw--mx-4 sm:tw--mx-8 tw-pb-[100%] md:tw-pb-0 lg:tw-mx-0">
         <div class="keen-slider tw-absolute md:tw-relative tw-inset-0 tw-w-full tw-h-full" id="keen-slider-{{id}}">
             {{items}}
         </div>
@@ -107,6 +92,7 @@
     }
 
     .keen-slider>* {
+        position: relative;
         width: 100%;
         min-height: 100%;
         flex-shrink: 0;

@@ -3422,10 +3422,16 @@ theme.Header = (function() {
 		});
 
 		searchTrigger.addEventListener('click', function (event) {
+      event.preventDefault();
+      event.stopPropagation();
 			searchReveal.classList.add("searchreveal--show");
+      document.querySelector("#search_reveal #q").focus();
 		});
     searchMobileTrigger.addEventListener('click', function (event) {
+      event.preventDefault();
+      event.stopPropagation();
 			searchReveal.classList.add("searchreveal--show");
+      document.querySelector("#search_reveal #q").focus();
 		});
 		makeNavigationSticky();
 		theme.a11yHelpers.setUpAriaExpansion();
