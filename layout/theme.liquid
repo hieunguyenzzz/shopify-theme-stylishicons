@@ -288,9 +288,9 @@
    
   </script>
   <script>
-    window.addEventListener('DOMContentLoaded', (event) => {
-        document.body.classList.remove('loading')
-    });
+    setTimeout(()=>{
+      document.body.classList.remove('loading')
+    },15)
     window.onbeforeunload = function(event) {
       document.body.classList.add('loading')
     }
