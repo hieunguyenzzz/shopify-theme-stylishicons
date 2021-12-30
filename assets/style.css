@@ -116,6 +116,10 @@
   top: 380px;
 }
 
+.tw-top-\[calc\(100\%-60px\)\] {
+  top: calc(100% - 60px);
+}
+
 .tw-isolate {
   isolation: isolate;
 }
@@ -1665,6 +1669,10 @@
 @media (min-width: 768px) {
   .md\:tw-relative {
     position: relative;
+  }
+
+  .md\:tw-top-\[380px\] {
+    top: 380px;
   }
 
   .md\:tw-h-\[340px\] {
