@@ -303,6 +303,9 @@
     window.addEventListener('beforeunload', (event) => {
       document.body.classList.add('loading')
     });
+    window.onpopstate = function(event) {
+      document.body.classList.remove('loading')
+    };
   </script>
 
         <!-- **BEGIN** Hextom USB Integration // Main Include - DO NOT MODIFY -->
