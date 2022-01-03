@@ -16,7 +16,9 @@
     <a href="{{ routes.cart_url }}" class="site-header__cart-toggle js-drawer-open-right tw-relative" aria-controls="CartDrawer" aria-expanded="false">
       <span class="cart-words">{{ 'cart.general.title' | t }}</span>
       &nbsp;<i class="icon icon-cart" aria-hidden="true"></i>
-      <span class="tw-absolute tw-top-0 tw-leading-loose tw-right-0 tw-badge tw-badge-xs tw-h-[1.2em] tw-transform tw-translate-x-1/2 tw--translate-y-1/3">{{ cart.item_count }}</span>
+      <span class="CartCount tw-absolute tw-top-0 tw-leading-loose tw-right-0 tw-badge tw-badge-xs tw-h-[1.2em] tw-transform tw-translate-x-1/2 tw--translate-y-1/3 empty:tw-hidden">{% if cart.item_count > 0 %}
+        {{ cart.item_count }}
+      {% endif %}</span>
     </a>
   </li>
 </ul>

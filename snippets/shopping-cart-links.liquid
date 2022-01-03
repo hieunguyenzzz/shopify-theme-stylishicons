@@ -96,7 +96,9 @@
     <a href="{{ routes.cart_url }}" {% if settings.ajax_cart_method == 'drawer' %} class="site-header__cart-toggle js-drawer-open-right" aria-controls="CartDrawer" aria-expanded="false" {% endif %}>
         <span class="cart-words"></span>
         &nbsp;<i aria-hidden="true" class="icon icon-cart"></i>
-        <span class="CartCount tw-badge tw-badge-sm">{{ cart.item_count }}</span>
+        <span class="CartCount tw-badge tw-badge-sm empty:tw-hidden">{% if cart.item_count >0  %}
+            {{ cart.item_count }}
+        {% endif %}</span>
         &nbsp;<span class="CartCost tw-hidden">{{ cart.total_price | money }}</span>
     </a>
 </li>
