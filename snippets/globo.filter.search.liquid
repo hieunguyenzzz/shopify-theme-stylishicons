@@ -54,7 +54,7 @@
               <div class="gf-search-right">
                 <div class="gf-search-item-product-title">{{product.title}}</div>
                                 {% if product.vendor %}
-                <div class="gf-search-item-product-vendor">{{product.vendor}}</div>
+                <div class="gf-search-item-product-vendor">{{product.metafields.global['inspired-of'] |default:product.vendor}}</div>
                 {% endif %}
                                                                               </div>
             </a>
