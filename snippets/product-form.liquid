@@ -2,19 +2,26 @@
 
 
 
-{% assign featuredShowexpress = true %}
+{% assign featuredShowexpress = false %}
+{% for variant in product.variants %}
+  {% if variant.metafields.global.in-stock == true %}
+    {% assign featuredShowexpress = true %}
+  {% endif %}
+{% endfor %}
 <input type="hidden" name="product_url" id="product_url" value="{{ product.title | handle }}">
   {% form 'product', product, id: "AddToCartForm", class: "product_form", data-product-form:product_form_config, data-product-id: product.id %}
 
     {% render 'product-price', variant: current_variant, product: product %}
 <!--   <a class="sprs" href="#product-reviews"> <span class="shopify-product-reviews-badge" data-id="{{ product.id }}">    </span></a> -->
 {% if featuredShowexpress %}
-<label class="tw-alert tw-rounded-none tw-alert-sm tw-clear-both">
-  <div class="tw-flex-1 tw-text-sm">
-    <div>Show Express Delivery Options
+<label class="tw-alert tw-rounded-none tw-alert-sm tw-clear-both ">
+  <div class="tw-flex-1 tw-flex tw-w-full">
+    <div class="tw-flex-1 tw-text-xs md:tw-text-sm">
+      <div>Show Express Delivery Options
+      </div>
     </div>
+    <input id="showExpress" type="checkbox" class="tw-toggle tw-toggle-sm md:tw-toggle-md">
   </div>
-  <input id="showExpress" type="checkbox" class="tw-toggle">
 </label>
 <style>
   .show-outstock input[data-in-stock="false"]+label{
