@@ -71,13 +71,9 @@
           handleShowExpressDeliveryOptions()
         })
       }
-      let current = document.querySelector(`[data-in-stock="true"][value="${optionSelectors.variantIdField.value}"]`)
+      let current =document.querySelector(`[data-in-stock="true"]`)
       if(!current){
-        current = document.querySelector(`[data-in-stock="true"]`)
-        if(!current){
-          current=document.querySelector(`[data-in-stock]`)
-        }
-        
+        current =document.querySelector(`[data-in-stock]`)
       }
       const variantId = current.value
       optionSelectors.selectVariant(variantId)
