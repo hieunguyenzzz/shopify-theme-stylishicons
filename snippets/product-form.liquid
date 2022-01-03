@@ -2,11 +2,13 @@
 
 
 
+{% assign featuredShowexpress = true %}
 <input type="hidden" name="product_url" id="product_url" value="{{ product.title | handle }}">
   {% form 'product', product, id: "AddToCartForm", class: "product_form", data-product-form:product_form_config, data-product-id: product.id %}
 
     {% render 'product-price', variant: current_variant, product: product %}
 <!--   <a class="sprs" href="#product-reviews"> <span class="shopify-product-reviews-badge" data-id="{{ product.id }}">    </span></a> -->
+{% if featuredShowexpress %}
 <label class="tw-alert tw-rounded-none tw-alert-sm tw-clear-both">
   <div class="tw-flex-1 tw-text-sm">
     <div>Show Express Delivery Options
@@ -81,6 +83,8 @@
 
   })
 </script>
+{% endif %}
+
 
 {% if product.options.size > 1 %}
      <div class="select" {% if product.variants.size == 1 or section.settings.product_variants == 'swatches' %}style="display: none;"{% endif %}>
