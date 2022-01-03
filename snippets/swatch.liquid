@@ -28,7 +28,9 @@ choose colours" | split: ", " %}
 
   {% assign available = false %}
 
+  {%- comment -%}
   <!-- Checking Availability -->
+  {%- endcomment -%}
   {% for variant in product.variants %}
   {% unless variant.available %}
   {% continue %}
@@ -48,8 +50,9 @@ choose colours" | split: ", " %}
 
   {% assign available = true %}
   {% endfor %}
-
-  <!-- Building Variant Image -->
+{%- comment -%}
+<!-- Building Variant Image -->
+{%- endcomment -%}
   {% for variant in product.variants %}
   {% unless variant[current_option] == value %}
   {% continue %}
@@ -68,6 +71,7 @@ choose colours" | split: ", " %}
   {% if variant.image %}
   {% assign variant_image_url = variant.image | img_url: '1000x' %}
   {% endif %}
+  {% assign inventory_quantity = variantinventory_quantity %}
   {% endfor %}
 
   {% assign checked = "" %}
@@ -113,9 +117,9 @@ choose colours" | split: ", " %}
     </label>
   </div>
   {% elsif material_swatch_options contains option_name %}
-    <div class="swatch-element tw-w-full tw-bg-gray-100 !tw-m-0 {% unless available %} soldout {% endunless %}">
+    <div class="swatch-element tw-w-full  !tw-m-0 {% unless available %} soldout {% endunless %}">
       {{ radio_button }}
-      <label class="tw-w-full tw-text-center" for="{% if template == 'product.quick' %}qv-{% endif %}{{ id }}">
+      <label class="tw-w-full tw-bg-gray-100 tw-text-center" for="{% if template == 'product.quick' %}qv-{% endif %}{{ id }}">
         {{ value }}
         {{ sold_out_image }}
       </label>

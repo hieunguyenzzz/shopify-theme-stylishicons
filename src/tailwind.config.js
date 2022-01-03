@@ -15,6 +15,7 @@ module.exports = {
     },
   },
   plugins: [
+    require("daisyui"),
     require('@tailwindcss/typography'),
     require('tailwindcss-animatecss')({
       classes: ['animate__animated', 'animate__fadeIn','animate__fadeInDown','animate__fadeInUp', 'animate__bounceIn'],
@@ -24,4 +25,9 @@ module.exports = {
       variants: ['responsive', 'hover', 'reduced-motion'],
     }),
   ],
+  daisyui: {
+    themes: [
+      "light", // first one will be the default theme
+    ],
+  },
 }

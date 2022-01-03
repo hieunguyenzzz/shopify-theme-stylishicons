@@ -1,5 +1,6 @@
-@import "tailwindcss/utilities";
+@import "tailwindcss/base";
 @import "tailwindcss/components";
+@import "tailwindcss/utilities";
 @import "tailwindcss/variants";
 
 svg:not(:root), symbol, image, marker, pattern, foreignObject {

@@ -42,9 +42,9 @@
                                         text-align: center;
                                     ">
                                 {% if block.settings.image != blank %}
-                                    <img src="{{ block.settings.image | img_url: '50x' }}" alt="{{ block.settings.image.alt }}">
+                                    <img class="tw-inline" src="{{ block.settings.image | img_url: '50x' }}" alt="{{ block.settings.image.alt }}">
                                     <noscript>
-                                        <img src="{{ block.settings.image | img_url: '50x' }}" alt="{{ block.settings.image.alt }}">
+                                        <img class="tw-inline" src="{{ block.settings.image | img_url: '50x' }}" alt="{{ block.settings.image.alt }}">
                                     </noscript>
                                 {% else %}
                                     <div class="onboard">

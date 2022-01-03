@@ -1615,7 +1615,7 @@ theme.ProductForm = function (context, sectionId, events, Product) {
     var prodSelector = sectionId + "-product-select-" + Product.id;
   }
 
-  new Shopify.OptionSelectors(prodSelector, {
+  window.optionSelectors= new Shopify.OptionSelectors(prodSelector, {
     product: Product,
     onVariantSelected: function(variant, selector) {
       // console.log({variant, selector})
@@ -1634,7 +1634,6 @@ theme.ProductForm = function (context, sectionId, events, Product) {
       if ( Product.variants.length == 1 ) {
         return;
       }
-
       events.trigger("variantchange", variant);
       events.trigger("variantchange:option1:" + variant.option1);
       events.trigger("variantchange:option2:" + variant.option2);
@@ -3320,8 +3319,13 @@ theme.StoreAvailability = (function() {
       container.querySelector('.store-availability-container').style.display = "block";
 
       Events.on("storeavailability:unavailable", function() {
-        container.querySelector('.store-availability-container').classList.add('fadeOut')
-        container.querySelector('.store-availability-container').style.display = "none";
+        try {
+          container.querySelector('.store-availability-container').classList.add('fadeOut')
+          container.querySelector('.store-availability-container').style.display = "none";
+        } catch (error) {
+          console.error(error)
+        }
+       
       });
 
       // If no active pickup locations hide container and stop function
