@@ -1615,7 +1615,7 @@ theme.ProductForm = function (context, sectionId, events, Product) {
     var prodSelector = sectionId + "-product-select-" + Product.id;
   }
 
-  new Shopify.OptionSelectors(prodSelector, {
+  window.optionSelectors= new Shopify.OptionSelectors(prodSelector, {
     product: Product,
     onVariantSelected: function(variant, selector) {
       // console.log({variant, selector})
@@ -1634,7 +1634,6 @@ theme.ProductForm = function (context, sectionId, events, Product) {
       if ( Product.variants.length == 1 ) {
         return;
       }
-
       events.trigger("variantchange", variant);
       events.trigger("variantchange:option1:" + variant.option1);
       events.trigger("variantchange:option2:" + variant.option2);
