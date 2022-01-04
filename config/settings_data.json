@@ -4634,7 +4634,7 @@
           "products_per_page": 48,
           "infinite_scroll": false,
           "description_position": "top_description",
-          "filter_position": "top_filters",
+          "filter_position": "left_sidebar",
           "is_sticky": true,
           "filter_bg_color": "#ffffff",
           "filter_border_color": "#ededed",
@@ -4897,9 +4897,7 @@
         "type": "product-recommendations",
         "settings": {
           "show_product_recommendations": true,
-          "product_recommendations_heading": "People Also Bought",
-          "limit": 4,
-          "show_recommendations_vendor": false
+          "product_recommendations_heading": "People Also Bought"
         }
       },
       "page-custom-one": {
