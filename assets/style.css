@@ -2513,6 +2513,11 @@ html {
   background-color: currentColor;
 }
 
+.tw-bg-base-100 {
+  --tw-bg-opacity: 1;
+  background-color: hsla(var(--b1) / var(--tw-bg-opacity));
+}
+
 .tw-bg-opacity-50 {
   --tw-bg-opacity: 0.5;
 }
