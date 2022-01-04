@@ -4634,7 +4634,7 @@
           "products_per_page": 48,
           "infinite_scroll": false,
           "description_position": "top_description",
-          "filter_position": "left_sidebar",
+          "filter_position": "top_filters",
           "is_sticky": true,
           "filter_bg_color": "#ffffff",
           "filter_border_color": "#ededed",
