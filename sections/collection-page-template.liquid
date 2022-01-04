@@ -35,11 +35,7 @@
 
                     <div class="{% if section.settings.filter_position == 'left_sidebar' %}desktop-9 span-9{% else %}desktop-12 span-12{% endif %} tablet-6 mobile-3">
                         {% if section.settings.description_position == 'top_description' and collection.description != blank %}
-                            <div id="collection-description">
-                                <div class="rte">
-                                    {{ collection.description | remove: "[banner]"  | strip_html }}
-                                </div>
-                            </div>
+                            {% render '[description]-collapse' description:collection.description  class: '' %}
                         {% endif %}
 
                         {% if section.blocks.size != 0 %}

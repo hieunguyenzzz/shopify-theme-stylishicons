@@ -99,7 +99,7 @@
         <div style="{% assign animationcount = animationcount | plus :1 %}--delay-animation: {{animationcount | times:75  }}ms" class=" animation-delay mobile-menu__block mobile-menu__cart-status" {{ block.shopify_attributes }}>
           <a class="mobile-menu__cart-icon" href="{{ routes.cart_url }}">
             {{ 'cart.general.title' | t }}
-            <span class="mobile-menu__cart-count CartCount">{{ cart.item_count }}</span>
+            <span class="mobile-menu__cart-count CartCount tw-badge">{{ cart.item_count }}</span>
               <i class="la la-shopping-cart" aria-hidden="true"></i>
           </a>
         </div>
