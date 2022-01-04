@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html class="no-js" lang="en">
+{% comment %}ly_liquid_scripts_begin{% endcomment %}{% capture ly_liquid_content %}{% comment %}ly_liquid_scripts_end{% endcomment %}<!DOCTYPE html>
+<html class="no-js" lang="en"{% comment %}ly_dir_replace_for_[]_begin{% endcomment %} {%- assign language_code = '_' | append: request.locale.iso_code -%}{%- if '_ar_he_fa_ur' contains language_code -%}dir="rtl" {%- endif -%}{% comment %}ly_dir_replace_end{% endcomment %}>
     <head><!-- <bablic_snippet> --><script src="//d.bablic.com/snippet/60c0a4cded07dc00010fb888.js?version=4.0"></script><!-- </bablic_snippet> -->
         <meta charset="utf-8"/>
         <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -117,7 +117,7 @@
             }
           </style>
         </noscript>
-    </head>
+    {% comment %}ly_dir_styles_begin{% endcomment %}{%- assign language_code = '_' | append: request.locale.iso_code -%}{%- if '_ar_he_fa_ur' contains language_code -%}{{- 'ly-rtl.css' | asset_url | stylesheet_tag -}}{%- endif -%}{% comment %}ly_dir_styles_end{% endcomment %}</head>
     <body class="gridlock shifter-left {{ template | handleize }} js-slideout-toggle-wrapper">
         <div class="js-slideout-overlay site-overlay"></div>
         {% if settings.ajax_cart_method == 'drawer' %}
@@ -311,5 +311,5 @@
         <!-- **BEGIN** Hextom USB Integration // Main Include - DO NOT MODIFY -->
         {% render 'hextom_usb_main', product: product, customer: customer %}
         <!-- **END** Hextom USB Integration // Main Include - DO NOT MODIFY -->
-    </body>
+    <!-- langify-v2-scripts-begin -->{% comment %}ly_liquid_scripts_begin{% endcomment %}{% endcapture %}{% render 'ly-liquid-scripts' content: ly_liquid_content %}{% comment %}ly_liquid_scripts_end{% endcomment %}{% comment %}ly_core_scripts_begin{% endcomment %}{% render 'ly-core-scripts' %}{% comment %}ly_core_scripts_end{% endcomment %}{% comment %}ly_switcher_factory_begin{% endcomment %}{% render 'ly-switcher-factory' %}{% comment %}ly_switcher_factory_end{% endcomment %}<!-- langify-v2-scripts-end --></body>
 </html>
