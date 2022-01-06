@@ -1096,7 +1096,99 @@
         "stock_problems_html": "Ett eller flera objekt är inte längre tillgängliga. Vi har gett en <a href='%{link}'>Uppdaterad kundvagn<\/a>.",
         "changed": "Varukorg ändras",
         "items_changed": "Ett eller flera objekt har ändrats.",
-        "product_sold_out": "Produkten '%{name}\"är redan såld."
+        "product_sold_out": "Produkten '%{name}\"är redan såld.",
+        "variant_not_found": "Kan inte hitta variant",
+        "variant_requires_selling_plan": "Variant kan endast köpas med en försäljningsplan.",
+        "selling_plan_not_applicable": "Det går inte att tillämpa sälja planen variant",
+        "shipping_address_not_required": "Denna vagn kräver inte sjöfarten",
+        "shipping_address_invalid": "Det fanns ett problem att beräkna dina fraktkostnader. Fortsätt till kassan för att välja en fraktkostnad innan du slutför din beställning."
+      },
+      "storefront": {
+        "invalid_password": "Lösenord felaktig, försök igen."
+      },
+      "tags": {
+        "add_articles": "Begränsa sökningen till artiklar som också har tagg %{tag}",
+        "add_products": "Smalt urval produkter matcha tag %{tag}",
+        "remove_articles": "Bredda sökningen till artiklar som inte är märkta %{tag}",
+        "remove_products": "Ta bort taggen %{tag}"
+      }
+    },
+    "email_marketing": {
+      "subscribed": {
+        "confirmation": "Tack för att du prenumererar på vårt nyhetsbrev.",
+        "disclaimer": "Du kan avbryta prenumerationen när som helst.",
+        "unsubscribe": "Säga upp"
+      },
+      "unsubscribed": {
+        "confirmation": "Du har avslutat prenumerationen på vår e-postlista.",
+        "disclaimer": "Du kommer inte att få några mer marknadsföring uppdateringar från oss. Du kan prenumerera på nytt när som helst.",
+        "preview": "Du förhandsgranska vad kunderna ser när de avbeställa."
+      },
+      "open_tracking": {
+        "opt_in": {
+          "opted_in_html": "<b>Du har valt till e-post öppna spårning.<\/b>",
+          "visibility": "E-post open priser kommer att rapporteras anonymt. Vi kommer bara att se om du har öppnat en e-post som en del av en aggregerad e öppen kurs.",
+          "opt_out_html": "Du kan <a style='text-decoration:underline;' href='%{link}'>opt out<\/a> e-post open tracking om du inte vill dela denna information.",
+          "preview_bar": "Du förhandsgranska vad kunderna kommer att se när de väljer att e-post öppna spårning."
+        },
+        "opt_out": {
+          "opted_out_html": "<b>Du har valt bort e-post open tracking.<\/b>",
+          "visibility": "Vi kommer inte att se om du har öppnat våra e-post.",
+          "opt_in_html": "<a style='text-decoration:underline;' href='%{link}'>opt in<\/a> till e-post öppna spårning.",
+          "preview_bar": "Du förhandsgranska vad kunderna ser när de väljer ut e-post open tracking."
+        },
+        "no_longer_track": {
+          "status_html": "<b>Vi har inte längre spåra någon e-post öppnas.<\/b>",
+          "privacy_policy": "Efter detta e-postmeddelande skickades uppdaterade vi vår sekretesspolicy och vi inte längre spår öppnas."
+        },
+        "track": {
+          "status_html": "<b>E-post open tracking rapporteras.<\/b>",
+          "visibility": "Vi kommer bara att se om du har öppnat e-post, som en del av den totala e öppen kurs."
+        },
+        "updated_policy": {
+          "status_html": "<b>E-post open tracking rapporteras.<\/b>",
+          "visibility": "Vi har uppdaterat vår policy och nu spåra e-post öppnas. E-post open priser kommer att rapporteras anonymt. Vi kommer bara att se om du har öppnat en e-post som en del av den totala e öppen kurs.",
+          "opt_out_html": "Om du inte vill dela denna information kan du <a style='text-decoration:underline;' href='%{link}'>säga upp.<\/a>"
+        }
+      }
+    },
+    "filters": {
+      "availability": {
+        "label": "Tillgänglighet",
+        "value": {
+          "in_stock": "I lager",
+          "out_of_stock": "Slut i lager"
+        }
+      },
+      "vendor": {
+        "label": "varumärke"
+      },
+      "price": {
+        "label": "Pris"
+      },
+      "product_type": {
+        "label": "Produkttyp"
+      }
+    },
+    "search": {
+      "sorting": {
+        "relevance": "Relevans",
+        "price_ascending": "Pris, lågt till högt",
+        "price_descending": "Pris, högt till lågt"
+      }
+    },
+    "page_titles": {
+      "blog_or_article_with_error": "fel - %{title}",
+      "products": "Produkter",
+      "shopping_cart": "din kundvagn",
+      "account": "konto",
+      "create_account": "Skapa konto",
+      "reset_account": "Återställ Account",
+      "addresses": "adresser",
+      "order": "Beställa %{name}",
+      "search": "Sök",
+      "search_results": {
+        "one": "Sök: %{count} hittade för \"%{terms}\""
       }
     }
   }
