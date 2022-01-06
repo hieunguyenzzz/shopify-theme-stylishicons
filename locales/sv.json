@@ -1267,7 +1267,73 @@
   },
   "store_availability": {
     "general": {
-      "view_store_info": "Visa lagerinformation"
+      "view_store_info": "Visa lagerinformation",
+      "check_other_stores": "Kontrollera tillgängligheten på andra butiker",
+      "pick_up_available": "Pickup tillgänglig",
+      "pick_up_currently_unavailable": "Pickup för närvarande inte tillgänglig",
+      "pick_up_available_at_html": "Pickup tillgänglig på <strong>{{ location_name }}<\/strong>",
+      "pick_up_unavailable_at_html": "Pickup för närvarande inte tillgänglig på <strong>{{ location_name }}<\/strong>"
+    }
+  },
+  "cart": {
+    "general": {
+      "title": "Min vagn",
+      "summary": "Sammanfattning",
+      "close_cart": "Stänga",
+      "shipping": "Frakt",
+      "tax": "Beskatta",
+      "at_checkout": "Beräknat vid kassan",
+      "empty": "Din varukorg är tom.",
+      "product": "Produkt",
+      "price": "Pris",
+      "qty": "Qty",
+      "remove": "Ta bort",
+      "total": "Total",
+      "subtotal": "Delsumma",
+      "continue": "Fortsätt handla",
+      "update": "Uppdatera kundvagn",
+      "checkout": "Kolla upp",
+      "note": "Beställ specialanvisningar",
+      "recently_viewed": "Du tittade också på",
+      "cart_discount": "Rabattkod (tillämpad vid kassan)",
+      "free_shipping_before": "Du är bara",
+      "free_shipping_after": "Bort från gratis inrikes frakt!",
+      "free_shipping_qualified": "Din beställning kvalificerar sig till gratis inrikes frakt!",
+      "free_shipping_exclusions": "(Exkluderar internationellt)",
+      "discounts": "Rabatter",
+      "savings": "Totala besparingar",
+      "discount_applied": "Rabatt tillämpas!",
+      "items": "Artikel (er)"
+    }
+  },
+  "collections": {
+    "general": {
+      "all_collections": "Samlingar",
+      "all_products": "Alla produkter",
+      "no_matches": "Det finns inga föremål i den här samlingen",
+      "shop_by_designer": "Shop av Designer"
+    },
+    "sorting": {
+      "title": "Sortera efter",
+      "featured": "Presenteras",
+      "best_selling": "Bästsäljare",
+      "az": "Alfabetiskt, A-Z",
+      "za": "Alfabetiskt, z-a",
+      "price_ascending": "Pris, lågt till högt",
+      "price_descending": "Pris, högt till lågt",
+      "date_descending": "Datum, ny till gammal",
+      "date_ascending": "Datum, gammal till ny"
+    },
+    "filter": {
+      "filtering_by": "Filtrering av:",
+      "refine": "Förfina"
+    }
+  },
+  "contact": {
+    "form": {
+      "name": "namn",
+      "firstname": "Förnamn",
+      "lastname": "Efternamn"
     }
   }
 }
