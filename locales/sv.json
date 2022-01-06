@@ -1029,7 +1029,75 @@
       "invalid_format": "format är inte giltigt",
       "expired": "har löpt ut",
       "invalid_start_date_or_issue_number_for_debit": "ett giltigt startdatum eller löpnummer krävs",
-      "invalid_expiry_year": "är inte ett giltigt utgångs år"
+      "invalid_expiry_year": "är inte ett giltigt utgångs år",
+      "reset_password_html": "Här e-postadressen är redan kopplad till ett konto. Om detta konto är ditt, kan du <a href=\"\/account\/login#recover\">Återställ ditt lösenord<\/a>",
+      "verify_email": "Vi har skickat ett e-postmeddelande till %{customer_email}, Klicka på länken med för att bekräfta din e-postadress."
+    },
+    "notices": {
+      "customer": {
+        "password_reset_error": "Lösenordsåterställningsfel",
+        "no_account_found": "Inget konto hittat med det e-postmeddelandet.",
+        "invalid_credentials": "Felaktig e-postadress eller lösenord.",
+        "denylisted_reset_password": "Ditt konto kunde inte nås eftersom det aktuella lösenordet inte är säkert. Du kommer att få ett mail för att uppdatera ditt lösenord."
+      },
+      "address": {
+        "updated": "Framgångsrikt uppdaterad adress.",
+        "error_updating": "Fel Uppdatering Adress",
+        "created": "Framgångsrikt skapad adress",
+        "error_creating": "Fel att skapa adress.",
+        "deleted": "Framgångsrikt raderad adress",
+        "error_deleting": "Fel raderingsadress."
+      },
+      "order": {
+        "not_available": "Denna order är inte tillgänglig",
+        "financial_status": {
+          "authorized": "Auktoriserad",
+          "pending": "I väntan på",
+          "paid": "Betalt",
+          "unpaid": "Obetald",
+          "voided": "Voided",
+          "partially_paid": "Delvis betald",
+          "partially_refunded": "Delvis återbetalas",
+          "refunded": "Återbetalas",
+          "expired": "Upprörd"
+        },
+        "fulfillment_status": {
+          "fulfilled": "Uppfylld",
+          "complete": "Komplett",
+          "partial": "Partiell",
+          "unfulfilled": "Ouppfylld",
+          "restocked": "Restrockad"
+        },
+        "transaction_status": {
+          "success": "Framgång",
+          "pending": "I väntan på",
+          "failure": "Fel",
+          "error": "Fel"
+        },
+        "cancel_reason": {
+          "declined": "Betalning Nekad",
+          "inventory": "Objekt otillgängliga",
+          "fraud": "Bedräglig ordning",
+          "customer": "Kunden ändras \/ avbokad order",
+          "other": "Övrig"
+        },
+        "cash_on_delivery": "Postförskott (COD)"
+      },
+      "cart": {
+        "only_n_items_available": "Du kan bara lägga till %{count} %{name} till vagnen.",
+        "too_many_items_in_cart": "Du kan inte lägga till mer %{name} till vagnen.",
+        "all_items_in_cart": "Allt %{count} %{name} finns i din kundvagn.",
+        "empty_update": "Kan inte uppdatera tom vagn",
+        "missing_parameters": "Ingen giltig ID eller linjeparameter",
+        "generic_error": "Vagnsfel",
+        "too_many_line_items_error": "Din varukorg kan inte innehålla mer än %{max} objekt.",
+        "link_expired": "Länk har gått ut",
+        "link_no_longer_exists": "Länk finns inte längre.",
+        "stock_problems_html": "Ett eller flera objekt är inte längre tillgängliga. Vi har gett en <a href='%{link}'>Uppdaterad kundvagn<\/a>.",
+        "changed": "Varukorg ändras",
+        "items_changed": "Ett eller flera objekt har ändrats.",
+        "product_sold_out": "Produkten '%{name}\"är redan såld."
+      }
     }
   }
 }
