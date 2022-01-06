@@ -1188,8 +1188,86 @@
       "order": "Beställa %{name}",
       "search": "Sök",
       "search_results": {
-        "one": "Sök: %{count} hittade för \"%{terms}\""
+        "one": "Sök: %{count} hittade för \"%{terms}\"",
+        "other": "Sök: %{count} Resultat hittades för \"%{terms}\""
+      },
+      "collections": "Samlingar",
+      "not_found": "404 Ej Hittad",
+      "challenge": "Utmaning",
+      "checkpoint": "Kontrollstation"
+    },
+    "cart": {
+      "discounts_with_count": "%{count} Rabatter har tillämpats"
+    },
+    "challenge": {
+      "message": "För att fortsätta, låt oss veta att du inte är en robot.",
+      "error": "Ditt svar var inte korrekt, försök igen.",
+      "submit_button_text": "Skicka in"
+    },
+    "checkpoint": {
+      "message": "Lös captcha för att fortsätta",
+      "error": "CAPTCHA-validering misslyckades",
+      "submit_button_text": "Skicka in"
+    },
+    "store_availability": {
+      "pick_up_time": {
+        "one_hour": "Vanligtvis redo om 1 timme",
+        "two_hours": "Vanligtvis redo om 2 timmar",
+        "four_hours": "Vanligtvis redo om 4 timmar",
+        "twenty_four_hours": "Vanligtvis redo om 24 timmar",
+        "two_to_four_days": "Vanligtvis redo om 2-4 dagar",
+        "five_or_more_days": "Vanligtvis redo om 5 + dagar",
+        "zero_to_two_hours": "Vanligtvis redo om 2 timmar",
+        "two_to_four_hours": "Vanligtvis redo om 4 timmar",
+        "immediately": "Klar för hämtning nu",
+        "next_day": "Klar för hämtning nästa dag"
       }
+    }
+  },
+  "password": {
+    "general": {
+      "thanks": "Tack för att du gick med i vår lista",
+      "enter_store": "Logga in med lösenord:",
+      "password": "Lösenord",
+      "enter": "Stiga på",
+      "email_address": "E-postadress",
+      "submit": "Skicka in",
+      "powered": "Det här lagret kommer att drivas av"
+    }
+  },
+  "blogs": {
+    "article": {
+      "posted_on_date_html": "Inlämnat på <time datetime=\"{{ date }}\">{{ date }}<\/time>",
+      "tags": "Tagg",
+      "tagged": "Taggat",
+      "comments": "Kommentarer",
+      "read_more": "Läs mer"
+    },
+    "comments": {
+      "title": "Lämna en kommentar",
+      "name": "namn",
+      "email": "E-post",
+      "message": "Kommentar",
+      "moderated": "Alla bloggkommentarer kontrolleras före publicering",
+      "post": "Publicera kommentar",
+      "success_moderated": "Din kommentar publicerades framgångsrikt. Vi kommer att publicera det på ett tag, eftersom vår blogg är modererad.",
+      "success": "Din kommentar publicerades framgångsrikt! Tack!",
+      "comments_with_count": {
+        "one": "{{ count }} kommentar",
+        "other": "{{ count }} kommentarer"
+      }
+    },
+    "sidebar": {
+      "social_title": "Anslut med oss",
+      "twitter_title": "På Twitter",
+      "facebook_title": "Som vi på Facebook",
+      "recent_posts": "Senaste postorna",
+      "tags": "Filtrera artikel-etiketter"
+    }
+  },
+  "store_availability": {
+    "general": {
+      "view_store_info": "Visa lagerinformation"
     }
   }
 }
