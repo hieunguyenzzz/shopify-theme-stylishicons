@@ -34,5 +34,70 @@
     "accessibility": {
       "unit_price_separator": "per"
     }
+  },
+  "shopify": {
+    "sentence": {
+      "words_connector": ", ",
+      "two_words_connector": "och",
+      "last_word_connector": "och"
+    },
+    "checkout": {
+      "general": {
+        "page_title": "Kolla upp",
+        "error_page_title": "Fel",
+        "skip_to_content": "Hoppa till innehållet",
+        "breadcrumb": "Brödsmula",
+        "continue_button_label": "Fortsätta",
+        "complete_purchase_button_label": "Komplett beställning",
+        "pay_now_button_label": "Betala nu",
+        "authenticate_purchase_button_label": "Autentisera betalning",
+        "edit_link_label": "Redigera",
+        "all_rights_reserved": "Alla rättigheter förbehållna %{shop_name}",
+        "print_policies_link_label": "Skriva ut",
+        "cart": "Vagn",
+        "close_modal_label": "Stänga",
+        "close_notice_label": "Stänga",
+        "expand_notice_label": "Visa mer",
+        "continue_to_shipping_method": "Fortsätt att skicka",
+        "continue_to_payment_method": "Fortsätt till betalning",
+        "continue_to_review": "Granskningsorder",
+        "back_to_cart": "Återgå till kundvagnen",
+        "back_to_contact_information": "Återgå till information",
+        "back_to_shipping_method": "Återvända till frakt",
+        "back_to_payment_method": "Återgå till betalning",
+        "choose_shipping_method": "Välj en fraktmetod",
+        "choose_payment_method": "Välj en betalningsmetod",
+        "choose_billing_address": "Välj en fakturaadress",
+        "contact_us_html": "Kontakta oss för mer information",
+        "autocomplete_title": "Förslag",
+        "autocomplete_single_item": "1 objekt tillgängligt",
+        "autocomplete_multi_item": "{{number}} Tillgängliga föremål",
+        "autocomplete_selection": "{{number}} av {{total}}",
+        "autocomplete_close": "Stäng förslag",
+        "forwarding_indicator": {
+          "new_window": "Öppnas i ett nytt fönster.",
+          "external": "Öppnar extern hemsida.",
+          "external_and_new_window": "Öppnar extern hemsida i ett nytt fönster."
+        },
+        "checkout_context": {
+          "step_one": "%{shop_name} - Kolla upp"
+        },
+        "tooltip_accessibility_label": "Mer information"
+      },
+      "contact": {
+        "title": "Information",
+        "address_title": "Adress",
+        "shipping_address_title": "Leveransadress",
+        "delivery_option_title": "Leverans metod",
+        "contact_method_title": "Kontaktinformation",
+        "email_label": "E-post",
+        "email_placeholder": "E-post",
+        "email_or_phone_label": "E-post eller mobilnummer",
+        "email_or_phone_placeholder": "E-post eller mobilnummer",
+        "stored_addresses_label": "Sparade adresser",
+        "new_address_label": "Använd en ny adress",
+        "first_name_label": "Förnamn"
+      }
+    }
   }
 }
