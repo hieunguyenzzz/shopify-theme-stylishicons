@@ -558,8 +558,82 @@
           "other": "Vissa objekt i din varukorg kan inte levereras till den adress du angett. Granska din adress för att säkerställa att alla fält har matats in korrekt och försök igen."
         },
         "shipping_method_not_available_updated": {
-          "one": "Artikeln du lade levererar inte till din plats. Ta bort den för att kolla in, eller kontakta butiken."
+          "one": "Artikeln du lade levererar inte till din plats. Ta bort den för att kolla in, eller kontakta butiken.",
+          "other": "En eller flera objekt som du lagt sänder inte till din plats. Ta bort dem för att kolla in, eller kontakta butiken."
         }
+      },
+      "alternative_payment_method_banner": {
+        "express_checkout": "snabbkassa",
+        "or": "ELLER"
+      },
+      "alternative_payment_method": {
+        "button_html": "Kassa med: %{method}",
+        "button_label": "Kassa med: %{method}"
+      },
+      "paypal": {
+        "button_html": "Kassa med %{logo}"
+      },
+      "apple_pay": {
+        "button_html": "Köp med %{logo}"
+      },
+      "post_purchase": {
+        "page_title": "Efter köp",
+        "title": "Efter köp",
+        "escape_confirmation": "Du har betalat för din beställning.",
+        "escape_action": "Visa orderbekräftelse>",
+        "components": {
+          "close": "Stänga",
+          "expand": "Visa mer",
+          "processing": "Bearbetning ...",
+          "submit": "Skicka in"
+        }
+      },
+      "processing": {
+        "redirecting_page_title": "Omdirigerar ...",
+        "redirecting_title": "Omdirigerar ...",
+        "redirecting_notice": "Vänta medan vi omdirigera dig.",
+        "complete_your_purchase_title": "Slutföra köpet",
+        "continue_to_payment_gateway_notice": "Fortsätt att betalning för att lägga till din betalningsinformation.",
+        "continue_to_payment_gateway_button_label": "Fortsätt till betalning",
+        "complete_your_purchase_title_error": "Korrigera betalningsinformation",
+        "continue_to_payment_gateway_notice_error": "kunde inte verifieras din betalningsinformation.",
+        "continue_to_payment_gateway_button_label_error": "Uppdatera betalningsinformation",
+        "page_title": "bearbetning ordning",
+        "title": "bearbetning ordning",
+        "your_order_has_been_received_title": "tack för din beställning",
+        "you_will_receive_confirmation": "Vi får en hel del order just nu. Du bör få en bekräftelse via e-post eller text snart. Om du inte får det i nästa timme, låt oss veta.",
+        "you_will_not_be_charged": "Du kommer inte att debiteras ännu",
+        "wait": {
+          "short": "Din beställning är bearbetas.",
+          "medium": {
+            "one": "Din beställning är bearbetas. Beräknad väntetiden är %{count} minut.",
+            "other": "Din beställning är bearbetas. Beräknad väntetiden är %{count} minuter."
+          },
+          "long": "Du får ett e-post när din beställning har behandlats. Det finns idag en stor mängd order.",
+          "no_auto_refresh_html": "Om du inte automatiskt omdirigeras, %{link}.",
+          "refresh_this_page": "uppdatera sidan"
+        }
+      },
+      "failed_payment": {
+        "page_title": "Betalning kan inte behandlas",
+        "title": "Betalning kan inte behandlas",
+        "payment_not_processed_title": "Din betalning kunde inte behandlas",
+        "payment_not_processed_text": "Du har inte åtalats. Återgå till din varukorg för att slutföra köpet.",
+        "return_to_cart_button_label": "Återgå till kundvagnen"
+      },
+      "payment_gateway": {
+        "credit_card_label": "Kreditkort",
+        "bank_deposit_label": "Bank insättning",
+        "cash_on_delivery_label": "Postförskott (COD)",
+        "money_order_label": "POSTANVISNING"
+      },
+      "thank_you": {
+        "title": "Tack för ditt köp!",
+        "confirmation_email_sent_text": "En e-postbekräftelse har skickats till %{email}",
+        "return_to_store_link_label": "Fortsätt handla",
+        "print_link_label": "Skriv ut kvitto",
+        "payment_information_title": "Betalningsinformation",
+        "shipping_information_title": "Fraktinformation"
       }
     }
   }
