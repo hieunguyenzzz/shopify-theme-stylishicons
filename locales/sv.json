@@ -257,7 +257,77 @@
       },
       "shipping": {
         "title": "Frakt",
-        "shipping_method_title": "Frakt metod"
+        "shipping_method_title": "Frakt metod",
+        "shipping_method_one_time_purchase_group_title": "Engångsköp",
+        "shipping_method_subscription_group_title": "Prenumeration",
+        "subscription_shipping": "Prenumerationsfartyg",
+        "waiting_on_rate_notice": "Få tillgängliga fraktpriser ...",
+        "waiting_on_pickup_location_notice": "Få tillgång till plocka upp platser ...",
+        "no_rates_for_cart_or_destination_notice": "Det finns inga fraktmetoder tillgängliga för din kundvagn eller adress",
+        "no_pickup_location_notice": "Minst en av dina produkter är inte tillgänglig för hämtning",
+        "no_rates_for_country_notice": "Inga fraktpriser hittades för den här adressen.",
+        "no_rates_contact_notice": "Kontakta oss för mer information",
+        "free_rate_label": "Fri",
+        "cheapest_rate_label": "Billigaste",
+        "please_enter_your_shipping_information_notice": "Vänligen ange din fraktinformation.",
+        "estimated_delivery_date": {
+          "one": "%{count} arbetsdag",
+          "other": "%{count} arbetsdagar"
+        },
+        "estimated_delivery_date_range": "%{minimum} till %{maximum} arbetsdagar",
+        "estimated_delivery_time": "beräknad leverans %{time}",
+        "estimated_delivery_time_range": "beräknad leverans %{min_time}–%{max_time}",
+        "shipping_line_phone_label": "Mobiltelefonnummer (krävs)",
+        "shipping_line_phone": "Din kurir kan använda det här numret för att kontakta dig.",
+        "shipping_line_delivery_phone_label": "mobilnummer",
+        "shipping_line_delivery_phone": "Vi kan använda det här numret för att ringa eller skriva dig om din leverans.",
+        "optional_shipping_line_delivery_instructions_label": "Leveransinstruktioner (tillval)",
+        "shipping_line_delivery_instructions": "Ange nödvändig information som dörrkoder eller avstängningsanvisningar.",
+        "other_method": {
+          "zero": "Inga andra metoder tillgängliga",
+          "one": "%{count} Annan metod tillgänglig på",
+          "other": "%{count} Andra metoder som är tillgängliga från"
+        },
+        "shipping_rate_discounted_amount": "Var: %{original_amount}. Nu: %{amount}",
+        "local_delivery": "Lokal leverans",
+        "subscription_delivery_description": {
+          "prepaid_delivery_frequency": {
+            "one": "för %{count} leverans",
+            "other": "för %{count} leveranser"
+          },
+          "subscription_delivery_frequency": {
+            "day": {
+              "one": "varje dag",
+              "other": "varje %{count} dag"
+            },
+            "week": {
+              "one": "varje vecka",
+              "other": "varje %{count} Veckor"
+            },
+            "month": {
+              "one": "varje månad",
+              "other": "varje %{count} månader"
+            },
+            "year": {
+              "one": "varje år",
+              "other": "varje %{count} år"
+            }
+          },
+          "multiple_subscriptions_shipping_price_label": "%{shipping_price} per leverans",
+          "prepaid_shipping_price_label": "%{shipping_price} per leverans X %{delivery_interval_count}",
+          "initial_order_discounted": "Första fraktkostnaden %{discounted_shipping_cost}då %{frequency_description}",
+          "prepaid_initial_order_discounted": "Första fraktkostnaden %{discounted_shipping_price} %{prepaid_delivery_frequency}",
+          "prepaid_initial_order_discounted_with_per_delivery_price": "Första fraktkostnaden %{discounted_shipping_price} %{prepaid_delivery_frequency} (%{discounted_cost_per_delivery})",
+          "prepaid_initial_order_discounted_with_renewal": "Första fraktkostnaden %{discounted_shipping_price} %{prepaid_delivery_frequency}då %{shipping_price} %{billing_cycle}",
+          "prepaid_initial_order_discounted_with_per_delivery_price_and_renewal": "Första fraktkostnaden %{discounted_shipping_price} %{prepaid_delivery_frequency} (%{discounted_cost_per_delivery}), Sedan %{shipping_price} %{billing_cycle}",
+          "shipping_price_included": "Ingår",
+          "recurring_order_shipping_price": "följd av %{recurring_order_shipping_price}",
+          "first_order_shipping_price_included": "Första order som ingår, följt av %{recurring_order_shipping_price}",
+          "first_order_different_shipping_price": "%{first_order_shipping_price} (%{per_delivery_price} per leverans), följt av %{recurring_order_shipping_price}",
+          "first_n_order_free": {
+            "one": "Första beställningen gratis"
+          }
+        }
       }
     }
   }
