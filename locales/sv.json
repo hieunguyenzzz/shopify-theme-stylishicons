@@ -1393,7 +1393,139 @@
       "password": "Lösenord",
       "forgot_password": "Glömt ditt lösenord?",
       "sign_in": "Logga in",
-      "cancel": "Återvända till butik"
+      "cancel": "Återvända till butik",
+      "guest_title": "Fortsätt som gäst",
+      "guest_continue": "Fortsätta"
+    },
+    "orders": {
+      "title": "Beställningshistorik",
+      "order_number": "Beställa",
+      "date": "Datum",
+      "payment_status": "Betalningsstatus",
+      "fulfillment_status": "Uppfyllningsstatus",
+      "total": "Total",
+      "none": "Du har inte lagt några beställningar än."
+    },
+    "order": {
+      "title": "Beställa",
+      "date": "Placerad på",
+      "cancelled": "Order avbruten på",
+      "cancelled_reason": "Anledning: {{ reason }}",
+      "billing_address": "Fakturaadress",
+      "payment_status": "Betalningsstatus",
+      "shipping_address": "leveransadress",
+      "fulfillment_status": "Uppfyllningsstatus",
+      "discount": "Rabatt",
+      "shipping": "Frakt",
+      "tax": "Beskatta",
+      "order_details": "Orderdetaljer",
+      "details": {
+        "product": "Produkt",
+        "sku": "Sku",
+        "price": "Pris",
+        "quantity": "Kvantitet",
+        "total": "Total",
+        "fulfilled_at": "Uppfylld {{ date }}",
+        "subtotal": "Delsumma"
+      }
+    },
+    "recover_password": {
+      "title": "Återställ ditt lösenord",
+      "email": "E-post",
+      "submit": "Skicka in",
+      "cancel": "Avbryt",
+      "subtext": "Vi skickar dig ett mail för att återställa ditt lösenord.",
+      "success": "Vi har skickat ett mail till dig med en länk för att uppdatera ditt lösenord."
+    },
+    "reset_password": {
+      "title": "Återställ kontot lösenord",
+      "subtext": "Ange ett nytt lösenord för {{ email }}",
+      "password": "Lösenord",
+      "password_confirm": "Bekräfta lösenord",
+      "submit": "Återställ lösenord"
+    },
+    "register": {
+      "title": "Skapa konto",
+      "first_name": "Förnamn",
+      "last_name": "Efternamn",
+      "email": "E-post",
+      "password": "Lösenord",
+      "submit": "Skapa"
+    }
+  },
+  "layout": {
+    "footer": {
+      "copyright": "upphovsrätt",
+      "theme_title": "förbi"
+    },
+    "homepage": {
+      "mailing_list_join": "Hej du!",
+      "mailing_list_text": "gå med i vår maillista",
+      "onboarding": {
+        "no_content": "Det här avsnittet innehåller inte för närvarande innehåll. Lägg till innehåll i det här avsnittet med sidofältet."
+      }
+    },
+    "mobile_nav": {
+      "account": "konto",
+      "login": "Logga in \/ skapa konto",
+      "logout": "Logga ut"
+    }
+  },
+  "products": {
+    "general": {
+      "new": "NYHETER",
+      "sale": "FÖRSÄLJNING",
+      "sold": "SÅLDE UT",
+      "quick_view": "Snabbtitt",
+      "from": "Från",
+      "view_full": "Visa fullständiga detaljer",
+      "view_all": "Visa alla",
+      "related": "Mer i den här samlingen",
+      "sale_price": "Försäljning",
+      "regular_price": "Regelbundet"
+    },
+    "product": {
+      "designer": "Designer",
+      "sold_out": "Utsåld",
+      "from_lowest_price_html": "{{ lowest_price }}",
+      "unavailable": "Inte tillgänglig",
+      "compare_at": "Jämföra på",
+      "add_to_cart": "Lägg till i kundvagn",
+      "quantity": "Kvantitet",
+      "select_options": "Visningsalternativ",
+      "details": "Detaljer",
+      "sizing": "Storleksstorlek",
+      "video": "Video",
+      "model": "Produktvård",
+      "back_to": "Tillbaka till",
+      "adding": "Lägger till ...",
+      "thank_you": "Tack!",
+      "added": "Tillagt till Cart",
+      "view_cart": "Se vagnen",
+      "or": "eller",
+      "continue": "Fortsätt handla",
+      "qty_error_first": "Endast",
+      "qty_error_last": "för det här objektet är tillgängligt",
+      "qty_sold_out": "Det här objektet är utsålt.",
+      "back_in_stock": "Skicka ett mejl till mig när det här är tillgängligt",
+      "back_in_stock_confirm": "Tack, vi kommer att kontakta dig när det här är tillgängligt",
+      "readmore": "Läs mer",
+      "view_in_space": "Visa i ditt område",
+      "view_in_space_label": "Visa i ditt område, läses in objekt i ett utökat verklighetsfönster",
+      "unit_price_label": "Enhetspris"
+    }
+  },
+  "gift_cards": {
+    "issued": {
+      "title": "Här är din {{ value }} Presentkort för {{ shop }}!",
+      "subtext": "Här är ditt presentkort!",
+      "disabled": "Inaktiverad",
+      "expired": "Förfallit på {{ expiry }}",
+      "active": "Går ut den {{ expiry }}",
+      "redeem": "Använd den här koden vid kassan för att lösa in ditt presentkort",
+      "shop_link": "Börja shopping",
+      "print": "Skriva ut",
+      "email": "E-post"
     }
   }
 }
