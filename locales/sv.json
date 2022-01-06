@@ -806,8 +806,174 @@
         }
       },
       "marketing": {
-        "accept_marketing_checkbox_label": "Maila mig med nyheter och erbjudanden"
+        "accept_marketing_checkbox_label": "Maila mig med nyheter och erbjudanden",
+        "accept_sms_checkbox_label": "Text mig med nyheter och erbjudanden",
+        "sms": {
+          "disclaimer": {
+            "privacy_policy": "Integritetspolicy",
+            "terms_of_service": "Användarvillkor",
+            "description_html": "Genom att registrera dig via text godkänner du att få återkommande automatiserade marknadsföring meddelanden, inklusive kund påminnelser, på det telefonnummer som. Samtycke är inte ett villkor för köpet. Svara STOP till unsubscribe. Svara HELP för att få hjälp. Meddelandefrekvensen varierar. Msg och datahastigheter kan tillkomma. Visa vårt %{privacy_policy_link} och %{terms_of_service_link}.",
+            "description_html_transactional": "Vi skickar dig en order mottagande och återkommande frakt uppdateringar via SMS. Svara STOP till unsubscribe. Svara HELP för att få hjälp. Meddelandefrekvensen varierar. Msg och datahastigheter kan tillkomma. Visa vår sekretesspolicy och användarvillkor."
+          }
+        },
+        "unsubscribe": {
+          "title": "Du har slutat prenumerera",
+          "description": "Du kommer inte att få några fler kund påminnelser från oss."
+        }
+      },
+      "shop_policies": {
+        "refund_policy": "Återbetalningspolicy",
+        "privacy_policy": "Integritetspolicy",
+        "terms_of_service": "Användarvillkor",
+        "legal_notice": "Rättsligt meddelande",
+        "shipping_policy": "sjöfartspolitik",
+        "terms_of_sale": "Försäljningsvillkor",
+        "subscription_policy": "prenumeration policy"
+      },
+      "remember_me": {
+        "shopify_pay_label": "Shop Pay",
+        "save": "Spara",
+        "title": "Kom ihåg mig",
+        "label": "Spara mina uppgifter för en snabbare kassan",
+        "description_html": "Nästa gång du kolla in här eller på andra butiker som drivs av Shopify får du en kod via textmeddelande till säkert köp med Shop Pay.",
+        "mobile_phone_icon_alt": "Mobiltelefon",
+        "mobile_phone_number": "mobilnummer",
+        "terms_and_privacy_html": "Genom att fortsätta godkänner du Shop Pay s %{privacy_href} och %{terms_href}.",
+        "privacy_policy": "Integritetspolicy",
+        "terms_of_service": "Användarvillkor",
+        "errors": {
+          "optin": "Shop Pay är inte tillgänglig"
+        },
+        "installments": {
+          "paid_in_installments": "Betalas ut i omgångar med Shop Pay.",
+          "view_schedule": "Se spelschemat"
+        }
+      },
+      "notifications": {
+        "title": "anmälningar"
+      },
+      "order_payment_collection": {
+        "custom_line_item_description": "Belopp att betala för beställning %{order_name}",
+        "changes_summary": {
+          "added": {
+            "one": "Lagt till",
+            "other": "%{count} Lagt till"
+          },
+          "removed": "Tog bort",
+          "subtracted": "%{count} tog bort"
+        },
+        "additional_payment_requested": "Betalning av %{total_outstanding} behövs",
+        "checkout_review_and_pay": "Du beställer %{order_name} uppdaterades. Granska dessa förändringar sedan betala för att bekräfta din beställning.",
+        "order_updated_on": "Din beställning uppdaterades den %{last_edited_at}.",
+        "order_review_and_pay": "Din beställning har uppdaterats. Granskning och betala för att bekräfta din beställning.",
+        "pay_now": "Betala nu"
+      },
+      "change_currency": {
+        "currency_button_label": "%{currency} (%{currency_symbol})",
+        "credit_card_will_be_charged_html": "Ditt kreditkort kommer att debiteras %{amount}",
+        "payment_total_label": "betalning totalt",
+        "conversion_rate": "1 %{from_currency_code} = %{rate} %{to_currency_code}",
+        "change_currency_link": "Ändra till %{currency_name}",
+        "card_provider_fx_charges_warning": "Din kortleverantören får ta ut avgifter på %{currency_code} transaktioner.",
+        "currency_not_supported_by_shop": "Valutan du valde är inte längre tillgängligt. Alla priser är nu i %{currency_code}."
+      },
+      "change_country": {
+        "cart_updated_based_on_country": "Din varukorg har uppdaterats baserat på leveransland."
+      },
+      "tips": {
+        "title": "Lägg spets",
+        "description": "Visa din service för laget på %{shop_name}",
+        "presets_description": "Välj ett tips procentsats",
+        "custom_label": "Anpassad spets",
+        "add_tip": "Lägg spets",
+        "update_tip": "Uppdatera spets",
+        "message": "Tack, vi uppskattar det",
+        "preset_label": "%{tip_percent}%",
+        "no_tip_label": "Ingen"
+      },
+      "open_graph_meta_tag": {
+        "title_with_products": {
+          "zero": "Inköp %{product_name}",
+          "one": "Inköp %{product_name} och %{count} Övrigt objekt",
+          "other": "Inköp %{product_name} och %{count} andra saker"
+        }
+      },
+      "subscriptions": {
+        "recurring_total_intervals": {
+          "day": {
+            "one": "dag",
+            "other": "%{count} dag"
+          },
+          "week": {
+            "one": "vecka",
+            "other": "%{count} Veckor"
+          },
+          "month": {
+            "one": "månad",
+            "other": "%{count} månader"
+          },
+          "year": {
+            "one": "år",
+            "other": "%{count} år"
+          }
+        },
+        "recurring_totals": "%{total_price} varje %{interval}",
+        "recurring_totals_with_initial_order_shipping_discount": "Första betalning %{total_price_with_discount}då %{recurring_total}",
+        "recurring_totals_with_policies": {
+          "first_cycles": {
+            "one": "Första betalning %{total_price}",
+            "other": "Först %{count} betalningar %{total_price} varje"
+          },
+          "following_cycles": "då %{total_price} varje %{interval}"
+        },
+        "recurring_totals_with_initial_order_shipping_discount_with_policies": {
+          "first_cycles": {
+            "one": "då %{count} betalning på %{total_price}",
+            "other": "då %{count} betalningar på %{total_price} varje"
+          }
+        }
+      },
+      "customer_payment_methods": {
+        "page_title": "Betalningsmetoder",
+        "title": "Betalningsmetoder",
+        "update_card_button_label": "Uppdatera kort",
+        "delete_customer_mandate": {
+          "generic_error": "Det var ett problem som behandlar din förfrågan.",
+          "success_message": "Din betalningsmetod har framgångsrikt raderats"
+        }
       }
+    },
+    "pagination": {
+      "previous": "Tidigare",
+      "next": "Nästa"
+    },
+    "links": {
+      "powered_by_shopify": "Drivs av Shopify",
+      "learn_more": "Läs mer"
+    },
+    "feed": {
+      "more": "Mer"
+    },
+    "attributes": {
+      "email": "e-post",
+      "password": "Lösenord",
+      "password_confirmation": "Lösenordsbekräftelsen",
+      "first_name": "förnamn",
+      "last_name": "efternamn",
+      "body": "kropp",
+      "signature": "Adress"
+    },
+    "addresses": {
+      "zip_code": "postnummer",
+      "postal_code": "Postnummer",
+      "postcode": "Postnummer",
+      "pincode": "Pinkod",
+      "region": "Område",
+      "prefecture": "Prefektur",
+      "province": "Provins",
+      "state": "stat",
+      "state_and_territory": "Stat \/ territorium",
+      "county": "Grevskap"
     }
   }
 }
