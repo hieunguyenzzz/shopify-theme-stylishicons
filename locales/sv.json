@@ -683,7 +683,130 @@
         "confirmed_description": "Vi har accepterat din beställning, och vi får det redo. Kom tillbaka till den här sidan för uppdateringar på din leveransstatus.",
         "ready_for_pickup_title": "Din beställning är klar för hämtning",
         "ready_for_pickup_description": "Din beställning är klar för hämtning. Vänligen ta med din beställningsbekräftelse när du hämtar din beställning.",
-        "ready_for_delivery_title": "Din beställning är klar för leverans."
+        "ready_for_delivery_title": "Din beställning är klar för leverans.",
+        "ready_for_delivery_description": "Vi har förberett din beställning.",
+        "order_updates_title": "Beställ uppdateringar",
+        "shop_phone_description": "Du får en text med en länk till butiksappen för att hjälpa till att spåra din beställning.",
+        "order_updates_description_html": "Uppdateringar skickas till %{customer_contact}",
+        "order_updates_current_step_prefix": "Aktuellt steg:",
+        "order_updates_past_step_prefix": "Tidigare steg:",
+        "order_updates_upcoming_step_prefix": "Kommande steg:",
+        "in_transit": "På väg",
+        "in_transit_title": "Din beställning är på väg",
+        "in_transit_description": "Du får uppdateringar om dess framsteg.",
+        "in_transit_description_days": "Du borde få din beställning i nästa %{number} dagar.",
+        "in_transit_description_today": "Du borde få din beställning idag.",
+        "in_transit_description_tomorrow": "Du borde få din beställning nästa dag.",
+        "no_tracking_number": "Det finns inget spårningsnummer för denna order.",
+        "out_for_delivery": "Ut för leverans",
+        "out_for_delivery_title": "Din beställning är ute för leverans",
+        "out_for_delivery_description_html": "Din beställning är på väg och borde komma idag. Om det inte levereras under de närmaste 2 dagarna, %{contact_us}.",
+        "out_for_delivery_local_title": "Din beställning är ute för leverans",
+        "out_for_delivery_local_description_html": "Din beställning kommer snart.",
+        "attempted_delivery": "Försök till leverans",
+        "attempted_delivery_title": "Ett försök gjordes för att leverera din beställning",
+        "attempted_delivery_description_html": "Ett försök gjordes för att leverera din beställning men det var misslyckat. %{contact_us} för att ordna ett annat leveransförsök.",
+        "attempted_delivery_local_title": "Missad leverans",
+        "attempted_delivery_local_description_html": "Vi kunde inte leverera din beställning. Att schemalägga en annan leverans, %{contact_us}.",
+        "delivered": "Levererad",
+        "delivered_title": "Din beställning har levererats",
+        "delivered_description_html": "Din beställning har levererats till den adress du angav. Om du inte har fått det, eller om du har några andra problem, %{contact_us}.",
+        "delivered_local_title": "Din beställning har levererats",
+        "delivered_local_description_html": "Har inte fått din beställning? %{let_us_know}.",
+        "picked_up_title": "Din beställning har blivit upptagen",
+        "picked_up_description_html": "Din beställning hämtades på %{location_name} på %{date}.",
+        "contact_us": "Kontakta oss",
+        "contact_us_lowercase": "kontakta oss",
+        "contact_us_html": "Behövs hjälp? %{contact_us}",
+        "updated_time": "Uppdaterad %{time_ago} sedan",
+        "failure": "Inte levererad",
+        "failed_title": "Din beställning kunde inte levereras",
+        "failed_contact_merchant": "Kontakt %{company} att ordna leverans.",
+        "failed_contact_merchant_no_company": "Kontakta oss för att ordna leverans.",
+        "non_shippable_title": "Din beställning är klar",
+        "let_us_know": "Låt oss veta",
+        "login_title": "Logga in för att visa alla beställningsuppgifter",
+        "login_description": "Du hittar ditt beställningsnummer i det kvitto du fick via e-post.",
+        "login_description_phone": "Du hittar ditt beställningsnummer i det kvitto du mottog via SMS.",
+        "login_not_customer_html": "Inte %{name}? Du kan %{link}",
+        "login_reorder_link_text": {
+          "one": "Köp den här produkten också",
+          "other": "Köp också dessa produkter"
+        },
+        "customer_information_hidden_fields_message": "Logga in för att visa all kundinformation.",
+        "cancelled_title": "Din beställning har blivit avbruten",
+        "cancelled_description": "Din beställning avbröts på %{date}. Kontakta oss om du har några frågor.",
+        "order_number_label": "Ordernummer",
+        "customer_validation_error": "Ange ett giltigt e-postmeddelande eller beställningsnummer.",
+        "customer_validation_error_phone": "Ange ett giltigt telefon eller beställningsnummer.",
+        "login": "Logga in",
+        "unfulfilled_items_title": "Förberedelser för frakt",
+        "unfulfilled_items_description": "Vi förbereder för närvarande dessa föremål för frakt.",
+        "marker": {
+          "current": "Aktuell leveransplats",
+          "shipping": "Leveransadress"
+        },
+        "pick_up_in_store_marker": {
+          "current": "Aktuell leveransplats",
+          "shipping": "Pickupplats"
+        },
+        "fulfillment": {
+          "fulfilled_table_title": "Föremål i denna försändelse",
+          "unfulfilled_table_title": "Föremål som förbereder sig för frakt",
+          "product_image_label": "Produktbild",
+          "description_label": "Beskrivning",
+          "quantity_label": "Kvantitet"
+        },
+        "opt_in_message_html": "Din information har framgångsrikt räddats med %{shopify_pay}",
+        "order_updates_description_missing": "Du får inte fraktuppdateringar.",
+        "order_updates_subscribe_to_email_notifications": "Få fraktuppdateringar via e-post",
+        "order_updates_subscribe_to_email_or_phone_notifications": "Få fraktuppdateringar via e-post eller text",
+        "order_updates_subscribe_to_phone_notifications": "Få fraktuppdateringar via text",
+        "order_updates_submit_subscription": "Skicka in",
+        "track_shipment": "Spårförsändelse",
+        "shopify_pay": {
+          "order_completed_html": "Order slutförd med %{shopify_pay}",
+          "learn_more_label": "Läs mer om butikslön"
+        },
+        "other_options": "Andra alternativ",
+        "delivery_information_label": "Leveransinformation:",
+        "gift_card_sent_confirmation": "Presentkort skickade",
+        "qr_code": {
+          "send_link_to_phone": "Eller skicka en länk till din telefon",
+          "title": "Spåra på din telefon",
+          "subtitle": "Skanna koden med telefonens kamera för att spåra med butiken."
+        },
+        "shop_qr_with_sms_upsell": {
+          "qr_code": {
+            "title": "Skanna med din telefon",
+            "description": "Shop skickar dig uppdateringar i realtid när din beställning skickas."
+          },
+          "sms": {
+            "title": "Eller skicka en länk till din telefon"
+          }
+        }
+      },
+      "review": {
+        "title": "Recension",
+        "review_title": "Granskningsorder",
+        "checkout_as_guest": "Checka ut som gäst",
+        "blocks": {
+          "contact_method_title": "Kontakt",
+          "billing_address_title": "Fakturering",
+          "shipping_address_title": "Frakta till",
+          "shipping_method_title": "Metod",
+          "payment_method_title": "Betalning",
+          "change_link_label": "Förändra",
+          "change_contact_method_link_label": "Ändra kontaktinformation",
+          "change_billing_address_link_label": "Ändra faktureringsadress",
+          "change_shipping_address_link_label": "andra leveransadress",
+          "change_shipping_method_link_label": "Ändra fraktmetod",
+          "change_payment_method_link_label": "Ändra betalningsmetod",
+          "pick_up_in_store_shipping_method_html": "Hämta i butik · %{location_name}"
+        }
+      },
+      "marketing": {
+        "accept_marketing_checkbox_label": "Maila mig med nyheter och erbjudanden"
       }
     }
   }
