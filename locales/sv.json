@@ -1,0 +1,38 @@
+{
+  "general": {
+    "404": {
+      "subtext": "Den här sidan existerar inte. Försök att söka efter vad du vill hitta:"
+    },
+    "pagination": {
+      "showing_items": "Visar objekt",
+      "of": "av"
+    },
+    "forms": {
+      "post_error": "Tyvärr, ser ut som att något gick fel. Vänligen korrigera följande och skicka igen:"
+    },
+    "breadcrumbs": {
+      "home": "Hem"
+    },
+    "newsletter_form": {
+      "newsletter_email": "gå med i vår maillista",
+      "thanks": "Tack för att du gick med",
+      "popup_thanks": "Tack för att du gick med, här är din kupongkod:",
+      "email_placeholder": "E-postadress",
+      "confirmation": "Tack för att du gick med!",
+      "submit": "Ansluta sig"
+    },
+    "search": {
+      "no_results_html": "Din sökning efter \"{{ terms }}\"gav inga resultat.",
+      "results_for_html": "Din sökning efter \"{{ terms }}\"avslöjade följande:",
+      "title": "Sök",
+      "placeholder": "Sök",
+      "submit": "Sök"
+    },
+    "language": {
+      "dropdown_label": "Språk"
+    },
+    "accessibility": {
+      "unit_price_separator": "per"
+    }
+  }
+}
