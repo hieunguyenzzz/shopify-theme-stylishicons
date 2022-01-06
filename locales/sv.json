@@ -1333,7 +1333,67 @@
     "form": {
       "name": "namn",
       "firstname": "Förnamn",
-      "lastname": "Efternamn"
+      "lastname": "Efternamn",
+      "subject": "Ämne",
+      "companyname": "Företag",
+      "address": "Adress",
+      "email": "E-post",
+      "phone": "Telefonnummer",
+      "message": "Meddelande",
+      "websiteurl": "webbadress",
+      "acceptsmarketing": "Prenumerera på att hålla dig uppdaterad med nya produkter och erbjudanden!",
+      "send": "Skicka",
+      "post_success": "Tack för att du kontaktade oss. Vi kommer tillbaka till dig så snart som möjligt."
+    }
+  },
+  "customer": {
+    "account": {
+      "title": "konto",
+      "logout": "Logga ut",
+      "link": "Tillbaka till konto",
+      "signup": "Logga in eller skapa ett konto",
+      "details": "Kontouppgifter",
+      "view_addresses": "Visa adresser",
+      "returns_content": "Retur \/ Exchange",
+      "return": "Återgå till kontouppgifter"
+    },
+    "activate_account": {
+      "title": "Aktivera konto",
+      "subtext": "Skapa ditt lösenord för att aktivera ditt konto.",
+      "password": "Lösenord",
+      "password_confirm": "Bekräfta lösenord",
+      "submit": "Aktivera konto",
+      "cancel": "Avvisa inbjudan"
+    },
+    "addresses": {
+      "title": "Dina adresser",
+      "default": "Primäradress",
+      "add_new": "Lägg till en ny adress",
+      "edit_address": "Redigera adress",
+      "first_name": "Förnamn",
+      "last_name": "Efternamn",
+      "company": "Företag",
+      "address1": "Adress 1",
+      "address2": "Adress 2",
+      "city": "Stad",
+      "country": "Land",
+      "province": "Provins",
+      "zip": "Postnummer",
+      "phone": "Telefon",
+      "set_default": "Ange som standardadress",
+      "add": "Lägga till adress",
+      "update": "Uppdateringsadress",
+      "cancel": "Avbryt",
+      "edit": "Redigera",
+      "delete": "Radera"
+    },
+    "login": {
+      "title": "Logga in",
+      "email": "E-post",
+      "password": "Lösenord",
+      "forgot_password": "Glömt ditt lösenord?",
+      "sign_in": "Logga in",
+      "cancel": "Återvända till butik"
     }
   }
 }
