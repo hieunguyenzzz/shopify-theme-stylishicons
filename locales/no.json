@@ -1465,6 +1465,68 @@
       "onboarding": {
         "no_content": "Denne delen inneholder for øyeblikket ikke noe innhold. Legg til innhold i denne delen ved hjelp av sidepanelet."
       }
+    },
+    "mobile_nav": {
+      "account": "Regnskap",
+      "login": "Logg inn \/ Opprett konto",
+      "logout": "Logg ut"
+    }
+  },
+  "products": {
+    "general": {
+      "new": "NY",
+      "sale": "SALG",
+      "sold": "UTSOLGT",
+      "quick_view": "Hurtigvisning",
+      "from": "Fra",
+      "view_full": "Se full detaljer",
+      "view_all": "Se alt",
+      "related": "Mer i denne samlingen",
+      "sale_price": "Salg",
+      "regular_price": "Regelmessig"
+    },
+    "product": {
+      "designer": "Designer",
+      "sold_out": "Utsolgt",
+      "from_lowest_price_html": "{{ lowest_price }}",
+      "unavailable": "Utilgjengelig",
+      "compare_at": "Sammenlign At.",
+      "add_to_cart": "Legg i handlekurv",
+      "quantity": "Mengde",
+      "select_options": "Se alternativer",
+      "details": "Detaljer",
+      "sizing": "Dimensjonering",
+      "video": "Video",
+      "model": "Produktpleie",
+      "back_to": "Tilbake til",
+      "adding": "Legge til ...",
+      "thank_you": "Takk skal du ha!",
+      "added": "Lagt til i handlekurven",
+      "view_cart": "Se handlekurv",
+      "or": "eller",
+      "continue": "Fortsett Å Handle",
+      "qty_error_first": "Kun",
+      "qty_error_last": "av dette elementet er tilgjengelig",
+      "qty_sold_out": "Denne varen er utsolgt",
+      "back_in_stock": "Vennligst send meg en e-post når dette er tilgjengelig",
+      "back_in_stock_confirm": "Takk, vi vil kontakte deg når dette er tilgjengelig",
+      "readmore": "Les mer",
+      "view_in_space": "Se i rommet ditt",
+      "view_in_space_label": "Utsikt i rommet ditt, laster elementet i forstørret virkelighetsvindu",
+      "unit_price_label": "Enhetspris"
+    }
+  },
+  "gift_cards": {
+    "issued": {
+      "title": "Her er din {{ value }} Gavekort for {{ shop }}!",
+      "subtext": "Her er ditt gavekort!",
+      "disabled": "Funksjonshemmet",
+      "expired": "Utløpt på {{ expiry }}",
+      "active": "Går ut på dato den {{ expiry }}",
+      "redeem": "Bruk denne koden ved kassen for å innløse gavekortet ditt",
+      "shop_link": "Begynn å handle",
+      "print": "Skrive ut",
+      "email": "E-post"
     }
   }
 }
