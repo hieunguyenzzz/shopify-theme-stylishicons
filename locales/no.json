@@ -1097,7 +1097,99 @@
         "stock_problems_html": "En eller flere elementer er ikke lenger tilgjengelig. Vi har gitt en <a href='%{link}'>oppdatert kurven<\/a>.",
         "changed": "kurven endret",
         "items_changed": "Ett eller flere elementer har endret seg.",
-        "product_sold_out": "Produktet '%{name}'Er allerede utsolgt."
+        "product_sold_out": "Produktet '%{name}'Er allerede utsolgt.",
+        "variant_not_found": "Kan ikke finne variant",
+        "variant_requires_selling_plan": "Variant kan kun kjøpes med en selger plan.",
+        "selling_plan_not_applicable": "Kan ikke gjelde selge plan for å variant",
+        "shipping_address_not_required": "Denne vognen ikke krever frakt",
+        "shipping_address_invalid": "Det var et problem å beregne fraktpriser. Fortsett til kassen for å velge en fraktkostnad før du fullfører din bestilling."
+      },
+      "storefront": {
+        "invalid_password": "Feil passord, prøv igjen."
+      },
+      "tags": {
+        "add_articles": "Smal søk til artiklene også ha tag %{tag}",
+        "add_products": "Smal utvalg til produkter som svarer tag %{tag}",
+        "remove_articles": "Utvide til artikler som ikke er merket søk %{tag}",
+        "remove_products": "Fjern tag %{tag}"
+      }
+    },
+    "email_marketing": {
+      "subscribed": {
+        "confirmation": "Takk for at du abonnerer på vårt nyhetsbrev.",
+        "disclaimer": "Du kan når som helst.",
+        "unsubscribe": "Avslutte abonnementet"
+      },
+      "unsubscribed": {
+        "confirmation": "Du har avsluttet abonnementet fra våre lister.",
+        "disclaimer": "Du vil ikke motta mer markedsføring oppdateringer fra oss. Du kan abonnere på nytt når som helst.",
+        "preview": "Du forhånds hva kundene vil se når de avslutte abonnementet."
+      },
+      "open_tracking": {
+        "opt_in": {
+          "opted_in_html": "<b>Du har valgt å sende e-post åpen sporing.<\/b>",
+          "visibility": "E-post åpne priser vil bli rapportert anonymt. Vi vil bare se om du har åpnet en e-post som en del av en samlet e åpen rate.",
+          "opt_out_html": "Du kan <a style='text-decoration:underline;' href='%{link}'>opt out<\/a> e-post åpen sporing hvis du ikke ønsker å dele denne informasjonen.",
+          "preview_bar": "Du forhånds hva kundene vil se når de velger å sende e-post åpen sporing."
+        },
+        "opt_out": {
+          "opted_out_html": "<b>Du har valgt bort e åpen sporing.<\/b>",
+          "visibility": "Vi vil ikke se om du har åpnet e-postene våre.",
+          "opt_in_html": "<a style='text-decoration:underline;' href='%{link}'>Melde deg på<\/a> til e-post åpen sporing.",
+          "preview_bar": "Du forhånds hva kundene vil se når de velger bort e åpen sporing."
+        },
+        "no_longer_track": {
+          "status_html": "<b>Vi har ikke lenger spore noen e-post åpnes.<\/b>",
+          "privacy_policy": "Etter denne e-posten ble sendt, vi oppdatert våre retningslinjer for personvern, og vi ikke lenger spor åpnes."
+        },
+        "track": {
+          "status_html": "<b>E-post åpen sporing er rapportert.<\/b>",
+          "visibility": "Vi vil bare se om du har åpnet e-posten, som en del av den totale e åpen rate."
+        },
+        "updated_policy": {
+          "status_html": "<b>E-post åpen sporing er rapportert.<\/b>",
+          "visibility": "Vi har oppdatert vår politikk, og nå spore e-post åpnes. E-post åpne priser vil bli rapportert anonymt. Vi vil bare se om du har åpnet en e-post som en del av den totale e åpen rate.",
+          "opt_out_html": "Hvis du ikke ønsker å dele denne informasjonen, kan du <a style='text-decoration:underline;' href='%{link}'>Avslutte abonnementet.<\/a>"
+        }
+      }
+    },
+    "filters": {
+      "availability": {
+        "label": "Tilgjengelighet",
+        "value": {
+          "in_stock": "På lager",
+          "out_of_stock": "Utsolgt"
+        }
+      },
+      "vendor": {
+        "label": "Merke"
+      },
+      "price": {
+        "label": "Pris"
+      },
+      "product_type": {
+        "label": "Produkttype"
+      }
+    },
+    "search": {
+      "sorting": {
+        "relevance": "Relevans",
+        "price_ascending": "Pris, lav til høy",
+        "price_descending": "Pris, høy til lav"
+      }
+    },
+    "page_titles": {
+      "blog_or_article_with_error": "feil - %{title}",
+      "products": "Produkter",
+      "shopping_cart": "din handlevogn",
+      "account": "Regnskap",
+      "create_account": "Opprett konto",
+      "reset_account": "reset konto",
+      "addresses": "Adresser",
+      "order": "Rekkefølge %{name}",
+      "search": "Søk",
+      "search_results": {
+        "one": "Søk: %{count} resultat funnet for \"%{terms}\""
       }
     }
   }
