@@ -38,7 +38,67 @@
   },
   "shopify": {
     "sentence": {
-      "words_connector": ", "
+      "words_connector": ", ",
+      "two_words_connector": " og ",
+      "last_word_connector": ", og "
+    },
+    "checkout": {
+      "general": {
+        "page_title": "Sjekk ut",
+        "error_page_title": "Feil",
+        "skip_to_content": "Hopp til innholdet",
+        "breadcrumb": "Brødsmule",
+        "continue_button_label": "Fortsette",
+        "complete_purchase_button_label": "Komplett bestilling",
+        "pay_now_button_label": "Betal nå",
+        "authenticate_purchase_button_label": "Autentiser betaling",
+        "edit_link_label": "Redigere",
+        "all_rights_reserved": "Alle rettigheter reservert %{shop_name}",
+        "print_policies_link_label": "Skrive ut",
+        "cart": "Vogn",
+        "close_modal_label": "Lukk",
+        "close_notice_label": "Lukk",
+        "expand_notice_label": "Se mer",
+        "continue_to_shipping_method": "Fortsett å sende",
+        "continue_to_payment_method": "Fortsett å betale",
+        "continue_to_review": "Gjennomgå bestilling",
+        "back_to_cart": "Gå tilbake til handlekurven",
+        "back_to_contact_information": "Gå tilbake til informasjon",
+        "back_to_shipping_method": "Gå tilbake til frakt",
+        "back_to_payment_method": "Gå tilbake til betaling",
+        "choose_shipping_method": "Velg en fraktmetode",
+        "choose_payment_method": "Velg en betalingsmetode",
+        "choose_billing_address": "Velg en faktureringsadresse",
+        "contact_us_html": "Kontakt oss for mer informasjon",
+        "autocomplete_title": "Forslag",
+        "autocomplete_single_item": "1 vare tilgjengelig",
+        "autocomplete_multi_item": "{{number}} Elementer tilgjengelig",
+        "autocomplete_selection": "{{number}} av {{total}}",
+        "autocomplete_close": "Lukk forslag",
+        "forwarding_indicator": {
+          "new_window": "Åpnes i et nytt vindu.",
+          "external": "Åpner ekstern nettside.",
+          "external_and_new_window": "Åpner ekstern nettside i nytt vindu."
+        },
+        "checkout_context": {
+          "step_one": "%{shop_name} - Sjekk ut"
+        },
+        "tooltip_accessibility_label": "Mer informasjon"
+      },
+      "contact": {
+        "title": "Informasjon",
+        "address_title": "Adresse",
+        "shipping_address_title": "Sendingsadresse",
+        "delivery_option_title": "Leverings metode",
+        "contact_method_title": "Kontaktinformasjon",
+        "email_label": "E-post",
+        "email_placeholder": "E-post",
+        "email_or_phone_label": "E-post eller mobilnummer",
+        "email_or_phone_placeholder": "E-post eller mobilnummer",
+        "stored_addresses_label": "Lagrede adresser",
+        "new_address_label": "Bruk en ny adresse",
+        "first_name_label": "Fornavn"
+      }
     }
   }
 }
