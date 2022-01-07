@@ -79,7 +79,73 @@
   },
   "store_availability": {
     "general": {
-      "view_store_info": "Bekijk winkelinformatie"
+      "view_store_info": "Bekijk winkelinformatie",
+      "check_other_stores": "Controleer beschikbaarheid bij andere winkels",
+      "pick_up_available": "Pickup beschikbaar",
+      "pick_up_currently_unavailable": "Pick-up momenteel niet beschikbaar",
+      "pick_up_available_at_html": "Pick-up beschikbaar bij <strong>{{ location_name }}<\/strong>",
+      "pick_up_unavailable_at_html": "Pick-up momenteel niet beschikbaar bij <strong>{{ location_name }}<\/strong>"
+    }
+  },
+  "cart": {
+    "general": {
+      "title": "Mijn wagen",
+      "summary": "Samenvatting cart",
+      "close_cart": "Dichtbij",
+      "shipping": "Verzenden",
+      "tax": "Belasting",
+      "at_checkout": "Berekend bij checkout",
+      "empty": "Uw winkelwagen is momenteel leeg.",
+      "product": "Product",
+      "price": "Prijs",
+      "qty": "Titel",
+      "remove": "Verwijderen",
+      "total": "Totaal",
+      "subtotal": "Subtotaal",
+      "continue": "Doorgaan met winkelen",
+      "update": "Update winkelwagen",
+      "checkout": "Uitchecken",
+      "note": "Speciale instructies",
+      "recently_viewed": "U hebt ook gekeken",
+      "cart_discount": "Discount Code (toegepast bij Checkout)",
+      "free_shipping_before": "Je bent alleen",
+      "free_shipping_after": "weg van gratis binnenlandse scheepvaart!",
+      "free_shipping_qualified": "Uw bestelling kwalificeert voor gratis binnenlandse scheepvaart!",
+      "free_shipping_exclusions": "(exclusief internationaal)",
+      "discounts": "Kortingen",
+      "savings": "Totale besparingen",
+      "discount_applied": "toegepast korting!",
+      "items": "Punt(en)"
+    }
+  },
+  "collections": {
+    "general": {
+      "all_collections": "Collecties",
+      "all_products": "Alle producten",
+      "no_matches": "Er zijn geen items in deze verzameling",
+      "shop_by_designer": "Winkel van Designer"
+    },
+    "sorting": {
+      "title": "Sorteer op",
+      "featured": "Uitgelicht",
+      "best_selling": "Beste verkoop",
+      "az": "Alfabetisch, AZ",
+      "za": "Alfabetisch, Z-A",
+      "price_ascending": "Prijs laag naar hoog",
+      "price_descending": "Prijs, hoog naar laag",
+      "date_descending": "Date, nieuw voor oud",
+      "date_ascending": "Date, oud naar nieuw"
+    },
+    "filter": {
+      "filtering_by": "Filter door:",
+      "refine": "Refine"
+    }
+  },
+  "contact": {
+    "form": {
+      "name": "Naam",
+      "firstname": "Voornaam",
+      "lastname": "Achternaam"
     }
   }
 }
