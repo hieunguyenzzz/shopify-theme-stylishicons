@@ -276,6 +276,68 @@
       "onboarding": {
         "no_content": "Deze sectie bevat momenteel geen content. Content toevoegen aan deze sectie met behulp van de flankbalk."
       }
+    },
+    "mobile_nav": {
+      "account": "Rekening",
+      "login": "Inloggen \/ Account maken",
+      "logout": "Uitloggen"
+    }
+  },
+  "products": {
+    "general": {
+      "new": "NIEUWE",
+      "sale": "UITVERKOOP",
+      "sold": "UITVERKOCHT",
+      "quick_view": "Snelle kijk",
+      "from": "Van",
+      "view_full": "Bekijk de volledige details",
+      "view_all": "Bekijk alles",
+      "related": "Meer in deze collectie",
+      "sale_price": "Uitverkoop",
+      "regular_price": "Normaal"
+    },
+    "product": {
+      "designer": "Ontwerper",
+      "sold_out": "Uitverkocht",
+      "from_lowest_price_html": "{{ lowest_price }}",
+      "unavailable": "Niet beschikbaar",
+      "compare_at": "Vergelijken bij",
+      "add_to_cart": "Voeg toe aan winkelmandje",
+      "quantity": "Hoeveelheid",
+      "select_options": "Bekijk opties",
+      "details": "Details",
+      "sizing": "Maat",
+      "video": "Video",
+      "model": "Productzorg",
+      "back_to": "Terug naar",
+      "adding": "Toevoegen ...",
+      "thank_you": "Bedankt!",
+      "added": "Toegevoegd aan winkelwagen",
+      "view_cart": "Bekijk winkelwagen",
+      "or": "of",
+      "continue": "Doorgaan met winkelen",
+      "qty_error_first": "Alleen",
+      "qty_error_last": "van dit item is beschikbaar",
+      "qty_sold_out": "Dit item is uitverkocht",
+      "back_in_stock": "Stuur me een e-mail wanneer dit beschikbaar is",
+      "back_in_stock_confirm": "Bedankt, we nemen contact met u op wanneer dit beschikbaar is",
+      "readmore": "Lees verder",
+      "view_in_space": "Bekijk in uw ruimte",
+      "view_in_space_label": "Bekijk in uw ruimte, laadt item in Augmented Reality Window",
+      "unit_price_label": "Eenheid prijs"
+    }
+  },
+  "gift_cards": {
+    "issued": {
+      "title": "Hier is je {{ value }} Geschenkkaart voor {{ shop }}!",
+      "subtext": "Hier is je cadeaubon!",
+      "disabled": "Gehandicapt",
+      "expired": "Over de datum op {{ expiry }}",
+      "active": "Verloopt op {{ expiry }}",
+      "redeem": "Gebruik deze code bij het afrekenen om uw cadeaubon in te wisselen",
+      "shop_link": "Begin met winkelen",
+      "print": "Afdrukken",
+      "email": "E-mail"
     }
   }
 }
