@@ -1334,7 +1334,67 @@
     "form": {
       "name": "Navn",
       "firstname": "Fornavn",
-      "lastname": "etternavn"
+      "lastname": "etternavn",
+      "subject": "Emne",
+      "companyname": "Selskap",
+      "address": "Adresse",
+      "email": "E-post",
+      "phone": "Telefonnummer",
+      "message": "Beskjed",
+      "websiteurl": "nettside-URL",
+      "acceptsmarketing": "Abonner på å holde seg oppdatert med nye produkter og tilbud!",
+      "send": "Sende",
+      "post_success": "Takk for at du kontaktet oss. Vi kommer tilbake til deg så snart som mulig."
+    }
+  },
+  "customer": {
+    "account": {
+      "title": "Regnskap",
+      "logout": "Logg ut",
+      "link": "Tilbake til kontoen",
+      "signup": "Logg inn eller opprett en konto",
+      "details": "kontodetaljer",
+      "view_addresses": "Se adresser",
+      "returns_content": "Retur \/ Exchange.",
+      "return": "Gå tilbake til kontoinformasjon"
+    },
+    "activate_account": {
+      "title": "Aktiver konto",
+      "subtext": "Opprett passordet ditt for å aktivere kontoen din.",
+      "password": "Passord",
+      "password_confirm": "bekreft passord",
+      "submit": "Aktiver konto",
+      "cancel": "Avvis invitasjon"
+    },
+    "addresses": {
+      "title": "Dine adresser",
+      "default": "hoved adresse",
+      "add_new": "Legg til en ny adresse",
+      "edit_address": "Rediger adresse",
+      "first_name": "Fornavn",
+      "last_name": "etternavn",
+      "company": "Selskap",
+      "address1": "Adresse 1",
+      "address2": "Adresse 2",
+      "city": "By",
+      "country": "Land",
+      "province": "Provins",
+      "zip": "Post \/ postnummer",
+      "phone": "Telefon",
+      "set_default": "Sett som standardadresse",
+      "add": "Legg til adresse",
+      "update": "Oppdater adresse",
+      "cancel": "Avbryt",
+      "edit": "Redigere",
+      "delete": "Slett"
+    },
+    "login": {
+      "title": "Logg Inn",
+      "email": "E-post",
+      "password": "Passord",
+      "forgot_password": "Glemt passordet?",
+      "sign_in": "Logg inn",
+      "cancel": "Gå tilbake til butikken"
     }
   }
 }
