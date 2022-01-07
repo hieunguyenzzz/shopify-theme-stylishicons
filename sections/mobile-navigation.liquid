@@ -2,7 +2,7 @@
 {% assign animationcount = 0 %}
 <nav style="--delay-unit:1000ms;--couter-name:animateCount" class="mobile-menu" role="navigation" data-section-id="{{ section.id }}" data-section-type="mobile-navigation">
   <div style="{% assign animationcount = animationcount | plus :1 %}--delay-animation: {{animationcount | times:75  }}ms"  class="slideout__trigger--close animation-delay">
-    <button  class="slideout__trigger-mobile-menu js-slideout-close" data-slideout-direction="left" aria-label="Close navigation" tabindex="0" type="button" name="button" aria-expanded="false">
+    <button  class="slideout__trigger-mobile-menu js-slideout-close" data-slideout-direction="right" aria-label="Close navigation" tabindex="0" type="button" name="button" aria-expanded="false">
       <div class="icn-close"></div>
     </button>
   </div>
