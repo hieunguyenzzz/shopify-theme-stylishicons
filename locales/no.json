@@ -1528,5 +1528,60 @@
       "print": "Skrive ut",
       "email": "E-post"
     }
+  },
+  "social": {
+    "icons": {
+      "facebook": "Del på Facebook",
+      "twitter": "Del På Twitter",
+      "pinterest": "Del på Pinterest"
+    },
+    "product_share": {
+      "share": "Share"
+    }
+  },
+  "pagefly": {
+    "products": {
+      "product": {
+        "regular_price": "Vanlig pris",
+        "sold_out": "Utsolgt",
+        "unavailable": "Utilgjengelig",
+        "on_sale": "Salg",
+        "quantity": "Mengde",
+        "add_to_cart": "Legg til i handlevogn",
+        "back_to_collection": "Tilbake til {{ title }}",
+        "view_details": "Vis detaljer"
+      }
+    },
+    "article": {
+      "tags": "Tag:",
+      "all_topics": "Alle emner",
+      "by_author": "av {{ author }}",
+      "posted_in": "Publisert i",
+      "read_more": "Les mer",
+      "back_to_blog": "Tilbake til {{ title }}"
+    },
+    "comments": {
+      "title": "Legg igjen en kommentar",
+      "name": "Navn",
+      "email": "E-post",
+      "message": "Beskjed",
+      "post": "Post Kommentar",
+      "moderated": "Vær oppmerksom på at kommentarer må godkjennes før de publiseres",
+      "success_moderated": "Din kommentar ble postet med hell. Vi vil publisere det om en liten stund, da bloggen vår er moderert.",
+      "success": "Din kommentar ble postet vellykket! Takk skal du ha!",
+      "comments_with_count": {
+        "one": "{{ count }} kommentar",
+        "other": "{{ count }} Kommentarer"
+      }
+    },
+    "password_page": {
+      "login_form_message": "Skriv inn butikken ved hjelp av passord:",
+      "login_form_password_label": "Passord",
+      "login_form_password_placeholder": "Ditt passord",
+      "login_form_submit": "Tast inn",
+      "signup_form_email_label": "E-post",
+      "signup_form_success": "Vi sender deg en e-post rett før vi åpner!",
+      "password_link": "Skriv inn med passord"
+    }
   }
 }
