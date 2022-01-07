@@ -1268,7 +1268,73 @@
   },
   "store_availability": {
     "general": {
-      "view_store_info": "Se butikkinformasjon"
+      "view_store_info": "Se butikkinformasjon",
+      "check_other_stores": "Sjekk tilgjengelighet i andre butikker",
+      "pick_up_available": "Pickup tilgjengelig",
+      "pick_up_currently_unavailable": "Pickup for øyeblikket utilgjengelig",
+      "pick_up_available_at_html": "Pickup tilgjengelig på <strong>{{ location_name }}<\/strong>",
+      "pick_up_unavailable_at_html": "Pickup for øyeblikket utilgjengelig på <strong>{{ location_name }}<\/strong>"
+    }
+  },
+  "cart": {
+    "general": {
+      "title": "Min Handlevogn",
+      "summary": "Handlevogn Oppsummering",
+      "close_cart": "Lukk",
+      "shipping": "Shipping",
+      "tax": "Skatt",
+      "at_checkout": "Beregnet ved kassen",
+      "empty": "Handlekurven din er tom.",
+      "product": "Produkt",
+      "price": "Pris",
+      "qty": "Antall",
+      "remove": "Fjerne",
+      "total": "Total",
+      "subtotal": "Subtotal",
+      "continue": "Fortsett Å Handle",
+      "update": "Oppdater Handlevogn",
+      "checkout": "utsjekking",
+      "note": "Bestill Spesielle Instruksjoner",
+      "recently_viewed": "Du Har Også Sett",
+      "cart_discount": "Rabattkode (Brukt ved Kassen)",
+      "free_shipping_before": "Du er bare",
+      "free_shipping_after": "vekk Fra Gratis Innenlands Frakt!",
+      "free_shipping_qualified": "Din bestilling kvalifiserer For Gratis Innenlands Frakt!",
+      "free_shipping_exclusions": "(Ekskluderer Internasjonalt)",
+      "discounts": "Rabatt",
+      "savings": "Totale Besparelser",
+      "discount_applied": "Rabatt Brukt!",
+      "items": "Produkt (er)"
+    }
+  },
+  "collections": {
+    "general": {
+      "all_collections": "Samlinger",
+      "all_products": "Alle Produkter",
+      "no_matches": "Det er ingen elementer i denne samlingen",
+      "shop_by_designer": "Handle Etter Designer"
+    },
+    "sorting": {
+      "title": "Sorter etter",
+      "featured": "Utvalgt",
+      "best_selling": "bestselgende",
+      "az": "Alfabetisk, a-z",
+      "za": "Alfabetisk, z-a",
+      "price_ascending": "Pris, lav til høy",
+      "price_descending": "Pris, høy til lav",
+      "date_descending": "Dato, ny på gammel",
+      "date_ascending": "Dato, gammel til ny"
+    },
+    "filter": {
+      "filtering_by": "Filtrering Av:",
+      "refine": "Avgrense"
+    }
+  },
+  "contact": {
+    "form": {
+      "name": "Navn",
+      "firstname": "Fornavn",
+      "lastname": "etternavn"
     }
   }
 }
