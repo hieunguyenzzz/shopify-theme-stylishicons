@@ -258,7 +258,137 @@
       },
       "shipping": {
         "title": "Shipping",
-        "shipping_method_title": "Forsendelsesmetode"
+        "shipping_method_title": "Forsendelsesmetode",
+        "shipping_method_one_time_purchase_group_title": "One-time-kjøp",
+        "shipping_method_subscription_group_title": "Abonnement",
+        "subscription_shipping": "Abonnementslevering",
+        "waiting_on_rate_notice": "Få tilgjengelige fraktpriser ...",
+        "waiting_on_pickup_location_notice": "Få tilgjengelige Pick up steder ...",
+        "no_rates_for_cart_or_destination_notice": "Det er ingen fraktmetoder tilgjengelig for handlekurven eller adressen din",
+        "no_pickup_location_notice": "Minst ett av produktene dine er ikke tilgjengelig for henting",
+        "no_rates_for_country_notice": "Ingen fraktpriser funnet for denne adressen.",
+        "no_rates_contact_notice": "Kontakt oss for mer informasjon",
+        "free_rate_label": "Gratis",
+        "cheapest_rate_label": "Billigste",
+        "please_enter_your_shipping_information_notice": "Vennligst skriv inn leveringsinformasjonen din.",
+        "estimated_delivery_date": {
+          "one": "%{count} virkedag",
+          "other": "%{count} virkedager"
+        },
+        "estimated_delivery_date_range": "%{minimum} til %{maximum} virkedager",
+        "estimated_delivery_time": "Forventet levering %{time}",
+        "estimated_delivery_time_range": "Forventet levering %{min_time}–%{max_time}",
+        "shipping_line_phone_label": "Mobiltelefonnummer (påkrevd)",
+        "shipping_line_phone": "Kureren kan bruke dette nummeret til å kontakte deg.",
+        "shipping_line_delivery_phone_label": "Mobiltelefonnummer",
+        "shipping_line_delivery_phone": "Vi kan bruke dette nummeret til å ringe eller skrive deg om din levering.",
+        "optional_shipping_line_delivery_instructions_label": "Leveringsanvisninger (valgfritt)",
+        "shipping_line_delivery_instructions": "Skriv inn nødvendig informasjon som dørkoder eller avgangsinstruksjoner.",
+        "other_method": {
+          "zero": "Ingen andre metoder tilgjengelig",
+          "one": "%{count} annen metode tilgjengelig på ",
+          "other": "%{count} Andre metoder tilgjengelig som begynner på "
+        },
+        "shipping_rate_discounted_amount": "Var: %{original_amount}. Nå: %{amount}",
+        "local_delivery": "Lokal levering",
+        "subscription_delivery_description": {
+          "prepaid_delivery_frequency": {
+            "one": "til %{count} leveranse",
+            "other": "til %{count} Leveranser"
+          },
+          "subscription_delivery_frequency": {
+            "day": {
+              "one": "hver dag",
+              "other": "hver %{count} dager"
+            },
+            "week": {
+              "one": "hver uke",
+              "other": "hver %{count} uker"
+            },
+            "month": {
+              "one": "hver måned",
+              "other": "hver %{count} måneder"
+            },
+            "year": {
+              "one": "hvert år",
+              "other": "hver %{count} år"
+            }
+          },
+          "multiple_subscriptions_shipping_price_label": "%{shipping_price} per levering",
+          "prepaid_shipping_price_label": "%{shipping_price} per levering X. %{delivery_interval_count}",
+          "initial_order_discounted": "Første fraktkostnad %{discounted_shipping_cost}, deretter %{frequency_description}",
+          "prepaid_initial_order_discounted": "Første fraktkostnad %{discounted_shipping_price} %{prepaid_delivery_frequency}",
+          "prepaid_initial_order_discounted_with_per_delivery_price": "Første fraktkostnad %{discounted_shipping_price} %{prepaid_delivery_frequency} (%{discounted_cost_per_delivery})",
+          "prepaid_initial_order_discounted_with_renewal": "Første fraktkostnad %{discounted_shipping_price} %{prepaid_delivery_frequency}, deretter %{shipping_price} %{billing_cycle}",
+          "prepaid_initial_order_discounted_with_per_delivery_price_and_renewal": "Første fraktkostnad %{discounted_shipping_price} %{prepaid_delivery_frequency} (%{discounted_cost_per_delivery}), deretter %{shipping_price} %{billing_cycle}",
+          "shipping_price_included": "Inkludert",
+          "recurring_order_shipping_price": "etterfulgt av %{recurring_order_shipping_price}",
+          "first_order_shipping_price_included": "Første bestilling inkludert, etterfulgt av %{recurring_order_shipping_price}",
+          "first_order_different_shipping_price": "%{first_order_shipping_price} (%{per_delivery_price} per levering), etterfulgt av %{recurring_order_shipping_price}",
+          "first_n_order_free": {
+            "one": "Første ordrefri",
+            "other": "Første %{count} bestillinger gratis"
+          },
+          "free_for_first_n_order": {
+            "one": "For første bestilling",
+            "other": "For første %{count} rekkefølge"
+          }
+        },
+        "one_time_purchase_shipping": "Engangs frakt"
+      },
+      "localized_fields": {
+        "additional_information": {
+          "title": "Tilleggsinformasjon"
+        }
+      },
+      "payment": {
+        "amazon_payments_label": "Amazon Pay",
+        "amazon_payments_login_hint": "Du vil bli bedt om å logge Inn Med Amazon.",
+        "amazon_payments_logout": "Logg Ut Fra Amazon Pay",
+        "amazon_payments_failed_mfa_challenge": "Den valgte betalingsmåten kunne ikke brukes. Velg en annen metode eller kontakt banken eller kortutstederen.",
+        "amazon_payments_abandoned_mfa_challenge": "Betalingen kunne ikke fullføres. Prøv en annen betalingsmåte eller kontakt banken eller kortutstederen.",
+        "amazon_payments_could_not_enqueue_authorize": "Det oppstod et problem med å behandle betalingen din. Prøv på nytt eller bruk en annen betalingsmåte.",
+        "title": "Betaling",
+        "amount_left_to_pay_label": "Betaling på grunn:",
+        "discount_button_action_label": "Rabattkode",
+        "gift_card_code_label": "Gavekort kode",
+        "apply_gift_card_button_label": "Søke om",
+        "gift_card_balance_label": "Saldo:",
+        "supported_card_brands_more_label": "og mer…",
+        "detected_card_brand": "Oppdaget kort merke: {brand}",
+        "credit_card_vaulting_sign_in_banner_title": "Lagre kredittkortet ditt",
+        "credit_card_vaulting_sign_in_banner_info": "Logg inn eller opprett en konto for å lagre kredittkortet ditt for fremtidige kjøp.",
+        "credit_card_vaulting_sign_in_banner_button_label": "Logg Inn",
+        "ftd_vault_credit_card_label": "Lagre kredittkortet mitt for en raskere utsjekking",
+        "maximum_vaulted_card_info": {
+          "one": "Du kan spare opptil %{count} kredittkort til kontoen din.",
+          "other": "Du kan spare opptil %{count} kredittkort til kontoen din."
+        },
+        "card_number_label": "Kortnummer",
+        "card_number_placeholder": "Kortnummer",
+        "card_pay_with": "Betal med:",
+        "card_security_notice": "Alle transaksjoner er sikre og krypterte.",
+        "card_security_vault_notice": "Vi trenger dine opplysninger for fremtidige betalinger. Alle transaksjoner er sikre og krypterte.",
+        "card_information_notice": "Alle transaksjoner er sikre og krypterte. Kredittkortinformasjon blir aldri lagret.",
+        "name_on_card_label": "Navn på kort",
+        "name_on_card_placeholder": "Navn på kort",
+        "card_expired": "Utløpe",
+        "card_expiry_label": "Utløpsdato (MM \/ ÅÅ)",
+        "card_expiry_placeholder": "Utløpsdato (MM \/ ÅÅ)",
+        "credit_card_start_month": "Start måned",
+        "credit_card_start_year": "Startår",
+        "delete_customer_mandate_modal_title": "Fjerne dette kortet?",
+        "delete_customer_mandate_modal_body": "Dette kan ikke angres.",
+        "delete_customer_mandate_modal_confirm": "Fjerne",
+        "delete_customer_mandate_modal_cancel": "Avbryt",
+        "card_verification_value_label": "Sikkerhetskode",
+        "card_verification_value_placeholder": "Sikkerhetskode",
+        "card_verification_confirm": "For verifiseringsformål, vennligst skriv inn kortets sikkerhetskode.",
+        "card_expiry_date_explanation": "Kort utløpsdato i format: måned, måned, år, år",
+        "card_expiration_month_label": "Utløpsmåned",
+        "card_expiration_year_label": "Utløp år",
+        "card_verification_value_explanation": "3-sifret sikkerhetskode som vanligvis finnes på baksiden av kortet ditt. American Express-kort har en 4-sifret kode plassert på forsiden.",
+        "card_verification_value_explanation_amex": "4-sifret sikkerhetskode på forsiden av kortet"
       }
     }
   }
