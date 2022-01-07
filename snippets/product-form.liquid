@@ -9,9 +9,9 @@
   {% endif %}
 {% endfor %}
 <input type="hidden" name="product_url" id="product_url" value="{{ product.title | handle }}">
-  {% form 'product', product, id: "AddToCartForm", class: "product_form", data-product-form:product_form_config, data-product-id: product.id %}
+  {% form 'product', product, id: "AddToCartForm", class: "product_form !tw-flex tw-flex-col", data-product-form:product_form_config, data-product-id: product.id %}
 
-    {% render 'product-price', variant: current_variant, product: product %}
+   
 <!--   <a class="sprs" href="#product-reviews"> <span class="shopify-product-reviews-badge" data-id="{{ product.id }}">    </span></a> -->
 {% if featuredShowexpress %}
 <label class="tw-alert tw-rounded-none tw-alert-sm tw-clear-both ">
@@ -179,8 +179,17 @@
     </div>
     <div class="clear"></div>
 {% endif %}
-
-
+<div class="tw-text-center tw-w-full tw-flex-1 tw-justify-center lg:tw-order-[-1]">
+  {% render 'product-price', variant: current_variant, product: product %}
+</div>
+<div id="leading_time"  class="">
+  <span class="">{% if current_variant.metafields.global.leading-time %}
+    {{current_variant.metafields.global.leading-time}}
+{% else %}
+    Ships in 18-22 weeks
+{% endif %}</span>
+  
+</div>
 {% if current_variant.available %}
     <div class="product-add">
         <input id="AddToCart" type="submit" name="button" class="add{% if section.settings.show_payment_button and product.selling_plan_groups.size == 0 %} secondary-button{% endif %}" value="{{ 'products.product.add_to_cart' | t }}"/>
