@@ -145,7 +145,67 @@
     "form": {
       "name": "Naam",
       "firstname": "Voornaam",
-      "lastname": "Achternaam"
+      "lastname": "Achternaam",
+      "subject": "Onderwerp",
+      "companyname": "Bedrijf",
+      "address": "Adres",
+      "email": "E-mail",
+      "phone": "Telefoonnummer",
+      "message": "Bericht",
+      "websiteurl": "Website URL",
+      "acceptsmarketing": "Abonneer je op bijgewerkt met nieuwe producten en aanbiedingen!",
+      "send": "Versturen",
+      "post_success": "Bedankt dat je contact met ons opneemt. We nemen zo snel mogelijk contact met u op."
+    }
+  },
+  "customer": {
+    "account": {
+      "title": "Rekening",
+      "logout": "Uitloggen",
+      "link": "Terug naar account",
+      "signup": "Login of creëer een account",
+      "details": "Accountgegevens",
+      "view_addresses": "Bekijk adressen",
+      "returns_content": "Return \/ Exchange",
+      "return": "Keer terug naar accountgegevens"
+    },
+    "activate_account": {
+      "title": "Activeer account",
+      "subtext": "Maak uw wachtwoord om uw account te activeren.",
+      "password": "Wachtwoord",
+      "password_confirm": "Wachtwoord bevestigen",
+      "submit": "Activeer account",
+      "cancel": "Weigeren uitnodiging"
+    },
+    "addresses": {
+      "title": "Uw adressen",
+      "default": "hoofdadres",
+      "add_new": "Voeg een nieuw adres toe",
+      "edit_address": "Verander adres",
+      "first_name": "Voornaam",
+      "last_name": "Achternaam",
+      "company": "Bedrijf",
+      "address1": "Adres 1",
+      "address2": "Adres 2",
+      "city": "Stad",
+      "country": "Land",
+      "province": "Provincie",
+      "zip": "Postcode",
+      "phone": "Telefoon",
+      "set_default": "Stel in als standaardadres",
+      "add": "Voeg adres toe",
+      "update": "Update adres",
+      "cancel": "Annuleren",
+      "edit": "Bewerk",
+      "delete": "Verwijderen"
+    },
+    "login": {
+      "title": "Log in",
+      "email": "E-mail",
+      "password": "Wachtwoord",
+      "forgot_password": "uw wachtwoord vergeten?",
+      "sign_in": "Inloggen",
+      "cancel": "Keer terug naar winkel"
     }
   }
 }
