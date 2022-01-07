@@ -205,7 +205,77 @@
       "password": "Wachtwoord",
       "forgot_password": "uw wachtwoord vergeten?",
       "sign_in": "Inloggen",
-      "cancel": "Keer terug naar winkel"
+      "cancel": "Keer terug naar winkel",
+      "guest_title": "Doorgaan als gast",
+      "guest_continue": "Doorgaan"
+    },
+    "orders": {
+      "title": "Bestelgeschiedenis",
+      "order_number": "Volgorde",
+      "date": "Datum",
+      "payment_status": "Betalingsstatus",
+      "fulfillment_status": "Fulfillment-status",
+      "total": "Totaal",
+      "none": "Je hebt nog geen bestellingen geplaatst."
+    },
+    "order": {
+      "title": "Volgorde",
+      "date": "Geplaatst op",
+      "cancelled": "Order geannuleerd op",
+      "cancelled_reason": "Reden: {{ reason }}",
+      "billing_address": "factuur adres",
+      "payment_status": "Betalingsstatus",
+      "shipping_address": "Verzendingsadres",
+      "fulfillment_status": "Fulfillment-status",
+      "discount": "Korting",
+      "shipping": "Verzenden",
+      "tax": "Belasting",
+      "order_details": "Ordergegevens",
+      "details": {
+        "product": "Product",
+        "sku": "Sku",
+        "price": "Prijs",
+        "quantity": "Hoeveelheid",
+        "total": "Totaal",
+        "fulfilled_at": "Voldaan {{ date }}",
+        "subtotal": "Subtotaal"
+      }
+    },
+    "recover_password": {
+      "title": "Wachtwoord resetten",
+      "email": "E-mail",
+      "submit": "Indienen",
+      "cancel": "Annuleren",
+      "subtext": "Wij sturen u een e-mail om uw wachtwoord te resetten.",
+      "success": "We hebben u een e-mail gestuurd met een link om uw wachtwoord bij te werken."
+    },
+    "reset_password": {
+      "title": "Accountwachtwoord resetten",
+      "subtext": "Geef een nieuw wachtwoord op voor {{ email }}",
+      "password": "Wachtwoord",
+      "password_confirm": "Wachtwoord bevestigen",
+      "submit": "Wachtwoord opnieuw instellen"
+    },
+    "register": {
+      "title": "Account maken",
+      "first_name": "Voornaam",
+      "last_name": "Achternaam",
+      "email": "E-mail",
+      "password": "Wachtwoord",
+      "submit": "Maken"
+    }
+  },
+  "layout": {
+    "footer": {
+      "copyright": "Copyright",
+      "theme_title": "door"
+    },
+    "homepage": {
+      "mailing_list_join": "Hallo Jij!",
+      "mailing_list_text": "kom bij onze maillijst",
+      "onboarding": {
+        "no_content": "Deze sectie bevat momenteel geen content. Content toevoegen aan deze sectie met behulp van de flankbalk."
+      }
     }
   }
 }
