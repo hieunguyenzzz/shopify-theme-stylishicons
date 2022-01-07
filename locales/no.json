@@ -1,0 +1,39 @@
+{
+  "general": {
+    "404": {
+      "subtext": "Denne siden eksisterer ikke. Prøv å søke etter hva du vil finne:",
+      "title": "Oops-Vi kunne ikke finne den ene"
+    },
+    "pagination": {
+      "showing_items": "Viser elementer",
+      "of": "av"
+    },
+    "forms": {
+      "post_error": "Beklager, ser ut som noe gikk galt. Vennligst rett følgende og send igjen:"
+    },
+    "breadcrumbs": {
+      "home": "Hjem"
+    },
+    "newsletter_form": {
+      "newsletter_email": "Bli med på vår adresseliste",
+      "thanks": "Takk for at du ble med",
+      "popup_thanks": "Takk for at du blir med, her er kupongkoden din:",
+      "email_placeholder": "Epostadresse",
+      "confirmation": "Takk for at du blir med!",
+      "submit": "Bli med"
+    },
+    "search": {
+      "no_results_html": "Søket ditt etter \"{{ terms }}\"ga ikke noen resultater.",
+      "results_for_html": "Søket ditt etter \"{{ terms }}\"Avdekket følgende:",
+      "title": "Søk",
+      "placeholder": "Søk",
+      "submit": "Søk"
+    },
+    "language": {
+      "dropdown_label": "Språk"
+    },
+    "accessibility": {
+      "unit_price_separator": "per"
+    }
+  }
+}
