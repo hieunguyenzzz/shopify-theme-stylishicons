@@ -1189,8 +1189,86 @@
       "order": "Rekkefølge %{name}",
       "search": "Søk",
       "search_results": {
-        "one": "Søk: %{count} resultat funnet for \"%{terms}\""
+        "one": "Søk: %{count} resultat funnet for \"%{terms}\"",
+        "other": "Søk: %{count} Resultater funnet for \"%{terms}\""
+      },
+      "collections": "Samlinger",
+      "not_found": "404 ikke funnet",
+      "challenge": "Utfordring",
+      "checkpoint": "Kontrollpunkt"
+    },
+    "cart": {
+      "discounts_with_count": "%{count} Rabatter har blitt brukt"
+    },
+    "challenge": {
+      "message": "For å fortsette, gi oss beskjed om at du ikke er en robot.",
+      "error": "Ditt svar var ikke riktig, prøv igjen.",
+      "submit_button_text": "Sende inn"
+    },
+    "checkpoint": {
+      "message": "Løse captcha for å fortsette",
+      "error": "CAPTCHA Validation mislyktes",
+      "submit_button_text": "Sende inn"
+    },
+    "store_availability": {
+      "pick_up_time": {
+        "one_hour": "Vanligvis klar i 1 time",
+        "two_hours": "Vanligvis klar om 2 timer",
+        "four_hours": "Vanligvis klar om 4 timer",
+        "twenty_four_hours": "Vanligvis klar i 24 timer",
+        "two_to_four_days": "Vanligvis klar i 2-4 dager",
+        "five_or_more_days": "Vanligvis klar i 5 + dager",
+        "zero_to_two_hours": "Vanligvis klar om 2 timer",
+        "two_to_four_hours": "Vanligvis klar om 4 timer",
+        "immediately": "Klar for pickup nå",
+        "next_day": "Klar for pickup neste dag"
       }
+    }
+  },
+  "password": {
+    "general": {
+      "thanks": "Takk for at du ble med i vår liste",
+      "enter_store": "Logg inn med passord:",
+      "password": "Passord",
+      "enter": "Tast inn",
+      "email_address": "Epostadresse",
+      "submit": "Sende inn",
+      "powered": "Denne butikken vil bli drevet av"
+    }
+  },
+  "blogs": {
+    "article": {
+      "posted_on_date_html": "postet på <time datetime=\"{{ date }}\">{{ date }}<\/time>",
+      "tags": "Tags.",
+      "tagged": "Merket",
+      "comments": "Kommentarer",
+      "read_more": "Les mer"
+    },
+    "comments": {
+      "title": "Legg igjen en kommentar",
+      "name": "Navn",
+      "email": "E-post",
+      "message": "Kommentar",
+      "moderated": "Alle bloggkommentarer kontrolleres før publisering",
+      "post": "Post Kommentar",
+      "success_moderated": "Din kommentar ble postet med hell. Vi vil publisere det om en liten stund, da bloggen vår er moderert.",
+      "success": "Din kommentar ble postet vellykket! Takk skal du ha!",
+      "comments_with_count": {
+        "one": "{{ count }} kommentar",
+        "other": "{{ count }} Kommentarer"
+      }
+    },
+    "sidebar": {
+      "social_title": "Koble til oss",
+      "twitter_title": "På Twitter",
+      "facebook_title": "Lik oss på Facebook",
+      "recent_posts": "Siste innlegg",
+      "tags": "Filter Artikkel Tags."
+    }
+  },
+  "store_availability": {
+    "general": {
+      "view_store_info": "Se butikkinformasjon"
     }
   }
 }
