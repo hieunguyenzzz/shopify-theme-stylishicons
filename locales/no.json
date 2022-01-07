@@ -500,7 +500,67 @@
         "credit_card_name_invalid": "Skriv inn navnet ditt nøyaktig slik den er skrevet på kortet ditt",
         "credit_card_number_invalid": "Skriv inn et gyldig kortnummer",
         "credit_card_expiry_invalid": "Skriv inn et gyldig kort utløpsdato",
-        "credit_card_month_invalid": "Skriv inn et gyldig kort utløps måned"
+        "credit_card_month_invalid": "Skriv inn et gyldig kort utløps måned",
+        "credit_card_year_invalid": "Skriv inn en gyldig kortets utløps år",
+        "credit_card_start_invalid": "Skriv inn et gyldig kort startdato",
+        "credit_card_start_month_invalid": "Skriv inn et gyldig kort start måned",
+        "credit_card_start_year_invalid": "Skriv inn et gyldig kort start år",
+        "credit_card_verification_value_blank": "Skriv inn CVV eller sikkerhetskoden på kortet ditt",
+        "reduction_code_code_not_found": "Skriv inn en gyldig rabattkode eller gavekort",
+        "reduction_code_discount_not_found": "Skriv inn en gyldig rabattkode",
+        "reduction_code_gift_card_code_invalid": "Skriv inn et gyldig gavekort",
+        "reduction_code_gift_card_unusable": "Du kan ikke bruke et gavekort til å kjøpe et annet gavekort",
+        "shipping_line_phone_blank": "Skriv inn et telefonnummer for å bruke denne leveringsmåten",
+        "shipping_line_phone_invalid": "Skriv inn et gyldig telefonnummer for å bruke denne leveringsmåten",
+        "tips_invalid_tip_amount": "Skriv inn et tips ikke mer enn %{amount}",
+        "gift_card_already_applied": "Dette gavekortet er allerede installert på din bestilling",
+        "gift_card_disabled": "Dette gavekortet er ikke lenger tilgjengelig",
+        "gift_card_expired": "Dette gavekortet er utløpt",
+        "gift_card_depleted": "Dette gavekortet har ingen midler igjen",
+        "gift_card_currency_mismatch": "Bare gavekort i %{checkout_currency} kan brukes med denne rekkefølgen",
+        "payment_gateway_needs_paid_plan_error": "Denne betalingsmåten er ikke tilgjengelig på butikken akkurat nå",
+        "payment_gateway_not_in_test_mode": "er ikke oppsett til test bestillinger. Denne butikken kan ikke akseptere reelle ordre eller ekte betalinger.",
+        "payment_gateway_incompatible_with_multi_currency": "For å fullføre denne kassen i din lokale valuta, må du betale med kredittkort.",
+        "payment_gateway_unsupported_for_subscriptions": "Denne betalingsmåten er ikke tilgjengelig for abonnements bestillinger.",
+        "subscription_agreement_blank": "For å fortsette med kjøpet, godtar abonnementsvilkårene",
+        "physical_gift_card_invalid_quantity": "Fysiske gavekort linjeelementer må ha en mengde som samsvarer med antall gavekort koder.",
+        "physical_gift_card_duplicate_code": "Fysisk gavekort linje inneholder duplisert kode.",
+        "physical_gift_card_invalid_code": "Fysisk gavekort kode er ugyldig.",
+        "sms_marketing_phone_invalid": "Skriv inn et gyldig telefonnummer"
+      },
+      "payment_errors": {
+        "generic_error": "Det oppstod et problem med å behandle betalingen din. Prøv på nytt eller bruk en annen betalingsmåte.",
+        "rejected_transaction": "Betalingen ble avvist. Prøv igjen eller bruke en annen betalingsmåte.",
+        "credit_card_processing": "Betalingen kan ikke behandles av tekniske årsaker. Prøv igjen om noen minutter eller bruke en annen betalingsmåte.",
+        "order_total_changed": "Betalingen kan ikke behandles fordi bestillingen totalt har endret seg. Sjekk din bestilling totalt og prøv igjen.",
+        "payment_processing": "Betalingen kan ikke behandles av tekniske årsaker. Prøv igjen eller bruke en annen betalingsmåte.",
+        "payment_processing_no_retry": "Betalingen kan ikke behandles av tekniske årsaker. Vennligst prøv en annen betalingsmåte.",
+        "paypal_zero_amount": "Du kan ikke bruke PayPal for %{amount} bestillinger. Bekreft bestillingen er riktig og sjekke ut uten PayPal.",
+        "paypal_invalid_token": "PayPal var ikke tilgjengelig. Prøv igjen eller bruke et annet betalingsalternativ.",
+        "pay_later_failed": "Det oppstod en feil under betalingen med betal senere. Velg en annen betalingsmåte og prøv igjen.",
+        "three_d_secure_failed": "Betalingen kunne ikke bekreftes. Prøv igjen eller bruke en annen betalingsmåte.",
+        "three_d_secure_failed_duplicate": "Kredittkort 3D Secure godkjenning mislyktes fordi en annen er allerede i gang.",
+        "three_d_secure_throttled": "For mange forsøk; vennligst vent før du prøver igjen",
+        "subscription_agreement_blank": "Å kjøpe et abonnement din betalingsinformasjon trenger å bli frelst. For å fortsette, bekrefter at du er enig eller fjerner abonnements elementer fra du bestiller.",
+        "insufficient_funds": "Betalingen ble avvist på grunn av manglende dekning. Prøv igjen eller bruke en annen betalingsmåte.",
+        "fraud_payment_errors": {
+          "transaction_declined": "Denne overføringen har blitt avslått",
+          "address_mismatch": "Gateadresse og postnummer ikke overens.",
+          "cannot_process": "Denne transaksjonen kan ikke behandles.",
+          "no_match": "Ingen treff",
+          "card_declined": "Kortet ditt ble avvist"
+        }
+      },
+      "shipping_errors": {
+        "shipping_method": "Handlekurven er oppdatert og den tidligere shipping rate er ikke gyldig. Velg en ny kurs.",
+        "shipping_method_not_available": "Handlekurven er oppdatert og varene du har lagt kan ikke sendes til din adresse. Fjerne elementer for å fullføre bestillingen.",
+        "shipping_method_not_available_generic": {
+          "one": "Denne rekkefølgen kan ikke sendes til adressen du har angitt. Gjennomgå adressen din for å sikre at alle feltene er skrevet inn riktig og prøv igjen.",
+          "other": "Noen elementer i handlekurven din kan ikke sendes til adressen du har angitt. Gjennomgå adressen din for å sikre at alle feltene er skrevet inn riktig og prøv igjen."
+        },
+        "shipping_method_not_available_updated": {
+          "one": "Elementet du la ikke leverer til din posisjon. Fjerne det å sjekke ut, eller ta kontakt med butikken."
+        }
       }
     }
   }
