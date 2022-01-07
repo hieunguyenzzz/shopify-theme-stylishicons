@@ -35,5 +35,10 @@
     "accessibility": {
       "unit_price_separator": "per"
     }
+  },
+  "shopify": {
+    "sentence": {
+      "words_connector": ", "
+    }
   }
 }
