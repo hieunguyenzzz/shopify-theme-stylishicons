@@ -35,5 +35,51 @@
     "accessibility": {
       "unit_price_separator": "per"
     }
+  },
+  "password": {
+    "general": {
+      "thanks": "Bedankt voor het toevoegen van onze lijst",
+      "enter_store": "Inloggen met wachtwoord:",
+      "password": "Wachtwoord",
+      "enter": "Binnenkomen",
+      "email_address": "E-mailadres",
+      "submit": "Indienen",
+      "powered": "Deze winkel wordt aangedreven door"
+    }
+  },
+  "blogs": {
+    "article": {
+      "posted_on_date_html": "geplaatst op <time datetime=\"{{ date }}\">{{ date }}<\/time>",
+      "tags": "Tags",
+      "tagged": "Getagd",
+      "comments": "Opmerkingen",
+      "read_more": "Lees verder"
+    },
+    "comments": {
+      "title": "laat een reactie achter",
+      "name": "Naam",
+      "email": "E-mail",
+      "message": "Commentaar",
+      "moderated": "Alle blogcommentaren worden voorafgaand aan het publiceren gecontroleerd",
+      "post": "Plaats een reactie",
+      "success_moderated": "Uw opmerking is succesvol gepost. We zullen het in een korte tijd publiceren, omdat onze blog is gemodereerd.",
+      "success": "Uw opmerking is succesvol gepost! Dank u!",
+      "comments_with_count": {
+        "one": "{{ count }} commentaar",
+        "other": "{{ count }} opmerkingen"
+      }
+    },
+    "sidebar": {
+      "social_title": "Verbind je met ons",
+      "twitter_title": "Op Twitter",
+      "facebook_title": "Vind ons leuk op Facebook",
+      "recent_posts": "recente berichten",
+      "tags": "Filter artikeltags"
+    }
+  },
+  "store_availability": {
+    "general": {
+      "view_store_info": "Bekijk winkelinformatie"
+    }
   }
 }
