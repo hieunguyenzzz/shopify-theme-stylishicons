@@ -339,5 +339,60 @@
       "print": "Afdrukken",
       "email": "E-mail"
     }
+  },
+  "social": {
+    "icons": {
+      "facebook": "Delen op Facebook",
+      "twitter": "Delen op Twitter",
+      "pinterest": "Delen op Pinterest"
+    },
+    "product_share": {
+      "share": "Share"
+    }
+  },
+  "pagefly": {
+    "products": {
+      "product": {
+        "regular_price": "Normale prijs",
+        "sold_out": "Uitverkocht",
+        "unavailable": "Niet beschikbaar",
+        "on_sale": "Uitverkoop",
+        "quantity": "Hoeveelheid",
+        "add_to_cart": "Voeg toe aan winkelmandje",
+        "back_to_collection": "Terug naar {{ title }}",
+        "view_details": "Bekijk details"
+      }
+    },
+    "article": {
+      "tags": "Tags:",
+      "all_topics": "Alle onderwerpen",
+      "by_author": "door {{ author }}",
+      "posted_in": "Geplaatst in",
+      "read_more": "Lees verder",
+      "back_to_blog": "Terug naar {{ title }}"
+    },
+    "comments": {
+      "title": "laat een reactie achter",
+      "name": "Naam",
+      "email": "E-mail",
+      "message": "Bericht",
+      "post": "Plaats een reactie",
+      "moderated": "Houd er rekening mee dat opmerkingen moeten worden goedgekeurd voordat ze worden gepubliceerd",
+      "success_moderated": "Uw opmerking is succesvol gepost. We zullen het in een korte tijd publiceren, omdat onze blog is gemodereerd.",
+      "success": "Uw opmerking is succesvol gepost! Dank u!",
+      "comments_with_count": {
+        "one": "{{ count }} commentaar",
+        "other": "{{ count }} opmerkingen"
+      }
+    },
+    "password_page": {
+      "login_form_message": "Voer de winkel in met behulp van wachtwoord:",
+      "login_form_password_label": "Wachtwoord",
+      "login_form_password_placeholder": "Uw wachtwoord",
+      "login_form_submit": "Binnenkomen",
+      "signup_form_email_label": "E-mail",
+      "signup_form_success": "We sturen u een e-mail voordat we openen!",
+      "password_link": "Voer het wachtwoord in"
+    }
   }
 }
