@@ -442,7 +442,65 @@
         "subscription_agreement_cancelled": "avbryte",
         "subscription_agreement_label_html": "Jeg forstår at jeg godtar et abonnement. Den vil fornyes til prisen og frekvensen som er oppført til den slutter eller er <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{subscription_policy}\" href=\"%{policy_href}\">avbryte<\/a>.\n",
         "change_currency_section_description": "Velg et valutaalternativ",
-        "no_real_orders_dev_store": "Denne butikken kan ikke godta ekte bestillinger eller ekte betalinger."
+        "no_real_orders_dev_store": "Denne butikken kan ikke godta ekte bestillinger eller ekte betalinger.",
+        "waiting_on_payment_methods": "Får tilgjengelige betalingsmetoder ...",
+        "apple_pay_payment_error": "Betalingen kunne ikke fullføres. Prøv igjen eller bruke en annen betalingsmåte.",
+        "taxes_not_included": "Avgifter ikke inkludert",
+        "no_taxes_banner_content": "Skatter vil ikke bli belastet på denne ordren. Når du har samlet betaling, kan skatter ikke lenger legges til.",
+        "paypal": {
+          "connect": "Klikk for å koble din PayPal-konto"
+        },
+        "apple": {
+          "connect": "Klikk for å koble din Apple Pay-konto",
+          "not_available": "Apple Pay er ikke tilgjengelig i denne nettleseren. Slik kobler du Apple Pay konto du må bruke Safari på en Apple-enhet.",
+          "email_connected": "Konto tilkoblet: "
+        },
+        "account_connected": "konto tilkoblet"
+      },
+      "payment_summary": {
+        "gift_card_current_balance_notice": "Nåværende saldo %{amount}",
+        "credit_card_expires_on_notice": "Går ut på dato den %{month}\/%{year}",
+        "express_payment_gateway_label": "Uttrykke",
+        "manual_payment_gateway_label": "Håndbok",
+        "billing_address_title": "Faktureringsadresse",
+        "free_label": "Gratis"
+      },
+      "field_errors": {
+        "handle_phone_invalid": "Skriv inn et gyldig telefonnummer",
+        "handle_email_invalid": "Skriv inn en gyldig e-post",
+        "email_invalid": "Skriv inn en gyldig e-post",
+        "email_or_phone_blank": "Skriv inn en e-post eller mobilnummer",
+        "email_or_phone_invalid": "Skriv inn en gyldig e-post eller mobilnummer",
+        "address_first_name_blank": "Skriv inn et fornavn",
+        "address_first_name_too_long": "Fornavn er for lang (maks er 255 tegn)",
+        "address_first_name_contains_html_tags": "Fornavn kan ikke inneholde HTML-koder.",
+        "address_last_name_blank": "Skriv inn et etternavn",
+        "address_last_name_too_long": "Etternavn er for lang (maks er 255 tegn)",
+        "address_last_name_contains_html_tags": "Etternavn kan ikke inneholde HTML-koder.",
+        "address_address1_blank": "Skriv inn en adresse",
+        "address_address1_too_long": "Den første adresselinje er for lang (maksimalt er 255 tegn)",
+        "address_address1_contains_html_tags": "Address1 kan ikke inneholde HTML-koder.",
+        "address_address2_blank": "Skriv inn en leilighet, suite, etc.",
+        "address_address2_too_long": "Den andre adresse blir for stor (maksimalt er 255 tegn)",
+        "address_address2_contains_html_tags": "Address2 kan ikke inneholde HTML-koder.",
+        "address_city_blank": "Skriv inn en by",
+        "address_city_too_long": "City er for lang (maks er 255 tegn)",
+        "address_city_contains_html_tags": "Byen kan ikke inneholde HTML-koder.",
+        "address_country_blank": "Velg et land \/ region",
+        "address_country_not_supported": "Vi vet ikke i dag leverer til dette landet \/ regionen. Skriv inn en ny leveringsadresse og prøv igjen.",
+        "address_province_blank": "Velg en stat \/ provins",
+        "address_company_blank": "Skriv inn et firmanavn",
+        "address_company_too_long": "Firmanavnet er for lang (maks er 255 tegn)",
+        "address_company_contains_html_tags": "Selskapet kan ikke inneholde HTML-koder.",
+        "address_phone_blank": "Skriv inn et gyldig telefonnummer",
+        "address_zip_blank": "Skriv inn en ZIP \/ postnummer",
+        "address_zip_invalid_for_country": "Skriv inn en gyldig ZIP \/ postnummer for %{country}",
+        "address_zip_invalid_for_country_and_province": "Skriv inn en gyldig ZIP \/ postnummer for %{province}, %{country}",
+        "credit_card_name_blank": "Skriv inn navnet ditt nøyaktig slik den er skrevet på kortet ditt",
+        "credit_card_name_invalid": "Skriv inn navnet ditt nøyaktig slik den er skrevet på kortet ditt",
+        "credit_card_number_invalid": "Skriv inn et gyldig kortnummer",
+        "credit_card_expiry_invalid": "Skriv inn et gyldig kort utløpsdato",
+        "credit_card_month_invalid": "Skriv inn et gyldig kort utløps måned"
       }
     }
   }
