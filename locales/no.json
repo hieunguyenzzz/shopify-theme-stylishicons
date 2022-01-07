@@ -736,7 +736,78 @@
         },
         "customer_information_hidden_fields_message": "Logg inn for å se all kundeinformasjon.",
         "cancelled_title": "Din bestilling har blitt kansellert",
-        "cancelled_description": "Din bestilling ble kansellert på %{date}. Kontakt oss hvis du har spørsmål."
+        "cancelled_description": "Din bestilling ble kansellert på %{date}. Kontakt oss hvis du har spørsmål.",
+        "order_number_label": "Ordrenummer",
+        "customer_validation_error": "Skriv inn en gyldig e-post eller bestillingsnummer.",
+        "customer_validation_error_phone": "Skriv inn en gyldig telefon eller bestillingsnummer.",
+        "login": "Logg Inn",
+        "unfulfilled_items_title": "Forbereder for frakt",
+        "unfulfilled_items_description": "Vi forbereder for øyeblikket disse elementene for frakt.",
+        "marker": {
+          "current": "Nåværende forsendelsessted",
+          "shipping": "Sendingsadresse"
+        },
+        "pick_up_in_store_marker": {
+          "current": "Nåværende forsendelsessted",
+          "shipping": "Hentested"
+        },
+        "fulfillment": {
+          "fulfilled_table_title": "Elementer i denne forsendelsen",
+          "unfulfilled_table_title": "Elementer som forbereder seg på frakt",
+          "product_image_label": "Produktbilde",
+          "description_label": "Beskrivelse",
+          "quantity_label": "Mengde"
+        },
+        "opt_in_message_html": "Din informasjon ble lagret med %{shopify_pay}",
+        "order_updates_description_missing": "Du mottar ikke fraktoppdateringer.",
+        "order_updates_subscribe_to_email_notifications": "Få fraktoppdateringer via e-post",
+        "order_updates_subscribe_to_email_or_phone_notifications": "Få fraktoppdateringer via e-post eller tekst",
+        "order_updates_subscribe_to_phone_notifications": "Få fraktoppdateringer etter tekst",
+        "order_updates_submit_subscription": "Sende inn",
+        "track_shipment": "Spor forsendelse",
+        "shopify_pay": {
+          "order_completed_html": "Bestill Fullført med. %{shopify_pay}",
+          "learn_more_label": "Lær mer om butikkbetaling"
+        },
+        "other_options": "Andre muligheter",
+        "delivery_information_label": "Leveringsinformasjon:",
+        "gift_card_sent_confirmation": "Gavekort sendt",
+        "qr_code": {
+          "send_link_to_phone": "Eller send en lenke til telefonen din",
+          "title": "Spor på telefonen din",
+          "subtitle": "Skann koden med telefonens kamera for å spore med butikken."
+        },
+        "shop_qr_with_sms_upsell": {
+          "qr_code": {
+            "title": "Skann med telefonen",
+            "description": "Shop vil sende deg sanntidsleveringsoppdateringer når bestillingen din sendes."
+          },
+          "sms": {
+            "title": "Eller send en lenke til telefonen din"
+          }
+        }
+      },
+      "review": {
+        "title": "Anmeldelse",
+        "review_title": "Gjennomgå bestilling",
+        "checkout_as_guest": "Sjekk ut som gjest",
+        "blocks": {
+          "contact_method_title": "Kontakt",
+          "billing_address_title": "Fakturering",
+          "shipping_address_title": "Send til",
+          "shipping_method_title": "Metode",
+          "payment_method_title": "Betaling",
+          "change_link_label": "Endring",
+          "change_contact_method_link_label": "Endre kontaktinformasjon",
+          "change_billing_address_link_label": "Endre faktureringsadresse",
+          "change_shipping_address_link_label": "Endre leveringsadresse",
+          "change_shipping_method_link_label": "Endre fraktmetode",
+          "change_payment_method_link_label": "Endre betalingsmetode",
+          "pick_up_in_store_shipping_method_html": "Plukke opp i butikk · %{location_name}"
+        }
+      },
+      "marketing": {
+        "accept_marketing_checkbox_label": "Send meg en e-post med nyheter og tilbud"
       }
     }
   }
