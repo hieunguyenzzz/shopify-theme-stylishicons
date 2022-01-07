@@ -885,8 +885,96 @@
         "title": "Legg tips",
         "description": "Vis din støtte for teamet på %{shop_name}",
         "presets_description": "Velg et tips prosent",
-        "custom_label": "Custom tips"
+        "custom_label": "Custom tips",
+        "add_tip": "Legg tips",
+        "update_tip": "Oppdater tips",
+        "message": "Takk, vi setter pris på det",
+        "preset_label": "%{tip_percent}%",
+        "no_tip_label": "Ingen"
+      },
+      "open_graph_meta_tag": {
+        "title_with_products": {
+          "zero": "Kjøp %{product_name}",
+          "one": "Kjøp %{product_name} og %{count} annet element",
+          "other": "Kjøp %{product_name} og %{count} andre gjenstander"
+        }
+      },
+      "subscriptions": {
+        "recurring_total_intervals": {
+          "day": {
+            "one": "dag",
+            "other": "%{count} dager"
+          },
+          "week": {
+            "one": "uke",
+            "other": "%{count} uker"
+          },
+          "month": {
+            "one": "måned",
+            "other": "%{count} måneder"
+          },
+          "year": {
+            "one": "år",
+            "other": "%{count} år"
+          }
+        },
+        "recurring_totals": "%{total_price} hver %{interval}",
+        "recurring_totals_with_initial_order_shipping_discount": "Første betaling %{total_price_with_discount}, deretter %{recurring_total}",
+        "recurring_totals_with_policies": {
+          "first_cycles": {
+            "one": "Første betaling %{total_price}",
+            "other": "Først %{count} Betalinger %{total_price} Hver"
+          },
+          "following_cycles": ", deretter %{total_price} hver %{interval}"
+        },
+        "recurring_totals_with_initial_order_shipping_discount_with_policies": {
+          "first_cycles": {
+            "one": ", deretter %{count} Betaling på det %{total_price}",
+            "other": ", deretter %{count} Betalinger på. %{total_price} Hver"
+          }
+        }
+      },
+      "customer_payment_methods": {
+        "page_title": "Betalingsmetoder",
+        "title": "Betalingsmetoder",
+        "update_card_button_label": "Oppdater kort",
+        "delete_customer_mandate": {
+          "generic_error": "Det var et problem å behandle forespørselen din.",
+          "success_message": "Din betalingsmetode har blitt slettet"
+        }
       }
+    },
+    "pagination": {
+      "previous": "Tidligere",
+      "next": "Neste"
+    },
+    "links": {
+      "powered_by_shopify": "Drevet av Shopify.",
+      "learn_more": "Lære mer"
+    },
+    "feed": {
+      "more": "Mer"
+    },
+    "attributes": {
+      "email": "e-post",
+      "password": "passord",
+      "password_confirmation": "Passordbekreftelsen",
+      "first_name": "fornavn",
+      "last_name": "etternavn",
+      "body": "kropp",
+      "signature": "Adresse"
+    },
+    "addresses": {
+      "zip_code": "post kode",
+      "postal_code": "Postnummer",
+      "postcode": "Postnummer",
+      "pincode": "Pincode.",
+      "region": "Region",
+      "prefecture": "Prefecture.",
+      "province": "Provins",
+      "state": "Stat",
+      "state_and_territory": "Stat \/ territorium",
+      "county": "fylke"
     }
   }
 }
