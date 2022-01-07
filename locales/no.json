@@ -559,8 +559,82 @@
           "other": "Noen elementer i handlekurven din kan ikke sendes til adressen du har angitt. Gjennomgå adressen din for å sikre at alle feltene er skrevet inn riktig og prøv igjen."
         },
         "shipping_method_not_available_updated": {
-          "one": "Elementet du la ikke leverer til din posisjon. Fjerne det å sjekke ut, eller ta kontakt med butikken."
+          "one": "Elementet du la ikke leverer til din posisjon. Fjerne det å sjekke ut, eller ta kontakt med butikken.",
+          "other": "Ett eller flere elementer du har lagt sender ikke til din posisjon. Fjerne dem for å sjekke ut, eller ta kontakt med butikken."
         }
+      },
+      "alternative_payment_method_banner": {
+        "express_checkout": "hurtigutsjekking",
+        "or": "ELLER"
+      },
+      "alternative_payment_method": {
+        "button_html": "Kassa med: %{method}",
+        "button_label": "Kassa med: %{method}"
+      },
+      "paypal": {
+        "button_html": "kassa med %{logo}"
+      },
+      "apple_pay": {
+        "button_html": "Kjøp med %{logo}"
+      },
+      "post_purchase": {
+        "page_title": "Etter kjøp",
+        "title": "Etter kjøp",
+        "escape_confirmation": "Du har betalt for bestillingen.",
+        "escape_action": "Vis ordrebekreftelse>",
+        "components": {
+          "close": "Lukk",
+          "expand": "Se mer",
+          "processing": "Behandling…",
+          "submit": "Sende inn"
+        }
+      },
+      "processing": {
+        "redirecting_page_title": "Omdirigere ...",
+        "redirecting_title": "Omdirigere ...",
+        "redirecting_notice": "Vent mens vi omdirigere deg.",
+        "complete_your_purchase_title": "Fullfør kjøpet",
+        "continue_to_payment_gateway_notice": "Fortsett til betaling for å legge inn betalingsinformasjonen.",
+        "continue_to_payment_gateway_button_label": "Fortsett å betale",
+        "complete_your_purchase_title_error": "Korrigere betalingsinformasjonen",
+        "continue_to_payment_gateway_notice_error": "Betalingsinformasjonen kunne ikke bekreftes.",
+        "continue_to_payment_gateway_button_label_error": "Oppdater betalingsinformasjon",
+        "page_title": "Behandler rekkefølge",
+        "title": "Behandler rekkefølge",
+        "your_order_has_been_received_title": "takk for din bestilling",
+        "you_will_receive_confirmation": "Vi får mange bestillinger akkurat nå. Du vil motta en bekreftelse via e-post eller tekst snart. Hvis du ikke får det i den neste timen, gi oss beskjed.",
+        "you_will_not_be_charged": "Du vil ikke bli belastet ennå",
+        "wait": {
+          "short": "Bestillingen er under behandling.",
+          "medium": {
+            "one": "Bestillingen er under behandling. Estimert ventetid er %{count} minutt.",
+            "other": "Bestillingen er under behandling. Estimert ventetid er %{count} minutter."
+          },
+          "long": "Du vil motta en e-post så snart bestillingen er behandlet. Det finnes i dag et stort antall bestillinger.",
+          "no_auto_refresh_html": "Hvis du ikke automatisk blir videresendt, %{link}.",
+          "refresh_this_page": "oppdatere denne siden"
+        }
+      },
+      "failed_payment": {
+        "page_title": "Betaling kan ikke behandles",
+        "title": "Betaling kan ikke behandles",
+        "payment_not_processed_title": "Betalingen kan ikke behandles",
+        "payment_not_processed_text": "Du har ikke blitt belastet. Gå til handlekurven for å fullføre kjøpet.",
+        "return_to_cart_button_label": "Gå tilbake til handlekurven"
+      },
+      "payment_gateway": {
+        "credit_card_label": "Kredittkort",
+        "bank_deposit_label": "Bank Deposit",
+        "cash_on_delivery_label": "Postoppkrav (COD)",
+        "money_order_label": "money Order"
+      },
+      "thank_you": {
+        "title": "Takk for kjøpet!",
+        "confirmation_email_sent_text": "En bekreftelse e-post har blitt sendt til %{email}",
+        "return_to_store_link_label": "Fortsette å handle",
+        "print_link_label": "Skriv ut kvittering",
+        "payment_information_title": "Betalingsinformasjon",
+        "shipping_information_title": "frakt informasjon"
       }
     }
   }
