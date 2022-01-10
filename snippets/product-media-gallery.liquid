@@ -21,7 +21,7 @@
     {% endfor %}
 {% endcapture %}
 {% for variant in product.variants %}
-    {% assign optionStr = variant.title | strip %}
+    {% assign optionStr = variant.sku | strip %}
     <template data-variant-id="{{variant.id}}" data-optionstr="{{optionStr}}">
         {% for media in product.media %}
             {% assign mediaAlt = media.alt | strip %}
