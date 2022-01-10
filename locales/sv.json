@@ -1,7 +1,8 @@
 {
   "general": {
     "404": {
-      "subtext": "Den här sidan existerar inte. Försök att söka efter vad du vill hitta:"
+      "subtext": "Den här sidan existerar inte. Försök att söka efter vad du vill hitta:",
+      "title": "Oj - vi kunde inte hitta den där"
     },
     "pagination": {
       "showing_items": "Visar objekt",
