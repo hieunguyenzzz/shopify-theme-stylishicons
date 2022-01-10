@@ -2,7 +2,7 @@
 {% assign color_swatch_name = settings.color_swatch_name | default: "choose colours:, woods - finishes, color, colour, fabric, choose color, choose colour, finish, wood options, choose
 upholstery, upholstery, choose upholstery, upholstery, upholstery*, choose wood options, choose. finish, upholstery,
 choose colours" %}
-
+<div class="tw-hidden">{{color_swatch_name}}</div>
 {% assign color_swatch_options = color_swatch_name | split: ", " %}
 {% assign material_swatch_options = "choose. material" | split: ", " %}
 
