@@ -678,12 +678,8 @@
         "1559084715445": {
           "type": "featured-collection",
           "settings": {
-            "full_width": true,
             "heading": "NEW ARRIVALS",
-            "heading_color": "#000000",
-            "background_color": "#ffffff",
             "collection": "new-arrivals",
-            "grid": 5,
             "limit": 10
           }
         },
@@ -1758,12 +1754,8 @@
         "1559084715445": {
           "type": "featured-collection",
           "settings": {
-            "full_width": true,
             "heading": "Featured collection",
-            "heading_color": "#000000",
-            "background_color": "#ffffff",
             "collection": "",
-            "grid": 5,
             "limit": 10
           }
         },
@@ -2727,12 +2719,8 @@
         "1559084715445": {
           "type": "featured-collection",
           "settings": {
-            "full_width": true,
             "heading": "Featured collection",
-            "heading_color": "#000000",
-            "background_color": "#ffffff",
             "collection": "",
-            "grid": 5,
             "limit": 10
           }
         },
@@ -3832,12 +3820,8 @@
         "1559084715445": {
           "type": "featured-collection",
           "settings": {
-            "full_width": true,
             "heading": "FEATURED COLLECTION",
-            "heading_color": "#4e5a63",
-            "background_color": "#ffffff",
             "collection": "",
-            "grid": 5,
             "limit": 10
           }
         },
@@ -4262,13 +4246,13 @@
     "googleplus_url": "",
     "snapchat-id": "",
     "weibo-id": "",
-    "popup": true,
-    "test_mode": true,
+    "popup": false,
+    "test_mode": false,
     "popup_image": "content",
     "email_image": "shopify:\/\/shop_images\/wishbone.png",
-    "mail_popup_title": "Join us and get nice things",
-    "mail_popup_text": "Free stuff and general goodness",
-    "mail_button_text": "Sign Up",
+    "mail_popup_title": "VIP AREA - BE THE FIRST IN THE KNOW",
+    "mail_popup_text": "5% OFFF FIRST ORDERS",
+    "mail_button_text": "JOIN TODAY",
     "mail_gdpr_text": "*By completing this form you're signing up to receive our emails and can unsubscribe at any time.",
     "popup_h3_size": 24,
     "popup_subheading_size": 15,
@@ -4905,7 +4889,7 @@
         "type": "featured-collection",
         "settings": {
           "heading": "The Bestsellers",
-          "collection": "all",
+          "collection": "bestseller",
           "limit": 12
         }
       },
@@ -4913,9 +4897,7 @@
         "type": "product-recommendations",
         "settings": {
           "show_product_recommendations": true,
-          "product_recommendations_heading": "People Also Bought",
-          "limit": 4,
-          "show_recommendations_vendor": false
+          "product_recommendations_heading": "People Also Bought"
         }
       },
       "page-custom-one": {
@@ -5934,6 +5916,14 @@
       "1635419372bc88c051",
       "161890494913acaf20",
       "162159895992baa653"
-    ]
+    ],
+    "blocks": {
+      "15323590465973626552": {
+        "type": "shopify:\/\/apps\/translate-currency-langshop\/blocks\/langshop\/84899e01-2b29-42af-99d6-46d16daa2111",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
   }
 }
