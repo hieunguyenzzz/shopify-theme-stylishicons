@@ -2296,6 +2296,11 @@ html {
   background-color: currentColor;
 }
 
+.tw-bg-\[rgb\(251\,243\,238\)\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 243 238 / var(--tw-bg-opacity));
+}
+
 .tw-bg-opacity-50 {
   --tw-bg-opacity: 0.5;
 }
@@ -2585,6 +2590,10 @@ html {
 
 .tw-leading-\[48px\] {
   line-height: 48px;
+}
+
+.tw-leading-\[20px\] {
+  line-height: 20px;
 }
 
 .\!tw-text-white {

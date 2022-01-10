@@ -38,9 +38,9 @@
   {%- endcomment -%}
   <div class="price__pricing-group">
     <div class="price__regular">
-      <dt>
+      <dt  class="visually-hidden visually-hidden--inline">
        
-       <span class="visually-hidden visually-hidden--inline">{{ 'products.general.regular_price' | t }}</span>
+       <span>{{ 'products.general.regular_price' | t }}</span>
       </dt>
       <dd>
         <span class="price-item price-item--regular" data-regular-price>
@@ -50,8 +50,8 @@
     </div>
     
     <div class="price__sale">
-      <dt>
-        <span class="visually-hidden visually-hidden--inline">{{ 'products.general.sale_price' | t }}</span>
+      <dt class="visually-hidden visually-hidden--inline">
+        <span >{{ 'products.general.sale_price' | t }}</span>
       </dt>
        <dd>
          <span class="price-item price-item--regular" data-regular-price>
@@ -63,14 +63,8 @@
           {{ money_price }}
         </span>
       </dd>
-      <dd>
-       
-
-         <!-- {% render 'product-info-popup' %} -->
-        <a class="sprs" href="#product-reviews"> <span class="shopify-product-reviews-badge" data-id="{{ product.id }}">    </span></a>
-      </dd>
-      <dt>
-        <span class="visually-hidden visually-hidden--inline">{{ 'products.general.regular_price' | t }}</span>
+      <dt class="visually-hidden visually-hidden--inline">
+        <span >{{ 'products.general.regular_price' | t }}</span>
       </dt>
    
     </div>
