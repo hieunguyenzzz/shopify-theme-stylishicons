@@ -389,6 +389,17 @@
       }
     ]
   },
+   {
+    "name": "Swatch",
+    "settings": [
+      {
+        "type": "text",
+        "id": "color_swatch_name",
+        "label": "Color swatch",
+        "default": "choose colours:, woods - finishes, color, colour, fabric, choose color, choose colour, finish, wood options, choose upholstery, upholstery, choose upholstery, upholstery, upholstery*, choose wood options, choose. finish, upholstery,choose colours"
+      }
+    ]
+  },
   {
     "name": "Typography",
     "settings": [

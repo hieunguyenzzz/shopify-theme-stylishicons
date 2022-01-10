@@ -1,7 +1,9 @@
 {% assign option_name = option.name | downcase %}
-{% assign color_swatch_options = "choose colours:, woods - finishes, color, colour, fabric, choose color, choose colour, finish, wood options, choose
+{% assign color_swatch_name = settings.color_swatch_name | default: "choose colours:, woods - finishes, color, colour, fabric, choose color, choose colour, finish, wood options, choose
 upholstery, upholstery, choose upholstery, upholstery, upholstery*, choose wood options, choose. finish, upholstery,
-choose colours" | split: ", " %}
+choose colours" %}
+
+{% assign color_swatch_options = color_swatch_name | split: ", " %}
 {% assign material_swatch_options = "choose. material" | split: ", " %}
 
 {% assign current_option = "option" | append: option.position %}
@@ -90,6 +92,7 @@ choose colours" | split: ", " %}
   <img class="crossed-out" src="{{ 'soldout.png' | asset_url }}" />
   {% endcapture %}
   {% if color_swatch_options contains option_name  %}
+  
   <div class="swatch-element color tw-leading-none {% unless available %} soldout  {% endunless %}">
     <div class="tooltip">
       {{ value }}
