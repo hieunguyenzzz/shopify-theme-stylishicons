@@ -10,7 +10,7 @@ choose colours" %}
 {% assign other_options = "option1 option2 option3" | remove: current_option | strip | split: " " %}
 
 <div data-option-name="{{option_name}}" class="clearfix swatch" data-option-index="{{ option.position }}" data-other-options='{{ other_options | json }}'>
-  <h5>{{ option.name }}<span class="tw-hidden">{{color_swatch_name}}</span></h5>
+  <h5>{{ option.name }}</h5>
   {% if material_swatch_options contains option_name %}
     <div class="tw-grid tw-grid-cols-2 tw-gap-2">
   {% else %}
@@ -130,7 +130,12 @@ choose colours" %}
   <div class="swatch-element {% unless available %} soldout {% endunless %}">
     {{ radio_button }}
     <label for="{% if template == 'product.quick' %}qv-{% endif %}{{ id }}">
-      {{ value }}
+      {% assign valuestring = 'strings.product_options.' | append: value | t %}
+      {% unless valuestring contains 'translation missing' %}
+          {{valuestring}}
+          {% else %}
+          {{value}}
+      {% endunless %}
       {{ sold_out_image }}
     </label>
   </div>
