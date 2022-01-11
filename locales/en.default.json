@@ -1,24 +1,25 @@
 {
   "strings": {
     "general": {
-      "show_express_delivery_options":"Show Express Delivery Options",
-      "learn_more":"Learn More",
-      "verified_reviews":"VERIFIED REVIEWS",
-      "privacy_policy":"Privacy Policy",
-      "terms_conditions":"Terms & Conditions",
-      "view_all":"VIEW ALL",
-      "all_reviews":"All Reviews",
-      "shop_instagram":"Shop Instagram",
-      "see_all":"SEE ALL",
-      "best_seller":"BEST SELLER",
-      "new_product":"NEW PRODUCT",
-      "inspired_by":"Inspired By"
+      "show_express_delivery_options": "Show Express Delivery Options",
+      "learn_more": "Learn More",
+      "verified_reviews": "VERIFIED REVIEWS",
+      "privacy_policy": "Privacy Policy",
+      "terms_conditions": "Terms & Conditions",
+      "view_all": "VIEW ALL",
+      "all_reviews": "All Reviews",
+      "shop_instagram": "Shop Instagram",
+      "see_all": "SEE ALL",
+      "best_seller": "BEST SELLER",
+      "new_product": "NEW PRODUCT",
+      "inspired_by": "Inspired By"
     },
     "product_options":{
       "classic":"Classic",
       "future":"Future",
       "black":"black",
       "white":"white"
+
     }
   },
   "password": {
