@@ -1601,6 +1601,10 @@
       "best_seller": "BÄSTSÄLJARE",
       "new_product": "NY PRODUKT",
       "inspired_by": "Inspirerad av"
+    },
+    "product_options": {
+      "classic": "Klassisk",
+      "future": "Framtida"
     }
   }
 }
