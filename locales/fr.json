@@ -1182,7 +1182,74 @@
       "bad_domain": "Contient un nom de domaine non valide",
       "taken": "a déjà été pris",
       "contains_html_tags": "ne peut pas contenir des balises HTML",
-      "too_short": "est trop court (le minimum est %{count} personnages)"
+      "too_short": "est trop court (le minimum est %{count} personnages)",
+      "too_long": "est trop long (le maximum est %{count} personnages)",
+      "email_domain_invalid": "Le fournisseur n'est pas pris en charge",
+      "invalid_for_country": "n'est pas valable pour %{country}",
+      "invalid_for_country_and_province": "n'est pas valable pour %{province} et %{country}",
+      "invalid_province_in_country": "n'est pas une province valide dans %{country}",
+      "invalid_state_in_country": "n'est pas un état valide dans %{country}",
+      "invalid_region_in_country": "n'est pas une région valide dans %{country}",
+      "not_supported": "n'est pas supporté",
+      "full_name_required": "Entrez un prénom et un nom de famille",
+      "invalid_for_card_type": "n'est pas valide",
+      "invalid_type": "Désolé, nous n'acceptons pas les cartes de ce type",
+      "invalid_format": "le format n'est pas valide",
+      "expired": "a expiré",
+      "invalid_start_date_or_issue_number_for_debit": "une date de début ou un numéro de numéro valide est requise",
+      "reset_password_html": "Cette adresse e-mail est déjà associée à un compte. Si ce compte est à vous, vous pouvez <a href=\"\/account\/login#recover\">réinitialisez votre mot de passe<\/a>",
+      "verify_email": "Nous avons envoyé un email à %{customer_email}, veuillez cliquer sur le lien inclus pour vérifier votre adresse e-mail."
+    },
+    "notices": {
+      "customer": {
+        "password_reset_error": "Erreur de réinitialisation du mot de passe",
+        "no_account_found": "Aucun compte trouvé avec cet email.",
+        "invalid_credentials": "Email ou mot de passe incorrect.",
+        "denylisted_reset_password": "Votre compte n'a pas pu être consulté car le mot de passe actuel n'est pas sécurisé. Vous recevrez un email pour mettre à jour votre mot de passe."
+      },
+      "address": {
+        "updated": "Adresse mise à jour avec succès.",
+        "created": "Adresse a créée avec succès",
+        "error_creating": "Erreur lors de la création d'une adresse.",
+        "deleted": "Adresse supprimée avec succès",
+        "error_deleting": "Erreur lors de la suppression d'une adresse."
+      },
+      "order": {
+        "not_available": "Cet ordre n'est pas disponible",
+        "financial_status": {
+          "authorized": "Autorisé",
+          "pending": "En attente",
+          "paid": "Payé",
+          "unpaid": "Non payé",
+          "voided": "Annulé",
+          "partially_paid": "Partiellement payé",
+          "partially_refunded": "Partiellement remboursé",
+          "refunded": "Remboursé"
+        },
+        "fulfillment_status": {
+          "fulfilled": "Accompli",
+          "complete": "Compléter",
+          "partial": "Partiel",
+          "unfulfilled": "Insatisfait",
+          "restocked": "Réapprovisionné"
+        },
+        "transaction_status": {
+          "success": "Succès",
+          "pending": "En attente"
+        },
+        "cancel_reason": {
+          "inventory": "Articles indisponibles",
+          "fraud": "Ordre frauduleux",
+          "customer": "Client a changé \/ annulé"
+        },
+        "cash_on_delivery": "Paiement à la livraison (COD)"
+      },
+      "cart": {
+        "only_n_items_available": "Vous pouvez seulement ajouter %{count} %{name} au panier.",
+        "too_many_items_in_cart": "Vous ne pouvez pas ajouter plus %{name} au panier.",
+        "all_items_in_cart": "Tout %{count} %{name} sont dans votre panier.",
+        "empty_update": "ne peut pas mettre à jour le panier vide"
+      }
     }
   }
 }
