@@ -80,7 +80,10 @@ choose colours" %}
   {% if current_variant[current_option] == value %}
   {% assign checked = 'checked="checked"' %}
   {% endif %}
-
+  {% assign valuestring = 'strings.product_options.' | append: value | t %}
+  {% if valuestring contains 'translation missing' %}
+    {% assign valuestring = value %}
+  {% endif %}
   {% capture radio_button %}
   <input type="radio" id="{% if template == 'product.quick' %}qv-{% endif %}{{ id }}" name="{{ option_name }}"
     data-value="{{ value | handle }}" value="{{ value | escape }}" data-position="{{ option.position }}" {{ checked
@@ -94,7 +97,7 @@ choose colours" %}
   
   <div class="swatch-element color tw-leading-none {% unless available %} soldout  {% endunless %}">
     <div class="tooltip">
-      {{ value }}
+      {{ valuestring }}
     </div>
 
     {{ radio_button }}
@@ -130,12 +133,8 @@ choose colours" %}
   <div class="swatch-element {% unless available %} soldout {% endunless %}">
     {{ radio_button }}
     <label for="{% if template == 'product.quick' %}qv-{% endif %}{{ id }}">
-      {% assign valuestring = 'strings.product_options.' | append: value | t %}
-      {% unless valuestring contains 'translation missing' %}
-          {{valuestring}}
-          {% else %}
-          {{value}}
-      {% endunless %}
+      
+      {{valuestring}}
       {{ sold_out_image }}
     </label>
   </div>
