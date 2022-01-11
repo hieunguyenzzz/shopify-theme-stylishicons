@@ -1604,7 +1604,9 @@
     },
     "product_options": {
       "classic": "Klassisk",
-      "future": "Framtida"
+      "future": "Framtida",
+      "black": "svart",
+      "white": "vit"
     }
   }
 }

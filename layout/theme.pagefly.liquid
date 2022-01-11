@@ -91,5 +91,6 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
         {{ 'theme-style.css' | asset_url | stylesheet_tag }}
 
     </head>
-    <body class="gridlock shifter-left {{ template | handleize }} js-slideout-toggle-wrapper"><div class="pagefly-container">{{ content_for_layout }}</div></body>
+    <body class="gridlock shifter-left {{ template | handleize }} js-slideout-toggle-wrapper"><div class="pagefly-container">{{ content_for_layout }}</div>{% include 'globo.filter.action' %}
+	</body>
 </html>
