@@ -514,7 +514,139 @@
         "remove_gift_card_label": "Carte-cadeau Effacer",
         "remove_discount_label": "Supprimer la réduction",
         "free_shipping_discount_label": "Livraison gratuite",
-        "apply_discount_button_label": "Appliquer"
+        "apply_discount_button_label": "Appliquer",
+        "applied_discount_message": "%{amount} hors prix total Price",
+        "discount_has_been_applied": "La remise a été appliquée",
+        "discount_has_been_removed": "La remise a été supprimée",
+        "gift_card_has_been_removed": "La carte-cadeau a été supprimée",
+        "discount_already_applied": "Une réduction a été appliquée à cet ordre. Vous ne pouvez pas ajouter une autre réduction.",
+        "cart_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}<\/strong> Le code de réduction n'est pas valide pour les éléments de votre panier",
+        "discount_requires_customer_notice": "Entrez vos informations d'expédition pour appliquer le <strong style=\"text-transform:uppercase\">%{code}<\/strong> code de réduction",
+        "customer_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}<\/strong> Le code de réduction n'est pas disponible pour vous en ce moment",
+        "shipping_information_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}<\/strong> Le code de réduction n'est pas disponible pour votre adresse de livraison",
+        "customer_already_used_once_per_customer_discount_notice": "le <strong style=\"text-transform:uppercase\">%{code}<\/strong> Le code de réduction a déjà été utilisé",
+        "subtotal_label": "Total",
+        "shipping_label": "Expédition",
+        "pickup_label": "Ramasser",
+        "no_pickup_location": "Votre commande n'est pas disponible pour le ramassage. Entrez une adresse de livraison.",
+        "tip_label": "Pointe",
+        "calculating_shipping": "Calculateur…",
+        "shipping_policy_link": "Les frais de livraison",
+        "estimated_taxes_label": "Taxes (estimées)",
+        "total_label": "Le total",
+        "partial_total_label": "Le total",
+        "free_total_label": "Libérer",
+        "vat_label_html": "Y compris %{amount} en taxes",
+        "discount_and_gift_card_savings_notice": "Après %{discount_amount} dans des rabais et %{gift_card_amount} Dans les cartes-cadeaux",
+        "discount_savings_notice": "Après %{discount_amount} Dans des rabais",
+        "gift_card_savings_notice": "Après %{gift_card_amount} Dans les cartes-cadeaux",
+        "description_label": "La description",
+        "product_change_label": "Changer",
+        "product_image_label": "Image produit",
+        "scroll_order_summary": "Faites défiler pour plus d'articles",
+        "expand_order_summary": "Afficher le résumé de la commande",
+        "collapse_order_summary": "Masquer le résumé de la commande",
+        "original_price": "Prix ​​d'origine",
+        "sale_price": "Prix ​​de vente",
+        "total_updated_label": "Prix ​​total mis à jour:",
+        "gift_card_ending": "Carte-cadeau finissant par %{last_characters}",
+        "multiple_shipping_lines_label": "Total d'expédition",
+        "recurring_total_tooltip": "N'inclut pas l'expédition, la taxe, les tâches ou les rabais applicables.",
+        "confirmation_number_label": "Confirmation #%{confirmation_number}"
+      },
+      "shipping": {
+        "title": "Expédition",
+        "shipping_method_title": "Mode de livraison",
+        "shipping_method_one_time_purchase_group_title": "Achat en un click",
+        "subscription_shipping": "Expédition d'abonnement",
+        "waiting_on_rate_notice": "Obtenir des tarifs d'expédition disponibles ...",
+        "waiting_on_pickup_location_notice": "Obtenir des emplacements de ramassage disponibles ...",
+        "no_rates_for_cart_or_destination_notice": "Il n'y a pas de méthodes d'expédition disponibles pour votre panier ou votre adresse",
+        "no_pickup_location_notice": "Au moins un de vos produits n'est pas disponible pour le ramassage",
+        "no_rates_for_country_notice": "Aucun taux d'expédition trouvé pour cette adresse.",
+        "free_rate_label": "Libérer",
+        "cheapest_rate_label": "Moins cher",
+        "please_enter_your_shipping_information_notice": "Veuillez entrer vos informations d'expédition.",
+        "estimated_delivery_date": {
+          "one": "%{count} jour ouvrable"
+        },
+        "estimated_delivery_time": "délai de livraison estimé %{time}",
+        "estimated_delivery_time_range": "délai de livraison estimé %{min_time}–%{max_time}",
+        "shipping_line_phone": "Votre messagerie peut utiliser ce numéro pour vous contacter.",
+        "shipping_line_delivery_phone_label": "numéro de téléphone portable",
+        "shipping_line_delivery_phone": "Nous pouvons utiliser ce numéro pour vous appeler ou vous envoyer un texto sur votre livraison.",
+        "optional_shipping_line_delivery_instructions_label": "Instructions de livraison (facultatif)",
+        "shipping_line_delivery_instructions": "Entrez les informations nécessaires telles que les codes de porte ou les instructions de dépose.",
+        "other_method": {
+          "zero": "Aucune autre méthode disponible",
+          "one": "%{count} autre méthode disponible à",
+          "other": "%{count} Autres méthodes disponibles à partir de"
+        },
+        "shipping_rate_discounted_amount": "A été: %{original_amount}. À présent: %{amount}",
+        "local_delivery": "Livraison à domicile",
+        "subscription_delivery_description": {
+          "prepaid_delivery_frequency": {
+            "one": "pour %{count} livraison",
+            "other": "pour %{count} livraisons"
+          },
+          "subscription_delivery_frequency": {
+            "day": {
+              "one": "tous les jours",
+              "other": "tous %{count} jours"
+            },
+            "week": {
+              "one": "toutes les semaines",
+              "other": "tous %{count} semaines"
+            },
+            "month": {
+              "other": "tous %{count} mois"
+            },
+            "year": {
+              "other": "tous %{count} ans"
+            }
+          },
+          "initial_order_discounted": "Premier coût d'expédition %{discounted_shipping_cost}, ensuite %{frequency_description}",
+          "prepaid_initial_order_discounted": "Premier coût d'expédition %{discounted_shipping_price} %{prepaid_delivery_frequency}",
+          "prepaid_initial_order_discounted_with_per_delivery_price": "Premier coût d'expédition %{discounted_shipping_price} %{prepaid_delivery_frequency} (%{discounted_cost_per_delivery})",
+          "prepaid_initial_order_discounted_with_renewal": "Premier coût d'expédition %{discounted_shipping_price} %{prepaid_delivery_frequency}, ensuite %{shipping_price} %{billing_cycle}",
+          "prepaid_initial_order_discounted_with_per_delivery_price_and_renewal": "Premier coût d'expédition %{discounted_shipping_price} %{prepaid_delivery_frequency} (%{discounted_cost_per_delivery}), ensuite %{shipping_price} %{billing_cycle}",
+          "recurring_order_shipping_price": "suivie par %{recurring_order_shipping_price}",
+          "first_order_shipping_price_included": "Premier ordre inclus, suivi de %{recurring_order_shipping_price}",
+          "first_n_order_free": {
+            "one": "Premier ordre gratuit",
+            "other": "D'abord %{count} Commandes gratuites"
+          },
+          "free_for_first_n_order": {
+            "one": "Pour le premier ordre",
+            "other": "Pour la première %{count} ordres"
+          }
+        },
+        "one_time_purchase_shipping": "Expédition unique"
+      },
+      "localized_fields": {
+        "additional_information": {
+          "title": "Information additionnelle"
+        }
+      },
+      "payment": {
+        "amazon_payments_label": "Payer Amazon",
+        "amazon_payments_login_hint": "Il vous sera demandé de vous connecter avec Amazon.",
+        "amazon_payments_logout": "Déconnectez-vous d'Amazon Pay",
+        "amazon_payments_failed_mfa_challenge": "Le mode de paiement sélectionné n'a pas pu être utilisé. Sélectionnez une méthode différente ou contactez votre émetteur de votre banque ou de votre carte.",
+        "amazon_payments_abandoned_mfa_challenge": "Votre paiement n'a pas pu être complété. Essayez un moyen de paiement différent ou contactez votre émetteur de votre banque ou de votre carte.",
+        "amazon_payments_could_not_enqueue_authorize": "Il y avait un problème de traitement de votre paiement. Essayez à nouveau ou utilisez une méthode de paiement différente.",
+        "discount_button_action_label": "Appliquer le code de réduction",
+        "gift_card_code_label": "Code de la carte-cadeau",
+        "gift_card_balance_label": "Équilibre:",
+        "detected_card_brand": "Marque de carte détectée: {marque}",
+        "credit_card_vaulting_sign_in_banner_info": "Connectez-vous ou créez un compte pour enregistrer votre carte de crédit pour les achats futurs.",
+        "credit_card_vaulting_sign_in_banner_button_label": "Connexion",
+        "ftd_vault_credit_card_label": "Enregistrez ma carte de crédit pour une caisse plus rapide",
+        "maximum_vaulted_card_info": {
+          "one": "Vous pouvez économiser jusqu'à %{count} carte de crédit à votre compte.",
+          "other": "Vous pouvez économiser jusqu'à %{count} Cartes de crédit à votre compte."
+        },
+        "card_pay_with": "Payer avec:"
       }
     }
   }
