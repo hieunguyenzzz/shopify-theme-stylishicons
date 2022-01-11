@@ -62,13 +62,13 @@
       {% for collection in product.collections %}
             {% if collection.handle == 'bestseller' %}
                 <span class="tw-text-xs tw-bg-opacity-70 tw-font-bold tw-leading-relaxed tw-px-[0.5em] tw-bg-[#eef5f1] tw-absolute tw-bottom-0 tw-mb-6 tw-left-0 tw-z-10 empty:tw-hidden">
-                    BEST SELLER
+                    {{ 'strings.general.best_seller' | t }}
                 </span>
                 {% break %}
             {% endif %}
             {% if collection.handle == 'new' %}
                 <span class="tw-text-xs tw-bg-opacity-70 tw-font-bold tw-leading-relaxed tw-px-[0.5em] tw-bg-[#eef5f1] tw-absolute tw-bottom-0 tw-mb-6 tw-left-0 tw-z-10 empty:tw-hidden">
-                  NEW PRODUCT
+                  {{ 'strings.general.new_product' | t }}
                 </span>
                 {% break %}
             {% endif %}

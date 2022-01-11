@@ -111,9 +111,9 @@
     <div class="{% render '[class]-container'  class: '' %} tw-flex !tw-items-center tw-justify-between tw-flex-col lg:tw-flex-row " id="bottom-footer">
         <div class="footer-left tw-flex tw-flex-col lg:tw-flex-row lg:tw-gap-6 tw-text-center">
             <div class="small-links tw-text-center">
-                <a class="ph2" href="/pages/privacy-policy">Privacy Policy</a>
+                <a class="ph2" href="/pages/privacy-policy">{{ 'strings.general.privacy_policy' | t }}</a>
                 |
-                <a class="ph2" href="/pages/terms-conditions">Terms &amp; Conditions</a>
+                <a class="ph2" href="/pages/terms-conditions">{{ 'strings.general.terms_conditions' | t }}</a>
             </div>
             {% if section.settings.show_copyright %}
                 <div class="tw-text-center">
