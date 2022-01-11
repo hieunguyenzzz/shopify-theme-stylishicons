@@ -16,7 +16,9 @@
     },
     "product_options":{
       "classic":"Classic",
-      "future":"Future"
+      "future":"Future",
+      "black":"black",
+      "white":"white"
     }
   },
   "password": {
