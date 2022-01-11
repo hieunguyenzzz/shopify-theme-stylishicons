@@ -69,7 +69,7 @@
             <div class="hidden-desktop" style="text-align:center;">
                 <p class="inspire-text ">
 
-                    <span>Inspired By</span>
+                    <span>{{ 'strings.general.inspired_by' | t }}</span>
                     <a href="{{ inspired-by-url }}">
                         {{ inspired-by  }}</a>
                 </p>
@@ -138,13 +138,13 @@
                     {% for collection in product.collections %}
                         {% if collection.handle == 'bestseller' %}
                             <span class="tw-bg-[#eef5f1] tw-transform tw--translate-y-full tw-text-xs  tw-bg-opacity-90 tw-px-[1em] md:tw-text-xl lg:tw-text-2xl tw-font-bold !tw-leading-loose tw-text-black tw-z-10 empty:tw-hidden tw-absolute tw-left-0 tw-top-[calc(100%-60px)]  md:tw-top-[380px] lg:tw-top-[480px]">
-                                BEST SELLER
+                                {{ 'strings.general.best_seller' | t }}
                             </span>
                             {% break %}
                         {% endif %}
                         {% if collection.handle == 'new' %}
                             <span class="tw-bg-[#eef5f1] tw-transform tw--translate-y-full tw-text-xs   tw-bg-opacity-90 tw-px-[1em] md:tw-text-xl lg:tw-text-2xl tw-font-bold !tw-leading-loose tw-text-black tw-z-10 empty:tw-hidden tw-absolute tw-left-0 tw-top-[calc(100%-60px)]  md:tw-top-[380px] lg:tw-top-[480px]">
-                                NEW PRODUCT
+                                {{ 'strings.general.new_product' | t }}
                             </span>
                             {% break %}
                         {% endif %}
@@ -192,7 +192,7 @@
                         </div>
                         <div class="hidden-mobile">
                             <p class="inspire-text">
-                                <span>Inspired By
+                                <span>{{ 'strings.general.inspired_by' | t }}
                                 </span>
                                 <a href="{{ inspired-by-url }}">
                                     {{ inspired-by }}</a>

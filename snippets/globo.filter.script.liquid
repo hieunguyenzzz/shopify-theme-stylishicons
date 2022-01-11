@@ -9,6 +9,7 @@
 {%- for locale in shop.published_locales -%}{%- if locale.primary -%}{%- assign primary_locale = locale.iso_code | json -%}{%- endif -%}{%- endfor -%}
 
 <script>
+ 
   window.sortByRelevance = false;
   window.moneyFormat = "{{ shop.money_format | replace: '"', "'" }}";
   window.GloboMoneyFormat = "{{ shop.money_format | replace: '"', "'" }}";
@@ -50,7 +51,7 @@
       id: null
     },
     filter: {
-      id: {"default":40818}[page_id] || {"default":40818}['default'] || 0,
+      id: {"default":40818}[page_id] || {"default":39084}['default'] || 0,
       layout: 3,
       showCount: 1,
       isLoadMore: 1,
