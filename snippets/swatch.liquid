@@ -2,7 +2,6 @@
 {% assign color_swatch_name = settings.color_swatch_name | default: "choose colours:, woods - finishes, color, colour, fabric, choose color, choose colour, finish, wood options, choose
 upholstery, upholstery, choose upholstery, upholstery, upholstery*, choose wood options, choose. finish, upholstery,
 choose colours" %}
-<div class="tw-hidden">{{color_swatch_name}}</div>
 {% assign color_swatch_options = color_swatch_name | split: ", " %}
 {% assign material_swatch_options = "choose. material" | split: ", " %}
 
@@ -11,7 +10,7 @@ choose colours" %}
 {% assign other_options = "option1 option2 option3" | remove: current_option | strip | split: " " %}
 
 <div data-option-name="{{option_name}}" class="clearfix swatch" data-option-index="{{ option.position }}" data-other-options='{{ other_options | json }}'>
-  <h5>{{ option.name }}</h5>
+  <h5>{{ option.name }}<span class="tw-hidden">{{color_swatch_name}}</span></h5>
   {% if material_swatch_options contains option_name %}
     <div class="tw-grid tw-grid-cols-2 tw-gap-2">
   {% else %}
