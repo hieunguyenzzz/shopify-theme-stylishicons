@@ -14,9 +14,12 @@
       "new_product": "NEW PRODUCT",
       "inspired_by": "Inspired By"
     },
-    "product_options": {
-      "classic": "Classic",
-      "future": "Future"
+    "product_options":{
+      "classic":"Classic",
+      "future":"Future",
+      "black":"black",
+      "white":"white"
+
     }
   },
   "password": {
