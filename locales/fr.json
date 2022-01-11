@@ -830,8 +830,359 @@
         }
       },
       "processing": {
-        "redirecting_page_title": "Redirigeant ..."
+        "redirecting_page_title": "Redirigeant ...",
+        "redirecting_title": "Redirigeant ...",
+        "redirecting_notice": "Attendez que nous vous redirigeons.",
+        "complete_your_purchase_title": "Complétez votre achat",
+        "continue_to_payment_gateway_notice": "Continuer au paiement d'ajouter vos informations de paiement.",
+        "continue_to_payment_gateway_button_label": "Continuer à payer",
+        "complete_your_purchase_title_error": "Corriger vos informations de paiement",
+        "continue_to_payment_gateway_notice_error": "Vos informations de paiement n'a pas pu être vérifiée.",
+        "continue_to_payment_gateway_button_label_error": "informations de paiement de mise à jour",
+        "page_title": "Commande en traitement",
+        "title": "Commande en traitement",
+        "you_will_receive_confirmation": "Nous recevons beaucoup de commandes en ce moment. Vous devriez recevoir une confirmation par e-mail ou texte bientôt. Si vous ne recevez pas dans la prochaine heure, laissez-nous savoir.",
+        "you_will_not_be_charged": "Vous ne serez pas facturé encore",
+        "wait": {
+          "medium": {
+            "one": "Votre commande est en cours de traitement. le temps d'attente estimé est %{count} minute.",
+            "other": "Votre commande est en cours de traitement. le temps d'attente estimé est %{count} minutes."
+          },
+          "long": "Vous recevrez un e-mail dès que votre commande est traitée. Il y a actuellement un volume élevé de commandes.",
+          "no_auto_refresh_html": "Si vous n'êtes pas automatiquement redirigé, %{link}.",
+          "refresh_this_page": "rafraîchir cette page"
+        }
+      },
+      "failed_payment": {
+        "page_title": "Le paiement ne peut pas être traitée",
+        "title": "Le paiement ne peut pas être traitée",
+        "payment_not_processed_title": "Votre paiement n'a pas pu être traitée",
+        "payment_not_processed_text": "Vous ne l'avez pas été accusé. Retour à votre panier pour compléter votre achat.",
+        "return_to_cart_button_label": "Retourner au panier"
+      },
+      "payment_gateway": {
+        "bank_deposit_label": "Dépôt bancaire",
+        "cash_on_delivery_label": "Paiement à la livraison (COD)",
+        "money_order_label": "Mandat postal"
+      },
+      "thank_you": {
+        "confirmation_email_sent_text": "Un e-mail de confirmation a été envoyé %{email}",
+        "return_to_store_link_label": "Continuer vos achats",
+        "print_link_label": "réception Imprimer",
+        "shipping_information_title": "Informations sur la livraison",
+        "cancelled_page_title": "commande annulée",
+        "contact_information_title": "Informations de contact",
+        "shipping_address_map_title": "Google carte affichant point d'adresse de livraison de la broche: %{address}",
+        "payment_method_title": "Mode de paiement",
+        "shipping_method_title": "Mode de livraison",
+        "tracking_number": "Numéro de suivi:",
+        "company_tracking_number": "%{company} Numéro de suivi:",
+        "estimated_arrival": "Date de livraison estimée:",
+        "re-order": "Réorganiser les mêmes éléments",
+        "gift_card_confirmation_by_text": "Les cartes-cadeaux sont envoyés par texte. Si vous ne recevez pas le vôtre, essayez de les envoyer à nouveau ou contactez-nous.",
+        "gift_card_confirmation_by_email": "Les cartes-cadeaux sont envoyés par e-mail. Si vous ne recevez pas le vôtre, essayez de les envoyer à nouveau ou contactez-nous.",
+        "gift_card_title": "Cartes cadeaux",
+        "resend_gift_cards": "RENVOYER cartes-cadeaux",
+        "thank_you_title": "Votre commande est confirmée",
+        "thank_you_confirmed_order_with_email": "Vous recevrez un email de confirmation avec votre numéro de commande sous peu.",
+        "thank_you_confirmed_order_with_phone": "Vous recevrez un SMS de confirmation avec votre numéro de commande sous peu.",
+        "thank_you_confirmed_order_with_email_and_phone": "Vous recevrez un email de confirmation et le texte avec votre numéro de commande sous peu.",
+        "thank_you_confirmed_order_with_email_payment": "Vous avez fait un paiement sur votre commande %{date}.",
+        "thank_you_confirmed_order_with_phone_payment": "Vous avez fait un paiement sur votre commande %{date}.",
+        "thank_you_confirmed_order_with_email_and_phone_payment": "Vous avez fait un paiement sur votre commande %{date}.",
+        "thank_you_confirmed_order_with_email_pick_up": "Vous recevrez un e-mail lorsque votre commande est prête pour le ramassage.",
+        "thank_you_confirmed_order_with_phone_pick_up": "Vous recevrez un texte lorsque votre commande est prête pour le ramassage.",
+        "thank_you_confirmed_order_with_email_and_phone_pick_up": "Vous recevrez un e-mail lorsque votre commande est prête pour le ramassage.",
+        "thank_you_confirmed_order_with_missing": "Contactez-nous par courriel ou par téléphone pour recevoir une confirmation de commande.",
+        "order_status_confirmed_order_with_email": "Vous recevrez un e-mail lorsque votre commande est prête.",
+        "order_status_confirmed_order_with_phone": "Vous recevrez un texte lorsque votre commande est prête.",
+        "order_status_confirmed_order_with_email_and_phone": "Vous recevrez un e-mail et le texte lorsque votre commande est prête.",
+        "order_status_confirmed_order_with_email_payment": "Vous avez fait un paiement sur votre commande %{date}.",
+        "order_status_confirmed_order_with_phone_payment": "Vous avez fait un paiement sur votre commande %{date}.",
+        "order_status_confirmed_order_with_email_and_phone_payment": "Vous avez fait un paiement sur votre commande %{date}.",
+        "order_status_confirmed_order_with_email_pick_up": "Vous recevrez un e-mail lorsque votre commande est prête pour le ramassage.",
+        "order_status_confirmed_order_with_phone_pick_up": "Vous recevrez un texte lorsque votre commande est prête pour le ramassage.",
+        "order_status_confirmed_order_with_email_and_phone_pick_up": "Vous recevrez un e-mail et le texte lorsque votre commande est prête pour le ramassage.",
+        "order_status_confirmed_order_local": "Nous recevons votre commande prêt pour la livraison.",
+        "order_status_updates_with_email": "Vous obtiendrez des mises à jour d'expédition et de livraison par email.",
+        "order_status_updates_with_phone": "Vous obtiendrez des mises à jour d'expédition et de livraison par le texte.",
+        "order_status_updates_with_email_and_phone": "Vous obtiendrez des mises à jour d'expédition et de livraison par e-mail et le texte.",
+        "order_status_updates_with_missing": "Choisissez la façon dont vous souhaitez obtenir des mises à jour d'expédition.",
+        "confirmed_title": "Votre commande est confirmée",
+        "confirmed_description": "Nous avons accepté votre commande, et nous le rendre prêt. Revenez sur cette page pour les mises à jour sur votre statut d'expédition.",
+        "ready_for_pickup_title": "Votre commande est prêt pour le ramassage",
+        "ready_for_pickup_description": "Votre commande est prête pour le ramassage. S'il vous plaît apporter votre confirmation de commande lorsque vous irez chercher votre commande.",
+        "ready_for_delivery_title": "Votre commande est prêt pour la livraison.",
+        "order_updates_title": "Mises à jour des ordres",
+        "shop_phone_description": "Vous recevrez un texte avec un lien vers l'application Shop pour aider à suivre votre commande.",
+        "order_updates_description_html": "Les mises à jour seront envoyés à %{customer_contact}",
+        "order_updates_current_step_prefix": "étape actuelle:",
+        "order_updates_past_step_prefix": "étape passée:",
+        "order_updates_upcoming_step_prefix": "étape à venir:",
+        "in_transit": "Sur son chemin",
+        "in_transit_title": "Votre commande est sur son chemin",
+        "in_transit_description": "Vous recevrez des mises à jour sur les progrès réalisés.",
+        "in_transit_description_days": "Vous devriez recevoir votre commande dans la prochaine %{number} jours.",
+        "in_transit_description_today": "Vous devriez recevoir votre commande dès aujourd'hui.",
+        "in_transit_description_tomorrow": "Vous devriez recevoir votre commande le lendemain.",
+        "no_tracking_number": "Il n'y a pas de numéro de suivi pour cette commande.",
+        "out_for_delivery_title": "Votre commande est pour la livraison",
+        "out_for_delivery_description_html": "Votre commande est en route et devrait arriver aujourd'hui. Si ce n'est pas livré dans les 2 prochains jours, %{contact_us}.",
+        "out_for_delivery_local_title": "Votre commande est pour la livraison",
+        "out_for_delivery_local_description_html": "Votre commande arrivera bientôt.",
+        "attempted_delivery": "tentative de livraison",
+        "attempted_delivery_title": "On a tenté de livrer votre commande",
+        "attempted_delivery_description_html": "On a tenté de livrer votre commande, mais il a échoué. %{contact_us} d'organiser une autre tentative de livraison.",
+        "attempted_delivery_local_title": "livraison manquée",
+        "attempted_delivery_local_description_html": "Nous ne sommes pas en mesure de livrer votre commande. Pour planifier une autre livraison, %{contact_us}.",
+        "delivered_description_html": "Votre commande a été livrée à l'adresse que vous avez fourni. Si vous ne l'avez pas reçu, ou si vous avez d'autres problèmes, %{contact_us}.",
+        "delivered_local_description_html": "Vous n'avez pas reçu votre commande? %{let_us_know}.",
+        "picked_up_title": "Votre commande a été ramassé",
+        "picked_up_description_html": "Votre commande a été ramassé à %{location_name} au %{date}.",
+        "contact_us_lowercase": "Nous contacter",
+        "contact_us_html": "Besoin d'aide? %{contact_us}",
+        "updated_time": "Mis à jour %{time_ago} il y a",
+        "failure": "Non livrés",
+        "failed_title": "Votre commande n'a pas pu être livré",
+        "failed_contact_merchant": "Contact %{company} pour organiser la livraison.",
+        "non_shippable_title": "Votre commande est terminée",
+        "let_us_know": "Faites le nous savoir",
+        "login_description": "Vous pouvez trouver votre numéro de commande dans la réception que vous avez reçu par courrier électronique.",
+        "login_description_phone": "Vous pouvez trouver votre numéro de commande dans la réception que vous avez reçu par message texte.",
+        "login_not_customer_html": "Pas %{name}? Tu peux %{link}",
+        "login_reorder_link_text": {
+          "one": "acheter trop ce produit",
+          "other": "acheter ces produits trop"
+        },
+        "customer_information_hidden_fields_message": "Connectez-vous pour voir toutes les informations client.",
+        "cancelled_description": "Votre commande a été annulée %{date}. Contactez nous si vous avez des questions.",
+        "customer_validation_error": "Entrez un courriel ou numéro de commande valide.",
+        "customer_validation_error_phone": "Entrez un téléphone valide ou numéro de commande.",
+        "unfulfilled_items_title": "Préparation de l'expédition",
+        "unfulfilled_items_description": "Nous préparons actuellement ces articles pour l'expédition.",
+        "marker": {
+          "current": "emplacement actuel de l'envoi"
+        },
+        "pick_up_in_store_marker": {
+          "current": "emplacement actuel de l'envoi",
+          "shipping": "Lieu de ramassage"
+        },
+        "fulfillment": {
+          "fulfilled_table_title": "Articles dans cette expédition",
+          "unfulfilled_table_title": "Articles pour la préparation de l'expédition",
+          "product_image_label": "Image produit",
+          "description_label": "La description"
+        },
+        "opt_in_message_html": "Vos informations ont été sauvegardées avec succès %{shopify_pay}",
+        "order_updates_description_missing": "Vous ne recevez pas les mises à jour d'expédition.",
+        "order_updates_subscribe_to_email_notifications": "Recevoir des mises à jour d'expédition par e-mail",
+        "order_updates_subscribe_to_email_or_phone_notifications": "Recevoir des mises à jour par envoi mail ou SMS",
+        "order_updates_subscribe_to_phone_notifications": "Recevoir des mises à jour par expédition texte",
+        "order_updates_submit_subscription": "Soumettre",
+        "track_shipment": "Suivi de livraison",
+        "shopify_pay": {
+          "order_completed_html": "Commande passée avec %{shopify_pay}",
+          "learn_more_label": "En savoir plus sur Boutique Pay"
+        },
+        "delivery_information_label": "Informations de livraison:",
+        "gift_card_sent_confirmation": "Les cartes-cadeaux envoyés",
+        "qr_code": {
+          "send_link_to_phone": "Ou envoyer un lien vers votre téléphone",
+          "title": "Suivre sur votre téléphone",
+          "subtitle": "Scannez le code avec l'appareil photo de votre téléphone pour suivre avec Shop."
+        },
+        "shop_qr_with_sms_upsell": {
+          "qr_code": {
+            "title": "Scan avec votre téléphone",
+            "description": "Boutique vous enverra des mises à jour de livraison en temps réel une fois que votre commande est expédiée."
+          },
+          "sms": {
+            "title": "Ou envoyer un lien vers votre téléphone"
+          }
+        }
+      },
+      "review": {
+        "title": "Passer en revue",
+        "review_title": "Ordre d'examen",
+        "checkout_as_guest": "Commander en tant qu'invité",
+        "blocks": {
+          "shipping_address_title": "Envoyez à",
+          "change_link_label": "Changer",
+          "change_contact_method_link_label": "Modifier les informations de contact",
+          "change_billing_address_link_label": "Changer l'adresse de facturation",
+          "change_shipping_address_link_label": "Changer l'adresse de livraison",
+          "change_shipping_method_link_label": "Modifier la méthode d'expédition",
+          "change_payment_method_link_label": "Changer la méthode de paiement",
+          "pick_up_in_store_shipping_method_html": "En magasin · %{location_name}"
+        }
+      },
+      "marketing": {
+        "accept_marketing_checkbox_label": "Envoyez-moi des nouvelles et des offres",
+        "accept_sms_checkbox_label": "Message texte avec des nouvelles et des offres",
+        "sms": {
+          "disclaimer": {
+            "description_html": "En vous inscrivant via un texte, vous acceptez de recevoir des messages de marketing automatisés récurrents, y compris des rappels de panier, au numéro de téléphone fourni. Le consentement n'est pas une condition d'achat. Répondre arrêter pour vous désabonner. Répondre Aide pour l'aide. La fréquence des messages varie. Les taux de MSG et de données peuvent s'appliquer. Voir notre %{privacy_policy_link} et %{terms_of_service_link}.",
+            "description_html_transactional": "Nous vous enverrons un reçu de commande et des mises à jour d'expédition récurrentes via un message texte. Répondre arrêter pour vous désabonner. Répondre Aide pour l'aide. La fréquence des messages varie. Les taux de MSG et de données peuvent s'appliquer. Voir notre politique de confidentialité et nos conditions d'utilisation."
+          }
+        },
+        "unsubscribe": {
+          "title": "Vous avez désabonné",
+          "description": "Vous ne recevrez plus de rappels de panier de notre part."
+        }
+      },
+      "shop_policies": {
+        "legal_notice": "Mention légale",
+        "terms_of_sale": "Conditions de vente"
+      },
+      "remember_me": {
+        "shopify_pay_label": "Salaire",
+        "save": "Sauvegarder",
+        "title": "Souviens-toi de moi",
+        "label": "Enregistrez mes informations pour une caisse plus rapide",
+        "description_html": "La prochaine fois que vous allez voir ici ou sur d'autres magasins Powered par Shopify, vous recevrez un code par texte pour acheter en toute sécurité avec la rémunération de la boutique.",
+        "mobile_phone_number": "numéro de téléphone portable",
+        "terms_and_privacy_html": "En continuant, vous acceptez de magasiner %{privacy_href} et %{terms_href}.",
+        "errors": {
+          "optin": "Payer de la boutique n'est pas disponible"
+        },
+        "installments": {
+          "paid_in_installments": "Payé en piles avec salaire des magasins.",
+          "view_schedule": "Voir l'horaire"
+        }
+      },
+      "order_payment_collection": {
+        "changes_summary": {
+          "added": {
+            "one": "Ajoutée",
+            "other": "%{count} ajoutée"
+          },
+          "subtracted": "%{count} supprimé"
+        },
+        "additional_payment_requested": "Paiement de %{total_outstanding} est nécessaire",
+        "checkout_review_and_pay": "Votre commande %{order_name} a été mis à jour. Examinez ces modifications, puis payez pour confirmer votre commande.",
+        "order_updated_on": "Votre commande a été mise à jour sur %{last_edited_at}.",
+        "order_review_and_pay": "Votre commande a été mise à jour. Examiner et payer pour confirmer votre commande.",
+        "pay_now": "Payez maintenant"
+      },
+      "change_currency": {
+        "credit_card_will_be_charged_html": "Votre carte de crédit sera facturée %{amount}",
+        "payment_total_label": "Total total",
+        "change_currency_link": "Changer %{currency_name}",
+        "card_provider_fx_charges_warning": "Votre fournisseur de cartes peut facturer des frais sur %{currency_code} transactions.",
+        "currency_not_supported_by_shop": "La monnaie que vous avez sélectionnée n'est plus disponible. Tous les prix sont maintenant dans %{currency_code}."
+      },
+      "change_country": {
+        "cart_updated_based_on_country": "Votre panier a été mis à jour sur la base de votre pays d'expédition."
+      },
+      "tips": {
+        "title": "Additionner",
+        "description": "Montrer votre soutien à l'équipe à %{shop_name}",
+        "presets_description": "Sélectionnez un pourcentage de conseil",
+        "custom_label": "Pointe personnalisée",
+        "add_tip": "Additionner",
+        "update_tip": "Pointe de mise à jour",
+        "message": "Merci, nous l'apprécions",
+        "preset_label": "%{tip_percent}%",
+        "no_tip_label": "Rien"
+      },
+      "open_graph_meta_tag": {
+        "title_with_products": {
+          "other": "Acheter %{product_name} et %{count} autres éléments"
+        }
+      },
+      "subscriptions": {
+        "recurring_total_intervals": {
+          "day": {
+            "one": "journée",
+            "other": "%{count} jours"
+          },
+          "week": {
+            "one": "la semaine",
+            "other": "%{count} semaines"
+          },
+          "month": {
+            "other": "%{count} mois"
+          },
+          "year": {
+            "other": "%{count} ans"
+          }
+        },
+        "recurring_totals": "%{total_price} tous %{interval}",
+        "recurring_totals_with_initial_order_shipping_discount": "Premier paiement %{total_price_with_discount}, ensuite %{recurring_total}",
+        "recurring_totals_with_policies": {
+          "first_cycles": {
+            "one": "Premier paiement %{total_price}",
+            "other": "D'abord %{count} Paiements %{total_price} chaque"
+          },
+          "following_cycles": ", ensuite %{total_price} tous %{interval}"
+        },
+        "recurring_totals_with_initial_order_shipping_discount_with_policies": {
+          "first_cycles": {
+            "one": ", ensuite %{count} paiement à %{total_price}",
+            "other": ", ensuite %{count} paiements à %{total_price} chaque"
+          }
+        }
+      },
+      "customer_payment_methods": {
+        "page_title": "Méthodes de payement",
+        "title": "Méthodes de payement",
+        "update_card_button_label": "Carte de mise à jour",
+        "delete_customer_mandate": {
+          "generic_error": "Il y avait un problème de traitement de votre demande.",
+          "success_message": "Votre méthode de paiement a été supprimée avec succès"
+        }
       }
+    },
+    "links": {
+      "learn_more": "Apprendre encore plus"
+    },
+    "feed": {
+      "more": "Suite"
+    },
+    "attributes": {
+      "password": "le mot de passe",
+      "password_confirmation": "La confirmation de mot de passe",
+      "last_name": "nom de famille",
+      "body": "corps"
+    },
+    "addresses": {
+      "zip_code": "code postal",
+      "pincode": "Code PIN",
+      "state_and_territory": "État \/ territoire",
+      "county": "comté",
+      "confirm": "Êtes-vous sûr de vouloir supprimer cette adresse?"
+    },
+    "collections": {
+      "sorting": {
+        "manual": "Mis en exergue",
+        "best_selling": "Meilleure vente",
+        "az": "Alphabétiquement, a-z",
+        "za": "Alphabétiquement, Z-A",
+        "price_ascending": "Prix ​​croissant",
+        "price_descending": "Prix, élevé à faible",
+        "date_ascending": "Date, vieux à nouveau",
+        "date_descending": "Date, nouvelle à vieille"
+      }
+    },
+    "errors": {
+      "blank": "ne peut pas être vide",
+      "credit_card_session_expired": "L'autorisation de carte de crédit a expiré, veuillez entrer à nouveau vos informations de paiement. Votre carte n'a pas été chargée.",
+      "empty": "ne peut pas être vide",
+      "invalid_email": "Doit être une adresse e-mail valide",
+      "discount_disabled": "Cette réduction a été désactivée",
+      "discount_expired": "Cette réduction n'est plus valide",
+      "discount_limit_reached": "Cette réduction a atteint sa limite d'utilisation",
+      "discount_not_found": "Impossible de trouver un remise valide correspondant au code entré",
+      "customer_already_used_once_per_customer_discount_notice": "Cette réduction a atteint sa limite d'utilisation",
+      "gift_card_already_applied": "Le code a déjà été appliqué à votre caisse",
+      "gift_card_currency_mismatch": "%{gift_card_currency} Les cartes-cadeaux ne peuvent pas être appliquées sur %{checkout_currency} ordres",
+      "gift_card_depleted": "Il ne reste plus de fonds sur cette carte-cadeau",
+      "gift_card_disabled": "La carte-cadeau est désactivée",
+      "gift_card_expired": "La carte-cadeau est expirée",
+      "bad_domain": "Contient un nom de domaine non valide",
+      "taken": "a déjà été pris",
+      "contains_html_tags": "ne peut pas contenir des balises HTML",
+      "too_short": "est trop court (le minimum est %{count} personnages)"
     }
   }
 }
