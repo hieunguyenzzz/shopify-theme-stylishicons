@@ -1,7 +1,8 @@
 {
   "general": {
     "404": {
-      "subtext": "Den här sidan existerar inte. Försök att söka efter vad du vill hitta:"
+      "subtext": "Den här sidan existerar inte. Försök att söka efter vad du vill hitta:",
+      "title": "Oj - vi kunde inte hitta den där"
     },
     "pagination": {
       "showing_items": "Visar objekt",
@@ -33,11 +34,14 @@
     },
     "accessibility": {
       "unit_price_separator": "per"
+    },
+    "currency": {
+      "dropdown_label": "Valuta"
     }
   },
   "shopify": {
     "sentence": {
-      "words_connector": ", ",
+      "words_connector": ",",
       "two_words_connector": "och",
       "last_word_connector": "och"
     },
@@ -1581,6 +1585,22 @@
       "signup_form_email_label": "E-post",
       "signup_form_success": "Vi skickar dig ett mail precis innan vi öppnar!",
       "password_link": "Ange med lösenord"
+    }
+  },
+  "strings": {
+    "general": {
+      "show_express_delivery_options": "Visa expressleveransalternativ",
+      "learn_more": "Läs mer",
+      "verified_reviews": "Verifierade recensioner",
+      "privacy_policy": "Integritetspolicy",
+      "terms_conditions": "Allmänna Villkor",
+      "view_all": "VISA ALLA",
+      "all_reviews": "Alla recensioner",
+      "shop_instagram": "Shop Instagram",
+      "see_all": "SE ALLT",
+      "best_seller": "BÄSTSÄLJARE",
+      "new_product": "NY PRODUKT",
+      "inspired_by": "Inspirerad av"
     }
   }
 }
