@@ -1586,5 +1586,21 @@
       "signup_form_success": "Vi skickar dig ett mail precis innan vi öppnar!",
       "password_link": "Ange med lösenord"
     }
+  },
+  "strings": {
+    "general": {
+      "show_express_delivery_options": "Visa expressleveransalternativ",
+      "learn_more": "Läs mer",
+      "verified_reviews": "Verifierade recensioner",
+      "privacy_policy": "Integritetspolicy",
+      "terms_conditions": "Allmänna Villkor",
+      "view_all": "VISA ALLA",
+      "all_reviews": "Alla recensioner",
+      "shop_instagram": "Shop Instagram",
+      "see_all": "SE ALLT",
+      "best_seller": "BÄSTSÄLJARE",
+      "new_product": "NY PRODUKT",
+      "inspired_by": "Inspirerad av"
+    }
   }
 }
