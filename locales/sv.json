@@ -34,6 +34,9 @@
     },
     "accessibility": {
       "unit_price_separator": "per"
+    },
+    "currency": {
+      "dropdown_label": "Valuta"
     }
   },
   "shopify": {
