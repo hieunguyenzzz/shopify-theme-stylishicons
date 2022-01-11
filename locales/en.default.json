@@ -98,9 +98,9 @@
       "black-cowhide": "Black Cowhide",
       "brown-cowhide": "Brown Cowhide",
       "black-laquered": "Black Laquered",
-      "black-gold": "Black / Gold",
-      "white-gold": "White / Gold",
-      "gold-gold": "Gold / Gold",
+      "black-gold": "Black \/ Gold",
+      "white-gold": "White \/ Gold",
+      "gold-gold": "Gold \/ Gold",
       "rattan": "Rattan",
       "maple": "Maple",
       "brass": "Brass",
@@ -111,7 +111,7 @@
       "soaped-oak": "Soaped - Oak",
       "black-lacquered": "Black Lacquered",
       "black-painted-ash": "Black Painted Ash",
-      "walnut-oak": "Walnut / Oak",
+      "walnut-oak": "Walnut \/ Oak",
       "smoke-gray": "Smoke Gray",
       "coffee": "Coffee",
       "transparent": "Transparent",
@@ -134,7 +134,7 @@
       "grey-transparent": "Grey Transparent",
       "wihte": "Wihte",
       "multitone": "Multitone",
-      "black-maple": "Black / Maple",
+      "black-maple": "Black \/ Maple",
       "blue-multitone": "Blue Multitone",
       "green-multitone": "Green Multitone",
       "red-multitone": "Red  Multitone",
@@ -181,7 +181,6 @@
       "american-walnut": "American Walnut",
       "yellow-lacquered": "Yellow Lacquered",
       "black-marble": "Black Marble"
-
     }
   },
   "password": {

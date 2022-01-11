@@ -395,5 +395,127 @@
       "signup_form_success": "We will send you an email right before we open!",
       "password_link": "Enter using password"
     }
+  },
+  "shopify": {
+    "sentence": {
+      "words_connector": ",",
+      "two_words_connector": "et",
+      "last_word_connector": ", et"
+    },
+    "checkout": {
+      "general": {
+        "page_title": "Vérifier",
+        "skip_to_content": "Aller au contenu",
+        "breadcrumb": "Miette de pain",
+        "continue_button_label": "Continuez",
+        "complete_purchase_button_label": "Complétez la commande",
+        "pay_now_button_label": "Payez maintenant",
+        "edit_link_label": "Éditer",
+        "all_rights_reserved": "Tous les droits sont réservés %{shop_name}",
+        "cart": "Chariot",
+        "continue_to_shipping_method": "Continuer à expédier",
+        "continue_to_payment_method": "Continuer à payer",
+        "continue_to_review": "Ordre d'examen",
+        "back_to_cart": "Retourner au panier",
+        "back_to_contact_information": "Retour à l'information",
+        "back_to_shipping_method": "Retour à l'expédition",
+        "choose_shipping_method": "Choisissez une méthode d'expédition",
+        "choose_payment_method": "Choisissez une méthode de paiement",
+        "choose_billing_address": "choisissez une adresse de facturation",
+        "autocomplete_single_item": "1 article disponible",
+        "autocomplete_multi_item": "{{number}} articles disponibles",
+        "autocomplete_selection": "{{number}} de {{total}}",
+        "autocomplete_close": "Suggestions rapprochées",
+        "forwarding_indicator": {
+          "new_window": "Ouvre dans une nouvelle fenêtre.",
+          "external": "Ouvre le site Web externe.",
+          "external_and_new_window": "Ouvre le site Web externe dans une nouvelle fenêtre."
+        },
+        "checkout_context": {
+          "step_one": "%{shop_name} - Vérifier"
+        },
+        "tooltip_accessibility_label": "Plus d'information"
+      },
+      "contact": {
+        "title": "Information",
+        "delivery_option_title": "Méthode de livraison",
+        "contact_method_title": "Informations de contact",
+        "email_label": "E-mail",
+        "email_placeholder": "E-mail",
+        "email_or_phone_label": "Numéro de téléphone e-mail ou mobile",
+        "email_or_phone_placeholder": "Numéro de téléphone e-mail ou mobile",
+        "new_address_label": "Utilisez une nouvelle adresse",
+        "optional_first_name_label": "Prénom (facultatif)",
+        "last_name_label": "Nom de famille",
+        "company_label": "Société",
+        "optional_company_label": "Société (optionel)",
+        "optional_address2_label": "Appartement, suite, etc. (facultatif)",
+        "country_label": "Pays \/ région",
+        "country_code": "Code pays \/ région",
+        "county_label": "comté",
+        "county_placeholder": "comté",
+        "state_and_territory_label": "État \/ territoire",
+        "state_and_territory_placeholder": "État \/ territoire",
+        "phone_label": "Téléphoner",
+        "optional_phone_label": "Téléphone facultatif)",
+        "phone_placeholder": "Téléphoner",
+        "phone_tooltip": "Au cas où nous devions vous contacter sur votre commande",
+        "zip_code_label": "code postal",
+        "zip_code_placeholder": "code postal",
+        "pincode_label": "Code PIN",
+        "pincode_placeholder": "Code PIN",
+        "civic_number_warning": "Ajouter un numéro de maison si vous en avez un"
+      },
+      "delivery_options": {
+        "free_total_label": "Libérer",
+        "ship": "Bateau",
+        "shipping_address": "Adresse de livraison",
+        "pick_up": "Ramasser",
+        "pick_up_locations": "Emplacements de ramassage",
+        "pick_up_in_one_hour": "Habituellement prêt en 1 heure",
+        "pick_up_in_two_hours": "Habituellement prêt dans 2 heures",
+        "pick_up_in_four_hours": "Habituellement prêt dans 4 heures",
+        "pick_up_in_twenty_four_hours": "Habituellement prêt dans 24 heures",
+        "pick_up_in_two_to_four_days": "Habituellement prêt dans 2-4 jours",
+        "pick_up_in_five_or_more_days": "Habituellement prêt dans plus de 5 jours",
+        "pick_up_in_zero_to_two_hours": "Prêt pour le ramassage en 2 heures",
+        "pick_up_in_two_to_four_hours": "Prêt pour le ramassage en 4 heures",
+        "pick_up_next_day": "Prêt pour le ramassage le lendemain"
+      },
+      "customer_account": {
+        "not_user_label": "Pas %{first_name}?",
+        "have_an_account_label": "Vous avez déjà un compte?",
+        "sign_in_link_label": "Connexion",
+        "sign_out_link_label": "Se déconnecter",
+        "save_my_information_label": "Enregistrez ces informations pour la prochaine fois"
+      },
+      "stock": {
+        "title": "Rupture de stock",
+        "product_column_header": "Des produits",
+        "removed_from_cart_notice": "Enlevé du panier",
+        "sold_out_label": "Solder",
+        "reduced_with_quantity_label": "Seul %{quantity_available} à gauche",
+        "remove_from_cart_button_label": "Supprimer du panier",
+        "continue_shopping_button_label": "Continuez",
+        "go_back_to_cart_button_label": "Retourner à mon panier"
+      },
+      "order_summary": {
+        "title": "Récapitulatif de la commande",
+        "order_name_label": "Commander %{name}",
+        "discount_title": "Remise",
+        "discount_label": "Code de réduction",
+        "discount_placeholder": "Code de réduction",
+        "gift_card_title": "Carte cadeau",
+        "gift_card_label": "Carte cadeau",
+        "gift_card_placeholder": "Carte cadeau",
+        "gift_card_and_discount_title": "Code-cadeau ou code de réduction",
+        "gift_card_and_discount_label": "Code-cadeau ou code de réduction",
+        "gift_card_and_discount_placeholder": "Code-cadeau ou code de réduction",
+        "remove_gift_card_label": "Carte-cadeau Effacer",
+        "remove_discount_label": "Supprimer la réduction",
+        "free_shipping_discount_label": "Livraison gratuite",
+        "apply_discount_button_label": "Appliquer"
+      }
+    }
   }
 }
