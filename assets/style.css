@@ -2490,6 +2490,34 @@ html {
   visibility: visible;
 }
 
+.tw-input {
+  flex-shrink: 1;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-duration: .2s;
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+  height: 3rem;
+  font-size: .875rem;
+  line-height: 2;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  --tw-bg-opacity: 1;
+  background-color: hsla(var(--b1) / var(--tw-bg-opacity, 1));
+  --tw-border-opacity: 0;
+  border-color: hsla(var(--bc) / var(--tw-border-opacity, 1));
+  border-width: 1px;
+  border-radius: var(--rounded-btn, .5rem);
+}
+
+.tw-input:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px hsl(var(--b1)), 0 0 0 4px hsla(var(--bc) / .2);
+}
+
+.tw-input-group>*,.tw-input-group>.tw-input {
+  border-radius: 0;
+}
+
 .tw-menu {
   display: flex;
   flex-direction: column;
@@ -2530,11 +2558,6 @@ html {
 
 .tw-menu :where(li).tw-disabled>a,.tw-menu :where(li).tw-disabled>span {
   cursor: auto;
-}
-
-.tw-radio:focus {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
 }
 
 .tw-stack {
@@ -3148,6 +3171,44 @@ html {
   --tw-scale-y: 1;
 }
 
+.tw-input-bordered {
+  --tw-border-opacity: 0.2;
+}
+
+.tw-input-disabled,.tw-input[disabled] {
+  --tw-bg-opacity: 1;
+  background-color: hsla(var(--b2) / var(--tw-bg-opacity, 1));
+  --tw-border-opacity: 1;
+  border-color: hsla(var(--b2) / var(--tw-border-opacity, 1));
+  cursor: not-allowed;
+  --tw-text-opacity: 0.2;
+}
+
+.tw-input-disabled::-moz-placeholder,.tw-input[disabled]::-moz-placeholder {
+  --tw-placeholder-opacity: 0.2;
+  color: hsla(var(--bc) / var(--tw-placeholder-opacity, 1));
+}
+
+.tw-input-disabled:-ms-input-placeholder,.tw-input[disabled]:-ms-input-placeholder {
+  --tw-placeholder-opacity: 0.2;
+  color: hsla(var(--bc) / var(--tw-placeholder-opacity, 1));
+}
+
+.tw-input-disabled::-moz-placeholder, .tw-input[disabled]::-moz-placeholder {
+  --tw-placeholder-opacity: 0.2;
+  color: hsla(var(--bc) / var(--tw-placeholder-opacity, 1));
+}
+
+.tw-input-disabled:-ms-input-placeholder, .tw-input[disabled]:-ms-input-placeholder {
+  --tw-placeholder-opacity: 0.2;
+  color: hsla(var(--bc) / var(--tw-placeholder-opacity, 1));
+}
+
+.tw-input-disabled::placeholder,.tw-input[disabled]::placeholder {
+  --tw-placeholder-opacity: 0.2;
+  color: hsla(var(--bc) / var(--tw-placeholder-opacity, 1));
+}
+
 .tw-menu.tw-horizontal li.tw-bordered>a,.tw-menu.tw-horizontal li.tw-bordered>span {
   --tw-border-opacity: 1;
   border-color: hsla(var(--p) / var(--tw-border-opacity, 1));
@@ -3227,39 +3288,6 @@ html {
   padding-bottom: .25rem;
   --tw-text-opacity: 0.4;
   color: hsla(var(--bc) / var(--tw-text-opacity, 1));
-}
-
-.tw-radio {
-  --chkbg: var(--bc);
-  --focus-shadow: 0 0 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  --tw-border-opacity: 0.2;
-  border-color: hsla(var(--bc) / var(--tw-border-opacity, 1));
-  border-radius: 9999px;
-  border-width: 1px;
-  cursor: pointer;
-  height: 1.5rem;
-  width: 1.5rem;
-  transition: background,box-shadow var(--animation-input, .2s) ease-in-out;
-}
-
-.tw-radio:focus-visible {
-  --focus-shadow: 0 0 0 2px hsl(var(--b1)), 0 0 0 4px hsl(var(--bc));
-}
-
-.tw-radio:checked {
-  --tw-bg-opacity: 1;
-  background-color: hsla(var(--bc) / var(--tw-bg-opacity, 1));
-  -webkit-animation: radiomark var(--animation-input, .2s)  ease-in-out;
-  animation: radiomark var(--animation-input, .2s)  ease-in-out;
-  box-shadow: 0 0 0 4px hsl(var(--b1)) inset, 0 0 0 4px hsl(var(--b1)) inset, var(--focus-shadow);
-}
-
-.tw-radio:disabled {
-  cursor: not-allowed;
-  opacity: .2;
 }
 
 @-webkit-keyframes radiomark {
@@ -3434,24 +3462,10 @@ html {
   font-size: .75rem;
 }
 
-.tw-btn-sm {
-  height: 2rem;
-  padding-left: .75rem;
-  padding-right: .75rem;
-  min-height: 2rem;
-  font-size: .875rem;
-}
-
 .tw-btn-square:where(.tw-btn-xs) {
   height: 1.5rem;
   padding: 0;
   width: 1.5rem;
-}
-
-.tw-btn-square:where(.tw-btn-sm) {
-  height: 2rem;
-  padding: 0;
-  width: 2rem;
 }
 
 .tw-btn-circle:where(.tw-btn-xs) {
@@ -3461,21 +3475,17 @@ html {
   width: 1.5rem;
 }
 
-.tw-btn-circle:where(.tw-btn-sm) {
-  border-radius: 9999px;
-  height: 2rem;
-  padding: 0;
-  width: 2rem;
-}
-
 .tw-checkbox-sm {
   height: 1.25rem;
   width: 1.25rem;
 }
 
-.tw-radio-sm {
-  height: 1.25rem;
-  width: 1.25rem;
+.tw-input-sm {
+  height: 2rem;
+  font-size: .875rem;
+  line-height: 2rem;
+  padding-left: .75rem;
+  padding-right: .75rem;
 }
 
 .tw-toggle-sm {
@@ -4077,10 +4087,6 @@ html {
   margin-left: 0.75rem;
 }
 
-.tw-ml-6 {
-  margin-left: 1.5rem;
-}
-
 .tw-block {
   display: block;
 }
@@ -4137,6 +4143,10 @@ html {
   height: 2.5rem;
 }
 
+.tw-h-3 {
+  height: 0.75rem;
+}
+
 .\!tw-h-full {
   height: 100% !important;
 }
@@ -4155,18 +4165,6 @@ html {
 
 .tw-h-\[43px\] {
   height: 43px;
-}
-
-.tw-h-6 {
-  height: 1.5rem;
-}
-
-.tw-h-8 {
-  height: 2rem;
-}
-
-.tw-h-3 {
-  height: 0.75rem;
 }
 
 .tw-max-h-\[300px\] {
@@ -4201,8 +4199,20 @@ html {
   width: 2.5rem;
 }
 
-.tw-w-80 {
-  width: 20rem;
+.tw-w-3 {
+  width: 0.75rem;
+}
+
+.tw-w-52 {
+  width: 13rem;
+}
+
+.tw-w-\[428px\] {
+  width: 428px;
+}
+
+.tw-w-0 {
+  width: 0px;
 }
 
 .\!tw-w-full {
@@ -4219,26 +4229,6 @@ html {
 
 .tw-w-\[5px\] {
   width: 5px;
-}
-
-.tw-w-52 {
-  width: 13rem;
-}
-
-.tw-w-\[428px\] {
-  width: 428px;
-}
-
-.tw-w-6 {
-  width: 1.5rem;
-}
-
-.tw-w-3 {
-  width: 0.75rem;
-}
-
-.tw-w-0 {
-  width: 0px;
 }
 
 .tw-min-w-\[120px\] {
@@ -4273,16 +4263,16 @@ html {
   max-width: 1280px;
 }
 
+.tw-max-w-\[80\%\] {
+  max-width: 80%;
+}
+
 .tw-max-w-xl {
   max-width: 36rem;
 }
 
 .tw-max-w-2xl {
   max-width: 42rem;
-}
-
-.tw-max-w-\[80\%\] {
-  max-width: 80%;
 }
 
 .\!tw-max-w-\[180px\] {
@@ -4433,20 +4423,16 @@ html {
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
-.tw-space-y-3 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+.tw-space-x-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .tw-divide-y > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-y-reverse: 0;
   border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
   border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
-}
-
-.tw-self-start {
-  align-self: flex-start;
 }
 
 .tw-self-center {
@@ -4642,12 +4628,12 @@ html {
   padding: 1rem;
 }
 
-.tw-p-\[4\%\] {
-  padding: 4%;
-}
-
 .tw-p-2 {
   padding: 0.5rem;
+}
+
+.tw-p-\[4\%\] {
+  padding: 4%;
 }
 
 .tw-px-3 {
@@ -4690,6 +4676,16 @@ html {
   padding-bottom: 0.75rem;
 }
 
+.tw-px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.tw-py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
 .tw-px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -4728,16 +4724,6 @@ html {
 .\!tw-py-1 {
   padding-top: 0.25rem !important;
   padding-bottom: 0.25rem !important;
-}
-
-.tw-px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
-.tw-py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
 }
 
 .tw-pt-6 {
@@ -4900,18 +4886,9 @@ html {
   color: hsla(var(--bc) / var(--tw-text-opacity));
 }
 
-.tw-text-gray-600 {
-  --tw-text-opacity: 1;
-  color: rgb(75 85 99 / var(--tw-text-opacity));
-}
-
 .tw-text-gray-400 {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
-}
-
-.tw-text-opacity-60 {
-  --tw-text-opacity: 0.6;
 }
 
 .tw-underline {
@@ -4923,12 +4900,12 @@ html {
   opacity: 0;
 }
 
-.tw-opacity-100 {
-  opacity: 1;
-}
-
 .tw-opacity-50 {
   opacity: 0.5;
+}
+
+.tw-opacity-100 {
+  opacity: 1;
 }
 
 .tw-shadow-lg {
@@ -4952,10 +4929,6 @@ html {
 .tw-shadow-white {
   --tw-shadow-color: #fff;
   --tw-shadow: var(--tw-shadow-colored);
-}
-
-.tw-outline {
-  outline-style: solid;
 }
 
 .tw-filter {
@@ -5546,6 +5519,16 @@ html {
   .lg\:tw-py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+
+  .lg\:tw-px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .lg\:tw-py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
   .lg\:tw-text-left {
