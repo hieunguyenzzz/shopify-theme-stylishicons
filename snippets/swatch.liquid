@@ -8,9 +8,13 @@ choose colours" %}
 {% assign current_option = "option" | append: option.position %}
 
 {% assign other_options = "option1 option2 option3" | remove: current_option | strip | split: " " %}
-
+{% assign handlizedOption = option_name | handleize %}
+{% assign optionstring = 'strings.product_options.' | append: handlizedOption | t %}
+{% if optionstring contains 'translation missing' %}
+  {% assign optionstring = option_name %}
+{% endif %}
 <div data-option-name="{{option_name}}" class="clearfix swatch" data-option-index="{{ option.position }}" data-other-options='{{ other_options | json }}'>
-  <h5>{{ option.name }}</h5>
+  <h5>{{ optionstring  }}</h5>
   {% if material_swatch_options contains option_name %}
     <div class="tw-grid tw-grid-cols-2 tw-gap-2">
   {% else %}
