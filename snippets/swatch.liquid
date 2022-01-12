@@ -82,7 +82,6 @@ choose colours" %}
   {% endif %}
   {% assign handlizedValue = value | handleize %}
   {% assign valuestring = 'strings.product_options.' | append: handlizedValue | t %}
-  {{valuestring}}
   {% if valuestring contains 'translation missing' %}
     {% assign valuestring = value %}
   {% endif %}
