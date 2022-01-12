@@ -28,7 +28,7 @@
       {% for filter in filters %}
       {% assign attr = filter.attribute | replace: 'option:', '' %}
       <input type="hidden" name="" value="{{ filter.attribute | replace: 'option:', '' }}">
-     	{% if attr ==  "Collection" %}
+     	  {% if attr ==  "Collection" %}
       		{% assign collection_option = true %}
       	{% endif %}
         {% if attr ==  "choose colour" %}

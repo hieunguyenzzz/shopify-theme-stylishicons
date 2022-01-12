@@ -1,0 +1,218 @@
+{%- comment -%}
+  <!-- sort_options -->
+  <!-- search -->
+  <!-- filters -->
+  <!-- url -->
+  <!-- sort_by -->
+{%- endcomment -%}
+
+<style>
+    #filter-drawer .tw-collapse-title{
+        padding: 1rem 2rem 1rem 0rem;
+    }
+    #filter-drawer .tw-collapse:not(.tw-collapse-close) input[type=checkbox]:focus~.tw-collapse-title,
+    #filter-drawer .tw-collapse:focus:not(.tw-collapse-close) .tw-collapse-title,
+    #filter-drawer .tw-collapse:focus:not(.tw-collapse-close) .tw-collapse-content,
+    #filter-drawer .tw-collapse:not(.tw-collapse-close) input[type=checkbox]:checked~.tw-collapse-content {
+        background: none;
+    }
+    #filter-drawer .tw-collapse:not(.tw-collapse-close) input[type=checkbox]:checked~.tw-collapse-title{
+        background: none;
+    }
+    #filter-drawer .tw-collapse-arrow .tw-collapse-title:after{
+        height: 0.4rem;
+        width: 0.4rem;
+        top: 1.5rem;
+        right: 0.4rem;
+        box-shadow: 1px 1px;
+    }
+    #filter-drawer .tw-collapse-content{
+        padding-left: 0;
+        padding-right: 0;
+    }
+</style>
+{% assign sort_by = sort_by %}
+{% assign url = request.path | append : '?' %}
+{% if search %}
+    {% if search.terms != blank %}
+        {% assign url = url | append :'q' | append :'=' | append :search.terms | append :'&' %}
+    {% endif %}
+{% endif %}
+
+{% assign urlWithoutFilter = url %}
+
+{% for filter in filters %}
+    {% if filter.active_values.size %}
+        {% assign active_values = filter.active_values | map:'value' | join:',' %}
+        {% if active_values != blank %}
+            {% assign url = url | append :filter.param_name | append :'=' | append :active_values  | append :'&'  %}
+        {% endif %}
+    {% endif %}
+{% endfor %}
+
+{% assign showclearBtn = false %}
+{% assign filterItemCount = 0 %}
+{% assign sortByName = 'Featured' %}
+{% for option in sort_options %}
+    {% if option.value == sort_by %}
+        {% assign sortByName = option.name %}
+        {% else %}
+    {% endif %}
+{% endfor %}
+{% capture filterItems %}
+    {%- for filter in filters -%}
+        {%- if filter.type == "price_range" -%}
+            {%- if filter.min_value.value != nil or filter.max_value.value != nil -%}
+                <a class="active-filters__remove-filter tw-btn tw-btn-xs !tw-text-white" href="{{ filter.url_to_remove }}">
+                    {%- assign min_value = filter.min_value.value | default: 0 -%}
+                    {%- assign max_value = filter.max_value.value | default: filter.range_max -%}
+                    {{ min_value | money }}
+                    -
+                    {{ max_value | money }}
+                    <svg class="tw-w-3 tw-h-3 tw-ml-1" fill="none" height="24" shape-rendering="geometricPrecision" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke="currentColor" viewbox="0 0 24 24" width="24">
+                        <path d="M18 6L6 18"></path>
+                        <path d="M6 6l12 12"></path>
+                    </svg>
+                </a>
+                {% assign showclearBtn = true %}
+                {% assign filterItemCount = filterItemCount | plus: 1 %}
+            {%- endif -%}
+        {%- else -%}
+            {%- for filter_value in filter.active_values -%}
+                <a class="active-filters__remove-filter tw-btn tw-btn-xs !tw-text-white" href="{{ filter_value.url_to_remove }}">
+                    {{ filter_value.label }}
+                    <svg class="tw-w-3 tw-h-3 tw-ml-1" fill="none" height="24" shape-rendering="geometricPrecision" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke="currentColor" viewbox="0 0 24 24" width="24">
+                        <path d="M18 6L6 18"></path>
+                        <path d="M6 6l12 12"></path>
+                    </svg>
+                </a>
+                {% assign filterItemCount = filterItemCount | plus: 1 %}
+                {% assign showclearBtn = true %}
+            {%- endfor -%}
+        {%- endif -%}
+    {%- endfor -%}
+{% endcapture %}
+<div class="tw-py-6">
+    <div class="tw-w-full tw-flex tw-gap-3">
+        <div class="tw-flex-1 lg:tw-flex tw-gap-3 tw-flex-wrap tw-hidden">
+        {%- for filter in collection.filters -%}
+            {% if forloop.index > 3 %}
+                {% continue %}
+            {% endif %}
+            <label class="tw-bg-gray-100 tw-cursor-pointer tw-items-center tw-flex tw-h-12 tw-p-4 tw-rounded-l-full tw-rounded-r-full hover:tw-bg-gray-200" for="my-drawer">{{filter.label}}</label>
+        {% endfor %}
+        <label class="tw-bg-gray-100 tw-gap-2 tw-cursor-pointer tw-items-center tw-flex tw-h-12 tw-p-4 tw-rounded-l-full tw-rounded-r-full hover:tw-bg-gray-200" for="my-drawer">{{ 'strings.general.more-filters' | t }}
+            <svg class="" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path></svg>
+        </label>
+        </div>
+        <div class="tw-flex-1 tw-flex tw-gap-3 tw-flex-wrap lg:tw-hidden">
+            <label class="tw-bg-gray-100 tw-gap-2 tw-cursor-pointer tw-items-center tw-flex tw-h-12 tw-p-4 tw-rounded-l-full tw-rounded-r-full hover:tw-bg-gray-200" for="my-drawer">{{ 'strings.general.more-filters' | t }}
+                <svg class="" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path></svg>
+            </label>
+        </div>
+        <div>
+            <div class="tw-dropdown tw-dropdown-end">
+                <div tabindex="0" class="tw-bg-gray-100 tw-cursor-pointer tw-items-center tw-flex tw-h-12 tw-p-4 tw-rounded-l-full tw-rounded-r-full hover:tw-bg-gray-200">{{'collections.sorting.title' | t}}:
+                     {{sortByName}}</div> 
+                <ul tabindex="0" class="tw-p-2 tw-shadow-lg tw-menu tw-compact tw-dropdown-content tw-bg-base-100 tw-rounded-box tw-w-52">
+                
+                  {% for option in sort_options %}
+                  <li>
+    
+                                        <a href="{{urlWithoutFilter| sort_by : option.value}}">{{ option.name }}</a>
+                                    </li> 
+                                {% endfor %}
+                </ul>
+              </div>
+        </div>
+    </div>
+    {% if showclearBtn %}
+    <div class="tw-flex tw-flex-wrap tw-gap-3 tw-py-2 tw-active-filters">
+        {{filterItems}}
+        <a href="{{ urlWithoutFilter| sort_by : sort_by }}" class="tw-btn tw-btn-xs tw-btn-outline tw-active-filters__clear">Clear all</a>
+    </div>
+    {% endif %}
+</div>
+
+<div  id="filter-drawer"  class=" tw-drawer t tw-fixed tw-inset-0 tw-w-full tw-h-full tw-z-50 tw-isolate tw-pointer-events-none">
+    <input id="my-drawer" checked type="checkbox" class="tw-drawer-toggle"> 
+    <div class="tw-drawer-side tw-pointer-events-none">
+      <label for="my-drawer" class="tw-drawer-overlay tw-pointer-events-auto  !tw-m-0"></label> 
+      <div class="tw-menu tw-text-left tw-pointer-events-auto tw-p-4 lg:tw-px-10 lg:tw-py-6 tw-overflow-hidden tw-shadow-lg tw-max-w-[80%] tw-w-[428px] tw-bg-base-100 tw-text-base-content tw-flex tw-flex-col">
+        <div class="tw-flex tw-min-h-16 tw-items-center ">
+            <div class="tw-text-3xl tw-font-bold tw-py-3 tw-flex-1">
+                {{ 'strings.general.filter-products' | t }}
+            </div>
+            <label for="my-drawer" class="tw-text-2xl tw-flex-shrink-0 tw-py-3 ">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke="#000" stroke-width="2" d="M3,3 L21,21 M3,21 L21,3"></path></svg>
+            </label>
+        </div>
+        <form class="tw-flex-1 filter-form tw-divide-y tw-flex tw-flex-col tw-overflow-hidden">
+            <div class="tw-flex-1 tw-overflow-y-auto tw-divide-y ">
+                {%- for filter in collection.filters -%}
+                {%- case filter.type -%}
+                        {%- when 'list' -%}
+                        <div class="tw-collapse tw-w-full tw-collapse-arrow">
+                            <input name="filter-form-value" id="filter-form-value-{{filter.label | handleize}}" type="checkbox"> 
+                            <div class="tw-collapse-title tw-flex tw-gap-2 tw-justify-between tw-font-semibold ">
+                                <span class="">{{ filter.label }}</span>
+                                <div class="tw-truncate tw-text-gray-400 tw-flex-1 tw-text-right empty:tw-hidden tw-w-0">
+                                    {{filter.values | where: "active", true | map: 'label' | join: ', '}}
+                                </div>
+                            </div> 
+                            <div class="tw-collapse-content"> 
+                                {%- for filter_value in filter.values -%}
+                                <li  class="filter-group-display__list-item {% if filter_value.count == 0 and filter_value.active == false -%} tw-opacity-50 {%- endif %}">
+                                    <label class="tw-flex tw-gap-2 tw-py-1 tw-items-center" for="Filter-{{ filter.param_name }}-{{ forloop.index }}">
+                                        <input class="tw-checkbox tw-checkbox-sm !tw-block"  type="checkbox" name="{{ filter_value.param_name }}" value="{{ filter_value.value }}" id="Filter-{{ filter_value.label | escape }}-{{ forloop.index }}" {% if filter_value.active -%} checked {%- endif %} {% if filter_value.count == 0 and filter_value.active == false -%} disabled {%- endif %}>{{ filter_value.label }}</label>
+                                </li>
+                            {%- endfor -%}
+                            </div>
+                        </div> 
+
+                        {%- when 'price_range' -%}
+                        <div class="tw-collapse tw-w-full tw-collapse-arrow">
+                            <input checked name="filter-form-value" id="filter-form-value-{{filter.label | handleize}}" type="checkbox"> 
+                            <div class="tw-collapse-title tw-flex tw-gap-2 tw-justify-between tw-font-semibold ">
+                                <span class="">{{ filter.label }} ({{ cart.currency.iso_code }})</span>
+                                <div class="tw-truncate tw-text-gray-400 tw-flex-1 tw-text-right empty:tw-hidden tw-w-0">
+                                        {%- assign min_value = filter.min_value.value | default: 0 -%}
+                                        {%- assign max_value = filter.max_value.value | default: filter.range_max -%}
+                                        {{ min_value | money }}
+                                        -
+                                        {{ max_value | money }}
+                                </div>
+                            </div> 
+                            <div class="tw-collapse-content"> 
+                                <div class="tw-flex tw-space-x-3 tw-py-3">
+                                    <div class="tw-flex tw-items-baseline tw-flex-1 tw-space-x-3 filter-group-display__price-range-from">
+                                        <label class="tw-text-xs" for="Filter-{{ filter.min_value.param_name }}">From</label>
+                                        <input class="tw-flex-1 tw-w-0 tw-input tw-input-bordered tw-input-sm" name="{{ filter.min_value.param_name }}" id="Filter-{{ filter.min_value.param_name }}" {% if filter.min_value.value -%} value="{{ filter.min_value.value | money_without_currency | replace: ',', '' }}" {%- endif %}  placeholder="0" min="0" max="{{ filter.range_max | money_without_currency | replace: ',', '' }}">
+    
+                                    </div>
+                                    <div class="tw-flex tw-items-baseline tw-flex-1 tw-space-x-3 filter-group-display__price-range-to">
+                                        <label class="tw-text-xs" for="Filter-{{ filter.max_value.param_name }}">To</label>
+                                        <input class="tw-flex-1 tw-w-0 tw-input tw-input-bordered tw-input-sm" name="{{ filter.max_value.param_name }}" id="Filter-{{ filter.max_value.param_name }}" {% if filter.max_value.value -%} value="{{ filter.max_value.value | money_without_currency | replace: ',', '' }}" {%- endif %} placeholder="{{ filter.range_max | money_without_currency | replace: ',', '' }}" min="0" max="{{ filter.range_max | money_without_currency | replace: ',', '' }}">
+    
+                                    </div>
+                                </div>
+                                <div>Max: {{ filter.range_max | money_with_currency  }}</div>
+                            </div>
+                        </div> 
+                        
+                    {% else %}
+                        
+                {% endcase %}
+               
+                {%- endfor -%}
+            </div>
+            <div class="active-filters tw-flex tw-gap-3">
+              <a href="{{ collection.url }}?sort_by={{ collection.sort_by }}" class="tw-btn tw-btn-outline tw-rounded-none tw-flex tw-items-center">Clear all</a>
+              <input class="btn " type="submit" value="Apply">
+              
+            </div>
+        </form>
+          
+      </div>
+    </div>
+  </div>
