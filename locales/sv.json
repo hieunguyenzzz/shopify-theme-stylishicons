@@ -1772,7 +1772,19 @@
       "dark-burgundy-waxy": "Dark Burgundy Waxy",
       "american-walnut": "Amerikansk valnöt",
       "yellow-lacquered": "Gul lackerad",
-      "black-marble": "Svart marmor"
+      "black-marble": "Svart marmor",
+      "special-edition": "Specialutgåva",
+      "48-cm": "48 cm",
+      "72-cm": "72 cm",
+      "84-cm": "84 cm",
+      "13-cm": "13 CM",
+      "23-cm": "23 cm",
+      "31-cm": "31 cm",
+      "47-cm": "47 cm",
+      "left-chaise": "VÄNSTERKAPNING",
+      "right-chaise": "Rätt chaise",
+      "96-cm": "96 cm",
+      "102-cm": "102 cm"
     }
   }
 }
