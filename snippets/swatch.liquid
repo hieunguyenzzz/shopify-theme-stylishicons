@@ -80,7 +80,9 @@ choose colours" %}
   {% if current_variant[current_option] == value %}
   {% assign checked = 'checked="checked"' %}
   {% endif %}
-  {% assign valuestring = 'strings.product_options.' | append: value | t %}
+  {% assign handlizedValue = value | handleize %}
+  {% assign valuestring = 'strings.product_options.' | append: handlizedValue | t %}
+  {{valuestring}}
   {% if valuestring contains 'translation missing' %}
     {% assign valuestring = value %}
   {% endif %}
