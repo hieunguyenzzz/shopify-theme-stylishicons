@@ -1593,14 +1593,16 @@
       "learn_more": "Läs mer",
       "verified_reviews": "Verifierade recensioner",
       "privacy_policy": "Integritetspolicy",
-      "terms_conditions": "Allmänna Villkor",
+      "terms_conditions": "Villkor och bestämmelser",
       "view_all": "VISA ALLA",
       "all_reviews": "Alla recensioner",
       "shop_instagram": "Shop Instagram",
       "see_all": "SE ALLT",
       "best_seller": "BÄSTSÄLJARE",
       "new_product": "NY PRODUKT",
-      "inspired_by": "Inspirerad av"
+      "inspired_by": "Inspirerad av",
+      "more-filters": "Fler filerfunktioner",
+      "filter-products": "Filterprodukter"
     },
     "product_options": {
       "classic": "Klassisk",
@@ -1682,7 +1684,7 @@
       "nord-light-sage": "Nord Light Sage.",
       "camel": "Kamel",
       "smoked-transparent": "Rökt transparent",
-      "clear": "Klar",
+      "clear": "Klart",
       "ash": "Aska",
       "patchwork": "Lapp",
       "brushed-brass": "Borstat mässing",
