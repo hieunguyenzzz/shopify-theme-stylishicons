@@ -152,7 +152,7 @@
     {% if showclearBtn %}
     <div class="tw-flex tw-flex-wrap tw-gap-3 tw-py-2 tw-active-filters">
         {{filterItems}}
-        <a href="{{ urlWithoutFilter| sort_by : sort_by }}" class="tw-btn tw-btn-xs tw-btn-outline tw-active-filters__clear">Clear all</a>
+        <a href="{{ urlWithoutFilter| sort_by : sort_by }}" class="tw-btn tw-btn-xs tw-btn-outline tw-active-filters__clear">{{'strings.general.clear-all | t'}}</a>
     </div>
     {% endif %}
 </div>
