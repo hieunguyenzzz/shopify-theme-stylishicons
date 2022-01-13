@@ -95,7 +95,7 @@
       var finalUrl = rootUrl + {{ path[0] | replace: replace_part, replacement | replace_first: '/','' | json }};
       if(finalUrl == '') {finalUrl = '/';}
 
-      window.location.href = finalUrl;
+      // window.location.href = finalUrl;
       return true;
     },
     getCookie: function(name) {

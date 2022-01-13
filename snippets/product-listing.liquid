@@ -11,8 +11,7 @@
 <div class="ci">
     {% if product.available %}
         {% if discount %}
-            <span class="percentage_off tw-absolute tw-top-0 tw-right-0 tw-z-10 empty:tw-hidden">{{ discount }}
-                OFF</span>
+            <span class="percentage_off tw-absolute tw-top-0 tw-right-0 tw-z-10 empty:tw-hidden">{{'strings.general.percentage_off' | t: number:discount}}</span>
         {% endif %}
         {% for collection in product.collections %}
             {% if collection.handle == 'bestseller' %}
