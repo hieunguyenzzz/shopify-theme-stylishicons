@@ -122,18 +122,10 @@
             {% endcapture %}
 
             <div id="product-photos" class="tw-relative product-photos product-{{ product.id }} {{ image_width }}" data-product-single-media-group data-gallery-config='{{ product_gallery_config }}' {{ gallery_data }}>
-                {% if discount %}
-                <span id="percentage_off" class="tw-bg-[#fbf3ee] tw-bg-opacity-90 tw-px-[1em] md:tw-text-xl lg:tw-text-2xl tw-font-bold !tw-leading-loose tw-text-black tw-z-10 empty:tw-hidden tw-absolute tw-right-0 tw-top-0">{{ discount }}
-                    OFF</span>
-                    {% else %}
-                    <span id="percentage_off" class="tw-bg-[#fbf3ee] tw-bg-opacity-90 tw-px-[1em] md:tw-text-xl lg:tw-text-2xl tw-font-bold !tw-leading-loose tw-text-black tw-z-10 empty:tw-hidden tw-absolute tw-right-0 tw-top-0"></span>
-                {% endif %}
                 <div id="product-labels">
                     {% if discount %}
-                    <span  class="tw-bg-[rgb(251,243,238)] tw-bg-opacity-90 tw-px-[1em] md:tw-text-xl lg:tw-text-2xl tw-font-bold !tw-leading-loose tw-text-black tw-z-10 empty:tw-hidden tw-absolute tw-right-0 tw-top-0">{{ discount }}
-                        OFF</span>
-                        {% else %}
-                        <span  class="tw-bg-[#fbf3ee] tw-bg-opacity-90 tw-px-[1em] md:tw-text-xl lg:tw-text-2xl tw-font-bold !tw-leading-loose tw-text-black tw-z-10 empty:tw-hidden tw-absolute tw-right-0 tw-top-0"></span>
+                        <span class="tw-bg-[#fbf3ee] tw-bg-opacity-90 tw-px-[1em] md:tw-text-xl lg:tw-text-2xl tw-font-bold !tw-leading-loose tw-text-black tw-z-10 empty:tw-hidden tw-absolute tw-right-0 tw-top-0">
+                        {{'strings.general.percentage_off' | t: number:discount}}</span>
                     {% endif %}
                     {% for collection in product.collections %}
                         {% if collection.handle == 'bestseller' %}
