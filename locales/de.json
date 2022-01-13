@@ -396,5 +396,39 @@
       "signup_form_success": "We will send you an email right before we open!",
       "password_link": "Enter using password"
     }
+  },
+  "strings": {
+    "general": {
+      "show_express_delivery_options": "Express-Lieferoptionen anzeigen",
+      "learn_more": "Lern mehr",
+      "verified_reviews": "Verifizierte Bewertungen",
+      "privacy_policy": "Datenschutz",
+      "terms_conditions": "Bedingungen und Konditionen",
+      "view_all": "ALLE ANSEHEN",
+      "all_reviews": "Alle Bewertungen",
+      "shop_instagram": "Einkaufen Instagram.",
+      "see_all": "ALLES SEHEN",
+      "best_seller": "BESTSELLER, VERKAUFSSCHLAGER, SPITZENREITER",
+      "new_product": "NEUES PRODUKT",
+      "inspired_by": "Inspiriert von",
+      "more-filters": "Mehr Filer",
+      "filter-products": "Produkte filtern",
+      "clear-all": "Alle löschen",
+      "percentage_off": "{{number}} AUS"
+    },
+    "product_options": {
+      "choose-colours": "Wählen Sie Farben:",
+      "choose-colour": "Farbe auswählen",
+      "choose-finish": "Wählen Sie. Fertigstellen",
+      "color": "Farbe",
+      "choose-material": "Wählen. Material",
+      "upholstery": "Polster",
+      "finish": "Beenden",
+      "choose-materials": "Wähle. Material",
+      "woods-finishes": "Wälder \/ Oberflächen",
+      "material-size": "Material \/ Größe",
+      "material": "Material",
+      "fabric": "Stoff"
+    }
   }
 }
