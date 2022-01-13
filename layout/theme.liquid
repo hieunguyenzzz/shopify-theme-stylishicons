@@ -27,7 +27,13 @@
         <link rel="preload" as="font" href="{{ main_font | font_url }}" type="font/woff2" crossorigin>
         <link rel="preload" as="font" href="{{ nav_font | font_url }}" type="font/woff2" crossorigin>
         <link rel="preload" as="font" href="{{ heading_font | font_url }}" type="font/woff2" crossorigin>
-   
+        <link rel="preload" href="{{ 'eventemitter3.min.js' | asset_url }}" as="script">
+        <link rel="preload" href="{{ 'theme.js' | asset_url }}" as="script">
+        <link rel="preload" href="{{ 'option_selection.js' | shopify_asset_url }}" as="script">
+        <link rel="preload" href="{{ 'ls.rias.min.js' | asset_url }}" as="script">
+        <link rel="preload" href="{{ 'ls.bgset.min.js' | asset_url }}" as="script">
+        <link rel="preload" href="{{ 'lazysizes.min.js' | asset_url }}" as="script">
+        <link rel="preload" href="{{ 'jquery.fancybox.js' | asset_url }}" as="script">
 
         {% if settings.favicon %}<link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png"/>
         {% endif %}
@@ -156,6 +162,7 @@
 
         <script src="{{'//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js' }}"></script>
         <script src="{{ 'eventemitter3.min.js' | asset_url }}"></script>
+        <script src="{{ 'theme.js' | asset_url }}"></script>
         <script src="{{ 'option_selection.js' | shopify_asset_url }}"></script>
 
         <a class="scrollup" href="#">
@@ -215,7 +222,9 @@
          document.documentElement.className.replace("no-js","js");
   </script>
 
-
+        <script src="{{ 'ls.rias.min.js' | asset_url }}" defer="defer"></script>
+        <script src="{{ 'ls.bgset.min.js' | asset_url }}" defer="defer"></script>
+        <script src="{{ 'lazysizes.min.js' | asset_url }}" defer="defer"></script>
 
         <script>
     if (!window.HTMLPictureElement) {
@@ -230,8 +239,8 @@
 
         <script src="{{ 'jquery.fancybox.js' | asset_url }}" defer="defer"></script>
         <script>
-   AOS.init();
- </script>
+          AOS.init();
+        </script>
 
 
         
