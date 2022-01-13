@@ -296,7 +296,8 @@
       "view_full": "Alle Details ansehen",
       "related": "Mehr in dieser Kollektion",
       "sale_price": "Angebotspreis",
-      "regular_price": "Regulärer Preis"
+      "regular_price": "Regulärer Preis",
+      "view_all": "Alle ansehen"
     },
     "product": {
       "designer": "Designer",
@@ -628,7 +629,23 @@
       "white-n-brass": "Weiß n Messing",
       "shades-of-blue": "Blautöne",
       "shades-of-red": "Töne des Rotes",
-      "shades-of-grey": "Schatten von Grau"
+      "shades-of-grey": "Schatten von Grau",
+      "shades-of-green": "Schatten von Grün",
+      "shades-of-white": "Schatten von Weiß",
+      "13-cm": "13 cm",
+      "23-cm": "23 cm",
+      "31-cm": "31 cm",
+      "47-cm": "47 cm",
+      "copper-bronze": "Kupferbronze",
+      "left-chaise": "Verlassenes Chaise.",
+      "right-chaise": "Richtiges Chaise.",
+      "buck-brown": "Buck Brown",
+      "dark-burgundy-waxy": "Dark Burgund Waxy.",
+      "american-walnut": "Amerikanische Walnuss",
+      "96-cm": "96 CM",
+      "102-cm": "102 cm",
+      "yellow-lacquered": "Gelb lackiert",
+      "black-marble": "Schwarzer Marmor"
     }
   }
 }
