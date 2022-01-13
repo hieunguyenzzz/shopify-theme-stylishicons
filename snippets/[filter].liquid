@@ -5,6 +5,8 @@
   <!-- url -->
   <!-- sort_by -->
 {%- endcomment -%}
+{% assign filterBarId = 'my-drawer' %}
+
 
 <style>
     #filter-drawer .tw-collapse-title{
@@ -99,7 +101,9 @@
             {% if forloop.index > 3 %}
                 {% continue %}
             {% endif %}
-            <label class="tw-bg-gray-100 tw-cursor-pointer tw-items-center tw-flex tw-h-12 tw-p-4 tw-rounded-l-full tw-rounded-r-full hover:tw-bg-gray-200" for="filter-form-value-{{filter.label | handleize}}">{{filter.label}}</label>
+            <filter-opener>
+                <label class="tw-bg-gray-100 tw-cursor-pointer tw-items-center tw-flex tw-h-12 tw-p-4 tw-rounded-l-full tw-rounded-r-full hover:tw-bg-gray-200" for="filter-form-value-{{filter.label | handleize}}">{{filter.label}}</label>
+            </filter-opener>
         {% endfor %}
         <label class="tw-bg-gray-100 tw-gap-2 tw-cursor-pointer tw-items-center tw-flex tw-h-12 tw-p-4 tw-rounded-l-full tw-rounded-r-full hover:tw-bg-gray-200" for="my-drawer">{{ 'strings.general.more-filters' | t }}
             <svg class="" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path></svg>
@@ -119,7 +123,7 @@
                   {% for option in sort_options %}
                   <li>
     
-                                        <a href="{{urlWithoutFilter| sort_by : option.value}}">{{ option.name }}</a>
+                                        <a href="{{url| sort_by : option.value}}">{{ option.name }}</a>
                                     </li> 
                                 {% endfor %}
                 </ul>
@@ -216,3 +220,20 @@
       </div>
     </div>
   </div>
+<script>
+    class FilterOpener extends HTMLElement {
+        constructor() {
+            super();
+            this.querySelector('label').addEventListener('click', (event) => {
+                event.preventDefault();
+                document.querySelector("#"+event.target.htmlFor).checked=true
+                document.querySelector("#"+{{filterBarId|json}}).checked=true
+                document.querySelector("#"+event.target.htmlFor).focus()
+            });
+        }
+    }
+
+    customElements.define('filter-opener', FilterOpener);
+
+
+</script>
