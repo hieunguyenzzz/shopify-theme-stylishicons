@@ -243,61 +243,7 @@
  </script>
 
 
-        {% include 'globo.filter.action' %}
-        <script>    
-    function filterCollection(){
-      var body = $('html').attr("class");
-      
-      if(body.indexOf("offcanvas-open")!=-1){        
-      }else{
-        $('html').addClass("offcanvas-open");  
-        $(".gf-option-block").addClass("is-collapsed");
-        $(".gf-option-405457").removeClass("is-collapsed");
-        var targetOffset = $(".gf-option-405457").offset().top;
-            $('#gf-tree').animate({scrollTop: targetOffset - 30}, 1000);
-      }
-    }
-    function filterColoropen(){
-      var body = $('html').attr("class");
-      if(body.indexOf("offcanvas-open")!=-1){        
-      }else{
-        $('html').addClass("offcanvas-open");  
-        $(".gf-option-block").addClass("is-collapsed");
-        $(".gf-option-405473").removeClass("is-collapsed");
-      }
-    }
-    function filterReadytoship(){
-      var body = $('html').attr("class");
-      if(body.indexOf("offcanvas-open")!=-1){        
-      }else{
-        $('html').addClass("offcanvas-open");  
-        $(".gf-option-block").addClass("is-collapsed");
-        $(".gf-option-405464").removeClass("is-collapsed");
-      }
-    }
-    
-    function filterMaterial(){
-       var body = $('html').attr("class");
-        if(body.indexOf("offcanvas-open")!=-1){        
-        }else{
-          $('html').addClass("offcanvas-open");  
-          $(".gf-option-block").addClass("is-collapsed");
-          $(".gf-option-405479").removeClass("is-collapsed");
-          var targetOffset = $(".gf-option-405479").offset().top;
-            $('#gf-tree').animate({scrollTop: targetOffset - 30}, 1000);
-        }
-    }
-    function filterPriceRange(){
-       var body = $('html').attr("class");
-        if(body.indexOf("offcanvas-open")!=-1){        
-        }else{
-          $('html').addClass("offcanvas-open");  
-          $(".gf-option-block").addClass("is-collapsed");
-          $(".gf-option-405460").removeClass("is-collapsed");
-        }
-    }
-   
-  </script>
+        
   <script>
 
     window.addEventListener('beforeunload', (event) => {
