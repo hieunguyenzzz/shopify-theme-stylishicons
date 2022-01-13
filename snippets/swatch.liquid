@@ -13,7 +13,7 @@ choose colours" %}
 {% if optionstring contains 'translation missing' %}
   {% assign optionstring = option_name %}
 {% endif %}
-<div data-option-name="{{option_name}}" class="clearfix swatch" data-option-index="{{ option.position }}" data-other-options='{{ other_options | json }}'>
+<div data-handlizedOption="{{handlizedOption}}" data-option-name="{{option_name}}" class="clearfix swatch" data-option-index="{{ option.position }}" data-other-options='{{ other_options | json }}'>
   <h5>{{ optionstring  }}</h5>
   {% if material_swatch_options contains option_name %}
     <div class="tw-grid tw-grid-cols-2 tw-gap-2">
@@ -84,14 +84,13 @@ choose colours" %}
   {% if current_variant[current_option] == value %}
   {% assign checked = 'checked="checked"' %}
   {% endif %}
-  {% assign handlizedValue = value | handleize %}
-  {% assign valuestring = 'strings.product_options.' | append: handlizedValue | t %}
+  {% assign valuestring = 'strings.product_options.' | append: handleValue | t %}
   {% if valuestring contains 'translation missing' %}
     {% assign valuestring = value %}
   {% endif %}
   {% capture radio_button %}
   <input type="radio" id="{% if template == 'product.quick' %}qv-{% endif %}{{ id }}" name="{{ option_name }}"
-    data-value="{{ value | handle }}" value="{{ value | escape }}" data-position="{{ option.position }}" {{ checked
+    data-value="{{ handleValue }}" value="{{ value | escape }}" data-position="{{ option.position }}" {{ checked
     }} />
   {% endcapture %}
 
@@ -116,7 +115,7 @@ choose colours" %}
       {% endif %}
 
       {% if swatch_type == 'variant-image' and variant_image_url != blank %}
-      <img class="variant-image" src="{{ variant_image_url }}" alt="{{ value }}">
+      <img class="variant-image" src="{{ variant_image_url }}" alt="{{ valuestring }}">
       {% elsif section.settings.color_swatch_options == 'custom-image' %}
       <div class="custom-image css-color"
         style="width: 40px; height: 40px; background-color: {{ css_color }}; background-image: url({{ image_url }});background-size: 270%;background-position: center;">
@@ -130,7 +129,7 @@ choose colours" %}
     <div class="swatch-element tw-w-full  !tw-m-0 {% unless available %} soldout {% endunless %}">
       {{ radio_button }}
       <label class="tw-w-full tw-bg-gray-100 tw-text-center" for="{% if template == 'product.quick' %}qv-{% endif %}{{ id }}">
-        {{ value }}
+        {{ valuestring }}
         {{ sold_out_image }}
       </label>
     </div>
@@ -138,7 +137,6 @@ choose colours" %}
   <div class="swatch-element {% unless available %} soldout {% endunless %}">
     {{ radio_button }}
     <label for="{% if template == 'product.quick' %}qv-{% endif %}{{ id }}">
-      
       {{valuestring}}
       {{ sold_out_image }}
     </label>
