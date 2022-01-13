@@ -5131,6 +5131,31 @@ html {
   display: none;
 }
 
+.focus-within\:tw-translate-x-0:focus-within {
+  --tw-translate-x: 0px;
+  transform: var(--tw-transform);
+}
+
+.focus-within\:\!tw-translate-x-0:focus-within {
+  --tw-translate-x: 0px !important;
+  transform: var(--tw-transform) !important;
+}
+
+.focus-within\:tw-bg-gray-100:focus-within {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
+.focus-within\:tw-p-6:focus-within {
+  padding: 1.5rem;
+}
+
+.focus-within\:tw-shadow-inner:focus-within {
+  --tw-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .hover\:tw-border-black:hover {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
