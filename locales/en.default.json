@@ -15,8 +15,8 @@
       "inspired_by": "Inspired By",
       "more-filters": "More filers",
       "filter-products": "Filter products",
-      "clear-all":"Clear all",
-      "percentage_off":"{{number}} OFF"
+      "clear-all": "Clear all",
+      "percentage_off": "{{number}} OFF"
     },
     "product_options": {
       "choose-colours": "Choose Colours:",
