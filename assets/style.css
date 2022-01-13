@@ -4745,6 +4745,10 @@ html {
   padding-bottom: 100%;
 }
 
+.tw-pb-12 {
+  padding-bottom: 3rem;
+}
+
 .tw-text-left {
   text-align: left;
 }
