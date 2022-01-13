@@ -99,7 +99,7 @@
             {% if forloop.index > 3 %}
                 {% continue %}
             {% endif %}
-            <label class="tw-bg-gray-100 tw-cursor-pointer tw-items-center tw-flex tw-h-12 tw-p-4 tw-rounded-l-full tw-rounded-r-full hover:tw-bg-gray-200" for="my-drawer">{{filter.label}}</label>
+            <label class="tw-bg-gray-100 tw-cursor-pointer tw-items-center tw-flex tw-h-12 tw-p-4 tw-rounded-l-full tw-rounded-r-full hover:tw-bg-gray-200" for="filter-form-value-{{filter.label | handleize}}">{{filter.label}}</label>
         {% endfor %}
         <label class="tw-bg-gray-100 tw-gap-2 tw-cursor-pointer tw-items-center tw-flex tw-h-12 tw-p-4 tw-rounded-l-full tw-rounded-r-full hover:tw-bg-gray-200" for="my-drawer">{{ 'strings.general.more-filters' | t }}
             <svg class="" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path></svg>
@@ -138,7 +138,7 @@
     <input id="my-drawer" type="checkbox" class="tw-drawer-toggle"> 
     <div class="tw-drawer-side tw-pointer-events-none">
       <label for="my-drawer" class="tw-drawer-overlay tw-pointer-events-auto  !tw-m-0"></label> 
-      <div class="tw-menu tw-text-left tw-pointer-events-auto tw-p-4 lg:tw-px-10 lg:tw-py-6 tw-overflow-hidden tw-shadow-lg tw-max-w-[80%] tw-w-[428px] tw-bg-base-100 tw-text-base-content tw-flex tw-flex-col">
+      <div tabindex="-1" class="tw-menu focus-within:!tw-translate-x-0 tw-text-left tw-pointer-events-auto tw-p-4 lg:tw-px-10 lg:tw-py-6 tw-overflow-hidden tw-shadow-lg tw-max-w-[80%] tw-w-[428px] tw-bg-base-100 tw-text-base-content tw-flex tw-flex-col">
         <div class="tw-flex tw-min-h-16 tw-items-center ">
             <div class="tw-text-3xl tw-font-bold tw-py-3 tw-flex-1">
                 {{ 'strings.general.filter-products' | t }}
@@ -152,7 +152,7 @@
                 {%- for filter in collection.filters -%}
                 {%- case filter.type -%}
                         {%- when 'list' -%}
-                        <div class="tw-collapse tw-w-full tw-collapse-arrow">
+                        <div class="tw-collapse tw-w-full tw-collapse-arrow focus-within:tw-bg-gray-100">
                             <input name="filter-form-value" id="filter-form-value-{{filter.label | handleize}}" type="checkbox"> 
                             <div class="tw-collapse-title tw-flex tw-gap-2 tw-justify-between tw-font-semibold ">
                                 <span class="">{{ filter.label }}</span>
