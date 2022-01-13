@@ -14,7 +14,8 @@
       "new_product": "NEW PRODUCT",
       "inspired_by": "Inspired By",
       "more-filters": "More filers",
-      "filter-products": "Filter products"
+      "filter-products": "Filter products",
+      "clear-all":"Clear all"
     },
     "product_options": {
       "choose-colours": "Choose Colours:",
