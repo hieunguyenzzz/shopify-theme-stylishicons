@@ -1861,12 +1861,6 @@ theme.ProductForm = function (context, sectionId, events, Product) {
     var element = context.querySelector("[data-price]");
 
     events.on("variantchange", function (variant) {
-      const discount =Math.floor((variant.compare_at_price-variant.price)/variant.compare_at_price*100)
-      if(discount>0){
-        document.querySelector('#percentage_off').innerHTML=discount+'% OFF'
-      }else{
-        document.querySelector('#percentage_off').innerHTML=''
-      }
       if ( variant.available && variant.compare_at_price > variant.price ) {
         element.classList.add('price--on-sale');
         element.classList.remove('price--sold-out');
