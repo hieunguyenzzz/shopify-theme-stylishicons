@@ -107,11 +107,12 @@
     <div class="tw-w-full tw-flex tw-gap-3">
         <div class="tw-flex-1 lg:tw-flex tw-gap-3 tw-flex-wrap tw-hidden">
         {%- for filter in collection.filters -%}
-            {% if filter.param_name contains '.option.' %}
-                {% assign trans = true %}
-            {% endif %}
+
             {% if forloop.index > 3 %}
                 {% continue %}
+            {% endif %}
+            {% if filter.param_name contains '.option.' %}
+                {% assign trans = true %}
             {% endif %}
             {% assign optionstring = filter.label %}
             {% if trans %}
