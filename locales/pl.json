@@ -1545,8 +1545,45 @@
     "products": {
       "product": {
         "regular_price": "Normalna cena",
-        "sold_out": "Wyprzedane"
+        "sold_out": "Wyprzedane",
+        "unavailable": "Niedostępne",
+        "on_sale": "Sprzedaż",
+        "quantity": "Ilość",
+        "add_to_cart": "Dodaj do koszyka",
+        "back_to_collection": "Wrócić do {{ title }}",
+        "view_details": "Pokaż szczegóły"
       }
+    },
+    "article": {
+      "tags": "Tagi:",
+      "all_topics": "Wszystkie tematy",
+      "by_author": "za pomocą {{ author }}",
+      "posted_in": "Opublikowany w",
+      "read_more": "Czytaj więcej",
+      "back_to_blog": "Wrócić do {{ title }}"
+    },
+    "comments": {
+      "title": "zostaw komentarz",
+      "name": "Nazwa",
+      "email": "E-mail",
+      "message": "Wiadomość",
+      "post": "Wyślij komentarz",
+      "moderated": "Uwaga: komentarze muszą zostać zatwierdzone przed opublikowaniem",
+      "success_moderated": "Twój komentarz został opublikowany pomyślnie. Publikujemy go za chwilę, ponieważ nasz blog jest moderowany.",
+      "success": "Twój komentarz został pomyślnie opublikowany! Dziękuję Ci!",
+      "comments_with_count": {
+        "one": "{{ count }} komentarz",
+        "other": "{{ count }} uwagi"
+      }
+    },
+    "password_page": {
+      "login_form_message": "Wpisz sklep za pomocą hasła:",
+      "login_form_password_label": "Hasło",
+      "login_form_password_placeholder": "Twoje hasło",
+      "login_form_submit": "Wchodzić",
+      "signup_form_email_label": "E-mail",
+      "signup_form_success": "Wyślemy Ci wiadomość e-mail zanim otworzymy!",
+      "password_link": "Wprowadź za pomocą hasła."
     }
   }
 }
