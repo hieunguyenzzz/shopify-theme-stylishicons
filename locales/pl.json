@@ -1404,7 +1404,81 @@
       "title": "Historia zamówień",
       "order_number": "Zamówienie",
       "date": "Data",
-      "payment_status": "Status płatności"
+      "payment_status": "Status płatności",
+      "fulfillment_status": "Stan spełnienia",
+      "total": "Całkowity",
+      "none": "Nie umieściłeś jeszcze żadnych zamówień."
+    },
+    "order": {
+      "title": "Zamówienie",
+      "date": "Umieszczone na",
+      "cancelled": "Zamówienie zostało anulowane",
+      "cancelled_reason": "Powód: {{ reason }}",
+      "billing_address": "Adres rozliczeniowy",
+      "payment_status": "Status płatności",
+      "shipping_address": "Adres wysyłki",
+      "fulfillment_status": "Stan spełnienia",
+      "discount": "Zniżka",
+      "shipping": "Wysyłka",
+      "tax": "Podatek",
+      "order_details": "Szczegóły zamówienia",
+      "details": {
+        "product": "Produkt",
+        "sku": "SKU.",
+        "price": "Cena £",
+        "quantity": "Ilość",
+        "total": "Całkowity",
+        "fulfilled_at": "Spełniony {{ date }}",
+        "subtotal": "Subtowal"
+      }
+    },
+    "recover_password": {
+      "title": "Zresetuj swoje hasło",
+      "email": "E-mail",
+      "submit": "Wyślij",
+      "cancel": "Anuluj",
+      "subtext": "Wyślemy Ci wiadomość e-mail, aby zresetować hasło.",
+      "success": "Wysłaliśmy Ci wiadomość e-mail z linkiem, aby zaktualizować hasło."
+    },
+    "reset_password": {
+      "title": "Resetuj hasło konta",
+      "subtext": "Wprowadź nowe hasło {{ email }}",
+      "password": "Hasło",
+      "password_confirm": "Potwierdź hasło",
+      "submit": "Zresetuj hasło"
+    },
+    "register": {
+      "title": "Utwórz konto",
+      "first_name": "Imię",
+      "last_name": "Nazwisko",
+      "email": "E-mail",
+      "password": "Hasło",
+      "submit": "Tworzyć"
+    }
+  },
+  "layout": {
+    "footer": {
+      "copyright": "prawa autorskie",
+      "theme_title": "przez użytkownika"
+    },
+    "homepage": {
+      "mailing_list_join": "Witaj!",
+      "mailing_list_text": "Dołącz do naszej listy mailingowej",
+      "onboarding": {
+        "no_content": "Ta sekcja nie zawiera obecnie żadnych treści. Dodaj zawartość do tej sekcji za pomocą paska bocznego."
+      }
+    },
+    "mobile_nav": {
+      "account": "Rachunek",
+      "login": "Zaloguj\/Utwórz konto",
+      "logout": "Wyloguj"
+    }
+  },
+  "products": {
+    "general": {
+      "new": "NOWE",
+      "sale": "SPRZEDAŻ",
+      "sold": "SOLD OUT"
     }
   }
 }
