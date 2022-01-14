@@ -100,15 +100,11 @@
   
 <script>
   window.routes = {
-    cart_add_url: '{{ routes.cart_add_url }}',
-    cart_change_url: '{{ routes.cart_change_url }}',
-    cart_update_url: '{{ routes.cart_update_url }}',
     {% if request.locale.iso_code and request.locale != blank %}
       predictive_search_url: '{{request.locale.root_url}}/search/suggest'
       {% else %}
       predictive_search_url: '/search/suggest'
     {% endif %}
-   
   };
   class PredictiveSearch extends HTMLElement {
     constructor() {
