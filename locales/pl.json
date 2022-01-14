@@ -976,5 +976,39 @@
     "accessibility": {
       "unit_price_separator": "za"
     }
+  },
+  "strings": {
+    "general": {
+      "show_express_delivery_options": "Pokaż opcje dostawy ekspresowej",
+      "learn_more": "Ucz się więcej",
+      "verified_reviews": "ZWERYFIKOWANE PRZEGLĄDY",
+      "privacy_policy": "Polityka prywatności",
+      "terms_conditions": "Zasady i warunki",
+      "view_all": "WYŚWIETL WSZYSTKO",
+      "all_reviews": "Wszystkie recenzje",
+      "shop_instagram": "Sklep na Instagramie",
+      "see_all": "PATRZ WSZYSTKIE",
+      "best_seller": "NAJLEPSZY SPRZEDAWCA",
+      "new_product": "NOWY PRODUKT",
+      "inspired_by": "Inspirowane przez",
+      "more-filters": "Więcej zarządców plików",
+      "filter-products": "Filtruj produkty",
+      "clear-all": "Wyczyść wszystko",
+      "percentage_off": "{{number}} WYŁĄCZONE"
+    },
+    "product_options": {
+      "choose-colours": "Wybierz kolory:",
+      "choose-colour": "Wybierz kolor",
+      "choose-finish": "Wybierać. Skończyć",
+      "color": "Kolor",
+      "choose-material": "Wybierać. Materiał",
+      "upholstery": "Tapicerka",
+      "finish": "Skończyć",
+      "choose-materials": "Wybieraj. Materiały",
+      "woods-finishes": "Lasy\/Wykończenia",
+      "material-size": "Materiał\/wielkość",
+      "material": "Materiał",
+      "fabric": "Tkanina"
+    }
   }
 }
