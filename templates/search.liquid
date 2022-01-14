@@ -6,12 +6,13 @@
     </div>
 
     <div class="desktop-12 tablet-6 mobile-3" id="page">
+        <search-trigger>
 
         <div id="search-bar">
             <form action="{{ routes.search_url }}" method="get">
-                <input type="text" name="q" id="q" placeholder="{{ 'general.search.placeholder' | t }}"/>
+                <input value="{{search.terms | escape}}"  type="text" name="q" id="q" placeholder="{{ 'general.search.placeholder' | t }}"/>
                 <input name="type" type="hidden" value="product">
-                <input value="{{ 'general.search.submit' | t }}" name="submit" id="search_button" class="button" type="submit">
+                    <input value="{{ 'general.search.submit' | t }}" name="submit" id="search_button" class="button" type="submit">
                 {% if search.performed %}
                     {% if search.results_count == 0 %}
                         <p>{{ 'general.search.no_results_html' | t: terms: search.terms }}</p>
@@ -22,6 +23,8 @@
 
             </form>
         </div>
+    </search-trigger>
+
     </div>
 
 
