@@ -939,5 +939,10 @@
       "state": "Województwo",
       "state_and_territory": "Stan\/terytorium"
     }
+  },
+  "general": {
+    "404": {
+      "title": "Ups - Nie mogliśmy tego znaleźć"
+    }
   }
 }
