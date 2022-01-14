@@ -5,7 +5,7 @@
     "source.fixAll": false,
   },
   "[html]": {
-    "editor.defaultFormatter": "sissel.shopify-liquid",
+    "editor.defaultFormatter": "vscode.html-language-features",
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": false
     },
