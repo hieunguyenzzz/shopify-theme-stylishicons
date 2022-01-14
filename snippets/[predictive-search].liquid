@@ -100,7 +100,7 @@
   
 <script>
    
-    {% if shop_locale.primary %}
+    {% if request.locale.primary %}
       const predictive_search_url= '/search/suggest';
       {% else %}
       const predictive_search_url= '{{request.locale.root_url}}/search/suggest';
