@@ -942,7 +942,39 @@
   },
   "general": {
     "404": {
-      "title": "Ups - Nie mogliśmy tego znaleźć"
+      "title": "Ups - Nie mogliśmy tego znaleźć",
+      "subtext": "Ta strona nie istnieje. Spróbuj poszukać tego, co chcesz znaleźć:"
+    },
+    "pagination": {
+      "showing_items": "Pokazuje elementy",
+      "of": "z"
+    },
+    "forms": {
+      "post_error": "Przepraszam, chyba coś poszło nie tak. Proszę skorygować i ponownie złożyć:"
+    },
+    "breadcrumbs": {
+      "home": "Strona główna"
+    },
+    "newsletter_form": {
+      "newsletter_email": "Dołącz do naszej listy mailingowej",
+      "thanks": "Dziękuję za przybycie.",
+      "popup_thanks": "Dziękujemy za przybycie, oto kod kuponowy:",
+      "email_placeholder": "Adres e-mail",
+      "confirmation": "Dziękuję za przybycie!",
+      "submit": "Dołącz"
+    },
+    "search": {
+      "no_results_html": "Twoje wyszukiwanie \"{{ terms }}\"Nie dał żadnych wyników.",
+      "results_for_html": "Twoje wyszukiwanie \"{{ terms }}\"ujawnił następujące:",
+      "title": "Szukaj",
+      "placeholder": "Szukaj",
+      "submit": "Szukaj"
+    },
+    "language": {
+      "dropdown_label": "Język"
+    },
+    "accessibility": {
+      "unit_price_separator": "za"
     }
   }
 }
