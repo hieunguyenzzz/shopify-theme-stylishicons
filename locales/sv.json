@@ -823,7 +823,9 @@
         "unsubscribe": {
           "title": "Du har slutat prenumerera",
           "description": "Du kommer inte att få några fler kund påminnelser från oss."
-        }
+        },
+        "post_accept_marketing_checkbox_label": "Du prenumererar på att få e-postmeddelanden och erbjudanden",
+        "pending_accept_marketing_checkbox_label": "Kontrollera din mejladress för att bekräfta prenumerationen på nyheter och erbjudanden"
       },
       "shop_policies": {
         "refund_policy": "Återbetalningspolicy",
