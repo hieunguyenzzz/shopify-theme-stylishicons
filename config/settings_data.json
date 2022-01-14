@@ -5751,24 +5751,24 @@
           "8fe51b20-1d15-475e-bf38-d4c262fff228": {
             "type": "question",
             "settings": {
-              "title": "FRAKT<br><p>Fraktkostnaden 10% av produktpriset<\/p>",
-              "answer": "<p>Vi erbjuder leverans till de lägre 48 staterna. Fraktkostnaden 10% av produktpriset. Alla leveranser är kontaktlöst.<\/p>"
+              "title": "SHIPPING<br><p>Shipping cost is 10% of the product price<\/p>",
+              "answer": "<p>We offer shipping to the lower 48 states. Shipping cost is 10% of the product price. All deliveries are contactless.<\/p>"
             }
           },
           "cbeed15f-863f-4b55-a318-c9c916279248": {
             "type": "question",
             "settings": {
               "image": "shopify:\/\/shop_images\/2aa_50x_1dcb3eda-3455-4d0f-8fd6-f2f58a4acd5c.png",
-              "title": "RETURNS<br><p>30-dagars avkastning<\/p>",
-              "answer": "<p>Vi erbjuder gratis 30-dagars återvänder till kunder i 48 sammanhängande USA. Vi skapade denna policy som en del av vår löpande insats för att ge en problemfri shoppingupplevelse, så att du kan omvandla ditt bostadsutrymme till ditt eget personliga showroom och prova din favoritdesign i ditt eget hem innan du gör en långsiktig engagemang. Observera att inte alla produkter är berättigade till gratis avkastning. För att se om en produkt är berättigad till avsnittet Produktinformation på produktsidan.<\/p>"
+              "title": "RETURNS<br><p>30-day returns<\/p>",
+              "answer": "<p>We offer free 30-day returns to customers in the 48 contiguous United States. We created this policy as part of our ongoing effort to provide a hassle-free shopping experience, enabling you to transform your living space into your own personal showroom, and try your favorite design in the comfort of your own home before making a long-term commitment. Please note that not all products are eligible for free returns. To see whether a product is eligible go to the product details section of the product page.<\/p>"
             }
           },
           "7b5c334f-0fa7-47a1-8faa-45a5408d0b4a": {
             "type": "question",
             "settings": {
               "image": "shopify:\/\/shop_images\/3aa_50x_423709e4-511d-489e-a091-93728a4f8f7f.png",
-              "title": "GARANTI<br><p>5 års garanti<\/p>",
-              "answer": "<p>En av anledningarna du kan handla med oss ​​är att du känner igen den överlägsna kvaliteten på våra bitar. Och precis som vi vill att våra möbler för att vara det bästa du kan hitta, vill vi vårt löfte till dig att vara lika överlägsen. Det är därför, medan de flesta möbeltillverkare bara erbjuda en 1 års garanti, erbjuder vi en 5 års garanti. Var snäll gå till <a href=\"https:\/\/designer-icons.com\/pages\/5-year-warranty\" title=\"https:\/\/designer-icons.com\/pages\/5-year-warranty\">www.designer-icons.com<\/a> att läsa hela garantipolicy.<\/p>"
+              "title": "WARRANTY<br><p>5 years warranty<\/p>",
+              "answer": "<p>One of the reasons you might be shopping with us is that you recognise the superior quality of our pieces. And just as we want our furniture to be the best you can find, we want our promise to you to be equally superior. That’s why, while most furniture manufacturers only offer a 1 year warranty, we offer a 5 year warranty. Please go to <a href=\"https:\/\/designer-icons.com\/pages\/5-year-warranty\" title=\"https:\/\/designer-icons.com\/pages\/5-year-warranty\">www.designer-icons.com<\/a> to read the full warranty policy.<\/p>"
             }
           },
           "75fd7923-4dba-4edb-8f9c-4c7972fba240": {
@@ -5776,8 +5776,8 @@
             "disabled": true,
             "settings": {
               "image": "shopify:\/\/shop_images\/ii-icons_2.png",
-              "title": "PRODUKTINFORMATION<br>",
-              "answer": "<p><strong>Tyg:<\/strong> Italian Leather (Semi Anilin)<\/p><p><strong>Funktion:<\/strong> Dubbelsidig Leather<\/p><p><strong>Stil:<\/strong> Moderna \/ Komfort<\/p><p><strong>Garanti:<\/strong> 5 år<\/p><p><strong>Instruktioner:<\/strong> N \/ A<\/p><p><strong>Rena:<\/strong> Damm \/ Leather Cleaner<\/p><p><strong>Notera:<\/strong> Chair ingår ej<\/p><p><strong>Dimensionera<\/strong>: Bredd 48.5cm, Djup 38.5cm, Höjd 3,5 cm<\/p><p><strong>Förpackning Dimension:<\/strong> Bredd 51cm, Djup 41cm, Höjd 6cm<\/p><p><strong>CBM:<\/strong> 0.237 <\/p><p><strong>Produkt vikt:<\/strong> 0.300kg<\/p>"
+              "title": "PRODUCT INFO<br>",
+              "answer": "<p><strong>Fabric:<\/strong> Italian Leather (Semi Aniline)<\/p><p><strong>Feature:<\/strong> Double Sided Leather<\/p><p><strong>Style:<\/strong> Modern \/ Comfort<\/p><p><strong>Warranty:<\/strong> 5 Years<\/p><p><strong>Instructions:<\/strong> N\/A<\/p><p><strong>Clean:<\/strong> Dust \/ Leather Cleaner<\/p><p><strong>Note:<\/strong> Chair Not Included<\/p><p><strong>Dimension<\/strong>: Width 48.5cm, Depth 38.5cm, Height 3.5cm<\/p><p><strong>Packing Dimension:<\/strong> Width 51cm, Depth 41cm, Height 6cm<\/p><p><strong>CBM:<\/strong> 0.237 <\/p><p><strong>Product Weight:<\/strong> 0.300kg<\/p>"
             }
           },
           "e058a55f-1eea-453f-9e4b-6be98e016908": {
@@ -5785,8 +5785,8 @@
             "disabled": true,
             "settings": {
               "image": "shopify:\/\/shop_images\/ii-icons_3.png",
-              "title": "PRODUKTBESKRIVNING<br>",
-              "answer": "<p>Vår reproduktion kudde för Y-Stolen är reversibel, kräver minimalt underhåll och resistent mot de flesta fläckar och blekning. Finns i lätt att para ihop färgerna svart, vit, Tan, mocka och beige.<\/p>"
+              "title": "PRODUCT DESCRIPTION<br>",
+              "answer": "<p>Our reproduction Cushion for Wishbone Chair is reversible, requires low maintenance and resistant to most stains and fading. Available in easy to pair up colors of Black, White, Tan, Mocha and Beige.<\/p>"
             }
           }
         },
