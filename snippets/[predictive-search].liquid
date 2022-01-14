@@ -99,11 +99,12 @@
 
   
 <script>
+   
   window.routes = {
-    {% if request.locale.iso_code and request.locale != blank %}
-      predictive_search_url: '{{request.locale.root_url}}/search/suggest'
+    {% if shop_locale.primary %}
+      const predictive_search_url= '/search/suggest';
       {% else %}
-      predictive_search_url: '/search/suggest'
+      const predictive_search_url= '{{request.locale.root_url}}/search/suggest';
     {% endif %}
   };
   class PredictiveSearch extends HTMLElement {
