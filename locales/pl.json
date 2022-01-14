@@ -1208,7 +1208,141 @@
       "white-n-brass": "Biała nosiądz",
       "shades-of-blue": "Odcienie niebieskiego",
       "shades-of-red": "Odcienie czerwieni",
-      "shades-of-grey": "Odcienie szarości"
+      "shades-of-grey": "Odcienie szarości",
+      "shades-of-green": "Odcienie zielonego",
+      "shades-of-white": "Odcienie Białe",
+      "13-cm": "13 cm.",
+      "23-cm": "23 cm",
+      "31-cm": "31 cm",
+      "47-cm": "CM",
+      "copper-bronze": "Bronze miedzi.",
+      "left-chaise": "Lewy jezyk",
+      "right-chaise": "Prawy szaise.",
+      "buck-brown": "Buck Brown.",
+      "dark-burgundy-waxy": "Dark Burgundy Waxy",
+      "american-walnut": "Orzech amerykański",
+      "96-cm": "96 CM",
+      "102-cm": "102 cm",
+      "yellow-lacquered": "Żółty lakierowany",
+      "black-marble": "Czarny marmur"
+    }
+  },
+  "password": {
+    "general": {
+      "thanks": "Dziękujemy za dołączenie do naszej listy",
+      "enter_store": "Zaloguj się za pomocą hasła:",
+      "password": "Hasło",
+      "enter": "Wchodzić",
+      "email_address": "Adres e-mail",
+      "submit": "Wyślij",
+      "powered": "Ten sklep będzie zasilany przez"
+    }
+  },
+  "blogs": {
+    "article": {
+      "posted_on_date_html": "Wysłany dnia <time datetime=\"{{ date }}\">{{ date }}<\/time>",
+      "tags": "Tagi.",
+      "tagged": "Tagged.",
+      "comments": "Uwagi",
+      "read_more": "Jeszcze"
+    },
+    "comments": {
+      "title": "zostaw komentarz",
+      "name": "Nazwa",
+      "email": "E-mail",
+      "message": "Komentarz",
+      "moderated": "Wszystkie komentarze blogowe są sprawdzane przed publikowaniem",
+      "post": "Wyślij komentarz",
+      "success_moderated": "Twój komentarz został opublikowany pomyślnie. Publikujemy go za chwilę, ponieważ nasz blog jest moderowany.",
+      "success": "Twój komentarz został pomyślnie opublikowany! Dziękuję Ci!",
+      "comments_with_count": {
+        "one": "{{ count }} komentarz",
+        "other": "{{ count }} uwagi"
+      }
+    },
+    "sidebar": {
+      "social_title": "Połącz się z nami",
+      "twitter_title": "Na Twitterze",
+      "facebook_title": "Polub nas na Facebooku",
+      "recent_posts": "Ostatnie posty",
+      "tags": "Filtruj tagi artykułów"
+    }
+  },
+  "store_availability": {
+    "general": {
+      "view_store_info": "Wyświetlanie informacji o sklepie",
+      "check_other_stores": "Sprawdź dostępność w innych sklepach",
+      "pick_up_available": "Odbiór dostępny",
+      "pick_up_currently_unavailable": "Odbiór aktualnie niedostępny",
+      "pick_up_available_at_html": "Dostępny odbiór <strong>{{ location_name }}<\/strong>",
+      "pick_up_unavailable_at_html": "Odbiór obecnie niedostępny <strong>{{ location_name }}<\/strong>"
+    }
+  },
+  "cart": {
+    "general": {
+      "title": "Mój wózek",
+      "summary": "Podsumowanie koszyka",
+      "close_cart": "Blisko",
+      "shipping": "Wysyłka",
+      "tax": "Podatek",
+      "at_checkout": "Obliczone w kasie",
+      "empty": "Twój koszyk jest obecnie pusty.",
+      "product": "Produkt",
+      "price": "Cena £",
+      "qty": "Qty.",
+      "remove": "Usunąć",
+      "total": "Całkowity",
+      "subtotal": "Subtowal",
+      "continue": "Kontynuuj zakupy",
+      "update": "Zaktualizuj wózek",
+      "checkout": "Sprawdzić",
+      "note": "Zamów specjalne instrukcje",
+      "recently_viewed": "Oglądasz również",
+      "cart_discount": "Kod rabatowy (zastosowany przy kasie)",
+      "free_shipping_before": "Jesteś tylko",
+      "free_shipping_after": "z dala od bezpłatnej wysyłki domowej!",
+      "free_shipping_qualified": "Twoje zamówienie kwalifikuje się do bezpłatnej wysyłki domowej!",
+      "free_shipping_exclusions": "(Nie obejmuje międzynarodowej)",
+      "discounts": "Rabaty",
+      "savings": "Całkowite oszczędności",
+      "discount_applied": "Zysk zniżkowy!",
+      "items": "Przedmiotów)"
+    }
+  },
+  "collections": {
+    "general": {
+      "all_collections": "Zbiory",
+      "all_products": "Wszystkie produkty",
+      "no_matches": "W tej kolekcji nie ma przedmiotów",
+      "shop_by_designer": "Sklep przez Designer."
+    },
+    "sorting": {
+      "title": "Sortuj według",
+      "featured": "Polecane",
+      "best_selling": "Najlepsza sprzedaż",
+      "az": "Alfabetycznie, A-Z",
+      "za": "Alfabetycznie, Z-A",
+      "price_ascending": "Cena, niska do wysokości",
+      "price_descending": "Cena, wysoka do niskiej",
+      "date_descending": "Data, od nowa do starego",
+      "date_ascending": "Data, stary do nowego"
+    },
+    "filter": {
+      "filtering_by": "Filtrowanie przez:",
+      "refine": "Odśwież"
+    }
+  },
+  "contact": {
+    "form": {
+      "name": "Nazwa",
+      "firstname": "Imię",
+      "lastname": "Nazwisko",
+      "subject": "Przedmiot",
+      "companyname": "Spółka",
+      "address": "Adres",
+      "email": "E-mail",
+      "phone": "Numer telefonu",
+      "message": "Wiadomość"
     }
   }
 }
