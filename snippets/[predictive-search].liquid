@@ -102,7 +102,7 @@
     cart_add_url: '{{ routes.cart_add_url }}',
     cart_change_url: '{{ routes.cart_change_url }}',
     cart_update_url: '{{ routes.cart_update_url }}',
-    predictive_search_url: '{{ routes.predictive_search_url }}'
+    predictive_search_url: '{{request.locale.root_url}}/search/suggest'
   };
   class PredictiveSearch extends HTMLElement {
     constructor() {
@@ -318,5 +318,17 @@
   }
 
   customElements.define('predictive-search', PredictiveSearch);
-
+  class SearchTrigger extends HTMLElement {
+    constructor() {
+      super();
+      this.addEventListener('click',(event)=>{
+        event.preventDefault();
+        event.stopPropagation();
+        const searchReveal = document.querySelector(".js-search-reveal");
+        searchReveal.classList.add("searchreveal--show");
+        document.querySelector("#search_reveal #q").focus();
+      })
+    }
+  }
+  customElements.define('search-trigger', SearchTrigger);
 </script>

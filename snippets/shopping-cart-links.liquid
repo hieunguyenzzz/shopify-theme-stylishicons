@@ -3,9 +3,12 @@
 {% endfor %}
 
 <li class="seeks">
-    <a class="js-search-trigger" href="#" id="search_trigger">
-        <i aria-hidden="true" class="icon icon-search"></i>
-    </a>
+    <search-trigger>
+        <a href="#" id="search_trigger">
+            <i aria-hidden="true" class="icon icon-search"></i>
+        </a>
+    </search-trigger>
+    
 </li>
 {% if shop.customer_accounts_enabled %}
     {% if customer  %}
