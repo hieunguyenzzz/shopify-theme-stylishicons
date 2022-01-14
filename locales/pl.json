@@ -699,7 +699,56 @@
         },
         "customer_information_hidden_fields_message": "Zaloguj się, aby zobaczyć wszystkie informacje o klientach.",
         "cancelled_title": "Twoje zamówienie zostało anulowane.",
-        "cancelled_description": "Zamówienie zostało anulowane w %{date}Skontaktuj się z nami, jeśli masz jakieś pytania."
+        "cancelled_description": "Zamówienie zostało anulowane w %{date}Skontaktuj się z nami, jeśli masz jakieś pytania.",
+        "order_number_label": "Numer porządkowy",
+        "customer_validation_error": "Podaj ważny e-mail lub numer zamówienia.",
+        "customer_validation_error_phone": "Podaj ważny numer telefonu lub zamówienia.",
+        "login": "Zaloguj sie",
+        "unfulfilled_items_title": "Przygotowanie do wysyłki",
+        "unfulfilled_items_description": "Obecnie przygotowujemy te elementy do wysyłki.",
+        "marker": {
+          "current": "Obecna lokalizacja wysyłki",
+          "shipping": "Adres wysyłki"
+        },
+        "pick_up_in_store_marker": {
+          "current": "Obecna lokalizacja wysyłki",
+          "shipping": "Miejsce odbioru"
+        },
+        "fulfillment": {
+          "fulfilled_table_title": "Pozycje w tej dostawie",
+          "unfulfilled_table_title": "Artykuły przygotowujące się do wysyłki",
+          "product_image_label": "Obraz produktu",
+          "description_label": "Opis",
+          "quantity_label": "Ilość"
+        },
+        "opt_in_message_html": "Twoje informacje zostały pomyślnie zapisane z %{shopify_pay}",
+        "order_updates_description_missing": "Nie otrzymujesz informacji o dostawie.",
+        "order_updates_subscribe_to_email_notifications": "Pobierz aktualizacje wysyłki przez e-mail",
+        "order_updates_subscribe_to_email_or_phone_notifications": "Pobierz aktualizacje wysyłki przez e-mail lub tekst",
+        "order_updates_subscribe_to_phone_notifications": "Pobierz aktualizacje wysyłki przez tekst",
+        "order_updates_submit_subscription": "Wyślij",
+        "track_shipment": "Transport torów",
+        "shopify_pay": {
+          "order_completed_html": "Zamówienie wypełnione %{shopify_pay}",
+          "learn_more_label": "Dowiedz się więcej o kasie sklepowej"
+        },
+        "other_options": "Inne opcje",
+        "delivery_information_label": "Informacje o dostawie:",
+        "gift_card_sent_confirmation": "Przesyłane karty podarunkowe",
+        "qr_code": {
+          "send_link_to_phone": "Albo wyślij link do telefonu",
+          "title": "Namierz swój telefon",
+          "subtitle": "Przeskanuj kod z aparatem twojego telefonu, aby śledzić z Shop."
+        },
+        "shop_qr_with_sms_upsell": {
+          "qr_code": {
+            "title": "Przeskanuj z telefonem",
+            "description": "Sklep wyśle Ci aktualizacje dostaw w czasie rzeczywistym po wysłaniu zamówienia."
+          },
+          "sms": {
+            "title": "Albo wyślij link do telefonu"
+          }
+        }
       },
       "marketing": {
         "pending_accept_marketing_checkbox_label": "Sprawdź swój e-mail, aby potwierdzić swoją subskrypcję nowości i ofert",
@@ -715,7 +764,9 @@
         "unsubscribe": {
           "title": "Nie zasubskrybowano",
           "description": "Nie otrzymasz od nas żadnych upomnień w koszyku."
-        }
+        },
+        "accept_marketing_checkbox_label": "Wyślij mi maila z wiadomościami i ofertami",
+        "post_accept_marketing_checkbox_label": "Subskrybujesz otrzymywanie wiadomości e-mail i ofert"
       },
       "shop_policies": {
         "refund_policy": "Polityka zwrotu",
@@ -836,6 +887,25 @@
         "delete_customer_mandate": {
           "generic_error": "Był problem z rozpatrzeniem twojej prośby.",
           "success_message": "Twoja metoda płatności została pomyślnie usunięta"
+        }
+      },
+      "review": {
+        "title": "Przegląd",
+        "review_title": "Przegląd zamówienia",
+        "checkout_as_guest": "Wymelduj się jako gość",
+        "blocks": {
+          "contact_method_title": "Kontakt",
+          "billing_address_title": "Rachunek",
+          "shipping_address_title": "Statek do",
+          "shipping_method_title": "Metoda",
+          "payment_method_title": "Płatność",
+          "change_link_label": "Zmiana",
+          "change_contact_method_link_label": "Zmień dane kontaktowe",
+          "change_billing_address_link_label": "Zmień adres rozliczeniowy",
+          "change_shipping_address_link_label": "Zmień adres wysyłki",
+          "change_shipping_method_link_label": "Zmiana metody wysyłki",
+          "change_payment_method_link_label": "Zmiana metody płatności",
+          "pick_up_in_store_shipping_method_html": "Odbiór w sklepie « %{location_name}"
         }
       }
     },
