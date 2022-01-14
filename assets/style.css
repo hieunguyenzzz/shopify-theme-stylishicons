@@ -4115,6 +4115,10 @@ html {
   margin-left: -22.5px;
 }
 
+.tw-mt-\[10px\] {
+  margin-top: 10px;
+}
+
 .tw-block {
   display: block;
 }
@@ -4968,6 +4972,10 @@ html {
 
 .tw-leading-\[46px\] {
   line-height: 46px;
+}
+
+.tw-leading-\[30px\] {
+  line-height: 30px;
 }
 
 .\!tw-text-white {
