@@ -1478,7 +1478,75 @@
     "general": {
       "new": "NOWE",
       "sale": "SPRZEDAŻ",
-      "sold": "SOLD OUT"
+      "sold": "SOLD OUT",
+      "quick_view": "Szybki podgląd",
+      "from": "Od",
+      "view_full": "Wyświetl pełne szczegóły",
+      "view_all": "Wyświetl wszystko",
+      "related": "Więcej w tej kolekcji",
+      "sale_price": "Sprzedaż",
+      "regular_price": "Zwykłe"
+    },
+    "product": {
+      "designer": "Projektant",
+      "sold_out": "Wyprzedane",
+      "from_lowest_price_html": "{{ lowest_price }}",
+      "unavailable": "Niedostępne",
+      "compare_at": "Porównaj z",
+      "add_to_cart": "Dodaj do koszyka",
+      "quantity": "Ilość",
+      "select_options": "Opcje widoku",
+      "details": "Detale",
+      "sizing": "Określanie wielkości",
+      "video": "Wideo",
+      "model": "Opieka nad produktem",
+      "back_to": "Powrót do",
+      "adding": "Dodawanie ...",
+      "thank_you": "Dziękujemy!",
+      "added": "Dodane do koszyka",
+      "view_cart": "Zobacz Koszyk",
+      "or": "lub",
+      "continue": "Kontynuuj zakupy",
+      "qty_error_first": "Tylko",
+      "qty_error_last": "tego elementu jest dostępny",
+      "qty_sold_out": "Ten element jest wyprzedany",
+      "back_in_stock": "Wyślij mi wiadomość e-mail, gdy jest ona dostępna",
+      "back_in_stock_confirm": "Dzięki, skontaktujemy się z Tobą, gdy będzie to dostępne",
+      "readmore": "Jeszcze",
+      "view_in_space": "Zobacz w swojej przestrzeni",
+      "view_in_space_label": "Wyświetl w obszarze, ładuje element w oknie rozszerzonym rzeczywistością",
+      "unit_price_label": "Cena jednostkowa"
+    }
+  },
+  "gift_cards": {
+    "issued": {
+      "title": "Oto twój {{ value }} Karta upominkowa {{ shop }}!",
+      "subtext": "Oto twoja karta upominkowa!",
+      "disabled": "Wyłączony",
+      "expired": "Wygasł w {{ expiry }}",
+      "active": "Upływa w dniu {{ expiry }}",
+      "redeem": "Użyj tego kodu przy kasie, aby zrealizować kartę podarunkową",
+      "shop_link": "Rozpocznij zakupy",
+      "print": "Wydrukować",
+      "email": "E-mail"
+    }
+  },
+  "social": {
+    "icons": {
+      "facebook": "Udostępnij na Facebooku",
+      "twitter": "Udostępnij na Twitterze",
+      "pinterest": "Udział w Pinterest"
+    },
+    "product_share": {
+      "share": "Share"
+    }
+  },
+  "pagefly": {
+    "products": {
+      "product": {
+        "regular_price": "Normalna cena",
+        "sold_out": "Wyprzedane"
+      }
     }
   }
 }
