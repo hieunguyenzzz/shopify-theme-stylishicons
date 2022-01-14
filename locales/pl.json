@@ -1342,7 +1342,69 @@
       "address": "Adres",
       "email": "E-mail",
       "phone": "Numer telefonu",
-      "message": "Wiadomość"
+      "message": "Wiadomość",
+      "websiteurl": "adres URL serwisu WWW",
+      "acceptsmarketing": "Subskrybuj pobyt na bieżąco z nowymi produktami i ofertami!",
+      "send": "Wysłać",
+      "post_success": "Dziękujemy za skontaktowanie się z nami. Wracamy do Ciebie jak najszybciej."
+    }
+  },
+  "customer": {
+    "account": {
+      "title": "Rachunek",
+      "logout": "Wyloguj",
+      "link": "Powrót do konta",
+      "signup": "Logowanie lub tworzenie konta",
+      "details": "Szczegóły rachunku",
+      "view_addresses": "Widok Adresy",
+      "returns_content": "Zwrot\/wymiana",
+      "return": "powrót do konta"
+    },
+    "activate_account": {
+      "title": "Aktywuj konto",
+      "subtext": "Utwórz hasło, aby aktywować swoje konto.",
+      "password": "Hasło",
+      "password_confirm": "Potwierdź hasło",
+      "submit": "Aktywuj konto",
+      "cancel": "Odwołanie zaproszenia"
+    },
+    "addresses": {
+      "title": "Twoje adresy",
+      "default": "Adres podstawowy",
+      "add_new": "Dodaj nowy adres",
+      "edit_address": "Edytuj adres",
+      "first_name": "Imię",
+      "last_name": "Nazwisko",
+      "company": "Spółka",
+      "address1": "Adres 1",
+      "address2": "Adres 2",
+      "city": "Miasto",
+      "country": "Kraj",
+      "province": "Województwo",
+      "zip": "Kod pocztowy\/kod pocztowy",
+      "phone": "Telefon",
+      "set_default": "Ustaw jako adres domyślny",
+      "add": "Dodaj adres",
+      "update": "Uaktualnij adres",
+      "cancel": "Anuluj",
+      "edit": "Edytować",
+      "delete": "Kasować"
+    },
+    "login": {
+      "title": "Zaloguj sie",
+      "email": "E-mail",
+      "password": "Hasło",
+      "forgot_password": "Zapomniałeś hasła?",
+      "sign_in": "Zaloguj",
+      "cancel": "Wróć do sklepu",
+      "guest_title": "Kontynuuj jako gość",
+      "guest_continue": "Kontyntynuj"
+    },
+    "orders": {
+      "title": "Historia zamówień",
+      "order_number": "Zamówienie",
+      "date": "Data",
+      "payment_status": "Status płatności"
     }
   }
 }
