@@ -2490,6 +2490,34 @@ html {
   visibility: visible;
 }
 
+.tw-footer {
+  display: grid;
+  place-items: start;
+  width: 100%;
+  grid-auto-flow: row;
+  font-size: .875rem;
+  line-height: 1.25rem;
+  -moz-column-gap: 1rem;
+  column-gap: 1rem;
+  row-gap: 2.5rem;
+}
+
+.tw-footer>* {
+  display: grid;
+  place-items: start;
+  gap: .5rem;
+}
+
+@media (min-width:48rem) {
+  .tw-footer {
+    grid-auto-flow: column;
+  }
+
+  .tw-footer-center {
+    grid-auto-flow: row dense;
+  }
+}
+
 .tw-input {
   flex-shrink: 1;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
@@ -2516,6 +2544,11 @@ html {
 
 .tw-input-group>*,.tw-input-group>.tw-input {
   border-radius: 0;
+}
+
+.tw-link {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .tw-menu {
@@ -3207,6 +3240,15 @@ html {
 .tw-input-disabled::placeholder,.tw-input[disabled]::placeholder {
   --tw-placeholder-opacity: 0.2;
   color: hsla(var(--bc) / var(--tw-placeholder-opacity, 1));
+}
+
+.tw-link:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.tw-link:focus-visible {
+  box-shadow: 0 0 0 2px currentColor;
 }
 
 .tw-menu.tw-horizontal li.tw-bordered>a,.tw-menu.tw-horizontal li.tw-bordered>span {
@@ -4095,6 +4137,10 @@ html {
   display: block !important;
 }
 
+.tw-block {
+  display: block;
+}
+
 .tw-inline-block {
   display: inline-block;
 }
@@ -4533,11 +4579,6 @@ html {
   background-color: rgb(251 243 238 / var(--tw-bg-opacity));
 }
 
-.tw-bg-\[rgb\(251\,243\,238\)\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(251 243 238 / var(--tw-bg-opacity));
-}
-
 .tw-bg-\[\#eef5f1\] {
   --tw-bg-opacity: 1;
   background-color: rgb(238 245 241 / var(--tw-bg-opacity));
@@ -4737,16 +4778,16 @@ html {
   padding-bottom: 0.75rem;
 }
 
+.tw-pb-12 {
+  padding-bottom: 3rem;
+}
+
 .tw-pt-11 {
   padding-top: 2.75rem;
 }
 
 .tw-pb-\[100\%\] {
   padding-bottom: 100%;
-}
-
-.tw-pb-12 {
-  padding-bottom: 3rem;
 }
 
 .tw-text-left {
@@ -5169,6 +5210,11 @@ html {
 .hover\:tw-grayscale:hover {
   --tw-grayscale: grayscale(100%);
   filter: var(--tw-filter);
+}
+
+.focus\:tw-px-6:focus {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .tw-group[open] .group-open\:tw-hidden {
