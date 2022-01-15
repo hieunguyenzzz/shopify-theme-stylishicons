@@ -267,7 +267,79 @@
       "white-n-brass": "Bílý N Brass",
       "shades-of-blue": "Odstíny modré",
       "shades-of-red": "Odstíny červené",
-      "shades-of-grey": "odstíny šedé"
+      "shades-of-grey": "odstíny šedé",
+      "shades-of-green": "Odstíny zelené",
+      "shades-of-white": "Shades of White",
+      "13-cm": "13 cm",
+      "23-cm": "23 cm.",
+      "31-cm": "31 cm.",
+      "47-cm": "47 cm.",
+      "copper-bronze": "Bronz mědi",
+      "left-chaise": "Levá Chaise",
+      "right-chaise": "Pravá chaise",
+      "buck-brown": "Buck Brown",
+      "dark-burgundy-waxy": "Dark Burgundsy Waxy.",
+      "american-walnut": "Americký ořech",
+      "96-cm": "96 CM",
+      "102-cm": "102 cm.",
+      "yellow-lacquered": "Žlutá lakovaná",
+      "black-marble": "Černá mramor"
+    }
+  },
+  "password": {
+    "general": {
+      "thanks": "Děkujeme, že jste se připojili k našemu seznamu",
+      "enter_store": "Přihlášení pomocí hesla:",
+      "password": "Heslo",
+      "enter": "Vstupte",
+      "email_address": "E-mail",
+      "submit": "Předložit",
+      "powered": "Toto úložiště bude založeno na"
+    }
+  },
+  "blogs": {
+    "article": {
+      "posted_on_date_html": "Zapsáno <time datetime=\"{{ date }}\">{{ date }}<\/time>",
+      "tags": "Tagy",
+      "tagged": "Označeno",
+      "comments": "Komentáře",
+      "read_more": "Číst další"
+    },
+    "comments": {
+      "title": "Zanechat komentář",
+      "name": "název",
+      "email": "E-mailem",
+      "message": "Komentář",
+      "moderated": "Všechny komentáře k blogu jsou zkontrolovány před publikováním",
+      "post": "Příspěvek",
+      "success_moderated": "Váš komentář byl úspěšně odeslán. Budeme to publikovat za chvíli, jak je náš blog moderován.",
+      "success": "Váš komentář byl úspěšně odeslán! Děkuju!",
+      "comments_with_count": {
+        "one": "{{ count }} komentář",
+        "other": "{{ count }} komentáře"
+      }
+    },
+    "sidebar": {
+      "social_title": "Spojit s námi",
+      "twitter_title": "Na Twitteru",
+      "facebook_title": "Stejně jako my na Facebooku",
+      "recent_posts": "Nedávné příspěvky",
+      "tags": "Filtrovat značky podle článku"
+    }
+  },
+  "store_availability": {
+    "general": {
+      "view_store_info": "Zobrazit informace o úložišti",
+      "check_other_stores": "Zkontrolujte dostupnost v jiných obchodech",
+      "pick_up_available": "Snímání k dispozici",
+      "pick_up_currently_unavailable": "Pickup v současné době není k dispozici",
+      "pick_up_available_at_html": "Snímání k dispozici <strong>{{ location_name }}<\/strong>",
+      "pick_up_unavailable_at_html": "Vyzvednutí v současné době nedostupný <strong>{{ location_name }}<\/strong>"
+    }
+  },
+  "cart": {
+    "general": {
+      "title": "Můj košík"
     }
   }
 }
