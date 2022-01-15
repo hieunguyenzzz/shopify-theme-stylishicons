@@ -1,0 +1,39 @@
+{
+  "general": {
+    "404": {
+      "title": "Oops - to jsme nemohli najít",
+      "subtext": "Tato stránka neexistuje. Zkuste hledat to, co byste chtěli najít:"
+    },
+    "pagination": {
+      "showing_items": "Zobrazení položek",
+      "of": "z"
+    },
+    "forms": {
+      "post_error": "Je mi líto, vypadá to, že se něco pokazilo. Prosím, opravte následující a odešlete znovu:"
+    },
+    "breadcrumbs": {
+      "home": "Home"
+    },
+    "newsletter_form": {
+      "newsletter_email": "Zapojte se do našeho seznamu",
+      "thanks": "Děkujeme, že jste se připojili",
+      "popup_thanks": "Děkujeme, že jste se připojili, zde je váš kupón kód:",
+      "email_placeholder": "Emailová adresa",
+      "confirmation": "Díky za spojení!",
+      "submit": "Připojit se"
+    },
+    "search": {
+      "no_results_html": "Vaše hledání \"{{ terms }}\"Neposkytl žádné výsledky.",
+      "results_for_html": "Vaše hledání \"{{ terms }}\"Odhalil:",
+      "title": "Vyhledávání",
+      "placeholder": "Vyhledávání",
+      "submit": "Vyhledávání"
+    },
+    "language": {
+      "dropdown_label": "Jazyk"
+    },
+    "accessibility": {
+      "unit_price_separator": "za"
+    }
+  }
+}
