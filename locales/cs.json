@@ -35,5 +35,39 @@
     "accessibility": {
       "unit_price_separator": "za"
     }
+  },
+  "strings": {
+    "general": {
+      "show_express_delivery_options": "Zobrazit volby doručení Express",
+      "learn_more": "Více informací",
+      "verified_reviews": "OVĚŘENÉ REVIZE",
+      "privacy_policy": "Zásady ochrany osobních údajů",
+      "terms_conditions": "Podmínky a pravidla",
+      "view_all": "ZOBRAZIT VŠE",
+      "all_reviews": "Všechna přezkoumání",
+      "shop_instagram": "Obchod Instagram",
+      "see_all": "ZOBRAZIT VŠE",
+      "best_seller": "NEJLEPŠÍ PRODEJCE",
+      "new_product": "NOVÝ PRODUKT",
+      "inspired_by": "Inspirováno",
+      "more-filters": "Další správce souborů",
+      "filter-products": "Filtrovat produkty",
+      "clear-all": "Vymazat vše",
+      "percentage_off": "{{number}} VYP."
+    },
+    "product_options": {
+      "choose-colours": "Vyberte barvy:",
+      "choose-colour": "Zvolit barvu",
+      "choose-finish": "Vybrat. Dokončit",
+      "color": "Barva",
+      "choose-material": "Vybrat. Materiál",
+      "upholstery": "Čalounictví",
+      "finish": "Dokončit",
+      "choose-materials": "Vybrat. Materiály",
+      "woods-finishes": "Dřeva\/leštidla",
+      "material-size": "Materiál\/Velikost",
+      "material": "Materiál",
+      "fabric": "Tkanina"
+    }
   }
 }
