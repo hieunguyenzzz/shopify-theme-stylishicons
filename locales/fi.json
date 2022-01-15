@@ -266,7 +266,79 @@
       "white-n-brass": "Valkoinen N Brass",
       "shades-of-blue": "Sinisen Shades",
       "shades-of-red": "Shades of Red",
-      "shades-of-grey": "Shades of Grey"
+      "shades-of-grey": "Shades of Grey",
+      "shades-of-green": "V-varjot",
+      "shades-of-white": "Valkoiset sävyt",
+      "13-cm": "13 cm",
+      "23-cm": "23 cm",
+      "31-cm": "31 CM",
+      "47-cm": "47 cm",
+      "copper-bronze": "KuparBronze",
+      "left-chaise": "Vasen kiesit",
+      "right-chaise": "Oikea kiesit",
+      "buck-brown": "Buck Brown",
+      "dark-burgundy-waxy": "Tumma burgundy vahamainen",
+      "american-walnut": "American Walnut",
+      "96-cm": "96 cm",
+      "102-cm": "102 cm",
+      "yellow-lacquered": "Keltainen Lacquered",
+      "black-marble": "Musta Marmori"
+    }
+  },
+  "password": {
+    "general": {
+      "thanks": "Kiitos, että liityit listallemme.",
+      "enter_store": "Sisäänkirjaus, salasana:",
+      "password": "Salasana",
+      "enter": "Tulla sisään",
+      "email_address": "Sähköpostiosoite",
+      "submit": "Lähetä",
+      "powered": "Tämä kauppa saa käyttövoimansa"
+    }
+  },
+  "blogs": {
+    "article": {
+      "posted_on_date_html": "Postitettu <time datetime=\"{{ date }}\">{{ date }}<\/time>",
+      "tags": "Tunnisteet",
+      "tagged": "Tunnisteet",
+      "comments": "Kommentit",
+      "read_more": "Lue lisää"
+    },
+    "comments": {
+      "title": "Jätä kommentti",
+      "name": "Nimi",
+      "email": "Sähköposti",
+      "message": "Kommentti",
+      "moderated": "Kaikki verkkolokin kommentit tarkistetaan ennen julkaisua",
+      "post": "Lähetä Kommentti",
+      "success_moderated": "Kommenttisi lähetettiin onnistuneesti. Julkaisemme sen vähän aikaa, koska blogimme on moderoitu.",
+      "success": "Kommenttisi lähetettiin onnistuneesti! Kiitos!",
+      "comments_with_count": {
+        "one": "{{ count }} kommentti",
+        "other": "{{ count }} kommentit"
+      }
+    },
+    "sidebar": {
+      "social_title": "Yhdistä kanssamme",
+      "twitter_title": "Twitterissä",
+      "facebook_title": "Kuten me Facebookissa",
+      "recent_posts": "Viimeaikaiset Postit",
+      "tags": "Suodata Artikkeli Tags"
+    }
+  },
+  "store_availability": {
+    "general": {
+      "view_store_info": "Näkymä tallentaa tietoja",
+      "check_other_stores": "Tarkista saatavuus muissa myymälöissä",
+      "pick_up_available": "pickup käytettävissä",
+      "pick_up_currently_unavailable": "Pickup tällä hetkellä saatavilla",
+      "pick_up_available_at_html": "Pickup saatavilla <strong>{{ location_name }}<\/strong>",
+      "pick_up_unavailable_at_html": "Pickup tällä hetkellä saatavilla osoitteessa <strong>{{ location_name }}<\/strong>"
+    }
+  },
+  "cart": {
+    "general": {
+      "title": "Oma Cart"
     }
   }
 }
