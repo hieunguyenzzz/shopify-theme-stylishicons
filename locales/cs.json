@@ -463,7 +463,81 @@
       "title": "Historie objednávek",
       "order_number": "Objednat",
       "date": "datum",
-      "payment_status": "Stav platby"
+      "payment_status": "Stav platby",
+      "fulfillment_status": "Stav plnění",
+      "total": "Celkem",
+      "none": "Ještě jste neměli žádné objednávky."
+    },
+    "order": {
+      "title": "Objednat",
+      "date": "Umístěno na",
+      "cancelled": "Objednávka Zrušena na",
+      "cancelled_reason": "Důvod: {{ reason }}",
+      "billing_address": "Fakturační adresa",
+      "payment_status": "Stav platby",
+      "shipping_address": "Poštovní adresa",
+      "fulfillment_status": "Stav plnění",
+      "discount": "Sleva",
+      "shipping": "Lodní doprava",
+      "tax": "Daň",
+      "order_details": "Detaily objednávky",
+      "details": {
+        "product": "Produkt",
+        "sku": "SKU.",
+        "price": "Cena",
+        "quantity": "Množství",
+        "total": "Celkem",
+        "fulfilled_at": "Splnil {{ date }}",
+        "subtotal": "Subtotal"
+      }
+    },
+    "recover_password": {
+      "title": "Obnovit heslo",
+      "email": "E-mailem",
+      "submit": "Předložit",
+      "cancel": "Zrušit",
+      "subtext": "Zašleme vám e-mail pro obnovení hesla.",
+      "success": "Poslali jsme vám e-mail s odkazem pro aktualizaci hesla."
+    },
+    "reset_password": {
+      "title": "Obnovit heslo účtu",
+      "subtext": "Zadejte nové heslo {{ email }}",
+      "password": "Heslo",
+      "password_confirm": "Potvrďte heslo",
+      "submit": "Resetovat heslo"
+    },
+    "register": {
+      "title": "Vytvořit účet",
+      "first_name": "Křestní jméno",
+      "last_name": "Příjmení",
+      "email": "E-mailem",
+      "password": "Heslo",
+      "submit": "Vytvořit"
+    }
+  },
+  "layout": {
+    "footer": {
+      "copyright": "Copyright",
+      "theme_title": "podle"
+    },
+    "homepage": {
+      "mailing_list_join": "Ahoj, ty!",
+      "mailing_list_text": "Zapojte se do našeho seznamu",
+      "onboarding": {
+        "no_content": "Tato sekce v současné době neobsahuje žádný obsah. Přidejte obsah do této sekce pomocí postranního panelu."
+      }
+    },
+    "mobile_nav": {
+      "account": "Účet",
+      "login": "Přihlásit se\/Vytvořit účet",
+      "logout": "Odhlášení"
+    }
+  },
+  "products": {
+    "general": {
+      "new": "NOVÉ",
+      "sale": "PRODEJ",
+      "sold": "Vypuštěno ven"
     }
   }
 }
