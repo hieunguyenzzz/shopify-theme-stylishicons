@@ -34,5 +34,39 @@
     "accessibility": {
       "unit_price_separator": "per"
     }
+  },
+  "strings": {
+    "general": {
+      "show_express_delivery_options": "Näytä pikatoimitusasetukset",
+      "learn_more": "Lue lisää",
+      "verified_reviews": "Vahvistetut arvostelut",
+      "privacy_policy": "Tietosuojakäytäntö",
+      "terms_conditions": "Ehdot ja edellytykset",
+      "view_all": "NÄYTÄ KAIKKI",
+      "all_reviews": "Kaikki arvostelut",
+      "shop_instagram": "Shop Instagram",
+      "see_all": "NÄYTÄ KAIKKI",
+      "best_seller": "Paras myyjä",
+      "new_product": "UUSI TUOTE",
+      "inspired_by": "Innoittamana",
+      "more-filters": "Lisää suodattimia",
+      "filter-products": "Suodata tuotteet",
+      "clear-all": "Tyhjennä kaikki",
+      "percentage_off": "{{number}} VINOSSA"
+    },
+    "product_options": {
+      "choose-colours": "Valitse värit:",
+      "choose-colour": "Valitse väri",
+      "choose-finish": "Valita. Viedä loppuun",
+      "color": "Väri",
+      "choose-material": "Valita. Materiaali",
+      "upholstery": "Verhoilu",
+      "finish": "Viedä loppuun",
+      "choose-materials": "Valita. Materiaalit",
+      "woods-finishes": "Woods \/ viimeistely",
+      "material-size": "Materiaali \/ koko",
+      "material": "Materiaali",
+      "fabric": "Kangas"
+    }
   }
 }
