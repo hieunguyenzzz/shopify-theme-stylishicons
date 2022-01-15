@@ -338,7 +338,69 @@
   },
   "cart": {
     "general": {
-      "title": "Oma Cart"
+      "title": "Oma Cart",
+      "summary": "Ostoskori Yhteenveto",
+      "close_cart": "kiinni",
+      "shipping": "laivaus",
+      "tax": "Verottaa",
+      "at_checkout": "Laskettu kassalla",
+      "empty": "Ostoskorisi on tyhjä.",
+      "product": "Tuote",
+      "price": "Hinta",
+      "qty": "Kpl",
+      "remove": "Poista",
+      "total": "Kaikki yhteensä",
+      "subtotal": "Välisumma",
+      "continue": "Jatka ostoksia",
+      "update": "Päivitä koriin",
+      "checkout": "Tarkista",
+      "note": "Tilaa erityisohjeita",
+      "recently_viewed": "Katsoit myös",
+      "cart_discount": "Alennuskoodi (levitetty kassalla)",
+      "free_shipping_before": "Olet vain",
+      "free_shipping_after": "pois vapaasta kotimaisesta merenkulusta!",
+      "free_shipping_qualified": "Tilauksesi täyttää ilmaisen kotimaisen merenkulun!",
+      "free_shipping_exclusions": "(Ei sisällä kansainvälisiä)",
+      "discounts": "Alennukset",
+      "savings": "Yhteenlasketut säästöt",
+      "discount_applied": "Alennus!",
+      "items": "Tuote (t)"
+    }
+  },
+  "collections": {
+    "general": {
+      "all_collections": "Kokoelmat",
+      "all_products": "Kaikki tuotteet",
+      "no_matches": "Tässä kokoelmassa ei ole kohteita",
+      "shop_by_designer": "Suunnittelija"
+    },
+    "sorting": {
+      "title": "Lajitella jonkun mukaan",
+      "featured": "Esillä",
+      "best_selling": "Paras myynti",
+      "az": "Aakkosjärjestyksessä A-Z",
+      "za": "Aakkosjärjestyksessä z-a",
+      "price_ascending": "Hinta, alhainen korkealle",
+      "price_descending": "Hinta, korkealle",
+      "date_descending": "Päivämäärä, uusi vanha",
+      "date_ascending": "Päivämäärä, vanha uusi"
+    },
+    "filter": {
+      "filtering_by": "Suodatus:",
+      "refine": "Tarkentaa"
+    }
+  },
+  "contact": {
+    "form": {
+      "name": "Nimi",
+      "firstname": "Etunimi",
+      "lastname": "Sukunimi",
+      "subject": "Aihe",
+      "companyname": "Yhtiö",
+      "address": "Osoite",
+      "email": "Sähköposti",
+      "phone": "Puhelinnumero",
+      "message": "Viesti"
     }
   }
 }
