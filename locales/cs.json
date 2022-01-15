@@ -339,7 +339,131 @@
   },
   "cart": {
     "general": {
-      "title": "Můj košík"
+      "title": "Můj košík",
+      "summary": "Souhrn košíku",
+      "close_cart": "Zavřít",
+      "shipping": "Lodní doprava",
+      "tax": "Daň",
+      "at_checkout": "Vypočteno při pokladně",
+      "empty": "Váš nákupní košík je momentálně prázdný.",
+      "product": "Produkt",
+      "price": "Cena",
+      "qty": "Qty.",
+      "remove": "Odstranit",
+      "total": "Celkem",
+      "subtotal": "Subtotal",
+      "continue": "Pokračovat v nákupu",
+      "update": "Aktualizace košíku",
+      "checkout": "Překontrolovat",
+      "note": "Objednejte speciální pokyny",
+      "recently_viewed": "Také jste prohlížili",
+      "cart_discount": "Diskontní kód (aplikovaný na pokladně)",
+      "free_shipping_before": "Ty jsi jen",
+      "free_shipping_after": "mimo volnou domácí dopravu!",
+      "free_shipping_qualified": "Vaše objednávka se kvalifikuje pro volnou tuzemskou dopravu!",
+      "free_shipping_exclusions": "(Vylučuje mezinárodní)",
+      "discounts": "Slevy",
+      "savings": "Celkové úspory",
+      "discount_applied": "Aplikovaná sleva!",
+      "items": "Položka (položky)"
+    }
+  },
+  "collections": {
+    "general": {
+      "all_collections": "Sbírky",
+      "all_products": "Všechny produkty",
+      "no_matches": "V této sbírce nejsou žádné položky",
+      "shop_by_designer": "Obchod podle Designer."
+    },
+    "sorting": {
+      "title": "Seřazeno podle",
+      "featured": "Představen",
+      "best_selling": "Nejprodávanější",
+      "az": "Abecedně, a-z",
+      "za": "Abecedně, z-a",
+      "price_ascending": "Cena, nízká až vysoká",
+      "price_descending": "Cena, vysoká až nízká",
+      "date_descending": "Datum, nové staré",
+      "date_ascending": "Datum, staré do nového"
+    },
+    "filter": {
+      "filtering_by": "Filtrování podle:",
+      "refine": "Vylepšit"
+    }
+  },
+  "contact": {
+    "form": {
+      "name": "název",
+      "firstname": "Křestní jméno",
+      "lastname": "Příjmení",
+      "subject": "Předmět",
+      "companyname": "Společnost",
+      "address": "Adresa",
+      "email": "E-mailem",
+      "phone": "Telefonní číslo",
+      "message": "Zpráva",
+      "websiteurl": "Adresa URL webu",
+      "acceptsmarketing": "Subscribe to stay updated with new products and offers!",
+      "send": "Odeslat",
+      "post_success": "Díky, že jste nás kontaktovali. Ozveme se vám, jak jen to bude možné."
+    }
+  },
+  "customer": {
+    "account": {
+      "title": "Účet",
+      "logout": "Odhlášení",
+      "link": "Zpět na účet",
+      "signup": "Přihlášení nebo vytvoření účtu",
+      "details": "Podrobnosti o účtu",
+      "view_addresses": "Zobrazit adresy",
+      "returns_content": "Vrátit\/Výměna",
+      "return": "Zpět na Podrobnosti o účtu"
+    },
+    "activate_account": {
+      "title": "Aktivovat účet",
+      "subtext": "Vytvořte si heslo k aktivaci vašeho účtu.",
+      "password": "Heslo",
+      "password_confirm": "Potvrďte heslo",
+      "submit": "Aktivovat účet",
+      "cancel": "Odmítnout pozvání"
+    },
+    "addresses": {
+      "title": "Vaše adresy",
+      "default": "Primární adresa",
+      "add_new": "Přidat novou adresu",
+      "edit_address": "Upravit adresu",
+      "first_name": "Křestní jméno",
+      "last_name": "Příjmení",
+      "company": "Společnost",
+      "address1": "Adres1",
+      "address2": "Adres2color",
+      "city": "Město",
+      "country": "Země",
+      "province": "Provincie",
+      "zip": "PSČ\/PSČ",
+      "phone": "Telefon",
+      "set_default": "Nastavte jako výchozí adresu",
+      "add": "Přidat adresu",
+      "update": "Aktualizovat adresu",
+      "cancel": "Zrušit",
+      "edit": "Upravit",
+      "delete": "Vymazat"
+    },
+    "login": {
+      "title": "Přihlásit se",
+      "email": "E-mailem",
+      "password": "Heslo",
+      "forgot_password": "Zapomněli jste své heslo?",
+      "sign_in": "Přihlásit se",
+      "cancel": "Návrat do obchodu",
+      "guest_title": "Pokračovat jako host",
+      "guest_continue": "Pokračovat"
+    },
+    "orders": {
+      "title": "Historie objednávek",
+      "order_number": "Objednat",
+      "date": "datum",
+      "payment_status": "Stav platby"
     }
   }
 }
