@@ -1,0 +1,38 @@
+{
+  "general": {
+    "404": {
+      "subtext": "Tätä sivua ei ole olemassa. Kokeile etsiä mitä haluat löytää:"
+    },
+    "pagination": {
+      "showing_items": "Näytetään kohteita",
+      "of": "of"
+    },
+    "forms": {
+      "post_error": "Anteeksi, näyttää jotain meni pieleen. Korjaa seuraava ja lähetä uudelleen:"
+    },
+    "breadcrumbs": {
+      "home": "Etusivu"
+    },
+    "newsletter_form": {
+      "newsletter_email": "liity postituslistallemme",
+      "thanks": "Kiitos liittymästä",
+      "popup_thanks": "Kiitos liittymästä, tässä on kuponkikoodi:",
+      "email_placeholder": "Sähköpostin osoite",
+      "confirmation": "Kiitos liittymästä!",
+      "submit": "Liittyä seuraan"
+    },
+    "search": {
+      "no_results_html": "Hakusi \"{{ terms }}\"Ei tuottanut tuloksia.",
+      "results_for_html": "Hakusi \"{{ terms }}\"paljasti seuraavat:",
+      "title": "Hae",
+      "placeholder": "Hae",
+      "submit": "Hae"
+    },
+    "language": {
+      "dropdown_label": "Kieli"
+    },
+    "accessibility": {
+      "unit_price_separator": "per"
+    }
+  }
+}
