@@ -603,8 +603,45 @@
     "products": {
       "product": {
         "regular_price": "Normaalihinta",
-        "sold_out": "Myyty"
+        "sold_out": "Myyty",
+        "unavailable": "Ei käytettävissä",
+        "on_sale": "myynti",
+        "quantity": "Määrä",
+        "add_to_cart": "Lisää ostoskoriin",
+        "back_to_collection": "Takaisin {{ title }}",
+        "view_details": "Tarkemmat tiedot"
       }
+    },
+    "article": {
+      "tags": "Tunnisteet:",
+      "all_topics": "Kaikki aiheet",
+      "by_author": "mennessä {{ author }}",
+      "posted_in": "Lähetetty",
+      "read_more": "Lue lisää",
+      "back_to_blog": "Takaisin {{ title }}"
+    },
+    "comments": {
+      "title": "Jätä kommentti",
+      "name": "Nimi",
+      "email": "Sähköposti",
+      "message": "Viesti",
+      "post": "Lähetä Kommentti",
+      "moderated": "Huomioithan, että kommentit on hyväksyttävä ennen niiden julkaisemista",
+      "success_moderated": "Kommenttisi lähetettiin onnistuneesti. Julkaisemme sen vähän aikaa, koska blogimme on moderoitu.",
+      "success": "Kommenttisi lähetettiin onnistuneesti! Kiitos!",
+      "comments_with_count": {
+        "one": "{{ count }} kommentti",
+        "other": "{{ count }} kommentit"
+      }
+    },
+    "password_page": {
+      "login_form_message": "Syötä tallentaa salasanalla:",
+      "login_form_password_label": "Salasana",
+      "login_form_password_placeholder": "Salasanasi",
+      "login_form_submit": "Tulla sisään",
+      "signup_form_email_label": "Sähköposti",
+      "signup_form_success": "Lähetämme sinulle sähköpostia juuri ennen kuin avaamme!",
+      "password_link": "Syötä salasanalla"
     }
   }
 }
