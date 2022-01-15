@@ -536,7 +536,75 @@
     "general": {
       "new": "UUSI",
       "sale": "Myynti",
-      "sold": "LOPPUUNMYYTY"
+      "sold": "LOPPUUNMYYTY",
+      "quick_view": "Pikanäkymä",
+      "from": "alkaen",
+      "view_full": "Näytä kaikki tiedot",
+      "view_all": "Näytä kaikki",
+      "related": "Lisää tässä kokoelmassa",
+      "sale_price": "myynti",
+      "regular_price": "Tavallinen"
+    },
+    "product": {
+      "designer": "Suunnittelija",
+      "sold_out": "Loppuunmyyty",
+      "from_lowest_price_html": "{{ lowest_price }}",
+      "unavailable": "Ei käytettävissä",
+      "compare_at": "Vertaa sitä",
+      "add_to_cart": "Lisää ostoskoriin",
+      "quantity": "Määrä",
+      "select_options": "Näytä valinnat",
+      "details": "Tiedot",
+      "sizing": "Koko",
+      "video": "Video",
+      "model": "Tuotehoito",
+      "back_to": "Takaisin",
+      "adding": "Lisääminen ...",
+      "thank_you": "Kiitos!",
+      "added": "Lisätty Cartiin",
+      "view_cart": "Näytä Cart",
+      "or": "Tai",
+      "continue": "Jatka ostoksia",
+      "qty_error_first": "Vain",
+      "qty_error_last": "On saatavilla",
+      "qty_sold_out": "Tämä kohta on loppuunmyyty",
+      "back_in_stock": "Lähetä minulle sähköpostia, kun tämä on saatavilla",
+      "back_in_stock_confirm": "Kiitos, otamme yhteyttä, kun tämä on saatavilla",
+      "readmore": "Lue lisää",
+      "view_in_space": "Näkymä tilasi",
+      "view_in_space_label": "Näkymä tilasi, lataa kohde lisäyksen todellisuusikkunaan",
+      "unit_price_label": "Yksikkö Hinta"
+    }
+  },
+  "gift_cards": {
+    "issued": {
+      "title": "Tässä on sinun {{ value }} Lahjakortti {{ shop }}!",
+      "subtext": "Tässä on lahjakortti!",
+      "disabled": "Liikuntarajoitteinen",
+      "expired": "Vanhentunut {{ expiry }}",
+      "active": "Päättyy {{ expiry }}",
+      "redeem": "Käytä tätä koodia kassalla lunastaa lahjakortin",
+      "shop_link": "Aloita ostaminen",
+      "print": "Tulosta",
+      "email": "Sähköposti"
+    }
+  },
+  "social": {
+    "icons": {
+      "facebook": "Jaa Facebookissa",
+      "twitter": "Jaa Twitterissä",
+      "pinterest": "Jaa Pinterestissä"
+    },
+    "product_share": {
+      "share": "Share"
+    }
+  },
+  "pagefly": {
+    "products": {
+      "product": {
+        "regular_price": "Normaalihinta",
+        "sold_out": "Myyty"
+      }
     }
   }
 }
