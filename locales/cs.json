@@ -537,7 +537,75 @@
     "general": {
       "new": "NOVÉ",
       "sale": "PRODEJ",
-      "sold": "Vypuštěno ven"
+      "sold": "Vypuštěno ven",
+      "quick_view": "Rychlý pohled",
+      "from": "Z",
+      "view_full": "Zobrazit veškeré podrobnosti",
+      "view_all": "Zobrazit vše.",
+      "related": "Více v této sbírce",
+      "sale_price": "Prodej",
+      "regular_price": "Pravidelný"
+    },
+    "product": {
+      "designer": "Návrhář",
+      "sold_out": "Vyprodáno",
+      "from_lowest_price_html": "{{ lowest_price }}",
+      "unavailable": "Není k dispozici",
+      "compare_at": "Porovnejte At.",
+      "add_to_cart": "Přidat do košíku",
+      "quantity": "Množství",
+      "select_options": "Zobrazit možnosti",
+      "details": "Podrobnosti",
+      "sizing": "Dimenzování",
+      "video": "Video",
+      "model": "Péče o produkt",
+      "back_to": "Zpět k",
+      "adding": "Přidání ...",
+      "thank_you": "Děkuju!",
+      "added": "Přidáno do košíku",
+      "view_cart": "Zobrazit košík",
+      "or": "nebo",
+      "continue": "Pokračovat v nákupu",
+      "qty_error_first": "Pouze",
+      "qty_error_last": "této položky je k dispozici",
+      "qty_sold_out": "Tato položka je vyprodána",
+      "back_in_stock": "Prosím, pošlete mi e-mail, když je k dispozici",
+      "back_in_stock_confirm": "Díky, budeme Vás kontaktovat, když je k dispozici",
+      "readmore": "Číst další",
+      "view_in_space": "Zobrazit ve svém prostoru",
+      "view_in_space_label": "Zobrazení ve vašem prostoru, načte položku v okně Augmented Reality",
+      "unit_price_label": "Jednotková cena"
+    }
+  },
+  "gift_cards": {
+    "issued": {
+      "title": "Tady máš. {{ value }} dárková karta pro {{ shop }}!",
+      "subtext": "Tady je vaše dárková karta!",
+      "disabled": "Deaktivováno",
+      "expired": "Vypršelo dne {{ expiry }}",
+      "active": "Platnost skončí dne {{ expiry }}",
+      "redeem": "Tento kód použijte při zapůjčení k splacení vaší karty dárků",
+      "shop_link": "Zahájit nakupování",
+      "print": "Tisknout",
+      "email": "E-mailem"
+    }
+  },
+  "social": {
+    "icons": {
+      "facebook": "Sdílet na Facebooku",
+      "twitter": "Sdílet na Twitteru",
+      "pinterest": "Sdílet na Pinterestu"
+    },
+    "product_share": {
+      "share": "Share"
+    }
+  },
+  "pagefly": {
+    "products": {
+      "product": {
+        "regular_price": "Běžná cena",
+        "sold_out": "Vyprodáno"
+      }
     }
   }
 }
