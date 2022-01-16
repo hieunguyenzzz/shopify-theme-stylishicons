@@ -35,5 +35,39 @@
     "accessibility": {
       "unit_price_separator": "om"
     }
+  },
+  "strings": {
+    "general": {
+      "show_express_delivery_options": "Vis Express Delivery Options",
+      "learn_more": "Lær mere",
+      "verified_reviews": "Verificerede anmeldelser",
+      "privacy_policy": "Fortrolighedspolitik",
+      "terms_conditions": "Vilkår og betingelser",
+      "view_all": "SE ALT",
+      "all_reviews": "Alle anmeldelser",
+      "shop_instagram": "shop Instagram",
+      "see_all": "SE ALT",
+      "best_seller": "BEDST SÆLGENDE",
+      "new_product": "NYT PRODUKT",
+      "inspired_by": "Inspireret af",
+      "more-filters": "Flere filers",
+      "filter-products": "Filtrer produkter.",
+      "clear-all": "Slet alt",
+      "percentage_off": "{{number}} AF"
+    },
+    "product_options": {
+      "choose-colours": "Vælg farver:",
+      "choose-colour": "Vælg farve.",
+      "choose-finish": "Vælg. Afslut",
+      "color": "Farve",
+      "choose-material": "Vælge. Materiale",
+      "upholstery": "Betræk",
+      "finish": "Afslut",
+      "choose-materials": "Vælge. Materialer.",
+      "woods-finishes": "Woods \/ finish",
+      "material-size": "Materiale \/ Størrelse.",
+      "material": "Materiale",
+      "fabric": "Stof"
+    }
   }
 }
