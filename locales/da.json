@@ -339,7 +339,131 @@
   },
   "cart": {
     "general": {
-      "title": "Min kurv."
+      "title": "Min kurv.",
+      "summary": "Vognoversigt",
+      "close_cart": "Tæt",
+      "shipping": "Forsendelse",
+      "tax": "Skat",
+      "at_checkout": "Beregnet ved checkout.",
+      "empty": "Din kurv er i øjeblikket tom.",
+      "product": "Produkt",
+      "price": "Pris",
+      "qty": "QTY.",
+      "remove": "Fjerne",
+      "total": "i alt",
+      "subtotal": "Subtotal",
+      "continue": "Fortsætte med at handle",
+      "update": "Opdater indkøbsvogn",
+      "checkout": "Tjek ud",
+      "note": "Bestil specielle instruktioner",
+      "recently_viewed": "Du har også set",
+      "cart_discount": "Rabatkode (anvendt ved kassen)",
+      "free_shipping_before": "Du er kun",
+      "free_shipping_after": "væk fra gratis indenlandsk forsendelse!",
+      "free_shipping_qualified": "Din ordre kvalificerer gratis indenlandsk forsendelse!",
+      "free_shipping_exclusions": "(Udelukker international)",
+      "discounts": "Rabatter",
+      "savings": "Samlede besparelser",
+      "discount_applied": "Rabat anvendt!",
+      "items": "Vare (r)"
+    }
+  },
+  "collections": {
+    "general": {
+      "all_collections": "Samlinger",
+      "all_products": "Alle produkter.",
+      "no_matches": "Der er ingen ting i denne samling",
+      "shop_by_designer": "Shop af Designer."
+    },
+    "sorting": {
+      "title": "Sorter efter",
+      "featured": "Udvalgte",
+      "best_selling": "bestseller",
+      "az": "Alfabetisk, AZ",
+      "za": "Alfabetisk, ZA",
+      "price_ascending": "Pris, lav til høj",
+      "price_descending": "Pris, høj til lav",
+      "date_descending": "Dato, nyt til gammelt",
+      "date_ascending": "Dato, gammel til ny"
+    },
+    "filter": {
+      "filtering_by": "Filtrering ved:",
+      "refine": "Raffinere"
+    }
+  },
+  "contact": {
+    "form": {
+      "name": "Navn",
+      "firstname": "Fornavn",
+      "lastname": "Efternavn",
+      "subject": "Emne",
+      "companyname": "Selskab",
+      "address": "Adresse",
+      "email": "E-mail",
+      "phone": "Telefonnummer",
+      "message": "Besked",
+      "websiteurl": "Hjemmeside URL",
+      "acceptsmarketing": "Abonner på Bliv opdateret med nye produkter og tilbud!",
+      "send": "Sende",
+      "post_success": "Tak for at kontakte os. Vi kommer hurtigst muligt tilbage til dig."
+    }
+  },
+  "customer": {
+    "account": {
+      "title": "Konto",
+      "logout": "Log ud",
+      "link": "Tilbage til konto",
+      "signup": "Log ind eller opret en konto",
+      "details": "konto detaljer",
+      "view_addresses": "Se adresser",
+      "returns_content": "Retur \/ udveksling",
+      "return": "Tilbage til kontooplysninger"
+    },
+    "activate_account": {
+      "title": "Aktivér konto.",
+      "subtext": "Opret dit kodeord for at aktivere din konto.",
+      "password": "Adgangskode",
+      "password_confirm": "Bekræft kodeord",
+      "submit": "Aktivér konto.",
+      "cancel": "Afvis invitation"
+    },
+    "addresses": {
+      "title": "Dine adresser.",
+      "default": "Primære adresse",
+      "add_new": "Tilføj en ny adresse",
+      "edit_address": "Rediger adresse",
+      "first_name": "Fornavn",
+      "last_name": "Efternavn",
+      "company": "Selskab",
+      "address1": "Adresse 1",
+      "address2": "Adresse 2",
+      "city": "By",
+      "country": "Land",
+      "province": "Provins",
+      "zip": "Post \/ postnummer",
+      "phone": "telefon",
+      "set_default": "Indstil som standardadresse",
+      "add": "Tilføj adresse",
+      "update": "Opdateringsadresse",
+      "cancel": "Afbestille",
+      "edit": "Redigere",
+      "delete": "Slet"
+    },
+    "login": {
+      "title": "Log på",
+      "email": "E-mail",
+      "password": "Adgangskode",
+      "forgot_password": "Glemt din adgangskode?",
+      "sign_in": "Log ind",
+      "cancel": "Vende tilbage til butikken",
+      "guest_title": "Fortsæt som gæst",
+      "guest_continue": "Blive ved"
+    },
+    "orders": {
+      "title": "ordre historik",
+      "order_number": "Bestille",
+      "date": "Dato",
+      "payment_status": "Betalingsstatus"
     }
   }
 }
