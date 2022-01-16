@@ -462,7 +462,81 @@
       "title": "Cronologia ordini",
       "order_number": "Ordine",
       "date": "Data",
-      "payment_status": "Stato del pagamento"
+      "payment_status": "Stato del pagamento",
+      "fulfillment_status": "stato di adempimento",
+      "total": "Totale",
+      "none": "Non hai ancora inserito alcun ordine."
+    },
+    "order": {
+      "title": "Ordine",
+      "date": "Posto su",
+      "cancelled": "Ordine cancellato acceso",
+      "cancelled_reason": "Motivo: {{ reason }}",
+      "billing_address": "Indirizzo Di Fatturazione",
+      "payment_status": "Stato del pagamento",
+      "shipping_address": "indirizzo di spedizione",
+      "fulfillment_status": "stato di adempimento",
+      "discount": "Sconto",
+      "shipping": "Spedizione",
+      "tax": "Imposta",
+      "order_details": "Dettagli ordine",
+      "details": {
+        "product": "Prodotto",
+        "sku": "Culo",
+        "price": "Prezzo",
+        "quantity": "Quantità",
+        "total": "Totale",
+        "fulfilled_at": "Soddisfatto {{ date }}",
+        "subtotal": "totale parziale"
+      }
+    },
+    "recover_password": {
+      "title": "reimposta la tua password",
+      "email": "E-mail",
+      "submit": "Invia",
+      "cancel": "Cancella",
+      "subtext": "Ti invieremo un'email per ripristinare la password.",
+      "success": "Ti abbiamo inviato un'email con un link per aggiornare la tua password."
+    },
+    "reset_password": {
+      "title": "Ripristina la password dell'account",
+      "subtext": "Inserisci una nuova password per {{ email }}",
+      "password": "Parola d'ordine",
+      "password_confirm": "conferma password",
+      "submit": "Resetta la password"
+    },
+    "register": {
+      "title": "Crea un account",
+      "first_name": "Nome di battesimo",
+      "last_name": "Cognome",
+      "email": "E-mail",
+      "password": "Parola d'ordine",
+      "submit": "Creare"
+    }
+  },
+  "layout": {
+    "footer": {
+      "copyright": "Diritto d'autore",
+      "theme_title": "di"
+    },
+    "homepage": {
+      "mailing_list_join": "Ciao!",
+      "mailing_list_text": "UNISCITI ALLA NOSTRA MAILING LIST",
+      "onboarding": {
+        "no_content": "Questa sezione attualmente include alcun contenuto. Aggiungi contenuto a questa sezione usando la barra laterale."
+      }
+    },
+    "mobile_nav": {
+      "account": "Account",
+      "login": "Accedi \/ Crea account",
+      "logout": "Disconnettersi"
+    }
+  },
+  "products": {
+    "general": {
+      "new": "NUOVO",
+      "sale": "SALDI",
+      "sold": "VENDUTO"
     }
   }
 }
