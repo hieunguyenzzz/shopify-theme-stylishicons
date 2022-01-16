@@ -536,7 +536,75 @@
     "general": {
       "new": "NUOVO",
       "sale": "SALDI",
-      "sold": "VENDUTO"
+      "sold": "VENDUTO",
+      "quick_view": "Occhiata veloce",
+      "from": "A partire dal",
+      "view_full": "Visualizza dettagli completi",
+      "view_all": "Mostra tutto",
+      "related": "Più in questa Raccolta",
+      "sale_price": "Vendita",
+      "regular_price": "Regolare"
+    },
+    "product": {
+      "designer": "progettista",
+      "sold_out": "Venduto",
+      "from_lowest_price_html": "{{ lowest_price }}",
+      "unavailable": "Non disponibile",
+      "compare_at": "Confronta a",
+      "add_to_cart": "Aggiungi al carrello",
+      "quantity": "Quantità",
+      "select_options": "Opzioni di visualizzazione",
+      "details": "Dettagli",
+      "sizing": "Dimensionamento",
+      "video": "video",
+      "model": "Cura del prodotto",
+      "back_to": "Torna a",
+      "adding": "Aggiunta di ...",
+      "thank_you": "Grazie a te!",
+      "added": "Aggiunto a Cart",
+      "view_cart": "Visualizza il carrello",
+      "or": "o",
+      "continue": "Continua a fare acquisti",
+      "qty_error_first": "Solo",
+      "qty_error_last": "di questo articolo è disponibile",
+      "qty_sold_out": "Questo articolo è esaurito",
+      "back_in_stock": "Ti preghiamo di inviarmi una mail quando questa è disponibile",
+      "back_in_stock_confirm": "Grazie, ti contatteremo quando questo è disponibile",
+      "readmore": "Di più",
+      "view_in_space": "Visualizza nel tuo spazio",
+      "view_in_space_label": "Visualizza nel tuo spazio, carica l'oggetto nella finestra di realtà aumentata",
+      "unit_price_label": "Prezzo unitario"
+    }
+  },
+  "gift_cards": {
+    "issued": {
+      "title": "Ecco il tuo {{ value }} carta regalo per {{ shop }}!",
+      "subtext": "Ecco la tua carta regalo!",
+      "disabled": "Disabilitato",
+      "expired": "Scaduto {{ expiry }}",
+      "active": "Scade il {{ expiry }}",
+      "redeem": "Utilizzare questo codice al checkout per riscattare la tua carta regalo",
+      "shop_link": "Inizia a fare shopping",
+      "print": "Stampa",
+      "email": "E-mail"
+    }
+  },
+  "social": {
+    "icons": {
+      "facebook": "Condividi su Facebook",
+      "twitter": "Condividi su Twitter",
+      "pinterest": "Condividi su Pinterest"
+    },
+    "product_share": {
+      "share": "Share"
+    }
+  },
+  "pagefly": {
+    "products": {
+      "product": {
+        "regular_price": "Prezzo regolare",
+        "sold_out": "Venduto"
+      }
     }
   }
 }
