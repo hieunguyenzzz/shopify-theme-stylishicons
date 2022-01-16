@@ -266,7 +266,79 @@
       "white-n-brass": "Blass Blass.",
       "shades-of-blue": "Sfumature di blu",
       "shades-of-red": "Tonalità di rosso",
-      "shades-of-grey": "Sfumature di grigio"
+      "shades-of-grey": "Sfumature di grigio",
+      "shades-of-green": "Sfumature di verde.",
+      "shades-of-white": "Sfumature di bianco.",
+      "13-cm": "13 cm",
+      "23-cm": "23 CM",
+      "31-cm": "31 CM",
+      "47-cm": "47 cm",
+      "copper-bronze": "Bronzo di rame.",
+      "left-chaise": "Chaise",
+      "right-chaise": "GIUSTO CHAISE",
+      "buck-brown": "Buck Brown",
+      "dark-burgundy-waxy": "Borgogna scura cerosa",
+      "american-walnut": "American Walnut.",
+      "96-cm": "96 cm",
+      "102-cm": "102 CM",
+      "yellow-lacquered": "Laccato giallo",
+      "black-marble": "Marmo nero"
+    }
+  },
+  "password": {
+    "general": {
+      "thanks": "Grazie per essersi unito alla nostra lista",
+      "enter_store": "Login con Password:",
+      "password": "Parola d'ordine",
+      "enter": "accedere",
+      "email_address": "Indirizzo email",
+      "submit": "Invia",
+      "powered": "Questo negozio sarà alimentato da"
+    }
+  },
+  "blogs": {
+    "article": {
+      "posted_on_date_html": "Posted on <time datetime=\"{{ date }}\">{{ date }}<\/time>",
+      "tags": "Tags.",
+      "tagged": "Tagged",
+      "comments": "Commenti",
+      "read_more": "Di più"
+    },
+    "comments": {
+      "title": "lascia un commento",
+      "name": "Nome",
+      "email": "E-mail",
+      "message": "Commento",
+      "moderated": "Tutti i commenti del blog sono controllati prima dell'editoria",
+      "post": "Posta un commento",
+      "success_moderated": "Il tuo commento è stato pubblicato con successo. Lo pubblicheremo tra un po ', poiché il nostro blog è moderato.",
+      "success": "Il tuo commento è stato pubblicato con successo! Grazie!",
+      "comments_with_count": {
+        "one": "{{ count }} commento",
+        "other": "{{ count }} Commenti"
+      }
+    },
+    "sidebar": {
+      "social_title": "Mettiti in comunicazione con noi",
+      "twitter_title": "Su Twitter",
+      "facebook_title": "Come noi su Facebook",
+      "recent_posts": "Posti Recenti",
+      "tags": "Filtro Articolo Tags"
+    }
+  },
+  "store_availability": {
+    "general": {
+      "view_store_info": "Visualizza le informazioni del negozio",
+      "check_other_stores": "Verifica la disponibilità in altri negozi",
+      "pick_up_available": "Pickup disponibile",
+      "pick_up_currently_unavailable": "Pickup Attualmente non disponibile",
+      "pick_up_available_at_html": "Pick-up disponibile a. <strong>{{ location_name }}<\/strong>",
+      "pick_up_unavailable_at_html": "Pickup Attualmente non disponibile a <strong>{{ location_name }}<\/strong>"
+    }
+  },
+  "cart": {
+    "general": {
+      "title": "La mia carta"
     }
   }
 }
