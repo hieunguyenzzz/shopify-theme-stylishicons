@@ -400,7 +400,69 @@
       "address": "Indirizzo",
       "email": "E-mail",
       "phone": "Numero di telefono",
-      "message": "Messaggio"
+      "message": "Messaggio",
+      "websiteurl": "URL del sito",
+      "acceptsmarketing": "Iscriviti per rimanere aggiornati con nuovi prodotti e offerte!",
+      "send": "Spedire",
+      "post_success": "Grazie per averci contattato. Ti risponderemo il prima possibile."
+    }
+  },
+  "customer": {
+    "account": {
+      "title": "Account",
+      "logout": "Disconnettersi",
+      "link": "Torna all'account",
+      "signup": "Login o creare un account",
+      "details": "Dettagli account",
+      "view_addresses": "Visualizza gli indirizzi",
+      "returns_content": "Ritorno \/ Scambio.",
+      "return": "Torna ai dettagli dell'account"
+    },
+    "activate_account": {
+      "title": "Attiva account",
+      "subtext": "Crea la tua password per attivare il tuo account.",
+      "password": "Parola d'ordine",
+      "password_confirm": "conferma password",
+      "submit": "Attiva account",
+      "cancel": "Declino invito"
+    },
+    "addresses": {
+      "title": "I tuoi indirizzi",
+      "default": "indirizzo primario",
+      "add_new": "Aggiungi un nuovo indirizzo",
+      "edit_address": "Modifica indirizzo",
+      "first_name": "Nome di battesimo",
+      "last_name": "Cognome",
+      "company": "Società",
+      "address1": "Indirizzo 1",
+      "address2": "Indirizzo 2",
+      "city": "Città",
+      "country": "Nazione",
+      "province": "Provincia",
+      "zip": "Codice postale",
+      "phone": "Telefono",
+      "set_default": "Imposta come indirizzo predefinito",
+      "add": "Aggiungi indirizzo",
+      "update": "Aggiorna indirizzo",
+      "cancel": "Cancella",
+      "edit": "Modificare",
+      "delete": "Eliminare"
+    },
+    "login": {
+      "title": "Login",
+      "email": "E-mail",
+      "password": "Parola d'ordine",
+      "forgot_password": "Hai dimenticato la password?",
+      "sign_in": "Registrazione",
+      "cancel": "Torna a Store.",
+      "guest_title": "Continua come ospite",
+      "guest_continue": "Continua"
+    },
+    "orders": {
+      "title": "Cronologia ordini",
+      "order_number": "Ordine",
+      "date": "Data",
+      "payment_status": "Stato del pagamento"
     }
   }
 }
