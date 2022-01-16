@@ -1,0 +1,38 @@
+{
+  "general": {
+    "404": {
+      "subtext": "Questa pagina non esiste. Prova a cercare quello che vorresti trovare:"
+    },
+    "pagination": {
+      "showing_items": "Visualizzazione degli articoli",
+      "of": "di"
+    },
+    "forms": {
+      "post_error": "Scusa, sembra che qualcosa sia andato storto. Si prega di correggere i seguenti e invia nuovamente:"
+    },
+    "breadcrumbs": {
+      "home": "Casa"
+    },
+    "newsletter_form": {
+      "newsletter_email": "UNISCITI ALLA NOSTRA MAILING LIST",
+      "thanks": "Grazie per l'adesione",
+      "popup_thanks": "Grazie per l'adesione, ecco il tuo codice coupon:",
+      "email_placeholder": "Indirizzo email",
+      "confirmation": "Grazie per la partecipazione!",
+      "submit": "Giuntura"
+    },
+    "search": {
+      "no_results_html": "La tua ricerca \"{{ terms }}\"Non ha prodotto alcun risultato.",
+      "results_for_html": "La tua ricerca \"{{ terms }}\"Rivelato quanto segue:",
+      "title": "Cerca",
+      "placeholder": "Cerca",
+      "submit": "Cerca"
+    },
+    "language": {
+      "dropdown_label": "Lingua"
+    },
+    "accessibility": {
+      "unit_price_separator": "per"
+    }
+  }
+}
