@@ -537,7 +537,75 @@
     "general": {
       "new": "NY",
       "sale": "SALG",
-      "sold": "UDLØST"
+      "sold": "UDLØST",
+      "quick_view": "Hurtigt kig",
+      "from": "Fra",
+      "view_full": "Se fulde detaljer.",
+      "view_all": "Se alt",
+      "related": "Mere i denne samling",
+      "sale_price": "Salg",
+      "regular_price": "Fast"
+    },
+    "product": {
+      "designer": "Designer",
+      "sold_out": "Udsolgt",
+      "from_lowest_price_html": "{{ lowest_price }}",
+      "unavailable": "Ikke tilgængelig",
+      "compare_at": "Sammenlign AT.",
+      "add_to_cart": "Tilføj til kurv",
+      "quantity": "Antal",
+      "select_options": "Se muligheder.",
+      "details": "detaljer",
+      "sizing": "Dimensionering",
+      "video": "Video.",
+      "model": "Produktpleje.",
+      "back_to": "Tilbage til",
+      "adding": "Tilføjelse ...",
+      "thank_you": "Tak skal du have!",
+      "added": "Tilføjet til kurv.",
+      "view_cart": "Se indkøbsvogn",
+      "or": "eller",
+      "continue": "Fortsætte med at handle",
+      "qty_error_first": "Kun",
+      "qty_error_last": "af denne vare er tilgængelig",
+      "qty_sold_out": "Denne vare er udsolgt",
+      "back_in_stock": "Venligst send mig en mail, når dette er tilgængeligt",
+      "back_in_stock_confirm": "Tak, vi vil kontakte dig, når dette er tilgængeligt",
+      "readmore": "Læs mere",
+      "view_in_space": "Se i dit rum",
+      "view_in_space_label": "Se i dit rum, loads vare i Augmented Reality Window",
+      "unit_price_label": "Pris per stk"
+    }
+  },
+  "gift_cards": {
+    "issued": {
+      "title": "Her er din {{ value }} Gavekort for. {{ shop }}!",
+      "subtext": "Her er dit gavekort!",
+      "disabled": "handicappet",
+      "expired": "Udløbet på {{ expiry }}",
+      "active": "Udløber på {{ expiry }}",
+      "redeem": "Brug denne kode ved kassen for at indløse dit gavekort",
+      "shop_link": "Begynd at shoppe",
+      "print": "Print",
+      "email": "E-mail"
+    }
+  },
+  "social": {
+    "icons": {
+      "facebook": "Del på facebook",
+      "twitter": "Del på Twitter.",
+      "pinterest": "Del på Pinterest"
+    },
+    "product_share": {
+      "share": "Share"
+    }
+  },
+  "pagefly": {
+    "products": {
+      "product": {
+        "regular_price": "Normal pris",
+        "sold_out": "Udsolgt"
+      }
     }
   }
 }
