@@ -604,8 +604,45 @@
     "products": {
       "product": {
         "regular_price": "Normal pris",
-        "sold_out": "Udsolgt"
+        "sold_out": "Udsolgt",
+        "unavailable": "Ikke tilgængelig",
+        "on_sale": "Salg",
+        "quantity": "Antal",
+        "add_to_cart": "Tilføj til kurv",
+        "back_to_collection": "Tilbage til {{ title }}",
+        "view_details": "Se detaljer"
       }
+    },
+    "article": {
+      "tags": "Tags:",
+      "all_topics": "Alle emner",
+      "by_author": "af {{ author }}",
+      "posted_in": "Udsendt i",
+      "read_more": "Læs mere",
+      "back_to_blog": "Tilbage til {{ title }}"
+    },
+    "comments": {
+      "title": "Efterlad en kommentar",
+      "name": "Navn",
+      "email": "E-mail",
+      "message": "Besked",
+      "post": "Skriv kommentar",
+      "moderated": "Bemærk venligst, at kommentarer skal godkendes, før de offentliggøres",
+      "success_moderated": "Din kommentar blev bogført med succes. Vi vil offentliggøre det om lidt, da vores blog er modereret.",
+      "success": "Din kommentar blev indsendt med succes! Tak skal du have!",
+      "comments_with_count": {
+        "one": "{{ count }} kommentar",
+        "other": "{{ count }} kommentarer."
+      }
+    },
+    "password_page": {
+      "login_form_message": "Angiv et lager vha. kodeord:",
+      "login_form_password_label": "Adgangskode",
+      "login_form_password_placeholder": "Dit kodeord",
+      "login_form_submit": "Gå ind",
+      "signup_form_email_label": "E-mail",
+      "signup_form_success": "Vi sender dig en e-mail lige før vi åbner!",
+      "password_link": "Indtast med adgangskode"
     }
   }
 }
