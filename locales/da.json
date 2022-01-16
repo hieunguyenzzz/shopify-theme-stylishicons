@@ -463,7 +463,81 @@
       "title": "ordre historik",
       "order_number": "Bestille",
       "date": "Dato",
-      "payment_status": "Betalingsstatus"
+      "payment_status": "Betalingsstatus",
+      "fulfillment_status": "Opfyldelse Status.",
+      "total": "i alt",
+      "none": "Du har ikke lagt nogen ordrer endnu."
+    },
+    "order": {
+      "title": "Bestille",
+      "date": "Placeret på",
+      "cancelled": "Annulleret rækkefølge på",
+      "cancelled_reason": "Grund: {{ reason }}",
+      "billing_address": "Betalingsadresse",
+      "payment_status": "Betalingsstatus",
+      "shipping_address": "Forsendelsesadresse",
+      "fulfillment_status": "Opfyldelse Status.",
+      "discount": "Rabat",
+      "shipping": "Forsendelse",
+      "tax": "Skat",
+      "order_details": "Detaljer om rækkefølge",
+      "details": {
+        "product": "Produkt",
+        "sku": "SKU.",
+        "price": "Pris",
+        "quantity": "Antal",
+        "total": "i alt",
+        "fulfilled_at": "Opfyldt {{ date }}",
+        "subtotal": "Subtotal"
+      }
+    },
+    "recover_password": {
+      "title": "Nulstil din adgangskode",
+      "email": "E-mail",
+      "submit": "Indsend",
+      "cancel": "Afbestille",
+      "subtext": "Vi sender dig en e-mail for at nulstille dit kodeord.",
+      "success": "Vi har sendt dig en e-mail med et link for at opdatere dit kodeord."
+    },
+    "reset_password": {
+      "title": "Nulstil kontoadgangskode.",
+      "subtext": "Indtast en ny adgangskode til {{ email }}",
+      "password": "Adgangskode",
+      "password_confirm": "Bekræft kodeord",
+      "submit": "Nulstille kodeord"
+    },
+    "register": {
+      "title": "Opret konto",
+      "first_name": "Fornavn",
+      "last_name": "Efternavn",
+      "email": "E-mail",
+      "password": "Adgangskode",
+      "submit": "skab"
+    }
+  },
+  "layout": {
+    "footer": {
+      "copyright": "Ophavsret",
+      "theme_title": "ved"
+    },
+    "homepage": {
+      "mailing_list_join": "Hej med dig!",
+      "mailing_list_text": "Deltag i vores mailingliste",
+      "onboarding": {
+        "no_content": "Dette afsnit indeholder ikke i øjeblikket noget indhold. Tilføj indhold til dette afsnit ved hjælp af sidebjælken."
+      }
+    },
+    "mobile_nav": {
+      "account": "Konto",
+      "login": "Log ind\/Opret konto",
+      "logout": "Log ud"
+    }
+  },
+  "products": {
+    "general": {
+      "new": "NY",
+      "sale": "SALG",
+      "sold": "UDLØST"
     }
   }
 }
