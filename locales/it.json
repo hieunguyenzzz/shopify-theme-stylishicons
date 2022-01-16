@@ -338,7 +338,69 @@
   },
   "cart": {
     "general": {
-      "title": "La mia carta"
+      "title": "La mia carta",
+      "summary": "Sommario del carrello",
+      "close_cart": "Vicino",
+      "shipping": "Spedizione",
+      "tax": "Imposta",
+      "at_checkout": "Calcolato al checkout.",
+      "empty": "Il carrello è vuoto.",
+      "product": "Prodotto",
+      "price": "Prezzo",
+      "qty": "Qtà",
+      "remove": "Rimuovere",
+      "total": "Totale",
+      "subtotal": "totale parziale",
+      "continue": "Continua a fare acquisti",
+      "update": "Aggiorna carrello",
+      "checkout": "Guardare",
+      "note": "Ordinare istruzioni speciali",
+      "recently_viewed": "Hai anche visualizzato",
+      "cart_discount": "Codice di sconto (applicato al checkout)",
+      "free_shipping_before": "Tu sei solo",
+      "free_shipping_after": "lontano dalla spedizione domestica gratuita!",
+      "free_shipping_qualified": "Il tuo ordine si qualifica per la spedizione domestica gratuita!",
+      "free_shipping_exclusions": "(Esclude l'Internazionale)",
+      "discounts": "Sconti",
+      "savings": "Risparmi totali",
+      "discount_applied": "Sconto applicato!",
+      "items": "Elementi)"
+    }
+  },
+  "collections": {
+    "general": {
+      "all_collections": "Collezioni",
+      "all_products": "Tutti i prodotti",
+      "no_matches": "Non ci sono articoli in questa collezione",
+      "shop_by_designer": "Negozio di designer."
+    },
+    "sorting": {
+      "title": "Ordina per",
+      "featured": "In primo piano",
+      "best_selling": "Best Selling.",
+      "az": "Alfabetico, A-Z",
+      "za": "Alfabeticamente, Z-a",
+      "price_ascending": "Prezzo, basso ad alto",
+      "price_descending": "Prezzo, alto a basso",
+      "date_descending": "Data, nuovo vecchio",
+      "date_ascending": "Data, vecchio a nuovo"
+    },
+    "filter": {
+      "filtering_by": "Filtraggio per:",
+      "refine": "Perfezionare"
+    }
+  },
+  "contact": {
+    "form": {
+      "name": "Nome",
+      "firstname": "Nome di battesimo",
+      "lastname": "Cognome",
+      "subject": "Materia",
+      "companyname": "Società",
+      "address": "Indirizzo",
+      "email": "E-mail",
+      "phone": "Numero di telefono",
+      "message": "Messaggio"
     }
   }
 }
