@@ -267,7 +267,79 @@
       "white-n-brass": "Hvid N Brass",
       "shades-of-blue": "Nuancer af blå",
       "shades-of-red": "Shades of Red",
-      "shades-of-grey": "Skygger af grå"
+      "shades-of-grey": "Skygger af grå",
+      "shades-of-green": "Nuancer af grøn",
+      "shades-of-white": "Skygger af hvidt",
+      "13-cm": "13 cm",
+      "23-cm": "23 CM",
+      "31-cm": "31 CM",
+      "47-cm": "47 cm",
+      "copper-bronze": "Kobber bronze.",
+      "left-chaise": "Venstre chaise.",
+      "right-chaise": "Højre chaise.",
+      "buck-brown": "Buck Brown",
+      "dark-burgundy-waxy": "Dark Bourgogne Waxy.",
+      "american-walnut": "American Walnut.",
+      "96-cm": "96 cm",
+      "102-cm": "102 CM",
+      "yellow-lacquered": "Gul lakeret",
+      "black-marble": "Sort marmor."
+    }
+  },
+  "password": {
+    "general": {
+      "thanks": "Tak, fordi du deltager i vores liste",
+      "enter_store": "Log på med kodeord:",
+      "password": "Adgangskode",
+      "enter": "Gå ind",
+      "email_address": "Email adresse",
+      "submit": "Indsend",
+      "powered": "Dette lager vil blive drevet af"
+    }
+  },
+  "blogs": {
+    "article": {
+      "posted_on_date_html": "Udsendt på <time datetime=\"{{ date }}\">{{ date }}<\/time>",
+      "tags": "Tags.",
+      "tagged": "Mærket",
+      "comments": "Kommentarer",
+      "read_more": "Læs mere"
+    },
+    "comments": {
+      "title": "Efterlad en kommentar",
+      "name": "Navn",
+      "email": "E-mail",
+      "message": "Kommentar",
+      "moderated": "Alle blogkommentarer kontrolleres inden udgivelsen",
+      "post": "Skriv kommentar",
+      "success_moderated": "Din kommentar blev bogført med succes. Vi vil offentliggøre det om lidt, da vores blog er modereret.",
+      "success": "Din kommentar blev indsendt med succes! Tak skal du have!",
+      "comments_with_count": {
+        "one": "{{ count }} kommentar",
+        "other": "{{ count }} kommentarer."
+      }
+    },
+    "sidebar": {
+      "social_title": "Opret forbindelse til os",
+      "twitter_title": "På Twitter",
+      "facebook_title": "Ligesom os på Facebook.",
+      "recent_posts": "Seneste poster",
+      "tags": "Filtrér artikel-emneord"
+    }
+  },
+  "store_availability": {
+    "general": {
+      "view_store_info": "Se butiksoplysninger",
+      "check_other_stores": "Tjek tilgængelighed i andre butikker",
+      "pick_up_available": "Mulighed for afhentning",
+      "pick_up_currently_unavailable": "Afhentning er i øjeblikket ikke tilgængelig",
+      "pick_up_available_at_html": "Pickup tilgængelig kl <strong>{{ location_name }}<\/strong>",
+      "pick_up_unavailable_at_html": "Pickup i øjeblikket ikke tilgængelig på <strong>{{ location_name }}<\/strong>"
+    }
+  },
+  "cart": {
+    "general": {
+      "title": "Min kurv."
     }
   }
 }
