@@ -24,7 +24,7 @@
                             <b>
                                 <span>★ ★ ★ ★ ☆</span>
                                 {{ section.settings.announcement_bar_verified_reviews_number }}
-                                VERIFIED REVIEWS</b>
+                                {{ 'strings.general.verified-reviews' | t }}</b>
                         </li>
                     </ul>
                 {% endif %}
@@ -71,7 +71,7 @@
                 <form class="tw-relative tw-mx-auto tw-flex tw-items-center tw-gap-6 " action="{{ routes.search_url }}" method="get">
                     <input name="type" type="hidden" value="product">
                     <input  class="tw-flex-1 tw-px-6 focus:tw-outline-none !tw-text-[16px] !tw-indent-0 !tw-m-0 !tw-h-[80px] !tw-leading-[80px]" type="search" name="q" id="q" placeholder="{{ 'general.search.placeholder' | t }}"
-                        value="{{search.terms | escape}}" 
+                        value="{{ search.terms | escape }}" 
                         role="combobox"
                         aria-expanded="false"
                         aria-owns="predictive-search-results-list"
