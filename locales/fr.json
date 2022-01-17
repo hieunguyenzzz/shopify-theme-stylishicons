@@ -1413,7 +1413,12 @@
       "turquoise": "Turquoise",
       "bell-gray-gray": "Bell Graygray",
       "charcoal-grey-alcantara": "Charcoal Grey Alcantara",
-      "creamy-alcantara": "Alcantara crémeux"
+      "creamy-alcantara": "Alcantara crémeux",
+      "light-grey-alcantara": "Alcantara gris clair",
+      "bottle-green-velvet": "Velours vert bouteille",
+      "dark-grey-velvet": "Velours gris foncé",
+      "dark-red-velvet": "Velours rouge foncé",
+      "creamy-boucle": "Boucle crémeuse"
     }
   }
 }
