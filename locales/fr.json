@@ -1022,13 +1022,16 @@
         "sms": {
           "disclaimer": {
             "description_html": "En vous inscrivant via un texte, vous acceptez de recevoir des messages de marketing automatisés récurrents, y compris des rappels de panier, au numéro de téléphone fourni. Le consentement n'est pas une condition d'achat. Répondre arrêter pour vous désabonner. Répondre Aide pour l'aide. La fréquence des messages varie. Les taux de MSG et de données peuvent s'appliquer. Voir notre %{privacy_policy_link} et %{terms_of_service_link}.",
-            "description_html_transactional": "Nous vous enverrons un reçu de commande et des mises à jour d'expédition récurrentes via un message texte. Répondre arrêter pour vous désabonner. Répondre Aide pour l'aide. La fréquence des messages varie. Les taux de MSG et de données peuvent s'appliquer. Voir notre politique de confidentialité et nos conditions d'utilisation."
+            "description_html_transactional": "Nous vous enverrons un reçu de commande et des mises à jour d'expédition récurrentes via un message texte. Répondre arrêter pour vous désabonner. Répondre Aide pour l'aide. La fréquence des messages varie. Les taux de MSG et de données peuvent s'appliquer. Voir notre politique de confidentialité et nos conditions d'utilisation.",
+            "terms_of_service": "Conditions d&#39;utilisation"
           }
         },
         "unsubscribe": {
           "title": "Vous avez désabonné",
           "description": "Vous ne recevrez plus de rappels de panier de notre part."
-        }
+        },
+        "post_accept_marketing_checkbox_label": "Vous êtes abonné à recevoir des nouvelles et des offres par courriel",
+        "pending_accept_marketing_checkbox_label": "Consultez votre courriel pour confirmer votre abonnement aux nouvelles et aux offres"
       },
       "shop_policies": {
         "legal_notice": "Mention légale",
@@ -1048,7 +1051,8 @@
         "installments": {
           "paid_in_installments": "Payé en piles avec salaire des magasins.",
           "view_schedule": "Voir l'horaire"
-        }
+        },
+        "terms_of_service": "Conditions d&#39;utilisation"
       },
       "order_payment_collection": {
         "changes_summary": {
