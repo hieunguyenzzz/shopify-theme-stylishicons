@@ -232,7 +232,8 @@
         "quantity": "Quantité",
         "sku": "UGS",
         "subtotal": "Total",
-        "total": "Total"
+        "total": "Total",
+        "fulfilled_at": "Accompli {{ date }}"
       },
       "discount": "Remise",
       "fulfillment_status": "Statut de réalisation",
@@ -240,7 +241,8 @@
       "shipping": "livraison",
       "shipping_address": "Adresse de livraison",
       "tax": "Impôt",
-      "title": "Commande"
+      "title": "Commande",
+      "cancelled_reason": "Raison: {{ reason }}"
     },
     "recover_password": {
       "cancel": "Annuler",
@@ -1389,7 +1391,8 @@
       "from": "À partir de",
       "to": "À",
       "max": "Max.",
-      "apply": "Appliquer"
+      "apply": "Appliquer",
+      "contemporary-inspiration": "Inspiration contemporaine"
     },
     "product_options": {
       "choose-colours": "Choisissez Couleurs:",
@@ -1613,7 +1616,34 @@
       "brass": "Laiton",
       "without-throw": "Sans lancer",
       "with-throw": "Avec un jet",
-      "small": "Petit"
+      "small": "Petit",
+      "ash-wood": "Ash Wood",
+      "silver": "Argent",
+      "olive": "olive",
+      "multi-color": "Couleur multiple",
+      "dark-wood": "Bois foncé",
+      "light-wood": "Bois clair"
     }
+  },
+  "templates": {
+    "search": {
+      "no_results": "Aucun résultat trouvé pour ''{{ terms }}\". Vérifiez l'orthographe ou utilisez d'autres mots ou phrases.",
+      "page": "Page",
+      "products": "Des produits",
+      "results_with_count": {
+        "one": "{{ count }} Résultats",
+        "other": "{{ count }} Résultats"
+      },
+      "results_with_count_and_term": {
+        "one": "{{ count }} Résultats trouvés pour ''{{ terms }}”"
+      },
+      "title": "Résultats de recherche",
+      "search_for": "Recherche \"{{ terms }}”",
+      "collections": "Collections",
+      "suggestions": "Suggestions"
+    }
+  },
+  "accessibility": {
+    "vendor": "TODO"
   }
 }
