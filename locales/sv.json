@@ -823,7 +823,9 @@
         "unsubscribe": {
           "title": "Du har slutat prenumerera",
           "description": "Du kommer inte att få några fler kund påminnelser från oss."
-        }
+        },
+        "post_accept_marketing_checkbox_label": "Du prenumererar på att få e-postmeddelanden och erbjudanden",
+        "pending_accept_marketing_checkbox_label": "Kontrollera din mejladress för att bekräfta prenumerationen på nyheter och erbjudanden"
       },
       "shop_policies": {
         "refund_policy": "Återbetalningspolicy",
@@ -1602,7 +1604,9 @@
       "new_product": "NY PRODUKT",
       "inspired_by": "Inspirerad av",
       "more-filters": "Fler filerfunktioner",
-      "filter-products": "Filterprodukter"
+      "filter-products": "Filterprodukter",
+      "clear-all": "Rensa alla",
+      "percentage_off": "{{number}} FRÅNLÄGE"
     },
     "product_options": {
       "classic": "Klassisk",
@@ -1836,5 +1840,27 @@
       "with-piping": "Med rörledningar",
       "oak-soap-finish": "Eksål"
     }
+  },
+  "templates": {
+    "search": {
+      "no_results": "Inga resultat hittades för \"{{ terms }}\". Kontrollera stavningen eller använd ett annat ord eller en annan fras.",
+      "page": "Sida",
+      "products": "Produkter",
+      "results_with_count": {
+        "one": "{{ count }} resultat",
+        "other": "{{ count }} resultat"
+      },
+      "results_with_count_and_term": {
+        "one": "{{ count }} resultat hittades för \"{{ terms }}”",
+        "other": "{{ count }} resultat hittades för \"{{ terms }}”"
+      },
+      "title": "Sökresultat",
+      "search_for": "Sök efter \"{{ terms }}”",
+      "collections": "Samlingar",
+      "suggestions": "Förslag"
+    }
+  },
+  "accessibility": {
+    "vendor": "TODO"
   }
 }
