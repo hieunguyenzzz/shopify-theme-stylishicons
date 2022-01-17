@@ -1606,7 +1606,15 @@
       "more-filters": "Fler filerfunktioner",
       "filter-products": "Filterprodukter",
       "clear-all": "Rensa alla",
-      "percentage_off": "{{number}} FRÅNLÄGE"
+      "percentage_off": "{{number}} FRÅNLÄGE",
+      "language_label": "Språk",
+      "verified-reviews": "Verifierade recensioner",
+      "from": "Från",
+      "to": "Till",
+      "max": "Max",
+      "apply": "Tillämpa",
+      "the-finer-details": "De finare detaljerna",
+      "contemporary-inspiration": "Modern inspiration"
     },
     "product_options": {
       "classic": "Klassisk",
