@@ -496,7 +496,7 @@
     
      window.addEventListener("themeloaded", function(event) { 
         Events.on('variantchange', function(variant,product, context){
-                    fetch(`/products/{{product.handle}}?section_id=product-template&variant=${variant.id}`)
+                    fetch(`?section_id=product-template&variant=${variant.id}`)
                     .then(response => response.text())
                     .then(data => {
                         function createElementFromHTML(htmlString) {
