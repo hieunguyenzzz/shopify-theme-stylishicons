@@ -1364,5 +1364,56 @@
         "next_day": "Prêt pour le ramassage le lendemain"
       }
     }
+  },
+  "strings": {
+    "general": {
+      "show_express_delivery_options": "Afficher les options de livraison express",
+      "learn_more": "Apprendre encore plus",
+      "verified_reviews": "Avis vérifiés",
+      "privacy_policy": "Politique de confidentialité",
+      "terms_conditions": "Termes et conditions",
+      "view_all": "VOIR TOUT",
+      "all_reviews": "Tous les avis",
+      "shop_instagram": "boutique Instagram",
+      "see_all": "VOIR TOUT",
+      "best_seller": "BEST-SELLER",
+      "new_product": "NOUVEAU PRODUIT",
+      "inspired_by": "Inspiré par",
+      "more-filters": "Plus de déclarants",
+      "filter-products": "Filtre Products",
+      "clear-all": "Effacer tout",
+      "percentage_off": "{{number}} DÉSACTIVÉ",
+      "language_label": "Langue"
+    },
+    "product_options": {
+      "choose-colours": "Choisissez Couleurs:",
+      "choose-colour": "Choisissez la couleur",
+      "choose-finish": "Choisir. Finir",
+      "color": "Couleur",
+      "choose-material": "Choisir. Matériel",
+      "upholstery": "Tapisserie",
+      "finish": "Finir",
+      "choose-materials": "Choisir. Matériaux",
+      "woods-finishes": "Woods \/ Finitions",
+      "material-size": "Matériel \/ taille",
+      "material": "Matériau",
+      "fabric": "Matrice",
+      "wood-options": "Options en bois",
+      "fabric-choice": "Choix du tissu:",
+      "diameter": "Diamètre",
+      "piping-option": "Option de tuyauterie",
+      "fibreglass": "Fibre de verre:",
+      "size": "Taille",
+      "position-of-chaise": "Position de chaise",
+      "chrome": "Chrome",
+      "amber": "ambre",
+      "dark-blue": "Bleu foncé",
+      "violet": "Violet",
+      "yellow": "Jaune",
+      "turquoise": "Turquoise",
+      "bell-gray-gray": "Bell Graygray",
+      "charcoal-grey-alcantara": "Charcoal Grey Alcantara",
+      "creamy-alcantara": "Alcantara crémeux"
+    }
   }
 }
