@@ -1383,7 +1383,8 @@
       "filter-products": "Filtre Products",
       "clear-all": "Effacer tout",
       "percentage_off": "{{number}} DÉSACTIVÉ",
-      "language_label": "Langue"
+      "language_label": "Langue",
+      "the-finer-details": "LES DÉTAILS LES PLUS FINS"
     },
     "product_options": {
       "choose-colours": "Choisissez Couleurs:",
