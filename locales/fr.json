@@ -1635,7 +1635,8 @@
         "other": "{{ count }} Résultats"
       },
       "results_with_count_and_term": {
-        "one": "{{ count }} Résultats trouvés pour ''{{ terms }}”"
+        "one": "{{ count }} Résultats trouvés pour ''{{ terms }}”",
+        "other": "{{ count }} Résultat:{{ terms }}”"
       },
       "title": "Résultats de recherche",
       "search_for": "Recherche \"{{ terms }}”",
