@@ -5,7 +5,7 @@
     "source.fixAll": false,
   },
   "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features",
+    "editor.defaultFormatter": "sissel.shopify-liquid",
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": false
     },
@@ -18,7 +18,7 @@
   },
   "prettier.enable": false,
   "git.ignoreLimitWarning": true,
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   "files.associations": {
     "*.liquid": "html"
   },

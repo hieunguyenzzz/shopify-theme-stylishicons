@@ -17,14 +17,15 @@
       "filter-products": "Filter products",
       "clear-all": "Clear all",
       "percentage_off": "{{number}} OFF",
-      "language_label":"Language",
-      "verified-reviews":"VERIFIED REVIEWS",
-      "from":"From",
-      "to":"To",
-      "max":"Max",
-      "apply":"Apply",
-      "the-finer-details":"THE FINER DETAILS",
-      "contemporary-inspiration":"CONTEMPORARY INSPIRATION"
+      "verified-reviews": "VERIFIED REVIEWS",
+      "from": "From",
+      "to": "To",
+      "max": "Max",
+      "apply": "Apply",
+      "the-finer-details": "THE FINER DETAILS",
+      "contemporary-inspiration": "CONTEMPORARY INSPIRATION",
+      "language_label": "Language",
+      "change-shipping-country-and-language": "Change shipping country and language"
     },
     "product_options": {
       "choose-colours": "Choose Colours:",
