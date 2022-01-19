@@ -1,13 +1,13 @@
 {
   "password": {
     "general": {
-      "thanks": "Merci pour votre inscription sur notre liste",
-      "enter_store": "Entrer dans la boutique en utilisant le mot de passe :",
+      "thanks": "Merci d'avoir rejoint notre liste",
+      "enter_store": "Connexion avec mot de passe:",
       "password": "Mot de passe",
       "enter": "Entrer",
       "email_address": "Adresse e-mail",
       "submit": "Soumettre",
-      "powered": "Cette boutique sera optimisée par"
+      "powered": "Ce magasin sera alimenté par"
     }
   },
   "general": {
@@ -52,37 +52,37 @@
   },
   "blogs": {
     "article": {
-      "posted_on_date_html": "Publié le {{ date }}",
-      "tags": "Tags",
-      "tagged": "Tagué",
+      "posted_on_date_html": "Posté le <time datetime=\"{{ date }}\">{{ date }}<\/time>",
+      "tags": "Mots clés",
+      "tagged": "Tagged",
       "comments": "commentaires",
-      "read_more": "En savoir plus"
+      "read_more": "Lire la suite"
     },
     "comments": {
-      "title": "Laisser un commentaire",
+      "title": "laissez un commentaire",
       "name": "Nom",
       "email": "E-mail",
-      "message": "Message",
-      "moderated": "Tous les commentaires du blog sont vérifiés avant d'être publiés",
-      "post": "Publier un commentaire",
-      "success_moderated": "Votre commentaire a bien été envoyé ! Nous le publierons un peu plus tard car notre blog est modéré.",
-      "success": "Votre commentaire a bien été envoyé ! Merci !",
+      "message": "Commenter",
+      "moderated": "Tous les commentaires des blogs sont vérifiés avant la publication",
+      "post": "Poster un commentaire",
+      "success_moderated": "Votre commentaire a été posté avec succès. Nous le publierons dans un petit moment, car notre blog est modéré.",
+      "success": "Votre commentaire a été posté avec succès! Merci!",
       "comments_with_count": {
-        "one": "{{ count }} commentaire",
+        "one": "{{ count }} commenter",
         "other": "{{ count }} commentaires"
       }
     },
     "sidebar": {
-      "social_title": "Rejoignez-nous sur",
+      "social_title": "Connecte-toi avec nous",
       "twitter_title": "Sur Twitter",
-      "facebook_title": "Aimez notre page Facebook",
-      "recent_posts": "Publications récentes",
-      "tags": "Filtrer les tags des articles"
+      "facebook_title": "Comme nous sur Facebook",
+      "recent_posts": "Messages récents",
+      "tags": "Filtrer les balises de l'article"
     }
   },
   "store_availability": {
     "general": {
-      "view_store_info": "Afficher les informations du magasin",
+      "view_store_info": "Voir les informations de magasin",
       "check_other_stores": "Vérifier la disponibilité dans d'autres magasins",
       "pick_up_available": "Ramassage disponible",
       "pick_up_currently_unavailable": "Ramassage actuellement indisponible",
@@ -125,23 +125,23 @@
     "general": {
       "all_collections": "Collections",
       "all_products": "Tous les produits",
-      "no_matches": "Il n'y a pas d'articles dans cette collection",
-      "shop_by_designer": "Achat par designer"
+      "no_matches": "Il n'y a aucun élément dans cette collection",
+      "shop_by_designer": "Acheter par Designer"
     },
     "sorting": {
-      "az": "Par ordre alphabétique, de A à Z",
-      "best_selling": "Meilleures ventes",
-      "date_ascending": "Date, du plus ancien au plus récent",
-      "date_descending": "Date, du plus récent au plus ancien",
-      "featured": "En vedette",
-      "price_ascending": "Prix, du moins cher au plus cher",
-      "price_descending": "Prix, du plus cher au moins cher",
+      "az": "Alphabétiquement, a-z",
+      "best_selling": "Meilleure vente",
+      "date_ascending": "Date, vieux à nouveau",
+      "date_descending": "Date, nouvelle à vieille",
+      "featured": "Mis en exergue",
+      "price_ascending": "Prix ​​croissant",
+      "price_descending": "Prix, élevé à faible",
       "title": "Trier par",
-      "za": "Par ordre alphabétique, de Z à A"
+      "za": "Alphabétiquement, Z-A"
     },
     "filter": {
-      "filtering_by": "Filtrer par :",
-      "refine": "Affiner"
+      "filtering_by": "Filtrage par:",
+      "refine": "Refine"
     }
   },
   "contact": {
@@ -149,31 +149,31 @@
       "name": "Nom",
       "firstname": "Prénom",
       "lastname": "Nom de famille",
-      "subject": "Sujet",
-      "companyname": "Entreprise",
-      "address": "Address",
+      "subject": "Objet",
+      "companyname": "Société",
+      "address": "Adresse",
       "email": "E-mail",
-      "phone": "Téléphone",
+      "phone": "Numéro de téléphone",
       "message": "Message",
-      "websiteurl": "URL du site web",
-      "acceptsmarketing": "Abonnez-vous pour rester informé des nouveaux produits et offres !",
+      "websiteurl": "URL du site Web",
+      "acceptsmarketing": "Abonnez-vous pour rester à jour avec de nouveaux produits et offres !",
       "send": "Envoyer",
-      "post_success": "Merci de nous avoir contactés. Nous vous répondrons dans les plus brefs délais."
+      "post_success": "Merci de nous avoir contacté. Nous vous contacterons dès que possible."
     }
   },
   "customer": {
     "account": {
-      "title": "Détails du compte",
-      "logout": "DÉCONNEXION",
-      "link": "Adresse principale",
+      "title": "Compte",
+      "logout": "Se déconnecter",
+      "link": "Retour au compte",
       "returns_content": "Retour \/ échange",
-      "signup": "Se connecter ou créer un compte",
+      "signup": "Connexion ou création d'un compte",
       "details": "Détails du compte",
-      "view_addresses": "Afficher les adresses",
+      "view_addresses": "Voir les adresses",
       "return": "Retour aux détails du compte"
     },
     "activate_account": {
-      "cancel": "Refuser l'invitation",
+      "cancel": "Invitation refusée",
       "password": "Mot de passe",
       "password_confirm": "Confirmez le mot de passe",
       "submit": "Activer le compte",
@@ -187,7 +187,7 @@
       "address2": "Adresse 2",
       "cancel": "Annuler",
       "city": "Ville",
-      "company": "Entreprise",
+      "company": "Société",
       "country": "Pays",
       "default": "Adresse principale",
       "delete": "Supprimer",
@@ -195,12 +195,12 @@
       "edit_address": "Modifier l'adresse",
       "first_name": "Prénom",
       "last_name": "Nom de famille",
-      "phone": "Téléphone",
+      "phone": "Téléphoner",
       "province": "Province",
       "set_default": "Définir comme adresse par défaut",
       "title": "Vos adresses",
-      "update": "Mettre à jour l'adresse",
-      "zip": "Code postal \/ Zip"
+      "update": "Adresse de mise à jour",
+      "zip": "Code postal \/ zip"
     },
     "login": {
       "cancel": "Retour à la boutique",
@@ -232,7 +232,8 @@
         "quantity": "Quantité",
         "sku": "UGS",
         "subtotal": "Total",
-        "total": "Total"
+        "total": "Total",
+        "fulfilled_at": "Accompli {{ date }}"
       },
       "discount": "Remise",
       "fulfillment_status": "Statut de réalisation",
@@ -240,7 +241,8 @@
       "shipping": "livraison",
       "shipping_address": "Adresse de livraison",
       "tax": "Impôt",
-      "title": "Commande"
+      "title": "Commande",
+      "cancelled_reason": "Raison: {{ reason }}"
     },
     "recover_password": {
       "cancel": "Annuler",
@@ -1376,7 +1378,7 @@
       "all_reviews": "Tous les avis",
       "shop_instagram": "boutique Instagram",
       "see_all": "VOIR TOUT",
-      "best_seller": "BEST SELLER",
+      "best_seller": "BEST-SELLER",
       "new_product": "NOUVEAU PRODUIT",
       "inspired_by": "Inspiré par",
       "more-filters": "Plus de déclarants",
@@ -1389,7 +1391,8 @@
       "from": "À partir de",
       "to": "À",
       "max": "Max.",
-      "apply": "Appliquer"
+      "apply": "Appliquer",
+      "contemporary-inspiration": "Inspiration contemporaine"
     },
     "product_options": {
       "choose-colours": "Choisissez Couleurs:",
@@ -1613,7 +1616,35 @@
       "brass": "Laiton",
       "without-throw": "Sans lancer",
       "with-throw": "Avec un jet",
-      "small": "Petit"
+      "small": "Petit",
+      "ash-wood": "Ash Wood",
+      "silver": "Argent",
+      "olive": "olive",
+      "multi-color": "Couleur multiple",
+      "dark-wood": "Bois foncé",
+      "light-wood": "Bois clair"
     }
+  },
+  "templates": {
+    "search": {
+      "no_results": "Aucun résultat trouvé pour ''{{ terms }}\". Vérifiez l'orthographe ou utilisez d'autres mots ou phrases.",
+      "page": "Page",
+      "products": "Des produits",
+      "results_with_count": {
+        "one": "{{ count }} Résultats",
+        "other": "{{ count }} Résultats"
+      },
+      "results_with_count_and_term": {
+        "one": "{{ count }} Résultats trouvés pour ''{{ terms }}”",
+        "other": "{{ count }} Résultat:{{ terms }}”"
+      },
+      "title": "Résultats de recherche",
+      "search_for": "Recherche \"{{ terms }}”",
+      "collections": "Collections",
+      "suggestions": "Suggestions"
+    }
+  },
+  "accessibility": {
+    "vendor": "TODO"
   }
 }
