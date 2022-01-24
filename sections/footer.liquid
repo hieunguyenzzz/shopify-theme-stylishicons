@@ -196,6 +196,8 @@
                                                                 {%- for language in localization.available_languages -%}
                                                                     <li class="" tabindex="-1">
                                                                         <div class="tw-px-3 tw-items-center tw-flex tw-gap-2 tw-py-1 hover:tw-bg-gray-200 {% if language.iso_code == localization.language.iso_code %} tw-font-bold{% endif %} focus-inset" href="#" hreflang="{{ language.iso_code }}" lang="{{ language.iso_code }}" {% if language.iso_code == localization.language.iso_code %} aria-current="true" {% endif %} data-lang="{{ language.iso_code }}" data-value="{{ language.iso_code }}">
+                                                                            {{ language.name | capitalize }}
+                                                                            -
                                                                             {{ language.endonym_name | capitalize }}
                                                                         </div>
                                                                     </li>
@@ -416,29 +418,12 @@
                 inputcountrycode: this.querySelector('input[name="country_code"]'),
                 panel: this.querySelector('ul')
             };
-            this.addEventListener('keyup', this.onContainerKeyUp.bind(this));
-
             this.querySelectorAll('li div').forEach(item => item.addEventListener('click', this.onItemClick.bind(this)));
-        }
-
-        hidePanel() {
-            this.elements.button.setAttribute('aria-expanded', 'false');
-            this.elements.panel.setAttribute('hidden', true);
-        }
-
-        onContainerKeyUp(event) {
-            if (event.code.toUpperCase() !== 'ESCAPE')
-                return;
-
-
-            this.hidePanel();
-            this.elements.button.focus();
         }
 
         onItemClick(event) {
             event.preventDefault();
             const form = this.querySelector('form');
-            console.log({event})
             if(event.currentTarget.dataset.lang){
                 this.elements.inputlocalecode.value = event.currentTarget.dataset.lang;
             }
@@ -446,21 +431,6 @@
                 this.elements.inputcountrycode.value = event.currentTarget.dataset.country;
             }
             form.submit();
-
-
-        }
-
-        openSelector() {
-            this.elements.button.focus();
-            this.elements.panel.toggleAttribute('hidden');
-            this.elements.button.setAttribute('aria-expanded', (this.elements.button.getAttribute('aria-expanded') === 'false').toString());
-        }
-
-        closeSelector(event) {
-            const shouldClose = event.relatedTarget && event.relatedTarget.nodeName === 'BUTTON';
-            if (event.relatedTarget === null || shouldClose) {
-                this.hidePanel();
-            }
         }
     }
 
