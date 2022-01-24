@@ -4894,7 +4894,7 @@
         "type": "product-recommendations",
         "settings": {
           "show_product_recommendations": true,
-          "product_recommendations_heading": "Människor köpte också"
+          "product_recommendations_heading": "People Also Bought"
         }
       },
       "page-custom-one": {
