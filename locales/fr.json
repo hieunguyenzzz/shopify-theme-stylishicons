@@ -304,7 +304,7 @@
       "sold_out": "Épuisé",
       "unavailable": "Non disponible",
       "compare_at": "Comparer à",
-      "from_lowest_price_html": "de {{ lowest_price }}",
+      "from_lowest_price_html": "{{ lowest_price }}",
       "add_to_cart": "Ajouter au panier",
       "quantity": "Quantité",
       "select_options": "Voir les options",
