@@ -1,11 +1,27 @@
+{%- assign currency_selector = false -%}
 
+{%- if  shop.enabled_currencies.size > 1 -%}
+    {%- assign currency_selector = true -%}
+{%- endif -%}
 {% assign animationcount = 0 %}
 <nav style="--delay-unit:1000ms;--couter-name:animateCount" class="mobile-menu" role="navigation" data-section-id="{{ section.id }}" data-section-type="mobile-navigation">
-  <div style="{% assign animationcount = animationcount | plus :1 %}--delay-animation: {{animationcount | times:75  }}ms"  class="slideout__trigger--close animation-delay">
-    <button  class="slideout__trigger-mobile-menu js-slideout-close" data-slideout-direction="right" aria-label="Close navigation" tabindex="0" type="button" name="button" aria-expanded="false">
+  <div style="{% assign animationcount = animationcount | plus :1 %}--delay-animation: {{animationcount | times:75  }}ms"  class="slideout__trigger--close animation-delay tw-flex tw-justify-between tw-items-center tw-pr-[20px]" >
+    <button  class="slideout__trigger-mobile-menu js-slideout-close !tw-w-auto" data-slideout-direction="right" aria-label="Close navigation" tabindex="0" type="button" name="button" aria-expanded="false">
       <div class="icn-close"></div>
     </button>
+    <label aria-controls="FooterLanguageList" aria-describedby="FooterLanguageLabel" aria-expanded="false" class="tw-btn tw-btn-outline tw-rounded-none tw-btn-xs tw-items-center tw-gap-3" for="footercountryformmodal" tabindex="0" type="button">
+      <!-- {%- assign iconPath =  localization.country.iso_code | downcase | append:'-flag' | append: '.svg' %}
+      <img class="tw-w-4 tw-h-4 tw-rounded-full tw-object-cover" src="{{ iconPath | file_url}}"/>
+      {{ localization.country.name | capitalize }} -->
+      {{ localization.country.currency.iso_code }}
+      {{ localization.country.currency.symbol }} -
+      {{localization.language.endonym_name}}
+      <svg aria-hidden="true" class="icon icon-caret tw-text-sm tw-ml-3" focusable="false" height="1em" role="presentation" viewbox="0 0 10 6" width="1em">
+          <path clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill-rule="evenodd" fill="currentColor"/>
+      </svg>
+  </label>
   </div>
+
   {% for block in section.blocks %}
     {% case block.type %}
       {% when 'search_box' %}
