@@ -42,8 +42,7 @@
                 <a href="{{ link.url }}">{% if shop.locale == "ia" %}{{ link.title | escape | truncatewords: 10000 }}{% else %}{{ link.title | escape | truncatewords: 6 }}{% endif %}</a>
               </li>
               <li style="--delay-animation: {{animationcount | times:75  }}ms" class="accordion__content animation-delay">
-                {% assign megamenu__header = link.title | downcase %}
-                                {% if megamenu__header == 'designers' %}
+                                {% if link.url contains 'designers' %}
                                     <ul class="accordion__submenu-1">
                                         {% render 'designer-listitems'  class: 'mobile-menu__item' %}
                                     </ul>
