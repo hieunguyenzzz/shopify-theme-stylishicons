@@ -4233,6 +4233,10 @@ html {
   margin-bottom: 1.5rem;
 }
 
+.\!tw-mb-0 {
+  margin-bottom: 0px !important;
+}
+
 .tw-block {
   display: block;
 }
@@ -4255,6 +4259,10 @@ html {
 
 .\!tw-flex {
   display: flex !important;
+}
+
+.tw-inline-flex {
+  display: inline-flex;
 }
 
 .tw-grid {
@@ -4610,6 +4618,10 @@ html {
 
 .tw-gap-px {
   gap: 1px;
+}
+
+.tw-gap-1 {
+  gap: 0.25rem;
 }
 
 .tw-space-y-4 > :not([hidden]) ~ :not([hidden]) {
@@ -5005,6 +5017,10 @@ html {
   text-indent: 0px !important;
 }
 
+.tw-align-middle {
+  vertical-align: middle;
+}
+
 .tw-text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
@@ -5081,6 +5097,10 @@ html {
 
 .tw-font-semibold {
   font-weight: 600;
+}
+
+.\!tw-font-normal {
+  font-weight: 400 !important;
 }
 
 .tw-uppercase {
