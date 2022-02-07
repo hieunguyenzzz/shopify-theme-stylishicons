@@ -3,76 +3,103 @@ Custom blocks from custom pages and collections in 1 single snippet to reduce re
 {% endcomment %}
 
 <div data-section-id="{{ section.id }}" data-section-type="custom-page-section">
-  <div id="content" class="custom-page-content">
-      {% if settings.breadcrumb %}
-        {% render 'breadcrumb' %}
-      {% endif %}
-      <!-- start the custom content -->
-      <div class="page-sections tw-space-y-6">
-        <div class="section-title desktop-12 mobile-3 span-12">
-          <h1 class="tw-py-6">
-             {{page.title }}
-          </h1>
-        </div>
-        <div class="tw-block tw-w-full tw-text-center tw-mx-auto tw-max-w-prose tw-prose">
-          {{page.content }}
-        </div>
-        <div class="{% render '[class]-container' fluid:true  class: 'tw-mt-6' %} tw-max-w-[2000px]">
-          <div id="gallery" class="gallery tw-grid-cols-2 tw-grid md:tw-grid-cols-3 lg:tw-grid-cols-4 tw-gap-px">
-
-          </div>
-          <div class="tw-flex tw-w-full tw-justify-center tw-text-center tw-mt-12">
-            <div>
-              <button hidden id="seemorebtn" class="tw-h-12 tw-inline-block tw-leading-[48px] tw-px-6 tw-text-center">
-                {{ 'strings.general.see_all' | t }}
-              </button>
+    <div class="custom-page-content" id="content">
+        {% if settings.breadcrumb %}
+            {% render 'breadcrumb' %}
+        {% endif %}
+        <!-- start the custom content -->
+        <div class="page-sections tw-space-y-6">
+            <div class="section-title desktop-12 mobile-3 span-12">
+                <h1 class="tw-py-6">
+                    {{page.title }}
+                </h1>
             </div>
-          </div>
+            <div class="tw-block tw-w-full tw-text-center tw-mx-auto tw-max-w-prose tw-prose">
+                {{page.content }}
+            </div>
+            <div class="{% render '[class]-container' fluid:true class: 'tw-mt-6' %} tw-max-w-[2000px]">
+                <div class="gallery tw-grid-cols-2 tw-grid md:tw-grid-cols-3 lg:tw-grid-cols-4 tw-gap-px" id="gallery"></div>
+                <div class="tw-flex tw-w-full tw-justify-center tw-text-center tw-mt-12">
+                    <div>
+                        <button class="tw-h-12 tw-inline-block tw-leading-[48px] tw-px-6 tw-text-center" hidden id="seemorebtn">
+                            {{ 'strings.general.see_all' | t }}
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
         </div>
-        <div class="clear"></div>
-      </div>
-      <!-- end the custom content -->
-  </div>
+        <!-- end the custom content -->
+    </div>
 </div>
 <script>
-  function createElementFromHTML(htmlString) {
-    var div = document.createElement('div');
-    div.innerHTML = htmlString.trim();
+    function createElementFromHTML(htmlString) {
+        var div = document.createElement("div");
+        div.innerHTML = htmlString.trim();
 
-    // Change this to div.childNodes to support multiple top-level nodes
-    return div.firstChild; 
-  }
-  let promohashtags =["#designericonsOnsale", "#designericoniconsPromo", "#designericonSale", "#designericonWeeklySale", "#designericonFlashSale", "#designericonGrandSale",]
-  function onloadMoreClick (e){
-      console.log(e)
-      const page = e.target.getAttribute('data-page')
-      if(page){
-        loadFeed(page)
-      }
+        // Change this to div.childNodes to support multiple top-level nodes
+        return div.firstChild;
     }
-  function loadFeed (page){
-    let url 
-    if(page){
-      url = '{{ 'instagram-feed-[page].json' | file_url }}'.replace('[page]',page);
-    }else{
-      url = '{{ 'instagram-feed.json' | file_url }}'
+    let promohashtags = [
+        "#designericonsOnsale",
+        "#designericoniconsPromo",
+        "#designericonSale",
+        "#designericonWeeklySale",
+        "#designericonFlashSale",
+        "#designericonGrandSale"
+    ]
+    function onloadMoreClick(e) {
+        console.log(e)
+        const page = e.target.getAttribute("data-page")
+        if (page) {
+            loadFeed(page)
+        }
     }
-    
-    document.querySelector('#seemorebtn').addEventListener('click',onloadMoreClick)
-    fetch(url).then(res=>res.json()).then(result=>{
-        console.log({result})
-        document.querySelector('#seemorebtn').setAttribute('hidden',true)
-        const itemsFragments = document.createDocumentFragment()
-        let str = ''
-        result.data.user.edge_owner_to_timeline_media.edges.filter(
-            ({node})=>{
-                const text = node.edge_media_to_caption.edges[0].node.text
-                return !promohashtags.find((hashtag)=>text.includes(hashtag))
-            }
-        ).forEach(({node})=>{
-            const text = node.edge_media_to_caption.edges[0].node.text
-            let imageUrl = `https://raw.githubusercontent.com/ngohoanglong/instagram-feed/main/out/images/instagram-feed-${node.id}.jpg`
-            let str = `<a target="_blank" href="https://www.instagram.com/p/${node.shortcode}/"  class="keen-slider__slide tw-group tw-relative tw-leading-none tw-pb-[100%]">
+    function loadFeed(page) {
+        let url
+        if (page) {
+            url = "{{ " instagram - feed - [page].json " | file_url }}".replace("[page]", page);
+        } else {
+            url = "{{ " instagram - feed.json " | file_url }}"
+        }
+
+        document
+            .querySelector("#seemorebtn")
+            .addEventListener("click", onloadMoreClick)
+            fetch(url)
+            .then(res => res.json())
+            .then(result => {
+                console
+                    .log({result})
+                    document
+                    .querySelector("#seemorebtn")
+                    .setAttribute("hidden", true)
+                const itemsFragments = document.createDocumentFragment()
+                let str = ""
+                result
+                    .data
+                    .user
+                    .edge_owner_to_timeline_media
+                    .edges
+                    .filter(({node}) => {
+                        const text = node
+                            .edge_media_to_caption
+                            .edges[0]
+                            .node
+                            .text
+                        return ! promohashtags.find((hashtag) => text.includes(hashtag))
+                    })
+                    .forEach(({node}) => {
+                        const text = node
+                            .edge_media_to_caption
+                            .edges[0]
+                            .node
+                            .text
+                        let imageUrl = ` https://res.cloudinary.com/dfgbpib38/image/upload/w_400,f_auto/instagram/ngohoanglong/instagram-feed/main/out/images/instagram-feed-${
+                            node.id
+                        }.jpg` let str = `<a target="_blank" href="https://www.instagram.com/p/${
+                            node.shortcode
+                        }/"  class="keen-slider__slide tw-group tw-relative tw-leading-none tw-pb-[100%]">
                 <img class="lazyload  lazyload-fade tw-absolute tw-inset-0 !tw-w-full !tw-h-full tw-object-cover tw-leading-none " data-src="${imageUrl}" alt="{{shop.name}}"/>
                 <noscript>
                   <img class="lazyload  lazyload-fade tw-absolute tw-inset-0 !tw-w-full !tw-h-full tw-object-cover tw-leading-none " src="${imageUrl}" alt="{{shop.name}}"/>
@@ -85,24 +112,32 @@ Custom blocks from custom pages and collections in 1 single snippet to reduce re
                     ${text}
                   </p>
                 </div>
-            </a>`
-          document.querySelector('#gallery').appendChild(createElementFromHTML(str))
-        })
-        try {
-          let nextCursor = result.data.user.edge_owner_to_timeline_media.page_info.end_cursor
-          if(nextCursor){
-            let url = '{{ 'instagram-feed-nextCursor.json' | file_url }}'.replace('nextCursor',nextCursor)
-            document.querySelector('#seemorebtn').removeAttribute('hidden')
-            if(page){
-              document.querySelector('#seemorebtn').setAttribute('data-page',page+1)
-            }else{
-              document.querySelector('#seemorebtn').setAttribute('data-page',2)
-            }
-          }
-        } catch (error) {
-          console.error('nextCursor not found',error)
-        }
-    })
-  }
-  loadFeed()
+            </a>` document.querySelector("#gallery").appendChild(createElementFromHTML(str))
+                    })
+                try {
+                    let nextCursor = result
+                        .data
+                        .user
+                        .edge_owner_to_timeline_media
+                        .page_info
+                        .end_cursor
+                    if (nextCursor) {
+                        let url = "{{ " instagram - feed - nextCursor
+                            .json " | file_url }}"
+                            .replace("nextCursor", nextCursor)
+                            document
+                            .querySelector("#seemorebtn")
+                            .removeAttribute("hidden")
+                        if (page) {
+                            document.querySelector("#seemorebtn").setAttribute("data-page", page + 1)
+                        } else {
+                            document.querySelector("#seemorebtn").setAttribute("data-page", 2)
+                        }
+                    }
+                } catch (error) {
+                    console.error("nextCursor not found", error)
+                }
+            })
+    }
+    loadFeed()
 </script>
