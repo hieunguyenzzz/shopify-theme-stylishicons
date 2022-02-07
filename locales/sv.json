@@ -613,27 +613,27 @@
             "one": "Din beställning är bearbetad. Beräknad väntetid är %{count} minut.",
             "other": "Din beställning är bearbetad. Beräknad väntetid är %{count} minuter."
           },
-          "long": "Du får ett e-post när din beställning har behandlats. Det finns idag en stor mängd order.",
+          "long": "Du får ett mail så snart din beställning bearbetas. Det finns för närvarande en hög volym beställningar.",
           "no_auto_refresh_html": "Om du inte automatiskt omdirigeras, %{link}.",
-          "refresh_this_page": "uppdatera sidan"
+          "refresh_this_page": "uppdatera den här sidan"
         }
       },
       "failed_payment": {
-        "page_title": "Betalning kan inte behandlas",
-        "title": "Betalning kan inte behandlas",
+        "page_title": "Betalning kunde inte behandlas",
+        "title": "Betalning kunde inte behandlas",
         "payment_not_processed_title": "Din betalning kunde inte behandlas",
-        "payment_not_processed_text": "Du har inte åtalats. Återgå till din varukorg för att slutföra köpet.",
+        "payment_not_processed_text": "Du har inte blivit debiterad. Återgå till din kundvagn för att slutföra ditt köp.",
         "return_to_cart_button_label": "Återgå till kundvagnen"
       },
       "payment_gateway": {
         "credit_card_label": "Kreditkort",
         "bank_deposit_label": "Bank insättning",
-        "cash_on_delivery_label": "Postförskott (COD)",
-        "money_order_label": "POSTANVISNING"
+        "cash_on_delivery_label": "Kontanter vid leverans (COD)",
+        "money_order_label": "Penningorder"
       },
       "thank_you": {
         "title": "Tack för ditt köp!",
-        "confirmation_email_sent_text": "En e-postbekräftelse har skickats till %{email}",
+        "confirmation_email_sent_text": "Ett bekräftelsemail har skickats till %{email}",
         "return_to_store_link_label": "Fortsätt handla",
         "print_link_label": "Skriv ut kvitto",
         "payment_information_title": "Betalningsinformation",
@@ -650,7 +650,7 @@
         "shipping_method_title": "Frakt metod",
         "tracking_number": "Spårningsnummer:",
         "company_tracking_number": "%{company} spårningsnummer:",
-        "estimated_arrival": "Beräknat leveransdatum:",
+        "estimated_arrival": "Beräknat leveransdatum: ",
         "re-order": "Förrätta samma saker",
         "confirmed": "Bekräftad",
         "gift_card_confirmation_by_text": "Presentkort skickas via text. Om du inte har fått din, försök skicka dem igen eller kontakta oss.",
@@ -692,9 +692,9 @@
         "order_updates_title": "Beställ uppdateringar",
         "shop_phone_description": "Du får en text med en länk till butiksappen för att hjälpa till att spåra din beställning.",
         "order_updates_description_html": "Uppdateringar skickas till %{customer_contact}",
-        "order_updates_current_step_prefix": "Aktuellt steg:",
-        "order_updates_past_step_prefix": "Tidigare steg:",
-        "order_updates_upcoming_step_prefix": "Kommande steg:",
+        "order_updates_current_step_prefix": "Aktuellt steg: ",
+        "order_updates_past_step_prefix": "Tidigare steg: ",
+        "order_updates_upcoming_step_prefix": "Kommande steg: ",
         "in_transit": "På väg",
         "in_transit_title": "Din beställning är på väg",
         "in_transit_description": "Du får uppdateringar om dess framsteg.",
@@ -752,7 +752,7 @@
         },
         "pick_up_in_store_marker": {
           "current": "Aktuell leveransplats",
-          "shipping": "Pickupplats"
+          "shipping": "Pickup plats"
         },
         "fulfillment": {
           "fulfilled_table_title": "Föremål i denna försändelse",
@@ -816,50 +816,50 @@
           "disclaimer": {
             "privacy_policy": "Integritetspolicy",
             "terms_of_service": "Användarvillkor",
-            "description_html": "Genom att registrera dig via text godkänner du att få återkommande automatiserade marknadsföring meddelanden, inklusive kund påminnelser, på det telefonnummer som. Samtycke är inte ett villkor för köpet. Svara STOP till unsubscribe. Svara HELP för att få hjälp. Meddelandefrekvensen varierar. Msg och datahastigheter kan tillkomma. Visa vårt %{privacy_policy_link} och %{terms_of_service_link}.",
-            "description_html_transactional": "Vi skickar dig en order mottagande och återkommande frakt uppdateringar via SMS. Svara STOP till unsubscribe. Svara HELP för att få hjälp. Meddelandefrekvensen varierar. Msg och datahastigheter kan tillkomma. Visa vår sekretesspolicy och användarvillkor."
+            "description_html": "Genom att anmäla dig via text accepterar du att få återkommande automatiserade marknadsföringsmeddelanden, inklusive varukorg påminnelser, i det angivna telefonnumret. Samtycke är inte ett inköps villkor. Svara stopp för att avregistrera. Svara hjälp för hjälp. Meddelandefrekvensen varierar. MSG & Data Priser kan gälla. Visa vår %{privacy_policy_link} och %{terms_of_service_link}.",
+            "description_html_transactional": "Vi skickar dig ett orderkvitto och återkommande fraktuppdateringar via SMS. Svara stopp för att avregistrera. Svara hjälp för hjälp. Meddelandefrekvensen varierar. MSG & Data Priser kan gälla. Se vår sekretesspolicy och användarvillkor."
           }
         },
         "unsubscribe": {
-          "title": "Du har slutat prenumerera",
-          "description": "Du kommer inte att få några fler kund påminnelser från oss."
+          "title": "Du har avstått",
+          "description": "Du kommer inte att få några mer vagn påminnelser från oss."
         },
-        "post_accept_marketing_checkbox_label": "Du prenumererar på att få e-postmeddelanden och erbjudanden",
-        "pending_accept_marketing_checkbox_label": "Kontrollera din mejladress för att bekräfta prenumerationen på nyheter och erbjudanden"
+        "post_accept_marketing_checkbox_label": "Du prenumererar på att ta emot e-postnyheter och erbjudanden",
+        "pending_accept_marketing_checkbox_label": "Kontrollera ditt mail för att bekräfta din prenumeration på nyheter och erbjudanden"
       },
       "shop_policies": {
         "refund_policy": "Återbetalningspolicy",
         "privacy_policy": "Integritetspolicy",
         "terms_of_service": "Användarvillkor",
         "legal_notice": "Rättsligt meddelande",
-        "shipping_policy": "sjöfartspolitik",
+        "shipping_policy": "Fraktpolitik",
         "terms_of_sale": "Försäljningsvillkor",
-        "subscription_policy": "prenumeration policy"
+        "subscription_policy": "Prenumerationspolitik"
       },
       "remember_me": {
-        "shopify_pay_label": "Shop Pay",
+        "shopify_pay_label": "Butikslön",
         "save": "Spara",
         "title": "Kom ihåg mig",
-        "label": "Spara mina uppgifter för en snabbare kassan",
-        "description_html": "Nästa gång du kolla in här eller på andra butiker som drivs av Shopify får du en kod via textmeddelande till säkert köp med Shop Pay.",
+        "label": "Spara min information för en snabbare checkout",
+        "description_html": "Nästa gång du checkar här eller på andra butiker som drivs av Shopify, får du en kod via textmeddelande för att säkert köpa med butikslön.",
         "mobile_phone_icon_alt": "Mobiltelefon",
         "mobile_phone_number": "mobilnummer",
-        "terms_and_privacy_html": "Genom att fortsätta godkänner du Shop Pay s %{privacy_href} och %{terms_href}.",
+        "terms_and_privacy_html": "Genom att fortsätta, accepterar du att shoppa löner %{privacy_href} och %{terms_href}.",
         "privacy_policy": "Integritetspolicy",
         "terms_of_service": "Användarvillkor",
         "errors": {
-          "optin": "Shop Pay är inte tillgänglig"
+          "optin": "Butikslön är inte tillgänglig"
         },
         "installments": {
-          "paid_in_installments": "Betalas ut i omgångar med Shop Pay.",
-          "view_schedule": "Se spelschemat"
+          "paid_in_installments": "Betald i avdrag med butikslön.",
+          "view_schedule": "Visa schema"
         }
       },
       "notifications": {
-        "title": "anmälningar"
+        "title": "Anmälningar"
       },
       "order_payment_collection": {
-        "custom_line_item_description": "Belopp att betala för beställning %{order_name}",
+        "custom_line_item_description": "Belopp att betala för order %{order_name}",
         "changes_summary": {
           "added": {
             "one": "Lagt till",
@@ -869,30 +869,30 @@
           "subtracted": "%{count} tog bort"
         },
         "additional_payment_requested": "Betalning av %{total_outstanding} behövs",
-        "checkout_review_and_pay": "Du beställer %{order_name} uppdaterades. Granska dessa förändringar sedan betala för att bekräfta din beställning.",
-        "order_updated_on": "Din beställning uppdaterades den %{last_edited_at}.",
-        "order_review_and_pay": "Din beställning har uppdaterats. Granskning och betala för att bekräfta din beställning.",
+        "checkout_review_and_pay": "Du beställer %{order_name} uppdaterades. Granska dessa ändringar, betala sedan för att bekräfta din beställning.",
+        "order_updated_on": "Din beställning uppdaterades på %{last_edited_at}.",
+        "order_review_and_pay": "Din beställning uppdaterades. Granska och betala för att bekräfta din beställning.",
         "pay_now": "Betala nu"
       },
       "change_currency": {
         "currency_button_label": "%{currency} (%{currency_symbol})",
-        "credit_card_will_be_charged_html": "Ditt kreditkort kommer att debiteras %{amount}",
-        "payment_total_label": "betalning totalt",
+        "credit_card_will_be_charged_html": "Ditt kreditkort debiteras %{amount}",
+        "payment_total_label": "Betalning totalt",
         "conversion_rate": "1 %{from_currency_code} = %{rate} %{to_currency_code}",
         "change_currency_link": "Ändra till %{currency_name}",
-        "card_provider_fx_charges_warning": "Din kortleverantören får ta ut avgifter på %{currency_code} transaktioner.",
-        "currency_not_supported_by_shop": "Valutan du valde är inte längre tillgängligt. Alla priser är nu i %{currency_code}."
+        "card_provider_fx_charges_warning": "Din kortleverantör kan debitera avgifter på %{currency_code} transaktioner.",
+        "currency_not_supported_by_shop": "Den valuta du valde är inte längre tillgänglig. Alla priser är nu i %{currency_code}."
       },
       "change_country": {
-        "cart_updated_based_on_country": "Din varukorg har uppdaterats baserat på leveransland."
+        "cart_updated_based_on_country": "Din varukorg har uppdaterats baserat på ditt fraktland."
       },
       "tips": {
-        "title": "Lägg spets",
-        "description": "Visa din service för laget på %{shop_name}",
-        "presets_description": "Välj ett tips procentsats",
-        "custom_label": "Anpassad spets",
-        "add_tip": "Lägg spets",
-        "update_tip": "Uppdatera spets",
+        "title": "Lägga tips",
+        "description": "Visa ditt stöd för laget på %{shop_name}",
+        "presets_description": "Välj en spetsprocent",
+        "custom_label": "Skräddarsydda",
+        "add_tip": "Lägga tips",
+        "update_tip": "Uppdateringstips",
         "message": "Tack, vi uppskattar det",
         "preset_label": "%{tip_percent}%",
         "no_tip_label": "Ingen"
@@ -900,7 +900,7 @@
       "open_graph_meta_tag": {
         "title_with_products": {
           "zero": "Inköp %{product_name}",
-          "one": "Inköp %{product_name} och %{count} Övrigt objekt",
+          "one": "Inköp %{product_name} och %{count} Övrigt föremål",
           "other": "Inköp %{product_name} och %{count} andra saker"
         }
       },
@@ -986,7 +986,7 @@
     },
     "collections": {
       "sorting": {
-        "manual": "Presenteras",
+        "manual": "Presenterad",
         "best_selling": "Bästsäljare",
         "az": "Alfabetiskt, A-Z",
         "za": "Alfabetiskt, z-a",
@@ -1024,20 +1024,20 @@
       "email_domain_invalid": "leverantören stöds inte",
       "invalid_for_country": "är inte giltig för %{country}",
       "invalid_for_country_and_province": "är inte giltig för %{province} och %{country}",
-      "invalid_province_in_country": "är inte ett giltigt provins %{country}",
+      "invalid_province_in_country": "är inte en giltig provins i %{country}",
       "invalid_state_in_country": "är inte ett giltigt tillstånd i %{country}",
-      "invalid_region_in_country": "är inte ett giltigt region %{country}",
+      "invalid_region_in_country": "är inte en giltig region i %{country}",
       "less_than_or_equal_to": "måste vara mindre än eller lika med %{count}",
       "not_supported": "stöds inte",
       "full_name_required": "Ange ett förnamn och efternamn",
       "invalid_for_card_type": "är inte giltigt",
-      "invalid_type": "Tyvärr har vi inte acceptera kort av denna typ",
-      "invalid_format": "format är inte giltigt",
+      "invalid_type": "Tyvärr, vi accepterar inte kort av denna typ",
+      "invalid_format": "Formatet är inte giltigt",
       "expired": "har löpt ut",
-      "invalid_start_date_or_issue_number_for_debit": "ett giltigt startdatum eller löpnummer krävs",
-      "invalid_expiry_year": "är inte ett giltigt utgångs år",
-      "reset_password_html": "Här e-postadressen är redan kopplad till ett konto. Om detta konto är ditt, kan du <a href=\"\/account\/login#recover\">Återställ ditt lösenord<\/a>",
-      "verify_email": "Vi har skickat ett e-postmeddelande till %{customer_email}, Klicka på länken med för att bekräfta din e-postadress."
+      "invalid_start_date_or_issue_number_for_debit": "Ett giltigt startdatum eller ett problemummer krävs",
+      "invalid_expiry_year": "är inte ett giltigt utgångsår",
+      "reset_password_html": "Den här e-postadressen är redan associerad med ett konto. Om det här kontot är ditt, kan du <a href=\"\/account\/login#recover\">Återställ ditt lösenord<\/a>",
+      "verify_email": "Vi har skickat ett mail till %{customer_email}, Vänligen klicka på länken som ingår för att verifiera din e-postadress."
     },
     "notices": {
       "customer": {
@@ -1065,7 +1065,7 @@
           "partially_paid": "Delvis betald",
           "partially_refunded": "Delvis återbetalas",
           "refunded": "Återbetalas",
-          "expired": "Upprörd"
+          "expired": "Utgånget"
         },
         "fulfillment_status": {
           "fulfilled": "Uppfylld",
@@ -1087,7 +1087,7 @@
           "customer": "Kunden ändras \/ avbokad order",
           "other": "Övrig"
         },
-        "cash_on_delivery": "Postförskott (COD)"
+        "cash_on_delivery": "Kontanter vid leverans (COD)"
       },
       "cart": {
         "only_n_items_available": "Du kan bara lägga till %{count} %{name} till vagnen.",
@@ -1105,56 +1105,56 @@
         "product_sold_out": "Produkten '%{name}\"är redan såld.",
         "variant_not_found": "Kan inte hitta variant",
         "variant_requires_selling_plan": "Variant kan endast köpas med en försäljningsplan.",
-        "selling_plan_not_applicable": "Det går inte att tillämpa sälja planen variant",
-        "shipping_address_not_required": "Denna vagn kräver inte sjöfarten",
-        "shipping_address_invalid": "Det fanns ett problem att beräkna dina fraktkostnader. Fortsätt till kassan för att välja en fraktkostnad innan du slutför din beställning."
+        "selling_plan_not_applicable": "Kan inte tillämpa försäljningsplan till variant",
+        "shipping_address_not_required": "Denna vagn kräver inte frakt",
+        "shipping_address_invalid": "Det var ett problem att beräkna dina fraktpriser. Fortsätt att kassa för att välja en fraktkostnad innan du slutför din beställning."
       },
       "storefront": {
-        "invalid_password": "Lösenord felaktig, försök igen."
+        "invalid_password": "Lösenord felaktigt, försök igen."
       },
       "tags": {
-        "add_articles": "Begränsa sökningen till artiklar som också har tagg %{tag}",
-        "add_products": "Smalt urval produkter matcha tag %{tag}",
-        "remove_articles": "Bredda sökningen till artiklar som inte är märkta %{tag}",
+        "add_articles": "Smal sökning till artiklar som också har tagg %{tag}",
+        "add_products": "Smalt urval till produkter som matchar tagg %{tag}",
+        "remove_articles": "Bredda sökning till artiklar som inte är märkta %{tag}",
         "remove_products": "Ta bort taggen %{tag}"
       }
     },
     "email_marketing": {
       "subscribed": {
-        "confirmation": "Tack för att du prenumererar på vårt nyhetsbrev.",
+        "confirmation": "Tack för att du prenumererar på vår e-postlista.",
         "disclaimer": "Du kan avbryta prenumerationen när som helst.",
         "unsubscribe": "Säga upp"
       },
       "unsubscribed": {
-        "confirmation": "Du har avslutat prenumerationen på vår e-postlista.",
-        "disclaimer": "Du kommer inte att få några mer marknadsföring uppdateringar från oss. Du kan prenumerera på nytt när som helst.",
-        "preview": "Du förhandsgranska vad kunderna ser när de avbeställa."
+        "confirmation": "Du har avstått från vår e-postlista.",
+        "disclaimer": "Du kommer inte att få några fler marknadsföringsuppdateringar från oss. Du kan prenumerera igen när som helst.",
+        "preview": "Du förhandsgranskar vad kunderna kommer att se när de prenumererar."
       },
       "open_tracking": {
         "opt_in": {
-          "opted_in_html": "<b>Du har valt till e-post öppna spårning.<\/b>",
-          "visibility": "E-post open priser kommer att rapporteras anonymt. Vi kommer bara att se om du har öppnat en e-post som en del av en aggregerad e öppen kurs.",
-          "opt_out_html": "Du kan <a style='text-decoration:underline;' href='%{link}'>opt out<\/a> e-post open tracking om du inte vill dela denna information.",
-          "preview_bar": "Du förhandsgranska vad kunderna kommer att se när de väljer att e-post öppna spårning."
+          "opted_in_html": "<b>Du har valt att maila öppen spårning.<\/b>",
+          "visibility": "E-post Öppna priser kommer att rapporteras anonymt. Vi kommer bara att se om du har öppnat ett mail som en del av en aggregerad e-post öppen kurs.",
+          "opt_out_html": "Du kan <a style='text-decoration:underline;' href='%{link}'>välja<\/a> av e-post öppen spårning om du inte vill dela den här informationen.",
+          "preview_bar": "Du förhandsgranskar vad kunderna kommer att se när de väljer att maila öppen spårning."
         },
         "opt_out": {
-          "opted_out_html": "<b>Du har valt bort e-post open tracking.<\/b>",
-          "visibility": "Vi kommer inte att se om du har öppnat våra e-post.",
-          "opt_in_html": "<a style='text-decoration:underline;' href='%{link}'>opt in<\/a> till e-post öppna spårning.",
-          "preview_bar": "Du förhandsgranska vad kunderna ser när de väljer ut e-post open tracking."
+          "opted_out_html": "<b>Du har valt ut av e-post öppen spårning.<\/b>",
+          "visibility": "Vi kommer inte se om du har öppnat våra e-postmeddelanden.",
+          "opt_in_html": "<a style='text-decoration:underline;' href='%{link}'>Välja<\/a> att maila öppen spårning.",
+          "preview_bar": "Du förhandsgranskar vad kunderna kommer att se när de väljer av e-post öppen spårning."
         },
         "no_longer_track": {
-          "status_html": "<b>Vi har inte längre spåra någon e-post öppnas.<\/b>",
-          "privacy_policy": "Efter detta e-postmeddelande skickades uppdaterade vi vår sekretesspolicy och vi inte längre spår öppnas."
+          "status_html": "<b>Vi spårar inte längre något e-postmeddelande.<\/b>",
+          "privacy_policy": "När det här e-postmeddelandet skickades uppdaterade vi vår sekretesspolicy och vi är inte längre spår."
         },
         "track": {
-          "status_html": "<b>E-post open tracking rapporteras.<\/b>",
-          "visibility": "Vi kommer bara att se om du har öppnat e-post, som en del av den totala e öppen kurs."
+          "status_html": "<b>E-post öppen spårning rapporteras.<\/b>",
+          "visibility": "Vi kommer bara att se om du har öppnat e-postmeddelandet, som en del av den totala e-posten öppen kurs."
         },
         "updated_policy": {
-          "status_html": "<b>E-post open tracking rapporteras.<\/b>",
-          "visibility": "Vi har uppdaterat vår policy och nu spåra e-post öppnas. E-post open priser kommer att rapporteras anonymt. Vi kommer bara att se om du har öppnat en e-post som en del av den totala e öppen kurs.",
-          "opt_out_html": "Om du inte vill dela denna information kan du <a style='text-decoration:underline;' href='%{link}'>säga upp.<\/a>"
+          "status_html": "<b>E-post öppen spårning rapporteras.<\/b>",
+          "visibility": "Vi har uppdaterat vår policy, och nu spårar e-post. E-post Öppna priser kommer att rapporteras anonymt. Vi kommer bara att se om du har öppnat ett e-postmeddelande som en del av den totala e-posten.",
+          "opt_out_html": "Om du inte vill dela den här informationen kan du <a style='text-decoration:underline;' href='%{link}'>säga upp.<\/a>"
         }
       }
     },
@@ -1184,18 +1184,18 @@
       }
     },
     "page_titles": {
-      "blog_or_article_with_error": "fel - %{title}",
+      "blog_or_article_with_error": "Fel - %{title}",
       "products": "Produkter",
       "shopping_cart": "din kundvagn",
       "account": "konto",
       "create_account": "Skapa konto",
-      "reset_account": "Återställ Account",
-      "addresses": "adresser",
+      "reset_account": "Återställ konto",
+      "addresses": "Adresser",
       "order": "Beställa %{name}",
       "search": "Sök",
       "search_results": {
-        "one": "Sök: %{count} hittade för \"%{terms}\"",
-        "other": "Sök: %{count} Resultat hittades för \"%{terms}\""
+        "one": "Sök: %{count} resultat hittades för \"%{terms}\"",
+        "other": "Sök: %{count} resultat hittades för \"%{terms}\""
       },
       "collections": "Samlingar",
       "not_found": "404 Ej Hittad",
@@ -1238,14 +1238,14 @@
       "enter": "Stiga på",
       "email_address": "E-postadress",
       "submit": "Skicka in",
-      "powered": "Det här lagret kommer att drivas av"
+      "powered": "Denna butik kommer att drivas av"
     }
   },
   "blogs": {
     "article": {
-      "posted_on_date_html": "Inlämnat på <time datetime=\"{{ date }}\">{{ date }}<\/time>",
+      "posted_on_date_html": "Postat på <time datetime=\"{{ date }}\">{{ date }}<\/time>",
       "tags": "Tagg",
-      "tagged": "Taggat",
+      "tagged": "Taggade",
       "comments": "Kommentarer",
       "read_more": "Läs mer"
     },
@@ -1266,14 +1266,14 @@
     "sidebar": {
       "social_title": "Anslut med oss",
       "twitter_title": "På Twitter",
-      "facebook_title": "Som vi på Facebook",
-      "recent_posts": "Senaste postorna",
-      "tags": "Filtrera artikel-etiketter"
+      "facebook_title": "Gilla oss på facebook",
+      "recent_posts": "Nya Inlägg",
+      "tags": "Filter artikeln taggar"
     }
   },
   "store_availability": {
     "general": {
-      "view_store_info": "Visa lagerinformation",
+      "view_store_info": "Visa butiksinformation",
       "check_other_stores": "Kontrollera tillgängligheten på andra butiker",
       "pick_up_available": "Pickup tillgänglig",
       "pick_up_currently_unavailable": "Pickup för närvarande inte tillgänglig",
@@ -1293,7 +1293,7 @@
       "product": "Produkt",
       "price": "Pris",
       "qty": "Qty",
-      "remove": "Ta bort",
+      "remove": "Avlägsna",
       "total": "Total",
       "subtotal": "Delsumma",
       "continue": "Fortsätt handla",
@@ -1306,7 +1306,7 @@
       "free_shipping_after": "Bort från gratis inrikes frakt!",
       "free_shipping_qualified": "Din beställning kvalificerar sig till gratis inrikes frakt!",
       "free_shipping_exclusions": "(Exkluderar internationellt)",
-      "discounts": "Rabatter",
+      "discounts": "Rabatt",
       "savings": "Totala besparingar",
       "discount_applied": "Rabatt tillämpas!",
       "items": "Artikel (er)"
@@ -1321,7 +1321,7 @@
     },
     "sorting": {
       "title": "Sortera efter",
-      "featured": "Presenteras",
+      "featured": "Presenterad",
       "best_selling": "Bästsäljare",
       "az": "Alfabetiskt, A-Z",
       "za": "Alfabetiskt, z-a",
@@ -1389,7 +1389,7 @@
       "set_default": "Ange som standardadress",
       "add": "Lägga till adress",
       "update": "Uppdateringsadress",
-      "cancel": "Avbryt",
+      "cancel": "Annullera",
       "edit": "Redigera",
       "delete": "Radera"
     },
@@ -1439,7 +1439,7 @@
       "title": "Återställ ditt lösenord",
       "email": "E-post",
       "submit": "Skicka in",
-      "cancel": "Avbryt",
+      "cancel": "Annullera",
       "subtext": "Vi skickar dig ett mail för att återställa ditt lösenord.",
       "success": "Vi har skickat ett mail till dig med en länk för att uppdatera ditt lösenord."
     },
@@ -1473,22 +1473,22 @@
     },
     "mobile_nav": {
       "account": "konto",
-      "login": "Logga in \/ skapa konto",
+      "login": "Logga in \/ Skapa konto",
       "logout": "Logga ut"
     }
   },
   "products": {
     "general": {
-      "new": "NYHETER",
+      "new": "NY",
       "sale": "FÖRSÄLJNING",
-      "sold": "SÅLDE UT",
+      "sold": "UTSÅLD",
       "quick_view": "Snabbtitt",
       "from": "Från",
       "view_full": "Visa fullständiga detaljer",
       "view_all": "Visa alla",
       "related": "Mer i den här samlingen",
       "sale_price": "Försäljning",
-      "regular_price": "Regelbundet"
+      "regular_price": "Regelbunden"
     },
     "product": {
       "designer": "Designer",
@@ -1498,26 +1498,26 @@
       "compare_at": "Jämföra på",
       "add_to_cart": "Lägg till i kundvagn",
       "quantity": "Kvantitet",
-      "select_options": "Visningsalternativ",
+      "select_options": "Visa alternativ",
       "details": "Detaljer",
-      "sizing": "Storleksstorlek",
+      "sizing": "Limning",
       "video": "Video",
       "model": "Produktvård",
       "back_to": "Tillbaka till",
       "adding": "Lägger till ...",
       "thank_you": "Tack!",
-      "added": "Tillagt till Cart",
+      "added": "Läggs i varukorgen",
       "view_cart": "Se vagnen",
       "or": "eller",
       "continue": "Fortsätt handla",
       "qty_error_first": "Endast",
-      "qty_error_last": "för det här objektet är tillgängligt",
-      "qty_sold_out": "Det här objektet är utsålt.",
-      "back_in_stock": "Skicka ett mejl till mig när det här är tillgängligt",
-      "back_in_stock_confirm": "Tack, vi kommer att kontakta dig när det här är tillgängligt",
+      "qty_error_last": "av det här objektet är tillgängligt",
+      "qty_sold_out": "Denna artikel är utsåld",
+      "back_in_stock": "Vänligen skicka mig ett mail när det är tillgängligt",
+      "back_in_stock_confirm": "Tack, vi kommer att kontakta dig när detta är tillgängligt",
       "readmore": "Läs mer",
-      "view_in_space": "Visa i ditt område",
-      "view_in_space_label": "Visa i ditt område, läses in objekt i ett utökat verklighetsfönster",
+      "view_in_space": "Visa i ditt utrymme",
+      "view_in_space_label": "Visa i ditt utrymme, laster objekt i Augmented Reality Window",
       "unit_price_label": "Enhetspris"
     }
   },
@@ -1591,11 +1591,11 @@
   },
   "strings": {
     "general": {
-      "show_express_delivery_options": "Visa expressleveransalternativ",
+      "show_express_delivery_options": "Visa Express Leveransalternativ",
       "learn_more": "Läs mer",
       "verified_reviews": "Verifierade recensioner",
       "privacy_policy": "Integritetspolicy",
-      "terms_conditions": "Villkor och bestämmelser",
+      "terms_conditions": "Allmänna Villkor",
       "view_all": "VISA ALLA",
       "all_reviews": "Alla recensioner",
       "shop_instagram": "Shop Instagram",
@@ -1603,10 +1603,10 @@
       "best_seller": "BÄSTSÄLJARE",
       "new_product": "NY PRODUKT",
       "inspired_by": "Inspirerad av",
-      "more-filters": "Fler filerfunktioner",
+      "more-filters": "Fler filers",
       "filter-products": "Filterprodukter",
       "clear-all": "Rensa alla",
-      "percentage_off": "{{number}} FRÅNLÄGE",
+      "percentage_off": "{{number}} AV",
       "language_label": "Språk",
       "verified-reviews": "Verifierade recensioner",
       "from": "Från",
@@ -1614,7 +1614,10 @@
       "max": "Max",
       "apply": "Tillämpa",
       "the-finer-details": "De finare detaljerna",
-      "contemporary-inspiration": "Modern inspiration"
+      "contemporary-inspiration": "Modern inspiration",
+      "change-shipping-country-and-language": "Byt fraktland och språk",
+      "designers": "Designers",
+      "availabilityfilter": "Expressleverans"
     },
     "product_options": {
       "classic": "Klassisk",
@@ -1634,7 +1637,7 @@
       "bottle-green-velvet": "Flaska grön sammet",
       "dark-grey-velvet": "Mörkgrå sammet",
       "dark-red-velvet": "Mörkröd sammet",
-      "creamy-boucle": "Krämslinga",
+      "creamy-boucle": "Krämig bouke",
       "deep-red": "Mörkröd",
       "bottle-green": "Flaska grön",
       "dark-aqua-velvet": "Mörk aqua sammet",
@@ -1653,7 +1656,7 @@
       "red": "Röd",
       "dark-tan": "Mörk solbränna",
       "light-pebble-grey": "Ljusstengrå",
-      "morocan-blue": "Marockansk blå",
+      "morocan-blue": "Marokansk blå",
       "orange": "Orange",
       "purple": "Lila",
       "light-green": "Ljusgrön",
@@ -1676,10 +1679,10 @@
       "white-quartz-120": "Vit kvarts 120",
       "white-quartz-160": "Vit kvarts 160",
       "black-nero-marquina-marble": "Black Nero Marquina marmor",
-      "aqua-blue": "Aqua blue.",
+      "aqua-blue": "Aquablå",
       "beige": "Beige",
       "tan": "Solbränna",
-      "red-leather": "Red Leather",
+      "red-leather": "Rött läder",
       "natural": "Naturlig",
       "solid-oak": "Fast ek",
       "oak": "Ek",
@@ -1692,8 +1695,8 @@
       "nord-dark-pebble": "Nord Dark Pebble",
       "nord-red": "Nordröd",
       "nord-grey": "Nordgrå",
-      "nord-dark-aqua": "North Dark Aqua.",
-      "nord-light-sage": "Nord Light Sage.",
+      "nord-dark-aqua": "Nord Dark Aqua",
+      "nord-light-sage": "Nord Light Sage",
       "camel": "Kamel",
       "smoked-transparent": "Rökt transparent",
       "clear": "Klar",
@@ -1702,7 +1705,7 @@
       "brushed-brass": "Borstat mässing",
       "black-cowhide": "Svart kohid",
       "brown-cowhide": "Brun kohid",
-      "black-laquered": "Svart lackerat",
+      "black-laquered": "Black laquered",
       "black-gold": "Svart guld",
       "white-gold": "Vitt guld",
       "gold-gold": "Guld \/ guld",
@@ -1736,10 +1739,10 @@
       "light-wood": "Ljust trä",
       "dark-wood": "Mörkt trä",
       "grey-transparent": "Grå transparent",
-      "wihte": "Vit",
+      "wihte": "Wihte",
       "multitone": "Multitone",
       "black-maple": "Svart \/ lönn",
-      "blue-multitone": "Blå multiton",
+      "blue-multitone": "Blå multitone",
       "green-multitone": "Grön multitone",
       "red-multitone": "Röd multitone",
       "polished-ss": "Polerad ss",
@@ -1747,14 +1750,14 @@
       "citrus": "Citrus",
       "dark-green": "Mörkgrön",
       "charcoal-grey": "Kolgrå",
-      "terracota": "Terrakotta",
+      "terracota": "Terracota",
       "brown-white-black": "Brun + vit + svart",
       "black-white": "Svart + Vit",
       "oak-veneer": "Ekfaner",
-      "caramel-aniline": "Karamellaniline",
+      "caramel-aniline": "Karamell anilin",
       "aluminium": "Aluminium",
       "lime": "Kalk",
-      "oak-oiled": "Oak-Oiled",
+      "oak-oiled": "Ekolja",
       "petrol-green": "Bensingrön",
       "red-berry": "Rött bär",
       "steel-blue": "Stålblå",
@@ -1767,7 +1770,7 @@
       "bliss-black-gray": "Bliss Black Gray",
       "bliss-black-green": "Bliss Black Green",
       "bliss-brass-gray": "Bliss mässing grå",
-      "bliss-brass-green": "Bliss Brass Green",
+      "bliss-brass-green": "Bliss mässing grön",
       "bliss-coffee": "Bliss kaffe",
       "bliss-copper-gray": "Bliss koppargrå",
       "bliss-gray-green": "Bliss Grå grön",
@@ -1777,7 +1780,7 @@
       "shades-of-blue": "Nyanser av blått",
       "shades-of-red": "Nyanser av rött",
       "shades-of-grey": "Nyanser av grå",
-      "shades-of-green": "Gröna skuggor",
+      "shades-of-green": "Nyanser av grönt",
       "shades-of-white": "Nyanser av vit",
       "copper-bronze": "Kopparbrons",
       "buck-brown": "Buckbrun",
@@ -1789,11 +1792,11 @@
       "48-cm": "48 cm",
       "72-cm": "72 cm",
       "84-cm": "84 cm",
-      "13-cm": "13 CM",
+      "13-cm": "13 cm",
       "23-cm": "23 cm",
       "31-cm": "31 cm",
       "47-cm": "47 cm",
-      "left-chaise": "VÄNSTERKAPNING",
+      "left-chaise": "Lämnade chaise",
       "right-chaise": "Rätt chaise",
       "96-cm": "96 cm",
       "102-cm": "102 cm",
@@ -1819,7 +1822,7 @@
       "position-of-chaise": "Läge av schäslon",
       "velvet": "Sammet",
       "alcantara": "Alcantara",
-      "boucle": "Slinga",
+      "boucle": "Bukett",
       "plywood": "Plywood",
       "marble": "Marmor",
       "90-cm": "90 cm",
@@ -1839,7 +1842,7 @@
       "matt-black": "Mattsvart",
       "matt-gray": "Mattgrå",
       "matt-coffee": "Matt kaffe",
-      "x-large": "X Large",
+      "x-large": "Extra stor",
       "105-cm": "105 cm",
       "lacquered": "Lackerad",
       "false": "falsk",
@@ -1851,7 +1854,7 @@
   },
   "templates": {
     "search": {
-      "no_results": "Inga resultat hittades för \"{{ terms }}\". Kontrollera stavningen eller använd ett annat ord eller en annan fras.",
+      "no_results": "Inga resultat hittades för \"{{ terms }}\". Kontrollera stavningen eller använd ett annat ord eller en fras.",
       "page": "Sida",
       "products": "Produkter",
       "results_with_count": {
@@ -1863,12 +1866,12 @@
         "other": "{{ count }} resultat hittades för \"{{ terms }}”"
       },
       "title": "Sökresultat",
-      "search_for": "Sök efter \"{{ terms }}”",
+      "search_for": "Söka efter \"{{ terms }}”",
       "collections": "Samlingar",
       "suggestions": "Förslag"
     }
   },
   "accessibility": {
-    "vendor": "TODO"
+    "vendor": "ATT GÖRA"
   }
 }
