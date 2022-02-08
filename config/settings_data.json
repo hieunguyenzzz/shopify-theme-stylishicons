@@ -4258,7 +4258,7 @@
     "favicon": "shopify:\/\/shop_images\/DI-LOGO-ICON-300x300_256x256-2.png",
     "checkout_header_image": "",
     "checkout_logo_image": "shopify:\/\/shop_images\/Text-Logo-For-web-300.png",
-    "checkout_logo_position": "center",
+    "checkout_logo_position": "left",
     "checkout_logo_size": "small",
     "checkout_body_background_image": "",
     "checkout_body_background_color": "#ffffff",
