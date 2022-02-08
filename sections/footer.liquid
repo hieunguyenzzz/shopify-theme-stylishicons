@@ -174,8 +174,8 @@
                                                             <ul class="tw-p-0 !tw-transition-all  tw-max-h-0 group-focus-within:tw-max-h-96 group-focus-within:tw-h-auto tw-overflow-auto !tw-relative tw-w-full tw-border tw-shadow-lg tw-menu lg:tw-ml-auto tw-dropdown-content tw-bg-base-100 tw-rounded-lg" hidden id="FooterLanguageList" role="list">
                                                                 {% assign countryListString = 'GB,SE,NO,DE,BE,FR'%}
                                                                 {%- for country in localization.available_countries -%}
-                                                                    <li class="" tabindex="-1">
-                                                                        {% if countryListString contains country.iso_code %}
+                                                                {% if countryListString contains country.iso_code %}
+                                                                <li class="" tabindex="-1">
                                                                             <div class="tw-px-3 tw-items-center tw-flex tw-gap-2 tw-py-1 hover:tw-bg-gray-200 {% if country.iso_code == localization.country.iso_code %} tw-font-bold{% endif %} focus-inset" href="#" {% if country.iso_code == localization.country.iso_code %} aria-current="true" {% endif %} data-country="{{ country.iso_code }}" data-value="{{ country.iso_code }}">
                                                                                 {%- assign iconPath =  country.iso_code | downcase | append:'-flag' | append: '.svg' %}
                                                                                 <img class="tw-w-4 tw-h-4 tw-rounded-full tw-object-cover" src="{{ iconPath | file_url}}"/>
@@ -183,9 +183,9 @@
                                                                                 ({{ country.currency.iso_code }}
                                                                                 {{ country.currency.symbol }})
                                                                             </div>
+                                                                            
+                                                                        </li>
                                                                         {% endif %}
-
-                                                                    </li>
                                                                 {%- endfor -%}
                                                             </ul>
                                                         </div>
