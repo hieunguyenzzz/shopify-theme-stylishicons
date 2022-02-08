@@ -73,16 +73,16 @@
                             <div class="tw-flex tw-justify-between lg:tw-justify-between tw-w-full tw-text-right lg:tw-flex-col tw-items-center md:tw-items-center lg:tw-items-end">
                                 {{ block.settings.footer_text }}
                                 {% if block.settings.image != blank %}
-                                    <a target="_blank" class="tw-filter hover:tw-grayscale" href="{{block.settings.imageUrl}}"><img class="tw-w-40 tw-ml-auto" src="{{ block.settings.image | img_url: '300x' }}"></a>
+                                    <a target="_blank" class="tw-filter hover:tw-grayscale" href="{{block.settings.imageUrl}}"><img width="300" height="200" class="tw-w-40 tw-ml-auto" src="{{ block.settings.image | img_url: '300x' }}"></a>
                                 {% endif %}
                                 {% if block.settings.image1 != blank %}
-                                    <a target="_blank" class="tw-filter hover:tw-grayscale" href="{{block.settings.imageUrl1}}"><img class="tw-w-40 tw-ml-auto" src="{{ block.settings.image1 | img_url: '300x' }}"></a>
+                                    <a target="_blank" class="tw-filter hover:tw-grayscale" href="{{block.settings.imageUrl1}}"><img width="300" height="200" class="tw-w-40 tw-ml-auto" src="{{ block.settings.image1 | img_url: '300x' }}"></a>
                                 {% endif %}
                                 {% if block.settings.image2 != blank %}
-                                    <a target="_blank" class="tw-filter hover:tw-grayscale" href="{{block.settings.imageUrl2}}"><img class="tw-w-40 tw-ml-auto" src="{{ block.settings.image2 | img_url: '300x' }}"></a>
+                                    <a target="_blank" class="tw-filter hover:tw-grayscale" href="{{block.settings.imageUrl2}}"><img width="300" height="200" class="tw-w-40 tw-ml-auto" src="{{ block.settings.image2 | img_url: '300x' }}"></a>
                                 {% endif %}
                                 {% if block.settings.image3 != blank %}
-                                    <a target="_blank" class="tw-filter hover:tw-grayscale" href="{{block.settings.imageUrl3}}"><img class="tw-w-40 tw-ml-auto" src="{{ block.settings.image3 | img_url: '300x' }}"></a>
+                                    <a target="_blank" class="tw-filter hover:tw-grayscale" href="{{block.settings.imageUrl3}}"><img width="300" height="200" class="tw-w-40 tw-ml-auto" src="{{ block.settings.image3 | img_url: '300x' }}"></a>
                                 {% endif %}
                             </div>
                         </div>
@@ -141,7 +141,7 @@
                             {%- form 'localization', id: 'FooterCountryForm', class: 'localization-form' -%}
                                 <label aria-controls="FooterLanguageList" aria-describedby="FooterLanguageLabel" aria-expanded="false" class="tw-btn tw-btn-outline tw-rounded-none tw-btn-xs tw-items-center tw-gap-3" for="footercountryformmodal" tabindex="0" type="button">
                                     {%- assign iconPath =  localization.country.iso_code | downcase | append:'-flag' | append: '.svg' %}
-                                    <img class="tw-w-4 tw-h-4 tw-rounded-full tw-object-cover" src="{{ iconPath | file_url}}"/>
+                                    <img width="16" height="16" class="tw-w-4 tw-h-4 tw-rounded-full tw-object-cover" src="{{ iconPath | file_url}}"/>
                                     {{ localization.country.name | capitalize }}
                                     ({{ localization.country.currency.iso_code }}
                                     {{ localization.country.currency.symbol }}) -
@@ -163,7 +163,7 @@
                                                         <div class="tw-dropdown tw-w-full tw-group">
                                                             <div aria-controls="FooterLanguageList" aria-describedby="FooterLanguageLabel" aria-expanded="false" class="tw-btn tw-btn-block tw-btn-outline tw-rounded-none tw-items-center tw-gap-3" tabindex="0" type="button">
                                                                 {%- assign iconPath =  localization.country.iso_code | downcase | append:'-flag' | append: '.svg' %}
-                                                                <img class="tw-w-4 tw-h-4 tw-rounded-full tw-object-cover" src="{{ iconPath | file_url}}"/>
+                                                                <img width="16" height="16" class="tw-w-4 tw-h-4 tw-rounded-full tw-object-cover" src="{{ iconPath | file_url}}"/>
                                                                 {{ localization.country.name | capitalize }}
                                                                 ({{ localization.country.currency.iso_code }}
                                                                 {{ localization.country.currency.symbol }})
@@ -178,7 +178,7 @@
                                                                 <li class="" tabindex="-1">
                                                                             <div class="tw-px-3 tw-items-center tw-flex tw-gap-2 tw-py-1 hover:tw-bg-gray-200 {% if country.iso_code == localization.country.iso_code %} tw-font-bold{% endif %} focus-inset" href="#" {% if country.iso_code == localization.country.iso_code %} aria-current="true" {% endif %} data-country="{{ country.iso_code }}" data-value="{{ country.iso_code }}">
                                                                                 {%- assign iconPath =  country.iso_code | downcase | append:'-flag' | append: '.svg' %}
-                                                                                <img class="tw-w-4 tw-h-4 tw-rounded-full tw-object-cover" src="{{ iconPath | file_url}}"/>
+                                                                                <img width="16" height="16" class="tw-w-4 tw-h-4 tw-rounded-full tw-object-cover" src="{{ iconPath | file_url}}"/>
                                                                                 {{ country.name | capitalize }}
                                                                                 ({{ country.currency.iso_code }}
                                                                                 {{ country.currency.symbol }})
