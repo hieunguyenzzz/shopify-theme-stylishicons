@@ -4698,6 +4698,10 @@ html {
   border-width: 1px;
 }
 
+.tw-border-t {
+  border-top-width: 1px;
+}
+
 .tw-border-solid {
   border-style: solid;
 }
@@ -4983,6 +4987,10 @@ html {
 
 .tw-pb-\[100\%\] {
   padding-bottom: 100%;
+}
+
+.tw-pt-3 {
+  padding-top: 0.75rem;
 }
 
 .tw-text-left {
