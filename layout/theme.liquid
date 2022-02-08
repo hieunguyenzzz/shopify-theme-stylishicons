@@ -287,11 +287,19 @@
     AOS.init();
   </script>
   <script>
+    let themeloaded = false
     window.addEventListener('beforeunload', (event) => {
       document.body.classList.add('loading')
+      themeloaded=false
     });
     window.onpopstate = function (event) {
-      document.body.classList.remove('loading')
+      setInterval(() => {
+        if(!themeloaded){
+          document.body.classList.remove('loading')
+          themeloaded=true
+        }
+      }, 200);
+      
     };
   </script>
   {% render '[predictive-search]' class: '' %}
