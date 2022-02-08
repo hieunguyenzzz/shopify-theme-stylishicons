@@ -215,15 +215,15 @@
         </div>
         <div class="cart-buttons">
           <input type="submit" name="checkout" id="checkout" value="{{ 'cart.general.checkout' | t }}" class="button" />
-          <h5 class="or-divider text-center"><span>Or</span></h5>
+          <!-- <h5 class="text-center or-divider"><span>Or</span></h5>
           <div class="clear"></div>
           {% if additional_checkout_buttons %}
             <div class="additional-checkout-buttons">
               {{ content_for_additional_checkout_buttons }}
             </div>
-          {% endif %}
+          {% endif %} -->
           <div class="clear"></div>
-          <div class="payment-types">
+          <div class="payment-types tw-flex tw-flex-wrap tw-gap-1">
             {% for type in shop.enabled_payment_types %}
               <img src="{{ type | payment_type_img_url }}" />
             {% endfor %}
