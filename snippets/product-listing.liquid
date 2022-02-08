@@ -41,7 +41,7 @@
                 </div>
                 {% if settings.image_flip and product.media.size > 1 %}
                     <div class=" group-hover:tw-visible group-hover:tw-opacity-100 tw-invisible tw-opacity-0 tw-transition-opacity tw-duration-700">
-                        {% render "[image]", image: second_image image_box_ratio:'0%'  layout:'fill' %}
+                        {% render "[image]", image: second_image image_box_ratio:'0%'  layout:'fill' image_size:image_size %}
                     </div>
                 {% endif %}
             </div>
