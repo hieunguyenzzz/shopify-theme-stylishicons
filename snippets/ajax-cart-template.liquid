@@ -148,9 +148,9 @@
         <button type="submit" class="cart__checkout tw-bg-black tw-text-white" name="checkout">
           {% endraw %}{{ 'cart.general.checkout' | t }}{% raw %} &rarr;
         </button>
-        {% endraw %}{% if additional_checkout_buttons %}
-          <div class="additional_checkout_buttons">{{ content_for_additional_checkout_buttons }}</div>
-        {% endif %}{% raw %}
+        {% endraw %}
+     
+        {% raw %}
       </div>
     </form>
   {% endraw %}
