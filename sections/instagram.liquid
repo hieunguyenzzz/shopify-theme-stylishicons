@@ -92,16 +92,6 @@
                 .addEventListener("click", function () {
                     instance.next()
                 })
-                var dots_wrapper = document.getElementById("dots")
-                var slides = document.querySelectorAll(".keen-slider-{{id}} .keen-slider__slide")
-                slides.forEach(function (t, idx) {
-                    var dot = document.createElement("button")
-                    dot.classList.add("dot")
-                    dots_wrapper.appendChild(dot)
-                    dot.addEventListener("click", function () {
-                        instance.moveToSlide(idx)
-                    })
-                })
                 updateClasses(instance)
             },
             slideChanged(instance) {
