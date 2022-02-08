@@ -287,17 +287,12 @@
     AOS.init();
   </script>
   <script>
-    let themeloaded = false
     window.addEventListener('beforeunload', (event) => {
       document.body.classList.add('loading')
-      themeloaded=false
     });
-    window.loadingInterval= setInterval(() => {
-        if(!themeloaded){
-          document.body.classList.remove('loading')
-          themeloaded=true
-        }
-      }, 200);
+    window.onpopstate = function (event) {
+      document.body.classList.remove('loading')
+    };
   </script>
   {% render '[predictive-search]' class: '' %}
   <!-- **BEGIN** Hextom USB Integration // Main Include - DO NOT MODIFY -->
