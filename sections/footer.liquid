@@ -1,4 +1,4 @@
-{% assign countrymap = 'GB en,FR fr,BE fr,NL nl,BE nl,DE de,AT de,CH de,ES es' %}
+{% assign countrymap = 'GB en en-en,FR fr fr-fr,BE fr fr-be show,NL nl nl-nl,BE nl nl-be show,DE de de-de,AT de show,CH de de-ch show,ES es es-es' %}
 {%- assign locale_selector = false -%}
 {%- assign currency_selector = false -%}
 
@@ -156,27 +156,29 @@
                                 <div class="tw-p-0 tw-modal-box lg:tw-max-w-sm">
                                     {% if custom %}
                                         <div class="tw-w-full  tw-p-8 tw-pt-12 tw-max-h-[calc(100vh-100px)] tw-overflow-auto">
-                                            <ul class="tw-p-0 !tw-transition-all   tw-overflow-auto !tw-relative tw-w-full  tw-menu lg:tw-ml-auto tw-bg-base-100 " hidden id="FooterLanguageList" role="list">
+                                            <div class="tw-p-0 !tw-transition-all    !tw-relative tw-w-full lg:tw-ml-auto tw-bg-base-100 " id="FooterLanguageList" role="list">
                                                 {% assign contrylangs = countrymap | split: ',' %}
                                                 {%- for contrylang in contrylangs -%}
                                                     {% assign contrylangarray = contrylang | split: ' ' %}
                                                     {% assign contrycode = contrylangarray[0] %}
                                                     {% assign langcode = contrylangarray[1] %}
+                                                    {% assign path = contrylangarray[2] %}
+                                                    {% assign show = contrylangarray[3] %}
                                                     {% assign country =  localization.available_countries | where: "iso_code", contrycode | first %}
                                                     {% unless country %}
                                                         {% continue %}
                                                     {% endunless %}
                                                     {% assign lang =  localization.available_languages | where: "iso_code", langcode | first | default: localization.language  %}
-     
-                                                    <li class="" tabindex="-1">
-                                                        <div class="tw-px-3 tw-items-center tw-flex tw-justify-between tw-gap-2 tw-py-1 hover:tw-bg-gray-200 {% if country.iso_code == localization.country.iso_code %} tw-font-bold{% endif %} focus-inset" href="#" {% if country.iso_code == localization.country.iso_code %} aria-current="true" {% endif %} data-country="{{ country.iso_code }}" data-lang="{{ lang.iso_code }}" data-value="{{ country.iso_code }}">
-                                                            {{ country.name | capitalize }} ({{lang.name}})
+                                                        <a href="/{{path}}" class=" tw-items-center tw-flex tw-justify-between !tw-px-3 !tw-py-1 tw-gap-2  hover:tw-bg-gray-200 {% if country.iso_code == localization.country.iso_code %} tw-font-bold{% endif %} focus-inset" href="#" {% if country.iso_code == localization.country.iso_code %} aria-current="true" {% endif %} data-country="{{ country.iso_code }}" data-lang="{{ lang.iso_code }}" data-value="{{ country.iso_code }}">
+                                                            {{ country.name | capitalize }} 
+                                                            {% if show %}
+                                                                ({{lang.name | capitalize}})
+                                                            {% endif %}
                                                             {%- assign iconPath =  country.iso_code | downcase | append:'-flag' | append: '.svg' %}
                                                             <img width="16" height="16" class="tw-w-4 tw-h-4 tw-rounded-full tw-object-cover" src="{{ iconPath | file_url}}"/>
-                                                        </div>
-                                                    </li>
+                                                        </a>
                                                 {%- endfor -%}
-                                            </ul>
+                                            </div>
                                         </div>
                                     {% else %}
                                         <div class="tw-w-full  tw-p-8 tw-pt-12 tw-max-h-[calc(100vh-100px)] tw-overflow-auto">
