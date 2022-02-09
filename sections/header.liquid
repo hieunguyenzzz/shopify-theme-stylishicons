@@ -57,12 +57,7 @@
                 <ul class="tw-flex-1 tw-justify-end tw-hidden lg:tw-block" id="cart">
                   {% render 'shopping-cart-links', cart: cart, hd_locale_selector: hd_locale_selector, hd_currency_selector: hd_currency_selector %}
                   <div class="tw-h-full tw-inline-flex tw-align-middle tw-items-center">
-                    <label aria-controls="FooterLanguageList" aria-describedby="FooterLanguageLabel" aria-expanded="false" class="tw-btn tw-btn-outline !tw-font-normal !tw-mb-0 tw-rounded-none tw-btn-xs tw-items-center tw-gap-1" for="footercountryformmodal" tabindex="0" type="button">
-                        {%- assign iconPath =  localization.country.iso_code | downcase | append:'-flag' | append: '.svg' %}
-                        <img width="16" height="16" class="tw-w-4 tw-h-4 tw-rounded-full tw-object-cover" src="{{ iconPath | file_url}}"/>
-                        {{ localization.language.iso_code }}/
-                        {{ localization.country.iso_code }}
-                    </label>
+                    {% render '[location]-opener'  class: '' %}
                   </div>
                 </ul>
                 <div class="tw-flex-1 lg:tw-hidden tw-flex tw-justify-end">
