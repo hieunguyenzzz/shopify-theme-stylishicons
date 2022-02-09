@@ -1,3 +1,4 @@
+{%- capture content %}
 *, :after, :before {
   box-sizing: border-box
  }
@@ -12503,3 +12504,14 @@ display:none;
 .lickity-viewport{
   touch-action: unset !important;
  }
+
+ {%- endcapture -%}
+ {%- assign before =  content.size -%}
+{%- assign content =  content | strip_newlines | split: " " | join: " " | split: "*/" -%}
+{%- assign new_content = "" -%}
+{%- for word in content -%}
+	{%- assign new_word = word | split: "/*" | first | strip | replace: "; ", ";" | replace: "} ", "}" | replace: "{ ", "{" | replace: " {", "{" -%}
+  	{%- assign new_content = new_content | append: new_word -%}
+{%- endfor -%}
+/* CSS minifed: {{ before }} --> {{ new_content.size }} */
+{{- new_content  }}
