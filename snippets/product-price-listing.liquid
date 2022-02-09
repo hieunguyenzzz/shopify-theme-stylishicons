@@ -69,11 +69,7 @@
         </div>
         <dd>
             <span class="price-item price-item--sale rts">
-                {%- if product.price_varies -%}
-                    {{ 'products.product.from_lowest_price_html' | t: lowest_price: money_price }}
-                {%- else -%}
-                    {{ money_price }}
-                {%- endif -%}
+              {{ money_price }}
             </span>
         </dd>
     </div>
