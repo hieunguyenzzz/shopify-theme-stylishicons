@@ -1,18 +1,16 @@
 {% assign countrymap = '
 GB en ,
-SE se sv-se,
-DE de de-de,
-NO no no-no,
-FR fr fr-fr,
-NL nl nl-nl,
-BE nl nl-be show,
-BE fr fr-be show,
-AT de de-at show,
-ES es es-es' %}
+SE se /sv-se,
+DE de /de-de,
+NO no /no-no,
+FR fr /fr-fr,
+NL nl /nl-nl,
+BE nl /nl-be show,
+BE fr /fr-be show,
+AT de /de-at show,
+ES es /es-es' %}
 {% assign path = request.path %}
-{{request.locale.root_url}}
-{{request.path}}
-{% if request.locale.root_url and request.locale.root_url != "" %}
+{% if request.locale.root_url and request.locale.root_url != "/" %}
     {% assign path = request.path | replace: request.locale.root_url, '/' %}
 {% endif %}
 <noscript>
@@ -59,10 +57,7 @@ ES es es-es' %}
                                 {% continue %}
                             {% endunless %}
                             {% assign lang =  localization.available_languages | where: "iso_code", langcode | first | default: localization.language  %}
-                            {% if country.iso_code == localization.country.iso_code %}
-                                {% continue %}
-                            {% endif %}
-                            <a title="{{lang.endonym_name}}" href="/{{root_url}}{{path}}" class=" tw-items-center tw-capitalize tw-flex tw-justify-between !tw-px-3 !tw-py-1 tw-gap-2  hover:tw-bg-gray-200 {% if country.iso_code == localization.country.iso_code %} tw-font-bold{% endif %} focus-inset" href="#" {% if country.iso_code == localization.country.iso_code %} aria-current="true" {% endif %} data-country="{{ country.iso_code }}" data-lang="{{ lang.iso_code }}" data-value="{{ country.iso_code }}">
+                            <a title="{{lang.endonym_name}}" href="{{root_url}}{{path}}" class=" tw-items-center tw-capitalize tw-flex tw-justify-between !tw-px-3 !tw-py-1 tw-gap-2  hover:tw-bg-gray-200 {% if country.iso_code == localization.country.iso_code %} tw-font-bold{% endif %} focus-inset" href="#" {% if country.iso_code == localization.country.iso_code %} aria-current="true" {% endif %} data-country="{{ country.iso_code }}" data-lang="{{ lang.iso_code }}" data-value="{{ country.iso_code }}">
                                 {{ country.name | capitalize }}
                                 {% if show %}
                                     ({{lang.name | capitalize}})
