@@ -1,4 +1,14 @@
-{% assign countrymap = 'GB en en-en,FR fr fr-fr,BE fr fr-be show,NL nl nl-nl,BE nl nl-be show,DE de de-de,AT de de-at show,CH de de-ch show,ES es es-es' %}
+{% assign countrymap = '
+GB en en,
+SE se sv-se,
+DE de de-de,
+NO no no-no,
+FR fr fr-fr,
+NL nl nl-nl,
+BE nl nl-be show,
+BE fr fr-be show,
+AT de de-at show,
+ES es es-es' %}
 {%- assign locale_selector = false -%}
 {%- assign currency_selector = false -%}
 
@@ -117,7 +127,43 @@
 
             <div class="tw-flex-1">
                 <div class=" tw-flex tw-gap-3 tw-justify-center lg:tw-justify-start">
-                    {% if currency_selector %}
+                    
+
+                </div>
+                <div class="tw-flex tw-flex-col lg:tw-flex-row lg:tw-gap-6 tw-leading-[30px] tw-mt-[10px]">
+                    <div class="small-links tw-text-center">
+                        <a class="ph2" href="/pages/privacy-policy">{{ 'strings.general.privacy_policy' | t }}</a>
+                        |
+                        <a class="ph2" href="/pages/terms-conditions">{{ 'strings.general.terms_conditions' | t }}</a>
+                    </div>
+                    {% if section.settings.show_copyright %}
+                        <div class="tw-text-center">
+                            <a href="{{ routes.root_url }}">&copy;
+                                {{ 'now' | date: "%Y" }}
+                                Designer Icons</a>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+
+
+        </div>
+        <div class="footer-right" id="payment">
+            {% if section.settings.show_social_icons %}
+                {% render 'social-icons' %}
+            {% endif %}
+            {% if section.settings.show_credit_cards %}
+                <div class="payment-methods tw-text-center lg:tw-text-right">
+                    {% for type in shop.enabled_payment_types %}
+                        {{ type | payment_type_svg_tag: class:'payment-icon' }}
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+    </div>
+
+</footer>
+{% if currency_selector %}
                         <noscript>
                             {%- form 'localization', id: 'FooterCountryFormNoScript', class: 'localization-form' -%}
                                 <div class="localization-form__select">
@@ -140,17 +186,7 @@
                         </noscript>
                         <localization-form>
                             {%- form 'localization', id: 'FooterCountryForm', class: 'localization-form' -%}
-                            <label aria-controls="FooterLanguageList" aria-describedby="FooterLanguageLabel" aria-expanded="false" class="tw-btn tw-btn-outline tw-rounded-none tw-btn-xs tw-items-center tw-gap-3" for="footercountryformmodal" tabindex="0" type="button">
-                                {%- assign iconPath =  localization.country.iso_code | downcase | append:'-flag' | append: '.svg' %}
-                                <img width="16" height="16" class="tw-w-4 tw-h-4 tw-rounded-full tw-object-cover" src="{{ iconPath | file_url}}"/>
-                                {{ localization.country.name | capitalize }}
-                                ({{ localization.country.currency.iso_code }}
-                                {{ localization.country.currency.symbol }}) -
-                                {{localization.language.endonym_name}}
-                                <svg aria-hidden="true" class="icon icon-caret tw-text-sm tw-ml-3" focusable="false" height="1em" role="presentation" viewbox="0 0 10 6" width="1em">
-                                    <path clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill-rule="evenodd" fill="currentColor"/>
-                                </svg>
-                            </label>
+                            
                             <input class="tw-modal-toggle" id="footercountryformmodal" type="checkbox">
                             <div class="tw-modal">
                                 <div class="tw-p-0 tw-modal-box lg:tw-max-w-sm">
@@ -261,42 +297,6 @@
                             {%- endform -%}
                         </localization-form>
                     {% endif %}
-
-                </div>
-                <div class="tw-flex tw-flex-col lg:tw-flex-row lg:tw-gap-6 tw-leading-[30px] tw-mt-[10px]">
-                    <div class="small-links tw-text-center">
-                        <a class="ph2" href="/pages/privacy-policy">{{ 'strings.general.privacy_policy' | t }}</a>
-                        |
-                        <a class="ph2" href="/pages/terms-conditions">{{ 'strings.general.terms_conditions' | t }}</a>
-                    </div>
-                    {% if section.settings.show_copyright %}
-                        <div class="tw-text-center">
-                            <a href="{{ routes.root_url }}">&copy;
-                                {{ 'now' | date: "%Y" }}
-                                Designer Icons</a>
-                        </div>
-                    {% endif %}
-                </div>
-            </div>
-
-
-        </div>
-        <div class="footer-right" id="payment">
-            {% if section.settings.show_social_icons %}
-                {% render 'social-icons' %}
-            {% endif %}
-            {% if section.settings.show_credit_cards %}
-                <div class="payment-methods tw-text-center lg:tw-text-right">
-                    {% for type in shop.enabled_payment_types %}
-                        {{ type | payment_type_svg_tag: class:'payment-icon' }}
-                    {% endfor %}
-                </div>
-            {% endif %}
-        </div>
-    </div>
-
-</footer>
-
 <style>
     #footer-wrapper {
         text-align: {{
