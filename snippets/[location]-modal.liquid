@@ -10,8 +10,10 @@ BE fr fr-be show,
 AT de de-at show,
 ES es es-es' %}
 {% assign path = request.path %}
-{% if request.locale.root_url %}
-    {% assign path = request.path | replace: request.locale.root_url, '' %}
+{{request.locale.root_url}}
+{{request.path}}
+{% if request.locale.root_url and request.locale.root_url != "" %}
+    {% assign path = request.path | replace: request.locale.root_url, '/' %}
 {% endif %}
 <noscript>
     {%- form 'localization', id: 'FooterCountryFormNoScript', class: 'localization-form' -%}
@@ -46,6 +48,7 @@ ES es es-es' %}
                     <div class="tw-p-0 !tw-transition-all    !tw-relative tw-w-full lg:tw-ml-auto tw-bg-base-100 " id="FooterLanguageList" role="list">
                         {% assign contrylangs = countrymap | split: ',' %}
                         {%- for contrylang in contrylangs -%}
+                        
                             {% assign contrylangarray = contrylang | split: ' ' %}
                             {% assign contrycode = contrylangarray[0] %}
                             {% assign langcode = contrylangarray[1] %}
@@ -56,7 +59,10 @@ ES es es-es' %}
                                 {% continue %}
                             {% endunless %}
                             {% assign lang =  localization.available_languages | where: "iso_code", langcode | first | default: localization.language  %}
-                            <a title="{{lang.endonym_name}}" href="/{{root_url}}/{{path}}" class=" tw-items-center tw-capitalize tw-flex tw-justify-between !tw-px-3 !tw-py-1 tw-gap-2  hover:tw-bg-gray-200 {% if country.iso_code == localization.country.iso_code %} tw-font-bold{% endif %} focus-inset" href="#" {% if country.iso_code == localization.country.iso_code %} aria-current="true" {% endif %} data-country="{{ country.iso_code }}" data-lang="{{ lang.iso_code }}" data-value="{{ country.iso_code }}">
+                            {% if country.iso_code == localization.country.iso_code %}
+                                {% continue %}
+                            {% endif %}
+                            <a title="{{lang.endonym_name}}" href="/{{root_url}}{{path}}" class=" tw-items-center tw-capitalize tw-flex tw-justify-between !tw-px-3 !tw-py-1 tw-gap-2  hover:tw-bg-gray-200 {% if country.iso_code == localization.country.iso_code %} tw-font-bold{% endif %} focus-inset" href="#" {% if country.iso_code == localization.country.iso_code %} aria-current="true" {% endif %} data-country="{{ country.iso_code }}" data-lang="{{ lang.iso_code }}" data-value="{{ country.iso_code }}">
                                 {{ country.name | capitalize }}
                                 {% if show %}
                                     ({{lang.name | capitalize}})
