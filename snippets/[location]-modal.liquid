@@ -10,12 +10,9 @@ BE fr /fr-be show,
 AT de /de-at show,
 ES es /es-es' %}
 {% assign path = request.path %}
-{{request.locale.root_url}}
-{{request.path}}
 {% if request.locale.root_url and request.locale.root_url != "/" %}
     {% assign path = request.path | replace: request.locale.root_url, '/' %}
 {% endif %}
-{{path}}
 <noscript>
     {%- form 'localization', id: 'FooterCountryFormNoScript', class: 'localization-form' -%}
         <div class="localization-form__select">
