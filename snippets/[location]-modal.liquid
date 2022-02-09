@@ -38,6 +38,9 @@ ES es es-es' %}
 
         <input class="tw-modal-toggle" id="footercountryformmodal" type="checkbox">
         <div class="tw-modal">
+            <label aria-controls="FooterLanguageList" aria-describedby="FooterLanguageLabel" aria-expanded="false" class="tw-fixed tw-w-full tw-h-full tw-left-0 tw-top-0" for="footercountryformmodal" tabindex="0" type="button">
+                
+            </label>
             <div class="tw-p-0 tw-modal-box lg:tw-max-w-xs">
                 <div class="tw-w-full  tw-p-8 tw-pt-12 tw-max-h-[calc(100vh-100px)] tw-overflow-auto">
                     <div class="tw-p-0 !tw-transition-all    !tw-relative tw-w-full lg:tw-ml-auto tw-bg-base-100 " id="FooterLanguageList" role="list">
@@ -53,7 +56,7 @@ ES es es-es' %}
                                 {% continue %}
                             {% endunless %}
                             {% assign lang =  localization.available_languages | where: "iso_code", langcode | first | default: localization.language  %}
-                            <a href="/{{root_url}}{{path}}" class=" tw-items-center tw-capitalize tw-flex tw-justify-between !tw-px-3 !tw-py-1 tw-gap-2  hover:tw-bg-gray-200 {% if country.iso_code == localization.country.iso_code %} tw-font-bold{% endif %} focus-inset" href="#" {% if country.iso_code == localization.country.iso_code %} aria-current="true" {% endif %} data-country="{{ country.iso_code }}" data-lang="{{ lang.iso_code }}" data-value="{{ country.iso_code }}">
+                            <a title="{{lang.endonym_name}}" href="/{{root_url}}/{{path}}" class=" tw-items-center tw-capitalize tw-flex tw-justify-between !tw-px-3 !tw-py-1 tw-gap-2  hover:tw-bg-gray-200 {% if country.iso_code == localization.country.iso_code %} tw-font-bold{% endif %} focus-inset" href="#" {% if country.iso_code == localization.country.iso_code %} aria-current="true" {% endif %} data-country="{{ country.iso_code }}" data-lang="{{ lang.iso_code }}" data-value="{{ country.iso_code }}">
                                 {{ country.name | capitalize }}
                                 {% if show %}
                                     ({{lang.name | capitalize}})
