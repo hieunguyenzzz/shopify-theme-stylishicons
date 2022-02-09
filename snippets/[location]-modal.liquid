@@ -11,7 +11,7 @@ AT de /de-at show,
 ES es /es-es' %}
 {% assign path = request.path %}
 {% if request.locale.root_url and request.locale.root_url != "/" %}
-    {% assign path = request.path | replace: request.locale.root_url, '/' %}
+    {% assign path = request.path | replace_first: request.locale.root_url, '/' %}
 {% endif %}
 <noscript>
     {%- form 'localization', id: 'FooterCountryFormNoScript', class: 'localization-form' -%}
