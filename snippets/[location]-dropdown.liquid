@@ -16,7 +16,7 @@ ES es /es-es' %}
     {% assign path = request.path | replace_first: request.locale.root_url, '/' %}
 {% endif %}
 <div class="tw-dropdown tw-flex tw-dropdown-end tw-dropdown-hover">
-    <div tabindex="0" class="tw-btn tw-btn-outline !tw-font-normal !tw-mb-0 tw-rounded-none tw-btn-xs tw-items-center tw-gap-1">
+    <div tabindex="0" class="tw-btn tw-btn-ghost !tw-font-normal !tw-mb-0 tw-rounded-none tw-btn-xs tw-items-center tw-gap-1">
             {%- assign iconPath =  localization.country.iso_code | downcase | append:'-flag' | append: '.svg' %}
             <img width="16" height="16" class="tw-w-4 tw-h-4 tw-rounded-full tw-object-cover" src="{{ iconPath | file_url}}"/>
                               {{ localization.language.iso_code | append: '/' | append: localization.country.iso_code | downcase | split: '/' | uniq | join: '/'}}
