@@ -81,20 +81,23 @@ ES es es-es' %}
                                     <div>{{section.settings.footer_text}}</div>
                                 {% endif %}
                             </div>
-                            <div class="tw-flex tw-justify-between lg:tw-justify-between tw-w-full tw-text-right lg:tw-flex-col tw-items-center md:tw-items-center lg:tw-items-end">
+                            <div class="">
                                 {{ block.settings.footer_text }}
-                                {% if block.settings.image != blank %}
-                                    <a target="_blank" class="tw-filter hover:tw-grayscale" href="{{block.settings.imageUrl}}"><img width="300" height="200" class="tw-w-40 tw-ml-auto lazyload lazyload-fade " data-src="{{ block.settings.image | img_url: '300x' }}"></a>
-                                {% endif %}
-                                {% if block.settings.image1 != blank %}
-                                    <a target="_blank" class="tw-filter hover:tw-grayscale" href="{{block.settings.imageUrl1}}"><img width="300" height="200" class="tw-w-40 tw-ml-auto lazyload lazyload-fade " data-src="{{ block.settings.image1 | img_url: '300x' }}"></a>
-                                {% endif %}
-                                {% if block.settings.image2 != blank %}
-                                    <a target="_blank" class="tw-filter hover:tw-grayscale" href="{{block.settings.imageUrl2}}"><img width="300" height="200" class="tw-w-40 tw-ml-auto lazyload lazyload-fade " data-src="{{ block.settings.image2 | img_url: '300x' }}"></a>
-                                {% endif %}
-                                {% if block.settings.image3 != blank %}
-                                    <a target="_blank" class="tw-filter hover:tw-grayscale" href="{{block.settings.imageUrl3}}"><img width="300" height="200" class="tw-w-40 tw-ml-auto lazyload lazyload-fade " data-src="{{ block.settings.image3 | img_url: '300x' }}"></a>
-                                {% endif %}
+                                <div class="tw-flex tw-w-full tw-text-right tw-items-center md:tw-items-center tw-justify-end">
+                                    {% if block.settings.image != blank %}
+                                    <a target="_blank" class="tw-filter hover:tw-grayscale " href="{{block.settings.imageUrl}}"><img width="300" height="200" class="tw-w-40 tw-ml-auto lazyload lazyload-fade " data-src="{{ block.settings.image | img_url: '300x' }}"></a>
+                                    {% endif %}
+                                    {% if block.settings.image1 != blank %}
+                                        <a target="_blank" class="tw-filter hover:tw-grayscale " href="{{block.settings.imageUrl1}}"><img width="300" height="200" class="tw-w-40 tw-ml-auto lazyload lazyload-fade " data-src="{{ block.settings.image1 | img_url: '300x' }}"></a>
+                                    {% endif %}
+                                    {% if block.settings.image2 != blank %}
+                                        <a target="_blank" class="tw-filter hover:tw-grayscale " href="{{block.settings.imageUrl2}}"><img width="300" height="200" class="tw-w-40 tw-ml-auto lazyload lazyload-fade " data-src="{{ block.settings.image2 | img_url: '300x' }}"></a>
+                                    {% endif %}
+                                    {% if block.settings.image3 != blank %}
+                                        <a target="_blank" class="tw-filter hover:tw-grayscale " href="{{block.settings.imageUrl3}}"><img width="300" height="200" class="tw-w-40 tw-ml-auto lazyload lazyload-fade " data-src="{{ block.settings.image3 | img_url: '300x' }}"></a>
+                                    {% endif %}
+                                </div>
+                                
                             </div>
                         </div>
                 {% endcase %}
