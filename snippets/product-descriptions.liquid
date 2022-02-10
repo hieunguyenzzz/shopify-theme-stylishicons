@@ -1,3 +1,4 @@
+{% assign description = product.metafields.global.description  %}
 {% assign description_tag = instructions.description_tag %}
 {% assign heading-1 = instructions.heading-1 %}
 {% assign short-description-1 = instructions.short-description-1 %}
@@ -73,7 +74,7 @@
             </div>
             <div class="tw-flex-1 main-desc">
                 <!-- <h3>Product Details</h3> -->
-                {{ product.description }}
+                {{ description }}
                 <!-- <h3>Product Information</h3> -->
                 {{ product-information }}
             </div>
@@ -86,8 +87,8 @@
         <h5>{{ 'strings.general.inspired_by' | t }}</h5>
         <h1>
             {{ inspired-by }}</h1>
-            {% assign inspired = collections['designer-icons'] %}
-            {% for collection in product_collection %}
+        {% assign inspired = collections['designer-icons'] %}
+        {% for collection in product_collection %}
             {% if collection.title == inspired-by %}
                 {% assign inspired = collection %}
             {% endif %}
