@@ -34,11 +34,11 @@
 {% endif %}
 {% assign handlizeInspired = inspired-by | handleize %}
 {% assign inspired-by-url  = '/collections/' | append: handlizeInspired  %}
-<!-- {% for collection in product.collections %}
-    {% if collection.title == inspired-by %}
+{% for collection in product.collections %}
+    {% if collection.handle == handlizeInspired %}
         {% assign inspired-by-url  = collection.url   %}
     {% endif %}
-{% endfor %} -->
+{% endfor %}
 {% assign current_option = "" %}
 {% assign current_option2 = "" %}
 {% for setProduct in setcollection.products %}
