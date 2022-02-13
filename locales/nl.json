@@ -353,46 +353,46 @@
   "pagefly": {
     "products": {
       "product": {
-        "regular_price": "Normale prijs",
-        "sold_out": "Uitverkocht",
-        "unavailable": "Niet beschikbaar",
-        "on_sale": "Uitverkoop",
-        "quantity": "Hoeveelheid",
-        "add_to_cart": "Voeg toe aan winkelmandje",
-        "back_to_collection": "Terug naar {{ title }}",
-        "view_details": "Bekijk details"
+        "regular_price": "Regular price",
+        "sold_out": "Sold out",
+        "unavailable": "Unavailable",
+        "on_sale": "Sale",
+        "quantity": "Quantity",
+        "add_to_cart": "Add to cart",
+        "back_to_collection": "Back to {{ title }}",
+        "view_details": "View details"
       }
     },
     "article": {
       "tags": "Tags:",
-      "all_topics": "Alle onderwerpen",
-      "by_author": "door {{ author }}",
-      "posted_in": "Geplaatst in",
-      "read_more": "Lees verder",
-      "back_to_blog": "Terug naar {{ title }}"
+      "all_topics": "All topics",
+      "by_author": "by {{ author }}",
+      "posted_in": "Posted in",
+      "read_more": "Read more",
+      "back_to_blog": "Back to {{ title }}"
     },
     "comments": {
-      "title": "laat een reactie achter",
-      "name": "Naam",
-      "email": "E-mail",
-      "message": "Bericht",
-      "post": "Plaats een reactie",
-      "moderated": "Houd er rekening mee dat opmerkingen moeten worden goedgekeurd voordat ze worden gepubliceerd",
-      "success_moderated": "Uw opmerking is succesvol gepost. We zullen het in een korte tijd publiceren, omdat onze blog is gemodereerd.",
-      "success": "Uw opmerking is succesvol gepost! Dank u!",
+      "title": "Leave a comment",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "post": "Post comment",
+      "moderated": "Please note, comments must be approved before they are published",
+      "success_moderated": "Your comment was posted successfully. We will publish it in a little while, as our blog is moderated.",
+      "success": "Your comment was posted successfully! Thank you!",
       "comments_with_count": {
-        "one": "{{ count }} commentaar",
-        "other": "{{ count }} opmerkingen"
+        "one": "{{ count }} comment",
+        "other": "{{ count }} comments"
       }
     },
     "password_page": {
-      "login_form_message": "Voer de winkel in met behulp van wachtwoord:",
-      "login_form_password_label": "Wachtwoord",
-      "login_form_password_placeholder": "Uw wachtwoord",
-      "login_form_submit": "Binnenkomen",
-      "signup_form_email_label": "E-mail",
-      "signup_form_success": "We sturen u een e-mail voordat we openen!",
-      "password_link": "Voer het wachtwoord in"
+      "login_form_message": "Enter store using password:",
+      "login_form_password_label": "Password",
+      "login_form_password_placeholder": "Your password",
+      "login_form_submit": "Enter",
+      "signup_form_email_label": "Email",
+      "signup_form_success": "We will send you an email right before we open!",
+      "password_link": "Enter using password"
     }
   }
 }

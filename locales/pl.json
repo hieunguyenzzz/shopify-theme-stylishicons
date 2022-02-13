@@ -1544,46 +1544,46 @@
   "pagefly": {
     "products": {
       "product": {
-        "regular_price": "Normalna cena",
-        "sold_out": "Wyprzedane",
-        "unavailable": "Niedostępne",
-        "on_sale": "Sprzedaż",
-        "quantity": "Ilość",
-        "add_to_cart": "Dodaj do koszyka",
-        "back_to_collection": "Wrócić do {{ title }}",
-        "view_details": "Pokaż szczegóły"
+        "regular_price": "Regular price",
+        "sold_out": "Sold out",
+        "unavailable": "Unavailable",
+        "on_sale": "Sale",
+        "quantity": "Quantity",
+        "add_to_cart": "Add to cart",
+        "back_to_collection": "Back to {{ title }}",
+        "view_details": "View details"
       }
     },
     "article": {
-      "tags": "Tagi:",
-      "all_topics": "Wszystkie tematy",
-      "by_author": "za pomocą {{ author }}",
-      "posted_in": "Opublikowany w",
-      "read_more": "Czytaj więcej",
-      "back_to_blog": "Wrócić do {{ title }}"
+      "tags": "Tags:",
+      "all_topics": "All topics",
+      "by_author": "by {{ author }}",
+      "posted_in": "Posted in",
+      "read_more": "Read more",
+      "back_to_blog": "Back to {{ title }}"
     },
     "comments": {
-      "title": "zostaw komentarz",
-      "name": "Nazwa",
-      "email": "E-mail",
-      "message": "Wiadomość",
-      "post": "Wyślij komentarz",
-      "moderated": "Uwaga: komentarze muszą zostać zatwierdzone przed opublikowaniem",
-      "success_moderated": "Twój komentarz został opublikowany pomyślnie. Publikujemy go za chwilę, ponieważ nasz blog jest moderowany.",
-      "success": "Twój komentarz został pomyślnie opublikowany! Dziękuję Ci!",
+      "title": "Leave a comment",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "post": "Post comment",
+      "moderated": "Please note, comments must be approved before they are published",
+      "success_moderated": "Your comment was posted successfully. We will publish it in a little while, as our blog is moderated.",
+      "success": "Your comment was posted successfully! Thank you!",
       "comments_with_count": {
-        "one": "{{ count }} komentarz",
-        "other": "{{ count }} uwagi"
+        "one": "{{ count }} comment",
+        "other": "{{ count }} comments"
       }
     },
     "password_page": {
-      "login_form_message": "Wpisz sklep za pomocą hasła:",
-      "login_form_password_label": "Hasło",
-      "login_form_password_placeholder": "Twoje hasło",
-      "login_form_submit": "Wchodzić",
-      "signup_form_email_label": "E-mail",
-      "signup_form_success": "Wyślemy Ci wiadomość e-mail zanim otworzymy!",
-      "password_link": "Wprowadź za pomocą hasła."
+      "login_form_message": "Enter store using password:",
+      "login_form_password_label": "Password",
+      "login_form_password_placeholder": "Your password",
+      "login_form_submit": "Enter",
+      "signup_form_email_label": "Email",
+      "signup_form_success": "We will send you an email right before we open!",
+      "password_link": "Enter using password"
     }
   }
 }
