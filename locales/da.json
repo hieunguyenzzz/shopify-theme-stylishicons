@@ -603,46 +603,46 @@
   "pagefly": {
     "products": {
       "product": {
-        "regular_price": "Normal pris",
-        "sold_out": "Udsolgt",
-        "unavailable": "Ikke tilgængelig",
-        "on_sale": "Salg",
-        "quantity": "Antal",
-        "add_to_cart": "Tilføj til kurv",
-        "back_to_collection": "Tilbage til {{ title }}",
-        "view_details": "Se detaljer"
+        "regular_price": "Regular price",
+        "sold_out": "Sold out",
+        "unavailable": "Unavailable",
+        "on_sale": "Sale",
+        "quantity": "Quantity",
+        "add_to_cart": "Add to cart",
+        "back_to_collection": "Back to {{ title }}",
+        "view_details": "View details"
       }
     },
     "article": {
       "tags": "Tags:",
-      "all_topics": "Alle emner",
-      "by_author": "af {{ author }}",
-      "posted_in": "Udsendt i",
-      "read_more": "Læs mere",
-      "back_to_blog": "Tilbage til {{ title }}"
+      "all_topics": "All topics",
+      "by_author": "by {{ author }}",
+      "posted_in": "Posted in",
+      "read_more": "Read more",
+      "back_to_blog": "Back to {{ title }}"
     },
     "comments": {
-      "title": "Efterlad en kommentar",
-      "name": "Navn",
-      "email": "E-mail",
-      "message": "Besked",
-      "post": "Skriv kommentar",
-      "moderated": "Bemærk venligst, at kommentarer skal godkendes, før de offentliggøres",
-      "success_moderated": "Din kommentar blev bogført med succes. Vi vil offentliggøre det om lidt, da vores blog er modereret.",
-      "success": "Din kommentar blev indsendt med succes! Tak skal du have!",
+      "title": "Leave a comment",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "post": "Post comment",
+      "moderated": "Please note, comments must be approved before they are published",
+      "success_moderated": "Your comment was posted successfully. We will publish it in a little while, as our blog is moderated.",
+      "success": "Your comment was posted successfully! Thank you!",
       "comments_with_count": {
-        "one": "{{ count }} kommentar",
-        "other": "{{ count }} kommentarer."
+        "one": "{{ count }} comment",
+        "other": "{{ count }} comments"
       }
     },
     "password_page": {
-      "login_form_message": "Angiv et lager vha. kodeord:",
-      "login_form_password_label": "Adgangskode",
-      "login_form_password_placeholder": "Dit kodeord",
-      "login_form_submit": "Gå ind",
-      "signup_form_email_label": "E-mail",
-      "signup_form_success": "Vi sender dig en e-mail lige før vi åbner!",
-      "password_link": "Indtast med adgangskode"
+      "login_form_message": "Enter store using password:",
+      "login_form_password_label": "Password",
+      "login_form_password_placeholder": "Your password",
+      "login_form_submit": "Enter",
+      "signup_form_email_label": "Email",
+      "signup_form_success": "We will send you an email right before we open!",
+      "password_link": "Enter using password"
     }
   }
 }
