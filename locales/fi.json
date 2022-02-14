@@ -1,7 +1,8 @@
 {
   "general": {
     "404": {
-      "subtext": "Tätä sivua ei ole olemassa. Kokeile etsiä mitä haluat löytää:"
+      "subtext": "Tätä sivua ei ole olemassa. Kokeile etsiä mitä haluat löytää:",
+      "title": "Oho - emme löytäneet sitä"
     },
     "pagination": {
       "showing_items": "Näytetään kohteita",
@@ -11,13 +12,13 @@
       "post_error": "Anteeksi, näyttää jotain meni pieleen. Korjaa seuraava ja lähetä uudelleen:"
     },
     "breadcrumbs": {
-      "home": "Etusivu"
+      "home": "Koti"
     },
     "newsletter_form": {
       "newsletter_email": "liity postituslistallemme",
       "thanks": "Kiitos liittymästä",
       "popup_thanks": "Kiitos liittymästä, tässä on kuponkikoodi:",
-      "email_placeholder": "Sähköpostin osoite",
+      "email_placeholder": "Sähköpostiosoite",
       "confirmation": "Kiitos liittymästä!",
       "submit": "Liittyä seuraan"
     },
@@ -33,6 +34,9 @@
     },
     "accessibility": {
       "unit_price_separator": "per"
+    },
+    "currency": {
+      "dropdown_label": "Valuutta"
     }
   },
   "strings": {
