@@ -1,30 +1,30 @@
 {
   "general": {
     "404": {
-      "subtext": "Denne siden finnes ikke. Prøv å søke etter hva du ønsker å finne:",
-      "title": "Oops - Vi kunne ikke finne at en"
+      "subtext": "Denne siden eksisterer ikke. Prøv å søke etter hva du vil finne:",
+      "title": "Ups - vi kunne ikke finne den ene"
     },
     "pagination": {
-      "showing_items": "viser treff",
+      "showing_items": "Viser elementer",
       "of": "av"
     },
     "forms": {
-      "post_error": "Sorry, ser ut som noe gikk galt. Rett opp følgende og sende på nytt:"
+      "post_error": "Beklager, ser ut som noe gikk galt. Vennligst rett følgende og send igjen:"
     },
     "breadcrumbs": {
       "home": "Hjem"
     },
     "newsletter_form": {
-      "newsletter_email": "Bli med i vår mailingliste",
-      "thanks": "Takk for innsatsen",
-      "popup_thanks": "Takk for innsatsen, her er din kupongkode:",
+      "newsletter_email": "Bli med på vår adresseliste",
+      "thanks": "Takk for at du ble med",
+      "popup_thanks": "Takk for at du blir med, her er kupongkoden din:",
       "email_placeholder": "Epostadresse",
-      "confirmation": "Takk for å bli med!",
+      "confirmation": "Takk for at du blir med!",
       "submit": "Bli med"
     },
     "search": {
-      "no_results_html": "Ditt søk etter \"{{ terms }}\"Ikke ga noen resultater.",
-      "results_for_html": "Ditt søk etter \"{{ terms }}\"Avslørte følgende:",
+      "no_results_html": "Søket ditt etter \"{{ terms }}\"ga ikke noen resultater.",
+      "results_for_html": "Søket ditt etter \"{{ terms }}\"Avdekket følgende:",
       "title": "Søk",
       "placeholder": "Søk",
       "submit": "Søk"
