@@ -943,25 +943,25 @@
   "general": {
     "404": {
       "title": "Ups - Nie mogliśmy tego znaleźć",
-      "subtext": "Ta strona nie istnieje. Spróbuj poszukać tego, co chcesz znaleźć:"
+      "subtext": "Ta strona nie istnieje. Spróbuj wyszukać to, co chcesz znaleźć:"
     },
     "pagination": {
-      "showing_items": "Pokazuje elementy",
+      "showing_items": "Pokazując przedmioty",
       "of": "z"
     },
     "forms": {
-      "post_error": "Przepraszam, chyba coś poszło nie tak. Proszę skorygować i ponownie złożyć:"
+      "post_error": "Przepraszamy, wygląda na to, że coś poszło nie tak. Popraw poniższe i prześlij ponownie:"
     },
     "breadcrumbs": {
-      "home": "Strona główna"
+      "home": "Dom"
     },
     "newsletter_form": {
-      "newsletter_email": "Dołącz do naszej listy mailingowej",
-      "thanks": "Dziękuję za przybycie.",
-      "popup_thanks": "Dziękujemy za przybycie, oto kod kuponowy:",
+      "newsletter_email": "Dołącz do naszej listy e-mailowej",
+      "thanks": "Dziękuję, że dołączyłeś",
+      "popup_thanks": "Dziękujemy za dołączenie, oto kod kuponu:",
       "email_placeholder": "Adres e-mail",
-      "confirmation": "Dziękuję za przybycie!",
-      "submit": "Dołącz"
+      "confirmation": "Dzięki za dołączenie!",
+      "submit": "Dołączyć"
     },
     "search": {
       "no_results_html": "Twoje wyszukiwanie \"{{ terms }}\"Nie dał żadnych wyników.",
@@ -975,6 +975,9 @@
     },
     "accessibility": {
       "unit_price_separator": "za"
+    },
+    "currency": {
+      "dropdown_label": "Waluta"
     }
   },
   "strings": {
