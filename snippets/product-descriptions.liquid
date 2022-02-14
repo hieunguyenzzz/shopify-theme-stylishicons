@@ -85,14 +85,16 @@
     {% assign product_collection = product.collections %}
     <div class="tw-flex-1">
         <h5>{{ 'strings.general.inspired_by' | t }}</h5>
-        <h1>
-            {{ inspired-by }}</h1>
+        <h1>{{ inspired-by }}</h1>
         {% assign inspired = collections['designer-icons'] %}
-        {% for collection in product_collection %}
-            {% if collection.title == inspired-by %}
+        {% assign handlizeInspired = inspired-by | handleize %}
+        {% assign inspired-by-url  = '/collections/' | append: handlizeInspired  %}
+        {% for collection in product.collections %}
+            {% if collection.handle == handlizeInspired %}
                 {% assign inspired = collection %}
             {% endif %}
         {% endfor %}
+
         {{ inspired.description | strip_html  }}
     </div>
     {% for collection in product_collection %}
