@@ -5520,7 +5520,10 @@
               "iwt_title": "Prices Are Kept High",
               "iwt_text": "<p>Mid-century furniture that were created over 60 years ago should to be accessible to all. Decades after the deaths of the renowned designers, the prices are high, making them available only to the wealthy - Here at Designer Icons we offer affordable designer furniture for all<br\/><br\/><\/p>",
               "iwt_link": "",
-              "iwt_button": ""
+              "iwt_button": "",
+              "shadow": false,
+              "image_bg": "#ffffff",
+              "shadow_color": "#eef5f1"
             }
           },
           "bf6b5b77-492b-414a-a10d-440e8adcee41": {
@@ -5533,7 +5536,10 @@
               "iwt_title": "Therefore, We Created an Alternative",
               "iwt_text": "<p>Out of frustration, we created an alternative by eliminating middle men, sales staff and expensive showrooms. We began producing all products in our own factory and making these designs widely available and affordable once again. In addition, we decided to offer fast shipping, 30-day free returns and a 5-year warranty on all of our products, to take the hassle out of furniture buying.<\/p><p><br\/><br\/><\/p>",
               "iwt_link": "",
-              "iwt_button": ""
+              "iwt_button": "",
+              "shadow": false,
+              "image_bg": "#ffffff",
+              "shadow_color": "#eef5f1"
             }
           },
           "893e10cb-38fd-42cd-a0ee-81e2709b7f27": {
@@ -5546,20 +5552,26 @@
               "iwt_title": "In the Original Quality",
               "iwt_text": "<p>By combining highly skilled labor and technological innovations, we’ve streamlined the production and quality assurance processes, resulting in faster, more precise service. Our artisans follow stringent quality assurance standards from the instant production begins to the moment your order leaves our factory. Every Desiger Icons design is triple checked for precision to ensure you receive a perfect piece of designer furniture every time you place an order.<\/p><p><br\/><br\/><\/p>",
               "iwt_link": "",
-              "iwt_button": ""
+              "iwt_button": "",
+              "shadow": true,
+              "image_bg": "#ffffff",
+              "shadow_color": "#eef5f1"
             }
           },
           "d59d48a5-6aa6-43be-8b8c-04645615e7ce": {
             "type": "image_with_text",
             "settings": {
-              "iwt_image": "shopify:\/\/shop_images\/shutterstock_382064047.jpg",
+              "iwt_image": "shopify:\/\/shop_images\/shutterstock_382064047_a76c49d9-92cf-46d7-8107-3a47f9292134.jpg",
               "iwt_layout": "right",
               "iwt_image_width": "50%",
               "iwt_text_align": "left",
               "iwt_title": "Only Quality Factories Chosen",
               "iwt_text": "<p>By sourcing only from the very best factories, we’re able to keep prices low and maintain stringent quality control. Our strict policies on outsourcing is one of the key reasons we’re able to offer a 5-year warranty on every product we offer.<\/p><p><\/p><p><a href=\"\/pages\/our-factory\" title=\"Our factory\">Learn more <\/a><\/p><p><\/p>",
               "iwt_link": "",
-              "iwt_button": ""
+              "iwt_button": "",
+              "shadow": true,
+              "image_bg": "#ffffff",
+              "shadow_color": "#eef5f1"
             }
           },
           "a46c7cc9-f8e5-4b9a-85fe-880217e9fbc8": {
@@ -5572,7 +5584,10 @@
               "iwt_title": "Shipped to Your Door",
               "iwt_text": "<p>Our factory-to-home business model allows us to pass a substantial savings onto you. Your satisfaction is our highest priority, so once production is complete, we inspect your piece(s) scrupulously one last time before initiating shipment. Our hope is that you’ll fall in love with your new furniture the moment it arrives at your door.<br\/><\/p>",
               "iwt_link": "",
-              "iwt_button": ""
+              "iwt_button": "",
+              "shadow": true,
+              "image_bg": "#ffffff",
+              "shadow_color": "#eef5f1"
             }
           },
           "8d1a59ac-6ccd-4798-8cf7-eb0cb19b7854": {
