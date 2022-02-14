@@ -58,9 +58,9 @@ Custom blocks from custom pages and collections in 1 single snippet to reduce re
     function loadFeed(page) {
         let url
         if (page) {
-            url = "{{ " instagram - feed - [page].json " | file_url }}".replace("[page]", page);
+            url = `{{"instagram-feed-[page].json" | file_url }}`.replace("[page]", page);
         } else {
-            url = "{{ " instagram - feed.json " | file_url }}"
+            url = `{{"instagram-feed.json" | file_url }}`
         }
 
         document
@@ -97,7 +97,8 @@ Custom blocks from custom pages and collections in 1 single snippet to reduce re
                             .text
                         let imageUrl = ` https://res.cloudinary.com/dfgbpib38/image/upload/w_400,f_auto/instagram/ngohoanglong/instagram-feed/main/out/images/instagram-feed-${
                             node.id
-                        }.jpg` let str = `<a target="_blank" href="https://www.instagram.com/p/${
+                        }.jpg`;
+                        let str = `<a target="_blank" href="https://www.instagram.com/p/${
                             node.shortcode
                         }/"  class="keen-slider__slide tw-group tw-relative tw-leading-none tw-pb-[100%]">
                 <img class="lazyload  lazyload-fade tw-absolute tw-inset-0 !tw-w-full !tw-h-full tw-object-cover tw-leading-none " data-src="${imageUrl}" alt="{{shop.name}}"/>
@@ -112,7 +113,8 @@ Custom blocks from custom pages and collections in 1 single snippet to reduce re
                     ${text}
                   </p>
                 </div>
-            </a>` document.querySelector("#gallery").appendChild(createElementFromHTML(str))
+            </a>`;
+                        document.querySelector("#gallery").appendChild(createElementFromHTML(str))
                     })
                 try {
                     let nextCursor = result
