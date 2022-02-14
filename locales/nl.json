@@ -12,7 +12,7 @@
       "post_error": "Sorry, het lijkt erop dat er iets mis ging. Corrigeer het volgende en verzend opnieuw:"
     },
     "breadcrumbs": {
-      "home": "Home"
+      "home": "Huis"
     },
     "newsletter_form": {
       "newsletter_email": "kom bij onze maillijst",
@@ -34,6 +34,9 @@
     },
     "accessibility": {
       "unit_price_separator": "per"
+    },
+    "currency": {
+      "dropdown_label": "Munteenheid"
     }
   },
   "password": {
