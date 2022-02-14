@@ -12,33 +12,33 @@
   },
   "general": {
     "404": {
-      "title": "Oups - Nous n'avons pas pu trouver celui-là",
-      "subtext": "Cette page n'existe pas. Essayez de chercher ce que vous souhaitez trouver:"
+      "title": "Oups - nous ne pouvions pas trouver celui-là",
+      "subtext": "Cette page n'existe pas. Essayez de rechercher les informations que vous aimeriez trouver:"
     },
     "pagination": {
-      "showing_items": "Afficher les articles",
+      "showing_items": "Affichage des articles",
       "of": "de"
     },
     "forms": {
-      "post_error": "Désolé, il semble que des champs n'aient pas été remplis:"
+      "post_error": "Désolé, on dirait que quelque chose s'est mal passé. Veuillez corriger les suivants et soumettre à nouveau:"
     },
     "breadcrumbs": {
       "home": "Accueil"
     },
     "newsletter_form": {
-      "newsletter_email": "S'inscrire à notre liste de diffusion",
-      "thanks": "Merci pour votre inscription",
-      "popup_thanks": "Merci pour votre inscription, voici votre code de réduction :",
-      "email_placeholder": "Entrer l'adresse e-mail",
-      "confirmation": "Merci pour votre inscription !",
-      "submit": "Joindre"
+      "newsletter_email": "Joignez-vous à notre liste d'envoi",
+      "thanks": "Merci de nous rejoindre",
+      "popup_thanks": "Merci de rejoindre, voici votre code de coupon:",
+      "email_placeholder": "Adresse e-mail",
+      "confirmation": "Merci d'avoir rejoint!",
+      "submit": "Rejoindre"
     },
     "search": {
-      "no_results_html": "Votre recherche de \"{{ terms }}\" n'a donné aucun résultat.",
-      "results_for_html": "Votre recherche de \"{{ terms }}\" a révélé ce qui suit :",
-      "title": "Rechercher dans notre magasin",
-      "placeholder": "Recherche",
-      "submit": "Recherche"
+      "no_results_html": "Votre recherche \"{{ terms }}\"n'a donné aucun résultat.",
+      "results_for_html": "Votre recherche \"{{ terms }}\"a révélé ce qui suit:",
+      "title": "Chercher",
+      "placeholder": "Chercher",
+      "submit": "Chercher"
     },
     "currency": {
       "dropdown_label": "Devise"
