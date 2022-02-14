@@ -1,30 +1,30 @@
 {
   "general": {
     "404": {
-      "title": "Ups - vi kunne ikke finde den ene",
-      "subtext": "Denne side eksisterer ikke. Prøv at søge efter, hvad du gerne vil finde:"
+      "title": "Ups - Vi kunne ikke finde, at man",
+      "subtext": "Denne side findes ikke. Prøv at søge efter det, du gerne vil finde:"
     },
     "pagination": {
-      "showing_items": "Viser elementer.",
+      "showing_items": "viser emner",
       "of": "af"
     },
     "forms": {
-      "post_error": "Beklager, ser ud som om noget gik galt. Ret venligst følgende og indsend igen:"
+      "post_error": "Beklager, ligner noget gik galt. korrigere venligst følgende og indsende igen:"
     },
     "breadcrumbs": {
       "home": "Hjem"
     },
     "newsletter_form": {
-      "newsletter_email": "Deltag i vores mailingliste",
-      "thanks": "Tak for at blive medlem af",
-      "popup_thanks": "Tak for at blive medlem af, her er din kuponkode:",
+      "newsletter_email": "Tilmeld dig vores mailingliste",
+      "thanks": "Tak for sammenføjning",
+      "popup_thanks": "Tak for sammenføjning, her er din kuponkode:",
       "email_placeholder": "Email adresse",
-      "confirmation": "Tak for at blive med!",
+      "confirmation": "Tak for sammenføjning!",
       "submit": "Tilslutte"
     },
     "search": {
-      "no_results_html": "Din søgning efter \"{{ terms }}\"gav ikke nogen resultater.",
-      "results_for_html": "Din søgning efter \"{{ terms }}\"Revealed følgende:",
+      "no_results_html": "Din søgning efter \"{{ terms }}\"Gav ikke noget resultat.",
+      "results_for_html": "Din søgning efter \"{{ terms }}\"Afslørede følgende:",
       "title": "Søg",
       "placeholder": "Søg",
       "submit": "Søg"
@@ -34,6 +34,9 @@
     },
     "accessibility": {
       "unit_price_separator": "om"
+    },
+    "currency": {
+      "dropdown_label": "betalingsmiddel"
     }
   },
   "strings": {
