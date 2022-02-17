@@ -4099,38 +4099,6 @@ html {
   bottom: 0px;
 }
 
-.tw--left-8 {
-  left: -2rem;
-}
-
-.tw--right-8 {
-  right: -2rem;
-}
-
-.tw-top-4 {
-  top: 1rem;
-}
-
-.tw-left-4 {
-  left: 1rem;
-}
-
-.tw-right-4 {
-  right: 1rem;
-}
-
-.tw-top-\[4\%\] {
-  top: 4%;
-}
-
-.tw-left-\[4\%\] {
-  left: 4%;
-}
-
-.tw-right-\[4\%\] {
-  right: 4%;
-}
-
 .tw-top-\[5\%\] {
   top: 5%;
 }
@@ -4139,8 +4107,12 @@ html {
   left: 5%;
 }
 
-.tw-right-\[5\%\] {
-  right: 5%;
+.tw--left-8 {
+  left: -2rem;
+}
+
+.tw--right-8 {
+  right: -2rem;
 }
 
 .tw-isolate {
@@ -5035,42 +5007,6 @@ html {
   padding-top: 2.75rem;
 }
 
-.tw-pt-3 {
-  padding-top: 0.75rem;
-}
-
-.tw-pb-\[100\%\] {
-  padding-bottom: 100%;
-}
-
-.tw-pl-6 {
-  padding-left: 1.5rem;
-}
-
-.tw-pr-4 {
-  padding-right: 1rem;
-}
-
-.tw-pb-4 {
-  padding-bottom: 1rem;
-}
-
-.tw-pl-4 {
-  padding-left: 1rem;
-}
-
-.tw-pr-\[4\%\] {
-  padding-right: 4%;
-}
-
-.tw-pb-\[4\%\] {
-  padding-bottom: 4%;
-}
-
-.tw-pl-\[4\%\] {
-  padding-left: 4%;
-}
-
 .tw-pr-\[5\%\] {
   padding-right: 5%;
 }
@@ -5079,8 +5015,12 @@ html {
   padding-bottom: 5%;
 }
 
-.tw-pl-\[5\%\] {
-  padding-left: 5%;
+.tw-pt-3 {
+  padding-top: 0.75rem;
+}
+
+.tw-pb-\[100\%\] {
+  padding-bottom: 100%;
 }
 
 .tw-text-left {
