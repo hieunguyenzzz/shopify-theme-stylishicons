@@ -5236,15 +5236,15 @@
           "7ddccc05-8734-4ef3-9155-bc7110ad722d": {
             "type": "question",
             "settings": {
-              "title": "Do you have a product warranty?",
-              "answer": "<p>We sure do! We’ve given thousands of customers the style they’ve wanted at the price they’ve wanted. Want to see what a few of them have had to say? Head over to our reviews to see their words yourself.<\/p>"
+              "title": "Do you have a warranty?",
+              "answer": "<p>One of the reasons you might be shopping with us is that you recognise the superior quality of our pieces. And just as we want our furniture to be the best you can find, we want our promise to you to be equally superior. That’s why, while most furniture manufacturers only offer a 2 year warranty, we offer a 5 year warranty.<\/p>"
             }
           },
           "9f21b669-638a-4646-b259-d4823ace4d15": {
             "type": "question",
             "settings": {
               "title": "Do you have any showrooms where I can see the furniture?",
-              "answer": "<p>We sure do! We’ve given thousands of customers the style they’ve wanted at the price they’ve wanted. Want to see what a few of them have had to say? Head over to our reviews to see their words yourself.<\/p>"
+              "answer": "<p>We are online only.<br\/>Decades after the deaths of the renowned designers, the prices are high, making them available only to the wealthy - Here at Designer Icons we offer affordable designer furniture for all. Therefore, We Created an Alternative -&gt; Out of frustration, we created an alternative by eliminating middle men, sales staff and expensive showrooms.  We take this savings and pass them on to our customers, therefore offering the great quality product at a great price.<\/p>"
             }
           },
           "e07aacbe-171d-47fe-b9c9-c69626e38196": {
@@ -5256,8 +5256,8 @@
           "0b727dea-0d51-4691-ab3d-2a58a3f68cf8": {
             "type": "question",
             "settings": {
-              "title": "How do you pack your furniture?",
-              "answer": "<p>We sure do! We’ve given thousands of customers the style they’ve wanted at the price they’ve wanted. Want to see what a few of them have had to say? Head over to our reviews to see their words yourself.<\/p>"
+              "title": "How can I be assured in quality?",
+              "answer": "<p>From the supply chain to production to the moment it arrived in our warehouse, the product has been also quality checked and tested at several stages.<br\/>Once production is complete, we inspect your piece(s) scrupulously one last time before initiating shipment.<\/p>"
             }
           },
           "3f82e613-2abc-47af-af30-fd5133d95640": {
@@ -5270,8 +5270,8 @@
           "a6669cab-8403-4b21-a147-b40df594c3b3": {
             "type": "question",
             "settings": {
-              "title": "How do I place an order with Desiger Icons?",
-              "answer": "<p><br\/>No, we are delivering as usual. As we navigate this uncertain time, we want you to know we’re doing all we can to keep our staff and customers safe. Desiger Icons is open, and we’re delivering as usual. We’ve put new measures in place to keep our warehouse staff safe, including heightened hygiene processes, split shifts and social distancing, and we’ve introduced no-contact delivery.<br\/><br\/><br\/><\/p>"
+              "title": "How will my delivery be arranged?",
+              "answer": "<p>Once your product is ready for delivery to your shipping address, you will be contacted by the carrier to advise the days on which they will deliver to your area and to work out when it is most suitable for you. Please note for larger items you will be delivered at street level.<\/p>"
             }
           }
         },
