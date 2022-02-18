@@ -15,8 +15,8 @@ function BOLD_mc_bootstrap(options) {
       .then(
         function (returnedValue) {
           if (returnedValue.hasOwnProperty('error')) {
-            console.info('Bold MultiCurrency: ' + returnedValue.error);
             BOLDCURRENCY.enabled = false;
+            console.info('Bold MultiCurrency: ' + returnedValue.error);
             throw(returnedValue.error);
           } else {
             callback(returnedValue, moneyElements);
@@ -36,8 +36,8 @@ function BOLD_mc_bootstrap(options) {
       .then(
         function (returnedValue) {
           if (returnedValue.hasOwnProperty('error')) {
-            console.info('Bold MultiCurrency: ' + returnedValue.error);
             BOLDCURRENCY.enabled = false;
+            console.info('Bold MultiCurrency: ' + returnedValue.error);
             throw(returnedValue.error);
           } else {
             if (typeof callback === 'function') {
