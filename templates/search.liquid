@@ -31,7 +31,7 @@
     {% if search.performed %}
 
         <div class="desktop-12 tablet-6 mobile-3" id="four-per-row">
-            <div data-sectionid="{% if section.id %}{{section.id}}{% endif %}" data-settings='{% if section.settings %}{{section.settings | json}}{% endif %}' id="gf-products" class="tw-grid tw-grid-cols-2 md:tw-grid-cols-3 tw-gap-3 md:tw-gap-6">
+            <div data-sectionid="{% if section.id %}{{section.id}}{% endif %}" data-settings='{% if section.settings %}{{section.settings | json}}{% endif %}' id="gf-products" class="tw-grid tw-grid-cols-2 md:tw-grid-cols-3 lg:tw-grid-cols-4 tw-gap-3 md:tw-gap-6">
                 {% for item in search.results %}
                     {%- if item.type == 'GSC_HIDDEN_PRODUCT' -%}
                         {%- continue -%}
