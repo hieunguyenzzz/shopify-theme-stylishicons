@@ -15,9 +15,8 @@
             {% endif %}
             <div class="{% render '[class]-container'  class: '' %}" id="content">
                 <div class="grid_wrapper" id="main-content">
-
-
                     <div class="section-title desktop-12 mobile-3 span-12">
+                        {% render 'countdown-timer'  class: '' %}
                         <h1 class="tw-py-6">
                             {% if collection.handle == 'all' %}
                                 {{ 'collections.general.all_products' | t }}
@@ -26,8 +25,6 @@
                             {% endif %}
                         </h1>
                     </div>
-
-
                     <div class="{% if section.settings.filter_position == 'left_sidebar' %}desktop-9 span-9{% else %}desktop-12 span-12{% endif %} tablet-6 mobile-3">
                         {% if section.settings.description_position == 'top_description' and collection.description != blank %}
                             {% render '[description]-collapse' description:collection.description  class: '' %}
