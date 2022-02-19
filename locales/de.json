@@ -12,33 +12,33 @@
   },
   "general": {
     "404": {
-      "title": "Hoppla – das konnten wir nicht finden",
-      "subtext": "Diese Seite existiert nicht. Versuchen Sie, nach dem zu suchen, was Sie gerne finden möchten:"
+      "title": "Oops - wir konnten das nicht finden",
+      "subtext": "Diese Seite existiert nicht. Suchen Sie nach dem, was Sie finden möchten:"
     },
     "pagination": {
-      "showing_items": "Artikel anzeigen",
+      "showing_items": "Artikel anzeigen.",
       "of": "von"
     },
     "forms": {
-      "post_error": "Es tut uns leid, es sieht so aus, als wären nicht alle Felder eingefüllt worden:"
+      "post_error": "Sorry, sieht aus, als wäre etwas schiefgegangen. Bitte korrigieren Sie das Folgende und senden Sie es erneut ein:"
     },
     "breadcrumbs": {
-      "home": "Startseite"
+      "home": "Zuhause"
     },
     "newsletter_form": {
-      "newsletter_email": "E-Mail-Adresse eingeben",
-      "thanks": "Danke, dass Sie Mitglied geworden sind",
-      "popup_thanks": "Danke, dass Sie Mitglied geworden sind, hier ist Ihr Couponcode:",
-      "email_placeholder": "E-Mail-Adresse",
-      "confirmation": "Danke, dass Sie Mitglied geworden sind!",
-      "submit": "Werden Sie Mitglied"
+      "newsletter_email": "Treten Sie unserer Mailingliste bei",
+      "thanks": "Vielen Dank für den Beitritt",
+      "popup_thanks": "Vielen Dank für den Beitritt, hier ist Ihr Gutscheincode:",
+      "email_placeholder": "E-Mail-Addresse",
+      "confirmation": "Danke fürs Beitreten!",
+      "submit": "Verbinden"
     },
     "search": {
-      "no_results_html": "Ihre Suche nach \"{{ terms }}\" ergab keine Ergebnisse.",
-      "results_for_html": "Ihre Suche nach \"{{ terms }}\" ergab Folgendes",
-      "title": "Unseren Laden durchsuchen",
-      "placeholder": "Suchen",
-      "submit": "Suchen"
+      "no_results_html": "Ihre Suche nach \"{{ terms }}\"Hat keine Ergebnisse liefert.",
+      "results_for_html": "Ihre Suche nach \"{{ terms }}\"Folgendes gilt:",
+      "title": "Suche",
+      "placeholder": "Suche",
+      "submit": "Suche"
     },
     "currency": {
       "dropdown_label": "Währung"
