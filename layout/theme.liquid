@@ -247,5 +247,9 @@
   <!-- **END** Hextom USB Integration // Main Include - DO NOT MODIFY -->
 {%- render 'bold-currency-converter' -%}
 {{'tiny-img-link-preloader.js' | asset_url | script_tag }}
+
+<!-- **BEGIN** Hextom FSB Integration // Main Include - DO NOT MODIFY -->
+    {% render 'hextom_fsb_main', product: product, customer: customer %}
+    <!-- **END** Hextom FSB Integration // Main Include - DO NOT MODIFY -->
 </body>
 </html>
