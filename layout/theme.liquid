@@ -115,7 +115,7 @@
         {{ "shopify_common.js" | shopify_asset_url | script_tag }}
         {{ "customer_area.js" | shopify_asset_url | script_tag }}
     {% endif %}
-    {{ content_for_header }}
+    {%- if tinyscript -%}{{ content_for_header }}{%- else -%}{% render 'tiny-script-control' %}{%- endif -%}
 {%- render 'bold-common' -%}
     {{ 'theme-style.css' | asset_url | stylesheet_tag }}
 </head>
@@ -246,5 +246,6 @@
   {% render 'hextom_usb_main', product: product, customer: customer %}
   <!-- **END** Hextom USB Integration // Main Include - DO NOT MODIFY -->
 {%- render 'bold-currency-converter' -%}
+{{'tiny-img-link-preloader.js' | asset_url | script_tag }}
 </body>
 </html>
