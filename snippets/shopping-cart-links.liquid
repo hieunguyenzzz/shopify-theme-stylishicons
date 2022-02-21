@@ -1,5 +1,5 @@
 {% for link in linklists[section.settings.main_nav1].links %}
-    {% render 'navigation', link: link %}
+    {% render 'navigation', link: link ,linkProps:'target="_blank"' %}
 {% endfor %}
 
 <li class="seeks">

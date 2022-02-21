@@ -11,7 +11,7 @@
                             {% capture navimage %}
                                 {%- assign image_size = '300x' -%}
                                 <span class="dropdown__navimage dropdown__column">
-                                    <a href="{{ block.settings.link }}">
+                                    <a href="{{ block.settings.link }} {{linkProps}}">
                                         {% render 'basic-responsive-image', type: block.settings.nav_image, data_widths: '[180, 360, 540, 720]'%}
                                         <noscript>
                                             <img src="{{ block.settings.nav_image | img_url: '300x' }}" class="navigation-image">
@@ -56,7 +56,7 @@
         {% assign meganav = true %}
         {% capture megalink %}
             <li aria-expanded="false" aria-haspopup="true" class="navigation__menuitem tw-group navigation__menuitem--dropdown js-doubletap-to-go js-aria-expand {{ link.title }}" data-active-class="navigation__menuitem--active" role="none">
-                <a class="navigation__menulink js-menu-link js-open-dropdown-on-key" href="{{ link.url }}">{{ link.title }}</a>
+                <a class="navigation__menulink js-menu-link js-open-dropdown-on-key" href="{{ link.url }}" {{linkProps}}>{{ link.title }}</a>
                 <ul class="tw-bg-black tw-absolute tw-left-0 tw-right-0 tw-opacity-0 group-hover:tw-opacity-100 tw-pointer-events-none group-hover:tw-pointer-events-auto tw-py-12 tw-duration-500 tw-transition-[opacity,margin] tw-invisible group-hover:tw-visible tw-mt-6 group-hover:tw-mt-0">
                     <div class="{% render '[class]-container' class: '' %} tw-max-w-[980px]" style="max-width: 1280px;">
                         {% if block.settings.nav_image != blank %}
@@ -110,6 +110,6 @@
     {{ megalink }}
 {% else %}
     <li class="navigation__menuitem" role="none">
-        <a class="navigation__menulink js-menu-link" role="menuitem" href="{{ link.url }}">{{ link.title }}</a>
+        <a class="navigation__menulink js-menu-link" role="menuitem" href="{{ link.url }}" {{linkProps}}>{{ link.title }}</a>
     </li>
 {% endif %}
