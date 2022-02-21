@@ -4341,6 +4341,10 @@ html {
   max-height: 300px;
 }
 
+.tw-max-h-\[70px\] {
+  max-height: 70px;
+}
+
 .tw-min-h-full {
   min-height: 100%;
 }
