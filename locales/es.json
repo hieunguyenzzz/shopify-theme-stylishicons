@@ -12,15 +12,15 @@
   },
   "general": {
     "404": {
-      "title": "Vaya - No hemos podido encontrar que uno",
-      "subtext": "Esta página no existe. Intenta buscar lo que le gustaría conocer:"
+      "title": "Vaya, no pudimos encontrar que uno",
+      "subtext": "Esta página no existe. Intenta buscar lo que le gustaría encontrar:"
     },
     "pagination": {
       "showing_items": "Mostrando artículos",
       "of": "de"
     },
     "forms": {
-      "post_error": "Lo sentimos, parece que algo ha ido mal. Por favor, corrija los siguientes y presentar de nuevo:"
+      "post_error": "Lo siento, parece que algo salió mal. Por favor, corrija lo siguiente y envíe nuevamente:"
     },
     "breadcrumbs": {
       "home": "Casa"
@@ -28,13 +28,13 @@
     "newsletter_form": {
       "newsletter_email": "Únete a nuestra lista de correos",
       "thanks": "Gracias por unirte",
-      "popup_thanks": "Gracias por unirse, aquí está el código de cupón:",
+      "popup_thanks": "Gracias por unirse, aquí está su código de cupón:",
       "email_placeholder": "Dirección de correo electrónico",
       "confirmation": "¡Gracias por unirte!",
-      "submit": "Entrar"
+      "submit": "Unirse"
     },
     "search": {
-      "no_results_html": "Tu búsqueda de \"{{ terms }}\"No dió ningún resultado.",
+      "no_results_html": "Tu búsqueda de \"{{ terms }}\"No cedió ningún resultado.",
       "results_for_html": "Tu búsqueda de \"{{ terms }}\"Reveló lo siguiente:",
       "title": "Búsqueda",
       "placeholder": "Búsqueda",
