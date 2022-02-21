@@ -1,5 +1,9 @@
 {% for link in linklists[section.settings.main_nav1].links %}
-    {% render 'navigation', link: link ,linkProps:'target="_blank"' %}
+    {% assign linkProps = nil %}
+    {% if link.url contains 'http://' or link.url contains 'https://' %}
+        {% assign linkProps = 'target="_blank"' %}
+    {% endif %}
+    {% render 'navigation', link: link ,linkProps:linkProps %}
 {% endfor %}
 
 <li class="seeks">
