@@ -1256,5 +1256,15 @@
         "info": "Will be scaled down to 32 x 32px"
       }
     ]
+  },
+  {
+    "name": "Countdown timer",
+    "settings": [
+      {
+        "type": "text",
+        "id": "countdown_date",
+        "label": "Date"
+      }
+    ]
   }
 ]
