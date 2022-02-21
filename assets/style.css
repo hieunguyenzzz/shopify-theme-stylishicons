@@ -5729,6 +5729,10 @@ html {
     content: "−";
   }
 
+  .lg\:tw-static {
+    position: static;
+  }
+
   .lg\:tw-top-\[480px\] {
     top: 480px;
   }
@@ -5760,6 +5764,10 @@ html {
 
   .lg\:tw-ml-auto {
     margin-left: auto;
+  }
+
+  .lg\:tw-mt-1 {
+    margin-top: 0.25rem;
   }
 
   .lg\:tw-block {
@@ -5814,6 +5822,10 @@ html {
     width: 54px;
   }
 
+  .lg\:tw-w-full {
+    width: 100%;
+  }
+
   .lg\:tw-max-w-\[200px\] {
     max-width: 200px;
   }
@@ -5844,6 +5856,10 @@ html {
 
   .lg\:tw-flex-row {
     flex-direction: row;
+  }
+
+  .lg\:tw-flex-col {
+    flex-direction: column;
   }
 
   .lg\:tw-items-start {
@@ -5925,6 +5941,11 @@ html {
   .lg\:tw-text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .lg\:tw-text-black {
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0 / var(--tw-text-opacity));
   }
 
   .lg\:tw-shadow-none {
