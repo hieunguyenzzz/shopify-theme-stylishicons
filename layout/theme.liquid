@@ -125,7 +125,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     {%- if tinyscript -%}{{ content_for_header }}{%- else -%}{% render 'tiny-script-control' %}{%- endif -%}
 {%- render 'bold-common' -%}
     {{ 'theme-style.css' | asset_url | stylesheet_tag }}
-</head>
+
+                        {% include 'otRegion' %}            
+                        </head>
 
     <body class="gridlock shifter-left {{ template | handleize }} js-slideout-toggle-wrapper ">
       <!-- Google Tag Manager (noscript) -->
