@@ -415,7 +415,10 @@
       "more-filters": "Mehr Filer",
       "filter-products": "Produkte filtern",
       "clear-all": "Alle löschen",
-      "percentage_off": "{{number}} AUS"
+      "percentage_off": "{{number}} AUS",
+      "sale_ends_in": "Verkauf endet in.",
+      "days": "Tage",
+      "day": "Tag"
     },
     "product_options": {
       "choose-colours": "Wählen Sie Farben:",
