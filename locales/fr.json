@@ -1392,7 +1392,10 @@
       "to": "À",
       "max": "Max.",
       "apply": "Appliquer",
-      "contemporary-inspiration": "Inspiration contemporaine"
+      "contemporary-inspiration": "Inspiration contemporaine",
+      "sale_ends_in": "La vente se termine",
+      "days": "Journées",
+      "day": "Jour"
     },
     "product_options": {
       "choose-colours": "Choisissez Couleurs:",
