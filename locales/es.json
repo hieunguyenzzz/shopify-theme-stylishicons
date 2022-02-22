@@ -593,6 +593,11 @@
       "102-cm": "102 cm",
       "yellow-lacquered": "Lacado amarillo",
       "black-marble": "Mármol negro"
+    },
+    "general": {
+      "sale_ends_in": "La venta termina en",
+      "days": "Días",
+      "day": "Día"
     }
   }
 }
