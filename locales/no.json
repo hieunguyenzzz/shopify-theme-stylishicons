@@ -666,159 +666,159 @@
         "thank_you_confirmed_order_with_email": "Du vil motta en bekreftelsesmelding med bestillingsnummeret ditt kort tid.",
         "thank_you_confirmed_order_with_phone": "Du vil motta en bekreftelsestekst med bestillingsnummeret ditt kort tid.",
         "thank_you_confirmed_order_with_email_and_phone": "Du vil motta en bekreftelses-e-post og tekst med bestillingsnummeret ditt kort tid.",
-        "thank_you_confirmed_order_with_email_payment": "Du har gjort en betaling på bestillingen din %{date}.",
-        "thank_you_confirmed_order_with_phone_payment": "Du har gjort en betaling på bestillingen din %{date}.",
-        "thank_you_confirmed_order_with_email_and_phone_payment": "Du har gjort en betaling på bestillingen din %{date}.",
-        "thank_you_confirmed_order_with_email_pick_up": "Du vil motta en e-post når bestillingen din er klar for henting.",
-        "thank_you_confirmed_order_with_phone_pick_up": "Du vil motta en tekst når bestillingen din er klar for pickup.",
-        "thank_you_confirmed_order_with_email_and_phone_pick_up": "Du vil motta en e-post når bestillingen din er klar for henting.",
-        "thank_you_confirmed_order_with_missing": "Kontakt oss via e-post eller telefon for å motta en bestillingsbekreftelse.",
-        "order_status_confirmed_order_with_email": "Du vil motta en e-post når bestillingen din er klar.",
-        "order_status_confirmed_order_with_phone": "Du vil motta en tekst når bestillingen din er klar.",
-        "order_status_confirmed_order_with_email_and_phone": "Du vil motta en e-post og tekst når bestillingen din er klar.",
-        "order_status_confirmed_order_with_email_payment": "Du har gjort en betaling på bestillingen din %{date}.",
-        "order_status_confirmed_order_with_phone_payment": "Du har gjort en betaling på bestillingen din %{date}.",
-        "order_status_confirmed_order_with_email_and_phone_payment": "Du har gjort en betaling på bestillingen din %{date}.",
-        "order_status_confirmed_order_with_email_pick_up": "Du vil motta en e-post når bestillingen din er klar for henting.",
-        "order_status_confirmed_order_with_phone_pick_up": "Du vil motta en tekst når bestillingen din er klar for pickup.",
-        "order_status_confirmed_order_with_email_and_phone_pick_up": "Du vil motta en e-post og tekst når bestillingen din er klar for pickup.",
-        "order_status_confirmed_order_local": "Vi får bestillingen klar til levering.",
-        "order_status_updates_with_email": "Du får frakt- og leveringsoppdateringer via e-post.",
-        "order_status_updates_with_phone": "Du får frakt- og leveringsoppdateringer etter tekst.",
-        "order_status_updates_with_email_and_phone": "Du får frakt- og leveringsoppdateringer via e-post og tekst.",
-        "order_status_updates_with_missing": "Velg hvordan du vil få fraktoppdateringer.",
-        "confirmed_title": "Din bestilling er bekreftet",
-        "confirmed_description": "Vi har akseptert bestillingen din, og vi får den klar. Kom tilbake til denne siden for oppdateringer på forsendelsesstatusen din.",
-        "ready_for_pickup_title": "Din bestilling er klar for pickup",
-        "ready_for_pickup_description": "Din bestilling er klar for pickup. Vennligst ta med bestillingsbekreftelsen når du henter bestillingen din.",
+        "thank_you_confirmed_order_with_email_payment": "Du har gjort en betaling på bestillingen %{date}.",
+        "thank_you_confirmed_order_with_phone_payment": "Du har gjort en betaling på bestillingen %{date}.",
+        "thank_you_confirmed_order_with_email_and_phone_payment": "Du har gjort en betaling på bestillingen %{date}.",
+        "thank_you_confirmed_order_with_email_pick_up": "Du vil motta en e-post når bestillingen er klar for henting.",
+        "thank_you_confirmed_order_with_phone_pick_up": "Du vil motta en tekst når bestillingen er klar for henting.",
+        "thank_you_confirmed_order_with_email_and_phone_pick_up": "Du vil motta en e-post når bestillingen er klar for henting.",
+        "thank_you_confirmed_order_with_missing": "Kontakt oss via e-post eller telefon for å motta en ordrebekreftelse.",
+        "order_status_confirmed_order_with_email": "Du vil motta en e-post når bestillingen er klar.",
+        "order_status_confirmed_order_with_phone": "Du vil motta en tekst når bestillingen er klar.",
+        "order_status_confirmed_order_with_email_and_phone": "Du vil motta en epost og sms når bestillingen er klar.",
+        "order_status_confirmed_order_with_email_payment": "Du har gjort en betaling på bestillingen %{date}.",
+        "order_status_confirmed_order_with_phone_payment": "Du har gjort en betaling på bestillingen %{date}.",
+        "order_status_confirmed_order_with_email_and_phone_payment": "Du har gjort en betaling på bestillingen %{date}.",
+        "order_status_confirmed_order_with_email_pick_up": "Du vil motta en e-post når bestillingen er klar for henting.",
+        "order_status_confirmed_order_with_phone_pick_up": "Du vil motta en tekst når bestillingen er klar for henting.",
+        "order_status_confirmed_order_with_email_and_phone_pick_up": "Du vil motta en epost og sms når bestillingen er klar for henting.",
+        "order_status_confirmed_order_local": "Vi får bestillingen klar for levering.",
+        "order_status_updates_with_email": "Du får frakt og levering oppdateringer via e-post.",
+        "order_status_updates_with_phone": "Du får frakt og levering oppdateringer av tekst.",
+        "order_status_updates_with_email_and_phone": "Du får frakt og levering oppdateringer via epost og sms.",
+        "order_status_updates_with_missing": "Velg hvordan du ønsker å få fraktoppdateringer.",
+        "confirmed_title": "Bestillingen er bekreftet",
+        "confirmed_description": "Vi har akseptert din bestilling, og vi får den klar. Kom tilbake til denne siden for oppdateringer om forsendelsen status.",
+        "ready_for_pickup_title": "Bestillingen er klar for henting",
+        "ready_for_pickup_description": "Bestillingen er klar for henting. Ta med ordrebekreftelsen når du plukke opp bestillingen.",
         "ready_for_delivery_title": "Din bestilling er klar for levering.",
-        "ready_for_delivery_description": "Vi har forberedt bestillingen din.",
+        "ready_for_delivery_description": "Vi har forberedt din bestilling.",
         "order_updates_title": "Bestill oppdateringer",
-        "shop_phone_description": "Du vil motta en tekst med en lenke til butikkappen for å hjelpe deg med å spore bestillingen din.",
+        "shop_phone_description": "Du vil motta en tekst med en link til butikken app for å spore din bestilling.",
         "order_updates_description_html": "Oppdateringer vil bli sendt til %{customer_contact}",
-        "order_updates_current_step_prefix": "Nåværende trinn: ",
-        "order_updates_past_step_prefix": "Tidligere trinn: ",
+        "order_updates_current_step_prefix": "Nåværende trinnet: ",
+        "order_updates_past_step_prefix": "Past trinnet: ",
         "order_updates_upcoming_step_prefix": "Kommende trinn: ",
         "in_transit": "På vei",
-        "in_transit_title": "Bestillingen din er på vei",
-        "in_transit_description": "Du vil motta oppdateringer om fremdriften.",
-        "in_transit_description_days": "Du bør motta bestillingen din i det neste %{number} dager.",
-        "in_transit_description_today": "Du bør motta bestillingen din i dag.",
-        "in_transit_description_tomorrow": "Du bør motta bestillingen din neste dag.",
-        "no_tracking_number": "Det er ingen sporingsnummer for denne bestillingen.",
-        "out_for_delivery": "Ut for levering",
-        "out_for_delivery_title": "Din bestilling er ute for levering",
-        "out_for_delivery_description_html": "Din bestilling er på vei og skal ankomme i dag. Hvis det ikke leveres i de neste 2 dagene, %{contact_us}.",
-        "out_for_delivery_local_title": "Din bestilling er ute for levering",
-        "out_for_delivery_local_description_html": "Din bestilling kommer snart fram.",
-        "attempted_delivery": "Forsøkt levering",
-        "attempted_delivery_title": "Et forsøk ble gjort for å levere bestillingen din",
-        "attempted_delivery_description_html": "Et forsøk ble gjort for å levere bestillingen din, men det var mislykket. %{contact_us} å ordne et annet leveringsforsøk.",
-        "attempted_delivery_local_title": "Savnet levering",
-        "attempted_delivery_local_description_html": "Vi var ikke i stand til å levere bestillingen din. For å planlegge en annen levering, %{contact_us}.",
-        "delivered": "Levert",
-        "delivered_title": "Din bestilling er levert",
-        "delivered_description_html": "Din bestilling er levert til adressen du oppgav. Hvis du ikke har mottatt det, eller hvis du har andre problemer, %{contact_us}.",
-        "delivered_local_title": "Din bestilling er levert",
-        "delivered_local_description_html": "Har ikke mottatt bestillingen din? %{let_us_know}.",
-        "picked_up_title": "Bestillingen din er blitt plukket opp",
-        "picked_up_description_html": "Din bestilling ble plukket opp på %{location_name} på %{date}.",
+        "in_transit_title": "Bestillingen er på vei",
+        "in_transit_description": "Du vil motta oppdateringer på fremdriften.",
+        "in_transit_description_days": "Du vil motta din bestilling i neste %{number} dager.",
+        "in_transit_description_today": "Du vil motta din bestilling i dag.",
+        "in_transit_description_tomorrow": "Du vil motta din bestilling i neste dag.",
+        "no_tracking_number": "Det er ingen sporingsnummer for denne ordren.",
+        "out_for_delivery": "Out for levering",
+        "out_for_delivery_title": "Bestillingen er ute for levering",
+        "out_for_delivery_description_html": "Bestillingen er på vei og skal komme i dag. Hvis det ikke er levert i løpet av de neste 2 dager, %{contact_us}.",
+        "out_for_delivery_local_title": "Bestillingen er ute for levering",
+        "out_for_delivery_local_description_html": "Bestillingen kommer snart.",
+        "attempted_delivery": "Forsøkte levering",
+        "attempted_delivery_title": "Det ble gjort et forsøk på å levere bestillingen",
+        "attempted_delivery_description_html": "Det ble gjort et forsøk på å levere din bestilling, men det var mislykket. %{contact_us} å ordne en annen leveringsforsøk.",
+        "attempted_delivery_local_title": "Tapte levering",
+        "attempted_delivery_local_description_html": "Vi var ikke i stand til å levere din bestilling. For å planlegge en annen leverings %{contact_us}.",
+        "delivered": "leveres",
+        "delivered_title": "Bestillingen er levert",
+        "delivered_description_html": "Bestillingen er levert til adressen du har oppgitt. Hvis du ikke har mottatt den, eller hvis du har andre problemer, %{contact_us}.",
+        "delivered_local_title": "Bestillingen er levert",
+        "delivered_local_description_html": "Har du ikke mottatt din bestilling? %{let_us_know}.",
+        "picked_up_title": "Bestillingen har blitt plukket opp",
+        "picked_up_description_html": "Bestillingen ble plukket opp på %{location_name} på %{date}.",
         "contact_us": "Kontakt oss",
         "contact_us_lowercase": "kontakt oss",
         "contact_us_html": "Trenger hjelp? %{contact_us}",
-        "updated_time": "Oppdatert %{time_ago} siden",
+        "updated_time": "oppdatert %{time_ago} siden",
         "failure": "Ikke levert",
-        "failed_title": "Din bestilling kunne ikke leveres",
-        "failed_contact_merchant": "Kontakt %{company} å ordne levering.",
+        "failed_title": "Bestillingen kan ikke leveres",
+        "failed_contact_merchant": "Ta kontakt med %{company} å ordne levering.",
         "failed_contact_merchant_no_company": "Kontakt oss for å ordne levering.",
-        "non_shippable_title": "Bestillingen din er fullført",
-        "let_us_know": "Gi oss beskjed",
+        "non_shippable_title": "Bestillingen er fullført",
+        "let_us_know": "La oss få vite",
         "login_title": "Logg inn for å se alle bestillingsdetaljer",
-        "login_description": "Du kan finne bestillingsnummeret ditt i kvitteringen du mottok via e-post.",
-        "login_description_phone": "Du finner bestillingsnummeret ditt i kvitteringen du mottok via tekstmelding.",
+        "login_description": "Du kan finne bestillingsnummeret på kvitteringen du mottok via e-post.",
+        "login_description_phone": "Du kan finne bestillingsnummeret på kvitteringen du mottok via tekstmelding.",
         "login_not_customer_html": "Ikke %{name}? Du kan %{link}",
         "login_reorder_link_text": {
-          "one": "Kjøp dette produktet også",
-          "other": "Kjøp disse produktene også"
+          "one": "kjøpe dette produktet også",
+          "other": "kjøpe disse produktene også"
         },
         "customer_information_hidden_fields_message": "Logg inn for å se all kundeinformasjon.",
-        "cancelled_title": "Din bestilling har blitt kansellert",
-        "cancelled_description": "Din bestilling ble kansellert på %{date}. Kontakt oss hvis du har spørsmål.",
+        "cancelled_title": "Bestillingen er kansellert",
+        "cancelled_description": "Bestillingen ble kansellert på %{date}. Kontakt oss dersom du har noen spørsmål.",
         "order_number_label": "Ordrenummer",
         "customer_validation_error": "Skriv inn en gyldig e-post eller bestillingsnummer.",
-        "customer_validation_error_phone": "Skriv inn en gyldig telefon eller bestillingsnummer.",
+        "customer_validation_error_phone": "Skriv inn et gyldig telefonnummer eller ordrenummer.",
         "login": "Logg Inn",
-        "unfulfilled_items_title": "Forbereder for frakt",
-        "unfulfilled_items_description": "Vi forbereder for øyeblikket disse elementene for frakt.",
+        "unfulfilled_items_title": "Forberedelse til frakt",
+        "unfulfilled_items_description": "Vi forbereder nå disse elementene for frakt.",
         "marker": {
-          "current": "Nåværende forsendelsessted",
+          "current": "Nåværende forsendelsen plassering",
           "shipping": "Sendingsadresse"
         },
         "pick_up_in_store_marker": {
-          "current": "Nåværende forsendelsessted",
+          "current": "Nåværende forsendelsen plassering",
           "shipping": "Hentested"
         },
         "fulfillment": {
           "fulfilled_table_title": "Elementer i denne forsendelsen",
-          "unfulfilled_table_title": "Elementer som forbereder seg på frakt",
+          "unfulfilled_table_title": "Elementer forbereder for frakt",
           "product_image_label": "Produktbilde",
           "description_label": "Beskrivelse",
           "quantity_label": "Mengde"
         },
         "opt_in_message_html": "Din informasjon ble lagret med %{shopify_pay}",
-        "order_updates_description_missing": "Du mottar ikke fraktoppdateringer.",
-        "order_updates_subscribe_to_email_notifications": "Få fraktoppdateringer via e-post",
-        "order_updates_subscribe_to_email_or_phone_notifications": "Få fraktoppdateringer via e-post eller tekst",
-        "order_updates_subscribe_to_phone_notifications": "Få fraktoppdateringer etter tekst",
+        "order_updates_description_missing": "Du mottar ikke frakt oppdateringer.",
+        "order_updates_subscribe_to_email_notifications": "Få frakt oppdateringer via e-post",
+        "order_updates_subscribe_to_email_or_phone_notifications": "Få frakt oppdateringer via e-post eller tekst",
+        "order_updates_subscribe_to_phone_notifications": "Få frakt oppdateringer via tekst",
         "order_updates_submit_subscription": "Sende inn",
-        "track_shipment": "Spor forsendelse",
+        "track_shipment": "Spor forsendelsen",
         "shopify_pay": {
-          "order_completed_html": "Bestill Fullført med. %{shopify_pay}",
-          "learn_more_label": "Lær mer om butikkbetaling"
+          "order_completed_html": "Bestill avsluttet med %{shopify_pay}",
+          "learn_more_label": "Lær mer om Shop Pay"
         },
         "other_options": "Andre muligheter",
         "delivery_information_label": "Leveringsinformasjon:",
-        "gift_card_sent_confirmation": "Gavekort sendt",
+        "gift_card_sent_confirmation": "Gavekort sendes",
         "qr_code": {
-          "send_link_to_phone": "Eller send en lenke til telefonen din",
-          "title": "Spor på telefonen din",
-          "subtitle": "Skann koden med telefonens kamera for å spore med butikken."
+          "send_link_to_phone": "Eller sende en kobling til telefonen din",
+          "title": "Spor på telefonen",
+          "subtitle": "Skanne koden med telefonens kamera til å spore med Shop."
         },
         "shop_qr_with_sms_upsell": {
           "qr_code": {
             "title": "Skann med telefonen",
-            "description": "Shop vil sende deg sanntidsleveringsoppdateringer når bestillingen din sendes."
+            "description": "Butikken vil sende deg real-time levering oppdateringer når bestillingen er sendt."
           },
           "sms": {
-            "title": "Eller send en lenke til telefonen din"
+            "title": "Eller sende en kobling til telefonen din"
           }
         }
       },
       "review": {
         "title": "Anmeldelse",
-        "review_title": "Gjennomgå bestilling",
+        "review_title": "omtale rekkefølge",
         "checkout_as_guest": "Sjekk ut som gjest",
         "blocks": {
-          "contact_method_title": "Kontakt",
-          "billing_address_title": "Fakturering",
+          "contact_method_title": "Ta kontakt med",
+          "billing_address_title": "Billing",
           "shipping_address_title": "Send til",
           "shipping_method_title": "Metode",
-          "payment_method_title": "Betaling",
+          "payment_method_title": "innbetaling",
           "change_link_label": "Endring",
           "change_contact_method_link_label": "Endre kontaktinformasjon",
-          "change_billing_address_link_label": "Endre faktureringsadresse",
+          "change_billing_address_link_label": "Endre fakturaadresse",
           "change_shipping_address_link_label": "Endre leveringsadresse",
-          "change_shipping_method_link_label": "Endre fraktmetode",
-          "change_payment_method_link_label": "Endre betalingsmetode",
-          "pick_up_in_store_shipping_method_html": "Plukke opp i butikk · %{location_name}"
+          "change_shipping_method_link_label": "Endre leveringsmetode",
+          "change_payment_method_link_label": "Endre betalingsmåte",
+          "pick_up_in_store_shipping_method_html": "Plukk opp i butikken · %{location_name}"
         }
       },
       "marketing": {
-        "accept_marketing_checkbox_label": "Send meg en e-post med nyheter og tilbud",
+        "accept_marketing_checkbox_label": "Email meg med nyheter og tilbud",
         "accept_sms_checkbox_label": "Tekst meg med nyheter og tilbud",
         "sms": {
           "disclaimer": {
-            "privacy_policy": "Personvernregler",
+            "privacy_policy": "personvern",
             "terms_of_service": "Vilkår for bruk",
             "description_html": "Ved å registrere deg via tekst, godtar du å motta regelmessige automatisert markedsføring meldinger, inkludert cart påminnelser, på telefonnummeret som er oppgitt. Samtykke er ikke en betingelse for kjøpet. Svar på STOP for å avslutte abonnementet. Svar HELP for å få hjelp. Meldings frekvensen varierer. Meldings- og data kan gjelde. Se våre %{privacy_policy_link} og %{terms_of_service_link}.",
             "description_html_transactional": "Vi sender deg en ordre kvittering og tilbakevendende frakt oppdateringer via tekstmelding. Svar på STOP for å avslutte abonnementet. Svar HELP for å få hjelp. Meldings frekvensen varierer. Meldings- og data kan gjelde. Se våre retningslinjer for personvern og vilkårene for bruk."
@@ -827,7 +827,9 @@
         "unsubscribe": {
           "title": "Du har avsluttet abonnementet",
           "description": "Du vil ikke motta mer cart påminnelser fra oss."
-        }
+        },
+        "post_accept_marketing_checkbox_label": "Du abonnerer å motta e-post nyheter og tilbud",
+        "pending_accept_marketing_checkbox_label": "Sjekk e-posten for å bekrefte abonnementet på nyheter og tilbud"
       },
       "shop_policies": {
         "refund_policy": "Angrerett",
@@ -847,7 +849,7 @@
         "mobile_phone_icon_alt": "Mobiltelefon",
         "mobile_phone_number": "Mobiltelefonnummer",
         "terms_and_privacy_html": "Ved å fortsette, godtar du å handle Pay s %{privacy_href} og %{terms_href}.",
-        "privacy_policy": "Personvernregler",
+        "privacy_policy": "personvern",
         "terms_of_service": "Vilkår for bruk",
         "errors": {
           "optin": "Butikk Pay er ikke tilgjengelig"
@@ -930,23 +932,23 @@
         "recurring_totals_with_policies": {
           "first_cycles": {
             "one": "Første betaling %{total_price}",
-            "other": "Først %{count} Betalinger %{total_price} Hver"
+            "other": "Først %{count} betalinger %{total_price} Hver"
           },
           "following_cycles": ", deretter %{total_price} hver %{interval}"
         },
         "recurring_totals_with_initial_order_shipping_discount_with_policies": {
           "first_cycles": {
-            "one": ", deretter %{count} Betaling på det %{total_price}",
-            "other": ", deretter %{count} Betalinger på. %{total_price} Hver"
+            "one": ", deretter %{count} betaling ved %{total_price}",
+            "other": ", deretter %{count} utbetalinger på %{total_price} Hver"
           }
         }
       },
       "customer_payment_methods": {
         "page_title": "Betalingsmetoder",
         "title": "Betalingsmetoder",
-        "update_card_button_label": "Oppdater kort",
+        "update_card_button_label": "Oppdater kortet",
         "delete_customer_mandate": {
-          "generic_error": "Det var et problem å behandle forespørselen din.",
+          "generic_error": "Det oppstod et problem under behandling av forespørselen.",
           "success_message": "Din betalingsmetode har blitt slettet"
         }
       }
