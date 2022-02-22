@@ -506,25 +506,25 @@
         "three_d_secure_failed_duplicate": "Uwierzytelnianie bezpiecznego karty kredytowej 3D nie powiodło się, ponieważ inny jest już w toku.",
         "three_d_secure_throttled": "Zbyt wiele prób; Proszę czekać przed próbą ponownie",
         "subscription_agreement_blank": "Aby kupić subskrypcję, należy zapisać szczegóły płatności. Aby kontynuować, potwierdź, że zgadzasz się lub usuniesz przedmioty subskrypcji od zamówienia.",
-        "insufficient_funds": "Twoja płatność została odrzucona z powodu niewystarczających środków. Spróbuj ponownie lub użyj innej formy płatności.",
+        "insufficient_funds": "Twoja płatność została odrzucona z powodu niewystarczających środków. Spróbuj ponownie lub użyj innej metody płatności.",
         "fraud_payment_errors": {
           "transaction_declined": "Ta transakcja została odrzucona",
-          "address_mismatch": "Adres ulicy i kod pocztowy nie są zgodne.",
+          "address_mismatch": "Adres ulicy i kod pocztowy nie pasują.",
           "cannot_process": "Ta transakcja nie może zostać przetworzona.",
-          "no_match": "Brak zgodności",
+          "no_match": "Nie pasuje",
           "card_declined": "Twoja karta została odrzucona"
         }
       },
       "shipping_errors": {
-        "shipping_method": "Twój koszyk został zaktualizowany, a poprzedni kurs wysyłki nie jest poprawny. Wybierz nową stawkę.",
-        "shipping_method_not_available": "Twój koszyk został uaktualniony, a dodane przez Ciebie pozycje nie mogą być wysłane na Twój adres. Usuń elementy, aby zakończyć zamówienie.",
+        "shipping_method": "Twój koszyk został zaktualizowany, a poprzednia szybkość wysyłki nie jest ważna. Wybierz nową stawkę.",
+        "shipping_method_not_available": "Twój koszyk został zaktualizowany, a dodane elementy nie mogą zostać wysłane na adres. Usuń elementy, aby zakończyć zamówienie.",
         "shipping_method_not_available_generic": {
-          "one": "To zamówienie nie może zostać wysłane na podany adres. Przejrzyj adres, aby upewnić się, że wszystkie pola zostały wprowadzone poprawnie i spróbuj ponownie.",
-          "other": "Niektóre elementy w Twoim koszyku nie mogą być wysłane na podany adres. Przejrzyj adres, aby upewnić się, że wszystkie pola zostały wprowadzone poprawnie i spróbuj ponownie."
+          "one": "To zamówienie nie może zostać wysłane do wprowadzonego adresu. Przejrzyj swój adres, aby upewnić się, że wszystkie pola zostały wprowadzone poprawnie i spróbuj ponownie.",
+          "other": "Nie można wysyłać niektórych przedmiotów w wprowadzonym adresie. Przejrzyj swój adres, aby upewnić się, że wszystkie pola zostały wprowadzone poprawnie i spróbuj ponownie."
         },
         "shipping_method_not_available_updated": {
-          "one": "Dodany element nie jest wysyłany do lokalizacji użytkownika. Usuń go, aby sprawdzić, lub skontaktuj się ze sklepem.",
-          "other": "Co najmniej jeden dodany element nie jest wysyłany do lokalizacji użytkownika. Usuń je, aby sprawdzić, lub skontaktuj się ze sklepem."
+          "one": "Dodany przedmiot nie wysyła do Twojej lokalizacji. Usuń go, aby sprawdzić lub skontaktować się ze sklepem.",
+          "other": "Jeden lub więcej dodanych przedmiotów Nie wysyłaj do swojej lokalizacji. Usuń je, aby sprawdzić lub skontaktować się ze sklepem."
         }
       },
       "alternative_payment_method_banner": {
@@ -550,7 +550,7 @@
           "close": "Blisko",
           "expand": "Zobacz więcej",
           "processing": "Przetwarzanie…",
-          "submit": "Wyślij"
+          "submit": "Składać"
         }
       },
       "processing": {
@@ -600,56 +600,56 @@
         "payment_information_title": "Informacja o płatności",
         "shipping_information_title": "Informacje wysyłkowe",
         "page_title": "Dziękuję Ci %{display_name}!",
-        "page_title_no_name": "Dziękuję!",
-        "cancelled_page_title": "Zamówienie zostało anulowane",
-        "customer_information_title": "Informacje o kliencie",
+        "page_title_no_name": "Dziękuję Ci!",
+        "cancelled_page_title": "Anulowane zamówieniem.",
+        "customer_information_title": "Informacje dla klientów",
         "contact_information_title": "Informacje kontaktowe",
         "billing_address_title": "Adres rozliczeniowy",
         "shipping_address_title": "Adres wysyłki",
-        "shipping_address_map_title": "Mapa Google wyświetlający punkt przypinania adresu dostawy: %{address}",
-        "payment_method_title": "Forma płatności",
+        "shipping_address_map_title": "Mapa Google Wyświetlanie punktu PIN adresu wysyłki: %{address}",
+        "payment_method_title": "Metoda płatności",
         "shipping_method_title": "Sposób wysyłki",
-        "tracking_number": "Numer śledzenia:",
-        "company_tracking_number": "%{company} numer śledzenia:",
-        "estimated_arrival": "Przewidywana data dostawy:",
-        "re-order": "Ponownie zamów te same elementy",
-        "confirmed": "Potwierdzono",
-        "gift_card_confirmation_by_text": "Karty podarkowe są wysyłane przez tekst. Jeśli nie otrzymałeś od Ciebie, spróbuj wysłać je ponownie lub skontaktuj się z nami.",
-        "gift_card_confirmation_by_email": "Karty podarkowe są wysyłane za pomocą poczty elektronicznej. Jeśli nie otrzymałeś od Ciebie, spróbuj wysłać je ponownie lub skontaktuj się z nami.",
-        "gift_card_title": "Karty prezentowe",
-        "resend_gift_cards": "Wyślij ponownie karty podarkowe",
+        "tracking_number": "Numer przesyłki:",
+        "company_tracking_number": "%{company} numer przesyłki:",
+        "estimated_arrival": "Przewidywany termin dostawy: ",
+        "re-order": "Ponownie zamów te same przedmioty",
+        "confirmed": "Potwierdzony",
+        "gift_card_confirmation_by_text": "Karty upominkowe są wysyłane przez tekst. Jeśli nie otrzymałeś twojego, spróbuj wysłać je ponownie lub skontaktować się z nami.",
+        "gift_card_confirmation_by_email": "Karty upominkowe są wysyłane pocztą elektroniczną. Jeśli nie otrzymałeś twojego, spróbuj wysłać je ponownie lub skontaktować się z nami.",
+        "gift_card_title": "Karty podarunkowe",
+        "resend_gift_cards": "Ponownie wysłać karty upominkowe.",
         "thank_you_title": "Twoje zamówienie zostało potwierdzone",
         "thank_you_title_payment": "Twoja płatność jest potwierdzona",
-        "thank_you_confirmed_order_with_email": "Wkrótce otrzymasz wiadomość e-mail z potwierdzeniem numeru zamówienia.",
-        "thank_you_confirmed_order_with_phone": "W najbliższym czasie otrzymasz tekst potwierdzający numer zamówienia.",
-        "thank_you_confirmed_order_with_email_and_phone": "Wkrótce otrzymasz wiadomość e-mail z potwierdzeniem i tekst z numerem zamówienia.",
-        "thank_you_confirmed_order_with_email_payment": "Dokonałeś wpłaty na zamówienie %{date}.",
-        "thank_you_confirmed_order_with_phone_payment": "Dokonałeś wpłaty na zamówienie %{date}.",
-        "thank_you_confirmed_order_with_email_and_phone_payment": "Dokonałeś wpłaty na zamówienie %{date}.",
-        "thank_you_confirmed_order_with_email_pick_up": "Otrzymasz e-mail, gdy zamówienie jest gotowe do odbioru.",
+        "thank_you_confirmed_order_with_email": "Wkrótce otrzymasz wiadomość e-mail z potwierdzeniem z numerem zamówienia.",
+        "thank_you_confirmed_order_with_phone": "Wkrótce otrzymasz tekst potwierdzenia z numerem zamówienia.",
+        "thank_you_confirmed_order_with_email_and_phone": "Wkrótce otrzymasz wiadomość e-mail z potwierdzeniem i tekstem z numerem zamówienia.",
+        "thank_you_confirmed_order_with_email_payment": "Dokonałeś płatności na zamówieniu %{date}.",
+        "thank_you_confirmed_order_with_phone_payment": "Dokonałeś płatności na zamówieniu %{date}.",
+        "thank_you_confirmed_order_with_email_and_phone_payment": "Dokonałeś płatności na zamówieniu %{date}.",
+        "thank_you_confirmed_order_with_email_pick_up": "Otrzymasz wiadomość e-mail, gdy zamówienie będzie gotowe do odbioru.",
         "thank_you_confirmed_order_with_phone_pick_up": "Otrzymasz tekst, gdy zamówienie jest gotowe do odbioru.",
-        "thank_you_confirmed_order_with_email_and_phone_pick_up": "Otrzymasz e-mail, gdy zamówienie jest gotowe do odbioru.",
-        "thank_you_confirmed_order_with_missing": "Skontaktuj się z nami e-mailem lub telefonicznie, aby otrzymać potwierdzenie zamówienia.",
-        "order_status_confirmed_order_with_email": "Otrzymasz e-mail, gdy zamówienie jest gotowe.",
-        "order_status_confirmed_order_with_phone": "Otrzymasz tekst, kiedy zamówienie jest gotowe.",
-        "order_status_confirmed_order_with_email_and_phone": "Otrzymasz e-mail i tekst, gdy zamówienie jest gotowe.",
-        "order_status_confirmed_order_with_email_payment": "Dokonałeś wpłaty na zamówienie %{date}.",
-        "order_status_confirmed_order_with_phone_payment": "Dokonałeś wpłaty na zamówienie %{date}.",
-        "order_status_confirmed_order_with_email_and_phone_payment": "Dokonałeś wpłaty na zamówienie %{date}.",
-        "order_status_confirmed_order_with_email_pick_up": "Otrzymasz e-mail, gdy zamówienie jest gotowe do odbioru.",
+        "thank_you_confirmed_order_with_email_and_phone_pick_up": "Otrzymasz wiadomość e-mail, gdy zamówienie będzie gotowe do odbioru.",
+        "thank_you_confirmed_order_with_missing": "Skontaktuj się z nami przez e-mail lub telefon, aby otrzymać potwierdzenie zamówienia.",
+        "order_status_confirmed_order_with_email": "Otrzymasz wiadomość e-mail, gdy zamówienie będzie gotowe.",
+        "order_status_confirmed_order_with_phone": "Otrzymasz tekst, gdy zamówienie jest gotowe.",
+        "order_status_confirmed_order_with_email_and_phone": "Otrzymasz wiadomość e-mail i tekst, gdy zamówienie będzie gotowe.",
+        "order_status_confirmed_order_with_email_payment": "Dokonałeś płatności na zamówieniu %{date}.",
+        "order_status_confirmed_order_with_phone_payment": "Dokonałeś płatności na zamówieniu %{date}.",
+        "order_status_confirmed_order_with_email_and_phone_payment": "Dokonałeś płatności na zamówieniu %{date}.",
+        "order_status_confirmed_order_with_email_pick_up": "Otrzymasz wiadomość e-mail, gdy zamówienie będzie gotowe do odbioru.",
         "order_status_confirmed_order_with_phone_pick_up": "Otrzymasz tekst, gdy zamówienie jest gotowe do odbioru.",
-        "order_status_confirmed_order_with_email_and_phone_pick_up": "Otrzymasz e-mail i tekst, gdy zamówienie jest gotowe do odbioru.",
-        "order_status_confirmed_order_local": "Dostajemy pańskie zamówienie gotowe do dostawy.",
-        "order_status_updates_with_email": "Dostajesz aktualizacje przesyłki i dostawy za pomocą poczty elektronicznej.",
-        "order_status_updates_with_phone": "Dostajesz aktualizacje przesyłki i dostawy według tekstu.",
-        "order_status_updates_with_email_and_phone": "Dostajesz aktualizacje przesyłki i dostawy za pomocą wiadomości e-mail i tekstu.",
-        "order_status_updates_with_missing": "Wybierz sposób, w jaki mają być otrzymane aktualizacje dotyczące dostawy.",
+        "order_status_confirmed_order_with_email_and_phone_pick_up": "Otrzymasz wiadomość e-mail i tekst, gdy zamówienie jest gotowe do odbioru.",
+        "order_status_confirmed_order_local": "Dostajemy zamówienie gotowe do dostawy.",
+        "order_status_updates_with_email": "Otrzymasz aktualizacje wysyłki i dostawy przez e-mail.",
+        "order_status_updates_with_phone": "Otrzymasz aktualizacje wysyłki i dostawy według tekstu.",
+        "order_status_updates_with_email_and_phone": "Otrzymasz aktualizacje wysyłki i dostawy przez e-mail i tekst.",
+        "order_status_updates_with_missing": "Wybierz, jak chcesz uzyskać aktualizacje wysyłki.",
         "confirmed_title": "Twoje zamówienie zostało potwierdzone",
-        "confirmed_description": "Zaakceptujemy pańskie zamówienie, a my go przygotujemy. Wróć do tej strony, aby uzyskać aktualizacje dotyczące statusu wysyłki.",
-        "ready_for_pickup_title": "Zamówienie jest gotowe do odbioru",
-        "ready_for_pickup_description": "Twoje zamówienie jest gotowe do odbioru. Prosimy o potwierdzenie zamówienia po odebraniu zamówienia.",
+        "confirmed_description": "Przyjęliśmy twoje zamówienie i przygotowujemy się. Wróć do tej strony, aby uzyskać aktualizacje dotyczące statusu wysyłki.",
+        "ready_for_pickup_title": "Twoje zamówienie jest gotowe do odbioru",
+        "ready_for_pickup_description": "Twoje zamówienie jest gotowe do odbioru. Przynieś potwierdzenie zamówienia po odebraniu zamówienia.",
         "ready_for_delivery_title": "Twoje zamówienie jest gotowe do dostawy.",
-        "ready_for_delivery_description": "Przygotowaliśmy Twoje zamówienie.",
+        "ready_for_delivery_description": "Przygotowaliśmy twoje zamówienie.",
         "order_updates_title": "Aktualizacja zamówienia",
         "shop_phone_description": "Otrzymasz tekst z linkiem do aplikacji do sklepu, aby pomóc śledzić zamówienie.",
         "order_updates_description_html": "Aktualizacje zostaną wysłane do %{customer_contact}",
@@ -716,85 +716,85 @@
           "shipping": "Wybierz miejsce"
         },
         "fulfillment": {
-          "fulfilled_table_title": "Pozycje w tej dostawie",
-          "unfulfilled_table_title": "Artykuły przygotowujące się do wysyłki",
+          "fulfilled_table_title": "Przedmioty w tej przesyłce",
+          "unfulfilled_table_title": "Przedmioty przygotowujące do wysyłki",
           "product_image_label": "Obraz produktu",
           "description_label": "Opis",
           "quantity_label": "Ilość"
         },
-        "opt_in_message_html": "Twoje informacje zostały pomyślnie zapisane z %{shopify_pay}",
-        "order_updates_description_missing": "Nie otrzymujesz informacji o dostawie.",
-        "order_updates_subscribe_to_email_notifications": "Pobierz aktualizacje wysyłki przez e-mail",
-        "order_updates_subscribe_to_email_or_phone_notifications": "Pobierz aktualizacje wysyłki przez e-mail lub tekst",
-        "order_updates_subscribe_to_phone_notifications": "Pobierz aktualizacje wysyłki przez tekst",
-        "order_updates_submit_subscription": "Wyślij",
-        "track_shipment": "Transport torów",
+        "opt_in_message_html": "Twoje informacje zostały pomyślnie zapisane %{shopify_pay}",
+        "order_updates_description_missing": "Nie otrzymujesz aktualizacji wysyłki.",
+        "order_updates_subscribe_to_email_notifications": "Uzyskaj aktualizacje wysyłki pocztą elektroniczną",
+        "order_updates_subscribe_to_email_or_phone_notifications": "Uzyskaj aktualizacje wysyłki pocztą elektroniczną lub tekstem",
+        "order_updates_subscribe_to_phone_notifications": "Uzyskaj aktualizacje wysyłki według tekstu",
+        "order_updates_submit_subscription": "Składać",
+        "track_shipment": "Track Shipment.",
         "shopify_pay": {
-          "order_completed_html": "Zamówienie wypełnione %{shopify_pay}",
-          "learn_more_label": "Dowiedz się więcej o kasie sklepowej"
+          "order_completed_html": "Zamówienie zakończone %{shopify_pay}",
+          "learn_more_label": "Dowiedz się więcej o wypłacie sklepu"
         },
         "other_options": "Inne opcje",
         "delivery_information_label": "Informacje o dostawie:",
-        "gift_card_sent_confirmation": "Przesyłane karty podarunkowe",
+        "gift_card_sent_confirmation": "Wysłane karty upominkowe.",
         "qr_code": {
-          "send_link_to_phone": "Albo wyślij link do telefonu",
-          "title": "Namierz swój telefon",
-          "subtitle": "Przeskanuj kod z aparatem twojego telefonu, aby śledzić z Shop."
+          "send_link_to_phone": "Lub wyślij link do telefonu",
+          "title": "Śledź w telefonie",
+          "subtitle": "Zeskanować kod z aparatem telefonu do śledzenia ze sklepu."
         },
         "shop_qr_with_sms_upsell": {
           "qr_code": {
-            "title": "Przeskanuj z telefonem",
-            "description": "Sklep wyśle Ci aktualizacje dostaw w czasie rzeczywistym po wysłaniu zamówienia."
+            "title": "Skanowanie z telefonem",
+            "description": "Sklep wyśle aktualizacje dostarczania w czasie rzeczywistym, gdy zamówienie jest wysyłane."
           },
           "sms": {
-            "title": "Albo wyślij link do telefonu"
+            "title": "Lub wyślij link do telefonu"
           }
         }
       },
       "marketing": {
-        "pending_accept_marketing_checkbox_label": "Sprawdź swój e-mail, aby potwierdzić swoją subskrypcję nowości i ofert",
-        "accept_sms_checkbox_label": "Wyślij mi wiadomości i oferty",
+        "pending_accept_marketing_checkbox_label": "Sprawdź swój e-mail aby potwierdzić subskrypcję do nowości i ofert",
+        "accept_sms_checkbox_label": "Tekst mnie z wiadomościami i ofertami",
         "sms": {
           "disclaimer": {
             "privacy_policy": "Polityka prywatności",
             "terms_of_service": "Warunki usługi",
-            "description_html": "Zapisując się za pomocą tekstu, użytkownik wyraża zgodę na otrzymywanie powtarzających się automatycznych wiadomości marketingowych, w tym przypomnień w koszyku, pod warunkiem podania numeru telefonu. Zgoda nie jest warunkiem zakupu. Kliknij przycisk STOP, aby anulować subskrypcję. Pomoc do pomocy. Częstotliwość komunikatów jest różna. Mogą mieć zastosowanie wskaźniki msg i danych. Wyświetl nasze %{privacy_policy_link} oraz %{terms_of_service_link}.",
-            "description_html_transactional": "Wyślemy Ci pokwitowanie zamówienia i powtarzające się aktualizacje wysyłek za pośrednictwem wiadomości tekstowej. Kliknij przycisk STOP, aby anulować subskrypcję. Pomoc do pomocy. Częstotliwość komunikatów jest różna. Mogą mieć zastosowanie wskaźniki msg i danych. Zobacz naszą Politykę Prywatności i Warunki Serwisu."
+            "description_html": "Rejestrując się poprzez tekst, oznacza zgodę na otrzymywanie wiadomości marketingowych powtarzające się zautomatyzowane, w tym koszyka przypomnienia, pod numerem telefonu podanym. Zgoda nie jest warunkiem zakupu. Odpowiedz STOP, aby anulować subskrypcję. Odpowiedz POMOC o pomoc. Częstotliwość wiadomość jest różna. mogą ubiegać Msg & Data Rates. Zobacz nasze %{privacy_policy_link} oraz %{terms_of_service_link}.",
+            "description_html_transactional": "wyślemy Ci potwierdzenie zamówienia i powtarzające się one dostarczane aktualizacje za pośrednictwem wiadomości tekstowej. Odpowiedz STOP, aby anulować subskrypcję. Odpowiedz POMOC o pomoc. Częstotliwość wiadomość jest różna. mogą ubiegać Msg & Data Rates. Zobacz naszą politykę prywatności i Warunki korzystania z usługi."
           }
         },
         "unsubscribe": {
-          "title": "Nie zasubskrybowano",
-          "description": "Nie otrzymasz od nas żadnych upomnień w koszyku."
+          "title": "Masz subskrypcję",
+          "description": "Nie otrzyma żadnych bardziej koszyk przypomnienia od nas."
         },
-        "accept_marketing_checkbox_label": "Wyślij mi maila z wiadomościami i ofertami",
-        "post_accept_marketing_checkbox_label": "Subskrybujesz otrzymywanie wiadomości e-mail i ofert"
+        "accept_marketing_checkbox_label": "Powiadom mnie o nowościach i ofertach",
+        "post_accept_marketing_checkbox_label": "Subskrybujesz otrzymywać wiadomości e-mail i inne"
       },
       "shop_policies": {
-        "refund_policy": "Polityka zwrotu",
+        "refund_policy": "Zasady zwrotów",
         "privacy_policy": "Polityka prywatności",
-        "terms_of_service": "Warunki świadczenia usług",
+        "terms_of_service": "Warunki usługi",
         "legal_notice": "Nota prawna",
-        "shipping_policy": "Strategia dostawy",
+        "shipping_policy": "Wysyłki polisa",
         "terms_of_sale": "Warunki sprzedaży",
-        "subscription_policy": "Strategia subskrypcji"
+        "subscription_policy": "polityka Subskrypcja"
       },
       "remember_me": {
-        "shopify_pay_label": "Kupuj",
+        "shopify_pay_label": "Sklep płatna",
         "save": "Zapisać",
         "title": "Zapamiętaj mnie",
-        "label": "Zapisz moje informacje w celu szybszego pobrania",
-        "description_html": "Następnym razem, gdy sprawdzisz się tutaj lub w innych sklepach zasilanych przez Shopify, otrzymasz kod w postaci wiadomości tekstowej, aby bezpiecznie kupić w sklepie Pay.",
+        "label": "Zapisz moje informacje na szybsze kasie",
+        "description_html": "Następnym razem sprawdź tutaj lub w innych sklepach zasilanych Shopify otrzymasz kod w wiadomości tekstowej do bezpiecznego zakupu ze sklepem zapłacić.",
         "mobile_phone_icon_alt": "Telefon komórkowy",
         "mobile_phone_number": "numer telefonu komórkowego",
-        "terms_and_privacy_html": "Kontynuując, zgadzasz się na Shop Pay %{privacy_href} oraz %{terms_href}.",
+        "terms_and_privacy_html": "Kontynuując, zgadzasz się na Pay Shop %{privacy_href} oraz %{terms_href}.",
         "privacy_policy": "Polityka prywatności",
         "terms_of_service": "Warunki usługi",
         "errors": {
-          "optin": "Sklep Pay nie jest dostępny"
+          "optin": "Sklep płatna nie jest dostępny"
         },
         "installments": {
-          "paid_in_installments": "Płatny w ratach ze Sklepem Pay.",
-          "view_schedule": "Wyświetl harmonogram"
+          "paid_in_installments": "Wypłacona w ratach Shop zapłacić.",
+          "view_schedule": "Zobacz terminarz"
         }
       },
       "notifications": {
@@ -804,11 +804,11 @@
         "custom_line_item_description": "Kwota do zapłaty za zamówienie %{order_name}",
         "changes_summary": {
           "added": {
-            "one": "Dodane",
-            "other": "%{count} dodane"
+            "one": "Dodany",
+            "other": "%{count} dodany"
           },
-          "removed": "Usunięto",
-          "subtracted": "%{count} usunięte"
+          "removed": "REMOVED",
+          "subtracted": "%{count} REMOVED"
         },
         "additional_payment_requested": "wypłata %{total_outstanding} jest potrzebne",
         "checkout_review_and_pay": "Twoje zamówienie %{order_name} został zaktualizowany. Te zmiany, a następnie zapłacić w celu potwierdzenia zamówienia.",
@@ -891,22 +891,22 @@
         }
       },
       "review": {
-        "title": "Przegląd",
+        "title": "Recenzja",
         "review_title": "Przegląd zamówienia",
-        "checkout_as_guest": "Wymelduj się jako gość",
+        "checkout_as_guest": "Zamów jako gość",
         "blocks": {
           "contact_method_title": "Kontakt",
-          "billing_address_title": "Rachunek",
-          "shipping_address_title": "Statek do",
-          "shipping_method_title": "Metoda",
-          "payment_method_title": "Płatność",
-          "change_link_label": "Zmiana",
+          "billing_address_title": "Dane do faktury",
+          "shipping_address_title": "Dostawa do",
+          "shipping_method_title": "metoda",
+          "payment_method_title": "Zapłata",
+          "change_link_label": "Reszta",
           "change_contact_method_link_label": "Zmień dane kontaktowe",
           "change_billing_address_link_label": "Zmień adres rozliczeniowy",
           "change_shipping_address_link_label": "Zmień adres wysyłki",
-          "change_shipping_method_link_label": "Zmiana metody wysyłki",
+          "change_shipping_method_link_label": "Zmień sposób wysyłki",
           "change_payment_method_link_label": "Zmiana metody płatności",
-          "pick_up_in_store_shipping_method_html": "Odbiór w sklepie « %{location_name}"
+          "pick_up_in_store_shipping_method_html": "Odbierz w sklepie · %{location_name}"
         }
       }
     },
