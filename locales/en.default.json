@@ -27,7 +27,10 @@
       "language_label": "Language",
       "change-shipping-country-and-language": "Change shipping country and language",
       "designers": "Designers",
-      "availabilityfilter": "Express Delivery"
+      "availabilityfilter": "Express Delivery",
+      "sale_ends_in":"SALE ENDS IN",
+      "days":"Day",
+      "day":"Day"
     },
     "product_options": {
       "choose-colours": "Choose Colours:",
