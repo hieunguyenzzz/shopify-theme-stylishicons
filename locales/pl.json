@@ -1016,7 +1016,10 @@
       "more-filters": "Więcej zarządców plików",
       "filter-products": "Filtruj produkty",
       "clear-all": "Wyczyść wszystko",
-      "percentage_off": "{{number}} WYŁĄCZONE"
+      "percentage_off": "{{number}} WYŁĄCZONE",
+      "sale_ends_in": "Sprzedaż kończy się",
+      "days": "Dni",
+      "day": "Dzień"
     },
     "product_options": {
       "choose-colours": "Wybierz kolory:",
