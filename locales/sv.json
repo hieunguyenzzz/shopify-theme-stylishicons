@@ -1617,7 +1617,10 @@
       "contemporary-inspiration": "Modern inspiration",
       "change-shipping-country-and-language": "Byt fraktland och språk",
       "designers": "Designers",
-      "availabilityfilter": "Expressleverans"
+      "availabilityfilter": "Expressleverans",
+      "sale_ends_in": "Försäljning slutar i",
+      "days": "Dag",
+      "day": "Dag"
     },
     "product_options": {
       "classic": "Klassisk",
