@@ -647,5 +647,255 @@
       "signup_form_success": "We will send you an email right before we open!",
       "password_link": "Enter using password"
     }
+  },
+  "shopify": {
+    "checkout": {
+      "contact": {
+        "governorate_label": "Governorate",
+        "governorate_placeholder": "Governorate",
+        "state_and_territory_label": "Stat \/ område",
+        "state_and_territory_placeholder": "Stat \/ område",
+        "phone_label": "telefon",
+        "optional_phone_label": "Telefon valgfri)",
+        "phone_placeholder": "telefon",
+        "phone_tooltip": "I tilfælde behøver vi at kontakte dig om din ordre",
+        "zip_code_label": "postnummer",
+        "zip_code_placeholder": "postnummer",
+        "pincode_label": "Pinkode",
+        "pincode_placeholder": "Pinkode",
+        "civic_number_warning": "Tilføj et husnummer, hvis du har en"
+      },
+      "delivery_options": {
+        "free_total_label": "Ledig",
+        "ship": "Skib",
+        "shipping_address": "Shipping adresse",
+        "pick_up": "Saml op",
+        "pick_up_locations": "pickup steder",
+        "pick_up_in_one_hour": "Normalt Klar på en time",
+        "pick_up_in_two_hours": "Normalt Klar på 2 timer",
+        "pick_up_in_four_hours": "Normalt klar i 4 timer",
+        "pick_up_in_twenty_four_hours": "Normalt Klar på 24 timer",
+        "pick_up_in_two_to_four_days": "Normalt Klar på 2-4 dage",
+        "pick_up_in_five_or_more_days": "Normalt klar i 5+ dage",
+        "pick_up_in_zero_to_two_hours": "Klar til afhentning i 2 timer",
+        "pick_up_in_two_to_four_hours": "Klar til afhentning i 4 timer"
+      },
+      "customer_account": {
+        "not_user_label": "Ikke %{first_name}?",
+        "have_an_account_label": "har du allerede en bruger?",
+        "sign_in_link_label": "Log på",
+        "sign_out_link_label": "Log ud",
+        "save_my_information_label": "Gem denne information til næste gang"
+      },
+      "stock": {
+        "page_title": "Inventory spørgsmål",
+        "title": "Udsolgt",
+        "items_unavailable_notice": "Nogle elementer er ikke længere tilgængelig. Din kurv er blevet opdateret.",
+        "status_column_header": "Status.",
+        "removed_from_cart_notice": "Fjernet fra kurv",
+        "reduced_label": "reduceret",
+        "reduced_with_quantity_label": "Kun %{quantity_available} venstre",
+        "remove_from_cart_button_label": "Fjern fra kurv",
+        "continue_shopping_button_label": "Blive ved"
+      },
+      "order_summary": {
+        "title": "ordre oversigt",
+        "order_name_label": "Bestille %{name}",
+        "gift_card_and_discount_title": "Gavekort eller rabat kode",
+        "gift_card_and_discount_label": "Gavekort eller rabat kode",
+        "gift_card_and_discount_placeholder": "Gavekort eller rabat kode",
+        "remove_gift_card_label": "Klar gavekort",
+        "free_shipping_discount_label": "Gratis fragt",
+        "apply_discount_button_label": "ansøge",
+        "applied_discount_message": "%{amount} off samlede pris",
+        "discount_has_been_applied": "Rabat er blevet anvendt",
+        "discount_has_been_removed": "Rabat er blevet fjernet",
+        "gift_card_subscriptions_notice": "Gavekort vil kun gælde for din første indbetaling",
+        "discount_already_applied": "En rabat er blevet anvendt på denne ordre. Du kan ikke tilføje en anden rabat.",
+        "cart_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}<\/strong> rabat kode er ikke gyldig for de elementer i din kurv",
+        "discount_requires_customer_notice": "Indtast din forsendelse oplysninger til at anvende den <strong style=\"text-transform:uppercase\">%{code}<\/strong> rabatkode",
+        "customer_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}<\/strong> rabat kode er ikke tilgængelig for dig lige nu",
+        "shipping_information_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}<\/strong> rabat kode er ikke tilgængelig for din leveringsadresse",
+        "customer_already_used_once_per_customer_discount_notice": "Det <strong style=\"text-transform:uppercase\">%{code}<\/strong> rabat kode er allerede blevet brugt",
+        "shipping_label": "Forsendelse",
+        "pickup_label": "Saml op",
+        "no_pickup_location": "Din ordre er ikke tilgængelig for afhentning. Indtast en leveringsadresse.",
+        "calculating_shipping": "Beregner ...",
+        "shipping_default_value": "Beregnet på næste trin",
+        "shipping_pending_message": "Endnu ikke tilgængelig",
+        "shipping_policy_link": "Forsendelsesomkostninger",
+        "taxes_label": "Skatter",
+        "estimated_taxes_label": "Anslået skatter",
+        "estimated_taxes_finalization_tooltip_content": "Den endelige skat og alt vil blive bekræftet via e-mail eller tekst efter du afgiver din bestilling.",
+        "total_label": "Total",
+        "total_outstanding_label": "Beløb til at betale",
+        "partial_total_label": "Total",
+        "free_total_label": "Ledig",
+        "paid_label": "betalt",
+        "payment_due_label": "Betalingsfrist",
+        "vat_label_html": "Inklusive %{amount} i skat",
+        "discount_savings_notice": "Efter %{discount_amount} i rabat",
+        "cost_table_title": "resumé Omkostninger",
+        "product_change_label": "Lave om",
+        "product_image_label": "Produkt billede",
+        "scroll_order_summary": "Rul til flere emner",
+        "expand_order_summary": "resumé Vis ordre",
+        "collapse_order_summary": "resumé Skjul ordre",
+        "original_price": "Original pris",
+        "total_updated_label": "Opdateret samlede pris:",
+        "order_total_updated_label": "Opdateret samlede",
+        "unit_price": {
+          "accessible_separator": "om",
+          "content_html": "%{price}%{accessible_separator}%{per_unit}"
+        },
+        "gift_card_ending": "Gavekort slutter med %{last_characters}",
+        "multiple_shipping_lines_label": "Fragt samlet",
+        "recurring_total_label": "Tilbagevendende alt",
+        "recurring_total_tooltip": "Omfatter ikke shipping, skat, afgifter, eller eventuelle rabatter.",
+        "higher_value_discount_already_applied": "En højere værdi rabat er allerede blevet anvendt."
+      },
+      "shipping": {
+        "title": "Forsendelse",
+        "shipping_method_title": "Fragtmetode",
+        "shipping_method_one_time_purchase_group_title": "køb Engangsbeløb",
+        "subscription_shipping": "Abonnement forsendelse",
+        "waiting_on_rate_notice": "Kom tilgængelige fragtpriser ...",
+        "waiting_on_pickup_location_notice": "Kom til rådighed afhente steder ...",
+        "no_rates_for_cart_or_destination_notice": "Der er ingen shipping metoder til rådighed for din vogn eller adresse",
+        "no_pickup_location_notice": "Mindst et af dine produkter er ikke tilgængelig for afhentning",
+        "no_rates_for_country_notice": "Ingen forsendelsespriser fundet for denne adresse.",
+        "free_rate_label": "Ledig",
+        "cheapest_rate_label": "Billigste.",
+        "please_enter_your_shipping_information_notice": "Indtast venligst dine forsendelsesoplysninger.",
+        "estimated_delivery_date": {
+          "other": "%{count} Forretningsdage"
+        },
+        "estimated_delivery_date_range": "%{minimum} til %{maximum} Forretningsdage",
+        "estimated_delivery_time": "Forventet levering %{time}",
+        "estimated_delivery_time_range": "Forventet levering %{min_time}–%{max_time}",
+        "shipping_line_phone_label": "Mobiltelefonnummer (påkrævet)",
+        "shipping_line_phone": "Din kurér kan bruge dette nummer til at kontakte dig.",
+        "shipping_line_delivery_phone_label": "Mobiltelefon nummer",
+        "shipping_line_delivery_phone": "Vi kan bruge dette nummer til at ringe eller skrive dig om din levering.",
+        "optional_shipping_line_delivery_instructions_label": "Leveringsvejledning (valgfrit)",
+        "shipping_line_delivery_instructions": "Indtast de nødvendige oplysninger som dørkoder eller drop-off instruktioner.",
+        "other_method": {
+          "zero": "Ingen andre metoder til rådighed",
+          "one": "%{count} Anden metode til rådighed på ",
+          "other": "%{count} Andre metoder til rådighed ved at starte på "
+        },
+        "shipping_rate_discounted_amount": "Var: %{original_amount}. Nu: %{amount}",
+        "subscription_delivery_description": {
+          "prepaid_delivery_frequency": {
+            "one": "til %{count} levering",
+            "other": "til %{count} leverancer."
+          },
+          "subscription_delivery_frequency": {
+            "day": {
+              "other": "hver %{count} dage"
+            },
+            "week": {
+              "other": "hver %{count} uger"
+            },
+            "month": {
+              "other": "hver %{count} måneder"
+            },
+            "year": {
+              "other": "hver %{count} flere år"
+            }
+          },
+          "prepaid_shipping_price_label": "%{shipping_price} pr. levering X. %{delivery_interval_count}",
+          "initial_order_discounted": "Første forsendelsespris %{discounted_shipping_cost}, derefter %{frequency_description}",
+          "prepaid_initial_order_discounted": "Første forsendelsespris %{discounted_shipping_price} %{prepaid_delivery_frequency}",
+          "prepaid_initial_order_discounted_with_per_delivery_price": "Første forsendelsespris %{discounted_shipping_price} %{prepaid_delivery_frequency} (%{discounted_cost_per_delivery})",
+          "prepaid_initial_order_discounted_with_renewal": "Første forsendelsespris %{discounted_shipping_price} %{prepaid_delivery_frequency}, derefter %{shipping_price} %{billing_cycle}",
+          "prepaid_initial_order_discounted_with_per_delivery_price_and_renewal": "Første forsendelsespris %{discounted_shipping_price} %{prepaid_delivery_frequency} (%{discounted_cost_per_delivery}), derefter %{shipping_price} %{billing_cycle}",
+          "recurring_order_shipping_price": "efterfulgt af %{recurring_order_shipping_price}",
+          "first_order_shipping_price_included": "Første ordre inkluderet, efterfulgt af %{recurring_order_shipping_price}",
+          "first_order_different_shipping_price": "%{first_order_shipping_price} (%{per_delivery_price} pr. levering), efterfulgt af %{recurring_order_shipping_price}",
+          "first_n_order_free": {
+            "one": "Første rækkefølge gratis",
+            "other": "Først %{count} ordrer fri"
+          },
+          "free_for_first_n_order": {
+            "other": "For først %{count} Ordre:% s"
+          }
+        },
+        "one_time_purchase_shipping": "Engangs forsendelse"
+      },
+      "localized_fields": {
+        "additional_information": {
+          "title": "Yderligere Information"
+        }
+      },
+      "payment": {
+        "amazon_payments_label": "Amazon Pay.",
+        "amazon_payments_login_hint": "Du bliver bedt om at logge ind med Amazon.",
+        "amazon_payments_logout": "Log ud fra Amazon Pay",
+        "amazon_payments_failed_mfa_challenge": "Den valgte betalingsmetode kunne ikke bruges. Vælg en anden metode eller kontakt din bank eller kortudsteder.",
+        "amazon_payments_abandoned_mfa_challenge": "Din betaling kunne ikke udfyldes. Prøv en anden betalingsmetode eller kontakt din bank eller kortudsteder.",
+        "amazon_payments_could_not_enqueue_authorize": "Der var et problem at behandle din betaling. Prøv igen eller brug en anden betalingsmetode.",
+        "amount_left_to_pay_label": "Betalingsfrist:",
+        "gift_card_code_label": "Gavekortkode",
+        "apply_gift_card_button_label": "ansøge",
+        "gift_card_balance_label": "Balance:",
+        "supported_card_brands_more_label": "og mere…",
+        "detected_card_brand": "Detekteret kort Mærke: {Brand}",
+        "credit_card_vaulting_sign_in_banner_button_label": "Log på",
+        "ftd_vault_credit_card_label": "Gem dette kreditkort til min konto for en hurtigere checkout",
+        "card_security_vault_notice": "Vi har brug for dine detaljer til fremtidige betalinger. Alle transaktioner er sikre og krypterede.",
+        "name_on_card_label": "Navn på kort",
+        "name_on_card_placeholder": "Navn på kort",
+        "card_expiry_label": "Udløbsdato (mm \/ å)",
+        "card_expiry_placeholder": "Udløbsdato (mm \/ å)",
+        "credit_card_start_month": "Start måned",
+        "credit_card_start_year": "Start år",
+        "delete_customer_mandate_modal_title": "Fjern dette kort?",
+        "delete_customer_mandate_modal_confirm": "Fjerne",
+        "delete_customer_mandate_modal_cancel": "Afbestille",
+        "card_verification_confirm": "Til verifikationsformål, indtast venligst dit korts sikkerhedskode.",
+        "card_expiry_date_explanation": "Kort udløbsdato i format: måned, måned, år, år",
+        "card_verification_value_explanation": "3-cifret sikkerhedskode, der normalt findes på bagsiden af ​​dit kort. American Express-kort har en 4-cifret kode placeret på forsiden.",
+        "card_verification_value_explanation_amex": "4-cifret sikkerhedskode på forsiden af ​​dit kort",
+        "card_verification_value_explanation_other": "3-cifret sikkerhedskode på bagsiden af ​​dit kort",
+        "card_start_label": "Udstedelsesdato (mm \/ å)",
+        "card_start_placeholder": "Udstedelsesdato (mm \/ å)",
+        "card_issue_number_label": "Udstedelse nummer.",
+        "card_issue_number_placeholder": "Udstedelse nummer.",
+        "card_change_label": "Lave om",
+        "card_update_label": "Opdateringskort",
+        "ends_with_label": "slutter med %{last_digits}",
+        "expiry_short": "(Exp. %{month}\/%{year})",
+        "saved_by_payment_method": "Gemt af %{payment_method}",
+        "same_billing_address_label": "Samme som forsendelsesadresse",
+        "billing_address_associated_with_mandate": "Brug adresse i forbindelse med betalingsmetode",
+        "billing_address_associated_with_mandate_info": "Hvis du ønsker at ændre din faktureringsadresse, skal du fjerne og indtaste dine kreditkortoplysninger",
+        "free_order_notice_html": "Din ordre er <strong>ledig<\/strong>. Ingen betaling er påkrævet.",
+        "express_checkout_free_order": "Du vil ikke blive opkrævet for en gratis ordre",
+        "order_covered_by_gift_cards_notice": {
+          "one": "Din ordre er dækket af dit gavekort.",
+          "other": "Din ordre er dækket af dine gavekort."
+        },
+        "offsite_gateway_redirect_hint": "Efter at have klikket på \"%{button_label}\", Du bliver omdirigeret til %{gateway_label} for at fuldføre dit køb sikkert.",
+        "offsite_gateway_redirect_hint_multi_currency_html": "%{gateway_label} Total %{total_shop_price}",
+        "billing_address_title": "Betalingsadresse",
+        "billing_address_description": "Vælg den adresse, der matcher dit kort- eller betalingsmetode.",
+        "billing_address_description_no_shipping_address": "Indtast adressen, der matcher dit kort- eller betalingsmetode.",
+        "no_js_credit_card_fields_redirect_hint": "Du bliver omdirigeret for at tilføje dine betalingsoplysninger.",
+        "card_fields_container_prefix": "Feltbeholder til:",
+        "card_fields_unavailable_html": {
+          "one": "Kredit- og betalingskortbetalinger er ikke tilgængelige lige nu.<br><a href=\"%{current_url}\">Opdater denne side<\/a> eller prøv igen senere.",
+          "other": "Kredit- og betalingskortbetalinger er ikke tilgængelige lige nu.<br><a href=\"%{current_url}\">Opdater denne side<\/a> eller prøv en anden betalingsmetode."
+        },
+        "card_fields_processing_error": "Der var et problem at behandle betalingen. Prøv at forfriskende denne side eller tjek din internetforbindelse.",
+        "technical_error": "Betalinger kan ikke behandles lige nu på grund af et teknisk problem. Prøv igen om et par minutter.",
+        "no_method_error": "Denne butik kan ikke acceptere betalinger lige nu.",
+        "not_configured_error": "Denne butik kan ikke acceptere betalinger lige nu.",
+        "billing_address_not_supported_for_payment_method_error": "Denne betalingsmetode er ikke tilgængelig for din faktureringsadresse og valuta. Prøv venligst en anden betalingsmetode.",
+        "generic_incorrect_card_info": "Dine betalingsoplysninger kunne ikke verificeres. Tjek dine kortoplysninger, og prøv igen.",
+        "sofort_label": "Sofort bankoverførsel",
+        "klarna_slice_it_label": "Finansiering med Klarna"
+      }
+    }
   }
 }
