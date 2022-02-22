@@ -1020,7 +1020,15 @@
       "sale_ends_in": "Sprzedaż kończy się",
       "days": "Dni",
       "day": "Dzień",
-      "verified-reviews": "Zweryfikowane recenzje"
+      "verified-reviews": "Zweryfikowane recenzje",
+      "from": "Od",
+      "to": "W celu",
+      "max": "Max.",
+      "apply": "Zastosować",
+      "the-finer-details": "Drobniejsze szczegóły",
+      "contemporary-inspiration": "Współczesna inspiracja",
+      "language_label": "Język",
+      "change-shipping-country-and-language": "Zmień kraj wysyłki i język"
     },
     "product_options": {
       "choose-colours": "Wybierz kolory:",
