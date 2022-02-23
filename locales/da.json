@@ -56,7 +56,21 @@
       "more-filters": "Flere filers",
       "filter-products": "Filtrer produkter.",
       "clear-all": "Slet alt",
-      "percentage_off": "{{number}} AF"
+      "percentage_off": "{{number}} AF",
+      "verified-reviews": "Verificerede anmeldelser",
+      "from": "Fra",
+      "to": "Til",
+      "max": "Max.",
+      "apply": "ansøge",
+      "the-finer-details": "De finere detaljer.",
+      "contemporary-inspiration": "Nutidig inspiration",
+      "language_label": "Sprog",
+      "change-shipping-country-and-language": "Skift fragtland og sprog",
+      "designers": "Designers.",
+      "availabilityfilter": "Hurtiglevering",
+      "sale_ends_in": "Salg slutter i.",
+      "days": "Dage",
+      "day": "Dag"
     },
     "product_options": {
       "choose-colours": "Vælg farver:",
