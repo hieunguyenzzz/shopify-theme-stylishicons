@@ -8,6 +8,7 @@
     Usage:
     {% include 'product-price', variant: current_variant, product: product %}
 {% endcomment %}
+
 {%- liquid
   if variant.title
     assign compare_at_price = variant.compare_at_price
@@ -50,7 +51,7 @@
     </div>
     
     <div class="price__sale tw-gap-1">
-      <dt class="visually-hidden visually-hidden--inline">
+    <dt class="visually-hidden visually-hidden--inline">
         <span >{{ 'products.general.sale_price' | t }}</span>
       </dt>
        <dd>
