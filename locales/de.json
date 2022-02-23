@@ -418,7 +418,15 @@
       "percentage_off": "{{number}} AUS",
       "sale_ends_in": "Verkauf endet in.",
       "days": "Tage",
-      "day": "Tag"
+      "day": "Tag",
+      "from": "Von",
+      "to": "Zu",
+      "max": "Max",
+      "apply": "Anwenden",
+      "language_label": "Sprache",
+      "change-shipping-country-and-language": "Ändern Sie den Versandland und Sprache",
+      "designers": "Designer",
+      "availabilityfilter": "Expresszustellung"
     },
     "product_options": {
       "choose-colours": "Wählen Sie Farben:",
