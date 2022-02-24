@@ -27,11 +27,10 @@
       "language_label": "Language",
       "change-shipping-country-and-language": "Change shipping country and language",
       "designers": "Designers",
-      "availabilityfilter": "Express Delivery",
-      "sale_ends_in": "SALE ENDS IN",
+      "availabilityfilter": "Express Delivery",  "sale_ends_in": "SALE ENDS IN",
       "days": "Days",
       "day": "Day",
-      "delivery-label-image": "Free-Delivery-Category-Page.png"
+      "delivery-label-image":"Free-Delivery-Product-Page-en.png"
     },
     "product_options": {
       "choose-colours": "Choose Colours:",
