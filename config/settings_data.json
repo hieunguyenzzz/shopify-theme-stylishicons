@@ -320,7 +320,8 @@
           "blocks": {
             "1603134279730": {
               "type": "cart_status",
-              "settings": {}
+              "settings": {
+              }
             },
             "1603134282065": {
               "type": "navigation",
@@ -331,7 +332,8 @@
             },
             "1603134286633": {
               "type": "search_box",
-              "settings": {}
+              "settings": {
+              }
             },
             "1603134294387": {
               "type": "social_icons",
@@ -784,7 +786,8 @@
             "1559152904168",
             "1559153532894"
           ],
-          "settings": {}
+          "settings": {
+          }
         },
         "contact-page-template": {
           "type": "contact-page-template",
@@ -865,7 +868,8 @@
             },
             "1559248069432": {
               "type": "section_clear",
-              "settings": {}
+              "settings": {
+              }
             },
             "1559241649775-1": {
               "type": "image",
@@ -1391,7 +1395,8 @@
           "blocks": {
             "1603134279730": {
               "type": "cart_status",
-              "settings": {}
+              "settings": {
+              }
             },
             "1603134282065": {
               "type": "navigation",
@@ -1402,7 +1407,8 @@
             },
             "1603134286633": {
               "type": "search_box",
-              "settings": {}
+              "settings": {
+              }
             },
             "1603134294387": {
               "type": "social_icons",
@@ -1855,7 +1861,8 @@
             "1559152904168",
             "1559153532894"
           ],
-          "settings": {}
+          "settings": {
+          }
         },
         "contact-page-template": {
           "type": "contact-page-template",
@@ -1963,7 +1970,8 @@
             },
             "1559248069432": {
               "type": "section_clear",
-              "settings": {}
+              "settings": {
+              }
             }
           },
           "block_order": [
@@ -2378,7 +2386,8 @@
           "blocks": {
             "1603134279730": {
               "type": "cart_status",
-              "settings": {}
+              "settings": {
+              }
             },
             "1603134282065": {
               "type": "navigation",
@@ -2389,7 +2398,8 @@
             },
             "1603134286633": {
               "type": "search_box",
-              "settings": {}
+              "settings": {
+              }
             },
             "1603134294387": {
               "type": "social_icons",
@@ -2815,7 +2825,8 @@
             "1559152904168",
             "1559153532894"
           ],
-          "settings": {}
+          "settings": {
+          }
         },
         "contact-page-template": {
           "type": "contact-page-template",
@@ -2923,7 +2934,8 @@
             },
             "1559248069432": {
               "type": "section_clear",
-              "settings": {}
+              "settings": {
+              }
             }
           },
           "block_order": [
@@ -3256,7 +3268,8 @@
           "blocks": {
             "1547143362456": {
               "type": "description",
-              "settings": {}
+              "settings": {
+              }
             },
             "1559158235164": {
               "type": "text",
@@ -3362,7 +3375,8 @@
           "blocks": {
             "1603134279730": {
               "type": "cart_status",
-              "settings": {}
+              "settings": {
+              }
             },
             "1603134282065": {
               "type": "navigation",
@@ -3373,7 +3387,8 @@
             },
             "1603134286633": {
               "type": "search_box",
-              "settings": {}
+              "settings": {
+              }
             },
             "1603134294387": {
               "type": "social_icons",
@@ -3910,7 +3925,8 @@
             "1559152904168",
             "1559153532894"
           ],
-          "settings": {}
+          "settings": {
+          }
         },
         "contact-page-template": {
           "type": "contact-page-template",
@@ -3991,7 +4007,8 @@
             },
             "1559248069432": {
               "type": "section_clear",
-              "settings": {}
+              "settings": {
+              }
             },
             "1559241649775-1": {
               "type": "image",
@@ -4239,6 +4256,7 @@
     "popup_text_color": "#000000",
     "popup_background_color": "#ffffff",
     "favicon": "shopify:\/\/shop_images\/DI-LOGO-ICON-300x300_256x256-2.png",
+    "countdown_date": "",
     "checkout_header_image": "",
     "checkout_logo_image": "shopify:\/\/shop_images\/Text-Logo-For-web-300.png",
     "checkout_logo_position": "center",
@@ -4247,10 +4265,10 @@
     "checkout_body_background_color": "#ffffff",
     "checkout_input_background_color_mode": "white",
     "checkout_sidebar_background_image": "",
-    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_sidebar_background_color": "#f7f7f7",
     "checkout_heading_font": "Helvetica Neue",
     "checkout_body_font": "Helvetica Neue",
-    "checkout_accent_color": "#f8f3f0",
+    "checkout_accent_color": "#000000",
     "checkout_button_color": "#000000",
     "checkout_error_color": "#ff0000",
     "scroll_color": "#000000",
@@ -4302,7 +4320,7 @@
           "announcement_bar_verified_reviews_number": "100'S",
           "show_announcement": true,
           "announcement_text": "<p>GUARANTEED BEST QUALITY<\/p>",
-          "announcement_text1": "<p>UP TO 40% OFF MID-WEEK SALE <\/p>",
+          "announcement_text1": "<p>UP TO 60% OFF SELECT LINES<\/p>",
           "announcement_text_size": 12,
           "top_nav": "footer",
           "cart_position": "header",
@@ -4346,8 +4364,8 @@
           "f5df0d2c-0f64-40e0-b769-25bb44eb7480": {
             "type": "text",
             "settings": {
-              "title": "",
-              "footer_text": "<p> <\/p>",
+              "title": "Designer Icons",
+              "footer_text": "<p>Address:  <a href=\"https:\/\/www.google.com\/maps\/place\/71-75+Shelton+St,+London+WC2H+9JQ,+V%C6%B0%C6%A1ng+Qu%E1%BB%91c+Anh\/@51.5149056,-0.1257351,17z\/data=!3m1!4b1!4m5!3m4!1s0x487604ccaaa0b0b7:0xbe144a0754857ae1!8m2!3d51.5149056!4d-0.1235464\" target=\"_blank\" title=\"https:\/\/www.google.com\/maps\/place\/71-75+Shelton+St,+London+WC2H+9JQ,+V%C6%B0%C6%A1ng+Qu%E1%BB%91c+Anh\/@51.5149056,-0.1257351,17z\/data=!3m1!4b1!4m5!3m4!1s0x487604ccaaa0b0b7:0xbe144a0754857ae1!8m2!3d51.5149056!4d-0.1235464\">71 – 75 Shelton Street, London, WC2H9JQ<\/a><\/p><p>Contact us: <a href=\"tel:+44 (0) 2038074049\" target=\"_blank\" title=\"tel:+44 (0) 2038074049\">+44 (0) 2038074049<\/a><\/p><p><\/p>",
               "image": "shopify:\/\/shop_images\/Google_Reviews.jpg",
               "imageUrl": "\/",
               "imageUrl1": "\/",
@@ -4487,11 +4505,13 @@
           },
           "1603134279730": {
             "type": "cart_status",
-            "settings": {}
+            "settings": {
+            }
           },
           "1bcec56b-8205-45d3-bd2c-67a7789d4daa": {
             "type": "search_box",
-            "settings": {}
+            "settings": {
+            }
           }
         },
         "block_order": [
@@ -4974,7 +4994,8 @@
           "1559152904168",
           "1559153532894"
         ],
-        "settings": {}
+        "settings": {
+        }
       },
       "contact-page-template": {
         "type": "contact-page-template",
@@ -5008,7 +5029,7 @@
           "title": "THE ICONS FOR LESS",
           "subTitle": "40% Off Everything",
           "text": "",
-          "link": "shopify:\/\/collections",
+          "link": "shopify:\/\/collections\/all",
           "button": "Shop Now"
         }
       },
@@ -5018,7 +5039,7 @@
           "27e1e831-7a43-4db0-bc45-a5a7c958205f": {
             "type": "html",
             "settings": {
-              "code": "<div id=\"customhtml\">\n    <div style=\"    align-self: center;\" class=\"medium-up--text-center\">\n        <h4 class=\"h3\" data-live-text-setting=\"section.1618896363be3841e6.block.1618896363be3841e6-0.title\/escape\">How\n            We Do It<\/h4>\n        <div class=\"rte-setting rte\" data-live-text-setting=\"section.1618896363be3841e6.block.1618896363be3841e6-0.text\">\n            <p>Mid-century furniture should be accessible to all. Unfortunately, decades after the deaths of the\n                renowned designers, the prices are high, making these icons available only to the wealthy. We started\n                Desiger Icons as an accessible alternative, creating furniture inspired by the iconic designs, cutting\n                out all middlemen and maintaining the same quality standards.<\/p>\n            <p>\n                <a href=\"\/pages\/about-us\">Learn More <\/a>\n            <\/p>\n        <\/div>\n    <\/div>\n    <div class=\"medium-up--text-center\">\n        <h4 class=\"h4\" style=\"font-size:28px; \">Traditional Retailer<\/h4>\n        <div data-image-loading-animation=\"\" style=\"text-align: center\">\n            <img alt=\"\" class=\"custom__image js lazyautosizes lazyloaded\" data-aspectratio=\"0.6466512702078522\" data-sizes=\"auto\" data-srcset=\"\/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/chart-traditional-retailer_180x.png?v=1622657055 180w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/chart-traditional-retailer_360x.png?v=1622657055 360w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/chart-traditional-retailer_540x.png?v=1622657055 540w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/chart-traditional-retailer_720x.png?v=1622657055 720w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/chart-traditional-retailer_900x.png?v=1622657055 900w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/chart-traditional-retailer_1080x.png?v=1622657055 1080w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/chart-traditional-retailer_1296x.png?v=1622657055 1296w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/chart-traditional-retailer_1512x.png?v=1622657055 1512w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/chart-traditional-retailer_1728x.png?v=1622657055 1728w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/chart-traditional-retailer_2048x.png?v=1622657055 2048w\" data-widths=\"[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]\" id=\"CustomImage--3-515447062714\" sizes=\"480px\" srcset=\"\/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/chart-traditional-retailer_180x.png?v=1622657055 180w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/chart-traditional-retailer_360x.png?v=1622657055 360w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/chart-traditional-retailer_540x.png?v=1622657055 540w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/chart-traditional-retailer_720x.png?v=1622657055 720w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/chart-traditional-retailer_900x.png?v=1622657055 900w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/chart-traditional-retailer_1080x.png?v=1622657055 1080w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/chart-traditional-retailer_1296x.png?v=1622657055 1296w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/chart-traditional-retailer_1512x.png?v=1622657055 1512w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/chart-traditional-retailer_1728x.png?v=1622657055 1728w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/chart-traditional-retailer_2048x.png?v=1622657055 2048w\">\n        <\/div>\n    <\/div>\n    <div class=\"medium-up--text-center\">\n        <h4 class=\"h4\" style=\"font-size:28px; \">Direct-to-Consumer<\/h4>\n        <div data-image-loading-animation=\"\" style=\"text-align: center\">\n            <img alt=\"\" class=\"custom__image js lazyautosizes lazyloaded\" data-aspectratio=\"0.8924050632911392\" data-sizes=\"auto\" data-srcset=\"\/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/chart-direct-to-consumer_180x.png?v=1622657055 180w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/chart-direct-to-consumer_360x.png?v=1622657055 360w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/chart-direct-to-consumer_540x.png?v=1622657055 540w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/chart-direct-to-consumer_720x.png?v=1622657055 720w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/chart-direct-to-consumer_900x.png?v=1622657055 900w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/chart-direct-to-consumer_1080x.png?v=1622657055 1080w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/chart-direct-to-consumer_1296x.png?v=1622657055 1296w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/chart-direct-to-consumer_1512x.png?v=1622657055 1512w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/chart-direct-to-consumer_1728x.png?v=1622657055 1728w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/chart-direct-to-consumer_2048x.png?v=1622657055 2048w\" data-widths=\"[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]\" id=\"CustomImage--4-515447095482\" sizes=\"480px\" srcset=\"\/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/chart-direct-to-consumer_180x.png?v=1622657055 180w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/chart-direct-to-consumer_360x.png?v=1622657055 360w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/chart-direct-to-consumer_540x.png?v=1622657055 540w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/chart-direct-to-consumer_720x.png?v=1622657055 720w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/chart-direct-to-consumer_900x.png?v=1622657055 900w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/chart-direct-to-consumer_1080x.png?v=1622657055 1080w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/chart-direct-to-consumer_1296x.png?v=1622657055 1296w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/chart-direct-to-consumer_1512x.png?v=1622657055 1512w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/chart-direct-to-consumer_1728x.png?v=1622657055 1728w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/chart-direct-to-consumer_2048x.png?v=1622657055 2048w\">\n        <\/div>\n    <\/div>\n<\/div>\n<style>\n    #customhtml {\n        padding: 0 1.4rem;\n        width: 100%;\n        display: flex;\n        column-gap: 2em;\n    }\n\n    #customhtml>*:nth-child(1) {\n        width: 50%;\n    }\n\n    #customhtml>*:nth-child(2) {\n        flex: 1;\n    }\n\n    #customhtml>*:nth-child(3) {\n        flex: 1;\n    }\n\n    @media screen and (max-width: 980px) {\n\n        #customhtml>*:nth-child(1) {\n            width: 100%;\n        }\n\n        #customhtml>*:nth-child(2) {\n            display: none;\n        }\n\n        #customhtml>*:nth-child(3) {\n            display: none;\n        }\n    }\n<\/style>",
+              "code": "<div id=\"customhtml\">\n    <div class=\"medium-up--text-center\" style=\"    align-self: center;\">\n        <h4 class=\"h3\" data-live-text-setting=\"section.1618896363be3841e6.block.1618896363be3841e6-0.title\/escape\">How\n                  We Do It<\/h4>\n        <div class=\"rte-setting rte\" data-live-text-setting=\"section.1618896363be3841e6.block.1618896363be3841e6-0.text\">\n            <p>Mid-century furniture should be accessible to all. Unfortunately, decades after the deaths of the\n                        renowned designers, the prices are high, making these icons available only to the wealthy. We started\n                        Desiger Icons as an accessible alternative, creating furniture inspired by the iconic designs, cutting\n                        out all middlemen and maintaining the same quality standards.<\/p>\n            <p>\n                <a href=\"\/pages\/about-us\">Learn More\n                <\/a>\n            <\/p>\n        <\/div>\n    <\/div>\n    <div class=\"medium-up--text-center\">\n        <h4 class=\"h4\" style=\"font-size:28px; \">Traditional Retailer<\/h4>\n        <div style=\"margin:auto;width:171px;height:263px;position:relative;font-size:18px;font-weight: bold;\">\n            <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/chart-traditional-retailer_5603206b-46b1-46c3-8a6e-6c4de4a22b1c.png?v=1645079742\" style=\"width:100%;height:100%;object-fit:cover\">\n            <div style=\"position:absolute;top:0;right:0;width:100px;height:100%;display:flex;flex-direction:column;justify-content:space-between\">\n                <div style=\"display:flex;    align-items:center;height:56px\">Manufacturer<\/div>\n                <div style=\"display:flex;    align-items:center;height:56px\">Wholesale<\/div>\n                <div style=\"display:flex;    align-items:center;height:56px\">Retailer<\/div>\n                <div style=\"display:flex;    align-items:center;height:56px\">Consumer<\/div>\n            <\/div>\n        <\/div>\n    <\/div>\n    <div class=\"medium-up--text-center\">\n        <h4 class=\"h4\" style=\"font-size:28px;\">Direct-to-Consumer<\/h4>\n        <div style=\"margin:auto;width:171px;height:192px;position:relative;font-size:18px;font-weight: bold;\">\n            <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/chart-direct-to-consumer_3d55cda1-2b7a-4048-832a-486999dd6d04.png?v=1645079744\" style=\"width:100%;height:100%;object-fit:cover\">\n            <div style=\"position:absolute;top:0;right:0;width:100px;height:100%;display:flex;flex-direction:column;justify-content:space-between\">\n                <div style=\"display:flex;    align-items:center;height:56px\">Manufacturer<\/div>\n                <div style=\"display:flex;    align-items:center;height:56px\">Advertising\n\/ Website<\/div>\n                <div style=\"display:flex;    align-items:center;height:56px\">Consumer<\/div>\n            <\/div>\n        <\/div>\n    <\/div>\n<\/div>\n<style>\n    #customhtml {\n        padding: 0 1.4rem;\n        width: 100%;\n        display: flex;\n        column-gap: 2em;\n    }\n\n    #customhtml>*:nth-child(1) {\n        width: 50%;\n    }\n\n    #customhtml>*:nth-child(2) {\n        flex: 1;\n    }\n\n    #customhtml>*:nth-child(3) {\n        flex: 1;\n    }\n\n    @media screen and (max-width: 980px) {\n\n        #customhtml>*:nth-child(1) {\n            width: 100%;\n        }\n\n        #customhtml>*:nth-child(2) {\n            display: none;\n        }\n\n        #customhtml>*:nth-child(3) {\n            display: none;\n        }\n    }\n<\/style>",
               "width": "100%"
             }
           }
@@ -5086,7 +5107,7 @@
           "499d741e-8c9f-4282-8f07-86accdfd1f9e": {
             "type": "html",
             "settings": {
-              "code": "<div class=\"b-video b-video-b-video grey-bg\">\n    <video style=\"\n    width: 100%;\n\" class=\"w-100\" muted=\"\" loop=\"\" playsinline=\"\" autoplay=\"\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/Designer_Editions_Furniture.mp4?v=1625997608\" __idm_id__=\"663160833\"><\/video>\n    <div class=\"b-video-text\">\n      <h1 class=\"hd1 mv0\">The Original Quality<\/h1>\n      <p class=\"mt3 mb4\">Every Detail. Considered.<\/p>\n      <a class=\"btn white button\" href=\"\/pages\/about\">Learn More<\/a>\n    <\/div>\n<\/div>\n<style>\n .b-video-text {\n    position: absolute;\n    text-align: center;\n    top: 50%;\n    left: 50%;\n    -webkit-transform: translate(-50%, -50%);\n    -moz-transform: translate(-50%, -50%);\n    -ms-transform: translate(-50%, -50%);\n    -o-transform: translate(-50%, -50%);\n    transform: translate(-50%, -50%);\n}\n  @media screen and (min-width: 768px)\n    { \n\nh1.hd1.mv0 {\n    font-size: 47px;\n}a.btn.white.button {\n    width: 175px;\n}\n}\n<\/style>",
+              "code": "<div class=\"b-video b-video-b-video grey-bg\" style=\"\n    padding-bottom: 56.25%;\n    position: relative;\n\">\n    <iframe loading=\"lazy\" style=\"width:100%;height:100%;position: absolute;top: 0;left: 0;\" data-src=\"https:\/\/fast.wistia.net\/embed\/iframe\/67nabx3lvb?amp;embedType=async&amp;videoWidth=320\" title=\"Designer Icons\" allow=\"autoplay; fullscreen\" allowtransparency=\"true\" frameborder=\"0\" class=\"wistia_embed lazyload\" name=\"wistia_embed\" width=\"800\" height=\"600\"><\/iframe>\n    <div class=\"b-video-text\">\n      <h1 class=\"hd1 mv0\">The Original Quality<\/h1>\n      <p class=\"mt3 mb4\">Every Detail. Considered.<\/p>\n      <a class=\"btn white button\" href=\"\/pages\/about-us\">Learn More<\/a>\n    <\/div>\n<\/div>\n<style>\n .b-video-text {\n    position: absolute;\n    text-align: center;\n    top: 50%;\n    left: 50%;\n    -webkit-transform: translate(-50%, -50%);\n    -moz-transform: translate(-50%, -50%);\n    -ms-transform: translate(-50%, -50%);\n    -o-transform: translate(-50%, -50%);\n    transform: translate(-50%, -50%);\n}\n  @media screen and (min-width: 768px)\n    { \n\nh1.hd1.mv0 {\n    font-size: 47px;\n}a.btn.white.button {\n    width: 175px;\n}\n}\n<\/style>",
               "width": "100%"
             }
           }
@@ -5168,7 +5189,7 @@
               "heading": "<p><strong>WARRANTY<\/strong><\/p><p>5 years warranty<\/p>",
               "popup": "Learn More",
               "pop_heading": "<p>Warranty Info<\/p>",
-              "pop_text": "<p>One of the reasons you might be shopping with us is that you recognise the superior quality of our pieces. And just as we want our furniture to be the best you can find, we want our promise to you to be equally superior. That’s why, while most furniture manufacturers only offer a 1 year warranty, we offer a 5 year warranty. Please go to <a href=\"https:\/\/designer-icons.com\/pages\/5-year-warranty\" title=\"https:\/\/designer-icons.com\/pages\/5-year-warranty\">www.designer-icons.com<\/a> to read the full warranty policy.<\/p>",
+              "pop_text": "<p>One of the reasons you might be shopping with us is that you recognise the superior quality of our pieces. And just as we want our furniture to be the best you can find, we want our promise to you to be equally superior. That’s why, while most furniture manufacturers only offer a 1 year warranty, we offer a 5 year warranty. Please go to to read the full <a href=\"https:\/\/designer-icons.com\/pages\/5-year-warranty\" title=\"https:\/\/designer-icons.com\/pages\/5-year-warranty\">warranty policy<\/a>.<\/p>",
               "heading_color": "#685757",
               "button_color": "#ffffff",
               "button_background": "#000000",
@@ -5194,7 +5215,8 @@
       },
       "product-descriptions-section": {
         "type": "product-descriptions-section",
-        "settings": {}
+        "settings": {
+        }
       },
       "page-template-faq": {
         "type": "page-template-faq",
@@ -5215,15 +5237,15 @@
           "7ddccc05-8734-4ef3-9155-bc7110ad722d": {
             "type": "question",
             "settings": {
-              "title": "Do you have a product warranty?",
-              "answer": "<p>We sure do! We’ve given thousands of customers the style they’ve wanted at the price they’ve wanted. Want to see what a few of them have had to say? Head over to our reviews to see their words yourself.<\/p>"
+              "title": "Do you have a warranty?",
+              "answer": "<p>One of the reasons you might be shopping with us is that you recognise the superior quality of our pieces. And just as we want our furniture to be the best you can find, we want our promise to you to be equally superior. That’s why, while most furniture manufacturers only offer a 2 year warranty, we offer a 5 year warranty.<\/p>"
             }
           },
           "9f21b669-638a-4646-b259-d4823ace4d15": {
             "type": "question",
             "settings": {
               "title": "Do you have any showrooms where I can see the furniture?",
-              "answer": "<p>We sure do! We’ve given thousands of customers the style they’ve wanted at the price they’ve wanted. Want to see what a few of them have had to say? Head over to our reviews to see their words yourself.<\/p>"
+              "answer": "<p>We are online only.<br\/>Decades after the deaths of the renowned designers, the prices are high, making them available only to the wealthy - Here at Designer Icons we offer affordable designer furniture for all. Therefore, We Created an Alternative -&gt; Out of frustration, we created an alternative by eliminating middle men, sales staff and expensive showrooms.  We take this savings and pass them on to our customers, therefore offering the great quality product at a great price.<\/p>"
             }
           },
           "e07aacbe-171d-47fe-b9c9-c69626e38196": {
@@ -5235,8 +5257,8 @@
           "0b727dea-0d51-4691-ab3d-2a58a3f68cf8": {
             "type": "question",
             "settings": {
-              "title": "How do you pack your furniture?",
-              "answer": "<p>We sure do! We’ve given thousands of customers the style they’ve wanted at the price they’ve wanted. Want to see what a few of them have had to say? Head over to our reviews to see their words yourself.<\/p>"
+              "title": "How can I be assured in quality?",
+              "answer": "<p>From the supply chain to production to the moment it arrived in our warehouse, the product has been also quality checked and tested at several stages.<br\/>Once production is complete, we inspect your piece(s) scrupulously one last time before initiating shipment.<\/p>"
             }
           },
           "3f82e613-2abc-47af-af30-fd5133d95640": {
@@ -5249,8 +5271,8 @@
           "a6669cab-8403-4b21-a147-b40df594c3b3": {
             "type": "question",
             "settings": {
-              "title": "How do I place an order with Desiger Icons?",
-              "answer": "<p><br\/>No, we are delivering as usual. As we navigate this uncertain time, we want you to know we’re doing all we can to keep our staff and customers safe. Desiger Icons is open, and we’re delivering as usual. We’ve put new measures in place to keep our warehouse staff safe, including heightened hygiene processes, split shifts and social distancing, and we’ve introduced no-contact delivery.<br\/><br\/><br\/><\/p>"
+              "title": "How will my delivery be arranged?",
+              "answer": "<p>Once your product is ready for delivery to your shipping address, you will be contacted by the carrier to advise the days on which they will deliver to your area and to work out when it is most suitable for you. Please note for larger items you will be delivered at street level.<\/p>"
             }
           }
         },
@@ -5292,8 +5314,8 @@
           "e86f83c1-8484-4b18-a573-774637f7470e": {
             "type": "quote",
             "settings": {
-              "quote": "<p>I am so happy for the lamp I ordered from Designer Icons! The quality and service was perfect! I will tell all my friends about Designer Icons, and tell them how pleased I am! Thank you, Stylish!<\/p>",
-              "title1": "<div class=\"review-stars\">★ ★ ★ ★ ★<\/div>I love Stylish Icons",
+              "quote": "<p>I am so happy for the lamp I ordered from Designer Icons! The quality and service was perfect! I will tell all my friends about Designer Icons, and tell them how pleased I am! Thank you<\/p>",
+              "title1": "<div class=\"review-stars\">★ ★ ★ ★ ★<\/div>I love Designer Icons",
               "image": "shopify:\/\/shop_images\/73x73.png",
               "author": ""
             }
@@ -5400,7 +5422,8 @@
         "blocks": {
           "page-designers-0": {
             "type": "page_title",
-            "settings": {}
+            "settings": {
+            }
           },
           "page-designers-1": {
             "type": "page_content",
@@ -5414,7 +5437,8 @@
           "page-designers-0",
           "page-designers-1"
         ],
-        "settings": {}
+        "settings": {
+        }
       },
       "about-custom": {
         "type": "about-custom",
@@ -5466,6 +5490,7 @@
           },
           "085f5686-a15c-4789-8b5a-e8e4d02146e4": {
             "type": "image_text_overlay",
+            "disabled": true,
             "settings": {
               "pio_image": "shopify:\/\/shop_images\/About-Us.png",
               "overlay_opacity": 0,
@@ -5496,7 +5521,10 @@
               "iwt_title": "Prices Are Kept High",
               "iwt_text": "<p>Mid-century furniture that were created over 60 years ago should to be accessible to all. Decades after the deaths of the renowned designers, the prices are high, making them available only to the wealthy - Here at Designer Icons we offer affordable designer furniture for all<br\/><br\/><\/p>",
               "iwt_link": "",
-              "iwt_button": ""
+              "iwt_button": "",
+              "shadow": false,
+              "image_bg": "#ffffff",
+              "shadow_color": "#eef5f1"
             }
           },
           "bf6b5b77-492b-414a-a10d-440e8adcee41": {
@@ -5509,46 +5537,58 @@
               "iwt_title": "Therefore, We Created an Alternative",
               "iwt_text": "<p>Out of frustration, we created an alternative by eliminating middle men, sales staff and expensive showrooms. We began producing all products in our own factory and making these designs widely available and affordable once again. In addition, we decided to offer fast shipping, 30-day free returns and a 5-year warranty on all of our products, to take the hassle out of furniture buying.<\/p><p><br\/><br\/><\/p>",
               "iwt_link": "",
-              "iwt_button": ""
+              "iwt_button": "",
+              "shadow": false,
+              "image_bg": "#ffffff",
+              "shadow_color": "#eef5f1"
             }
           },
           "893e10cb-38fd-42cd-a0ee-81e2709b7f27": {
             "type": "image_with_text",
             "settings": {
-              "iwt_image": "shopify:\/\/shop_images\/Screenshot_5.png",
+              "iwt_image": "shopify:\/\/shop_images\/Screenshot_2018-02-28_18.10.33.png",
               "iwt_layout": "left",
               "iwt_image_width": "50%",
               "iwt_text_align": "left",
               "iwt_title": "In the Original Quality",
               "iwt_text": "<p>By combining highly skilled labor and technological innovations, we’ve streamlined the production and quality assurance processes, resulting in faster, more precise service. Our artisans follow stringent quality assurance standards from the instant production begins to the moment your order leaves our factory. Every Desiger Icons design is triple checked for precision to ensure you receive a perfect piece of designer furniture every time you place an order.<\/p><p><br\/><br\/><\/p>",
               "iwt_link": "",
-              "iwt_button": ""
+              "iwt_button": "",
+              "shadow": true,
+              "image_bg": "#ffffff",
+              "shadow_color": "#eef5f1"
             }
           },
           "d59d48a5-6aa6-43be-8b8c-04645615e7ce": {
             "type": "image_with_text",
             "settings": {
-              "iwt_image": "shopify:\/\/shop_images\/Screenshot_6.png",
+              "iwt_image": "shopify:\/\/shop_images\/shutterstock_382064047_a76c49d9-92cf-46d7-8107-3a47f9292134.jpg",
               "iwt_layout": "right",
               "iwt_image_width": "50%",
               "iwt_text_align": "left",
-              "iwt_title": "Created in Our Own Factory to Keep Prices Low",
-              "iwt_text": "<p>By creating our products in our own factory, we’re able to keep prices low and maintain stringent quality control. Our policy against outsourcing is one of the key reasons we’re able to offer a 5-year warranty on every product we offer.<\/p><p><\/p><p><a href=\"https:\/\/interioricons.com\/pages\/our-factory\">Learn more <\/a><\/p><p><\/p>",
+              "iwt_title": "Only Quality Factories Chosen",
+              "iwt_text": "<p>By sourcing only from the very best factories, we’re able to keep prices low and maintain stringent quality control. Our strict policies on outsourcing is one of the key reasons we’re able to offer a 5-year warranty on every product we offer.<\/p><p><\/p><p><a href=\"\/pages\/our-factory\" title=\"Our factory\">Learn more <\/a><\/p><p><\/p>",
               "iwt_link": "",
-              "iwt_button": ""
+              "iwt_button": "",
+              "shadow": true,
+              "image_bg": "#ffffff",
+              "shadow_color": "#eef5f1"
             }
           },
           "a46c7cc9-f8e5-4b9a-85fe-880217e9fbc8": {
             "type": "image_with_text",
             "settings": {
-              "iwt_image": "shopify:\/\/shop_images\/Screenshot_7.png",
+              "iwt_image": "shopify:\/\/shop_images\/shutterstock_2007161351.jpg",
               "iwt_layout": "left",
               "iwt_image_width": "50%",
               "iwt_text_align": "left",
               "iwt_title": "Shipped to Your Door",
               "iwt_text": "<p>Our factory-to-home business model allows us to pass a substantial savings onto you. Your satisfaction is our highest priority, so once production is complete, we inspect your piece(s) scrupulously one last time before initiating shipment. Our hope is that you’ll fall in love with your new furniture the moment it arrives at your door.<br\/><\/p>",
               "iwt_link": "",
-              "iwt_button": ""
+              "iwt_button": "",
+              "shadow": true,
+              "image_bg": "#ffffff",
+              "shadow_color": "#eef5f1"
             }
           },
           "8d1a59ac-6ccd-4798-8cf7-eb0cb19b7854": {
@@ -5574,7 +5614,8 @@
           "a46c7cc9-f8e5-4b9a-85fe-880217e9fbc8",
           "8d1a59ac-6ccd-4798-8cf7-eb0cb19b7854"
         ],
-        "settings": {}
+        "settings": {
+        }
       },
       "custom-our-factory": {
         "type": "custom-our-factory",
@@ -5599,36 +5640,39 @@
           "dbd2fc85-b610-41e9-a657-eba505ff3d2a": {
             "type": "image_with_text",
             "settings": {
-              "iwt_image": "shopify:\/\/shop_images\/Screenshot_8.png",
+              "iwt_image": "shopify:\/\/shop_images\/Our-artisans.jpg",
               "iwt_layout": "left",
               "iwt_image_width": "50%",
               "iwt_text_align": "left",
               "iwt_title": "Our artisans",
-              "iwt_text": "<p><br\/><\/p><p>At Desiger Icons, we take pride in our family-like atmosphere. We value our staff, and we’re intent on providing fair, competitive wages. Through open communication and constant collaboration, we make every effort to maintain a wonderful working environment. Our artisans are professionally trained to ensure the highest quality throughout the design and construction process, so you can always order with confidence. We believe that building and maintaining trusting relationships is essential, whether those relationships are with our longtime suppliers, our staff, or you—our valued customer.<\/p><p><br\/><\/p>",
+              "iwt_text": "<p>At Desiger Icons, we take pride in our family-like atmosphere. We value our staff, and we’re intent on providing fair, competitive wages. Through open communication and constant collaboration, we make every effort to maintain a wonderful working environment. Our artisans are professionally trained to ensure the highest quality throughout the design and construction process, so you can always order with confidence. We believe that building and maintaining trusting relationships is essential, whether those relationships are with our longtime suppliers, our staff, or you—our valued customer.<\/p><p><br\/><\/p>",
+              "iwt_link": "",
               "iwt_button": ""
             }
           },
           "5e718ccf-8fcf-4838-afdb-e46150091187": {
             "type": "image_with_text",
             "settings": {
-              "iwt_image": "shopify:\/\/shop_images\/Screenshot_9.png",
+              "iwt_image": "shopify:\/\/shop_images\/Our-materials.jpg",
               "iwt_layout": "right",
               "iwt_image_width": "50%",
               "iwt_text_align": "left",
               "iwt_title": "Our materials",
               "iwt_text": "<p>All of our skilled artisans are intent on crafting each piece of furniture in the best possible quality, utilizing high-quality materials and construction processes to ensure each and every item lives up to your expectations when it’s delivered to your door.<\/p><p><br\/><br\/><\/p>",
+              "iwt_link": "",
               "iwt_button": ""
             }
           },
           "1969e6e8-3095-4e96-aa14-a7bb7c938920": {
             "type": "image_with_text",
             "settings": {
-              "iwt_image": "shopify:\/\/shop_images\/Screenshot_10.png",
+              "iwt_image": "shopify:\/\/shop_images\/Our-quality.jpg",
               "iwt_layout": "left",
               "iwt_image_width": "50%",
               "iwt_text_align": "left",
               "iwt_title": "Our quality",
               "iwt_text": "<p>Aside from providing an excellent customer experience, we believe there’s nothing more important than consistently offering high-quality furniture you can count on. Every Desiger Icons design is triple checked for precision to ensure you receive a perfect piece of designer furniture every time you place an order. By combining highly skilled labor and technological innovations, we’ve streamlined the production and quality assurance processes, resulting in faster, more precise service. Our artisans follow stringent quality assurance standards from the instant production begins to the moment your order leaves our factory.<\/p><p><br\/><br\/><\/p>",
+              "iwt_link": "",
               "iwt_button": ""
             }
           },
@@ -5651,7 +5695,8 @@
           "1969e6e8-3095-4e96-aa14-a7bb7c938920",
           "0df2d069-638c-4346-b346-fca595295577"
         ],
-        "settings": {}
+        "settings": {
+        }
       },
       "our-customers-sec": {
         "type": "our-customers-sec",
@@ -5660,32 +5705,17 @@
             "type": "rich_text",
             "settings": {
               "rt_heading": "Our Customers",
-              "rt_text": "<p>We have thousands of happy customers! Meet a few of them below, and click <a href=\"https:\/\/interioricons.com\/pages\/reviews\">here<\/a> to read their glowing reviews.<br\/><br\/>Each and every time one of our customers purchases an Desiger Icons piece, we get excited. Why? Because they’re one step closer to creating some iconic interiors of their own! Get inspired by a few of our customers’ inspirational interiors.<\/p><p><br\/><br\/><\/p>",
+              "rt_text": "<p>We have thousands of happy customers! Meet a few of them below, and click <a href=\"\/pages\/reviews\" title=\"Reviews\">here<\/a> to read their glowing reviews.<br\/><br\/>Each and every time one of our customers purchases an Desiger Icons piece, we get excited. Why? Because they’re one step closer to creating some iconic interiors of their own! Get inspired by a few of our customers’ inspirational interiors.<\/p><p><br\/><br\/><\/p>",
               "rt_page": "",
               "rt_alignment": "center",
               "rt_text_width": 600,
               "rt_text_size": 14
             }
           },
-          "184caa23-ac24-46ad-bcf5-a433b0244507": {
-            "type": "text_columns_with_images",
+          "d9908c8b-908e-4177-8e68-bde154550e31": {
+            "type": "html_ti",
             "settings": {
-              "txt_image_1": "shopify:\/\/shop_images\/2_1_2880x_99208aa9-f15d-4858-9742-eb836c19fd82.jpg",
-              "txt_title_text_1": "Michael, New York",
-              "txt_text_1": "<p>This beautiful townhouse in the Upper West Side features some classic pieces to compliment the historic architecture<\/p>",
-              "button_text_1": "Explore",
-              "txt_image_2": "shopify:\/\/shop_images\/2_1_2880x_99208aa9-f15d-4858-9742-eb836c19fd82.jpg",
-              "txt_title_text_2": "James, Los Angeles",
-              "txt_text_2": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-              "button_text_2": "Explore",
-              "txt_image_3": "shopify:\/\/shop_images\/2_1_2880x_99208aa9-f15d-4858-9742-eb836c19fd82.jpg",
-              "txt_title_text_3": "Restaurant N'eat, Seattle",
-              "txt_text_3": "<p>Nordic eatery with mid-century Scandinavian classics from Desiger Icons<\/p>",
-              "button_text_3": "Explore",
-              "txt_image_4": "shopify:\/\/shop_images\/2_1_2880x_99208aa9-f15d-4858-9742-eb836c19fd82.jpg",
-              "txt_title_text_4": "Brklyn Coworking, Brooklyn",
-              "txt_text_4": "<p>An urban Brooklyn coworking space featuring the versatile DSW chairs<\/p>",
-              "button_text_4": "Explore"
+              "code": "<div style=\"width:100vw\"><div style=\"max-width:900px\" class=\"\n tw-w-full tw-px-4 sm:tw-px-8 tw-mx-auto   \n\n\">\n    <article id=\"image-columns\" class=\"tw-grid tw-grid-cols-1 tw-gap-6 md:tw-grid-cols-2\">\n      \n        <div class=\"image-column-162159895992baa653-0\">\n          <div class=\"image-container\">\n              \n              <a href=\"\">\n                \n    \n\n    <div class=\"tw-w-full tw-relative\" style=\"padding-bottom: 66.75%;\">\n        <img class=\"tw-absolute tw-inset-0 tw-w-full tw-h-full tw-bg-transparent tw-object-contain lazyload-fade lazyautosizes lazyloaded\" id=\"541171155130\" data-sizes=\"auto\" width=\"\" height=\"\" data-original=\"\/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/Wishbone-Table_e7879689-0916-47ae-81f3-6a43a55810aa_500x.jpg?v=1635407424\" data-widths=\"[180, 360, 540, 720, 900]\" alt=\"\" data-srcset=\"\/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/Wishbone-Table_e7879689-0916-47ae-81f3-6a43a55810aa_180x.jpg?v=1635407424 180w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/Wishbone-Table_e7879689-0916-47ae-81f3-6a43a55810aa_360x.jpg?v=1635407424 360w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/Wishbone-Table_e7879689-0916-47ae-81f3-6a43a55810aa_540x.jpg?v=1635407424 540w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/Wishbone-Table_e7879689-0916-47ae-81f3-6a43a55810aa_720x.jpg?v=1635407424 720w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/Wishbone-Table_e7879689-0916-47ae-81f3-6a43a55810aa_900x.jpg?v=1635407424 900w\" sizes=\"596px\" srcset=\"\/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/Wishbone-Table_e7879689-0916-47ae-81f3-6a43a55810aa_180x.jpg?v=1635407424 180w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/Wishbone-Table_e7879689-0916-47ae-81f3-6a43a55810aa_360x.jpg?v=1635407424 360w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/Wishbone-Table_e7879689-0916-47ae-81f3-6a43a55810aa_540x.jpg?v=1635407424 540w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/Wishbone-Table_e7879689-0916-47ae-81f3-6a43a55810aa_720x.jpg?v=1635407424 720w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/Wishbone-Table_e7879689-0916-47ae-81f3-6a43a55810aa_900x.jpg?v=1635407424 900w\">\n    <\/div>\n                <noscript>\n                  <img src=\"\/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/Wishbone-Table_e7879689-0916-47ae-81f3-6a43a55810aa_800x.jpg?v=1635407424\" alt=\"\">\n                <\/noscript>\n              <\/a>\n              \n              <div class=\"text-container\">\n                \n                <div class=\"text-content\">\n                  <h3 class=\"text-title\">\n                    <a href=\"\">\n                      Annick Bast, Belgium\n                    <\/a>\n                  <\/h3>\n                    <p>Classic Styling - Walnut - Black Wishbone Chairs<\/p>\n                    \n                <\/div>\n                \n              <\/div>\n            \n          <\/div>\n        <\/div>\n\n        <style>\n          \/* IMAGE BLOCKS *\/\n          .homepage-image-column-162159895992baa653 {\n            background-color: #ffffff;\n          }\n          .image-column-162159895992baa653-0 {\n            text-align: left;\n          }\n          .image-column-162159895992baa653-0 .text-content h3 {\n            font-size: 18px;\n            color: #000000;\n            margin-top: 20px;\n            margin-bottom: 0.5rem\n          }\n          .image-column-162159895992baa653-0 .text-content p {\n            color: #000000;\n            \/* margin-top: 10px; *\/\n          }\n          .image-column-162159895992baa653-0 .text-content .cta {\n            margin-top: 10px;\n          }\n\n        <\/style>\n      \n        <div class=\"image-column-162159895992baa653-1\">\n          <div class=\"image-container\">\n              \n              <a href=\"\">\n                \n    \n\n    <div class=\"tw-w-full tw-relative\" style=\"padding-bottom: 66.75%;\">\n        <img class=\"tw-absolute tw-inset-0 tw-w-full tw-h-full tw-bg-transparent tw-object-contain lazyload-fade lazyautosizes lazyloaded\" id=\"540989751482\" data-sizes=\"auto\" width=\"\" height=\"\" data-original=\"\/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/PK20-Chairs_500x.png?v=1635315875\" data-widths=\"[180, 360, 540, 720, 900]\" alt=\"\" data-srcset=\"\/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/PK20-Chairs_180x.png?v=1635315875 180w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/PK20-Chairs_360x.png?v=1635315875 360w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/PK20-Chairs_540x.png?v=1635315875 540w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/PK20-Chairs_720x.png?v=1635315875 720w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/PK20-Chairs_900x.png?v=1635315875 900w\" sizes=\"596px\" srcset=\"\/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/PK20-Chairs_180x.png?v=1635315875 180w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/PK20-Chairs_360x.png?v=1635315875 360w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/PK20-Chairs_540x.png?v=1635315875 540w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/PK20-Chairs_720x.png?v=1635315875 720w, \/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/PK20-Chairs_900x.png?v=1635315875 900w\">\n    <\/div>\n                <noscript>\n                  <img src=\"\/\/cdn.shopify.com\/s\/files\/1\/0563\/0938\/3354\/files\/PK20-Chairs_800x.png?v=1635315875\" alt=\"\">\n                <\/noscript>\n              <\/a>\n              \n              <div class=\"text-container\">\n                \n                <div class=\"text-content\">\n                  <h3 class=\"text-title\">\n                    <a href=\"\">\n                      La Datcha, Chalet, Megeve\n                    <\/a>\n                  <\/h3>\n                    <p>Nordic styling in this exclusive chalet<\/p>\n                    \n                <\/div>\n                \n              <\/div>\n            \n          <\/div>\n        <\/div>\n\n        <style>\n          \/* IMAGE BLOCKS *\/\n          .homepage-image-column-162159895992baa653 {\n            background-color: #ffffff;\n          }\n          .image-column-162159895992baa653-1 {\n            text-align: left;\n          }\n          .image-column-162159895992baa653-1 .text-content h3 {\n            font-size: 18px;\n            color: #000000;\n            margin-top: 20px;\n            margin-bottom: 0.5rem\n          }\n          .image-column-162159895992baa653-1 .text-content p {\n            color: #000000;\n            \/* margin-top: 10px; *\/\n          }\n          .image-column-162159895992baa653-1 .text-content .cta {\n            margin-top: 10px;\n          }\n\n        <\/style>\n      \n      \n    <\/article>\n  <\/div><\/div>"
             }
           },
           "69af4b30-2b63-4add-9377-abaa33dd60ec": {
@@ -5701,10 +5731,11 @@
         },
         "block_order": [
           "9c883536-814c-4b33-98ea-c74458a21f85",
-          "184caa23-ac24-46ad-bcf5-a433b0244507",
+          "d9908c8b-908e-4177-8e68-bde154550e31",
           "69af4b30-2b63-4add-9377-abaa33dd60ec"
         ],
-        "settings": {}
+        "settings": {
+        }
       },
       "featured-collection-pages": {
         "type": "featured-collection-pages",
@@ -5726,7 +5757,7 @@
             "type": "question",
             "settings": {
               "title": "SHIPPING<br><p>Shipping cost is 10% of the product price<\/p>",
-              "answer": "<p>We offer shipping to the lower 48 states. Shipping cost is 10% of the product price. All deliveries are contactless.<\/p>"
+              "answer": "<p>We offer shipping today most of Europe, shipping cost is 10% of the product price. All deliveries are contactless<\/p>"
             }
           },
           "cbeed15f-863f-4b55-a318-c9c916279248": {
@@ -5734,7 +5765,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/2aa_50x_1dcb3eda-3455-4d0f-8fd6-f2f58a4acd5c.png",
               "title": "RETURNS<br><p>30-day returns<\/p>",
-              "answer": "<p>We offer free 30-day returns to customers in the 48 contiguous United States. We created this policy as part of our ongoing effort to provide a hassle-free shopping experience, enabling you to transform your living space into your own personal showroom, and try your favorite design in the comfort of your own home before making a long-term commitment. Please note that not all products are eligible for free returns. To see whether a product is eligible go to the product details section of the product page.<\/p>"
+              "answer": "<p>We offer 30 day returns to our customer in most of Europe. We created this policy as part of our ongoing customer support to provide a hassle-free shopping environment, enabling customers to assess aesthetics in their living situation space.<\/p>"
             }
           },
           "7b5c334f-0fa7-47a1-8faa-45a5408d0b4a": {
@@ -5843,7 +5874,8 @@
         "blocks": {
           "page-custom-three-0": {
             "type": "page_title",
-            "settings": {}
+            "settings": {
+            }
           },
           "page-custom-three-1": {
             "type": "page_content",
@@ -5857,7 +5889,8 @@
           "page-custom-three-0",
           "page-custom-three-1"
         ],
-        "settings": {}
+        "settings": {
+        }
       },
       "1635419372bc88c051": {
         "type": "text-with-custom",
@@ -5890,7 +5923,8 @@
       "15323590465973626552": {
         "type": "shopify:\/\/apps\/translate-currency-langshop\/blocks\/langshop\/84899e01-2b29-42af-99d6-46d16daa2111",
         "disabled": false,
-        "settings": {}
+        "settings": {
+        }
       }
     }
   }
