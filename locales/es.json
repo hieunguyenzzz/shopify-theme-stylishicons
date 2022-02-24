@@ -12,36 +12,36 @@
   },
   "general": {
     "404": {
-      "title": "Vaya: no lo hemos podido encontrar",
-      "subtext": "Esta página no existe. Intenta buscar lo que te gustaría encontrar:"
+      "title": "Vaya, no pudimos encontrar que uno",
+      "subtext": "Esta página no existe. Intenta buscar lo que le gustaría encontrar:"
     },
     "pagination": {
       "showing_items": "Mostrando artículos",
       "of": "de"
     },
     "forms": {
-      "post_error": "Lo siento, hay campos no se han rellenado:"
+      "post_error": "Lo siento, parece que algo salió mal. Por favor, corrija lo siguiente y envíe nuevamente:"
     },
     "breadcrumbs": {
-      "home": "Inicio"
+      "home": "Casa"
     },
     "newsletter_form": {
-      "newsletter_email": "Únete a nuestra lista de correo",
+      "newsletter_email": "Únete a nuestra lista de correos",
       "thanks": "Gracias por unirte",
-      "popup_thanks": "Gracias por unirte, este es tu código promocional:",
+      "popup_thanks": "Gracias por unirse, aquí está su código de cupón:",
       "email_placeholder": "Dirección de correo electrónico",
       "confirmation": "¡Gracias por unirte!",
-      "submit": "Gracias por unirte"
+      "submit": "Unirse"
     },
     "search": {
-      "no_results_html": "Tu búsqueda de \"{{ terms }}\" no dio ningún resultado.",
-      "results_for_html": "Tu búsqueda de \"{{ terms }}\" reveló lo siguiente:",
-      "title": "Busca en nuestra tienda",
-      "placeholder": "Buscar",
-      "submit": "Buscar"
+      "no_results_html": "Tu búsqueda de \"{{ terms }}\"No cedió ningún resultado.",
+      "results_for_html": "Tu búsqueda de \"{{ terms }}\"Reveló lo siguiente:",
+      "title": "Búsqueda",
+      "placeholder": "Búsqueda",
+      "submit": "Búsqueda"
     },
     "currency": {
-      "dropdown_label": "Moneda"
+      "dropdown_label": "Divisa"
     },
     "language": {
       "dropdown_label": "Idioma"
@@ -593,6 +593,11 @@
       "102-cm": "102 cm",
       "yellow-lacquered": "Lacado amarillo",
       "black-marble": "Mármol negro"
+    },
+    "general": {
+      "sale_ends_in": "La venta termina en",
+      "days": "Días",
+      "day": "Día"
     }
   }
 }
