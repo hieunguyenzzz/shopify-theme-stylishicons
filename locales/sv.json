@@ -1620,7 +1620,8 @@
       "availabilityfilter": "Expressleverans",
       "sale_ends_in": "Försäljning slutar i",
       "days": "Dag",
-      "day": "Dag"
+      "day": "Dag",
+      "delivery-label-image": "Free-Delivery-Category-Page-sv.png"
     },
     "product_options": {
       "classic": "Klassisk",

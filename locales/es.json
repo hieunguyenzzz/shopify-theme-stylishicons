@@ -597,7 +597,8 @@
     "general": {
       "sale_ends_in": "La venta termina en",
       "days": "Días",
-      "day": "Día"
+      "day": "Día",
+      "delivery-label-image": "Free-Delivery-Category-Page-es.png"
     }
   }
 }
