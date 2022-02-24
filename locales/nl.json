@@ -608,6 +608,9 @@
       "102-cm": "102 cm",
       "yellow-lacquered": "Geel gelakt",
       "black-marble": "Zwart marmer"
+    },
+    "general": {
+      "delivery-label-image": "Free-Delivery-Category-Page-nl.png"
     }
   }
 }

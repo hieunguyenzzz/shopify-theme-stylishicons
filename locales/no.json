@@ -1624,7 +1624,8 @@
       "availabilityfilter": "Ekspress leveranse",
       "sale_ends_in": "Salg avsluttes i",
       "days": "Dager",
-      "day": "Dag"
+      "day": "Dag",
+      "delivery-label-image": "Free-Delivery-Category-Page-no.png"
     },
     "product_options": {
       "choose-colours": "Velg farger:",
