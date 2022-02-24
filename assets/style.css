@@ -4477,6 +4477,10 @@ html {
   max-width: 2000px;
 }
 
+.tw-max-w-\[150px\] {
+  max-width: 150px;
+}
+
 .tw-flex-1 {
   flex: 1 1 0%;
 }
