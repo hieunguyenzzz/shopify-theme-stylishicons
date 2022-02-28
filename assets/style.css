@@ -4225,16 +4225,12 @@ html {
   margin-bottom: 1.5rem;
 }
 
-.tw-ml-3 {
-  margin-left: 0.75rem;
-}
-
 .tw-mb-4 {
   margin-bottom: 1rem;
 }
 
-.tw-mt-1 {
-  margin-top: 0.25rem;
+.tw-ml-3 {
+  margin-left: 0.75rem;
 }
 
 .tw-block {
@@ -4333,16 +4329,16 @@ html {
   height: 43px;
 }
 
+.tw-max-h-\[70px\] {
+  max-height: 70px;
+}
+
 .tw-max-h-\[calc\(100vh-100px\)\] {
   max-height: calc(100vh - 100px);
 }
 
 .tw-max-h-\[300px\] {
   max-height: 300px;
-}
-
-.tw-max-h-\[70px\] {
-  max-height: 70px;
 }
 
 .tw-min-h-full {
@@ -4375,6 +4371,10 @@ html {
 
 .tw-w-\[50px\] {
   width: 50px;
+}
+
+.tw-w-1\/3 {
+  width: 33.333333%;
 }
 
 .tw-w-12 {
@@ -4413,10 +4413,6 @@ html {
   width: 240px;
 }
 
-.tw-w-1\/3 {
-  width: 33.333333%;
-}
-
 .tw-w-\[340px\] {
   width: 340px;
 }
@@ -4453,6 +4449,10 @@ html {
   max-width: 65ch;
 }
 
+.tw-max-w-\[150px\] {
+  max-width: 150px;
+}
+
 .tw-max-w-\[1280px\] {
   max-width: 1280px;
 }
@@ -4475,10 +4475,6 @@ html {
 
 .tw-max-w-\[2000px\] {
   max-width: 2000px;
-}
-
-.tw-max-w-\[150px\] {
-  max-width: 150px;
 }
 
 .tw-flex-1 {
@@ -5119,6 +5115,11 @@ html {
   line-height: 2.5rem;
 }
 
+.tw-text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .\!tw-text-2xl {
   font-size: 1.5rem !important;
   line-height: 2rem !important;
@@ -5127,11 +5128,6 @@ html {
 .tw-text-5xl {
   font-size: 3rem;
   line-height: 1;
-}
-
-.tw-text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
 }
 
 .tw-font-bold {
@@ -5190,6 +5186,10 @@ html {
   line-height: 1.25;
 }
 
+.tw-leading-\[32px\] {
+  line-height: 32px;
+}
+
 .tw-leading-\[20px\] {
   line-height: 20px;
 }
@@ -5200,10 +5200,6 @@ html {
 
 .tw-leading-\[48px\] {
   line-height: 48px;
-}
-
-.tw-leading-\[32px\] {
-  line-height: 32px;
 }
 
 .\!tw-text-white {
@@ -5243,10 +5239,6 @@ html {
 
 .tw-text-opacity-70 {
   --tw-text-opacity: 0.7;
-}
-
-.tw-text-opacity-50 {
-  --tw-text-opacity: 0.5;
 }
 
 .tw-underline {
@@ -5822,12 +5814,12 @@ html {
     width: 60%;
   }
 
-  .lg\:tw-w-\[54px\] {
-    width: 54px;
-  }
-
   .lg\:tw-w-full {
     width: 100%;
+  }
+
+  .lg\:tw-w-\[54px\] {
+    width: 54px;
   }
 
   .lg\:tw-max-w-\[200px\] {
