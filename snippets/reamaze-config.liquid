@@ -12,23 +12,27 @@
   _support['ui']['contactMode'] = 'mixed';
   _support['ui']['enableKb'] = 'true';
   _support['ui']['styles'] = {
-    widgetColor: 'rgba(72, 173, 200, 1)',
-    gradient: true
+    widgetColor: 'rgb(119, 115, 115)',
+    gradient: true,
   };
+  _support['ui']['shoutboxFacesMode'] = "default";
+  _support['ui']['shoutboxHeaderLogo'] = true;
   _support['ui']['widget'] = {
+    icon: 'help',
+    displayOn: 'all',
+    allowBotProcessing: true,
     label: {
-      text: 'Let us know if you have any questions! 😊',
-      mode: "notification",
-      delay: 3,
-      duration: 30,
-      sound: true,
+      text: 'Hi any questions speak to live help now',
+      mode: "default",
     },
     position: 'bottom-right',
+    mobilePosition: 'bottom-right'
   };
   _support['apps'] = {
-    faq: {enabled: true},
     recentConversations: {},
-    orders: {enabled: true}
+    faq: {"enabled":true},
+    orders: {"enabled":true}
   };
 </script>
 <!-- reamaze_embeddable_32614_e -->
+
