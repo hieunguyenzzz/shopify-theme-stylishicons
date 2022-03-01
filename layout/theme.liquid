@@ -127,7 +127,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     {{ 'theme-style.css' | asset_url | stylesheet_tag }}
 
                         {% include 'otRegion' %}            
-                        </head>
+                        
+  <!-- REAMAZE INTEGRATION START - DO NOT REMOVE -->
+{% render 'reamaze-config' %}
+{% render 'reamaze-sso' %}
+<!-- REAMAZE INTEGRATION END - DO NOT REMOVE -->
+
+</head>
 
     <body class="gridlock shifter-left {{ template | handleize }} js-slideout-toggle-wrapper ">
       <!-- Google Tag Manager (noscript) -->
