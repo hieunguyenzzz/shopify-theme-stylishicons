@@ -1,6 +1,6 @@
 <div class="collection-page-{{ section.id }} " data-section-id="{{ section.id }}" data-section-type="collection-section">
     {% assign number = section.settings.products_per_page %}
-    {% paginate collection.products by number %}
+    {% paginate collection.products by 24 %}
         {% assign sidebar = false %}
 
         {% if collection.description contains '[banner]' %}
@@ -13,7 +13,7 @@
         {% if section.settings.full_width %}
             <div class="gridlock-fluid">
             {% endif %}
-            <div class="{% render '[class]-container'  class: '' %}" id="content">
+            <div class="{% render '[class]-container' class: '' %}" id="content">
                 <div class="grid_wrapper" id="main-content">
                     <div class="section-title desktop-12 mobile-3 span-12">
                         {% render 'countdown-timer'  class: '' %}
@@ -105,11 +105,25 @@
                             sort_by: collection.sort_by %}
                         <div data-sectionid="{% if section.id %}{{section.id}}{% endif %}" data-settings='{% if section.settings %}{{section.settings | json}}{% endif %}' id="gf-products" class=" tw-grid tw-grid-cols-2 md:tw-grid-cols-3 lg:tw-grid-cols-4 tw-gap-3 md:tw-gap-6">
                             {% for product in collection.products %}
-                            <div class="tw-col-span-1 id="prod-{{ product.id }}" data-alpha="{{ product.title }}" data-price="{{ product.price }}" data-aos="{{ settings.scroll_animation }}" data-product-id="{{ product.id }}">
-                              {% render 'product-listing', collection: collection, product: product %}
-                            </div>
-                          {% endfor %}
+                                <div class="tw-col-span-1" id="prod-{{ product.id }}" data-alpha="{{ product.title }}" data-price="{{ product.price }}" data-aos="{{ settings.scroll_animation }}" data-product-id="{{ product.id }}">
+                                    {% render 'product-listing', collection: collection, product: product %}
+                                </div>
+                            {% endfor %}
+                            {% if section.settings.infinite_scroll %}
+                            {% if paginate.next %}
+                            <load-more-button class="tw-flex tw-justify-center tw-mx-auto tw-col-span-full">
+                                <a role="button" id="load-more-{{section.id}}" href="{{ paginate.next.url }}" class="tw-px-6 tw-animate-spin">
+                                    <svg class=" tw-text-black tw-text-opacity-30 tw-w-7 tw-h-7" fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke-width="4" stroke="currentColor"></circle>
+                                        <path class="opacity-75" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" fill="currentColor"></path>
+                                    </svg>
+                                </a>
+                            </load-more-button>
+                            {% endif %}
+                            {% endif %}
+                            
                         </div>
+
                         <div class="clear"></div>
                         {% if section.settings.description_position == 'bottom_description' and collection.description != blank %}
                             <div id="collection-description">
@@ -118,12 +132,14 @@
                                 </div>
                             </div>
                         {% endif %}
-
                     </div>
-
                     <div class="clear"></div>
+{% unless section.settings.infinite_scroll %}
+{% render 'pagination', paginate: paginate %}
+{% endunless %}
+                    
 
-                    {% render 'pagination', paginate: paginate %}
+
                 </div>
             </div>
             {% if section.settings.full_width %}
@@ -132,7 +148,6 @@
     {% endpaginate %}
 
     <style>
-        media="screen"
         #full-width-filter .filter,
         #collection-page-template .show-filter,
         #sidebar .filter {
@@ -168,6 +183,38 @@
         }
     </style>
 </div>
+
+<script>
+    class LoadMoreButton extends HTMLElement {
+       constructor() {
+         super();
+           const target = this.children[0]
+           const createInteraction=(target)=>{
+               const handleIntersection = (entries, observer) => {
+                   if (!entries[0].isIntersecting) return;
+                   observer.unobserve(target);
+                   fetch(target.href+'&section_id=collection-page-template-items-per-page').then(response => response.text()).then(data => {
+                        function createElementFromHTML(htmlString) {
+                            var div = document.createElement('div');
+                            div.innerHTML = htmlString.trim();
+                            return div.firstChild; 
+                        }
+                        const newsection = createElementFromHTML(data)
+                        this.classList.add('tw-hidden')
+                        const documentFragment = document.createDocumentFragment();
+                        newsection.childNodes.forEach(node => document.querySelector("#gf-products").appendChild(node.cloneNode(true)));
+                        
+                    });
+                 }
+           
+               new IntersectionObserver(handleIntersection.bind(this), {rootMargin: '0px 0px 200px 0px'}).observe(target);
+           }
+           createInteraction(target)
+       }
+       
+     }
+     customElements.define('load-more-button', LoadMoreButton);
+   </script>
 
 {% schema %}
 
