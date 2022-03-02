@@ -134,12 +134,9 @@
                         {% endif %}
                     </div>
                     <div class="clear"></div>
-{% unless section.settings.infinite_scroll %}
-{% render 'pagination', paginate: paginate %}
-{% endunless %}
-                    
-
-
+                    {% unless section.settings.infinite_scroll %}
+                    {% render 'pagination', paginate: paginate %}
+                    {% endunless %}
                 </div>
             </div>
             {% if section.settings.full_width %}
@@ -207,7 +204,7 @@
                     });
                  }
            
-               new IntersectionObserver(handleIntersection.bind(this), {rootMargin: '0px 0px 200px 0px'}).observe(target);
+               new IntersectionObserver(handleIntersection.bind(this), {rootMargin: '0px 0px 400px 0px'}).observe(target);
            }
            createInteraction(target)
        }
