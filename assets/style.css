@@ -4139,6 +4139,10 @@ html {
   grid-column: span 1 / span 1;
 }
 
+.tw-col-span-full {
+  grid-column: 1 / -1;
+}
+
 .tw-float-right {
   float: right;
 }
@@ -4281,6 +4285,10 @@ html {
   height: 100%;
 }
 
+.tw-h-7 {
+  height: 1.75rem;
+}
+
 .\!tw-h-\[80px\] {
   height: 80px !important;
 }
@@ -4351,6 +4359,10 @@ html {
 
 .tw-w-full {
   width: 100%;
+}
+
+.tw-w-7 {
+  width: 1.75rem;
 }
 
 .tw-w-40 {
@@ -4895,14 +4907,14 @@ html {
   padding-bottom: 4rem;
 }
 
-.tw-py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
 .tw-px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.tw-py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .tw-py-1 {
@@ -5207,6 +5219,11 @@ html {
   color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
 
+.tw-text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .tw-text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -5227,14 +5244,13 @@ html {
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
-.tw-text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
 .tw-text-base-content {
   --tw-text-opacity: 1;
   color: hsla(var(--bc) / var(--tw-text-opacity));
+}
+
+.tw-text-opacity-30 {
+  --tw-text-opacity: 0.3;
 }
 
 .tw-text-opacity-70 {
@@ -5348,6 +5364,11 @@ html {
           animation-duration: 500ms;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
+}
+
+.tw-animate__fadeIn {
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
 }
 
 .tw-animate__fadeInUp {
