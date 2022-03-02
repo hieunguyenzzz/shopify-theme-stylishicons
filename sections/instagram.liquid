@@ -46,7 +46,7 @@
 <script>
     let promohashtags =["#designericonsOnsale", "#designericoniconsPromo", "#designericonSale", "#designericonWeeklySale", "#designericonFlashSale", "#designericonGrandSale",]
     fetch('{{ 'instagram-feed.json' | file_url }}').then(res=>res.json()).then(result=>{
-        console.log({result})
+        // console.log({result})
         document.querySelector('.keen-slider-{{section.id}}').innerHTML=''
         const itemsFragments = document.createDocumentFragment()
         let str = ''

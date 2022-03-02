@@ -3,7 +3,6 @@
   class LoadMoreButton extends HTMLElement {
     constructor() {
       super();
-      console.log({this:this})
         const selector = this.getAttribute('data-selector')
         const targets = document.querySelectorAll(selector)
         const createInteraction=(target)=>{
