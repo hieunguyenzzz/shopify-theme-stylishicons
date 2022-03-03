@@ -252,6 +252,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <script src="{{ 'jquery.fancybox.js' | asset_url }}" defer="defer"></script>
 <script>
+  window.shopUrl = '{{ request.origin }}';
+      window.routes = {
+        cart_add_url: '{{ routes.cart_add_url }}',
+        cart_change_url: '{{ routes.cart_change_url }}',
+        cart_update_url: '{{ routes.cart_update_url }}',
+        predictive_search_url: '{{ routes.predictive_search_url }}'
+      };
+</script>
+<script>
     AOS.init();
   </script>
   {% render '[predictive-search]' class: '' %}
