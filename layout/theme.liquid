@@ -133,7 +133,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 {% render 'reamaze-sso' %}
 <!-- REAMAZE INTEGRATION END - DO NOT REMOVE -->
 
-{% include 'wiser' %}{% include 'wiser_popup' %}</head>
+{% include 'wiser' %}{% include 'wiser_popup' %}{% include 'add_header_assets' %}</head>
 
     <body class="gridlock shifter-left {{ template | handleize }} js-slideout-toggle-wrapper ">
       <!-- Google Tag Manager (noscript) -->
@@ -270,5 +270,5 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- **BEGIN** Hextom FSB Integration // Main Include - DO NOT MODIFY -->
     {% render 'hextom_fsb_main', product: product, customer: customer %}
     <!-- **END** Hextom FSB Integration // Main Include - DO NOT MODIFY -->
-</body>
+{% include 'add_footer_assets' %}</body>
 </html>
