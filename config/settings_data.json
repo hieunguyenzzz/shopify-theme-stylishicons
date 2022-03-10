@@ -5908,6 +5908,10 @@
       "rev_Uk-Danish-Classics-for-Less-102021": {
         "type": "rev_Uk-Danish-Classics-for-Less-102021",
         "settings": {
+          "heading": "END OF SEASON SALE",
+          "upto": "UP TO",
+          "off": "% OFF",
+          "remain": "limited stock remaining"
         }
       }
     },
