@@ -712,6 +712,16 @@ html {
     -webkit-animation: spin 10s linear infinite;
     animation: spin 10s linear infinite;
   }
+
+  .tw-btn.tw-loading:before {
+    -webkit-animation: spin 10s linear infinite;
+    animation: spin 10s linear infinite;
+  }
+
+  .tw-btn.tw-loading:before {
+    -webkit-animation: spin 10s linear infinite;
+    animation: spin 10s linear infinite;
+  }
 }
 
 @-webkit-keyframes spin {
@@ -4275,6 +4285,10 @@ html {
 
 .\!tw-hidden {
   display: none !important;
+}
+
+.tw-hidden {
+  display: none;
 }
 
 .tw-h-72 {
