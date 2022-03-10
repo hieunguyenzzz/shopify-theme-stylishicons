@@ -15,7 +15,7 @@
 								data-text="w:normal;s:65,65,65,40;l:25,25,25,6;fw:900;a:center;"
 								data-frame_999="o:0;st:w;"
 								style="z-index:15;font-family:'Roboto';"
-							>{{ section.settings.heading }} 
+							>{{ section.settings.heading | default:'END OF SEASON SALE' }} 
 							</rs-layer><!--
 
 							--><rs-layer
@@ -27,7 +27,8 @@
 								data-text="w:normal;s:30,30,30,25;l:25,25,25,6;fw:700;a:center;"
 								data-frame_999="o:0;st:w;"
 								style="z-index:16;font-family:'Roboto';text-transform:uppercase;"
-							>Limited Stock Remaining 
+							>{{ section.settings.remain| default:'Limited Stock <br />
+Remaining ' }} 
 							</rs-layer><!--
 
 							--><rs-layer
@@ -65,7 +66,7 @@
 								data-frame_0="o:1;"
 								data-frame_999="o:0;st:w;sR:6700;"
 								style="z-index:11;font-family:'Roboto';"
-							>UP TO 
+							>{{ section.settings.upto| default:'UP TO' }} 
 							</rs-layer><!--
 
 							--><rs-layer
@@ -78,7 +79,7 @@
 								data-frame_0="o:1;"
 								data-frame_999="o:0;st:w;sR:6700;"
 								style="z-index:10;font-family:'Roboto';"
-							>% OFF 
+							>{{ section.settings.off| default:'% OFF' }} 
 							</rs-layer><!--
 
 							--><rs-layer
