@@ -12,7 +12,13 @@
 <script>
   
   // Set the date we're counting down to
-  var countDownDate = new Date("{% render 'countdown-timer-string' %}").getTime();
+    function addHours(date,h) {
+  date.setTime(date.getTime() + (h*60*60*1000));
+  return date;
+}
+  // Set the date we're counting down to
+  var date = new Date("{% render 'countdown-timer-string' %}")
+  var countDownDate = addHours(date,7).getTime();
   var now = new Date().getTime();
   var distance = countDownDate - now;
   if(distance>0){
