@@ -290,19 +290,11 @@
                             {% endif %}
                             }
                         {% endcapture %}
-{% capture leading_time %}
-                  <div class="tw-hidden lg:tw-block tw-bg-[#eef5f1] tw-transform tw--translate-y-full tw-text-xs  md:tw-text-base  tw-bg-opacity-90 tw-px-[1em] tw-font-bold !tw-leading-loose tw-text-black tw-z-10 empty:tw-hidden tw-absolute tw-right-0 tw-top-[calc(100%-60px)]  md:tw-top-[380px] lg:tw-top-[480px]">
-                        {% if current_variant.metafields.global.leading-time %}
-                            {{current_variant.metafields.global.leading-time}}
-                        {% else %}
-                            Ships in 18-22 weeks
-                        {% endif %}
-                    </div>
-                  {% endcapture %}
+
+                  
                         <div class="product-form">
                             {% render 'product-form',
                                 product: product,
-                          		leading_time:leading_time,
                                 product_form_config: product_form_config,
                                 current_variant: current_variant,
                                 show_sku: section.settings.show_sku %}
