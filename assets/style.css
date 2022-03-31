@@ -5697,11 +5697,6 @@ html {
     line-height: 1.75rem;
   }
 
-  .md\:tw-text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-
   .md\:tw-text-5xl {
     font-size: 3rem;
     line-height: 1;
@@ -5785,6 +5780,16 @@ html {
     margin-right: 0px;
   }
 
+  .lg\:tw-my-2 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .lg\:tw-my-4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
   .lg\:tw-ml-0 {
     margin-left: 0px;
   }
@@ -5799,6 +5804,10 @@ html {
 
   .lg\:tw-mt-1 {
     margin-top: 0.25rem;
+  }
+
+  .lg\:tw-mb-6 {
+    margin-bottom: 1.5rem;
   }
 
   .lg\:tw-block {
@@ -5937,6 +5946,15 @@ html {
     background-color: transparent;
   }
 
+  .lg\:tw-bg-\[\#eef5f1\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(238 245 241 / var(--tw-bg-opacity));
+  }
+
+  .lg\:tw-p-3 {
+    padding: 0.75rem;
+  }
+
   .lg\:tw-px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -5957,6 +5975,21 @@ html {
     padding-bottom: 2rem;
   }
 
+  .lg\:tw-px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .lg\:tw-py-1 {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .lg\:tw-py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
   .lg\:tw-pb-0 {
     padding-bottom: 0px;
   }
@@ -5972,6 +6005,14 @@ html {
   .lg\:tw-text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .lg\:tw-font-bold {
+    font-weight: 700;
+  }
+
+  .lg\:tw-uppercase {
+    text-transform: uppercase;
   }
 
   .lg\:tw-text-black {
