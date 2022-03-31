@@ -173,7 +173,7 @@
 <div class="tw-text-center tw-w-full tw-flex-1 tw-justify-center lg:tw-order-[-1]">
   {% render 'product-price', variant: current_variant, product: product %}
   {% render 'countdown-timer-product'  class: '' %}
-  <div id="leading_time"  >
+  <div id="leading_time"  class="block" >
     <span class="">{% if current_variant.metafields.global.leading-time %}
       {{current_variant.metafields.global.leading-time}}
   {% else %}
