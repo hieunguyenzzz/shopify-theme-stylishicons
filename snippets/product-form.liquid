@@ -173,16 +173,16 @@
 <div class="tw-text-center tw-w-full tw-flex-1 tw-justify-center lg:tw-order-[-1]">
   {% render 'product-price', variant: current_variant, product: product %}
   {% render 'countdown-timer-product'  class: '' %}
- 
+  
 </div>
- <div id="leading_time"  class="block" >
-    <span class="md:tw-bg-[#eef5f1 md:px-4">{% if current_variant.metafields.global.leading-time %}
-      {{current_variant.metafields.global.leading-time}}
-  {% else %}
-      Ships in 18-22 weeks
-  {% endif %}</span>
-    
-  </div>
+<div id="leading_time"  class="lg:tw-bg-[#eef5f1] lg:tw-font-bold tw-text-center lg:tw-px-3 lg:tw-py-2  lg:tw-my-4 lg:tw-mb-6 lg:tw-text-left" >
+  <span class="">{% if current_variant.metafields.global.leading-time %}
+    {{current_variant.metafields.global.leading-time}}
+{% else %}
+    Ships in 18-22 weeks
+{% endif %}</span>
+  
+</div>
 {% if current_variant.available %}
     <div class="product-add">
         <input id="AddToCart" type="submit" name="button" class="add{% if section.settings.show_payment_button and product.selling_plan_groups.size == 0 %} secondary-button{% endif %}" value="{{ 'products.product.add_to_cart' | t }}"/>
