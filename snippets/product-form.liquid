@@ -173,7 +173,9 @@
 <div class="tw-text-center tw-w-full tw-flex-1 tw-justify-center lg:tw-order-[-1]">
   {% render 'product-price', variant: current_variant, product: product %}
   {% render 'countdown-timer-product'  class: '' %}
-  <div id="leading_time"  class="block" >
+ 
+</div>
+ <div id="leading_time"  class="block" >
     <span class="">{% if current_variant.metafields.global.leading-time %}
       {{current_variant.metafields.global.leading-time}}
   {% else %}
@@ -181,8 +183,6 @@
   {% endif %}</span>
     
   </div>
-</div>
-
 {% if current_variant.available %}
     <div class="product-add">
         <input id="AddToCart" type="submit" name="button" class="add{% if section.settings.show_payment_button and product.selling_plan_groups.size == 0 %} secondary-button{% endif %}" value="{{ 'products.product.add_to_cart' | t }}"/>
