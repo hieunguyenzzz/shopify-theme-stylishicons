@@ -158,3 +158,39 @@
   
 
 }
+
+/*.klaviyo-form button
+{
+      font-size: 13px !important;
+    background: black;
+    height: 44px !important;
+    font-family: "Euclid Flex",sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    font-size: 13px;
+    font-weight: 700;
+      width: 25%;
+    float: left;
+    font-size: 13px;
+    padding: 0 12px;
+}*/
+
+/* Klaviyo newsletter */
+
+.homepage-newsletter .klaviyo_wrap{margin-left:auto;max-width:384px;width:100%;}
+.homepage-newsletter .klaviyo_wrap > div{width:100%;}
+.homepage-newsletter .klaviyo_wrap form > .needsclick > .needsclick > .needsclick:nth-child(1){max-width:75% !important;width:100% !important;}
+.homepage-newsletter .klaviyo_wrap form > .needsclick > .needsclick > .needsclick:nth-child(2){max-width:25% !important;width:100% !important;}
+.homepage-newsletter .klaviyo_wrap form > .needsclick > .needsclick > .needsclick:nth-child(1) input{box-shadow: none !important;font-size: 15px !important;color:#000000 !important;border-color: #fff !important;font-family:'BrandonText' !important;font-size:15px !important;line-height:1.2 !important;}
+.homepage-newsletter .klaviyo_wrap form>.needsclick>.needsclick>.needsclick:nth-child(1) input:hover{border-color:#fff !important;}
+.homepage-newsletter .klaviyo_wrap form>.needsclick>.needsclick>.needsclick:nth-child(1) input::-webkit-input-placeholder{font-size: 15px !important;line-height:1.2 !important;font-family:'BrandonText' !important;}
+.homepage-newsletter .klaviyo_wrap form>.needsclick>.needsclick>.needsclick:nth-child(1) input:-ms-input-placeholder{font-size: 15px !important;line-height:1.2 !important;font-family:'BrandonText' !important;}
+.homepage-newsletter .klaviyo_wrap form>.needsclick>.needsclick>.needsclick:nth-child(1) input::placeholder{font-size: 15px !important;line-height:1.2 !important;font-family:'BrandonText' !important;}
+.homepage-newsletter .klaviyo_wrap form > .needsclick > .needsclick > .needsclick:nth-child(2) button{width:100% !important;text-align:center !important;}
+
+
+@media only screen and (max-width:540px){
+	.homepage-newsletter .klaviyo_wrap form>.needsclick>.needsclick>.needsclick:nth-child(1),
+  .homepage-newsletter .klaviyo_wrap form>.needsclick>.needsclick>.needsclick:nth-child(2){max-width:100% !important;}
+  .homepage-newsletter .klaviyo_wrap form>.needsclick>.needsclick{flex-wrap:wrap !important;flex-direction:column !important;}
+}
