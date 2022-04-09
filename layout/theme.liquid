@@ -133,7 +133,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 {% render 'reamaze-sso' %}
 <!-- REAMAZE INTEGRATION END - DO NOT REMOVE -->
 
-{% include 'wiser' %}{% include 'wiser_popup' %}{% include 'add_header_assets' %}</head>
+{% include 'wiser' %}{% include 'wiser_popup' %}{% include 'add_header_assets' %}
+  {% render 'shogun-head' %}
+</head>
 
     <body class="gridlock shifter-left {{ template | handleize }} js-slideout-toggle-wrapper ">
       <!-- Google Tag Manager (noscript) -->
