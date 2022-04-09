@@ -5386,7 +5386,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/Wishbone-Table_e7879689-0916-47ae-81f3-6a43a55810aa.jpg",
               "image_width": "50%",
-              "link": "",
+              "link": "shopify:\/\/pages\/our-customers",
               "heading": "Annick Bast, Belgium",
               "rich_text": "<p>Classic Styling - Walnut - Black Wishbone Chairs<\/p>",
               "button": "",
@@ -5398,7 +5398,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/PK20-Chairs.png",
               "image_width": "50%",
-              "link": "",
+              "link": "shopify:\/\/pages\/our-customers",
               "heading": "La Datcha, Chalet, Megeve",
               "rich_text": "<p>Nordic styling in this exclusive chalet<\/p>",
               "button": "",
