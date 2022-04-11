@@ -15,12 +15,15 @@
             <span class="percentage_off tw-absolute tw-top-0 tw-right-0 tw-z-10 empty:tw-hidden">{{'strings.general.percentage_off' | t: number:discount}}</span>
         {% endif %}
         {% for collection in product.collections %}
+            {% unless hidelabel %}
             {% if collection.handle == 'bestseller' %}
                 <span class="tw-text-xs tw-bg-opacity-70 tw-font-bold tw-leading-relaxed tw-px-[0.5em] tw-bg-[#eef5f1] tw-absolute tw-bottom-0 tw-mb-6 tw-left-0 tw-z-10 empty:tw-hidden">
                     {{ 'strings.general.best_seller' | t }}
                 </span>
                 {% break %}
             {% endif %}
+            {% endunless %}
+            
             {% if collection.handle == 'new' %}
                 <span class="tw-text-xs tw-bg-opacity-70 tw-font-bold tw-leading-relaxed tw-px-[0.5em] tw-bg-[#eef5f1] tw-absolute tw-bottom-0 tw-mb-6 tw-left-0 tw-z-10 empty:tw-hidden">
                     {{ 'strings.general.new_product' | t }}

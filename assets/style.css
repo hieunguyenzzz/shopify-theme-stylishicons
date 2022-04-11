@@ -5775,19 +5775,14 @@ html {
     order: -1;
   }
 
-  .lg\:tw-mx-0 {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-
-  .lg\:tw-my-2 {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-  }
-
   .lg\:tw-my-4 {
     margin-top: 1rem;
     margin-bottom: 1rem;
+  }
+
+  .lg\:tw-mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .lg\:tw-ml-0 {
@@ -5951,10 +5946,6 @@ html {
     background-color: rgb(238 245 241 / var(--tw-bg-opacity));
   }
 
-  .lg\:tw-p-3 {
-    padding: 0.75rem;
-  }
-
   .lg\:tw-px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -5978,11 +5969,6 @@ html {
   .lg\:tw-px-3 {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
-  }
-
-  .lg\:tw-py-1 {
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
   }
 
   .lg\:tw-py-2 {
@@ -6009,10 +5995,6 @@ html {
 
   .lg\:tw-font-bold {
     font-weight: 700;
-  }
-
-  .lg\:tw-uppercase {
-    text-transform: uppercase;
   }
 
   .lg\:tw-text-black {

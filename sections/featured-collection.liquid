@@ -9,7 +9,7 @@
         {% for product in collection.products limit: section.settings.limit %}
             <div class="keen-slider__slide" id="product-listing-{{forloop.index }}" data-product-id="{{ forloop.index }}" data-alpha="{{ product.title }}" data-price="{{ product.price }}">
                 <div class="tw-w-full tw-max-w-[292px] tw-min-h-full">
-                    {% render 'product-listing', product: product, collection: collection %}
+                    {% render 'product-listing', product: product, hidelabel: section.settings.hidelabel, collection: collection %}
                 </div>
             </div>
         {% endfor %}
@@ -45,7 +45,14 @@
             "id": "heading",
             "label": "Heading",
             "default": "Featured collection"
-        },  {
+        },
+       {
+           "type": "checkbox",
+           "id": "hidelabel",
+           "label": "Hide label",
+           "default": false
+       }
+        ,  {
             "id": "collection",
             "type": "collection",
             "label": "Collection"
