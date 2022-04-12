@@ -4247,6 +4247,10 @@ html {
   margin-left: 0.75rem;
 }
 
+.tw-mt-5 {
+  margin-top: 1.25rem;
+}
+
 .tw-block {
   display: block;
 }
@@ -4904,6 +4908,10 @@ html {
 
 .tw-p-8 {
   padding: 2rem;
+}
+
+.\!tw-p-0 {
+  padding: 0px !important;
 }
 
 .tw-px-3 {
@@ -5654,6 +5662,10 @@ html {
 
   .md\:tw-top-\[380px\] {
     top: 380px;
+  }
+
+  .md\:tw-col-span-1 {
+    grid-column: span 1 / span 1;
   }
 
   .md\:tw-h-\[340px\] {

@@ -103,6 +103,36 @@
         }
       ]
     }, {
+     "type": "collection",
+      "name": "Featured collection",
+    "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "Featured collection"
+        },
+       {
+           "type": "checkbox",
+           "id": "hidelabel",
+           "label": "Hide label",
+           "default": false
+       }
+        ,  {
+            "id": "collection",
+            "type": "collection",
+            "label": "Collection"
+        }, {
+            "type": "range",
+            "id": "limit",
+            "min": 2,
+            "max": 30,
+            "step": 1,
+            "label": "Products shown",
+            "default": 8
+        }
+    ]
+    },{
       "type": "collection_list",
       "name": "Collection List",
       "settings": [

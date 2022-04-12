@@ -18,7 +18,7 @@
         </noscript>
     {% else %}
         <div class="!tw-w-full tw-relative" style="padding-bottom: {{ image_box_ratio }};">
-            <img class="lazyload tw-p-[4%] tw-absolute tw-inset-0 !tw-w-full !tw-h-full {{object_fit}} lazyload-fade {{ is_first }}" id="{{ image.id }}" data-src="{{ img_url }}" data-sizes="auto" width="{{ image.image.width }}" height="{{ image.image.height }}" data-original="{{ image | img_url: image_size }}" {%- if data_widths != blank -%} data-widths="{{ data_widths }}" {%- endif -%} alt="{{ image.alt | escape }}">
+            <img class="lazyload tw-p-[4%] tw-absolute tw-inset-0 !tw-w-full !tw-h-full {{object_fit}} lazyload-fade {{ is_first }} {{class}}" id="{{ image.id }}" data-src="{{ img_url }}" data-sizes="auto" width="{{ image.image.width }}" height="{{ image.image.height }}" data-original="{{ image | img_url: image_size }}" {%- if data_widths != blank -%} data-widths="{{ data_widths }}" {%- endif -%} alt="{{ image.alt | escape }}">
             <noscript>
                 <img class="tw-p-[4%] tw-absolute tw-inset-0 !tw-w-full !tw-h-full {{object_fit}} " width="{{ image.width }}" height="{{ image.height }}" src="{{ image | img_url: image_size}}" alt="{{ image.alt }}">
             </noscript>
