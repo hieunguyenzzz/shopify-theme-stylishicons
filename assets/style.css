@@ -5790,7 +5790,6 @@ html {
   .lg\:tw-my-4 {
     margin-top: 1rem;
     margin-bottom: 1rem;
-
   }
 
   .lg\:tw-mx-0 {
@@ -5801,11 +5800,6 @@ html {
   .lg\:tw-my-3 {
     margin-top: 0.75rem;
     margin-bottom: 0.75rem;
-  }
-
-  .lg\:tw-mx-0 {
-    margin-left: 0px;
-    margin-right: 0px;
   }
 
   .lg\:tw-ml-0 {

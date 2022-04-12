@@ -1,9 +1,12 @@
+{% unless image %}
+    {% assign image = collection.image | default:collection.products.first.featured_media.preview_image %} 
+{% endunless %}
 <a href="{{ collection.url }}" class="tw-relative tw-group tw-block" style="padding-bottom: 100%;">
     <div class="tw-absolute tw-w-full tw-h-full tw-inset-0">
         {% if collection.image %}
-        {% render "[image]", image: collection.image image_box_ratio:'100%  %}
+        {% render "[image]", image:image image_box_ratio:'100%  %}
         {% elsif collection.products.first and collection.products.first.media != empty %}
-            {% render "[image]", image: collection.products.first.featured_media.preview_image image_box_ratio:'100%' %}
+            {% render "[image]", image:image image_box_ratio:'100%' %}
         {% else %}
             <div class="tw-w-full">
                 {% render "[image]-holder" %}
