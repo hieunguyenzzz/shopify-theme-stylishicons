@@ -79,7 +79,7 @@
      {%- endif -%}
      "offers": {
        "@type": "Offer",
-       "price": "{{ product.price | money_without_currency }}",
+       "price": "{{ product.selected_or_first_available_variant.price | money_without_currency }}",
        "priceCurrency": "{{ cart.currency.iso_code }}",
        "availability": "http://schema.org/InStock",
        "priceValidUntil": "2030-01-01",

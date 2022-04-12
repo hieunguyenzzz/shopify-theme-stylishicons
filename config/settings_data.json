@@ -5146,13 +5146,13 @@
           "dd1658c2-dd54-4686-912e-1a30f8a1de2d": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/1aa.png",
+              "image": "shopify:\/\/shop_images\/EU-2.png",
               "image_width": "33%",
               "overlay_opacity": 0,
-              "heading": "<p><strong>SHIPPING<\/strong><\/p><p><\/p><p>Shipping cost is 10% of the product price<\/p>",
+              "heading": "<p>No Extra Taxes \/ Duty<\/p><p>Guaranteed <\/p>",
               "popup": "Learn More",
-              "pop_heading": "<p>Shipping Info<\/p>",
-              "pop_text": "<p>We offer shipping to most of Europe. Shipping cost is 10% of the product price. All deliveries are contactless. Please check the European countries we delivery to on checkout.<\/p>",
+              "pop_heading": "<p>No Extra Taxes<\/p>",
+              "pop_text": "<p>We now send out items where the customer is not liable for import tax or duty (not inc Norway or Switzerland) through courier network DDP (Delivery Duty Paid) This is a delivery agreement between ourselves and the courier companies, where we are obliged by contract to pay all duties and tax on import rather than the customer. This DOES NOT include Norway or Switzerland. This is easily arranged through the courier and directly with the customer for these 2 countries.<\/p>",
               "heading_color": "#000000",
               "button_color": "#ffffff",
               "button_background": "#000000",
@@ -5168,7 +5168,7 @@
               "image": "shopify:\/\/shop_images\/2aa.png",
               "image_width": "33%",
               "overlay_opacity": 0,
-              "heading": "<p><strong>RETURNS<\/strong><\/p><p>30-day returns<\/p>",
+              "heading": "<p><strong>RETURNS<\/strong><\/p><p>30-Day Returns<\/p>",
               "popup": "Learn More",
               "pop_heading": "<p>Returns Info<\/p>",
               "pop_text": "<p>We offer cost effective 30-day returns to customers in most of Europe. We created this policy as part of our ongoing effort to provide a hassle-free shopping experience, enabling you to transform your living space into your own personal showroom, and try your favourite design in the comfort of your own home before making a long-term commitment. Please note that not all products are eligible for free returns. To see whether a product is eligible go to the product details section of the product page.<\/p>",
@@ -5187,7 +5187,7 @@
               "image": "shopify:\/\/shop_images\/3aa.png",
               "image_width": "33%",
               "overlay_opacity": 0,
-              "heading": "<p><strong>WARRANTY<\/strong><\/p><p>5 years warranty<\/p>",
+              "heading": "<p><strong>WARRANTY<\/strong><\/p><p>5 Years Warranty<\/p>",
               "popup": "Learn More",
               "pop_heading": "<p>Warranty Info<\/p>",
               "pop_text": "<p>One of the reasons you might be shopping with us is that you recognise the superior quality of our pieces. And just as we want our furniture to be the best you can find, we want our promise to you to be equally superior. That’s why, while most furniture manufacturers only offer a 1 year warranty, we offer a 5 year warranty. Please go to to read the full <a href=\"https:\/\/designer-icons.com\/pages\/5-year-warranty\" title=\"https:\/\/designer-icons.com\/pages\/5-year-warranty\">warranty policy<\/a>.<\/p>",
@@ -5370,7 +5370,7 @@
           "full_width": true,
           "heading": "WHAT BUYERS ARE SAYING",
           "subheading": "Over 10,000 Happy Customers",
-          "link": "",
+          "link": "https:\/\/uk.trustpilot.com\/review\/designer-icons.com",
           "heading_color": "#000000",
           "background_color": "#ffffff",
           "carousel": true,
@@ -5386,7 +5386,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/Wishbone-Table_e7879689-0916-47ae-81f3-6a43a55810aa.jpg",
               "image_width": "50%",
-              "link": "",
+              "link": "shopify:\/\/pages\/our-customers",
               "heading": "Annick Bast, Belgium",
               "rich_text": "<p>Classic Styling - Walnut - Black Wishbone Chairs<\/p>",
               "button": "",
@@ -5398,7 +5398,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/PK20-Chairs.png",
               "image_width": "50%",
-              "link": "",
+              "link": "shopify:\/\/pages\/our-customers",
               "heading": "La Datcha, Chalet, Megeve",
               "rich_text": "<p>Nordic styling in this exclusive chalet<\/p>",
               "button": "",
@@ -5757,8 +5757,8 @@
           "8fe51b20-1d15-475e-bf38-d4c262fff228": {
             "type": "question",
             "settings": {
-              "title": "SHIPPING<br><p>Shipping cost is 10% of the product price<\/p>",
-              "answer": "<p>We offer shipping today most of Europe, shipping cost is 10% of the product price. All deliveries are contactless<\/p>"
+              "title": "No Extra Taxes<br><p>Guaranteed<\/p>",
+              "answer": "<p>We now send out items where the customer is not liable for import tax or duty (not inc Norway or Switzerland) through courier network DDP (Delivery Duty Paid) This is a delivery agreement between ourselves and the courier companies, where we are obliged by contract to pay all duties and tax on import rather than the customer. This DOES NOT include Norway or Switzerland. This is easily arranged through the courier and directly with the customer for these 2 countries.<\/p>"
             }
           },
           "cbeed15f-863f-4b55-a318-c9c916279248": {

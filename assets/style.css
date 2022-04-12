@@ -5790,6 +5790,17 @@ html {
   .lg\:tw-my-4 {
     margin-top: 1rem;
     margin-bottom: 1rem;
+
+  }
+
+  .lg\:tw-mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .lg\:tw-my-3 {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
   }
 
   .lg\:tw-mx-0 {
@@ -5815,6 +5826,10 @@ html {
 
   .lg\:tw-mb-6 {
     margin-bottom: 1.5rem;
+  }
+
+  .lg\:tw-mb-5 {
+    margin-bottom: 1.25rem;
   }
 
   .lg\:tw-block {
@@ -5988,6 +6003,16 @@ html {
     padding-bottom: 0.5rem;
   }
 
+  .lg\:tw-px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .lg\:tw-py-1 {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+
   .lg\:tw-pb-0 {
     padding-bottom: 0px;
   }
@@ -6003,6 +6028,11 @@ html {
   .lg\:tw-text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .lg\:tw-text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 
   .lg\:tw-font-bold {
