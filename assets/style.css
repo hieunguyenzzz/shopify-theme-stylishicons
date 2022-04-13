@@ -5787,19 +5787,14 @@ html {
     order: -1;
   }
 
-  .lg\:tw-my-4 {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+  .lg\:tw-my-3 {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
   }
 
   .lg\:tw-mx-0 {
     margin-left: 0px;
     margin-right: 0px;
-  }
-
-  .lg\:tw-my-3 {
-    margin-top: 0.75rem;
-    margin-bottom: 0.75rem;
   }
 
   .lg\:tw-ml-0 {
@@ -5816,10 +5811,6 @@ html {
 
   .lg\:tw-mt-1 {
     margin-top: 0.25rem;
-  }
-
-  .lg\:tw-mb-6 {
-    margin-bottom: 1.5rem;
   }
 
   .lg\:tw-mb-5 {
@@ -5985,16 +5976,6 @@ html {
   .lg\:tw-py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
-  }
-
-  .lg\:tw-px-3 {
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-  }
-
-  .lg\:tw-py-2 {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
   }
 
   .lg\:tw-px-2 {

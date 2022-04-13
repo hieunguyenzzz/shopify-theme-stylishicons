@@ -190,7 +190,11 @@ const allInspiredOf = [
 {% assign designers = 'A and P Castiglioni,Alvar Aalto,Anna Castelli Ferrieri,Arne Jacobsen,August Thonet,Bertjan Pot, Børge Mogensen,Carlo Mollino,Charles Eames,Christian Dell,Draga Obradovic & Aurel K. Basedow,Ebbe Gehl & Søren Nissen  ,Eero Aarnio,Eero Saarinen,Eileen Gray,Erik Buch,Fabricius and Kastholm,Finn Juhl,Florence Knoll,Gabriele & Oscar Buratti,George Nelson,Gino Sarfatti,Grant Featherston,Greta Grossman,Hans J. Wegner,Harry Bertoia,Isamu Noguchi,Jean Prouvé,Jens Risom,Jo Hammerborg,Juha Ilmari Leiviskä,Jørn Oberg Utzon,Kai Kristiansen,Le Corbusier,Marcel Breuer,Mariano Fortuny y Madrazo,Mark Stam,Michael Thonet,Mies Van Der Rohe,Designer Icons,Nicolaj Nøddesbo & Tommy Hyldahl,Paulo Rizzatto,Pierre Paulin,Philippe Starck,Poul Christiansen,Poul Henningsen,Poul Kjærholm,Poul Volther,Robert Dudley Best,Serge Mouille,Sigurd Ressell,Sori Yanagi,Xavier Pauchard,Verner Panton,Vico Magistretti,Warren Platner,Wilhelm Wagenfeld,Bernard Schottlander,Bernard-Albin Gras,Shin and Tomoko Azumi,Mario Bellini' | split: ',' | sort %}
 
 {% for designer in designers %}
-    <li {% if class %} class="{{class}}" {% else %} class="megamenu__listitem tw-w-[340px]" {% endif %}>
-        <a {% if class %} {% else %} class="megamenu__listlink" {% endif %} href="/collections/{{designer | handleize}}">{{designer}}</a>
-    </li>
+    {% assign handlizedDisigner = designer | handleize %}
+    {% assign collection = collections[handlizedDisigner] %}
+    {% if collection and collection.products.size > 0  %}
+        <li {% if class %} class="{{class}}" {% else %} class="megamenu__listitem tw-w-[340px]" {% endif %}>
+            <a {% if class %} {% else %} class="megamenu__listlink" {% endif %} href="/collections/{{designer | handleize}}">{{designer}}</a>
+        </li>
+    {% endif %}
 {% endfor %}
