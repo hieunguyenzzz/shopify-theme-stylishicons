@@ -4355,6 +4355,10 @@ html {
   height: 43px;
 }
 
+.tw-max-h-\[calc\(100vh-180px\)\] {
+  max-height: calc(100vh - 180px);
+}
+
 .tw-max-h-\[70px\] {
   max-height: 70px;
 }
@@ -4365,10 +4369,6 @@ html {
 
 .tw-max-h-\[300px\] {
   max-height: 300px;
-}
-
-.tw-max-h-\[calc\(100vh-180px\)\] {
-  max-height: calc(100vh - 180px);
 }
 
 .tw-min-h-full {
