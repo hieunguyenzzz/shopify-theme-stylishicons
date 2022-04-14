@@ -4,6 +4,6 @@ ignore:
   - node_modules/*
 
 MatchingTranslations:
-  enabled: false
+  enabled: true
 TemplateLength:
-  enabled: false
+  enabled: true

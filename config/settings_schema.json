@@ -8,6 +8,48 @@
     "theme_support_url": "https://support.shopify.com/"
   },
   {
+    "name":"t=>Lang&Currency",
+    "settings":[{
+      "type": "header",
+      "content": "t=>COUNTRY/REGION SELECTOR",
+      "info": "t=>To add a country/region, go to your [payment settings.](/admin/settings/payments)"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_country_selector",
+      "default": true,
+      "label": "t=>Enable country/region selector"
+    },
+    {
+      "type": "header",
+      "content": "t=>LANGUAGE SELECTOR",
+      "info": "t=>To add a language, go to your [language settings.](/admin/settings/languages)"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_language_selector",
+      "default": true,
+      "label": "t=>Enable language selector"
+    }]
+  },
+  {
+    "name":"@.name",
+    "settings":[
+      {
+        "type": "header",
+        "content": "@.content"
+      },
+      {
+        "type": "textarea",
+        "id": "css_variables",
+        "default": "#FFFFFF",
+        "label": "t:settings_schema.colors.settings.css_variables.label",
+        "info": "t:settings_schema.colors.settings.css_variables.info"
+      }
+      
+    ]
+  },
+  {
     "name": "t:settings_schema.colors.name",
     "settings": [
       {
