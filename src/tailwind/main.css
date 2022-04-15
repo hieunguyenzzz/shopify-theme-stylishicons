@@ -5,5 +5,12 @@
 svg:not(:root), symbol, image, marker, pattern, foreignObject {
     overflow-x: visible;
     overflow-y: visible;
-    }
+}
   
+.link{
+    text-decoration-color:transparent;
+    -moz-text-decoration-color:transparent;
+}
+.footer{
+    font-size: 1.4rem;
+}

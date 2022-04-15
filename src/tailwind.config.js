@@ -14,10 +14,14 @@ module.exports = {
         "foreground": "rgb(var(--color-foreground))",
         "accent-1": "rgb(var(--color-base-accent-1))",
         "accent-2": "rgb(var(--color-base-accent-2))",
+      },
+      spacing: {
+        'header': '64px',
       }
     },
   },
   plugins: [
+    require("daisyui"),
     require('@tailwindcss/typography'),
     require('tailwindcss-animatecss')({
       classes: ['animate__animated', 'animate__fadeIn','animate__fadeInDown','animate__fadeInUp', 'animate__bounceIn'],

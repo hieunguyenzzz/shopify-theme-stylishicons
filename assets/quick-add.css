@@ -56,7 +56,7 @@
   }
 }
 
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 1024px) {
   .quick-add-modal__content {
     width: 70%;
   }

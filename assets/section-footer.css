@@ -1,4 +1,4 @@
-.footer {
+.s-footer {
   border-top: 0.1rem solid rgba(var(--color-foreground), 0.08);
 }
 
@@ -12,7 +12,7 @@
 }
 
 @media screen and (max-width: 749px) {
-  .footer .grid {
+  .s-footer .grid {
     display: block;
   }
 
@@ -152,7 +152,7 @@
   font-size: calc(var(--font-heading-scale) * 1.6rem);
 }
 
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 1024px) {
   .footer-block__heading {
     font-size: calc(var(--font-heading-scale) * 1.8rem);
   }
@@ -483,23 +483,23 @@ noscript .localization-selector.link {
   }
 }
 
-.footer .disclosure__link {
+.s-footer .disclosure__link {
   padding: 0.95rem 3.5rem 0.95rem 2rem;
   color: rgba(var(--color-foreground), 0.75);
 }
 
-.footer .disclosure__link:hover {
+.s-footer .disclosure__link:hover {
   color: rgb(var(--color-foreground));
 }
 
-.footer .disclosure__link--active {
+.s-footer .disclosure__link--active {
   text-decoration: underline;
 }
 
 /* check for flexbox gap in older Safari versions */
 @supports not (inset: 10px) {
   @media screen and (max-width: 749px) {
-    .footer .grid {
+    .s-footer .grid {
       margin-left: 0;
     }
   }

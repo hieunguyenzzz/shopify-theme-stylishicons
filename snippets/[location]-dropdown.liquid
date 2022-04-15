@@ -1,0 +1,49 @@
+
+
+{% assign countrymap = '
+GB en ,
+SE se /sv-se,
+DE de /de-de,
+NO no /no-no,
+FR fr /fr-fr,
+NL nl /nl-nl,
+BE nl /nl-be show,
+BE fr /fr-be show,
+AT de /de-at show,
+ES es /es-es' %}
+{% assign path = request.path %}
+{% if request.locale.root_url and request.locale.root_url != "/" %}
+    {% assign path = request.path | replace_first: request.locale.root_url, '/' %}
+{% endif %}
+<div class="flex dropdown dropdown-end dropdown-hover">
+    <div tabindex="0" class="btn btn-ghost !font-normal !mb-0 rounded-none btn-xs items-center gap-1">
+            {%- assign iconPath =  localization.country.iso_code | downcase | append:'-flag' | append: '.svg' %}
+            <img width="16" height="16" class="object-cover w-4 h-4 rounded-full" src="{{ iconPath | file_url}}"/>
+                              {{ localization.language.iso_code | append: '/' | append: localization.country.iso_code | downcase | split: '/' | uniq | join: '/'}}
+    </div> 
+    <div tabindex="0" class="p-2 top-full py-4 flex flex-col shadow dropdown-content bg-base-100 rounded w-[240px] truncate">
+        {% assign contrylangs = countrymap | split: ',' %}
+        {%- for contrylang in contrylangs -%}
+        
+            {% assign contrylangarray = contrylang | split: ' ' %}
+            {% assign contrycode = contrylangarray[0] %}
+            {% assign langcode = contrylangarray[1] %}
+            {% assign root_url = contrylangarray[2] %}
+            {% assign show = contrylangarray[3] %}
+            {% assign country =  localization.available_countries | where: "iso_code", contrycode | first %}
+            {% unless country %}
+                {% continue %}
+            {% endunless %}
+            {% assign lang =  localization.available_languages | where: "iso_code", langcode | first | default: localization.language  %}
+                <a title="{{lang.endonym_name}}" href="{{root_url | append: path | replace: '//', '/'}}" class=" items-center !py-2 leading-none capitalize !flex justify-between !px-3 gap-2  hover:underline {% if country.iso_code == localization.country.iso_code %} font-bold{% endif %} focus-inset" href="#" {% if country.iso_code == localization.country.iso_code %} aria-current="true" {% endif %} data-country="{{ country.iso_code }}" data-lang="{{ lang.iso_code }}" data-value="{{ country.iso_code }}">
+                    {{ country.name | capitalize }}
+                    {% if show %}
+                        ({{lang.name | capitalize}})
+                    {% endif %}
+                    {%- assign iconPath =  country.iso_code | downcase | append:'-flag' | append: '.svg' %}
+                    <img width="16" height="16" class="!pl-0 w-4 h-4 rounded-full object-cover" src="{{ iconPath | file_url}}"/>
+                </a>
+            
+        {%- endfor -%}
+    </div>
+  </div>
