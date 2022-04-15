@@ -1,5 +1,8 @@
 {
   "general": {
+    "strings": {
+      "help": "Help"
+    },
     "password_page": {
       "login_form_heading": "Enter store using password:",
       "login_password_button": "Enter using password",
@@ -222,6 +225,7 @@
   },
   "sections": {
     "header": {
+      "help": "help",
       "announcement": "Announcement",
       "menu": "Menu",
       "cart_count": {
